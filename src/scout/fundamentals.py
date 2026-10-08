@@ -195,8 +195,11 @@ def compute(facts: pd.DataFrame, as_of: date | str, price: float) -> Fundamental
         v["fcf_ttm"] = fcf
         v["fcf_margin"] = fcf / rev_ttm if ok and np.isfinite(fcf) else NAN
 
-    shares, s_end, s_filed, _ = latest_instant(item_facts(f, "shares"))
-    prov["shares_as_of"], prov["shares_filed"] = s_end, s_filed
+    sh = item_facts(f, "shares")
+    # prefer a point-in-time count (cover page / balance sheet) over the weighted average
+    point = sh[sh["concept"] != "WeightedAverageNumberOfSharesOutstandingBasic"]
+    shares, s_end, s_filed, s_concept = latest_instant(point if not point.empty else sh)
+    prov["shares_as_of"], prov["shares_filed"], prov["shares_concept"] = s_end, s_filed, s_concept
     v["shares_out"] = shares
     mcap = shares * price if np.isfinite(shares) and shares > 0 and np.isfinite(price) else NAN
     v["market_cap"] = mcap

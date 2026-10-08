@@ -28,7 +28,7 @@ from . import indicators as I
 from .config import CACHE
 from .data.alpaca import AlpacaPrices
 from .data.finra import FinraShortInterest
-from .data.sec import SecData, extract_facts, sic_of
+from .data.sec import SecData, extract_facts, periodic_filer, sic_of
 
 BENCHMARKS = ["SPY", "QQQ", "IWM", "SMH", "SOXX", "XLK", "XLF", "XLE", "XLV", "XLI", "XLU",
               "XLY", "XLP", "XLB", "XLRE", "XLC"]
@@ -103,11 +103,13 @@ def build(as_of: date, workers: int = 6) -> Path:
             raw = sec.raw_facts(row.cik)
             facts = extract_facts(raw)
             fu = F.compute(facts, as_of, row.close)
-            sic, sic_desc = sic_of(sec.profile(row.cik))
+            prof = sec.profile(row.cik)
+            sic, sic_desc = sic_of(prof)
+            periodic, last_form = periodic_filer(prof, as_of)
         except Exception as e:  # one bad filer must not sink the snapshot; the gap is recorded
             return {"symbol": row.symbol, "prov_error": f"{type(e).__name__}: {e}"[:200]}
-        return {"symbol": row.symbol, "sic": sic, "sic_desc": sic_desc,
-                **fu.values, **{f"prov_{k}": v for k, v in fu.provenance.items()}}
+        return {"symbol": row.symbol, "sic": sic, "sic_desc": sic_desc, "periodic_filer": periodic,
+                "last_periodic_form": last_form, **fu.values, **{f"prov_{k}": v for k, v in fu.provenance.items()}}
 
     rows = []
     with ThreadPoolExecutor(workers) as ex:
@@ -116,6 +118,10 @@ def build(as_of: date, workers: int = 6) -> Path:
             if i % 250 == 0:
                 _log(f"  fundamentals {i}/{len(df)}")
     df = df.merge(pd.DataFrame(rows), on="symbol", how="left")
+    # operating companies only: must file 10-K/10-Q/20-F/40-F; commodity and crypto trusts (SIC 6221) are out
+    n0 = len(df)
+    df = df[(df["periodic_filer"] == True) & (df["sic"] != 6221)]  # noqa: E712
+    _log(f"operating companies: {len(df)} (dropped {n0 - len(df)} funds, trusts and non-filers)")
 
     # 5. short interest
     si = FinraShortInterest(tag).latest(as_of)
@@ -129,7 +135,8 @@ def build(as_of: date, workers: int = 6) -> Path:
     df.to_csv(feat_p, index=False, compression="gzip")
     manifest = {
         "as_of": tag, "last_price_date": str(bars["date"].max()),
-        "universe_rule": f"tradable US-listed (NYSE/Nasdaq/AMEX/Arca/BATS) with SEC CIK; close >= ${MIN_PRICE:g}; "
+        "universe_rule": f"tradable US-listed (NYSE/Nasdaq/AMEX/Arca/BATS) operating companies with an SEC CIK "
+                         f"and a 10-K/10-Q/20-F/40-F in the last 18 months; close >= ${MIN_PRICE:g}; "
                          f"50-day avg dollar volume >= ${MIN_ADV:,.0f}; one listing per CIK",
         "n_companies": int(len(df)),
         "short_interest_settlement": None if si.empty else str(si["settlement_date"].iloc[0]),

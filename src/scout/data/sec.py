@@ -79,6 +79,8 @@ CONCEPTS: dict[str, list[tuple[str, str, str]]] = {
     "shares": [
         ("dei", "EntityCommonStockSharesOutstanding", "shares"),
         ("us-gaap", "CommonStockSharesOutstanding", "shares"),
+        # last resort for multi-class issuers whose cover-page count is only tagged per class
+        ("us-gaap", "WeightedAverageNumberOfSharesOutstandingBasic", "shares"),
     ],
 }
 
@@ -129,6 +131,19 @@ def sic_of(profile: dict | None) -> tuple[int | None, str]:
         return int(profile.get("sic") or 0) or None, profile.get("sicDescription") or ""
     except ValueError:
         return None, ""
+
+
+PERIODIC_FORMS = {"10-K", "10-Q", "10-KT", "20-F", "40-F"}
+
+
+def periodic_filer(profile: dict | None, as_of: date, within_days: int = 550) -> tuple[bool, str]:
+    """(files periodic reports, latest periodic form). Excludes funds that file N-CSR etc."""
+    f = recent_filings(profile, as_of)
+    if f.empty:
+        return False, ""
+    cutoff = (pd.Timestamp(as_of) - pd.Timedelta(days=within_days)).date().isoformat()
+    p = f[f["form"].isin(PERIODIC_FORMS) & (f["filingDate"] >= cutoff)]
+    return (not p.empty), ("" if p.empty else str(p["form"].iloc[0]))
 
 
 def recent_filings(profile: dict | None, as_of: date) -> pd.DataFrame:
