@@ -111,9 +111,16 @@ INDUSTRIES: dict[str, tuple[str, set[int]]] = {
     "industrial_machinery": ("SIC 3510-3569 industrial machinery", set(range(3510, 3570)) - {3559}),
 }
 
+# Curated theme baskets: fixed ticker lists, defined and reviewed in code (never by the model),
+# for themes SIC cannot isolate. A licensed deployment would use a vendor theme classification.
+THEMES: dict[str, tuple[str, set[str]]] = {
+    "data_center_reits": ("curated: REITs whose business is data centers", {"EQIX", "DLR"}),
+    "neoclouds": ("curated: GPU cloud / AI-compute providers", {"CRWV", "NBIS", "IREN", "APLD"}),
+}
+
 OPS = {"<", "<=", ">", ">=", "between", "=="}
 UNIVERSE_KEYS = {"market_cap_min", "market_cap_max", "min_price", "min_avg_dollar_volume",
-                 "industries", "exclude_industries"}
+                 "industries", "exclude_industries", "themes"}
 TOP_KEYS = {"version", "observation", "universe", "conditions", "rank", "top_n", "unmapped", "notes"}
 COND_KEYS = {"field", "op", "value", "ref", "why"}
 RANK_KEYS = {"field", "direction", "weight"}
@@ -169,13 +176,15 @@ def validate(d: dict, short_interest_available: bool = True) -> Spec:
     for k, v in u.items():
         if k not in UNIVERSE_KEYS:
             p.append(f"unknown universe key '{k}' (allowed: {sorted(UNIVERSE_KEYS)})")
-        elif k in ("industries", "exclude_industries"):
+        elif k in ("industries", "exclude_industries", "themes"):
+            allowed = THEMES if k == "themes" else INDUSTRIES
+            label = "theme basket" if k == "themes" else "industry group"
             if not isinstance(v, list) or not all(isinstance(x, str) for x in v):
-                p.append(f"universe.{k} must be a list of industry-group names")
+                p.append(f"universe.{k} must be a list of {label} names")
             else:
                 for x in v:
-                    if x not in INDUSTRIES:
-                        p.append(f"unknown industry group '{x}' (allowed: {sorted(INDUSTRIES)})")
+                    if x not in allowed:
+                        p.append(f"unknown {label} '{x}' (allowed: {sorted(allowed)})")
         elif not _num(v) or v < 0:
             p.append(f"universe.{k} must be a non-negative number, got {v!r}")
     if _num(u.get("market_cap_min")) and _num(u.get("market_cap_max")) and u["market_cap_min"] >= u["market_cap_max"]:
@@ -292,4 +301,7 @@ def schema_for_prompt() -> str:
     lines.append("INDUSTRY GROUPS (universe.industries / universe.exclude_industries):")
     for k, (desc, _) in INDUSTRIES.items():
         lines.append(f"  {k}: {desc}")
+    lines.append("THEME BASKETS (universe.themes; a name qualifies if it is in ANY listed industry group OR theme):")
+    for k, (desc, syms) in THEMES.items():
+        lines.append(f"  {k}: {desc} ({', '.join(sorted(syms))})")
     return "\n".join(lines)

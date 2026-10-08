@@ -140,16 +140,16 @@ def cmd_track(a) -> None:
     from .track import track
     r = track()
     if not r["chain_ok"]:
-        print("pick ledger chain BROKEN:
-  - " + "
-  - ".join(r["chain_problems"]))
+        print("pick ledger chain BROKEN:")
+        for x in r["chain_problems"]:
+            print("  -", x)
         sys.exit(1)
     print(f"pick ledger: {r['n_entries']} entries, hash chain intact. ({r['label']})")
     for m in r["marks"]:
         b = m["benchmarks"]
         f = lambda v: "n/a" if v is None else f"{v * 100:+.2f}%"
-        print(f"
-  {m['run_id']}  as of {m['as_of']}, marked to {m['marked_to']} ({m['trading_days']} trading days)")
+        print()
+        print(f"  {m['run_id']}  as of {m['as_of']}, marked to {m['marked_to']} ({m['trading_days']} trading days)")
         print(f"    basket {f(m['basket_return'])}  SPY {f(b['SPY'])}  SMH {f(b['SMH'])}  "
               f"basket-SPY {f(m['basket_vs']['SPY'])}  basket-SMH {f(m['basket_vs']['SMH'])}")
         for p in m["picks"]:

@@ -13,7 +13,7 @@ import operator
 import numpy as np
 import pandas as pd
 
-from .spec import FIELDS, INDUSTRIES, Spec
+from .spec import FIELDS, INDUSTRIES, THEMES, Spec
 
 _CMP = {"<": operator.lt, "<=": operator.le, ">": operator.gt, ">=": operator.ge}
 
@@ -62,10 +62,13 @@ def _mask(df: pd.DataFrame, c: dict) -> tuple[pd.Series, pd.Series]:
 def universe_steps(spec: Spec) -> list[tuple[str, callable]]:
     u = spec.universe
     steps = []
-    if "industries" in u:
-        codes = set().union(*(INDUSTRIES[g][1] for g in u["industries"]))
-        steps.append((f"industry in {u['industries']}",
-                      lambda d: (d["sic"].isin(codes), d["sic"].isna())))
+    if "industries" in u or "themes" in u:
+        codes = set().union(set(), *(INDUSTRIES[g][1] for g in u.get("industries", [])))
+        syms = set().union(set(), *(THEMES[t][1] for t in u.get("themes", [])))
+        label = " or ".join(x for x in [f"industry in {u['industries']}" if u.get("industries") else "",
+                                         f"theme in {u['themes']}" if u.get("themes") else ""] if x)
+        steps.append((label, lambda d: (d["sic"].isin(codes) | d["symbol"].isin(syms),
+                                        d["sic"].isna() & ~d["symbol"].isin(syms))))
     if "exclude_industries" in u:
         codes_x = set().union(*(INDUSTRIES[g][1] for g in u["exclude_industries"]))
         steps.append((f"industry not in {u['exclude_industries']}",
