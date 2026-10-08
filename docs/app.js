@@ -44,6 +44,7 @@
       ", validated by code" + (r.attempts > 1 ? " after " + (r.attempts - 1) + " correction round" : "") + "</div>");
     h.push('<div class="chips">');
     if (u.industries) h.push('<span class="chip u">industry ∈ ' + esc(u.industries.join(", ")) + "</span>");
+    if (u.themes) h.push('<span class="chip u" title="curated, code-defined baskets">theme basket ∈ ' + esc(u.themes.join(", ")) + "</span>");
     if (u.exclude_industries) h.push('<span class="chip u">industry ∉ ' + esc(u.exclude_industries.join(", ")) + "</span>");
     if (u.market_cap_min != null) h.push('<span class="chip u">market_cap ≥ ' + fmt("market_cap", u.market_cap_min) + "</span>");
     if (u.market_cap_max != null) h.push('<span class="chip u">market_cap ≤ ' + fmt("market_cap", u.market_cap_max) + "</span>");
@@ -103,7 +104,12 @@
       var ok = ex.verdict === "explained";
       h.push('<div class="card"><div class="hd"><h3>' + esc(ex.symbol) + '</h3><span class="verdict ' + (ok ? "ok" : "thin") + '">' + esc(ex.verdict) + "</span></div>");
       h.push('<ul class="srcs">');
-      ex.documents.forEach(function (d) { h.push('<li><a href="' + esc(d.url) + '" target="_blank" rel="noopener">' + esc(d.title) + "</a></li>"); });
+      var link = function (d) { return '<li><a href="' + esc(d.url) + '" target="_blank" rel="noopener">' + esc(d.title) + "</a></li>"; };
+      var filings = ex.documents.filter(function (d) { return d.kind !== "news"; });
+      var news = ex.documents.filter(function (d) { return d.kind === "news"; });
+      filings.forEach(function (d) { h.push(link(d)); });
+      if (news.length) h.push("<li><details><summary>" + news.length + " news headlines and summaries given to the model (not full articles)</summary><ul>" +
+        news.map(link).join("") + "</ul></details></li>");
       if (!ex.documents.length) h.push("<li>No earnings documents found.</li>");
       h.push("</ul>");
       [["thesis", "Thesis"], ["bear_case", "Bear case"]].forEach(function (part) {
