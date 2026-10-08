@@ -15,8 +15,18 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="wrap">
-  <div class="brand"><img src="favicon.svg" alt="" width="28" height="28"><span>Equity Scout</span></div>
+<nav class="topnav" aria-label="Site">
+  <div class="wrap navin">
+    <a class="brand" href="#top"><img src="favicon.svg" alt="" width="24" height="24"><span>Equity Scout</span></a>
+    <div class="navlinks">
+      <a href="#runs">Recorded runs</a>
+      <a href="#try">Try your own</a>
+      <a href="#architecture">Architecture</a>
+      <a class="code" href="https://github.com/henryzhangpku/equity-scout" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>Code</span></a>
+    </div>
+  </div>
+</nav>
+<header class="wrap" id="top">
   <h1>From an investment observation to ranked names and cited explanations</h1>
   <p class="lede">Write an observation in plain English. A language model translates it into a typed screen
     spec; code validates the spec, screens the US equity universe on point-in-time data, ranks the survivors
@@ -26,8 +36,19 @@
 </header>
 
 <main class="wrap">
-  <nav id="tabs" class="tabs" role="tablist"></nav>
-  <section id="run"></section>
+  <section id="runs" class="anchor">
+    <h2 class="sec">Recorded runs</h2>
+    <nav id="tabs" class="tabs" role="tablist"></nav>
+    <div id="run"></div>
+  </section>
+
+  <section id="try-sec" class="anchor">
+    <details id="try" class="panel trypanel">
+      <summary><h2 class="sec inline">Try your own</h2>
+        <span class="muted">Build or translate a screen and run it in your browser on the 2026-10-08 snapshot (loads about 2 MB when opened)</span></summary>
+      <div id="try-body"></div>
+    </details>
+  </section>
 
   <section class="panel">
     <h2>Forward tracking</h2>
@@ -61,9 +82,16 @@
   </section>
 </main>
 
-<footer class="wrap muted" id="foot"></footer>
+<footer class="wrap muted" id="foot">
+  <div id="foot-limits"></div>
+  <p>Research demo only: no orders, no recommendations. Every run, prompt and model response is in the repository.
+    <a class="code" href="https://github.com/henryzhangpku/equity-scout" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>Code on GitHub</span></a></p>
+</footer>
 
 <script src="data/runs.js"></script>
+<script src="ui.js"></script>
+<script src="scout-core.js"></script>
 <script src="app.js"></script>
+<script src="try.js"></script>
 </body>
 </html>
