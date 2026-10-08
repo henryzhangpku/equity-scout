@@ -67,7 +67,7 @@ class RecordedDocuments:
         for m in self.meta.get(symbol, []):
             text = (self.dir / "docs" / f"{m['doc_id']}.txt").read_text(encoding="utf-8")
             out.append(Document(doc_id=m["doc_id"], kind=m["kind"], title=m["title"], url=m["url"],
-                                filed=m["filed"], text=text))
+                                filed=m["filed"], text=text, full_length=m["chars_total"]))
         return out
 
 

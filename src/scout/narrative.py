@@ -123,8 +123,9 @@ def _fmt(v) -> str:
 def explain(symbol: str, name: str, metrics: dict, why_flagged: list[str], docs: list[Document],
             llm: LLM, transcripts_note: str) -> Explanation:
     texts = {d.doc_id: shown_text(d) for d in docs}
+    total = {d.doc_id: d.full_length or len(d.text) for d in docs}
     meta = [{"doc_id": d.doc_id, "kind": d.kind, "title": d.title, "url": d.url, "filed": d.filed,
-             "chars_total": len(d.text), "chars_shown": len(texts[d.doc_id])} for d in docs]
+             "chars_total": total[d.doc_id], "chars_shown": len(texts[d.doc_id])} for d in docs]
     if not docs:
         return Explanation(symbol=symbol, verdict="not enough evidence", documents=meta,
                            model_status="no earnings documents found on EDGAR for this as-of date")
@@ -134,7 +135,7 @@ def explain(symbol: str, name: str, metrics: dict, why_flagged: list[str], docs:
             f"Note: {transcripts_note}.", ""]
     for d in docs:
         t = texts[d.doc_id]
-        trunc = " (truncated)" if len(t) < len(d.text) else ""
+        trunc = " (truncated)" if len(t) < total[d.doc_id] else ""
         body.append(f"=== doc_id: {d.doc_id} | {d.title}{trunc} ===\n{t}\n")
     messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": "\n".join(body)}]
     raw = llm.complete(messages, tag=f"explain {symbol}", max_tokens=16000)

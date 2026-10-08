@@ -64,6 +64,7 @@ class Document:
     url: str             # canonical SEC URL, shown next to every citation
     filed: str           # YYYY-MM-DD
     text: str = field(repr=False)
+    full_length: int | None = None   # set when `text` is a stored excerpt of a longer original
 
 
 class DocumentSource(Protocol):

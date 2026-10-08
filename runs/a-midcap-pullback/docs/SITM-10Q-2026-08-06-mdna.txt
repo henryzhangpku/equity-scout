@@ -1,0 +1,349 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+
+The following discussion should be read in conjunction with the Condensed Consolidated Financial Statements and the related notes that appear elsewhere in this document.
+
+The information in this Quarterly Report on Form 10-Q contains forward-looking statements within the meaning of Section 27A of the Securities Act of 1933, as amended (the “Securities Act”), and Section 21E of the Securities Exchange Act of 1934, as amended (the “Exchange Act”), which are subject to the “safe harbor” created by those sections. We may, in some cases, use words such as “anticipate,” “believe,” “could,” “estimate,” “expect,” “intend,” “may,” “objective,” “plan,” “potential,” “predict,” “project,” “should,” “will,” “would,” or the negative of those terms, and similar expressions that convey uncertainty of future events or outcomes to identify these forward-looking statements. Any statements contained herein that are not statements of historical facts may be deemed to be forward-looking statements. Forward-looking statements in this report include, but are not limited to, statements about:
+
+•our plans to focus on oscillators, clock ICs, resonators and timing synchronization solutions and to aggressively expand our presence in these markets;
+
+•our expectations regarding our ability to address market and customer demands and to timely develop new or enhanced solutions to meet those demands;
+
+•anticipated trends, challenges and growth in our business and the markets in which we operate, including pricing expectations;
+
+•our expectations regarding our revenue, average selling prices, gross margin, and expenses;
+
+•our expectations regarding the effects of macroeconomic events in 2026;
+
+•our expectations regarding dependence on a limited number of customers and end customers;
+
+•our customer relationships and our ability to retain and expand our customer relationships and to achieve design wins;
+
+•our expectations regarding the success, cost, and timing of new products;
+
+•the size and growth potential of the markets for our solutions, and our ability to serve and expand our presence in those markets;
+
+•our plans to expand sales and marketing efforts through increased collaboration with our distributors and contracted sales representatives, and our plans to grow direct online sales through our self-service online store;
+
+•our expectations to identify new customers and deliver differentiated Precision Timing solutions to them through digital marketing strategies;
+
+•our goal to become the leading provider of Precision Timing solutions for advanced and challenging applications;
+
+•our positioning of being designed into current systems as well as future products;
+
+•our belief that our advanced packaging designs can enable the smallest footprints in the industry;
+
+•our expectations regarding competition in our existing and future markets;
+
+•our expectations of the success of our acquisitions and how we integrate and generate revenue;
+
+•the impact a pandemic, epidemic, or other outbreak of disease may in the future have on our business, results of operations and financial condition, as well as the businesses of our suppliers and customers;
+
+•our expectations regarding regulatory developments in the United States and foreign countries;
+
+•our expectations regarding the performance of, and our relationships with, our third-party suppliers and manufacturers;
+
+22
+
+Table of Contents
+
+•our expectations regarding our and our customers’ ability to respond successfully to technological or industry developments;
+
+•our expectations regarding our ability to attract and retain key personnel;
+
+•our expectations regarding intellectual property and related litigation;
+
+•our belief as to the sufficiency of our existing cash and cash equivalents and short-term investments funds to meet our cash needs for at least the next 12 months and our future capital requirements over the longer term;
+
+•the adequacy and availability of our leased facilities; and
+
+•the accuracy of our estimates regarding capital requirements and needs for additional financing.
+
+These forward-looking statements reflect our management’s beliefs and views with respect to future events and are based on estimates and assumptions as of the date of this report and are subject to risks and uncertainties. We discuss many of these risks in greater detail in Part II, Item 1A "Risk Factors" of this report. Moreover, we operate in a very competitive and rapidly changing environment. New risks emerge from time to time. It is not possible for our management to predict all risks, nor can we assess the impact of all factors on our business or the extent to which any factor, or combination of factors, may cause actual results to differ materially from those contained in any forward-looking statements we may make. Given these uncertainties, you should not place undue reliance on these forward-looking statements. We qualify all of the forward-looking statements in this report by these cautionary statements.
+
+You should not rely upon forward-looking statements as predictions of future events. Although we believe that the expectations reflected in the forward-looking statements are reasonable, we cannot guarantee that the future results, levels of activity, performance, or events and circumstances reflected in the forward-looking statements will be achieved or occur. Moreover, neither we nor any other person assumes responsibility for the accuracy and completeness of the forward-looking statements. We undertake no obligation to update publicly any forward-looking statements for any reason after the date of this report to conform these statements to actual results or to changes in our expectations, except as required by law.
+
+In addition, statements that “we believe” and similar statements reflect our beliefs and opinions on the relevant subject. These statements are based upon information available to us as of the date of this report, and while we believe such information forms a reasonable basis for such statements, such information may be limited or incomplete, and our statements should not be read to indicate that we have conducted an exhaustive inquiry into, or review of, all potentially available relevant information. These statements are inherently uncertain and investors are cautioned not to unduly rely upon these statements.
+
+Overview
+
+The ability to accurately measure and reference time has been essential to humankind’s greatest inventions and technological advances. Timing technology has continued to evolve over centuries, underpinning broader technological evolution and is the heartbeat of digital electronic systems. Timing ensures that the system runs smoothly and reliably by providing and distributing clock signals to various critical components such as central processing units, communication and interface ICs, and radio frequency components. As electronics evolve to deliver higher performance, connectivity, and intelligence, even in increasingly challenging environments, while also being more complex and size-constrained, we believe they will require more sophisticated semiconductor-based timing solutions that cannot be developed in legacy quartz crystal-based technologies. Precision timing, a category that SiTime created ("Precision Timing") fills this need with the performance, resilience, reliability, power, size, and cost that is required by these applications.
+
+We are a leading provider of Precision Timing solutions to the global electronics industry. Our Precision Timing products are the heartbeat of our customers’ electronic systems, providing the timing functionality that is needed for electronics to operate reliably and accurately. We provide Precision Timing solutions that are differentiated by high performance, high resilience, and high reliability, along with programmability, small size, and low power consumption. Our products have been designed into over 400 applications across our target markets, including artificial intelligence ("AI") systems, datacenter, communications, and enterprise, automotive, industrial, aerospace, defense, mobile, Internet of Things ("IoT"), and consumer. Our current solutions include various types of oscillators, as well as clock integrated circuits ("ICs"), resonators, and synchronization software.
+
+We believe that the total timing market is approximately $11 billion in size and growing. Since our founding, we have focused on the high-end portion of the market, i.e. Precision Timing. Historically, our revenue has been substantially
+
+23
+
+Table of Contents
+
+derived from sale of oscillator systems across our target end markets. In the past, we have benefitted from the strong growth in AI datacenter deployments.
+
+Our all-silicon solutions are based on four fundamental areas of technical expertise: micro-electro-mechanical systems (“MEMS”), analog mixed-signal design, advanced system-level integration, and software. This expertise, along with the knowledge of our customers' systems, gives our products a significant edge as we address customers’ complex timing problems. In this aspect, we believe we are different than quartz-based oscillator and resonator providers, who typically have expertise in designing and manufacturing resonator components, but usually outsource the analog circuit design and packaging. We also have a deep understanding of the mechanical, electrical, and thermal properties of materials, which is a key requirement for developing our proprietary MEMS processes. To maximize MEMS first-silicon success, we have also developed our own MEMS simulation tools. We are also different in that our MEMS resonators are made using semiconductor technology which has significant benefits in features, performance, manufacturing, and cost, while the quartz resonator and oscillator suppliers use quartz crystal material.
+
+Compared to traditional clock IC suppliers, we are different in that we design the resonator in-house and can integrate it into the clock IC package. Our analog/mixed-signal die are developed using industry-standard processes and deliver high levels of performance using programmable phase-locked loops, temperature sensors, regulators, data converters, drivers and other building blocks. Unlike most clock IC vendors, we do not rely on quartz vendors to provide the quartz resonator clock reference that is required for their clock ICs to function. Our expertise creates supply chain advantages for us and most importantly, enables us to design and build complete timing systems that result in performance advantages, providing a complete solution to the customer.
+
+Today’s newer applications are driving the need for faster connectivity and lower latency, even when the electronics is subject to non-ideal conditions. Our Precision Timing solutions are designed to be resilient to such harsh environmental stressors which provides a benefit to our customers. For example, AI Infrastructure equipment is becoming more dense, and is subject to rapid temperature changes within the system, but still needs to deliver maximum performance and reliability. In the communications market, a 5G small cell radio mounted on a pole next to a road or rail line is subject to the vibration of passing heavy trucks or trains. These conditions make our Precision Timing solutions a natural choice in such applications. Our solutions are also utilized in automotive electronics, including advanced driver assistance systems for self-driving cars, which require increased timing accuracy. For the industrial market, our products offer programmability and high reliability for the diverse operating conditions of industrial equipment, including high temperatures, mechanical shock, and vibration. For the aerospace and defense market, our solutions provide high reliability and lower acceleration sensitivity for end products that operate in rugged conditions. For the mobile, IoT and consumer market, our timing solutions offer high performance at optimal power consumption and size, as our customers fit more functionality into smaller devices.
+
+In all of these markets, the trend for increased data transfer at higher speeds and demand for lower latency continues to grow. This requires higher levels of performance in timing and synchronization. Additionally, as electronics continue to proliferate in all industries and areas of our daily life, digital devices are increasingly subjected to less controlled environments, making resiliency to environmental stressors ever more important. These industry trends place higher demands on timing components, increasing the importance of resilient and reliable Precision Timing.
+
+SiTime is now a key provider of all differentiated products in timing - oscillators, clocks, and resonators combined with synchronization software and deep engineering expertise in Precision Timing solutions.
+
+We sell our products primarily through distributors, who in turn sell to our end customers. We also sell products directly to some of our end customers. We leverage our global network of distributors to address the broad set of end markets we serve. For our largest accounts, dedicated sales personnel work with the end customer to ensure that our solutions fully address the end customer’s timing needs. Our smaller customers can select the optimum timing solution for their needs by working directly with our sales personnel or distributors or by shopping on our online store, SiTimeDirect™.
+
+We operate a fabless business model, where we outsource manufacturing to semiconductor industry suppliers, which allows us to focus on, and excel in, the design, marketing, and sales of our products. A fabless infrastructure gives us production flexibility and the ability to scale capacity up and down to meet demand. While this model allows us to operate with lower capital expenditure investment than other semiconductor companies that own fabrication plants ("fabs"), we may be required to make such investments from time to time primarily to strengthen our supply chain and optimize our costs. These investments could put downward pressure on our gross margins if demand for our products does not materialize as expected. Further, this model could also subject us to supply constraints, when demand for our products is higher than anticipated, resulting in increased costs and impacting our gross margins. Our programmable architecture also plays a key role in ensuring optimal production flexibility. In contrast to products offered by traditional timing device suppliers, our products are batch produced and then custom programmed to customer needs, allowing us to offer shorter lead times and the ability to meet custom requirements more easily.
+
+24
+
+Table of Contents
+
+In May 2026, the Company issued $1,350.0 million aggregate principal amount of 0% Convertible Senior Notes due 2031. The proceeds were used to fund a portion of the cash consideration of $1,500.0 million paid in connection with the acquisition of the Timing business from Renesas, which was completed on July 1, 2026. Additionally, the Company issued 3,558,691 shares of the Company’s common stock towards this acquisition.
+
+Results of Operations
+
+Revenue
+
+We derive revenue primarily from sales of Precision Timing solutions to distributors. We also sell products directly to some of our end customers. Our sales are made pursuant to standard purchase orders which may be cancelled, reduced, or rescheduled, with little or no notice. We recognize product revenue upon shipment when we satisfy our performance obligations as evidenced by the transfer of control of our products to customers. We measure revenue based on the amount of consideration we expect to be entitled to in exchange for products. During 2026, demand for our products was positively impacted by increased investment in AI and datacenter related applications. The extent and duration of this demand remain uncertain, and there can be no assurance that AI and datacenter related market growth or customer spending will continue at current levels in future periods.
+
+Three Months Ended
+
+June 30, Change Six Months Ended
+
+June 30, Change
+
+2026 2025 $ % 2026 2025 $ %
+
+(in thousands except percentage) (in thousands except percentage)
+
+Revenue $ 157,432 $ 69,494 $ 87,938 127 % $ 270,999 $ 129,808 $ 141,191 109 %
+
+Revenue increased by $87.9 million, or 127%, for the three months ended June 30, 2026 compared to the same period in the prior year primarily driven by demand for our products in the AI and datacenter applications. Revenue increased by $141.2 million, or 109%, for the six months ended June 30, 2026 compared to the same period in the prior year. The increase in both periods was primarily related to an increase in average selling prices of our products due to an increase in sales volume as well as a change in mix of the products we shipped.
+
+Our top three customers by revenue, which are distributors, together accounted for approximately 66% of our revenue for the three months ended June 30, 2026 and 2025, and 66% and 64% of our revenues for the six months ended June 30, 2026 and 2025, respectively.
+
+Cost of Revenue, Gross Profit, and Gross Margin
+
+Cost of revenue consists of wafers acquired from third-party foundries, assembly, packaging, and test cost of our products paid to third-party contract manufacturers, amortization of acquired intangibles and personnel and other costs associated with our manufacturing operations. Cost of revenue also includes depreciation of production equipment, inventory write-downs, shipping and handling costs, and allocation of overhead and facility costs. We also include credits for rebates received from third-party contract manufacturers in cost of revenue.
+
+Three Months Ended
+
+June 30, Change Six Months Ended
+
+June 30, Change
+
+2026 2025 $ % 2026 2025 $ %
+
+(in thousands except percentage) (in thousands except percentage)
+
+Cost of Revenue $ 58,290 $ 33,442 $ 24,848 74 % $ 104,902 $ 63,421 $ 41,481 65 %
+
+Gross Profit $ 99,142 $ 36,052 $ 63,090 175 % $ 166,097 $ 66,387 $ 99,710 150 %
+
+Gross Margin 63.0 % 51.9 % 61.3 % 51.1 %
+
+Gross profit increased by $63.1 million in the three months ended June 30, 2026 compared to the same period in the prior year. Gross profit increased $66.1 million mainly from higher revenue which was partially offset by higher amortization from acquired intangibles of $2.2 million, and higher other manufacturing and overhead costs of $0.8 million, consisting of depreciation and amortization, and charges associated with inventory write-downs. Gross profit increased at a higher rate than revenue, reflecting a favorable change in product mix and the resulting improvement in gross margin.
+
+Gross profit increased by $99.7 million in the six months ended June 30, 2026 compared to the same period in the prior year. Gross profit increased $111.6 million mainly from higher revenue which was partially offset by higher other manufacturing and overhead costs of $7.8 million, and higher amortization from acquired intangibles of $4.3 million. Gross profit increased at a higher rate than revenue, reflecting a favorable change in product mix and the resulting improvement in gross margin.
+
+25
+
+Table of Contents
+
+Gross margin was higher by 11.1% in the three months ended June 30, 2026 compared to the same period in the prior year. The gross margins increased by 9.5% due to impact of leverage from higher revenue, and 1.6% due to a change in the mix of products shipped.
+
+Gross margin was higher by 10.2% in the six months ended June 30, 2026 compared to the same period in the prior year. The gross margins increased by 7.9% due to impact of leverage from higher revenue, and 2.2% due to a change in the mix of products shipped.
+
+Gross margin may fluctuate from time to time due to a variety of factors. For additional discussion please see Part II, Item 1A "Risk Factors" of this report, especially the risk factor titled “Our gross margins may fluctuate due to a variety of factors, which could negatively impact our results of operations and our financial condition.”
+
+Operating Expenses
+
+Our operating expenses consist of research and development, selling, general and administrative expenses, and acquisition related costs. Personnel costs are the most significant component of our operating expenses and consist of salaries, benefits, bonuses, stock-based compensation, and commissions. Our operating expenses also include consulting costs, allocated costs of facilities, information technology and depreciation.
+
+Three Months Ended
+
+June 30, Change Six Months Ended
+
+June 30, Change
+
+2026 2025 $ % 2026 2025 $ %
+
+(in thousands except percentage) (in thousands except percentage)
+
+Operating Expenses:
+
+Research and development $ 36,117 $ 30,563 $ 5,554 18 % $ 68,854 $ 60,589 $ 8,265 14 %
+
+Selling, general and administrative 46,301 28,228 18,073 64 % 85,237 55,086 30,151 55 %
+
+Acquisition related costs 8,509 1,872 6,637 355 % 16,129 3,433 12,696 370 %
+
+Total operating expenses $ 90,927 $ 60,663 $ 30,264 50 % $ 170,220 $ 119,108 $ 51,112 43 %
+
+Research and Development
+
+Our research and development efforts are focused on the design and development of Precision Timing solutions. Our research and development expense consists primarily of personnel costs, pre-production engineering mask costs, software license expenses, design tools and prototype-related expenses, facility costs, supplies, professional and consulting fees, and allocated overhead costs, which may be offset by non-recurring engineering contra-expenses recorded in certain periods. There is no assurance that we will have non-recurring engineering contra-expense from period to period. We expense research and development costs as incurred. We believe that continued investment in our products and services is important for our future growth and acquisition of new customers and, as a result, we expect our research and development expenses to continue to increase in absolute dollars. However, we expect our research and development expenses to fluctuate as a percentage of revenue from period to period depending on the timing of these expenses.
+
+Research and development expense increased by $5.6 million, or 18%, for the three months ended June 30, 2026, compared to the same period in the prior year, primarily due to an increase in higher other personnel costs of $3.9 million, higher engineering spend towards ongoing new product development of $1.7 million, and higher depreciation and amortization expense of $0.6 million due to investment in capital assets, partially offset by lower stock-based compensation expense of $0.5 million.
+
+Research and development expense increased by $8.3 million, or 14%, for the six months ended June 30, 2026, compared to the same period in the prior year, primarily due to an increase in headcount resulting higher other personnel costs of $6.2 million, and higher engineering spend towards ongoing new product development of $1.5 million.
+
+Sales, General and Administrative
+
+Sales, general and administrative expense consists of personnel costs, professional and consulting fees, accounting and audit fees, legal costs, field application engineering support, travel costs, advertising expenses, and allocated overhead costs. We expect sales, general and administrative expenses to continue to increase in absolute dollars as we increase our
+
+26
+
+Table of Contents
+
+personnel and grow our operations, although it may fluctuate as a percentage of revenue from period to period depending on the timing of these expenses.
+
+Selling, general and administrative expense increased by $18.1 million, or 64%, for the three months ended June 30, 2026, compared to the same period in the prior year, primarily due to higher other personnel costs of $6.6 million, higher stock-based compensation expense of $5.3 million due to an increase in headcount, higher sales commissions payouts from higher sales of $4.5 million, and higher consulting and legal fees of $0.6 million.
+
+Selling, general and administrative expense increased by $30.2 million, or 55%, for the six months ended June 30, 2026, compared to the same period in the prior year, primarily due to an increase in headcount resulting in higher stock-based compensation expense of $10.7 million, higher other personnel costs of $9.5 million, higher sales commissions payouts from higher sales of $6.7 million, and higher consulting fees of $1.2 million.
+
+Acquisition related costs
+
+Acquisition related costs include legal, regulatory, consulting, and other costs incurred towards the acquisition of Renesas' timing business, and also include changes in the fair value of the sales-based earnout liability related to our prior acquisition.
+
+Acquisition related costs increased by $6.6 million, or 355%, for the three months ended June 30, 2026, primarily due to one-time costs of $6.5 million incurred towards the acquisition of Renesas' timing business.
+
+Acquisition related costs increased by $12.7 million, or 370%, for the six months ended June 30, 2026 compared to the same period in the prior year, primarily due to one-time costs of $15.5 million incurred towards the acquisition of Renesas' timing business, partially offset by lower accretion of acquisition consideration payable and earnouts by $1.1 million and $1.7 million respectively due to lower remaining amount payable.
+
+We expect to incur incremental costs in 2026 and beyond for the Acquisition which closed on July 1, 2026, as well as arising from changes in the fair value of the sales-based earnout liability.
+
+Interest Income
+
+Interest income consists primarily of interest income on short term investments.
+
+Three Months Ended
+
+June 30, Change Six Months Ended
+
+June 30, Change
+
+2026 2025 $ % 2026 2025 $ %
+
+(in thousands except percentage) (in thousands except percentage)
+
+Interest Income $ 12,545 $ 4,263 $ 8,282 194 % $ 19,854 $ 8,557 $ 11,297 132 %
+
+Interest income increased by $8.3 million or 194% for the three months ended June 30, 2026, compared to the same period in the prior year due to an increase in average investment balance during the period, through funds raised in the convertible note offering in May 2026.
+
+Interest income increased by $11.3 million or 132% for the six months ended June 30, 2026, compared to the same period in the prior year due to an increase in the average investment balance during the period.
+
+Interest Expense
+
+Interest expense consists primarily of amortization of financing costs incurred.
+
+Three Months Ended
+
+June 30, Change Six Months Ended
+
+June 30, Change
+
+2026 2025 $ % 2026 2025 $ %
+
+(in thousands except percentage) (in thousands except percentage)
+
+Interest Expense $ (2,247) $ — $ (2,247) 100 % $ (2,247) $ — $ (2,247) 100 %
+
+Interest expense increased by $2.2 million for the three and six months ended June 30, 2026, compared to the same period in the prior year primarily due to the financing costs incurred towards the bridge loan facility established for the Acquisition as well as financing costs related to the issuance of the Company's convertible senior notes. The bridge loan facility closed upon the issuance of the convertible senior notes.
+
+27
+
+Table of Contents
+
+Other (Expense) Income, net
+
+Other (expense) income, net consists primarily of foreign exchange gains and losses.
+
+Three Months Ended
+
+June 30, Change Six Months Ended
+
+June 30, Change
+
+2026 2025 $ % 2026 2025 $ %
+
+(in thousands except percentage) (in thousands except percentage)
+
+Other (expense) income, net $ (317) $ 204 $ (521) (255 %) $ (492) $ 210 $ (702) (334 %)
+
+Other (expense) income, net, decreased by $0.5 million for the three months ended June 30, 2026, compared to the same period in the prior year primarily due to net unrealized losses on foreign exchange rates from activities in our foreign subsidiaries resulting from exchange rate fluctuations.
+
+Other income (expense), net, decreased by $0.7 million for the six months ended June 30, 2026, compared to the same periods in the prior year primarily due to net unrealized losses on foreign exchange rates from activities in our foreign subsidiaries resulting from exchange rate fluctuations.
+
+Income Tax Expense
+
+Income tax expense consists primarily of state income taxes and income taxes in certain foreign jurisdictions in which we conduct business. We have a full valuation allowance for deferred tax assets as the realization of the full amount of our deferred tax asset is uncertain, including net operating loss ("NOL") carryforwards, and tax credits related primarily to research and development. We expect to maintain this full valuation allowance until realization of the deferred tax assets becomes more likely than not.
+
+Three Months Ended
+
+June 30, Change Six Months Ended
+
+June 30, Change
+
+2026 2025 $ % 2026 2025 $ %
+
+(in thousands except percentage) (in thousands except percentage)
+
+Income tax expense $ (40) $ (35) $ (5) 14 % $ (53) $ (102) $ 49 (48 %)
+
+Liquidity and Capital Resources
+
+As of June 30, 2026 and December 31, 2025, we had cash and cash equivalents of $1,921.1 million and $16.8 million, respectively. From the available cash and cash equivalents as of June 30, 2026, we made a payment of approximately $1,500 million on July 1, 2026, for the Acquisition. Additionally, as of December 31, 2025, we also held $791.6 million of short-term investments in held-to-maturity securities that consisted of treasury bills. Our principal use of cash is to fund our operations, to support growth through capital investments, and to acquire complementary businesses, products, services or technologies in the future.
+
+In February 2024, we entered into a Sales Agreement with Stifel, under which we may offer and sell from time to time at our sole discretion, up to an aggregate of 1,200,000 shares of our common stock, par value $0.0001 per share, through Stifel as our sales agent. We used the net proceeds from the shares of common stock offered and sold to replenish funds expended to satisfy anticipated tax withholding and remittance obligations related to the net settlement upon vesting of restricted stock unit awards (“RSU”) granted to employees under the equity incentive plans. During the three and six months ended June 30, 2026, we did not sell any shares of its common stock through Stifel under the Sales Agreement.
+
+In May 2026, the Company issued $1,350.0 million aggregate principal amount of 0% Convertible Senior Notes due 2031, which was used to fund a portion of the consideration for the acquisition of the Timing business from Renesas. Also, on June 30, 2026, the Company established a $200.0 million revolving credit facility which was undrawn as of June 30, 2026.
+
+Our purchase obligations primarily include non-cancelable purchase commitments from agreements with our contract manufacturers as well as a multi-year purchase agreement with commitment to purchase minimum quantities of MEMS wafers and research and development, tooling and sample cost under the agreement, and design and simulation licenses.
+
+28
+
+Table of Contents
+
+For information about our contractual obligations refer to "Note 6 - Leases" and "Note 10 - Commitments and Contingencies" of the Notes to Condensed Consolidated Financial Statements for the period ended June 30, 2026.
+
+We expect to continue our investing activities to support growth, primarily through the purchase of property and equipment, intellectual property licenses, and capitalized software, to support research and development, sales and marketing, product support, and administrative staff.
+
+We believe that our existing cash and cash equivalents and our short-term investments will be sufficient to meet our cash needs for at least the next 12 months, including our cash commitments for the acquisition of the Timing business from Renesas. Over the longer term, our future capital requirements will depend on many factors, including our growth rate, the timing and extent of our sales and marketing and research and development expenditures, costs to acquire or invest in complementary businesses and technologies, payment obligations associated with our completed acquisitions based on achievement of certain milestones, and the continuing market acceptance of our solutions.
+
+In the event that we need to borrow funds or issue additional equity, we cannot provide any assurance that any such additional financing will be available on terms acceptable to us, if at all. If we are unable to raise additional capital when we need it, it would harm our business, results of operations and financial condition.
+
+The table below summarizes our cash flows for the periods indicated:
+
+Six Months Ended June 30,
+
+2026 2025
+
+(in thousands)
+
+Net cash provided by operating activities $ 70,958 $ 30,376
+
+Net cash provided by investing activities 737,413 (247,364)
+
+Net cash provided by financing activities 1,096,011 383,404
+
+Net increase in cash and cash equivalents $ 1,904,382 $ 166,416
+
+Operating Activities
+
+In the six months ended June 30, 2026, net cash provided by operating activities of $71.0 million was primarily due to a net income of $12.9 million and non-cash expenses of $100.5 million, offset by a change in operating assets and liabilities of $42.5 million. Non-cash expenses were mainly related to stock-based compensation expense, depreciation and amortization, amortization of financing costs, change in fair value of sales based earnout liability, inventory write-down and net change in unrealized interest on held to maturity investments. The changes in operating assets and liabilities resulted in cash generated primarily due to an increase in accounts payable and accrued expenses primarily due to timing of accrued payroll and related benefit payments, partially offset by an increase in our accounts receivables due to timing of shipments, an increase in inventories as we built our inventory levels, and an increase in prepaid expenses and other assets due to timing of payment to vendors.
+
+Investing Activities
+
+Our investing activities consist primarily of purchase and maturities of short-term investments as well as capital expenditures for property and equipment purchases. Our short-term investments were primarily in treasury bills to earn interest. Our capital expenditures for property and equipment have primarily been for general business purposes, including machinery and equipment, leasehold improvements, acquired software, computer equipment used internally, and production masks to manufacture our products.
+
+In the six months ended June 30, 2026, net cash provided by investing activities was $737.4 million. We generated proceeds of $897.4 million from maturities of the short-term investments in held-to-maturity securities. These proceeds were offset by payments of $133.6 million to purchase short-term investments in held-to-maturity securities and $26.4 million to purchase manufacturing equipment and intangibles to support the general business operations.
+
+Financing Activities
+
+Our financing activities primarily consisted of proceeds received from issuance of convertible notes, partially offset by payment of related financing costs, payments for capped call transactions, payments of withholding taxes on RSUs, and payment of earnouts. During the six months ended June 30, 2026, we did not sell any shares of our common stock through Stifel under the Sales Agreement. We collected proceeds of $1,350.0 million from the issuance of convertible notes, which was partially offset by payment of related financing costs of $37.6 million, payment for capped call transactions of $121.5 million, payment of tax withholdings on behalf of employees for net share settlement of $87.3 million, and earnouts of $7.6 million related to the Aura transaction.
+
+29
+
+Table of Contents
+
+Critical Accounting Estimates
+
+Our condensed consolidated financial statements have been prepared in accordance with GAAP. The preparation of these financial statements and accompanying disclosures requires us to make estimates and assumptions that affect the reported amounts of assets, liabilities, revenues and expenses, and related disclosures of contingent assets and liabilities in the consolidated financial statements and the accompanying notes. The Securities and Exchange Commission (the "SEC"), has defined a company’s critical accounting estimates as estimates that are most important to the portrayal of a company’s financial condition and results of operations, and which require a company to make its most difficult and subjective judgments, often as a result of the need to make estimates of matters that are inherently uncertain. Based on this definition, we have identified our most critical accounting estimates to be as follows: (1) revenue recognition (2) business combinations, and (3) inventory. Although we believe that our estimates, assumptions, and judgments are reasonable, they are based upon information not presently available. Actual results may differ significantly from these estimates if the assumptions, judgments, and conditions upon which they are based turn out to be inaccurate. Management believes that there have been no significant changes to the items that we disclosed as our critical accounting estimates in Management’s Discussion and Analysis of Financial Condition and Results of Operations, in our Annual Report on Form 10-K for the year ended December 31, 2025, filed with the SEC on February 11, 2026.

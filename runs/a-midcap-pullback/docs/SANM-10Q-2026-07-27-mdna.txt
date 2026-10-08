@@ -1,0 +1,281 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+This quarterly report on Form 10-Q contains forward-looking statements within the meaning of Section 27A of the Securities Act of 1933 (the “Securities Act”) and Section 21E of the Securities Exchange Act of 1934 as amended (the “Exchange Act”). These statements relate to our expectations for future events and time periods. All statements other than statements of historical fact are statements that could be deemed to be forward-looking statements, including any statements regarding trends in future revenue or results of operations, gross margin, operating margin, expenses, earnings or losses from operations, or cash flow; plans, strategies and objectives of management for future operations and the anticipated benefits of such plans, strategies and objectives; future economic conditions or performance; any statements regarding litigation or pending investigations, claims or disputes; future cash outlays for, and benefits of acquisitions and other strategic transactions, including our Indian joint venture and acquisition of ZT Group Int’l, Inc. (“ZT Systems”); expected restructuring costs and benefits; the adequacy of our current liquidity and the availability of additional sources of liquidity; the potential impact of any future pandemics on our business, results of operations and financial condition; the potential impact of supply chain shortages and inflation on our business; the future impact of tariffs, export controls and evolving trade policies on our business; future tax rates and tax policies and our expectations concerning developments in the audit by the Internal Revenue Service (“IRS”) of certain tax returns filed by us, including the potential impact of the IRS revenue agent’s report received by us in November 2023; the expected impact of accounting pronouncements not yet adopted; future repurchases of our common stock; our expectations or beliefs; and assumptions underlying any of the foregoing. Generally, the words “anticipate,” “believe,” “plan,” “expect,” “future,” “intend,” “may,” “will,” “should,” “estimate,” “predict,” “potential,” “continue” and similar expressions identify forward-looking statements. Our forward-looking statements are based on current expectations, forecasts and assumptions and are subject to risks and uncertainties, including those contained in Part II, Item 1A of this report. As a result, actual results could vary materially from those suggested by the forward-looking statements. We undertake no obligation to publicly disclose any revisions to these forward-looking statements to reflect events or circumstances occurring subsequent to filing this report with the Securities and Exchange Commission (the “SEC”). Investors and others should note that Sanmina announces material financial information to our investors using our investor relations website (http://ir.sanmina.com/investor-relations/overview/default.aspx), SEC filings, press releases, public conference calls and webcasts. We use these channels to communicate with our investors and the public about Sanmina, its products and services and other issues. It is possible that the information we post on our investor relations website could be deemed to be material information. Therefore, we encourage investors, the media, and others interested in Sanmina to review the information we post on our investor relations website. The contents of our investor relations website are not incorporated by reference into this quarterly report on Form 10-Q or in any other report or document we file with the SEC.
+
+Sanmina Corporation and its subsidiaries (“Sanmina”, the “Company”, “we” or “us”) operate on a 52- or 53-week year ending on the Saturday nearest September 30. Fiscal 2025 was a 52-week year and fiscal 2026 will be a 53-week year, with the extra week in the fourth fiscal quarter. All references to years relate to fiscal years unless otherwise noted.
+
+Overview
+
+We are a leading global provider of integrated manufacturing solutions, components, products and repair, warranty service, logistics and after-market services. Our revenue is generated from sales of our products and services primarily to original equipment manufacturers (“OEMs”) that serve the industrial and energy, medical, defense and aerospace, automotive and transportation, communications networks and cloud and artificial intelligence (“AI”) infrastructure industries.
+
+Our operations are managed as two businesses:
+
+1.Integrated Manufacturing Solutions (“IMS”). IMS is a single operating segment consisting of printed circuit board assembly and test, high-level assembly and test, direct-order-fulfillment and warranty services.
+
+2.Components, Products and Services (“CPS”). Components include advanced PCBs, backplanes and backplane assemblies, cable assemblies, fabricated metal parts, precision machined parts, and plastic injected molded parts. Products include optical, radio frequency and microelectronic design and manufacturing services from the Company’s Advanced Microsystems Technologies division; multi-chip package memory solutions from the Company’s Viking Technology division; high-performance storage platforms for hyperscale and enterprise solutions from the Company’s Viking Enterprise Solutions division; defense and aerospace products, design, manufacturing, repair and refurbishment services from the Company’s SCI Technology, Inc. (“SCI”) subsidiary; and cloud-based smart manufacturing execution software from the Company’s 42Q division. Services include design, engineering, and logistics and repair.
+
+Our only reportable segment for financial reporting purposes is IMS, which represented approximately 90% of our total revenue for the nine months ended June 27, 2026. Our CPS business consists of multiple operating segments which do not
+
+29
+
+individually meet the quantitative thresholds for being presented as reportable segments. Therefore, financial information for these operating segments is combined and presented in a single category entitled “CPS”.
+
+Sales to our ten largest customers represent 67% of net sales. Net sales from these customers are derived from multiple segments. One customer represented 10% or more of our net sales for the three months ended June 27, 2026 and two customers represented 10% or more of our net sales for the nine months ended June 27, 2026. No customer represented 10% or more of our net sales for the three and nine months ended June 28, 2025.
+
+One customer represented 10% or more of our gross accounts receivable as of June 27, 2026. Two customers represented 10% or more of our gross accounts receivable as of September 27, 2025.
+
+Acquisition of ZT Systems
+
+On October 27, 2025 (the “Closing Date”), we completed the acquisition of ZT Systems (“ZT Acquisition”) for a purchase consideration of $1.62 billion, consisting of cash of $1.356 billion, net of $295 million cash acquired, and 1,151,052 shares of our common stock valued at $155 million, which we released out of treasury stock. The seller is also entitled to up to $450 million in contingent cash consideration upon the achievement of certain gross profit and revenue metrics during the three-year period following the Closing Date. Additionally, we recognized $183 million fair value of contingent cash consideration liability as of June 27, 2026. As part of the ZT Acquisition, AMD has entered into a strategic relationship with us as a U.S.-based new product introduction (“NPI”) manufacturing partner of choice to accelerate quality and time-to-deployment of AMD AI rack and cluster-scale systems for cloud customers.
+
+During the quarter ended June 27, 2026, we finalized our working capital calculation with the seller. This resulted in a $243 million reduction to the total purchase consideration paid to the seller and a corresponding $243 million decrease in goodwill. See Note 13, “Business Combination” of the notes to the Condensed Consolidated Financial Statements contained in this report for details.
+
+Trends and Uncertainties
+
+We believe our end-to-end manufacturing solutions combined with our global supply chain management expertise differentiate us from our competitors and enable us to better serve the needs of OEM customers. However, our business faces many challenges. For example, we compete with a number of companies in each of our key end markets. This includes companies that are much larger than we are and smaller companies that focus on a particular niche product, service or end market. Although we believe we are well-positioned in each of our key end markets and offer many advantages compared to our competitors, profitably growing revenues are often constrained by intense competition. Additionally, we are impacted by macroeconomic challenges such as tariffs, inflation, supply chain constraints including component shortages or price increases, foreign currency fluctuations, high interest rates, market volatility and recession concerns that have been and could be in the future exacerbated by geopolitical environment such as the conflict in the Middle East and related supply disruptions, tensions between the U.S. and other nations and the war in Ukraine. Further, uncertainties around U.S. tariffs, retaliatory tariffs from other countries, and import/export restrictions may impact customer decisions to use our services in certain manufacturing locations and increase the complexity and cost of our supply chain. Although our customers are generally liable for tariffs and price increases we pay for components and finished products, our gross margins could be impacted if we are unable to fully recover these costs. The timing of tariff or component price increase recoveries from customers could adversely affect our operating cash flow in a given period.
+
+Despite these challenges, we remain focused on improving our operations, building flexibility and efficiencies in our processes and adjusting our business models to changing circumstances. We intend to continue diversifying into mission critical markets and creating a portfolio of more complex, higher technology products with longer product life cycles. As our end markets evolve and grow, our ability to optimize our product and portfolio mix towards higher value opportunities will continue to be an important driver for our business going forward.
+
+Critical Accounting Policies and Estimates
+
+Management’s discussion and analysis of our financial condition and results of operations are based upon our condensed consolidated financial statements, which have been prepared in accordance with accounting principles generally accepted in the United States (“GAAP”). We review the accounting policies used in reporting our financial results on a regular basis. The preparation of these financial statements requires us to make estimates and judgments that affect the reported amounts of assets, liabilities, net sales and expenses and related disclosure of contingent liabilities. On an ongoing basis, we evaluate the process used to develop estimates related to accounts receivable, inventories, income taxes, environmental matters, litigation and other contingencies, as well as estimates related to costs expected to be incurred to satisfy performance
+
+30
+
+obligations under long-term contracts and variable consideration related to such contracts. We base our estimates on historical experience and on various other assumptions that we believe are reasonable for making judgments about the carrying value of assets and liabilities that are not readily apparent from other sources. Our actual results may differ materially from these estimates.
+
+Business Combinations. Accounting for a business combination requires us to estimate the fair value at the acquisition date, of consideration paid, contractual obligations, contingent consideration and the individual assets acquired and liabilities assumed, which involves a number of judgments, assumptions and estimates that could materially affect the amount and timing of costs recognized in subsequent periods. Contingent consideration is recorded at fair value as of the acquisition date with subsequent adjustments recorded to earnings. Significant judgment along with estimates and assumptions are involved in deriving the fair value of the contingent consideration. We may engage third parties to determine fair value for certain assets such as property, plant and equipment and intangible assets, including assistance with estimating future cash flows, discount rates and comparable market values. Any excess of purchase price consideration over the fair value of assets acquired and liabilities assumed is recognized as goodwill and if less than the fair value of assets acquired and liabilities assumed, a gain on bargain purchase is recognized. Determining the useful life of an intangible asset also requires judgment as different types of intangible assets possess varying useful lives, and some may be deemed to have an indefinite useful life. We expense acquisition, integration and others charges as they are incurred, with these costs primarily consisting of advisory, legal, accounting, and other professional and consulting fees, as well as fair value adjustments to contingent consideration.
+
+We believe that our preliminary estimates and assumptions related to the fair value of acquired intangible assets are reasonable, but significant judgment is involved. As a result, during the measurement period, which will not exceed one year from the acquisition date, we may record adjustments to the assets acquired and liabilities assumed with the corresponding offset to goodwill.
+
+A complete description of our critical accounting policies and estimates is contained in our Annual Report on Form 10-K for the fiscal year ended September 27, 2025 filed with the SEC on November 13, 2025.
+
+Results of Operations
+
+During the first quarter of 2026, we completed the ZT Acquisition, and the results of this acquisition are included within the IMS segment.
+
+Key Operating Results
+
+Three Months Ended Nine Months Ended
+
+June 27,
+
+2026 June 28,
+
+2025 June 27,
+
+2026 June 28,
+
+2025
+
+(In thousands)
+
+Net sales $ 3,464,016 $ 2,041,562 $ 10,666,980 $ 6,031,990
+
+Gross profit $ 363,305 $ 181,050 $ 959,458 $ 525,200
+
+Operating income $ 221,225 $ 95,877 $ 451,831 $ 276,103
+
+Net income attributable to common shareholders $ 117,129 $ 68,616 $ 260,061 $ 197,827
+
+Net Sales
+
+Sales by end market were as follows:
+
+Three Months Ended Nine Months Ended
+
+June 27,
+
+2026 June 28,
+
+2025 Increase/(Decrease) June 27,
+
+2026 June 28,
+
+2025 Increase/(Decrease)
+
+(Dollars in thousands)
+
+Industrial and Energy, Medical, Defense and Aerospace, and Automotive and Transportation $ 1,315,603 $ 1,255,297 $ 60,306 4.8 % $ 3,783,853 $ 3,775,853 $ 8,000 0.2 %
+
+Communications Networks and Cloud and AI Infrastructure 2,148,413 786,265 1,362,148 173.2 % 6,883,127 2,256,137 4,626,990 205.1 %
+
+Total $ 3,464,016 $ 2,041,562 $ 1,422,454 69.7 % $ 10,666,980 $ 6,031,990 $ 4,634,990 76.8 %
+
+Net sales increased 70% in the three months ended June 27, 2026 compared to the three months ended June 28, 2025, and 76.8% in the nine months ended June 27, 2026 compared to the nine months ended June 28, 2025, primarily in the cloud
+
+31
+
+infrastructure end market, driven by the ZT Acquisition, new program wins and program ramp-ups in our communications networks end market.
+
+Gross Margin
+
+Gross margin increased to 10.5% from 8.9% for the three months ended June 27, 2026 and June 28, 2025. Gross margin increased to 9.0% from 8.7% for the nine months ended June 27, 2026 and June 28, 2025. IMS gross margin increased to 10.2% from 7.5% for the three months ended June 27, 2026 and June 28, 2025. IMS gross margin increased to 9.1% from 7.7% for the nine months ended June 27, 2026 and June 28, 2025. The increase in gross margin is driven by the ZT Acquisition and product mix. CPS gross margin decreased to 12.8% from 14.7% for the three months ended June 27, 2026 and June 28, 2025. CPS gross margin decreased to 12.4% from 13.7% for the nine months ended June 27, 2026 and June 28, 2025. The decrease in gross margin is primarily due to manufacturing inefficiencies.
+
+We have experienced fluctuations in gross margin in the past and may continue to do so in the future. Fluctuations in our gross margins may also be caused by a number of other factors, including:
+
+•the impact of supply chain constraints on our operations, the operations of our suppliers and on our customers’ businesses;
+
+•capacity utilization, which, if lower, results in lower margins due to fixed costs being absorbed by lower volumes;
+
+•changes in the mix of high and low margin products demanded by our customers;
+
+•competition and pricing pressures from OEMs due to greater focus on cost reduction;
+
+•the amount of our provisions for excess and obsolete inventory, including those associated with distressed customers;
+
+•levels of operational efficiency and production yields;
+
+•our performance on long-term contracts, including our ability to recover claims for cost overruns; and
+
+•our ability to transition the location of and ramp manufacturing and assembly operations when requested by a customer in a timely and cost-effective manner.
+
+Selling, General and Administrative
+
+Selling, general and administrative expenses for the three months ended June 27, 2026 and June 28, 2025 were $109 million and $70 million, respectively. As a percentage of net sales, selling, general and administrative expenses were 3.2% and 3.4% for the three months ended June 27, 2026 and June 28, 2025, respectively. Selling, general and administrative expenses for the nine months ended June 27, 2026 and June 28, 2025 were $338 million and $217 million, respectively. As a percentage of net sales, selling, general and administrative expenses were 3.2% and 3.6% for the nine months ended June 27, 2026 and June 28, 2025, respectively. The increases in absolute dollars were primarily due to the ZT Acquisition and professional fees.
+
+Research and Development
+
+Research and development expenses were $8 million and $8 million for the three months ended June 27, 2026 and June 28, 2025, respectively. As a percentage of net sales, research and development expenses were 0.2% and 0.4% for three months ended June 27, 2026 and June 28, 2025, respectively. Research and development expenses were $25 million and $22 million for nine months ended June 27, 2026 and June 28, 2025, respectively. As a percentage of net sales, research and development expenses were 0.2% and 0.4% for nine months ended June 27, 2026 and June 28, 2025, respectively. Research and development expenses remained consistent for both reporting periods.
+
+32
+
+Acquisition, Integration and Others
+
+Acquisition, integration and others were $21 million and $137 million for the three and nine months ended June 27, 2026 respectively, and were related to the ZT Acquisition. Acquisition, integration and others for the three months ended June 27, 2026 primarily consist of a fair value adjustment of $13 million for contingent consideration and acquisition, integration and others for the nine months ended June 27, 2026 primarily consists of a fair value adjustment of $72 million for contingent consideration and professional service fees of $53 million.
+
+Acquisition, integration and others were $7 million for the three and nine months ended June 28, 2025 and were related to the ZT Acquisition.
+
+Interest Income
+
+Interest income was $10 million and $4 million for the three months ended June 27, 2026 and June 28, 2025, respectively and $26 million and $11 million for the nine months ended June 27, 2026 and June 28, 2025, respectively. The increase in interest income for both periods is primarily due to higher cash balances compared to the same periods in fiscal 2025.
+
+Interest Expense
+
+Interest expense was $32 million and $5 million for the three months ended June 27, 2026 and June 28, 2025, respectively and $89 million and $15 million for the nine months ended June 27, 2026 and June 28, 2025, respectively. The increase in interest expense for both periods is primarily due to interest incurred on the new term loans with higher aggregate borrowing amount of $2.2 billion compared to $0.3 billion for the three and nine months ended June 28, 2025.
+
+Provision for Income Taxes
+
+Provision for income taxes for the three months ended June 27, 2026 and June 28, 2025 was $66 million (35% of income before taxes) and $19 million (20% of income before taxes), respectively. Provision for income taxes for the nine months ended June 27, 2026 and June 28, 2025 was $110 million (29% of income before taxes) and $52 million (19% of income before taxes), respectively. The effective tax rates were higher for the three and nine months ended June 27, 2026 primarily due to non-deductible acquisition related charges and the closure and settlement of the fiscal 2008 through 2010 IRS audit.
+
+Liquidity and Capital Resources
+
+Nine Months Ended
+
+June 27,
+
+2026 June 28,
+
+2025
+
+(In thousands)
+
+Net cash provided by (used in):
+
+Operating activities $ 701,977 $ 421,578
+
+Investing activities (1,349,638) (45,563)
+
+Financing activities 1,569,938 (165,616)
+
+Effect of exchange rate changes (1,278) 1,461
+
+Increase (decrease) in cash, cash equivalents and restricted cash equivalents $ 920,999 $ 211,860
+
+Key Working Capital Management Measures
+
+Management regularly reviews financial and non-financial performance indicators to assess our operating results. Our working capital requirements are dependent on the effective management of our sales cycle, as well as timing of payments. We
+
+33
+
+believe the metrics set forth below are useful to investors in measuring our liquidity, as future liquidity needs will depend on fluctuations in levels of inventory, contract assets, customer inventory advances, accounts receivable and accounts payable.
+
+As of
+
+June 27,
+
+2026 September 27,
+
+2025
+
+Days in accounts receivable (1) 52 60
+
+Contract asset days (2) 14 18
+
+Days in inventory (3) 91 94
+
+Days in accounts payable (4) 71 75
+
+Customer inventory advances days (5) 27 40
+
+Cash cycle days (6) 58 57
+
+Net inventory turns (7) 6 7
+
+(1) Days in accounts receivable (a measure of how quickly we collect our accounts receivable), or “DSO”, is calculated as accounts receivable, net, at the end of the current quarter divided by net sales for the quarter multiplied by 90 days.
+
+(2) Contract asset days (a measure of how quickly we transfer contract assets to accounts receivable) is calculated as contract assets at the end of the current quarter divided by net sales for the quarter multiplied by 90 days.
+
+(3) Days in inventory (a measure of how quickly we turn inventory into sales) is calculated as inventory at the end of the current quarter divided by cost of sales for the quarter multiplied by 90 days.
+
+(4) Accounts payable days (a measure of how quickly we pay our suppliers), or “DPO”, is calculated as accounts payable at the end of the current quarter divided by cost of sales for the quarter multiplied by 90 days.
+
+(5) Customer inventory advances days (a measure of how long customer deposits for inventory are held) is calculated as customer inventory advances at the end of the current quarter divided by cost of sales for the quarter multiplied by 90 days.
+
+(6) Cash cycle days is calculated as the sum of days in accounts receivable, contract asset days and days in inventory, minus the sum of accounts payable days and customer inventory advances days.
+
+(7) Net inventory turns (annualized) is calculated as 360 days divided by the days in inventory minus customer inventory advances days.
+
+Cash and cash equivalents were $1.8 billion as of June 27, 2026 and $926 million as of September 27, 2025. Restricted cash and cash equivalents as of June 27, 2026 were $42 million. Our cash levels vary during any given quarter depending on the timing of collections from customers and payments to suppliers, borrowings under our credit facilities, sales of accounts receivable under numerous programs we utilize, repurchases of common stock and other factors. Our working capital was $3.4 billion and $2.0 billion as of June 27, 2026 and September 27, 2025, respectively.
+
+Net cash provided by operating activities was $702 million for the nine months ended June 27, 2026. Our working capital metrics tend to fluctuate from quarter to quarter based on factors such as the linearity of our shipments to customers and purchases from suppliers, customer and supplier mix, the extent to which we factor customer receivables and the negotiation of payment terms with customers and suppliers. These fluctuations can significantly affect our cash flows from operating activities.
+
+During the nine months ended June 27, 2026, we generated $658 million of cash from earnings, excluding non-cash items, and $44 million of cash primarily due to decrease in accounts receivable, deferred revenue and customer advances, and accrued liabilities and other, offset by increase in prepaid expenses and other assets. The decrease in accounts receivable, deferred revenue and customer advances, and accrued liabilities was due to timing of customer payments and settlements. The increase in prepaid expenses and other assets was due primarily to increase in income tax receivables and advance deposits made in the ordinary course of business, partially offset by amortization of the existing prepayments.
+
+34
+
+Net cash used in investing activities was $1.3 billion for the nine months ended June 27, 2026. During the nine months ended June 27, 2026, we used $1.1 billion for the ZT Acquisition, used $244 million of cash for capital expenditures and received $9 million from the sale of certain equity investments.
+
+Net cash provided by financing activities was $1.6 billion for the nine months ended June 27, 2026. During the nine months ended June 27, 2026, we borrowed $2.2 billion for the ZT Acquisition and incurred $29 million of debt issuance costs, used $239 million of cash to repurchase common stock, withheld $60 million payments to tax authorities for stock-based compensation activity and repaid $302 million of borrowings.
+
+New Credit Facility
+
+As of June 27, 2026, there were $2.2 billion loans outstanding under the New Credit Facility. Additionally, $12 million in letters of credit were outstanding. Under the New Credit Facility, we have $600 million available to borrow under Term Loan A and $1.5 billion available to borrow under the revolving credit facility.
+
+The New Credit Facility requires us to comply with certain financial covenants, namely (i) a minimum consolidated cash interest coverage ratio of not less than 3.00 to 1.00 and (ii) a maximum consolidated total net leverage ratio of not greater than 4.00 to 1.00, in each case, measured at the end of each fiscal quarter on the basis of a trailing 12-month look-back period. In addition, the New Credit Facility requires us to comply with customary affirmative and negative covenants which limit our ability and the ability of our subsidiaries to, among other things, incur debt, grant liens, make investments, make certain restricted payments, prepay subordinated indebtedness and sell assets, subject to certain exceptions and baskets. The New Credit Facility also includes covenants that require us to file quarterly and annual financial statements with the SEC on a timely basis. As of June 27, 2026, we were in compliance with all these covenants. See Note 5, “Debt” of the notes to the Condensed Consolidated Financial Statements contained in this report for details.
+
+Other Liquidity Matters
+
+During the nine months ended June 27, 2026, we repurchased 1.6 million shares of our common stock for $239 million under stock repurchase programs authorized by our Board of Directors. During the three months ended June 27, 2026, our Board of Directors authorized the repurchase of up to $600 million of our common stock in the open market or in negotiated private transactions. These programs have no expiration dates and the timing of repurchases will depend upon capital needs to support the growth of our business, market conditions and other factors. Although stock repurchases are intended to increase stockholder value, they also reduce our liquidity. As of June 27, 2026, an aggregate of $600 million remained available under these programs.
+
+We are party to a Receivables Purchase Agreement, as amended (the “RPA”), with certain third-party banking institutions for the sale of trade receivables generated from sales to certain customers. The amount available under the RPA is uncommitted and, as such, is available at the discretion of our third-party banking institutions. Under the New Credit Facility, the percentage of our total trade receivables that can be sold and outstanding at any time is 50%. Therefore, as of June 27, 2026, a maximum of $1.1 billion of sold receivables could be outstanding at any point in time under this program, as amended, as required by our Credit Agreement. Trade receivables sold pursuant to the RPA are serviced by us.
+
+In addition to the RPA, we participate in trade receivables sales programs that have been implemented by certain of our customers, as in effect from time to time. We do not service trade receivables sold under these other programs. The sale of receivables under all of these programs is subject to the approval of the banks or customers involved and there can be no assurance that we will be able to sell the maximum amount of receivables permitted by these programs when desired. See Note 7, “Accounts Receivable Sale Program” of the notes to the Condensed Consolidated Financial Statements contained in this report for details.
+
+We enter into forward interest rate swap agreements with independent counterparties to partially hedge the variability in cash flows due to changes in the Secured Overnight Financing Rate benchmark interest rate associated with anticipated variable rate borrowings. In addition, we enter into a total return swap contract to manage the equity market risks associated with our deferred compensation plan liabilities. See Note 4, “Financial Instruments” of the notes to the Condensed Consolidated Financial Statements contained in this report for details.
+
+In the ordinary course of business, we are or may become party to legal proceedings, claims and other contingencies, including environmental, regulatory, warranty and employee matters and examinations by government agencies. As of June 27, 2026, we had accrued liabilities of $48 million related to such matters. Additionally, we recognized a $183 million contingent cash consideration liability arising from the ZT Systems acquisition which is classified as other long-term liabilities in the
+
+35
+
+condensed consolidated balance sheets. The estimated range of undiscounted payment in respect of the contingent consideration ranges from no payout to $450 million. We cannot accurately predict the outcome of these matters or the amount or timing of cash flows that may be required to defend ourselves or to settle such matters or that these reserves will be sufficient to fully satisfy our contingent liabilities.
+
+As of June 27, 2026, we had a liability of $45 million for uncertain tax positions. Our estimate of liabilities for uncertain tax positions is based on a number of subjective assessments, including the likelihood of a tax obligation being assessed, the amount of taxes (including interest and penalties) that would ultimately be payable, and our ability to settle any such obligations on favorable terms. Therefore, the amount of future cash flows associated with uncertain tax positions may be significantly higher or lower than our recorded liability and we are unable to reliably estimate when cash settlement may occur.
+
+Our liquidity is largely dependent on changes in our working capital, including sales of accounts receivable under our receivables sales programs and the extension of trade credit by our suppliers, investments in manufacturing inventory, facilities and equipment, repayments of obligations under outstanding indebtedness and repurchases of common stock.
+
+We generated $702 million of cash from operations for the nine months ended June 27, 2026. Our primary sources of liquidity as of June 27, 2026 consisted of (1) cash and cash equivalents of $1.8 billion (an aggregate of $248 million of our cash is held by Sanmina SCI India Private Limited (“SIPL”) and Sanmina SCI Technology India Private Limited, our existing Indian manufacturing entities, which is designated to fund their operations); (2) our New Credit Facility, under which $1.5 billion, net of outstanding borrowings and letters of credit, and $600 million of the Term Loan A were available; (3) our foreign short-term borrowing facilities of $71 million, all of which was available; (4) proceeds from the sale of accounts receivable under our receivables sales programs and (5) cash generated from operations.
+
+We believe our existing cash resources and other sources of liquidity, together with cash generated from operations, will be sufficient to meet our working capital requirements through at least the next twelve months. However, should demand for our services decrease significantly over the next twelve months, should we be unable to recover on inventory obligations owed to us by our customers or should we experience significant increases in delinquent or uncollectible accounts receivable for any reason, our cash provided by operations could decrease significantly and we could be required to seek additional sources of liquidity to continue our operations at their current level.
+
+We invest our cash among a number of financial institutions that we believe to be of high quality. However, there can be no assurance that one or more of such institutions will not become insolvent in the future, in which case all or a portion of our uninsured funds on deposit with such institutions could be lost.
+
+As of June 27, 2026, 67% of our cash balance was held in the United States. Should we choose or need to remit cash to the United States from our foreign locations, we may incur tax obligations which would reduce the amount of cash ultimately available to the United States. We believe that cash held in the United States, together with liquidity available under our Credit Agreement and cash from foreign subsidiaries that could be remitted to the United States without tax consequences, will be sufficient to meet our United States liquidity needs for at least the next twelve months.
+
+Information regarding our contractual obligations was provided in Item 7, “Management’s Discussion and Analysis of Financial Condition and Results of Operations” contained in our Annual Report on Form 10-K for the fiscal year ended September 27, 2025. There were no material changes in our contractual obligations as of June 27, 2026.
+
+Off-Balance Sheet Arrangements
+
+As of June 27, 2026, we did not have any off-balance sheet arrangements that have or are reasonably likely to have a current or future effect on our financial condition, changes in our financial condition, revenues, or expenses, results of operations, liquidity, capital expenditures, or capital resources that are material to investors.
+
+36

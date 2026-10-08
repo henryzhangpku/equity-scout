@@ -1,0 +1,607 @@
+Item 2.Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+This Interim Report on Form 10-Q includes certain“forward-looking”statements within the meaning of the Private Securities Litigation Reform Act of 1995 regarding future events and the potential future results of Starbucks Corporation (together with its subsidiaries) that are based on our current expectations, estimates, forecasts, and projections about, among other things, our business, our results of operations, the industry in which we operate, our economic and market outlook, and the beliefs and assumptions of our management. Forward-looking statements can be identified by the fact that they do not relate strictly to historical or current facts. They often include words such as “believes,” “continues,” “expects,” “anticipates,” “forecasts,” “estimates,” “intends,” “plans,” “seeks,” or words of similar meaning, or future or conditional verbs, such as “will,” “should,” “could,” “would,” “may,” “aims,” “intends,” or “projects,” and similar expressions intended to identify forward-looking statements, although not all forward-looking statements contain these identifying words. By their nature, forward-looking statements involve risks, uncertainties, and other factors (many beyond our control) that could cause our actual results to differ materially from our historical experience or from our current expectations or projections. Our forward-looking statements, and the risks and uncertainties related thereto, include, but are not limited to, those described under the “Risk Factors” and “Management’s Discussion and Analysis of Financial Condition and Results of Operations” sections of our most recently filed 10-K and 10-Q and in other reports we file with the U.S. Securities and Exchange Commission (“SEC”), as well as, among others:
+
+• our ability to preserve, grow, and leverage our brands;
+
+• the impact of our brand marketing, promotional, advertising, and pricing strategies, platforms, reformulations, innovations, or customer experience initiatives or investments;
+
+• the costs and risks associated with, and the successful and timely execution and effects of, our existing and any future business opportunities, expansions, initiatives, strategies, investments, transformation efforts, and plans, including our “Back to Starbucks” strategy and our restructuring plans;
+
+• the costs and risks associated with, and the successful execution and effects of, strategic changes to our ownership and operating structure, including as a result of acquisitions, divestitures, other strategic transactions or entry into joint ventures, including our joint venture with respect to Starbucks retail operations in China;
+
+• our ability to align our investment efforts with our strategic goals;
+
+• evolving consumer preferences, demand, consumption, or spending behavior, reduction in discretionary spending and price increases, and our ability to anticipate or react to these changes;
+
+• the ability of our business partners, suppliers, and third-party providers to fulfill their responsibilities and commitments and our reliance on certain key business partners and suppliers;
+
+• the potential negative effects of food or beverage safety incidents or product recalls, including any perceived association of our products or brands with such incidents;
+
+• our ability to open new stores and efficiently maintain the attractiveness of our existing stores and manage related costs;
+
+• our heavy reliance on the financial performance of our North America operating segment and our dependence on the performance and growth of certain international markets;
+
+• our ability to operate and successfully expand our footprint in international markets, which is influenced by factors distinct from our North America operating segment;
+
+• inherent risks of operating a global business, including changing conditions in our markets; local factors affecting store openings; protectionist trade or foreign investment policies, including trade restrictions, tariffs, quotas, import/export regulations, customs restrictions, sanctions, countersanctions, and retaliatory measures; compliance with local laws and other regulations; and local labor policies and conditions, including labor strikes and work stoppages;
+
+• higher costs, lower quality, or unavailability of coffee, dairy, cocoa, energy, water, raw materials, packaging, or product ingredients and related volatility;
+
+• the ability of our supply chain to meet current or future business needs and our ability to scale and improve our forecasting, planning, production, and logistics management;
+
+• the potential impact on our supply chain and operations of adverse weather conditions, natural disasters, or significant increases in logistics costs;
+
+• a worsening in the terms and conditions upon which we engage with our manufacturers and source suppliers;
+
+• the impact of unfavorable macroeconomic conditions and other factors, including economic slowdowns or recessions, rising real estate costs, supply chain disruptions, climate change and extreme weather events, inflation and interest rate fluctuations, government shutdowns, labor unrest, geopolitical instability, disruptions in credit markets and foreign current exchange rate volatility;
+
+• failure to meet market expectations for our financial performance or any announced guidance and the impact thereof;
+
+• failure to attract or retain key executive or partner talent;
+
+• changes in the availability and cost of labor, including any union organizing efforts and our responses to such efforts;
+
+• the impact of, and our ability to respond to, substantial competition from new entrants, consolidations by competitors, and other competitive activities, such as pricing actions (including price reductions, promotions, discounting, couponing, or free goods); marketing; category expansion; product introductions; or entry or expansion in our geographic markets;
+
+36
+
+Table of Contents
+
+• evolving corporate governance and public disclosure regulations and expectations, including with respect to sustainability matters;
+
+• the potential impact of activist shareholder actions or tactics;
+
+• failure to comply with applicable laws and complex and changing legal and regulatory requirements, including those governing privacy, data protection, artificial intelligence, and other emerging technologies;
+
+• the impact or likelihood of significant legal disputes and proceedings or government investigations;
+
+• the unauthorized access, use, theft, or destruction of our data, or of our proprietary or confidential information, including as a result of increasingly sophisticated threats enabled or accelerated by artificial intelligence, and the impact thereof;
+
+• potential negative effects of, and our ability to respond to, a material failure, inadequacy, or interruption of our information technology systems or digital platforms, or those of our third-party business partners or service providers, or failure to comply with data protection laws; and
+
+• our ability to adequately protect our intellectual property or adequately ensure that we are not infringing the intellectual property of others.
+
+In addition, many of the foregoing risks and uncertainties are, or could be, exacerbated by any worsening of the global business and economic environment, and new risks periodically emerge. A forward-looking statement is neither a prediction nor a guarantee of future events or circumstances, and those future events or circumstances may not occur. Actual results could differ materially and adversely from those anticipated or implied in the forward-looking statements. You should not place undue reliance on the forward-looking statements, which speak only as of the date of this report. We are under no obligation to update or alter any forward-looking statements, whether as a result of new information, future events, or otherwise.
+
+This information should be read in conjunction with the unaudited consolidated financial statements and the notes included in Item 1 of Part I of this 10-Q, as well as the audited consolidated financial statements and notes, and Management’s Discussion and Analysis of Financial Condition and Results of Operations (“MD&A”), contained in the 10-K.
+
+37
+
+Table of Contents
+
+Introduction and Overview
+
+Starbucks is the premier roaster, marketer, and retailer of specialty coffee globally, with a presence in 90 markets worldwide. As of June 28, 2026, Starbucks had more than 41,000 company-operated and licensed stores, an increase of 1% from the prior year. Additionally, we sell a variety of consumer-packaged goods, primarily through the Global Coffee Alliance established with Nestlé and other partnerships and joint ventures.
+
+We have three reportable operating segments: 1) North America, which is inclusive of the U.S. and Canada; 2) International, which is inclusive of China, Japan, Asia Pacific, Europe, Middle East, Africa, Latin America, and the Caribbean; and 3) Channel Development. Unallocated corporate expenses are reported within Corporate and Other.
+
+We believe our financial results and long-term growth model will continue to be driven by new store openings, comparable store sales, and operating margin management, underpinned by disciplined capital allocation. The comparable store sales metric includes company-operated stores open 13 months or longer, and excludes the effects of foreign currency exchange rates. Stores that are temporarily closed for fewer than three weeks or operating at reduced hours remain in comparable store sales while permanent store closures are removed in the month following closure. We analyze comparable store sales on a constant currency basis as this helps identify underlying business trends without distortion from the effects of currency movements. Throughout this MD&A, we commonly discuss the following key operating metrics, which we believe are useful to investors because management uses these metrics to assess the growth of our business and the effectiveness of our marketing and operational strategies:
+
+•New store openings and store count
+
+•Comparable store sales
+
+•Operating margin
+
+Our fiscal year ends on the Sunday closest to September 30. Fiscal 2026 and 2025 include 52 weeks. All references to store counts, including data for new store openings, are reported net of store closures, unless otherwise noted.
+
+Starbucks results for the third quarter of fiscal 2026 showed continued progress and momentum on key “Back to Starbucks” initiatives, as demonstrated through continued global comparable store sales growth, consolidated operating margin expansion, and improved customer engagement. These initiatives included the Green Apron Service standard to improve operational consistency and the coffeehouse experience, engaging consumer marketing, disciplined menu innovation, a redesigned Starbucks Rewards program, and coffeehouse uplifts, all of which are intended to deliver greater connection, consistency, and value for customers. During the third quarter of fiscal 2026, consolidated net revenues decreased 1% to $9.3 billion compared to $9.5 billion in the third quarter of fiscal 2025, primarily due to the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026. The decline in consolidated revenues was offset by a 7.9% increase in global comparable store sales, driven by a 7.9% increase in the U.S. market. Also contributing to the offset was higher revenues from our international licensed store business. Specific to the U.S. market, the increase in comparable store sales was driven by a 4.2% increase in comparable transactions and a 3.6% increase in average ticket, primarily driven by higher delivery sales and strength in customer food attach and beverage modifications. Consolidated operating margin expanded 60 basis points from the prior year to 10.5%, primarily driven by sales leverage and lower inflation paired with tariff refunds, offset by higher restructuring costs and labor investments largely in support of “Back to Starbucks.”
+
+Divestiture of Starbucks Retail Operations in China
+
+In the first quarter of fiscal 2026, we announced that the Company entered into an agreement to form a joint venture with Boyu Capital to operate Starbucks retail in China (the “disposal group”), marking a significant milestone in the Company’s long-term strategy to unlock sustainable, disciplined growth in one of the Company’s critical growth markets.
+
+38
+
+Table of Contents
+
+In the third quarter of fiscal 2026, the transaction closed, and under the terms of the agreement, funds managed by Boyu Capital acquired a 60% stake in Starbucks China retail operations, while Starbucks retained a 40% ownership interest and continues to own and license the brand and intellectual property to the joint venture. The disposal group was deconsolidated from our financial statements and we transitioned from recording revenues and expenses of the disposal group to recording our share of income from the joint venture, recognized as income from equity investees under the equity method of accounting. We expect that the conversion to our licensed joint venture model will continue to drive lower revenues and higher operating margin for Starbucks, as compared to the historical, company-operated model.
+
+We used a portion of our transaction proceeds for debt reduction, strengthening our balance sheet and allowing us to execute our long-term growth strategy with greater financial flexibility. The joint venture is expected to reinvigorate sustainable growth in China through a focus on expansion, innovation and elevated customer experiences, with a shared long-term aspiration to grow to as many as 20,000 locations in China over time. By bringing together the trusted Starbucks brand, and Boyu Capital’s deep local expertise, we believe we will be able to serve more customers, enter more cities, strengthen profitability, and better compete in China’s dynamic and evolving market.
+
+Restructuring
+
+In support of our “Back to Starbucks” strategy, as part of the restructuring plan announced in the fourth quarter of fiscal 2025, we closed stores that did not demonstrate a viable path to profitability or meet our standards of delivering a warm, welcoming space for our customers and partners. Those store closures in North America were substantially completed in fiscal 2025, and the majority of those International store closures were completed in the first quarter of fiscal 2026.
+
+In the second quarter of fiscal 2026, management approved a restructuring plan to relocate certain functions of our support organization to an additional office in Nashville, Tennessee, further supporting the Company’s “Back to Starbucks” strategy and the intention to establish a more strategic presence in the Southeast region of the United States. Our new office in Nashville reflects three key advantages: proximity to key suppliers, access to a deep and growing talent pool in the region, notably in technology, and alignment with where we expect future coffeehouse growth.
+
+In the third quarter of fiscal 2026, we announced an additional fiscal 2026 restructuring plan focused on further transformation of our global support organization and non-retail facilities, as well as reducing the future operational complexity of our Starbucks Reserve and Roastery locations resulting in a reassessment and impairment of the associated asset group. Under the plan, the Company expects to capture cost savings through a more streamlined support structure, and a simplified operating model for Starbucks Reserve and Roastery locations.
+
+Strategic Initiatives
+
+As the fiscal year progresses, we will continue to refine and execute our “Back to Starbucks” initiatives to drive topline momentum and build sales leverage while investing in our cafes and customer experience, with a focus on delivering exceptional service with speed, providing seamless digital experiences, strengthening our supply chain, and enabling technological efficiencies. We will continue to amplify our brand, engaging with our customers authentically and distinctly as Starbucks, through broad-based marketing, menu innovation, and Starbucks Rewards engagement, with the goal of deepening customer connection, brand loyalty and affinity.
+
+As our international business shifts toward a more predominantly licensed model, we will continue evolving how we support our licensed business partners. We expect our international business to be a meaningful contributor to coffeehouse growth over time, supported by our licensed business model and significant opportunities for development in markets globally. We will apply continued discipline to how we grow our global footprint, with a focus on ensuring new coffeehouses meet our expectations for returns and long-term growth.
+
+We expect certain macroeconomic pressures to continue easing into the fourth quarter, including impacts on product and distribution costs from tariffs and elevated coffee pricing. While we believe we are making the right strategic investments to improve our operating foundations, our focus going forward will be on driving consistency at scale while balancing and maintaining a healthier cost structure. We will continue to test, learn, and refine our approach to deliver the best of Starbucks to drive durable, profitable, long-term growth.
+
+39
+
+Table of Contents
+
+Results of Operations (in millions)
+
+Revenues
+
+Quarter Ended Three Quarters Ended
+
+Jun 28,
+
+2026 Jun 29,
+
+2025 $
+
+Change
+%
+
+Change
+Jun 28,
+
+2026 Jun 29,
+
+2025
+$
+
+Change
+
+%
+
+Change
+
+Company-operated stores $ 7,506.1 $ 7,812.5 $ (306.4) (3.9) % $ 23,510.6 $ 22,882.9 $ 627.7 2.7 %
+
+Licensed stores 1,200.8 1,105.6 95.2 8.6 3,419.6 3,257.3 162.3 5.0
+
+Other 615.8 537.9 77.9 14.5 1,839.1 1,475.2 363.9 24.7
+
+Total net revenues $ 9,322.7 $ 9,456.0 $ (133.3) (1.4) % $ 28,769.3 $ 27,615.4 $ 1,153.9 4.2 %
+
+For the quarter ended June 28, 2026, compared with the quarter ended June 29, 2025
+
+Total net revenues for the third quarter of fiscal 2026 decreased $133 million, primarily due to lower revenues from company-operated stores ($306 million) partially offset by higher licensed stores ($95 million) and other revenues ($78 million).
+
+Company-operated stores revenue decreased $306 million, primarily driven by the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026 ($776 million) and unfavorable foreign currency impacts ($52 million). This was partially offset by a 7.9% increase in comparable store sales ($524 million) attributable to a 4.2% increase in comparable transactions and a 3.5% increase in average ticket.
+
+Licensed stores revenue increased $95 million, primarily driven by higher product sales to, and royalty revenues from, our existing licensees ($58 million) and our newly-formed China joint venture ($53 million) following the conversion of Starbucks retail operations in China to our licensed joint venture model, partially offset by lower equipment sales to licensees ($16 million).
+
+Other revenues increased $78 million, primarily due to an increase in revenue in the Global Coffee Alliance ($89 million).
+
+For the three quarters ended June 28, 2026, compared with the three quarters ended June 29, 2025
+
+Total net revenues for the first three quarters of fiscal 2026 increased $1.2 billion, primarily due to higher revenues from company-operated stores ($628 million), other revenues ($364 million), and licensed stores ($162 million).
+
+Company-operated stores revenue increased $628 million, primarily driven by a 5.9% increase in comparable store sales ($1.2 billion) attributable to a 3.6% increase in comparable transactions and a 2.3% increase in average ticket. This was partially offset by the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026 ($729 million).
+
+Licensed stores revenue increased $162 million, primarily driven by higher product sales to, and royalty revenues from, our existing licensees in our International segment ($182 million) and our newly-formed China joint venture ($53 million) following the conversion of Starbucks retail operations in China to our licensed joint venture model. This was partially offset by lower equipment sales to our licensees globally ($52 million) and a decrease in product sales to, and royalty revenues from, our licensees in our North America segment ($21 million).
+
+Other revenues increased $364 million, primarily due to an increase in revenue in the Global Coffee Alliance ($311 million).
+
+40
+
+Table of Contents
+
+Operating Expenses
+
+Quarter Ended Three Quarters Ended
+
+Jun 28,
+
+2026 Jun 29,
+
+2025
+$
+
+Change
+Jun 28,
+
+2026 Jun 29,
+
+2025 Jun 28,
+
+2026 Jun 29,
+
+2025 $
+
+Change Jun 28,
+
+2026 Jun 29,
+
+2025
+
+As a % of
+
+Total Net Revenues As a % of
+
+Total Net Revenues
+
+Product and distribution costs $ 2,828.6 $ 2,955.5 $ (126.9) 30.3 % 31.3 % $ 9,310.7 $ 8,586.8 $ 723.9 32.4 % 31.1 %
+
+Store operating expenses 4,197.4 4,344.8 (147.4) 45.0 45.9 13,158.3 12,723.9 434.4 45.7 46.1
+
+Other operating expenses 131.9 151.6 (19.7) 1.4 1.6 393.6 442.8 (49.2) 1.4 1.6
+
+Depreciation and amortization expenses 361.6 427.6 (66.0) 3.9 4.5 1,125.8 1,254.0 (128.2) 3.9 4.5
+
+General and administrative expenses 598.8 677.2 (78.4) 6.4 7.2 1,855.7 1,975.2 (119.5) 6.5 7.2
+
+Restructuring and impairments 302.6 20.8 281.8 3.2 0.2 415.8 137.0 278.8 1.4 0.5
+
+Total operating expenses 8,420.9 8,577.5 (156.6) 90.3 90.7 26,259.9 25,119.7 1,140.2 91.3 91.0
+
+Income from equity investees 78.6 57.1 21.5 0.8 0.6 189.9 162.7 27.2 0.7 0.6
+
+Operating income $ 980.4 $ 935.6 $ 44.8 10.5 % 9.9 % $ 2,699.3 $ 2,658.4 $ 40.9 9.4 % 9.6 %
+
+Store operating expenses as a % of company-operated stores revenue
+55.9 % 55.6 % 56.0 % 55.6 %
+
+For the quarter ended June 28, 2026, compared with the quarter ended June 29, 2025
+
+Product and distribution costs as a percentage of total net revenues decreased 100 basis points for the third quarter of fiscal 2026, primarily due to the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026 (approximately 130 basis points), lower inflation paired with tariff refunds (approximately 80 basis points), partially offset by mix shift (approximately 110 basis points).
+
+Store operating expenses as a percentage of total net revenues decreased 90 basis points for the third quarter of fiscal 2026. Store operating expenses as a percentage of company-operated stores revenue increased 30 basis points, primarily due to labor investments largely in support of “Back to Starbucks” (approximately 190 basis points), and increased reserves for self-insured claims (approximately 100 basis points), partially offset by sales leverage (approximately 250 basis points).
+
+Other operating expenses decreased $20 million, primarily due to savings from simplifying our licensed business support organization ($15 million).
+
+Depreciation and amortization expenses as a percentage of total net revenues decreased 60 basis points, primarily driven by the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026.
+
+General and administrative expenses decreased $78 million, primarily due to lapping of the Leadership Experience 2025 ($81 million), restructuring-related savings ($63 million), and the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026 ($42 million). This was partially offset by increases in performance-based compensation ($79 million) and transaction-related expenses related to the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026 ($44 million).
+
+Restructuring and impairments increased $282 million, largely due to costs associated with the impairment of Starbucks Reserve and Roastery store locations, and partner severance costs. See Note 17, Restructuring and Impairments, to the consolidated financial statements included in Item 1 of Part I of this 10-Q for further discussion.
+
+Income from equity investees increased $22 million, primarily due to income from our China joint venture, which was formed upon the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026.
+
+41
+
+Table of Contents
+
+The combination of these changes resulted in an overall increase in operating margin of 60 basis points for the third quarter of fiscal 2026.
+
+For the three quarters ended June 28, 2026, compared with the three quarters ended June 29, 2025
+
+Product and distribution costs as a percentage of total net revenues increased 130 basis points for the first three quarters of fiscal 2026 largely due to mix shift (80 basis points).
+
+Store operating expenses as a percentage of total net revenues decreased 40 basis points for the first three quarters of fiscal 2026. Store operating expenses as a percentage of company-operated stores revenue increased 40 basis points, primarily due to labor investments largely in support of “Back to Starbucks” (approximately 220 basis points), and increased reserves for self- insured claims (approximately 60 basis points), offset by sales leverage (approximately 300 basis points).
+
+Other operating expenses decreased $49 million, primarily due to savings from simplifying our licensed business support organization ($45 million).
+
+Depreciation and amortization expenses as a percentage of total net revenues decreased 60 basis points, primarily driven by ceasing depreciation upon classifying our Starbucks retail operations in China as held for sale in the first quarter of fiscal 2026 and converting Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026.
+
+General and administrative expenses decreased $120 million, largely due to restructuring-related savings ($174 million) and lapping of the Leadership Experience 2025 ($81 million) and the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026 ($42 million). This was partially offset by increases in performance-based compensation ($112 million) and transaction-related expenses related to the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026 ($74 million).
+
+Restructuring and impairments increased $279 million, largely due to costs associated with the impairment of Starbucks Reserve and Roastery store locations, and partner severance costs. See Note 17, Restructuring and Impairments, to the consolidated financial statements included in Item 1 of Part I of this 10-Q, for further discussion.
+
+Income from equity investees increased $27 million, primarily due to income from our China joint venture, which was formed upon the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026.
+
+The combination of these changes resulted in an overall decrease in operating margin of 20 basis points for the first three quarters of fiscal 2026.
+
+42
+
+Table of Contents
+
+Other Income and Expenses
+
+Quarter Ended Three Quarters Ended
+
+Jun 28,
+
+2026 Jun 29,
+
+2025 $
+
+Change Jun 28,
+
+2026 Jun 29,
+
+2025 Jun 28,
+
+2026 Jun 29,
+
+2025 $
+
+Change Jun 28,
+
+2026 Jun 29,
+
+2025
+
+As a % of Total
+
+Net Revenues As a % of Total
+
+Net Revenues
+
+Operating income $ 980.4 $ 935.6 $ 44.8 10.5 % 9.9 % $ 2,699.3 $ 2,658.4 $ 40.9 9.4 % 9.6 %
+
+Net gain resulting from divestiture of certain operations 536.3 — 536.3 5.8 — 536.3 0.0 536.3 1.9 0.0
+
+Interest income and other, net 37.2 25.6 11.6 0.4 0.3 87.3 81.8 5.5 0.3 0.3
+
+Interest expense (134.6) (142.3) 7.7 (1.4) (1.5) (410.6) (396.8) (13.8) (1.4) (1.4)
+
+Earnings before income taxes 1,419.3 818.9 600.4 15.2 8.7 2,912.3 2,343.4 568.9 10.1 8.5
+
+Income tax expense 374.4 260.4 114.0 4.0 % 2.8 1,063.3 619.9 443.4 3.7 % 2.2
+
+Net earnings including noncontrolling interests 1,044.9 558.5 486.4 11.2 5.9 1,849.0 1,723.5 125.5 6.4 6.2
+
+Net earnings/(loss) attributable to noncontrolling interests (0.4) 0.2 (0.6) 0.0 0.0 (0.6) 0.3 (0.9) 0.0 0.0
+
+Net earnings attributable to Starbucks $ 1,045.3 $ 558.3 $ 487.0 11.2 % 5.9 % $ 1,849.6 $ 1,723.2 $ 126.4 6.4 % 6.2 %
+
+Effective tax rate including noncontrolling interests 26.4 % 31.8 % 36.5 % 26.5 %
+
+For the quarter ended June 28, 2026, compared with the quarter ended June 29, 2025
+
+Net gain resulting from divestiture of certain operations was $536.3 million, due to the divestiture of Starbucks retail operations in China during the third quarter of fiscal 2026.
+
+Interest income and other, net increased $12 million, primarily due to higher cash balances and interest rates in the current year, partially offset by non-core investment impairments.
+
+Interest expense decreased $8 million, primarily due to reduced debt balances in the current year.
+
+The effective tax rate for the quarter ended June 28, 2026, was 26.4% compared to 31.8% for the same period in fiscal 2025. The decrease was primarily due to lapping the discrete impact of changes in indefinite reinvestment assertions for certain foreign entities in the third quarter of fiscal 2025 (approximately 850 basis points), partially offset by impacts resulting from the divestiture of Starbucks retail operations in China in the third quarter of fiscal 2026 (370 basis points).
+
+For the three quarters ended June 28, 2026, compared with the three quarters ended June 29, 2025
+
+Net gain resulting from divestiture of certain operations was $536.3 million, due to the divestiture of Starbucks retail operations in China during the third quarter of fiscal 2026.
+
+Interest income and other, net increased $6 million, primarily due to higher cash balances and interest rates in the current year.
+
+Interest expense increased $14 million, primarily due to reduced savings from cross-currency interest rate hedging, partially offset by reduced debt balances in the current year.
+
+43
+
+Table of Contents
+
+The effective tax rate for the three quarters ended June 28, 2026, was 36.5% compared to 26.5% for the same period in fiscal 2025. The increase was primarily due to the $273 million discrete impact of changes in indefinite reinvestment assertions as a result of classifying Starbucks retail operations in China as held for sale in the first quarter of fiscal 2026 (approximately 640 basis points), impacts resulting from the divestiture of Starbucks retail operations in China during the third quarter of fiscal 2026 (approximately 240 basis points) and lapping the discrete impact of a tax status change for a certain foreign entity in the first quarter of fiscal 2025 (approximately 130 basis points).
+
+44
+
+Table of Contents
+
+Segment Information
+
+Results of operations by segment (in millions):
+
+North America
+
+Quarter Ended Three Quarters Ended
+
+Jun 28,
+
+2026 Jun 29,
+
+2025
+$
+
+Change
+Jun 28,
+
+2026 Jun 29,
+
+2025 Jun 28,
+
+2026 Jun 29,
+
+2025 $
+
+Change Jun 28,
+
+2026 Jun 29,
+
+2025
+
+As a % of North America
+
+Total Net Revenues As a % of North America
+
+Total Net Revenues
+
+Net revenues:
+
+Company-operated stores $ 6,754.8 $ 6,285.7 $ 469.1 91.3 % 90.7 % $ 19,675.0 $ 18,515.3 $ 1,159.7 91.2 % 90.4 %
+
+Licensed stores 639.4 640.5 (1.1) 8.6 9.2 1,890.6 1,953.5 (62.9) 8.8 9.5
+
+Other 0.9 0.8 0.1 0.0 0.0 3.8 2.9 0.9 0.0 0.0
+
+Total net revenues 7,395.1 6,927.0 468.1 100.0 100.0 21,569.4 20,471.7 1,097.7 100.0 100.0
+
+Product and distribution costs 1,971.9 1,909.6 62.3 26.7 27.6 6,176.2 5,684.3 491.9 28.6 27.8
+
+Store operating expenses 3,789.3 3,552.4 236.9 51.2 51.3 11,266.3 10,442.5 823.8 52.2 51.0
+
+Other operating expenses 56.5 69.7 (13.2) 0.8 1.0 172.4 216.6 (44.2) 0.8 1.1
+
+Depreciation and amortization expenses 298.3 303.5 (5.2) 4.0 4.4 896.6 891.6 5.0 4.2 4.4
+
+General and administrative expenses 95.9 170.0 (74.1) 1.3 2.5 282.5 363.9 (81.4) 1.3 1.8
+
+Restructuring and impairments 174.3 3.1 171.2 2.4 — 219.6 24.5 195.1 1.0 0.1
+
+Total operating expenses 6,386.2 6,008.3 377.9 86.4 86.7 19,013.6 17,623.4 1,390.2 88.2 86.1
+
+Operating income $ 1,008.9 $ 918.7 $ 90.2 13.6 % 13.3 % $ 2,555.8 $ 2,848.3 $ (292.5) 11.8 % 13.9 %
+
+Store operating expenses as a % of company-operated stores revenue
+56.1 % 56.5 % 57.3 % 56.4 %
+
+For the quarter ended June 28, 2026, compared with the quarter ended June 29, 2025
+
+Revenues
+
+North America total net revenues for the third quarter of fiscal 2026 increased $468 million, or 7%, primarily driven by an increase in company-operated stores revenue due to a 8.1% increase in comparable store sales ($486 million), driven by a 4.5% increase in comparable transactions and a 3.5% increase in average ticket, primarily due to higher delivery sales and strength in customer food attach and beverage modifications.
+
+Operating Margin
+
+North America operating income for the third quarter of fiscal 2026 increased 10% to $1.0 billion, compared to $919 million in the third quarter of fiscal 2025. Operating margin expanded 30 basis points to 13.6%, primarily driven by sales leverage (approximately 340 basis points), lapping of the Leadership Experience 2025 (approximately 120 basis points), and lower inflation paired with tariff refunds (approximately 110 basis points). This was partially offset by higher restructuring costs (approximately 240 basis points), labor investments largely in support of “Back to Starbucks” (approximately 190 basis points) and product mix shift (approximately 100 basis points).
+
+45
+
+Table of Contents
+
+For the three quarters ended June 28, 2026, compared with the three quarters ended June 29, 2025
+
+Revenues
+
+North America total net revenues for the first three quarters of fiscal 2026 increased $1.1 billion, or 5%, primarily driven by an increase in company-operated stores revenue due to a 6.2% increase in comparable store sales ($1.1 billion), driven by a 3.9% increase in comparable transactions and a 2.3% increase in average ticket, primarily due to higher delivery sales, and strength in customer beverage modifications and food attach.
+
+Operating Margin
+
+North America operating income for the first three quarters of fiscal 2026 decreased 10% to $2.6 billion, compared to $2.8 billion in the first three quarters of fiscal 2025. Operating margin contracted 210 basis points to 11.8%, primarily driven by labor investments largely in support of “Back to Starbucks” (approximately 240 basis points).
+
+46
+
+Table of Contents
+
+International
+
+Quarter Ended Three Quarters Ended
+
+Jun 28,
+
+2026 Jun 29,
+
+2025
+$
+
+Change
+Jun 28,
+
+2026 Jun 29,
+
+2025 Jun 28,
+
+2026 Jun 29,
+
+2025
+$
+
+Change
+Jun 28,
+
+2026 Jun 29,
+
+2025
+
+As a % of International
+
+Total Net Revenues As a % of International
+
+Total Net Revenues
+
+Net revenues:
+
+Company-operated stores $ 751.3 $ 1,526.8 $ (775.5) 56.8 % 75.9 % $ 3,835.6 $ 4,367.6 $ (532.0) 70.5 % 76.0 %
+
+Licensed stores 561.4 465.1 96.3 42.4 23.1 1,529.0 1,303.8 225.2 28.1 22.7
+
+Other 9.9 18.8 (8.9) 0.7 0.9 74.0 77.7 (3.7) 1.4 1.4
+
+Total net revenues 1,322.6 2,010.7 (688.1) 100.0 100.0 5,438.6 5,749.1 (310.5) 100.0 100.0
+
+Product and distribution costs 513.4 701.7 (188.3) 38.8 34.9 2,011.3 2,008.4 2.9 37.0 34.9
+
+Store operating expenses 408.1 792.4 (384.3) 30.9 39.4 1,892.0 2,281.4 (389.4) 34.8 39.7
+
+Other operating expenses 57.8 66.2 (8.4) 4.4 3.3 170.0 181.8 (11.8) 3.1 3.2
+
+Depreciation and amortization expenses 33.1 91.4 (58.3) 2.5 4.5 135.8 269.5 (133.7) 2.5 4.7
+
+General and administrative expenses 39.1 81.9 (42.8) 3.0 4.1 224.1 259.1 (35.0) 4.1 4.5
+
+Restructuring and impairments 41.1 3.1 38.0 3.1 0.2 93.4 19.9 73.5 1.7 0.3
+
+Total operating expenses 1,092.6 1,736.7 (644.1) 82.6 86.4 4,526.6 5,020.1 (493.5) 83.2 87.3
+
+Income/(loss) from equity investees
+22.8 (1.3) 24.1 1.7 (0.1) 22.2 (2.1) 24.3 0.4 0.0
+
+Operating income $ 252.8 $ 272.7 $ (19.9) 19.1 % 13.6 % $ 934.2 $ 726.9 $ 207.3 17.2 % 12.6 %
+
+Store operating expenses as a % of company-operated stores revenue 54.3 % 51.9 % 49.3 % 52.2 %
+
+For the quarter ended June 28, 2026, compared with the quarter ended June 29, 2025
+
+Revenues
+
+International total net revenues for the third quarter of fiscal 2026 decreased $688 million, or 34%, primarily driven by lower company-operated store revenues following the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026 ($780 million). This decrease was partially offset by higher product sales to, and royalty revenues from, our newly-formed China joint venture ($53 million) and other licensees ($50 million).
+
+Operating Margin
+
+International operating income for the third quarter of fiscal 2026 decreased 7% to $253 million, compared to $273 million in the third quarter of fiscal 2025. Operating margin expanded 550 basis points to 19.1%, primarily due to the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026 (approximately 800 basis points). This was partially offset by higher restructuring costs (approximately 290 basis points).
+
+47
+
+Table of Contents
+
+For the three quarters ended June 28, 2026, compared with the three quarters ended June 29, 2025
+
+Revenues
+
+International total net revenues for the first three quarters of fiscal 2026 decreased $311 million, or 5%, primarily driven by lower company-operated store revenues following the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026 ($730 million). This decline was partially offset by higher product sales to, and royalty revenues from, existing licensees ($182 million) and our newly-formed China joint venture ($53 million) and an increase in company-operated stores revenue due to a 4.3% increase in comparable store sales ($146 million), driven by a 2.5% increase in comparable transactions and a 1.7% increase in average ticket.
+
+Operating Margin
+
+International operating income for the first three quarters of fiscal 2026 increased 29% to $934 million, compared to $727 million in the first three quarters of fiscal 2025. Operating margin expanded 460 basis points to 17.2%, primarily due to the conversion of Starbucks retail operations in China to our licensed joint venture model in the third quarter of fiscal 2026 (approximately 350 basis points) and lower store operating and depreciation and amortization costs after classifying assets for Starbucks retail operations in China as held for sale in the first and second quarters of fiscal 2026 (approximately 280 basis points), partially offset by higher restructuring costs (approximately 140 basis points).
+
+48
+
+Table of Contents
+
+Channel Development
+
+Quarter Ended Three Quarters Ended
+
+Jun 28,
+
+2026 Jun 29,
+
+2025
+$
+
+Change
+Jun 28,
+
+2026 Jun 29,
+
+2025 Jun 28,
+
+2026 Jun 29,
+
+2025 $
+
+Change Jun 28,
+
+2026 Jun 29,
+
+2025
+
+As a % of Channel Development
+
+Total Net Revenues As a % of Channel Development
+
+Total Net Revenues
+
+Net revenues $ 587.9 $ 483.8 $ 104.1 $ 1,678.4 $ 1,329.0 $ 349.4
+
+Product and distribution costs 320.9 306.8 14.1 54.6 % 63.4 % 1,043.9 824.4 219.5 62.2 % 62.0 %
+
+Other operating expenses 16.0 15.1 0.9 2.7 3.1 47.5 43.7 3.8 2.8 3.3
+
+General and administrative expenses 0.8 1.7 (0.9) 0.1 0.4 2.8 4.8 (2.0) 0.2 0.4
+
+Restructuring and impairments (0.2) 0.2 (0.4) 0.0 — — 1.1 (1.1) 0.0 0.1
+
+Total operating expenses 337.5 323.8 13.7 57.4 66.9 1,094.2 874.0 220.2 65.2 65.8
+
+Income from equity investees 55.8 58.4 (2.6) 9.5 12.1 167.7 164.8 2.9 10.0 12.4
+
+Operating income $ 306.2 $ 218.4 $ 87.8 52.1 % 45.1 % $ 751.9 $ 619.8 $ 132.1 44.8 % 46.6 %
+
+For the quarter ended June 28, 2026, compared with the quarter ended June 29, 2025
+
+Revenues
+
+Channel Development total net revenues for the third quarter of fiscal 2026 increased $104 million, or 22%, primarily due to an increa

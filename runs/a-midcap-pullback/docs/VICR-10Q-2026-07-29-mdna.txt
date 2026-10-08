@@ -1,0 +1,1107 @@
+Item 2 — Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+Cautionary Note Regarding Forward-Looking Statements
+
+The Company’s consolidated operating results are affected by a wide variety of factors that could materially and adversely affect revenues and profitability, including the risk factors described in the Company’s Annual Report on Form 10-K for the year ended December 31, 2025. As a result of these and other factors, the Company may experience material fluctuations in future operating results on a quarterly or annual basis, which could materially and adversely affect its business, consolidated financial condition, operating results, and the share price of its Common Stock. This document and other documents filed by the Company with the Securities and Exchange Commission (“SEC”) include forward-looking statements regarding future events and the Company’s future results that are subject to the safe harbor afforded under the Private Securities Litigation Reform Act of 1995 and other safe harbors afforded under the Securities Act of 1933 and the Securities Exchange Act of 1934. All statements other than statements of historical fact are statements that could be deemed forward-looking statements. Forward-looking statements are based on our current beliefs, expectations, estimates, forecasts, and projections for the future performance of the Company and are subject to risks and uncertainties. Forward-looking statements are identified by the use of words denoting uncertain, future events, such as “anticipate,” “assume,” “believe,” “continue,” “could,” “estimate,” “expect,” “future,” “goal,” “if,” “intend,” “may,” “plan,” “potential,” “project,” “prospective,” “seek,” “should,” “target,” “will,” or “would,” as well as similar words and phrases, including the negatives of these terms, or other variations thereof. Forward-looking statements also include, but are not limited to, statements regarding: our ability to address certain supply chain risks; our ongoing development of power conversion architectures, switching topologies, materials, packaging, and products; the ongoing transition of our business strategically, organizationally, and operationally from serving a large number of relatively low-volume customers across diversified markets and geographies to serving a small number of relatively large volume customers; our intent to enter new market segments; the levels of customer orders overall and, in particular, from large customers and the delivery lead times associated therewith; anticipated new and existing customer wins; the financial and operational impact of customer changes to shipping schedules; the derivation of a portion of our sales in each quarter from orders booked in the same quarter; our intent to expand the percentage of revenue associated with licensing our intellectual property to third parties; our plans to invest in expanded manufacturing capacity, including the implementation of new manufacturing processes; our belief that cash generated from operations together with our available cash and cash equivalents will be sufficient to fund planned operational needs and capital equipment purchases, for the foreseeable future; our outlook regarding tariffs and the impact thereof on our business; our belief that we have limited exposure to currency risks; our intentions regarding the declaration and payment of cash dividends; our intentions regarding protecting our rights under our patents; and our expectation that no current litigation or claims will have a material adverse impact on our financial position or results of operations. These forward-looking statements are based upon our current expectations and estimates associated with prospective events and circumstances that may or may not be within our control and as to which there can be no assurance. Actual results could differ materially from those implied by forward-looking statements as a result of various factors, including but not limited to those described above, as well as those described in the Company’s Annual Report on Form 10-K for the year ended December 31, 2025 under Part I, Item 1 — “Business,” under Part I, Item 1A — “Risk Factors,” under Part I, Item 3 — “Legal Proceedings,” and under Part II, Item 7 — “Management’s Discussion and Analysis of Financial Condition and Results of Operations” and those described in this Quarterly Report on Form 10-Q, particularly under Part I, Item 2 — “Management’s Discussion and Analysis of Financial Condition and Results of Operations.” The discussion of our business contained herein, including the identification and assessment of factors that may influence actual results, may not be exhaustive. Therefore, the information presented should be read together with other documents we file with the SEC from time to time, including our Annual Reports on Form 10-K, our Quarterly Reports on Form 10-Q and our Current Reports on Form 8-K, which may supplement, modify, supersede, or update the factors discussed in this Quarterly Report on Form 10-Q. Any forward-looking statement made in this Quarterly Report on Form 10-Q is based on information currently available to us and speaks only as of the date on which it is made. We do not undertake any obligation to update any forward-looking statements as a result of future events or developments, except as required by law.
+
+-17-
+
+Table of Contents
+
+VICOR CORPORATION
+
+Management’s Discussion and Analysis of
+
+Financial Condition and Results of Operations
+
+June 30, 2026
+
+Overview
+
+We design, develop, manufacture, and market modular power components and power systems for converting electrical power for use in electrically-powered devices. Our competitive position is supported by innovations in product design and achievements in product performance, largely enabled by our focus on the research and development of advanced technologies and processes, often implemented in proprietary semiconductor circuitry, materials, and packaging. Many of our products incorporate patented or proprietary implementations of high-frequency switching topologies enabling power system solutions that are more efficient and much smaller than conventional alternatives. Our strategy emphasizes demonstrable product differentiation and a value proposition based on competitively superior solution performance, advantageous design flexibility, and a compelling total cost of ownership. While we offer a wide range of alternating current (“AC”) and direct current (“DC”) power conversion products, we consider our core competencies to be associated with 48V DC distribution, which offers numerous inherent cost and performance advantages over lower distribution voltages. However, we also offer products addressing other DC voltage standards (e.g., 380V for power distribution in data centers, 110V for rail applications, 28V for military and avionics applications, and 24V for industrial automation).
+
+Based on design, performance, and form factor considerations, as well as the range of evolving applications for which our products are appropriate, we categorize our product portfolios as either “Advanced Products” or “Brick Products.” The Advanced Products category consists of our more recently introduced products, which are largely used to implement our proprietary Factorized Power Architecture™ (“FPA”), an innovative power distribution architecture enabling flexible, rapid power system design using individual components optimized to perform a specific conversion function.
+
+The Brick Products category largely consists of our broad and well-established families of integrated power converters, incorporating multiple conversion stages, used in conventional power systems architectures. Given the growth profiles of the markets we serve with our Advanced Products line and our Brick Products line, our strategy involves a continuing transition in organizational focus, emphasizing investment in our Advanced Products line and targeting high growth market segments with a low-mix, high-volume operational model, while maintaining a profitable business in the mature market segments we serve with our Brick Products line with a high-mix, low-volume operational model.
+
+The applications in which our Advanced Products and Brick Products are used are typically in the higher-performance, higher-power segments of the market segments we serve. With our Advanced Products, we generally serve large Original Equipment Manufacturers (“OEMs”), Original Design Manufacturers (“ODMs”), and their contract manufacturers, with sales currently concentrated in the data center and hyperscaler segments of enterprise computing, in which our products are used for power delivery on server motherboards, in server racks, and across datacenter infrastructure. We have established a leadership position in the emerging market segment for powering high-performance processors used for acceleration of applications associated with artificial intelligence (“AI”). Our customers in the AI market segment include the leading innovators in processor and accelerator design, as well as early adopters in cloud computing and high performance computing. We also serve applications in aerospace and aviation, defense electronics, satellites, factory automation, instrumentation, test equipment, transportation, telecommunications and networking infrastructure, and vehicles (notably in the autonomous driving, electric vehicle, and hybrid vehicle niches of the vehicle segment). With our Brick Products, we generally serve a fragmented base of large and small customers, concentrated in aerospace and defense electronics, industrial equipment, instrumentation and test equipment, and transportation (notably in rail and heavy equipment applications). With our strategic emphasis on larger, high-volume customers, we expect to experience over time a greater concentration of sales, including from intellectual property licensing, among relatively fewer customers.
+
+Our quarterly consolidated operating results can be difficult to forecast and have been subject to significant fluctuations. We plan our production and inventory levels based on management’s estimates of customer demand, customer forecasts, and other information sources. Customer forecasts, particularly those of OEM, ODM, and contract manufacturing customers to which we supply Advanced Products in high volumes, are subject to scheduling changes on short notice, contributing to operating inefficiencies and excess costs. In addition, external factors such as supply chain uncertainties, which are often associated with the cyclicality of the electronics industry, regional macroeconomic and trade-related circumstances, and force majeure events, have caused our operating results to vary meaningfully. Supply chain disruptions, including those associated with our reliance on outsourced package process steps that are essential in the production of some of our Advanced Products, and those relating, for example, to the procurement of raw material, have in the past negatively impacted and may in the future negatively impact our operating results. We have taken steps to mitigate the impact of supply chain disruptions by, among other things and in varying degrees, moving outsourced manufacturing steps in-house to the Company, ordering supplies with extended lead times, paying higher prices for certain supplies or outsourced production, and expediting deliveries at a cost premium. The resulting impact of the steps taken to mitigate supply chain disruptions
+
+-18-
+
+Table of Contents
+
+VICOR CORPORATION
+
+Management’s Discussion and Analysis of
+
+Financial Condition and Results of Operations
+
+June 30, 2026
+
+have, to varying degrees and at different times, reduced our revenue, gross margin, operating profit and cash flow and may continue to do so in the future. Our quarterly gross margin as a percentage of net revenues may vary, depending on production volumes, licensing income, average selling prices, average unit costs, the mix of products sold during that quarter, and the level of importation of raw materials subject to tariffs. Our quarterly operating margin as a percentage of net revenues also may vary with changes in revenue and product level profitability, but our operating costs are largely associated with compensation and related employee costs, which are not subject to sudden or significant changes.
+
+Summary of Second Quarter 2026 Financial Performance Compared to First Quarter 2026 Financial Performance
+
+The following summarizes our financial performance for the second quarter of 2026, compared to the first quarter of 2026:
+
+•
+Total net revenues increased 26.9% to $143,352,000 for the second quarter of 2026, from $112,969,000 for the first quarter of 2026. Net revenues for Brick Products increased 2.4% compared to the first quarter of 2026, primarily due to improved market demand. Advanced Products net revenues increased 45.0% compared to the first quarter of 2026, primarily due to improved market demand and higher royalty revenue.
+
+•
+Export sales represented approximately 46.0% of total net revenues in the second quarter of 2026 as compared to 48.9% in the first quarter of 2026.
+
+•
+Gross margin for the second quarter of 2026 increased $20,754,000, or 33.3% to $83,120,000 from $62,366,000 for the first quarter of 2026. Gross margin, as a percentage of net revenues and patent litigation settlement, increased to 58.0% for the second quarter of 2026 from 55.2% for the first quarter of 2026. The increase in gross margin dollars and gross margin percentage was primarily attributable to the favorable impact from higher sales volume, including royalty revenue, offset by an increase in freight-in and tariff spending of $704,000 (net of approximately $11,000 in duty drawback recovery in the second quarter of 2026 and $193,000 in duty drawback recovery in the first quarter of 2026 of previously paid tariffs).
+
+•
+Backlog, which represents the total value of orders for products for which shipment is scheduled within the next 12 months, was approximately $379,736,000 at the end of the second quarter of 2026, as compared to $300,616,000 at the end of the first quarter of 2026.
+
+•
+Operating expenses for the second quarter of 2026 increased $2,760,000, or 6.1%, to $48,242,000 from $45,482,000 for the first quarter of 2026, due to an increase in selling, general and administrative expenses of $4,409,000, offset by a decrease in research and development expenses of $1,649,000.
+
+•
+We reported net income for the second quarter of 2026 of $49,772,000, or $1.04 per diluted share, compared to net income of $20,664,000, or $0.44 per diluted share, for the first quarter of 2026. Net income in the first and second quarters of 2026 include tax benefits due to excess deductions related to share-based compensation.
+
+•
+For the second quarter of 2026, depreciation and amortization totaled $5,423,000 and capital additions totaled $11,173,000 as compared to depreciation and amortization of $5,337,000 and capital additions of $12,387,000 for the first quarter of 2026.
+
+•
+Inventories increased by approximately $9,659,000, or 10.2%, to $104,489,000 at June 30, 2026, compared to $94,830,000 at March 31, 2026, in anticipation of increased volume to fulfill backlog.
+
+Three Months Ended June 30, 2026 Compared to Three Months Ended June 30, 2025
+
+Total net revenues for the second quarter of 2026 were $143,352,000, an increase of $47,306,000, or 49.3%, as compared to $96,046,000 for the second quarter of 2025. Net revenues, by product line, for the three months ended June 30, 2026 and 2025 were as follows (dollars in thousands):
+
+Increase
+
+2026
+
+2025
+
+$
+
+%
+
+Advanced Products including Royalty Revenue
+
+$
+
+94,161
+
+$
+
+60,566
+
+$
+
+33,595
+
+55.5
+
+%
+
+Brick Products
+
+49,191
+
+35,480
+
+13,711
+
+38.6
+
+%
+
+Total net revenues
+
+$
+
+143,352
+
+$
+
+96,046
+
+$
+
+47,306
+
+49.3
+
+%
+
+-19-
+
+Table of Contents
+
+VICOR CORPORATION
+
+Management’s Discussion and Analysis of
+
+Financial Condition and Results of Operations
+
+June 30, 2026
+
+The increase in net revenues for Advanced Products was primarily due to higher royalty revenue due to a new license agreement entered into during the quarter ended June 30, 2026 and volume increases due to improved market demand. The increase in net revenues for Brick Products was primarily due to improved market demand.
+
+During the second quarter of 2025, the Company received a patent litigation settlement payment of $45,000,000 (as described in more detail in Note 11 to the Condensed Consolidated Financial Statements).
+
+Gross margin for the second quarter of 2026 decreased $9,008,000, or 9.8%, to $83,120,000, from $92,128,000 for the second quarter of 2025. Gross margin, as a percentage of net revenues and patent litigation settlement, decreased to 58.0% for the second quarter of 2026, compared to 65.3% for the second quarter of 2025. The decrease in gross margin dollars and gross margin percentage was primarily attributable to the $45,000,000 patent litigation settlement payment received by the Company in the second quarter of 2025 offset by the favorable impact from higher sales volume, including higher royalty revenue and the favorable impact of production efficiencies offset by unfavorable sales mix on the increased sales volume and increased freight-in and tariff spending of $1,328,000 (net of approximately $11,000 in duty drawback recovery in the second quarter of 2026 and $0 in duty drawback recovery in the second quarter of 2025 of previously paid tariffs).
+
+Selling, general and administrative expenses were $27,601,000 for the second quarter of 2026, a decrease of $351,000, or 1.3%, from $27,952,000 for the second quarter of 2025. Selling, general and administrative expenses as a percentage of total net revenues and patent litigation settlement decreased to 19.3% for the second quarter of 2026 from 19.8% for the second quarter of 2025. The components of the $351,000 decrease in selling, general and administrative expenses for the second quarter of 2026 compared to the second quarter of 2025 were as follows (dollars in thousands):
+
+(Decrease) Increase
+
+Legal fees
+
+$
+
+(2,286
+
+)
+
+(31.4
+
+)%
+
+(1
+
+)
+
+Litigation, other
+
+(383
+
+)
+
+(100.0
+
+)%
+
+(2
+
+)
+
+Facilities allocations
+
+(292
+
+)
+
+(31.2
+
+)%
+
+(3
+
+)
+
+Information technology expense
+
+(282
+
+)
+
+(21.5
+
+)%
+
+(4
+
+)
+
+Outside services
+
+373
+
+38.0
+
+%
+
+(5
+
+)
+
+Compensation
+
+2,518
+
+18.9
+
+%
+
+(6
+
+)
+
+Other, net
+
+1
+
+—
+
+$
+
+(351
+
+)
+
+(1.3
+
+)%
+
+(1)
+Decrease primarily relates to $5,100,000 in legal fees associated with the patent litigation settlement in the second quarter of 2025 offset by an increase in legal activity.
+
+(2)
+Decrease primarily attributable to a decrease in post-judgment interest and other costs relating to the litigation-contingency accrual with respect to our litigation with SynQor, Inc.
+
+(3)
+Decrease primarily attributable to a decrease in utilities and building maintenance expenses.
+
+(4)
+Decrease primarily attributable to a decrease in computer software services relating to new internal-use software implementation.
+
+(5)
+Increase primarily attributable to an increase in the use of consultants.
+
+(6)
+Increase primarily attributable to tax withholdings and employer taxes associated with an increase in stock option exercises, annual compensation adjustments in May 2026 and higher stock-based compensation expense associated with stock options awarded in May 2026.
+
+-20-
+
+Table of Contents
+
+VICOR CORPORATION
+
+Management’s Discussion and Analysis of
+
+Financial Condition and Results of Operations
+
+June 30, 2026
+
+Research and development expenses were $20,641,000 for the second quarter of 2026, an increase of $1,850,000, or 9.8%, compared to $18,791,000 for the second quarter of 2025. As a percentage of total net revenues and patent litigation settlement, research and development expenses increased to 14.4% for the second quarter of 2026 from 13.3% for the second quarter of 2025. The components of the $1,850,000 increase in research and development expenses for the second quarter of 2026 compared to the second quarter of 2025 were as follows (dollars in thousands):
+
+Increase (decrease)
+
+Compensation
+
+$
+
+1,925
+
+16.2
+
+%
+
+(1
+
+)
+
+Supplies
+
+714
+
+630.0
+
+%
+
+(2
+
+)
+
+Waste disposal
+
+294
+
+166.9
+
+%
+
+(3
+
+)
+
+Outside services
+
+134
+
+8.9
+
+%
+
+(4
+
+)
+
+Overhead absorption
+
+(220
+
+)
+
+(76.2
+
+)%
+
+(5
+
+)
+
+Project and pre-production materials
+
+(468
+
+)
+
+(19.3
+
+)%
+
+(6
+
+)
+
+Deferred costs
+
+(600
+
+)
+
+(100.0
+
+)%
+
+(7
+
+)
+
+Other, net
+
+71
+
+2.4
+
+%
+
+$
+
+1,850
+
+9.8
+
+%
+
+(1)
+Increase primarily attributable to tax withholdings and employer taxes associated with an increase in stock option exercises, annual compensation adjustments in May 2026 and higher stock-based compensation expense associated with stock options awarded in May 2026.
+
+(2)
+Increase in the consumption of materials and supplies used in the engineering process.
+
+(3)
+Increase primarily attributable to an increase in waste disposal activities related to improving production process capabilities for our Advanced Products.
+
+(4)
+Increase primarily attributable to an increase in the use of outside service providers for our manufacturing facility.
+
+(5)
+Decrease primarily attributable to an increase in research and development personnel incurring time on production activities, compared to research and development activities.
+
+(6)
+Decrease primarily attributable to decreased prototype development costs for Advanced Products.
+
+(7)
+Decrease primarily attributable to an increase in deferred costs capitalized for certain non-recurring engineering projects for which the related revenues had been deferred.
+
+The significant components of “Other income (expense), net” for the three months ended June 30, 2026 and 2025 and the changes between the periods were as follows (in thousands):
+
+2026
+
+2025
+
+Increase (decrease)
+
+Interest income, net
+
+$
+
+3,352
+
+$
+
+2,952
+
+$
+
+400
+
+Insurance settlement
+
+533
+
+—
+
+533
+
+Rental income
+
+284
+
+284
+
+—
+
+Foreign currency (losses) gains, net
+
+(87
+
+)
+
+423
+
+(510
+
+)
+
+Loss on disposal of equipment
+
+(4
+
+)
+
+—
+
+(4
+
+)
+
+Other, net
+
+(33
+
+)
+
+(2
+
+)
+
+(31
+
+)
+
+$
+
+4,045
+
+$
+
+3,657
+
+$
+
+388
+
+Our exposure to market risk fluctuations in foreign currency exchange rates relates to the operations of Vicor Japan Company, Ltd. (“VJCL”), for which the functional currency is the Japanese Yen, and all other subsidiaries in Europe and Asia, for which the
+
+-21-
+
+Table of Contents
+
+VICOR CORPORATION
+
+Management’s Discussion and Analysis of
+
+Financial Condition and Results of Operations
+
+June 30, 2026
+
+functional currency is the U.S. Dollar. These subsidiaries in Europe and Asia experienced unfavorable foreign currency exchange rate fluctuations in the second quarter of 2026 compared to the second quarter of 2025.
+
+Income before income taxes was $38,923,000 for the second quarter of 2026, as compared to $49,042,000 for the second quarter of 2025.
+
+The (benefit) provision for income taxes and the effective income tax rates for the three months ended June 30, 2026 and 2025 were as follows (dollars in thousands):
+
+2026
+
+2025
+
+(Benefit) provision for income taxes
+
+$
+
+(10,863
+
+)
+
+$
+
+7,842
+
+Effective income tax rate
+
+(27.9
+
+)%
+
+16.0
+
+%
+
+The effective tax rates differ from the statutory tax rates for the three months ended June 30, 2026 primarily due to excess deductions related to share-based compensation, and for the three months ended June 30, 2025 primarily due to the Company’s full valuation allowance position against domestic deferred tax assets as of June 30, 2025. The (benefit) provision for income taxes for the three months ended June 30, 2026 and 2025 included estimated federal, state and foreign income taxes in jurisdictions in which the Company does not have sufficient tax attributes.
+
+The Company released its valuation allowance on the majority of its deferred tax assets as of December 31, 2025. The Company maintained a valuation allowance of $17,500,000 related primarily to state tax attributes as of June 30, 2026. On a periodic basis, the Company reassesses any valuation allowances that it maintains on its deferred tax assets, weighing positive and negative evidence to assess the recoverability of the deferred tax assets.
+
+We reported net income for the second quarter of 2026 of $49,772,000, or $1.04 per diluted share, compared to net income of $41,192,000, or $0.91 per diluted share, for the second quarter of 2025.
+
+Six Months Ended June 30, 2026 Compared to Six Months Ended June 30, 2025
+
+Net revenues for the six months ended June 30, 2026 were $256,321,000, an increase of $66,307,000, or 34.9%, from $190,014,000 for the six months ended June 30, 2025. Net revenues, by product line, for the six months ended June 30, 2026 and the six months ended June 30, 2025 were as follows (dollars in thousands):
+
+Increase
+
+2026
+
+2025
+
+$
+
+%
+
+Advanced Products including Royalty Revenue
+
+$
+
+159,081
+
+$
+
+120,423
+
+$
+
+38,658
+
+32.1
+
+%
+
+Brick Products
+
+97,240
+
+69,591
+
+27,649
+
+39.7
+
+%
+
+Total net revenues
+
+$
+
+256,321
+
+$
+
+190,014
+
+$
+
+66,307
+
+34.9
+
+%
+
+The increase in net revenues for Advanced Products was primarily due to higher royalty revenue due to a new license agreement entered into during the quarter ended June 30, 2026 and volume increases due to improved market demand. The increase in net revenues for Brick Products was primarily due to improved market demand.
+
+During the six months ended June 30, 2025, the Company received a patent litigation settlement payment of $45,000,000 (as described in more detail in Note 11 to the Condensed Consolidated Financial Statements).
+
+Gross margin for the six months ended June 30, 2026 increased $8,993,000, or 6.6%, to $145,486,000, from $136,493,000 for the six months ended June 30, 2025. Gross margin, as a percentage of net revenues and patent litigation settlement, decreased to 56.8% for the six months ended June 30, 2026, as compared to 58.1% for the six months ended June 30, 2025. The increase in gross margin dollars and the decrease in gross margin percentage was primarily attributable to the $45,000,000 patent litigation settlement
+
+-22-
+
+Table of Contents
+
+VICOR CORPORATION
+
+Management’s Discussion and Analysis of
+
+Financial Condition and Results of Operations
+
+June 30, 2026
+
+payment received by the Company in the second quarter of 2025 offset by the favorable impact from higher sales volume and improved sales mix on that revenue, including higher royalty revenue, and the favorable impact of production efficiencies offset by increased freight-in and tariff spending of $3,554,000 (net of approximately $204,000 in duty drawback recovery in the six months ended June 30, 2026 and $0 in duty drawback recovery in the six months ended June 30, 2025 of previously paid tariffs).
+
+Selling, general and administrative expenses were $50,793,000 for the six months ended June 30, 2026, a decrease of $2,296,000, or 4.3%, compared to $53,089,000 for the six months ended June 30, 2025. Selling, general and administrative expenses as a percentage of total net revenues and patent litigation settlement, decreased to 19.8% for the six months ended June 30, 2026 from 22.6% for the six months ended June 30, 2025. The components of the $2,296,000 decrease in selling, general and administrative expenses for the six months ended June 30, 2026 compared to the six months ended June 30, 2025 were as follows (dollars in thousands):
+
+(Decrease) Increase
+
+Legal fees
+
+$
+
+(4,420
+
+)
+
+(39.1
+
+)%
+
+(1
+
+)
+
+Information technology expense
+
+(474
+
+)
+
+(20.3
+
+)%
+
+(2
+
+)
+
+Litigation, other
+
+(452
+
+)
+
+(60.0
+
+)%
+
+(3
+
+)
+
+Facilities allocations
+
+(196
+
+)
+
+(10.5
+
+)%
+
+(4
+
+)
+
+Compensation
+
+3,204
+
+11.8
+
+%
+
+(5
+
+)
+
+Other, net
+
+42
+
+0.3
+
+%
+
+$
+
+(2,296
+
+)
+
+(4.3
+
+)%
+
+(1)
+Decrease primarily relates to $5,100,000 in legal fees associated with the patent litigation settlement in the second quarter of 2025 offset by an increase in legal activity.
+
+(2)
+Decrease primarily attributable to a decrease in computer software services relating to new internal-use software implementation.
+
+(3)
+Decrease primarily attributable to a decrease in post-judgment interest and other costs relating to the litigation-contingency accrual with respect to our litigation with SynQor, Inc.
+
+(4)
+Decrease primarily attributable to a decrease in utilities and building maintenance expenses.
+
+(5)
+Increase primarily attributable to tax withholdings and employer taxes associated with an increase in stock option exercises and annual compensation adjustments in May 2026.
+
+Research and development expenses were $42,931,000 for the six months ended June 30, 2026, an increase of $4,763,000, or 12.5%, from $38,168,000 for the six months ended June 30, 2025. As a percentage of total net revenues and patent litigation settlement, research and development expenses increased to 16.7% for the six months ended June 30, 2026 from 16.2% for the six months ended June 30, 2025. The components of the $4,763,000 increase in research and development expenses for the six months ended June 30, 2026 compared to the six months ended June 30, 2025 were as follows (dollars in thousands):
+
+Increase (decrease)
+
+Compensation
+
+$
+
+2,451
+
+10.3
+
+%
+
+(1
+
+)
+
+Project and pre-production materials
+
+1,972
+
+50.3
+
+%
+
+(2
+
+)
+
+Outside services
+
+985
+
+44.5
+
+%
+
+(3
+
+)
+
+Supplies
+
+294
+
+26.3
+
+%
+
+(4
+
+)
+
+Equipment set-up and calibration
+
+(550
+
+)
+
+(45.5
+
+)%
+
+(5
+
+)
+
+Deferred costs
+
+(600
+
+)
+
+(100.0
+
+)%
+
+(6
+
+)
+
+Other, net
+
+211
+
+3.6
+
+%
+
+$
+
+4,763
+
+12.5
+
+%
+
+-23-
+
+Table of Contents
+
+VICOR CORPORATION
+
+Management’s Discussion and Analysis of
+
+Financial Condition and Results of Operations
+
+June 30, 2026
+
+(1)
+Increase primarily attributable to tax withholdings and employer taxes associated with an increase in stock option exercises and annual compensation adjustments in May 2026.
+
+(2)
+Increase primarily attributable to increased prototype development costs for Advanced Products.
+
+(3)
+Increase primarily attributable to an increase in the use of outside service providers for our manufacturing facility.
+
+(4)
+Increase in the consumption of materials and supplies used in the engineering process.
+
+(5)
+Decrease primarily attributable to a decrease in equipment set-up and calibration for Advanced Products production.
+
+(6)
+Decrease primarily attributable to an increase in deferred costs capitalized for certain non-recurring engineering projects for which the related revenues had been deferred.
+
+The significant components of “Other income (expense), net” for the six months ended June 30, 2026 and the six months ended June 30, 2025 and the changes from period to period were as follows (in thousands):
+
+2026
+
+2025
+
+Increase (decrease)
+
+Interest income, net
+
+$
+
+6,623
+
+$
+
+5,666
+
+$
+
+957
+
+Rental income
+
+567
+
+567
+
+—
+
+Insurance settlement
+
+533
+
+—
+
+533
+
+Foreign currency (losses) gains, net
+
+(210
+
+)
+
+556
+
+(766
+
+)
+
+Gain on disposal of equipment
+
+75
+
+—
+
+75
+
+Other, net
+
+(24
+
+)
+
+2
+
+(26
+
+)
+
+$
+
+7,564
+
+$
+
+6,791
+
+$
+
+773
+
+Our exposure to market risk fluctuations in foreign currency exchange rates relates to the operations of VJCL, for which the functional currency is the Japanese Yen, and all other subsidiaries in Europe and Asia, for which the functional currency is the U.S. Dollar. These subsidiaries in Europe and Asia experienced unfavorable foreign currency exchange rate fluctuations in the six months ended June 30, 2026 compared to the six months ended June 30, 2025.
+
+Income before income taxes was $59,326,000 for the six months ended June 30, 2026, as compared to $52,027,000 for the six months ended June 30, 2025.
+
+The (benefit) provision for income taxes and the effective income tax rates for the six months ended June 30, 2026 and 2025 were as follows (dollars in thousands):
+
+2026
+
+2025
+
+(Benefit) provision for income taxes
+
+$
+
+(11,136
+
+)
+
+$
+
+8,266
+
+Effective income tax rate
+
+(18.8
+
+)%
+
+15.9
+
+%
+
+The effective tax rates differ from the statutory tax rates for the six months ended June 30, 2026 primarily due to excess deductions related to share-based compensation, and for the six months ended June 30, 2025 primarily due to the Company’s full valuation allowance position against domestic deferred tax assets as of June 30, 2025. The (benefit) provision for income taxes for the six months ended June 30, 2026 and 2025 included estimated federal, state and foreign income taxes in jurisdictions in which the Company does not have sufficient tax attributes.
+
+The Company released its valuation allowance on the majority of its deferred tax assets as of December 31, 2025. The Company maintained a valuation allowance of $17,500,000 related primarily to state tax attributes as of June 30, 2026. On a periodic basis, the
+
+-24-
+
+Table of Contents
+
+VICOR CORPORATION
+
+Management’s Discussion and Analysis of
+
+Financial Condition and Results of Operations
+
+June 30, 2026
+
+Company reassesses any valuation allowances that it maintains on its deferred tax assets, weighing positive and negative evidence to assess the recoverability of the deferred tax assets.
+
+We reported net income for the six months ended June 30, 2026 of $70,436,000, or $1.48 per diluted share, as compared to net income of $43,731,000, or $0.97 per diluted share, for the six months ended June 30, 2025.
+
+Liquidity and Capital Resources
+
+As of June 30, 2026, we had $453,582,000 in cash and cash equivalents. The ratio of total current assets to total current liabilities was 13.2:1 as of June 30, 2026 and 9.0:1 as of December 31, 2025. Working capital, defined as total current assets less total current liabilities, increased $97,709,000 to $619,751,000 as of June 30, 2026 from $522,042,000 as of December 31, 2025.
+
+The changes in working capital from December 31, 2025 to June 30, 2026 were as follows (in thousands):
+
+Increase
+
+(decrease)
+
+Cash and cash equivalents
+
+$
+
+50,777
+
+Accounts receivable
+
+18,213
+
+Inventories
+
+13,149
+
+Other current assets
+
+844
+
+Accounts payable
+
+(8,125
+
+)
+
+Accrued compensation and benefits
+
+(3,393
+
+)
+
+Accrued expenses
+
+(3,868
+
+)
+
+Accrued litigation
+
+28,275
+
+Short-term deferred revenue
+
+2,551
+
+Other
+
+(714
+
+)
+
+$
+
+97,709
+
+The primary sources of cash for the six months ended June 30, 2026 were $44,224,000 received in connection with the exercise of options to purchase our Common Stock awarded under our stock option plans and the issuance of Common Stock under our 2017 Employee Stock Purchase Plan and $30,197,000 generated from operations, which is net of a payment made to SynQor, Inc. in the amount of $28,557,000. See Note 11 for additional information regarding the payment made to SynQor. The primary use of cash during the six months ended June 30, 2026 was for the purchase of equipment of $23,560,000.
+
+In July 2024, our Board of Directors authorized the repurchase of up to $100,000,000 of our Common Stock (the “Repurchase Authorization”). As of June 30, 2026, we had approximately $64,327,000 remaining available for repurchases of our Common Stock under the Repurchase Authorization.
+
+The timing and amounts of Common Stock repurchases under the Repurchase Authorization are at the discretion of the Company’s President and Chief Executive Officer based upon economic and financial market conditions.
+
+As of June 30, 2026, we had a total of approximately $22,745,000 of cancelable and non-cancelable capital expenditure commitments, principally for manufacturing and production equipment, which we intend to fund with existing cash, and approximately $2,155,000 of capital expenditure items and internal-use software which had been received and included in Property, plant and equipment, net in the accompanying Condensed Consolidated Balance Sheets, but not yet paid for. Our primary needs for liquidity are for making continuing investments in manufacturing and production equipment. We believe cash generated from operations together with our available cash and cash equivalents will be sufficient to fund planned operational needs and capital equipment purchases, for both the short and long term.
+
+We do not consider the impact of inflation or fluctuations in the exchange rates for foreign currency transactions to have been significant during the last three fiscal years.
+
+-25-
+
+Table of Contents
+
+VICOR CORPORATION
+
+Management’s Discussion and Analysis of
+
+Financial Condition and Results of Operations
+
+June 30, 2026
+
+Critical Accounting Policies and Estimates
+
+There have been no material changes in our judgments and assumptions associated with the development of our critical accounting estimates during the period ended June 30, 2026. Refer to the section entitled “Critical Accounting Policies and Estimates” in Part II, Item 7 – “Management’s Discussion and Analysis of Financial Condition and Results of Operations” of the Company’s Annual Report on Form 10-K for the year ended December 31, 2025.
+
+The Company licenses its intellectual property under right to use licenses, in which royalties due to the Company are generally based upon a percentage of the licensee’s sales. For these licensing transactions, the Company utilizes the exception under the revenue recognition guidance for the recognition of sales- or usage-based royalties, in which the royalties are not recognized until the later of when 1) the customer’s subsequent sales or usages occur, or 2) the performance obligation to which some or all of the sales- or usage-based royalty has been allocated is satisfied or partially satisfied. In certain right to use licenses where payment is not based on sales-or-usage-based royalties, the Company estimates consideration it expects to be entitled to considering minimum expected payments and potential price concessions. Revenue for these licenses is recognized in an amount that is probable that a significant reversal in the cumulative amount of revenue recognized would not occur. In certain right-to-use license arrangements, the Company recognizes revenue upon receipt of payment, consistent with the alternative revenue recognition model prescribed by Accounting Standards Codification 606, Revenue from Contracts and Customers. This policy is re-evaluated periodically based on the facts and circumstances of each licensee.
+
+-26-
+
+Table of Contents
+
+Vicor Corporation
+
+June 30, 2026

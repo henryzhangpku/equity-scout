@@ -1,0 +1,606 @@
+{
+ "tool": "equity-scout 0.1.0",
+ "as_of": "2026-10-08",
+ "generated_at": "2026-10-08T22:53:56+00:00",
+ "data": {
+  "as_of": "2026-10-08",
+  "last_price_date": "2026-10-08",
+  "universe_rule": "tradable US-listed (NYSE/Nasdaq/AMEX/Arca/BATS) operating companies with an SEC CIK and a 10-K/10-Q/20-F/40-F in the last 18 months; close >= $1; 50-day avg dollar volume >= $1,000,000; one listing per CIK",
+  "n_companies": 3827,
+  "short_interest_settlement": "2026-09-15",
+  "benchmark_closes": {
+   "IWM": 277.57,
+   "QQQ": 747.58,
+   "SMH": 607.27,
+   "SOXX": 563.28,
+   "SPY": 773.93,
+   "XLB": 49.27,
+   "XLC": 112.07,
+   "XLE": 65.24,
+   "XLF": 54.23,
+   "XLI": 168.4,
+   "XLK": 197.78,
+   "XLP": 83.42,
+   "XLRE": 40.85,
+   "XLU": 41.07,
+   "XLV": 168.16,
+   "XLY": 111.71
+  },
+  "files": {
+   "prices.csv.gz": {
+    "sha256": "2fb70ee43a9d30a4174c2353a1eca23798fb267cd09557d74d1af3cc6146d0e1",
+    "bytes": 50692072
+   },
+   "features.csv.gz": {
+    "sha256": "cf63f29b2cc08badaf287c158d7e85c689a249e386a9f0f9c0b85029e0510c87",
+    "bytes": 3541921
+   }
+  }
+ },
+ "llm": {
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro"
+ },
+ "observation": "Large caps above $10B being sold hard: RSI(14) below 35 on volume at least 1.5x the 50-day average, yet still in a long-term uptrend with the 50-day above the 200-day, positive free cash flow, short interest under 5% of shares, and no recent analyst downgrades. Most oversold first.",
+ "spec": {
+  "version": 1,
+  "observation": "Large caps above $10B being sold hard: RSI(14) below 35 on volume at least 1.5x the 50-day average, yet still in a long-term uptrend with the 50-day above the 200-day, positive free cash flow, short interest under 5% of shares, and no recent analyst downgrades. Most oversold first.",
+  "universe": {
+   "market_cap_min": 10000000000
+  },
+  "conditions": [
+   {
+    "field": "rsi14",
+    "op": "<",
+    "value": 35,
+    "why": "RSI(14) below 35"
+   },
+   {
+    "field": "volume_ratio_50d",
+    "op": ">=",
+    "value": 1.5,
+    "why": "volume at least 1.5x the 50-day average"
+   },
+   {
+    "field": "sma50_above_sma200",
+    "op": "==",
+    "value": true,
+    "why": "still in a long-term uptrend with the 50-day above the 200-day"
+   },
+   {
+    "field": "fcf_ttm",
+    "op": ">",
+    "value": 0,
+    "why": "positive free cash flow"
+   },
+   {
+    "field": "short_pct_shares_out",
+    "op": "<",
+    "value": 0.05,
+    "why": "short interest under 5% of shares"
+   }
+  ],
+  "rank": [
+   {
+    "field": "rsi14",
+    "direction": "asc",
+    "weight": 1
+   }
+  ],
+  "top_n": 5,
+  "unmapped": [
+   {
+    "text": "no recent analyst downgrades",
+    "reason": "No field is available for analyst ratings, revisions, or downgrades."
+   }
+  ],
+  "notes": "Large caps are interpreted as market capitalization above $10 billion. The analyst downgrade requirement cannot be measured by the available fields and is listed as unmapped."
+ },
+ "translation_attempts": [
+  {
+   "response": "{\n  \"version\": 1,\n  \"observation\": \"Large caps above $10B being sold hard: RSI(14) below 35 on volume at least 1.5x the 50-day average, yet still in a long-term uptrend with the 50-day above the 200-day, positive free cash flow, short interest under 5% of shares, and no recent analyst downgrades. Most oversold first.\",\n  \"universe\": {\n    \"market_cap_min\": 10000000000\n  },\n  \"conditions\": [\n    {\n      \"field\": \"rsi14\",\n      \"op\": \"<\",\n      \"value\": 35,\n      \"why\": \"RSI(14) below 35\"\n    },\n    {\n      \"field\": \"volume_ratio_50d\",\n      \"op\": \">=\",\n      \"value\": 1.5,\n      \"why\": \"volume at least 1.5x the 50-day average\"\n    },\n    {\n      \"field\": \"sma50_above_sma200\",\n      \"op\": \"==\",\n      \"value\": true,\n      \"why\": \"still in a long-term uptrend with the 50-day above the 200-day\"\n    },\n    {\n      \"field\": \"fcf_ttm\",\n      \"op\": \">\",\n      \"value\": 0,\n      \"why\": \"positive free cash flow\"\n    },\n    {\n      \"field\": \"short_pct_shares_out\",\n      \"op\": \"<\",\n      \"value\": 0.05,\n      \"why\": \"short interest under 5% of shares\"\n    }\n  ],\n  \"rank\": [\n    {\n      \"field\": \"rsi14\",\n      \"direction\": \"asc\",\n      \"weight\": 1\n    }\n  ],\n  \"top_n\": 5,\n  \"unmapped\": [\n    {\n      \"text\": \"no recent analyst downgrades\",\n      \"reason\": \"No field is available for analyst ratings, revisions, or downgrades.\"\n    }\n  ],\n  \"notes\": \"Large caps are interpreted as market capitalization above $10 billion. The analyst downgrade requirement cannot be measured by the available fields and is listed as unmapped.\"\n}",
+   "problems": []
+  }
+ ],
+ "funnel": [
+  {
+   "step": "universe (liquid US common stocks with SEC filings)",
+   "kind": "start",
+   "n_in": 3827,
+   "n_pass": 3827,
+   "n_fail": 0,
+   "n_missing": 0
+  },
+  {
+   "step": "market_cap >= $10.00B",
+   "kind": "universe",
+   "n_in": 3827,
+   "n_pass": 872,
+   "n_fail": 2742,
+   "n_missing": 213
+  },
+  {
+   "step": "rsi14 < 35",
+   "kind": "condition",
+   "n_in": 872,
+   "n_pass": 86,
+   "n_fail": 786,
+   "n_missing": 0
+  },
+  {
+   "step": "volume_ratio_50d >= 1.5",
+   "kind": "condition",
+   "n_in": 86,
+   "n_pass": 29,
+   "n_fail": 57,
+   "n_missing": 0
+  },
+  {
+   "step": "sma50_above_sma200 == true",
+   "kind": "condition",
+   "n_in": 29,
+   "n_pass": 14,
+   "n_fail": 15,
+   "n_missing": 0
+  },
+  {
+   "step": "fcf_ttm > 0",
+   "kind": "condition",
+   "n_in": 14,
+   "n_pass": 3,
+   "n_fail": 0,
+   "n_missing": 11
+  },
+  {
+   "step": "short_pct_shares_out < +5.0%",
+   "kind": "condition",
+   "n_in": 3,
+   "n_pass": 2,
+   "n_fail": 1,
+   "n_missing": 0
+  }
+ ],
+ "ranked": [
+  {
+   "rank": 1,
+   "score": 1.0,
+   "symbol": "BX",
+   "name": "Blackstone Inc.",
+   "sic_desc": "Investment Advice",
+   "market_cap": 84580437845.52,
+   "close": 112.68,
+   "drawdown_52w": -0.2891748675246025,
+   "pct_vs_sma50": -0.1389639446882908,
+   "mom_3m": -0.0752564628641772,
+   "rsi14": 31.255072641815676,
+   "volume_ratio_50d": 1.5327124358641686,
+   "revenue_growth_yoy": 0.1719169917590721,
+   "revenue_growth_q_yoy": 0.3588668875777903,
+   "revenue_growth_accel": 0.2591127639501287,
+   "fcf_margin": 0.3405385190261246,
+   "operating_margin": null,
+   "short_pct_shares_out": 0.0261906837825306,
+   "days_to_cover": 5.62,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-08-07",
+   "rank_pct_rsi14": 1.0,
+   "fcf_ttm": 5486239000.0,
+   "sma50_above_sma200": true,
+   "cik": 1393818
+  },
+  {
+   "rank": 2,
+   "score": 0.5,
+   "symbol": "SBUX",
+   "name": "STARBUCKS CORP",
+   "sic_desc": "Retail-Eating & Drinking Places",
+   "market_cap": 106259400000.0,
+   "close": 93.21,
+   "drawdown_52w": -0.1408424739607336,
+   "pct_vs_sma50": -0.0810501720381343,
+   "mom_3m": -0.1156546489563568,
+   "rsi14": 34.44323201509681,
+   "volume_ratio_50d": 4.243504440806213,
+   "revenue_growth_yoy": 0.0449449839599012,
+   "revenue_growth_q_yoy": -0.0140968697123519,
+   "revenue_growth_accel": -0.1019689478715922,
+   "fcf_margin": 0.0949989957822856,
+   "operating_margin": 0.0776638505098035,
+   "short_pct_shares_out": 0.0349853938596491,
+   "days_to_cover": 7.19,
+   "prov_revenue_period_end": "2026-06-28",
+   "prov_revenue_filed": "2026-07-29",
+   "rank_pct_rsi14": 0.5,
+   "fcf_ttm": 3642100000.0,
+   "sma50_above_sma200": true,
+   "cik": 829224
+  }
+ ],
+ "top_n": 5,
+ "explanations": [
+  {
+   "symbol": "BX",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "Blackstone's own earnings release reports an outstanding second quarter with strong earnings growth and nearly $70 billion of inflows, which conflicts with the stock's oversold technical signals.",
+     "quote": "Blackstone delivered an outstanding second quarter, highlighted by strong growth in earnings and nearly $70 billion of inflows.",
+     "doc_id": "BX-8K-2026-07-23-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526313250/d153439dex991.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "The MD&A states that U.S. capital markets activity expanded considerably, which would normally support fee-related earnings and contradicts the price decline.",
+     "quote": "U.S. capital markets activity levels expanded considerably following an active first quarter.",
+     "doc_id": "BX-10Q-2026-08-07-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526340208/d158269d10q.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "A news report says Barclays maintained an Equal-Weight rating and lowered its price target to $124, which may have contributed to selling pressure despite strong fundamentals.",
+     "quote": "Barclays Maintains Equal-Weight on Blackstone, Lowers Price Target to $124",
+     "doc_id": "BX-news-2026-10-08-62250415",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/10/62250415/barclays-maintains-equal-weight-blackstone-lowers-price-target-124",
+     "source_kind": "news"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "The company's MD&A notes that the ten-year Treasury yield has risen to 4.72% as of July 31, 2026, which could pressure valuations for rate-sensitive alternative asset managers.",
+     "quote": "The ten-year U.S. Treasury yield increased 15 basis points in the second quarter of 2026 to 4.47% and has since risen to 4.72% as of July 31, 2026.",
+     "doc_id": "BX-10Q-2026-08-07-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526340208/d158269d10q.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "A news report says Blue Owl investors sought to pull 39% from a tech credit fund, signaling redemption pressures in private credit that could spill over to investor sentiment on Blackstone's credit business.",
+     "quote": "Blue Owl Investors Seek to Pull 39% From $5B Tech Credit Fund",
+     "doc_id": "BX-news-2026-10-02-62146487",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/markets/private-markets/26/10/62146487/blue-owl-investors-seek-to-pull-39-from-5b-tech-credit-fund",
+     "source_kind": "news"
+    }
+   ],
+   "stripped": [],
+   "documents": [
+    {
+     "doc_id": "BX-8K-2026-07-23-ex99",
+     "kind": "earnings_release",
+     "title": "BX 8-K earnings release (Exhibit 99.1), filed 2026-07-23",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526313250/d153439dex991.htm",
+     "filed": "2026-07-23",
+     "chars_total": 110398,
+     "chars_shown": 24000
+    },
+    {
+     "doc_id": "BX-10Q-2026-08-07-mdna",
+     "kind": "mdna",
+     "title": "BX 10-Q for period 2026-06-30, MD&A, filed 2026-08-07",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526340208/d158269d10q.htm",
+     "filed": "2026-08-07",
+     "chars_total": 225787,
+     "chars_shown": 40000
+    },
+    {
+     "doc_id": "BX-news-2026-10-08-62250415",
+     "kind": "news",
+     "title": "Benzinga: Barclays Maintains Equal-Weight on Blackstone, Lowers Price Target to $124 (2026-10-08)",
+     "url": "https://www.benzinga.com/news/26/10/62250415/barclays-maintains-equal-weight-blackstone-lowers-price-target-124",
+     "filed": "2026-10-08",
+     "chars_total": 74,
+     "chars_shown": 74
+    },
+    {
+     "doc_id": "BX-news-2026-10-07-62234456",
+     "kind": "news",
+     "title": "Benzinga: 'Oracle, Broadcom and SpaceX Seek Blockbuster Debt Deals To Pay for AI Chips'- WSJ Exclusive (2026-10-07)",
+     "url": "https://www.benzinga.com/news/26/10/62234456/oracle-broadcom-and-spacex-seek-blockbuster-debt-deals-to-pay-for-ai-chips-wsj-exclusive",
+     "filed": "2026-10-07",
+     "chars_total": 92,
+     "chars_shown": 92
+    },
+    {
+     "doc_id": "BX-news-2026-10-06-62203335",
+     "kind": "news",
+     "title": "Benzinga: 'Waymo Boosts Private Debt Deal to $5 Billion in Push for Growth' - Bloomberg (2026-10-06)",
+     "url": "https://www.benzinga.com/news/26/10/62203335/waymo-boosts-private-debt-deal-5-billion-push-growth-bloomberg",
+     "filed": "2026-10-06",
+     "chars_total": 77,
+     "chars_shown": 77
+    },
+    {
+     "doc_id": "BX-news-2026-10-06-62202325",
+     "kind": "news",
+     "title": "Benzinga: KKR Private Credit Fund Edges Past Redemption Limit (2026-10-06)",
+     "url": "https://www.benzinga.com/markets/private-markets/26/10/62202325/kkr-private-credit-fund-edges-past-redemption-limit",
+     "filed": "2026-10-06",
+     "chars_total": 174,
+     "chars_shown": 174
+    },
+    {
+     "doc_id": "BX-news-2026-10-02-62146487",
+     "kind": "news",
+     "title": "Benzinga: Blue Owl Investors Seek to Pull 39% From $5B Tech Credit Fund (2026-10-02)",
+     "url": "https://www.benzinga.com/markets/private-markets/26/10/62146487/blue-owl-investors-seek-to-pull-39-from-5b-tech-credit-fund",
+     "filed": "2026-10-02",
+     "chars_total": 174,
+     "chars_shown": 174
+    },
+    {
+     "doc_id": "BX-news-2026-10-02-62138835",
+     "kind": "news",
+     "title": "Benzinga: Here’s How Much You Would Have Made Owning Blackstone Stock In The Last 10 Years (2026-10-02)",
+     "url": "https://www.benzinga.com/news/26/10/62138835/here-s-how-much-you-would-have-made-owning-blackstone-stock-last-10-years",
+     "filed": "2026-10-02",
+     "chars_total": 299,
+     "chars_shown": 299
+    },
+    {
+     "doc_id": "BX-news-2026-10-02-62138407",
+     "kind": "news",
+     "title": "Benzinga: Blackstone Pours $1 Billion Into New Defense Tech Firm (2026-10-02)",
+     "url": "https://www.benzinga.com/m-a/26/10/62138407/blackstone-pours-1-billion-into-new-defense-tech-firm",
+     "filed": "2026-10-02",
+     "chars_total": 194,
+     "chars_shown": 194
+    },
+    {
+     "doc_id": "BX-news-2026-10-02-62134848",
+     "kind": "news",
+     "title": "Benzinga: 'KKR, Blackstone Are Among Suitors for Windshield Repairer Cary' - Bloomberg (2026-10-02)",
+     "url": "https://www.benzinga.com/news/26/10/62134848/kkr-blackstone-are-among-suitors-windshield-repairer-cary-bloomberg",
+     "filed": "2026-10-02",
+     "chars_total": 76,
+     "chars_shown": 76
+    },
+    {
+     "doc_id": "BX-news-2026-10-02-62131557",
+     "kind": "news",
+     "title": "Benzinga: Wells Fargo Initiates Coverage On Blackstone with Equal-Weight Rating, Announces Price Target of $122 (2026-10-02)",
+     "url": "https://www.benzinga.com/news/26/10/62131557/wells-fargo-initiates-coverage-blackstone-equal-weight-rating-announces-price-target-122",
+     "filed": "2026-10-02",
+     "chars_total": 101,
+     "chars_shown": 101
+    },
+    {
+     "doc_id": "BX-news-2026-10-01-62105131",
+     "kind": "news",
+     "title": "Benzinga: Blackstone Launches Defense Tech Platform Falcata Through TSC, Applied Systems Engineering Combination (2026-10-01)",
+     "url": "https://www.benzinga.com/news/26/10/62105131/blackstone-launches-defense-tech-platform-falcata-through-tsc-applied-systems-engineering-combinatio",
+     "filed": "2026-10-01",
+     "chars_total": 102,
+     "chars_shown": 102
+    },
+    {
+     "doc_id": "BX-news-2026-09-30-62092249",
+     "kind": "news",
+     "title": "Benzinga: Goldman’s $18B Private Credit Fund Bucks Redemption Wave — Again (2026-09-30)",
+     "url": "https://www.benzinga.com/markets/private-markets/26/09/62092249/goldman-private-credit-fund-bucks-redemption-wave-again",
+     "filed": "2026-09-30",
+     "chars_total": 183,
+     "chars_shown": 183
+    },
+    {
+     "doc_id": "BX-news-2026-09-29-62041393",
+     "kind": "news",
+     "title": "Benzinga: Blackstone To Debut Nordic Logistics Platform Of 200 Warehouses, Offering Investors More Direct Route Into High-Growth Sector (2026-09-29)",
+     "url": "https://www.benzinga.com/news/26/09/62041393/blackstone-debut-nordic-logistics-platform-200-warehouses-offering-investors-more-direct-route-high-",
+     "filed": "2026-09-29",
+     "chars_total": 125,
+     "chars_shown": 125
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "SBUX",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "Starbucks reported a 7.9% increase in global comparable store sales, according to its earnings release.",
+     "quote": "Global comparable store sales increased 7.9%, primarily driven by a 4.2% increase in comparable transactions and a 3.5% increase in average ticket",
+     "doc_id": "SBUX-8K-2026-07-29-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000129/sbux-06282026xearningsrele.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Starbucks raised its guidance, including expecting fourth quarter U.S. comparable store sales growth of 6.5% or greater.",
+     "quote": "Fourth quarter U.S. comparable store sales growth of 6.5% or greater",
+     "doc_id": "SBUX-8K-2026-07-29-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000129/sbux-06282026xearningsrele.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "A news report says Starbucks has explored a takeover of Chipotle in a restaurant megadeal, which may explain the stock's underperformance despite strong fundamentals.",
+     "quote": "Starbucks has explored takeover of Chipotle in restaurant megadeal",
+     "doc_id": "SBUX-news-2026-10-08-62247653",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/10/62247653/starbucks-has-explored-takeover-chipotle-restaurant-megadeal-financial-times",
+     "source_kind": "news"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "A news report says Starbucks has looked into buying Chipotle, which could weigh on the stock due to deal risk.",
+     "quote": "Starbucks has looked into buying the company",
+     "doc_id": "SBUX-news-2026-10-08-62250019",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62250019/chipotle-stock-jumps-whats-going-on",
+     "source_kind": "news"
+    },
+    {
+     "claim": "Starbucks incurred a $282 million increase in restructuring and impairments, reflecting costs from store closures and organizational changes.",
+     "quote": "Restructuring and impairments increased $282 million, largely due to costs associated with the impairment of Starbucks Reserve and Roastery store locations, and partner severance costs.",
+     "doc_id": "SBUX-10Q-2026-07-29-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000130/sbux-20260628.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "A news report says UBS maintained a Neutral rating and lowered its price target to $105, signaling caution on Starbucks shares.",
+     "quote": "UBS Maintains Neutral on Starbucks, Lowers Price Target to $105",
+     "doc_id": "SBUX-news-2026-10-08-62257066",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/10/62257066/ubs-maintains-neutral-starbucks-lowers-price-target-105",
+     "source_kind": "news"
+    }
+   ],
+   "stripped": [],
+   "documents": [
+    {
+     "doc_id": "SBUX-8K-2026-07-29-ex99",
+     "kind": "earnings_release",
+     "title": "SBUX 8-K earnings release (Exhibit 99.1), filed 2026-07-29",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000129/sbux-06282026xearningsrele.htm",
+     "filed": "2026-07-29",
+     "chars_total": 43442,
+     "chars_shown": 24000
+    },
+    {
+     "doc_id": "SBUX-10Q-2026-07-29-mdna",
+     "kind": "mdna",
+     "title": "SBUX 10-Q for period 2026-06-28, MD&A, filed 2026-07-29",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000130/sbux-20260628.htm",
+     "filed": "2026-07-29",
+     "chars_total": 61551,
+     "chars_shown": 40000
+    },
+    {
+     "doc_id": "SBUX-news-2026-10-08-62259027",
+     "kind": "news",
+     "title": "Benzinga: Why Is Jersey Mike's Subs Stock Gaining Thursday? (2026-10-08)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62259027/why-is-jersey-mikes-subs-stock-gaining-thursday",
+     "filed": "2026-10-08",
+     "chars_total": 172,
+     "chars_shown": 172
+    },
+    {
+     "doc_id": "SBUX-news-2026-10-08-62257066",
+     "kind": "news",
+     "title": "Benzinga: UBS Maintains Neutral on Starbucks, Lowers Price Target to $105 (2026-10-08)",
+     "url": "https://www.benzinga.com/news/26/10/62257066/ubs-maintains-neutral-starbucks-lowers-price-target-105",
+     "filed": "2026-10-08",
+     "chars_total": 63,
+     "chars_shown": 63
+    },
+    {
+     "doc_id": "SBUX-news-2026-10-08-62251550",
+     "kind": "news",
+     "title": "Benzinga: QUICK SPARK: Chipotle Stock Eyes Best Day Since July on Starbucks' Takeover Interest (2026-10-08)",
+     "url": "https://www.benzinga.com/m-a/26/10/62251550/chipotle-stock-best-day-starbucks-takeover-interest",
+     "filed": "2026-10-08",
+     "chars_total": 239,
+     "chars_shown": 239
+    },
+    {
+     "doc_id": "SBUX-news-2026-10-08-62250019",
+     "kind": "news",
+     "title": "Benzinga: Chipotle Stock Jumps: What's Going On? (2026-10-08)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62250019/chipotle-stock-jumps-whats-going-on",
+     "filed": "2026-10-08",
+     "chars_total": 161,
+     "chars_shown": 161
+    },
+    {
+     "doc_id": "SBUX-news-2026-10-08-62247653",
+     "kind": "news",
+     "title": "Benzinga: 'Starbucks has explored takeover of Chipotle in restaurant megadeal'- Financial Times (2026-10-08)",
+     "url": "https://www.benzinga.com/news/26/10/62247653/starbucks-has-explored-takeover-chipotle-restaurant-megadeal-financial-times",
+     "filed": "2026-10-08",
+     "chars_total": 85,
+     "chars_shown": 85
+    },
+    {
+     "doc_id": "SBUX-news-2026-10-07-62232953",
+     "kind": "news",
+     "title": "Benzinga: Starbucks Raises Quarterly Dividend From $0.62 To $0.63/Share (2026-10-07)",
+     "url": "https://www.benzinga.com/quote/SBUX",
+     "filed": "2026-10-07",
+     "chars_total": 61,
+     "chars_shown": 61
+    },
+    {
+     "doc_id": "SBUX-news-2026-10-06-62197465",
+     "kind": "news",
+     "title": "Benzinga: 'A Starbucks-Chipotle Tie-up Might Be Crazy Enough To Work; People Close To The Company Tell Semafor That Chipotle Hasn’t Received A Takeover Bid'- Semafor (2026-10-06)",
+     "url": "https://www.benzinga.com/news/26/10/62197465/starbucks-chipotle-tie-might-be-crazy-enough-work-people-close-company-tell-semafor-chipotle-hasn-t-",
+     "filed": "2026-10-06",
+     "chars_total": 155,
+     "chars_shown": 155
+    },
+    {
+     "doc_id": "SBUX-news-2026-10-05-62172156",
+     "kind": "news",
+     "title": "Benzinga: 'Starbucks sued over 'sugar-free' claims for protein beverages'- Reuters (2026-10-05)",
+     "url": "https://www.benzinga.com/news/26/10/62172156/starbucks-sued-over-sugar-free-claims-protein-beverages-reuters",
+     "filed": "2026-10-05",
+     "chars_total": 72,
+     "chars_shown": 72
+    },
+    {
+     "doc_id": "SBUX-news-2026-09-29-62053181",
+     "kind": "news",
+     "title": "Benzinga: JP Morgan Maintains Overweight on Starbucks, Lowers Price Target to $105 (2026-09-29)",
+     "url": "https://www.benzinga.com/news/26/09/62053181/jp-morgan-maintains-overweight-starbucks-lowers-price-target-105",
+     "filed": "2026-09-29",
+     "chars_total": 72,
+     "chars_shown": 72
+    },
+    {
+     "doc_id": "SBUX-news-2026-09-25-61997944",
+     "kind": "news",
+     "title": "Benzinga: Starbucks to Close Select North America Coffeehouses, Cuts Store Outlook (2026-09-25)",
+     "url": "https://www.benzinga.com/markets/large-cap/26/09/61997944/starbucks-to-close-select-north-america-coffeehouses-cuts-store-outlook",
+     "filed": "2026-09-25",
+     "chars_total": 210,
+     "chars_shown": 210
+    },
+    {
+     "doc_id": "SBUX-news-2026-09-24-61966820",
+     "kind": "news",
+     "title": "Benzinga: Starbucks Board Approves Further Actions Under 'Back To Starbucks' Strategy; Will Close ~250, Or ~1% Of, Its North America Coffeehouses; Expects $300M Of Restructuring Charges, Including $200M In Cash And $100M Non-Cash Charges For Coffeehouse Asset Disposal And Impairments; Expects FY26 Net New Global Coffeehouse Openings Of ~440; Majority Of Starbucks Coffeehouse Closures Expected By End Of FY26 (2026-09-24)",
+     "url": "https://www.benzinga.com/quote/SBUX",
+     "filed": "2026-09-24",
+     "chars_total": 400,
+     "chars_shown": 400
+    },
+    {
+     "doc_id": "SBUX-news-2026-09-16-61809341",
+     "kind": "news",
+     "title": "Benzinga: Seaport Global Initiates Coverage On Starbucks with Neutral Rating (2026-09-16)",
+     "url": "https://www.benzinga.com/news/26/09/61809341/seaport-global-initiates-coverage-starbucks-neutral-rating",
+     "filed": "2026-09-16",
+     "chars_total": 66,
+     "chars_shown": 66
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  }
+ ],
+ "limits": [
+  "Prices: Alpaca SIP daily bars, split and dividend adjusted; no intraday data used.",
+  "Fundamentals: SEC XBRL companyfacts, US-GAAP filers only. Foreign private issuers (IFRS, 20-F/40-F) and companies without standard tags drop out as 'missing', they are not guessed.",
+  "Market cap uses the latest cover-page share count; for multi-class issuers it can understate.",
+  "Industry groups are SEC SIC codes, a coarse proxy for a theme (no GICS/BICS in free data).",
+  "Short interest: FINRA consolidated short interest (twice monthly, non-commercial use); % is of shares outstanding, not float.",
+  "Earnings-call transcripts are licensed content and were not used; explanations rely on the 8-K earnings release, 10-Q/10-K MD&A, and news headlines and summaries (Alpaca / Benzinga), never full articles.",
+  "No consensus estimates, revisions, ownership or borrow-cost data: those need a licensed source."
+ ]
+}

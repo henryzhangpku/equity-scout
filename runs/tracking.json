@@ -1,0 +1,132 @@
+{
+ "generated_at": "2026-10-08T22:54:25+00:00",
+ "chain_ok": true,
+ "chain_problems": [],
+ "n_entries": 3,
+ "label": "since run date; days of history, not evidence",
+ "marks": [
+  {
+   "run_id": "a-midcap-pullback",
+   "as_of": "2026-10-08",
+   "marked_to": "2026-10-08",
+   "trading_days": 0,
+   "basket_return": 0.0,
+   "benchmarks": {
+    "SPY": 0.0,
+    "SMH": 0.0
+   },
+   "basket_vs": {
+    "SPY": 0.0,
+    "SMH": 0.0
+   },
+   "picks": [
+    {
+     "symbol": "VICR",
+     "rank": 1,
+     "entry_close": 262.32,
+     "return": 0.0
+    },
+    {
+     "symbol": "SITM",
+     "rank": 2,
+     "entry_close": 645.06,
+     "return": 0.0
+    },
+    {
+     "symbol": "STRL",
+     "rank": 3,
+     "entry_close": 518.41,
+     "return": 0.0
+    },
+    {
+     "symbol": "SANM",
+     "rank": 4,
+     "entry_close": 210.48,
+     "return": 0.0
+    },
+    {
+     "symbol": "KLIC",
+     "rank": 5,
+     "entry_close": 90.92,
+     "return": 0.0
+    }
+   ]
+  },
+  {
+   "run_id": "b-ai-infra-laggards",
+   "as_of": "2026-10-08",
+   "marked_to": "2026-10-08",
+   "trading_days": 0,
+   "basket_return": 0.0,
+   "benchmarks": {
+    "SPY": 0.0,
+    "SMH": 0.0
+   },
+   "basket_vs": {
+    "SPY": 0.0,
+    "SMH": 0.0
+   },
+   "picks": [
+    {
+     "symbol": "AVGO",
+     "rank": 1,
+     "entry_close": 360.14,
+     "return": 0.0
+    },
+    {
+     "symbol": "AAOI",
+     "rank": 2,
+     "entry_close": 105.9,
+     "return": 0.0
+    },
+    {
+     "symbol": "AMAT",
+     "rank": 3,
+     "entry_close": 509.57,
+     "return": 0.0
+    },
+    {
+     "symbol": "COHR",
+     "rank": 4,
+     "entry_close": 302.35,
+     "return": 0.0
+    },
+    {
+     "symbol": "AMKR",
+     "rank": 5,
+     "entry_close": 51.0,
+     "return": 0.0
+    }
+   ]
+  },
+  {
+   "run_id": "c-oversold-volume",
+   "as_of": "2026-10-08",
+   "marked_to": "2026-10-08",
+   "trading_days": 0,
+   "basket_return": 0.0,
+   "benchmarks": {
+    "SPY": 0.0,
+    "SMH": 0.0
+   },
+   "basket_vs": {
+    "SPY": 0.0,
+    "SMH": 0.0
+   },
+   "picks": [
+    {
+     "symbol": "BX",
+     "rank": 1,
+     "entry_close": 112.68,
+     "return": 0.0
+    },
+    {
+     "symbol": "SBUX",
+     "rank": 2,
+     "entry_close": 93.21,
+     "return": 0.0
+    }
+   ]
+  }
+ ]
+}
