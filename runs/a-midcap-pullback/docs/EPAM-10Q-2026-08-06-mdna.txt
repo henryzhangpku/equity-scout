@@ -1,0 +1,372 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+You should read the following discussion and analysis of our financial condition and results of operations together with our Annual Report on Form 10-K for the year ended December 31, 2025 and the unaudited condensed consolidated financial statements and the related notes included elsewhere in this quarterly report. In addition to historical information, this discussion contains forward-looking statements that involve risks, uncertainties and assumptions that could cause actual results to differ materially from management’s expectations. Factors that could cause such differences are discussed in the sections entitled “Forward-Looking Statements” in this item and in “Part I. Item 1A. Risk Factors” in our Annual Report on Form 10-K for the year ended December 31, 2025. We assume no obligation to update any of these forward-looking statements.
+
+In this quarterly report, “EPAM,” “EPAM Systems, Inc.,” the “Company,” “we,” “us” and “our” refer to EPAM Systems, Inc. and its consolidated subsidiaries.
+
+“EPAM®” is a trademark of EPAM Systems, Inc. All other trademarks and service marks used herein are the property of their respective owners.
+
+Executive Summary
+
+We have used our software engineering expertise to become a leading global provider of digital engineering, cloud and AI-enabled transformation services, as well as a leading business and experience consulting partner for global enterprises and ambitious startups. We address our clients’ transformation challenges by fusing EPAM Continuum’s integrated strategy, experience and technology consulting with our 30+ years of engineering execution to speed our clients’ time to market and drive greater value from their digital investments.
+
+We leverage AI to deliver transformative solutions that accelerate our clients' digital innovation and enhance their competitive edge. Through platforms like EPAM AI/RUN™ and initiatives like DIALX Lab™, we integrate advanced AI technologies into tailored business strategies, driving significant industry impact and fostering continuous innovation.
+
+Through increased specialization in focused verticals and a continued emphasis on strategic partnerships, we are able to deliver technology transformation from start to finish, leveraging agile methodologies, proven client collaboration frameworks, engineering excellence tools, hybrid teams and our award-winning proprietary global delivery platform.
+
+Our clients depend on us to solve their complex technical challenges and rely on our expertise in core engineering, advanced technologies, digital design and intelligent enterprise development. We combine our software engineering heritage with strategic business and innovation consulting, design thinking, and physical-digital capabilities to deliver end-to-end digital transformation services for our clients. We focus on building long-term partnerships with our clients in a market that is constantly challenged by the pressures of digitization through our innovative strategy and scalable software solutions, integrated advisory, business consulting and experience design, and a continually evolving mix of advanced capabilities.
+
+Our global delivery model and centralized support functions, combined with the benefits of scale from the shared use of fixed-cost resources, enhance our productivity levels and enable us to better manage the efficiency of our global operations. As a result, we have created a delivery base whereby our applications, tools, methodologies and infrastructure allow us to seamlessly deliver services and solutions from our global delivery centers to our clients across the world. Our teams of consultants, designers, architects, engineers and trainers have the capabilities and skill sets to deliver business results.
+
+Business Update Regarding the War in Ukraine
+
+Russia’s attack on Ukraine has had, and could continue to have, a material adverse effect on our operations. As of June 30, 2026, Ukraine continues to be a significant delivery location with a large number of delivery professionals operating from safe locations at levels of productivity consistent with those achieved prior to the attack. We have maintained our $100 million humanitarian aid commitment to our people in Ukraine, and as of June 30, 2026, we have $4.6 million remaining to be expensed under this humanitarian commitment.
+
+Our Board of Directors and its committees continue their oversight of our strategic, geopolitical, and cybersecurity risks and the risks related to our geographic locations and expansion. Our Board has received updates from management during both regular and special meetings, while also providing oversight of the risks associated with Russia’s invasion of Ukraine and other strategic areas of importance related to the war.
+
+29
+
+Table of contents
+
+We continue to monitor and respond to the difficult conditions in Ukraine while maintaining a focus on our clients and long-term growth. We execute on our business continuity plans and our global delivery centers have sufficient resources, including infrastructure and capital, to support ongoing operations while continuing to focus on the safety and security of our employees and their families in Ukraine as well as in the broader region. The implementation and execution of our business continuity plans, our humanitarian commitment to our people in Ukraine, and other costs related to the war resulted in materially increased expenses. Some of these expenses continued during this year and we expect some of these expenses will continue to occur in subsequent quarters for some time in the future. The information contained in this section is accurate as of the date hereof but may become outdated due to changing circumstances beyond our control or present awareness.
+
+For additional information on the various risks posed by the attack against Ukraine and the impact in the region as well as other risks to our business, please read “Part I. Item 1A. Risk Factors” in our Annual Report on Form 10-K for the year ended December 31, 2025 and “Part II. Item 1A. Risk Factors” in this quarterly report.
+
+Year-to-Date 2026 Developments and Trends
+
+For the first six months of 2026, our revenues were $2.815 billion, an increase of 6.0% from $2.655 billion reported for the same period of 2025. Revenues have been positively impacted by improving demand for our services and foreign exchange fluctuations. Income from operations as a percentage of revenues increased to 9.6% for the six months ended June 30, 2026 as compared to 8.5% for the six months ended June 30, 2025, largely driven by a decrease in cost of revenues (exclusive of depreciation and amortization) as a percentage of revenues. Diluted earnings per share increased to $3.49 for the six months ended June 30, 2026 from $2.84 for the six months ended June 30, 2025, principally resulting from an increase in income from operations as well as reduced common shares outstanding resulting from share repurchases, including repurchases made under the Accelerated Share Repurchase Agreement (“ASR”) in connection with the 2025 Repurchase Program. See Note 10 “Stockholders’ Equity” of our condensed consolidated financial statements in “Part I. Item 1. Financial Statements (Unaudited)” for information regarding the ASR.
+
+Critical Accounting Policies
+
+The discussion and analysis of our financial position and results of operations is based on our unaudited condensed consolidated financial statements which have been prepared in accordance with U.S. GAAP. The preparation of these condensed consolidated financial statements in accordance with U.S. GAAP requires us to make estimates and judgments that may affect the reported amounts of assets, liabilities, revenues and expenses, and related disclosure of contingent assets and liabilities. On a recurring basis, we evaluate our estimates and judgments, including those related to revenue recognition and related allowances, impairments of long-lived assets including intangible assets, goodwill and right-of-use assets, income taxes including the valuation allowance for deferred tax assets, and stock-based compensation. Actual results may differ materially from these estimates under different assumptions and conditions. In addition, our reported financial condition and results of operations could vary due to a change in the application of a particular accounting standard.
+
+During the three and six months ended June 30, 2026, there have been no material changes to our critical accounting policies as reported in our Annual Report on Form 10-K for the year ended December 31, 2025.
+
+30
+
+Table of contents
+
+Results of Operations
+
+The following table presents a summary of our consolidated results of operations for the periods indicated. This information should be read together with our unaudited condensed consolidated financial statements and related notes included elsewhere in this quarterly report. The operating results in any period are not necessarily indicative of the results that may be expected for any future period.
+
+Three Months Ended
+
+June 30, Six Months Ended
+
+June 30,
+
+2026 2025 2026 2025
+
+(in thousands, except percentages and per share data)
+
+Revenues $ 1,414,767 100.0 % $ 1,353,443 100.0 % $ 2,814,828 100.0 % $ 2,655,135 100.0 %
+
+Operating expenses:
+
+Cost of revenues (exclusive of depreciation and amortization)(1)
+985,199 69.6 % 964,012 71.2 % 1,997,251 71.0 % 1,916,020 72.2 %
+
+Selling, general and administrative expenses(2)
+245,245 17.3 % 231,681 17.1 % 484,947 17.1 % 450,598 16.9 %
+
+Depreciation and amortization expense 32,101 2.3 % 31,274 2.4 % 63,640 2.3 % 62,711 2.4 %
+
+Income from operations 152,222 10.8 % 126,476 9.3 % 268,990 9.6 % 225,806 8.5 %
+
+Interest and other income (loss), net (1,821) (0.2) % 3,519 0.3 % (239) — % 9,333 0.3 %
+
+Foreign exchange loss (9,850) (0.7) % (6,227) (0.5) % (7,552) (0.3) % (16,954) (0.6) %
+
+Income before provision for income taxes 140,551 9.9 % 123,768 9.1 % 261,199 9.3 % 218,185 8.2 %
+
+Provision for income taxes 37,572 2.6 % 35,742 2.6 % 75,699 2.7 % 56,677 2.1 %
+
+Net income $ 102,979 7.3 % $ 88,026 6.5 % $ 185,500 6.6 % $ 161,508 6.1 %
+
+Effective tax rate 26.7 % 28.9 % 29.0 % 26.0 %
+
+Diluted earnings per share $ 1.97 $ 1.56 $ 3.49 $ 2.84
+
+(1)Includes $22,833 and $18,161 of stock-based compensation expense for the three months ended June 30, 2026 and 2025, respectively, and $45,686 and $42,084 of stock-based compensation expense for the six months ended June 30, 2026 and 2025, respectively.
+
+(2)Includes $23,568 and $20,397 of stock-based compensation expense for the three months ended June 30, 2026 and 2025, respectively, and $50,634 and $44,930 of stock-based compensation expense for the six months ended June 30, 2026 and 2025, respectively.
+
+31
+
+Table of contents
+
+Consolidated Results Review
+
+Revenues
+
+During the three months ended June 30, 2026, our total revenues increased by 4.5% to $1.415 billion compared to the corresponding period in 2025. During the three months ended June 30, 2026 as compared to the same period last year, revenues have been positively impacted by improving demand for our services and fluctuations in foreign currency exchange rates which contributed 1.1% to revenue growth.
+
+During the six months ended June 30, 2026, our total revenues increased by 6.0% to $2.815 billion compared to the corresponding period in 2025. During the six months ended June 30, 2026 as compared to the same period last year, revenues have been positively impacted by improving demand for our services and fluctuations in foreign currency exchange rates which contributed 2.5% to revenue growth.
+
+Revenues by client location for the three and six months ended June 30, 2026 and 2025 were as follows:
+
+Three Months Ended
+
+June 30, Six Months Ended
+
+June 30,
+
+2026 2025 2026 2025
+
+(in thousands, except percentages) (in thousands, except percentages)
+
+Americas(1)
+$ 805,413 56.9 % $ 801,433 59.2 % $ 1,604,882 57.0 % $ 1,581,718 59.6 %
+
+EMEA(2)
+582,234 41.2 % 524,809 38.8 % 1,158,246 41.1 % 1,021,924 38.5 %
+
+APAC(3)
+27,120 1.9 % 27,201 2.0 % 51,700 1.9 % 51,493 1.9 %
+
+Revenues $ 1,414,767 100.0 % $ 1,353,443 100.0 % $ 2,814,828 100.0 % $ 2,655,135 100.0 %
+
+(1)Americas includes revenues from clients in North, Central and South America.
+
+(2)EMEA includes revenues from clients in Europe and the Middle East.
+
+(3)APAC includes revenues from clients in East Asia, Southeast Asia and Australia.
+
+During the three and six months ended June 30, 2026, the United States continued to be our largest client location. During the three months ended June 30, 2026, revenues in the United States increased 0.7% to $715.0 million from $710.0 million in the second quarter of 2025. During the six months ended June 30, 2026, revenues in the United States increased 2.0% to $1.427 billion as compared to $1.398 billion in the same period of the prior year, largely due to increased spending at certain large accounts.
+
+During the three months ended June 30, 2026, the top three revenue contributing countries by client location in EMEA were the United Kingdom, Switzerland, and the Netherlands, generating $159.6 million, $112.3 million and $63.2 million in revenues, respectively, compared to $149.6 million, $110.1 million, and $57.1 million, respectively, in the corresponding period last year. During the six months ended June 30, 2026, the United Kingdom, Switzerland and the Netherlands performed as EMEA’s top revenue generating locations and contributed $318.1 million, $226.5 million, and $126.4 million, respectively compared to $294.2 million, $214.9 million, and $104.0 million, respectively, in the corresponding period last year. Revenues in the EMEA region were positively impacted by increased spending at certain large accounts and changes in foreign currency exchange rates during the three and six months ended June 30, 2026 as compared to the same period in the previous year.
+
+During the three months ended June 30, 2026, revenues from clients in the APAC region decreased by $0.1 million or 0.3%, and increased by $0.2 million or 0.4% during the six months ended June 30, 2026, compared to the corresponding periods of 2025.
+
+Cost of Revenues (Exclusive of Depreciation and Amortization)
+
+The principal components of our cost of revenues (exclusive of depreciation and amortization) are salaries, bonuses, fringe benefits, stock-based compensation, project-related travel costs and fees for subcontractors who are assigned to client projects. Salaries and other compensation expenses of our delivery professionals are reported as cost of revenues regardless of whether the employees are actually performing services for clients during a given period. Additionally, government incentives and assistance related to services performed by delivery professionals assigned to client projects are reported in cost of revenues. Our employees are a critical asset, necessary for our continued success and therefore we expect to continue hiring talented employees and providing them with competitive compensation programs.
+
+32
+
+Table of contents
+
+During the three months ended June 30, 2026, cost of revenues (exclusive of depreciation and amortization) was $985.2 million representing an increase of 2.2% from $964.0 million in the corresponding period of 2025. The increase primarily resulted from a 1.6% increase in the average number of production professionals in the second quarter of 2026 compared to the second quarter of 2025, foreign exchange fluctuations, and increased stock-based compensation expense. Expressed as a percentage of revenues, cost of revenues (exclusive of depreciation and amortization) was 69.6% and 71.2% in the second quarter of 2026 and 2025, respectively. This year-over-year decrease is primarily due to a decrease in compensation expense as a percentage of revenues, partially offset by the negative impact from foreign currency fluctuations.
+
+During the six months ended June 30, 2026, cost of revenues (exclusive of depreciation and amortization) was $1.997 billion representing an increase of 4.2% from $1.916 billion in the corresponding period of 2025. The increase primarily resulted from a 2.1% increase in the average number of production professionals in the first six months of 2026 compared to the first six months of 2025, foreign exchange fluctuations, and increased stock-based compensation expense. Expressed as a percentage of revenues, cost of revenues (exclusive of depreciation and amortization) was 71.0% and 72.2% for the six months ended June 30, 2026 and 2025, respectively. The year-over-year decrease is primarily due to a decrease in compensation expense as a percentage of revenues, partially offset by the negative impact from foreign currency fluctuations.
+
+Selling, General and Administrative Expenses
+
+Selling, general and administrative expenses represent expenditures associated with promoting and selling our services and general and administrative functions of our business. These expenses include the costs of salaries, bonuses, fringe benefits, stock-based compensation, severance, bad debt, travel, legal and accounting services, insurance, facilities including operating leases, advertising, and other promotional activities. Additionally, selling, general and administrative expenses include various one-time and unusual expenses such as impairment charges.
+
+During the three months ended June 30, 2026, selling, general and administrative expenses were $245.2 million representing a 5.9% increase as compared to $231.7 million in the corresponding period of 2025. The increase was mainly driven by increased personnel-related costs including stock-based compensation expense and foreign exchange fluctuations. Expressed as a percentage of revenues, selling, general and administrative expenses increased by 0.2% to 17.3% for the three months ended June 30, 2026 as compared to the same period from the prior year. The year-over-year increase is primarily due to higher stock-based compensation expense as a percentage of revenues.
+
+During the six months ended June 30, 2026, selling, general and administrative expenses were $484.9 million representing a 7.6% increase as compared to $450.6 million in the corresponding period of 2025. The increase in selling, general and administrative expenses was mainly driven by increased personnel-related costs including stock-based compensation expense, and foreign exchange fluctuations. Expressed as a percentage of revenues, selling, general and administrative expenses increased by 0.2% to 17.1% for the six months ended June 30, 2026 as compared to the same period from the prior year. The year-over-year increase is primarily due to higher severance expenses incurred in the current year as part of the 2025 Cost Optimization Program.
+
+Depreciation and Amortization Expense
+
+During the three and six months ended June 30, 2026, depreciation and amortization expense was $32.1 million and $63.6 million, respectively, as compared to $31.3 million and $62.7 million, respectively, in the corresponding periods last year. The composition of depreciable and amortizable assets has not changed significantly since the beginning of the prior year.
+
+Interest and Other Income (Loss), Net
+
+Interest and other income (loss), net includes interest earned on cash and cash equivalents and short-term investments, gains and losses from certain financial instruments, interest expense related to our borrowings, and changes in the fair value of contingent consideration. Interest and other income (loss), net was a loss of $1.8 million and $0.2 million during the three and six months ended June 30, 2026, respectively, compared to income of $3.5 million and $9.3 million during the three and six months ended June 30, 2025, respectively. The decrease in Interest and other income (loss), net during the three months ended June 30, 2026 as compared to the three months ended June 30, 2025 was largely driven by a $1.7 million difference in the change in fair value of contingent consideration, a $1.2 million increase in interest expense, mainly related to our line of credit, and a $0.9 million decrease in interest income from our cash, cash equivalents and short-term investments. The decrease in Interest and other income (loss), net during the six months ended June 30, 2026 as compared to the six months ended June 30, 2025 was largely driven by a $4.4 million difference in the change in fair value of contingent consideration, a $1.8 million decrease in interest income from our cash, cash equivalents and short-term investments, and a $1.3 million increase in interest expense, mainly related to our line of credit.
+
+33
+
+Table of contents
+
+Foreign Exchange Loss
+
+During the three and six months ended June 30, 2026, foreign exchange loss was $9.9 million and $7.6 million, respectively, compared to a loss of $6.2 million and $17.0 million, respectively, reported in the corresponding periods last year. Exchange rate movements impact the reported value of our assets and liabilities denominated in currencies other than the U.S. dollar or where the currency of such items is different than the functional currency of the entity where these items were recorded.
+
+Provision for Income Taxes
+
+In determining our interim provision for income taxes, we use an estimated annual effective tax rate, which is based on expected annual profit before tax, statutory tax rates and tax planning opportunities available in the various jurisdictions in which we operate. Certain significant or unusual items are separately recognized in the quarter in which they occur and can be a source of variability in the effective tax rates from quarter to quarter.
+
+Determining the consolidated provision for income tax expense, deferred income tax assets and liabilities and any potential related valuation allowances involves judgment. We consider factors that may contribute, favorably or unfavorably, to the overall effective tax rate in the current year as well as the future. These factors include statutory tax rates and tax law changes in the countries where we operate and excess tax benefits or shortfalls upon vesting or exercise of stock awards as well as consideration of any significant or unusual items.
+
+Our effective tax rate was 26.7% and 29.0% for the three and six months ended June 30, 2026, respectively, and 28.9% and 26.0% for the three and six months ended June 30, 2025, respectively. We recorded a tax shortfall upon vesting or exercise of stock awards of $1.7 million and $11.6 million during the three and six months ended June 30, 2026, respectively, as compared to a tax shortfall upon vesting or exercise of stock awards of $1.1 million and $0.6 million during the three and six months ended June 30, 2025, respectively.
+
+34
+
+Table of contents
+
+Results by Business Segment
+
+We determine our business segments and report segment information in accordance with how the Company’s chief operating decision maker (“CODM”) organizes the segments to evaluate performance, allocate resources and make business decisions. Our CODM is the chief executive officer. We manage our business primarily based on the managerial responsibility for our client base and market. As managerial responsibility for a particular client relationship generally correlates with the client’s geographic location, there is a high degree of similarity between client locations and the geographic boundaries of our reportable segments. In some cases, managerial responsibility for a particular client is assigned to a management team in another region and is usually based on the strength of the relationship between client executives and particular members of EPAM’s senior management team. In such cases, the client’s activity would be reported through the management team’s reportable segment.
+
+Segment results are based on the segment’s revenues and operating profit, where segment operating profit is defined as segment income from operations before unallocated costs. Expenses included in segment operating profit consist principally of direct selling and delivery costs as well as an allocation of certain shared services expenses. Intersegment transactions are excluded from the segment’s revenues and operating profit on the basis that they are neither included in the measure of a segment’s profit and loss results, nor considered by the CODM during the review of segment results. Certain corporate expenses are not allocated to specific segments as these expenses are not controllable at the segment level. Such expenses include certain types of professional fees, certain taxes included in operating expenses, compensation to non-employee directors and certain other general and administrative expenses, including compensation of specific groups of non-production employees. In addition, we do not allocate amortization of intangible assets acquired through business combinations, goodwill and other asset impairment charges, stock-based compensation expenses, acquisition-related costs and certain other one-time charges and benefits. These unallocated amounts are combined with total segment operating profit to arrive at consolidated income from operations.
+
+Our CODM considers the operating results of each segment on a quarterly basis and uses segment operating profit predominantly to assess the performance of each segment by comparing the results of each segment with one another and to historical performance. When combined with certain other financial information, this enables the CODM to make decisions about the reporting structure, allocation of operating and capital resources, and compensation of certain employees.
+
+See Note 14 “Segment Information” in the notes to our condensed consolidated interim financial statements in this Form 10-Q for more information related to our reportable segments.
+
+Americas Segment
+
+The following table summarizes revenues from external clients and operating profit, before unallocated expenses, for the Americas segment for the three and six months ended June 30, 2026, and 2025:
+
+Three Months Ended
+
+June 30, Six Months Ended
+
+June 30,
+
+2026 2025 2026 2025
+
+Americas segment revenues $ 792,262 $ 787,400 $ 1,587,658 $ 1,564,568
+
+Less:
+
+Adjusted cost of revenues (exclusive of depreciation and amortization) 527,841 544,768 1,077,746 1,095,617
+
+Adjusted selling, general and administrative expenses 106,171 103,999 210,515 205,517
+
+Depreciation and amortization of property and equipment 9,173 9,143 18,074 18,716
+
+Americas segment operating profit $ 149,077 $ 129,490 $ 281,323 $ 244,718
+
+During the three months ended June 30, 2026, revenues for the Americas segment increased $4.9 million, or 0.6%, compared to the same period last year and segment operating profit increased $19.6 million, or 15.1%, compared to the same period last year. During the three months ended June 30, 2026, revenues from our Americas segment were 56.0% of total revenues, a decrease from 58.2% reported in the corresponding period of 2025. As a percentage of Americas segment revenues, the Americas segment’s operating profit increased to 18.8% during the second quarter of 2026 from 16.4% in the second quarter of 2025. This increase is primarily attributable to improved profitability as a result of our cost optimization initiatives, partially offset by the impact of changes in foreign currency exchange rates.
+
+35
+
+Table of contents
+
+During the six months ended June 30, 2026, revenues for the Americas segment increased $23.1 million, or 1.5%, compared to the same period last year and segment operating profit increased $36.6 million, or 15.0%, compared to the same period last year. During the six months ended June 30, 2026, revenues from our Americas segment were 56.4% of total revenues, a decrease from 58.9% reported in the corresponding period of 2025. As a percentage of Americas segment revenues, the Americas segment’s operating profit increased to 17.7% during the six months ended June 30, 2026 from 15.6% in the six months ended June 30, 2025. This increase is primarily attributable to improved profitability as a result of our cost optimization initiatives, partially offset by the impact of changes in foreign currency exchange rates.
+
+The following table presents Americas segment revenues by industry vertical for the periods indicated:
+
+Three Months Ended
+
+June 30, Change Six Months Ended
+
+June 30, Change
+
+2026 2025 Dollars Percentage 2026 2025 Dollars Percentage
+
+Industry Vertical (in thousands, except percentages)
+
+Financial Services $ 171,295 $ 148,552 $ 22,743 15.3 % $ 336,741 $ 297,902 $ 38,839 13.0 %
+
+Software & Hi-Tech 128,660 144,310 (15,650) (10.8) % 261,482 279,972 (18,490) (6.6) %
+
+Life Sciences & Healthcare 123,283 124,937 (1,654) (1.3) % 248,316 250,916 (2,600) (1.0) %
+
+Consumer Goods, Retail & Travel 119,904 118,742 1,162 1.0 % 242,094 233,417 8,677 3.7 %
+
+Business Information & Media 115,994 118,844 (2,850) (2.4) % 231,891 232,064 (173) (0.1) %
+
+Emerging Verticals 133,126 132,015 1,111 0.8 % 267,134 270,297 (3,163) (1.2) %
+
+Revenues $ 792,262 $ 787,400 $ 4,862 0.6 % $ 1,587,658 $ 1,564,568 $ 23,090 1.5 %
+
+During the three and six months ended June 30, 2026, Financial Services was the largest industry vertical in the Americas segment and grew 15.3% and 13.0%, respectively, compared to the corresponding periods of 2025, primarily due to increased spend at a large wealth management client and growth in insurance, asset management, and payment processing clients. Software & Hi-Tech declined 10.8% and 6.6% during the three and six months ended June 30, 2026, respectively, which was a result of lower spend from our technology clients. Life Sciences & Healthcare declined 1.3% and 1.0% during the three and six months ended June 30, 2026, respectively. Consumer Goods, Retail & Travel grew 1.0% and 3.7% during the three and six months ended June 30, 2026, respectively, primarily due to growth from our consumer goods and distribution clients. Business Information & Media declined 2.4% and 0.1% during the three and six months ended June 30, 2026, respectively, primarily due to lower demand from information services clients. Emerging Verticals grew 0.8% during the three months ended June 30, 2026 and declined 1.2% during the six months ended June 30, 2026, respectively, with growth coming from clients in the energy sector and lower revenues experienced from clients in industrial materials, telecommunications, and real estate in both periods.
+
+Europe Segment
+
+The following table summarizes revenues from external clients and operating profit, before unallocated expenses, for the Europe segment for the three and six months ended June 30, 2026, and 2025:
+
+Three Months Ended
+
+June 30, Six Months Ended
+
+June 30,
+
+2026 2025 2026 2025
+
+Europe segment revenues $ 622,505 $ 566,043 $ 1,227,170 $ 1,090,567
+
+Less:
+
+Adjusted cost of revenues (exclusive of depreciation and amortization) 430,476 403,455 867,178 778,918
+
+Adjusted selling, general and administrative expenses 86,229 77,528 166,924 151,044
+
+Depreciation and amortization of property and equipment 5,318 4,294 10,239 8,502
+
+Europe segment operating profit $ 100,482 $ 80,766 $ 182,829 $ 152,103
+
+36
+
+Table of contents
+
+During the three months ended June 30, 2026, Europe’s segment revenues were $622.5 million, representing an increase of $56.5 million, or 10.0%, from the same period last year. Revenues were positively impacted by changes in foreign currency exchange rates during the second quarter of 2026 and had our Europe segment revenues been expressed in constant currency terms using the exchange rates in effect during the second quarter of 2025, we would have reported revenue growth of 8.5%. Europe’s segment revenues accounted for 44.0% and 41.8% of total segment revenues during the three months ended June 30, 2026 and 2025, respectively. During the second quarter of 2026, the segment’s operating profit increased 24.4% to $100.5 million compared to the second quarter of 2025. Expressed as a percentage of revenues, Europe’s segment operating profit increased to 16.1% compared to 14.3% in the same period of the prior year. This increase is primarily attributable to improved profitability as a result of our cost optimization initiatives.
+
+During the six months ended June 30, 2026, Europe’s segment revenues were $1.227 billion, representing an increase of $136.6 million, or 12.5%, from the same period last year. Revenues were positively impacted by changes in foreign currency exchange rates during the six months ended June 30, 2026 and had our Europe segment revenues been expressed in constant currency terms using the exchange rates in effect during the first half of 2025, we would have reported revenue growth of 8.0%. Europe’s segment revenues accounted for 43.6% and 41.1% of total segment revenues during the six months ended June 30, 2026 and 2025, respectively. During the six months ended June 30, 2026, the segment’s operating profit increased 20.2% to $182.8 million compared to the corresponding period of 2025. Expressed as a percentage of revenues, Europe’s segment operating profit increased to 14.9% compared to 13.9% in the same period of the prior year. This increase is primarily attributable to improved profitability as a result of our cost optimization initiatives.
+
+The following table presents Europe segment revenues by industry vertical for the periods indicated:
+
+Three Months Ended
+
+June 30, Change Six Months Ended
+
+June 30, Change
+
+2026 2025 Dollars Percentage 2026 2025 Dollars Percentage
+
+Industry Vertical (in thousands, except percentages)
+
+Financial Services $ 194,892 $ 179,761 $ 15,131 8.4 % $ 379,646 $ 344,376 $ 35,270 10.2 %
+
+Consumer Goods, Retail & Travel 154,350 149,308 5,042 3.4 % 306,037 290,145 15,892 5.5 %
+
+Software & Hi-Tech 73,355 60,361 12,994 21.5 % 151,253 114,772 36,481 31.8 %
+
+Business Information & Media 50,737 51,549 (812) (1.6) % 100,219 104,876 (4,657) (4.4) %
+
+Life Sciences & Healthcare 45,795 31,568 14,227 45.1 % 84,896 60,543 24,353 40.2 %
+
+Emerging Verticals 103,376 93,496 9,880 10.6 % 205,119 175,855 29,264 16.6 %
+
+Revenues $ 622,505 $ 566,043 $ 56,462 10.0 % $ 1,227,170 $ 1,090,567 $ 136,603 12.5 %
+
+During the three and six months ended June 30, 2026, Financial Services was the largest industry vertical in the Europe segment and grew 8.4% and 10.2%, respectively, compared to the corresponding periods of 2025, primarily due to improved demand from clients in asset management and insurance. During the three and six months ended June 30, 2026, revenues in Consumer Goods, Retail & Travel grew 3.4% and 5.5%, respectively, primarily due to improved demand from clients in the retail and consumer goods industries. During the three and six months ended June 30, 2026, revenues in Software & Hi-Tech grew 21.5% and 31.8%, respectively, primarily due to increased demand at a large hardware client and several technology services clients. During the three and six months ended June 30, 2026, revenues in Business Information & Media declined 1.6% and 4.4%, respectively, primarily due to decreased demand from information services clients. Revenues in Life Sciences & Healthcare grew 45.1% and 40.2%, respectively, during the three and six months ended June 30, 2026, primarily due to the growth experienced from new and existing clients in the pharmaceutical sector. Revenues in Emerging Verticals grew 10.6% and 16.6%, respectively, during the three and six months ended June 30, 2026, due to the growth from various clients in the energy sector.
+
+Effects of Inflation
+
+Economies in many countries where we operate have periodically experienced high rates of inflation. Periods of higher inflation may affect various economic sectors in those countries and increase our cost of doing business there. We do not believe that inflation has had a material impact on our business, results of operations or financial condition to date. We continue to track the impact of inflation, particularly on wages, while attempting to minimize its effects through pricing and cost management strategies. A higher-than-normal rate of inflation in the future could adversely affect our operations and financial condition. For a discussion of our potential risks and uncertainties, including those related to inflation, see “Part I. Item 1A. Risk Factors” in our Annual Report on Form 10-K for the year ended December 31, 2025.
+
+37
+
+Table of contents
+
+Liquidity and Capital Resources
+
+Capital Resources
+
+Our cash generated from operations has been our primary source of liquidity to fund operations, to repurchase shares and make investments to support the growth of our business. As of June 30, 2026, our principal sources of liquidity were cash and cash equivalents totaling $789.4 million, short-term investments totaling $4.8 million, and $675.0 million of available borrowings under our revolving credit facility. As of June 30, 2026, $25.0 million was outstanding under this facility and we were in compliance with all covenants contained in the facility. See Note 6 “Debt” of our condensed consolidated financial statements in “Part I. Item 1. Financial Statements (Unaudited)” for information regarding drawdowns on our revolving credit facility.
+
+Cash Flows
+
+The following table summarizes our cash flows for the periods indicated:
+
+Six Months Ended
+
+June 30,
+
+2026 2025
+
+(in thousands)
+
+Condensed Consolidated Statements of Cash Flow Data:
+
+Net cash provided by (used in) operating activities $ (38,784) $ 77,360
+
+Net cash used in investing activities (32,153) (23,522)
+
+Net cash used in financing activities (425,349) (353,569)
+
+Effect of exchange rate changes on cash, cash equivalents and restricted cash (10,804) 55,820
+
+Net decrease in cash, cash equivalents and restricted cash (507,090) (243,911)
+
+Cash, cash equivalents and restricted cash, beginning of period 1,301,377 1,290,392
+
+Cash, cash equivalents and restricted cash, end of period $ 794,287 $ 1,046,481
+
+Operating Activities
+
+Our largest source of cash provided by operating activities is cash generated from our professional services that we provide to our clients. Our primary uses of cash from operating activities include compensation to our employees and related costs, payments for leased facilities, various general corporate expenditures and income tax payments. The first six months of 2026 were negatively impacted by a higher level of variable compensation payments made based on 2025 performance and a larger increase in days sales outstanding compared to the first six months of 2025.
+
+Investing Activities
+
+Our primary uses of cash in investing activities consist of purchases of computer hardware, software and office equipment, as well as investments into office buildings and new businesses. We also use cash for short-term investments and time deposits and receive cash upon maturity of these deposits. Most of our investments are typically short-term and cash equivalent in nature but we may invest in longer term deposits if the terms are favorable. The cash used in investing activities during the six months ended June 30, 2026 was primarily attributable to $33.1 million used for capital expenditures compared to $19.2 million used for capital expenditures in the corresponding period of 2025.
+
+Financing Activities
+
+Cash used in financing activities mainly consists of repurchases of shares of EPAM common stock under our share repurchase programs, payments of withholding taxes related to net share settlements of equity awards, repayments of debt, and settlements of the acquisition-date fair value of contingent consideration related to acquisitions of businesses. Cash provided by financing activities mainly consists of the proceeds from the issuance of shares under our ESPP and exercises of stock options issued under our long-term incentive plans as well as proceeds from debt. We typically do not rely on debt to supplem

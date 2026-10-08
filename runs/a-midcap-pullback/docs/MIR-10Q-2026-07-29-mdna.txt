@@ -1,0 +1,495 @@
+ITEM 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+
+You should read the following discussion and analysis of Mirion’s financial condition and results of operations together with the unaudited Condensed Consolidated Financial Statements and related notes of Mirion Technologies, Inc. that are included elsewhere in this Quarterly Report on Form 10-Q as well as our audited consolidated financial statements and the notes related thereto for the year ended December 31, 2025 that are included in our Annual Report on Form 10-K. This discussion contains forward-looking statements based upon current expectations that involve risks and uncertainties. Our actual results may differ materially from those anticipated in these forward-looking statements as a result of various factors, including those set forth under the section entitled “Risk Factors” included in this Quarterly Report on Form 10-Q as well as our Annual Report on Form 10-K. Unless the context otherwise requires, references in this section to “we,” “us,” “our,” “Mirion” and “the Company” refer to the business and operations of Mirion Technologies, Inc. and its consolidated subsidiaries. Unless the context otherwise requires or unless otherwise specified, all dollar amounts in this section are in millions.
+
+Overview
+
+We are a global provider of products, services, and software that allow our customers to safely leverage the power of ionizing radiation for the greater good of humanity through critical applications in the medical, nuclear and defense markets, as well as laboratories, scientific research, analysis, and exploration.
+
+We provide dosimetry solutions for monitoring the total amount of radiation medical staff members are exposed to over time, radiation therapy quality assurance solutions for calibrating and verifying imaging and treatment accuracy, and radionuclide therapy products for nuclear medicine applications such as shielding, product handling, and medical imaging furniture. We provide robust, field-ready personal radiation detection and identification equipment for defense applications and radiation detection and analysis tools for power plants, labs, and research applications. Nuclear power plant product offerings are used for the full nuclear power plant lifecycle including core detectors, essential measurement devices for new build, maintenance, decontamination and decommission, and equipment for monitoring and control during fuel dismantling and remote environmental monitoring.
+
+We manage and report results of operations in two business segments: Nuclear & Safety and Medical.
+
+•Our revenues were $266.8 million for the three months ended June 30, 2026 and $222.9 million for the three months ended June 30, 2025, of which 69.8% and 63.6% were generated in the Nuclear & Safety segment for the three months ended June 30, 2026 and 2025, respectively, and 30.2% and 36.4% were generated in the Medical segment for the three months ended June 30, 2026 and 2025, respectively.
+
+•Our revenues were $524.4 million for the six months ended June 30, 2026 and $424.9 million for the six months ended June 30, 2025, of which 70.9% and 64.7% were generated in the Nuclear & Safety segment for the six months ended June 30, 2026 and 2025, respectively, and 29.1% and 35.3% were generated in the Medical segment for the six months ended June 30, 2026 and 2025, respectively.
+
+•Backlog (representing committed but undelivered contracts and purchase orders) was $1,138.6 million and $1,104.3 million as of June 30, 2026, and December 31, 2025, respectively.
+
+Our Business Segments
+
+We manage and report our business in two business segments: Nuclear & Safety and Medical.
+
+Nuclear & Safety includes products and services focused on addressing critical radiation safety, measurement and analysis applications across nuclear energy, laboratories and research and other industrial markets such as defense. For Nuclear Power Plants ("NPPs"), we sell products and services for use at any stage of their life (construction, operation, decommissioning and dismantling), with NPPs representing the majority of our sales into the nuclear end market.
+
+Medical includes products and services for radiation therapy, nuclear medicine and personal dosimetry. This segment’s principal product offering is in Radiation Therapy Quality Assurance (RT QA), which includes solutions for calibrating and/or verifying imaging, treatment machine, patient treatment plan, and patient treatment accuracy. The advancing field of Nuclear Medicine is also served by this segment including products for radiation measurement, product handling, and medical imaging, inclusive of software across the radiopharmaceutical lifecycle. Dosimetry solutions monitor the total amount of radiation medical staff members are exposed to over time.
+
+44
+
+Table of Contents
+
+Key Factors Affecting Our Performance
+
+We believe that our business and results of operations and financial condition may be impacted in the future by various trends, conditions and risks. The Board has overall oversight responsibility for our risk management. During 2024, the Company initiated a formal Enterprise Risk Management program (“ERM”) where management and Internal Audit provide updates to the Board. These discussions include identification and scoring of key business risks and management's plans and progress to address identified focus areas.
+
+The following key factors affecting our performance have included, and we anticipate they will continue to affect our future results:
+
+•Nuclear end market trends—Growth and operating results in our Nuclear & Safety segment are impacted by:
+
+•Our products are installed at the vast majority of addressable active nuclear power reactors globally, creating full lifecycle sales opportunities. This installed base drives recurring revenue through replacement and service cycles associated with our offerings and the typical 40 to 100 year operating life cycle of a nuclear power plant (“NPP”);
+
+•The emerging megatrends surrounding the power demands of data centers, cloud computing, and artificial intelligence that can be served by Nuclear;
+
+•Products supporting the development of new technologies within the Nuclear end market, including Small Modular Reactors (“SMRs”);
+
+•Increased government and industry acceptance of Nuclear as (a) a clean energy source, and (b) a viable option for domestic energy production in efforts to rely less on international imports; and
+
+•Decisions by governments to build new power plants or decommission existing plants can positively and negatively impact our customer base.
+
+•Medical end market trends—Growth and operating results in our Medical segment are impacted by:
+
+•Medical radiation therapy quality assurance (“RT QA”) growth driven by growing and aging population demographics, low penetration of RT QA technology in emerging markets, and increased adoption of advanced software and hardware solutions for improved outcomes and administrative and labor efficiencies;
+
+•Changes to global regulatory standards, including new or expanded standards;
+
+•Increased focus on healthcare safety;
+
+•Medical/lab dosimetry growth supported by growing and aging demographics, increased number of healthcare professionals, and penetration of radiation therapy/diagnostics;
+
+•Changes to healthcare reimbursement; and
+
+•Potential budget constraints in hospitals and other healthcare providers.
+
+•We believe the focus of government policy in China is on expanding access to healthcare. In addition, our investments to address clinical needs, localization, and its growing population should benefit our business in China in the long term. However, we continue to monitor developments in the China market, including increased competition from local companies and the prevalence of volume based procurement policies, both of which have and may continue to impact our orders and revenues.
+
+•Nuclear new build projects—A portion of our remaining performance obligations is driven by contracts associated with the construction of new nuclear power plants. These contracts can be long-term in nature and provide us with a strong pipeline for the recognition of future revenues in our Nuclear & Safety segment. We perform our services and provide our products at a fixed price for certain contracts. Fixed-price contracts carry inherent risks, including risks of losses from underestimating costs, operational difficulties and other changes that may occur over the contract period. If our cost estimates for a contract are inaccurate or if we do not execute the contract within our cost estimates, we may incur losses or the contract may not be as profitable as we expected. In addition, even though some of our longer-term contracts contain price escalation provisions, such provisions may not fully provide for cost increases, whether from inflation, the cost of goods and services to be delivered under such contracts or otherwise.
+
+•Geopolitical and Trade Conditions—Geopolitical and trade conditions, including related to matters affecting Russia, the relationship between the United States and China, and conflict in the Middle East (including the U.S.-Israel-Iran conflict), have impacted and may continue to impact us, through increased inflation, limited availability of certain commodities, supply chain disruption, disruptions to our global technology infrastructure, including cyberattacks, increased terrorist activities, volatility or disruption in the capital markets, and delays or cancellations of customer projects.
+
+45
+
+Table of Contents
+
+•Inflation and Interest Rates—We continue to actively monitor, evaluate and respond to developments relating to operational challenges in the current inflationary environment. Global supply chain disruptions and the higher inflationary environment remain unpredictable and our past results may not be indicative of future performance. In addition, the increase in interest rates has in turn led to increases in the interest rates applicable to our indebtedness and increased our debt service costs.
+
+•Sanctions—There are, at any given time, a multitude of ongoing or threatened armed conflicts around the world. As one example, sanctions by the United States, the European Union, and other countries against Russian entities or individuals related to the Russia-Ukraine conflict, along with any Russian retaliatory measures could increase our costs, adversely affect our operations, or impact our ability to meet existing contractual obligations.
+
+•Strategic transactions—A large driver of our historical growth has been the acquisition and integration of related businesses. Our ability to integrate, restructure, and leverage synergies of these businesses will impact our operating results over time. From time to time we also divest businesses which could also impact our operating results.
+
+•Environmental objectives of governments—Growth and operating results in our Nuclear & Safety segment are impacted by environmental policy decisions made by governments in the countries where we operate. Our nuclear power customers may benefit from decarbonization efforts given the relatively low carbon footprint of nuclear power to other existing energy sources.
+
+•Government budgets—While we believe that we are poised for growth from governmental customers in both of our segments, our revenues and cash flows from government customers are influenced, particularly in the short-term, by budgetary cycles. This impact can be either positive or negative, primarily related to revenues in our Labs and Research and Defense end markets.
+
+•Research and development—A portion of our operating expenses is associated with research and development activities associated with the design of new products. Given the specific design and application of these products, there is some risk that these costs will not result in successful products in the market. Further, the timing of these products can move and be challenging to predict.
+
+•Financial risks—Our business and financial statements can be adversely affected by foreign currency exchange rates, changes in interest rates, recognition of impairment charges for our goodwill or other intangible assets and fluctuations in the cost and availability of commodities.
+
+•Global risk, including tariffs—Our business depends in part on operations and sales outside the United States. Risks related to those international operations and sales include new foreign investment laws, new export/import regulations, and additional trade restrictions (such as tariffs, sanctions, and embargoes). New laws that favor local competitors could prevent our ability to compete outside the United States. Additional potential issues are associated with the impact of these same risks on our suppliers and customers. If our customers or suppliers are impacted by these risk factors, we may see the reduction or cancellation of customer orders, or interruptions in the supply of raw materials and components.
+
+•Tax risks—Our business and financial statements can be adversely affected by changes in tax rates or exposure to tax liabilities/assessments:
+
+•Our effective tax rate could be impacted by changes in tax laws;
+
+•Audits or assessments by tax authorities could result in additional tax payments for prior periods;
+
+•Foreign remittance taxes have not been provided on undistributed earnings of certain of our non-U.S. subsidiaries to the extent such earnings are considered to be indefinitely reinvested in operations. Changes in our intentions regarding reinvestment of such earnings could impact our income tax provision, cash taxes paid and effective tax rate; and
+
+•The OECD (Organization for Economic Co-operation and Development) has proposed a global minimum tax of 15% of reported profits (Pillar Two) and many countries have incorporated Pillar Two model rule concepts into their domestic laws. Pillar Two legislation was effective for the Company for the year ended December 31, 2025. Although the model rules provide a framework for applying the minimum tax, countries may enact Pillar Two slightly differently than the model rules and on different timelines. While we continue to expect the impact to be immaterial, Pillar Two could impact our cash taxes paid and effective tax rate.
+
+Recent Developments
+
+Paragon Acquisition
+
+On December 1, 2025, Mirion acquired 100% of the outstanding membership interest of WCI-Gigawatt Intermediate Holdco, LLC, the indirect parent of Paragon Energy Solutions, LLC ("Paragon") for $588.6 million of gross purchase
+
+46
+
+Table of Contents
+
+consideration ($581.5 million, net of cash and net working capital adjustment). As part of the Nuclear & Safety segment, Paragon is a leading provider of highly engineered solutions for large-scale nuclear power plants and small modular reactors (SMRs) in the United States. Mirion management believes that Paragon will provide Mirion's nuclear power customers with a more comprehensive suite of product offerings and services to meet their growing needs. Additionally, the addition of Paragon significantly enhances our presence in the U.S. nuclear power market and the developing SMR commercial entrants.
+
+Certrec Acquisition
+
+On July 31, 2025, Mirion acquired 100% of the equity interest of Certrec for $82.9 million of purchase consideration ($80.6 million net of cash), subject to final closing statement balances. As part of the Nuclear & Safety segment, Certrec is a leading supplier of regulatory compliance and digital integration solutions for the energy industry. Mirion management believes the Certrec business will be pivotal in expanding our offerings in the nuclear power market and further strengthen the development of our digital ecosystem.
+
+Russia and China
+
+The United States, the European Union, the United Kingdom and other governments have implemented major trade and financial sanctions against Russia, China, and related parties. Additionally, China continues to expand localization requirements that could require us to localize manufacturing or source local components, or to otherwise modify our business operations. We do business with Russian and Chinese customers both within and outside of Russia and China, as well as with customers who have contracts with Russian and Chinese counterparties. The impact on the Company is predominantly in our Nuclear & Safety segment. As of June 30, 2026, the Company has approximately $18.8 million in net contract assets for Russian and Chinese customers and channel partners. The Company maintains $10.4 million in advance payment guarantees in support of these projects. The remaining performance obligations in our backlog for Russian- and Chinese-related projects were approximately $124.0 million at June 30, 2026.
+
+While we have not experienced significant impacts to our business results from these sanctions and localization requirements, the Company will continue to monitor the social, political, regulatory and economic environment in Russia and China, and will consider actions as appropriate.
+
+Non-GAAP Financial Measures
+
+We report our financial results in accordance with generally accepted accounting principles in the United States. (“GAAP”). However, management believes certain non-GAAP financial measures provide investors and other users with additional meaningful information that should be considered when assessing our ongoing performance. Management also uses these non-GAAP financial measures in making financial, operating, and planning decisions, and in evaluating our performance. Non-GAAP financial measures should be viewed in addition to, and not as an alternative for, our GAAP results. The non-GAAP financial measures we present may differ from similarly captioned measures presented by other companies. Investors are encouraged to review the related GAAP financial measures and the reconciliation of these non-GAAP financial measures to their most directly comparable GAAP financial measures, and not to rely on any single financial measure to evaluate our business.
+
+In particular, we use the non-GAAP financial measures “EBITA,” “EBITDA,” and “Adjusted EBITDA.” “Adjusted EBITDA” is used in the calculation of the First Lien Net Leverage Ratio in the 2021 Credit Agreement described in Note 8, Borrowings, to the unaudited Condensed Consolidated Financial Statements included elsewhere in this Quarterly Report on Form 10-Q.
+
+47
+
+Table of Contents
+
+The following tables present a reconciliation of certain non-GAAP financial measures for the three and six months ended June 30, 2026 and for the three and six months ended June 30, 2025.
+
+(In millions) Three Months Ended June 30, 2026 Three Months Ended June 30, 2025
+
+Net income $ 8.1 $ 8.5
+
+Interest expense, net 5.8 9.8
+
+Income tax expense (benefit) 3.2 (0.7)
+
+Amortization 30.0 25.2
+
+EBITA $ 47.1 $ 42.8
+
+Depreciation 8.8 8.7
+
+EBITDA $ 55.9 $ 51.5
+
+Stock-based compensation expense 6.9 3.4
+
+Foreign currency loss (gain), net 1.0 (13.5)
+
+Loss on debt extinguishment and other related costs — 6.3
+
+Cost of revenues impact from inventory valuation purchase accounting 0.8 —
+
+Non-operating expenses(1)(2)
+0.7 3.5
+
+Adjusted EBITDA $ 65.3 $ 51.2
+
+(1)Pre-tax non-operating expenses of $0.7 million for the three months ended June 30, 2026 include $0.5 million of restructuring and other related costs and $0.2 million of mergers and acquisitions expenses, primarily consisting of nonrecurring third-party consulting and professional fees.
+
+(2)Pre-tax non-operating expenses of $3.5 million for the three months ended June 30, 2025 include $1.9 million of restructuring and other related costs; $1.0 million of asset impairment charges of our equity investment (100% impairment); $0.3 million of mergers and acquisitions expenses; and $0.3 million of consulting costs related to Nuclear & Safety segment enterprise resource planning software upgrades.
+
+(In millions) Six Months Ended June 30, 2026 Six Months Ended June 30, 2025
+
+Net income $ 4.7 $ 8.9
+
+Interest expense, net 10.8 20.4
+
+Income tax expense (benefit) 1.4 (0.5)
+
+Amortization 61.0 50.6
+
+EBITA $ 77.9 $ 79.4
+
+Depreciation 18.6 17.0
+
+EBITDA $ 96.5 $ 96.4
+
+Stock-based compensation expense 11.2 6.8
+
+Foreign currency loss (gain), net 4.7 (16.3)
+
+Loss on debt extinguishment and other related costs — 6.3
+
+Cost of revenues impact from inventory valuation purchase accounting 1.6 —
+
+Non-operating expenses(1)(2)
+5.6 4.7
+
+Adjusted EBITDA $ 119.6 $ 97.9
+
+(1)Pre-tax non-operating expenses of $5.6 million for the six months ended June 30, 2026 include $4.8 million of mergers and acquisitions expenses, primarily consisting of nonrecurring third-party consulting and professional fees, and $0.6 million of restructuring and other related costs.
+
+(2)Pre-tax non-operating expenses of $4.7 million for the six months ended June 30, 2025 include $1.9 million of restructuring and other related costs; $1.0 million of asset impairment charges of our equity investment (100% impairment); $0.8 million of consulting costs related to Nuclear & Safety segment enterprise resource planning software upgrades; $0.7 million of one-time consulting fees related to IT services sourcing excellence; and $0.3 million of mergers and acquisitions expenses.
+
+48
+
+Table of Contents
+
+The following tables present a reconciliation of GAAP income from operations to non-GAAP Adjusted EBITDA by segment for the three and six months ended June 30, 2026 and the three and six months ended June 30, 2025.
+
+Three Months Ended June 30, 2026
+
+(In millions) Nuclear & Safety Medical Corporate & Other Consolidated
+
+Income from operations $ 26.0 $ 14.8 $ (22.9) $ 17.9
+
+Amortization 19.2 10.8 — 30.0
+
+Depreciation 3.7 4.8 0.3 8.8
+
+Stock-based compensation 1.0 0.5 5.4 6.9
+
+Cost of revenues impact from inventory valuation purchase accounting 0.8 — — 0.8
+
+Non-operating expenses 0.2 0.3 0.2 0.7
+
+Other expense / (income) 0.1 (0.1) 0.2 0.2
+
+Adjusted EBITDA $ 51.0 $ 31.1 $ (16.8) $ 65.3
+
+Three Months Ended June 30, 2025
+
+(In millions) Nuclear & Safety Medical Corporate & Other Consolidated
+
+Income from operations $ 19.0 $ 10.9 $ (20.0) $ 9.9
+
+Amortization 13.7 11.5 — 25.2
+
+Depreciation 3.6 4.8 0.3 8.7
+
+Stock-based compensation 0.3 0.4 2.7 3.4
+
+Non-operating expenses 1.0 2.6 0.4 4.0
+
+Other expense / (income) 0.3 (0.1) (0.2) —
+
+Adjusted EBITDA $ 37.9 $ 30.1 $ (16.8) $ 51.2
+
+Six Months Ended June 30, 2026
+
+(In millions) Nuclear & Safety Medical Corporate & Other Consolidated
+
+Income from operations $ 46.9 $ 22.6 $ (47.9) $ 21.6
+
+Amortization 38.8 22.2 — 61.0
+
+Depreciation 8.4 9.6 0.6 18.6
+
+Stock-based compensation 1.7 1.1 8.4 11.2
+
+Cost of revenues impact from inventory valuation purchase accounting 1.6 — — 1.6
+
+Non-operating expenses 0.3 0.3 5.0 5.6
+
+Other expense / (income) 0.1 (0.1) — —
+
+Adjusted EBITDA $ 97.8 $ 55.7 $ (33.9) $ 119.6
+
+Six Months Ended June 30, 2025
+
+(In millions) Nuclear & Safety Medical Corporate & Other Consolidated
+
+Income from operations $ 40.7 $ 17.6 $ (39.7) $ 18.6
+
+Amortization 27.4 23.2 — 50.6
+
+Depreciation 6.9 9.5 0.6 17.0
+
+Stock-based compensation 0.8 0.8 5.2 6.8
+
+Non-operating expenses 1.0 2.6 1.6 5.2
+
+Other expense / (income) 0.3 (0.4) (0.2) (0.3)
+
+Adjusted EBITDA $ 77.1 $ 53.3 $ (32.5) $ 97.9
+
+49
+
+Table of Contents
+
+Basis of Presentation
+
+Financial information presented was derived from our historical consolidated financial statements and accounting records, and they reflect the historical financial position, results of operations and cash flows of the business in conformity with U.S. GAAP for financial statements and pursuant to the accounting and disclosure rules and regulations of the SEC. The consolidated financial statements include the accounts of the Company and its wholly owned and majority-owned or controlled subsidiaries. For consolidated subsidiaries where our ownership is less than 100%, the portion of the net income or loss allocable to noncontrolling interests is reported as “Income (loss) attributable to noncontrolling interests” in the unaudited Condensed Consolidated Statements of Operations. All intercompany accounts and transactions have been eliminated in consolidation.
+
+50
+
+Table of Contents
+
+Results of Operations
+
+For the Three Months Ended June 30, 2026 and the Three Months Ended June 30, 2025
+
+The following table summarizes our results of operations for the periods presented below (in millions):
+
+Unaudited
+
+Three Months Ended June 30, 2026 Three Months Ended June 30, 2025
+
+Revenues $ 266.8 $ 222.9
+
+Cost of revenues 133.7 120.4
+
+Gross profit 133.1 102.5
+
+Selling, general and administrative expenses 105.1 82.6
+
+Research and development 10.1 10.0
+
+Income from operations 17.9 9.9
+
+Interest expense, net 5.8 9.8
+
+Loss on debt extinguishment — 5.8
+
+Foreign currency loss (gain), net 1.0 (13.5)
+
+Other (income) expense, net (0.2) —
+
+Income before income taxes 11.3 7.8
+
+Income tax expense (benefit) 3.2 (0.7)
+
+Net income 8.1 8.5
+
+Income attributable to noncontrolling interests 0.4 0.2
+
+Net income attributable to Mirion Technologies, Inc. $ 7.7 $ 8.3
+
+Overview
+
+Revenues were $266.8 million for the three months ended June 30, 2026 and $222.9 million for the three months ended June 30, 2025. Our Nuclear & Safety segment contributed $186.2 million and $141.7 million of revenues for the three months ended June 30, 2026 and 2025, respectively. Our Medical segment contributed $80.6 million and $81.2 million of revenues for the three months ended June 30, 2026 and 2025, respectively. Gross profit was $133.1 million and $102.5 million for the three months ended June 30, 2026 and 2025, respectively, resulting in a $30.6 million increase from the three months ended June 30, 2025.
+
+Net income was $8.1 million for the three months ended June 30, 2026 and net income was $8.5 million for the three months ended June 30, 2025. Our Nuclear & Safety segment contributed $26.0 million and $19.0 million of income from operations for the three months ended June 30, 2026 and 2025, respectively. Our Medical segment contributed $14.8 million and $10.9 million of income from operations for the three months ended June 30, 2026 and 2025, respectively. The overall decrease in net income is primarily driven by a $1.0 million unrealized foreign currency loss in the current period as opposed to a $13.5 million gain in the prior period as a result of fluctuations in the exchange rate between the US Dollar and the Euro, increased amortization of intangible assets associated with recent acquisitions, increased employee compensation costs, and an increase in income tax expense. Partially offsetting these items was increased revenues in the Nuclear & Safety segment primarily driven by acquisitions, improved gross profit margins, decreased interest expense, and a nonrecurring $5.8 million loss on debt extinguishment in the prior period.
+
+51
+
+Table of Contents
+
+Revenues
+
+Revenues were $266.8 million for the three months ended June 30, 2026 and $222.9 million for the three months ended June 30, 2025. Revenues increased $43.9 million from the three months ended June 30, 2025.
+
+Nuclear & Safety segment revenues increased for the three months ended June 30, 2026 compared with the three months ended June 30, 2025 primarily due to price increases, organic volume growth, foreign exchange impacts, and recent acquisitions.
+
+Medical segment revenues decreased for the three months ended June 30, 2026 compared with the three months ended June 30, 2025 primarily due to decreased volume, specifically within Asia-Pacific countries due to the introduced tariff regime in prior years paired with a decline in dosimetry product sales, partially offset by price increases and organic volume growth within the cameras product line.
+
+Cost of revenues
+
+Cost of revenues was $133.7 million for the three months ended June 30, 2026 and $120.4 million for the three months ended June 30, 2025, an increase of $13.3 million period over period.
+
+Cost of revenues related to the Nuclear & Safety segment increased $19.1 million period over period. The increase was primarily driven by inflation of $1.7 million, increased employee medical costs of $1.0 million, foreign exchange impacts of $0.6 million, and costs associated with recent acquisitions of $20.2 million. These changes were partially offset by positive margin mix impact of $4.5 million.
+
+Cost of revenues related to the Medical segment decreased $2.6 million period over period due to a decline in organic volume, partially offset by inflation.
+
+Selling, general and administrative expenses
+
+Selling, general and administrative (“SG&A”) expenses were $105.1 million for the three months ended June 30, 2026 and $82.6 million for the three months ended June 30, 2025, resulting in an increase of $22.5 million period over period.
+
+Our Nuclear & Safety segment incurred higher SG&A expenses of $20.5 million for the three months ended June 30, 2026 compared with the three months ended June 30, 2025. The increase was driven by increased employee compensation costs related to newly acquired entities, amortization expense from newly acquired intangible assets, and foreign exchange impacts.
+
+Our Medical segment incurred lower SG&A expenses of $1.7 million for the three months ended June 30, 2026 compared with the three months ended June 30, 2025. The decrease was driven by lower amortization expense for intangible assets, partially offset by increased employee compensation costs.
+
+Corporate SG&A expenses were $21.3 million for the three months ended June 30, 2026 and $17.6 million for the three months ended June 30, 2025. The increase of $3.7 million was primarily driven by increased stock compensation costs, including additional expenses related to performance stock options ("PSOs") granted during the quarter, and costs associated with the establishment of a new artificial intelligence function. These costs were partially offset by a decrease in compensation costs.
+
+Research and development
+
+Research and development (“R&D”) expenses were $10.1 million for the three months ended June 30, 2026 and $10.0 million for the three months ended June 30, 2025, resulting in a increase of $0.1 million period over period.
+
+52
+
+Table of Contents
+
+Income from operations
+
+Income from operations was $17.9 million for the three months ended June 30, 2026 compared with $9.9 million for the three months ended June 30, 2025. On a segment basis, income from operations in the Nuclear & Safety segment for the three months ended June 30, 2026 and three months ended June 30, 2025 was $26.0 million and $19.0 million, respectively, representing an increase of $7.0 million period over period. Income from operations in the Medical segment for the three months ended June 30, 2026 and 2025 was $14.8 million and $10.9 million, respectively, representing an increase of $3.9 million period over period. Corporate loss from operations was $22.9 million and $20.0 million for the three months ended June 30, 2026 and 2025, respectively, representing an increased loss of $2.9 million period over period. See “Business segments” and “Corporate and other” below for further details.
+
+Interest expense, net
+
+Interest expense, net, was $5.8 million for the three months ended June 30, 2026 and $9.8 million for the three months ended June 30, 2025. The $4.0 million decrease in interest expense, net, was due to decreased SOFR from the prior period, the $244.6 million decrease in the term loan balance as a result of the debt refinancing during the three months ended June 30, 2025, the 0.25% interest rate negotiated on the $400.0 million offering of Convertible Senior Notes due 2030 completed during the three months ended June 30 2025, and additional interest earned on cash deposits in the current period. For more information, see Note 8, Borrowings, Note 9, Convertible Debt, and Note 17, Derivatives and Hedging, to the unaudited Condensed Consolidated Financial Statements included elsewhere in this Quarterly Report on Form 10-Q.
+
+Loss on debt extinguishment
+
+Loss on debt extinguishment was $5.8 million for the three months ended June 30, 2025, related to the refinancing of the term loan completed on June 5, 2025.
+
+Foreign currency (gain) loss, net
+
+We recorded a $1.0 million net loss for the three months ended June 30, 2026 and a $13.5 million net gain for the three months ended June 30, 2025 from foreign currency exchange. The change in foreign currency loss (gain), net is due primarily to fluctuations in European local currencies in relation to the U.S. dollar and the related impact on our intercompany loans.
+
+Income taxes
+
+The effective income tax rate was 28.3% and (9.0)% for the three months ended June 30, 2026 and 2025, respectively. The difference in effective tax rate between the periods was primarily attributable to mix of earnings.
+
+The effective income tax rate differs from the U.S. statutory rate of 21% due primarily to U.S. federal income tax permanent differences and the impact of valuation allowances.
+
+Business segments
+
+The following provides detail for business segment results for the three months ended June 30, 2026 and 2025. Segment income from operations includes revenues of the segment less expenses that are directly related to those revenues but excludes certain charges to cost of revenues and SG&A expenses predominantly related to corporate costs, which are included in Corporate and Other in the table below. Interest expense, foreign currency loss (gain), net, loss on debt extinguishment, and other expense (income), net, are not allocated to segments.
+
+For reconciliations of segment revenues and operating (loss) income to our consolidated results, see Note 15, Segment Information, to the unaudited Condensed Consolidated Financial Statements included elsewhere in this Quarterly Report on Form 10-Q.
+
+53
+
+Table of Contents
+
+Nuclear & Safety
+
+Unaudited
+
+(In millions) Three Months Ended June 30, 2026 Three Months Ended June 30, 2025
+
+Revenues $ 186.2 $ 141.7
+
+Income from operations $ 26.0 $ 19.0
+
+Income from operations as a % of revenues 14.0 % 13.4 %
+
+Nuclear & Safety segment revenues increased for the three months ended June 30, 2026 compared with the three months ended June 30, 2025 primarily due to $2.0 million of price increases, $1.3 million of organic volume growth, and positive foreign exchange fluctuations of $1.3 million. Additional drivers include $39.8 million of revenue associated with recent acquisitions.
+
+Income from operations was $26.0 million and $19.0 million for the three months ended June 30, 2026 and 2025, respectively. Income from operations increased $7.0 million period over period driven primarily by the changes in revenues described above and an improvement in gross margins from the prior period as a result of positive margin mix. These changes were partially offset by a loss from operations associated with recent acquisitions (inclusive of purchase accounting intangibles amortization of $8.4 million).
+
+Medical
+
+Unaudited
+
+(In millions) Three Months Ended June 30, 2026 Three Months Ended June 30, 2025
+
+Revenues $ 80.6 $ 81.2
+
+Income from operations $ 14.8 $ 10.9
+
+Income from operations as a % of revenues 18.4 % 13.4 %
+
+Medical segment revenues decreased for the three months ended June 30, 2026 compared with the three months ended June 30, 2025 primarily due to a decline in volume of $9.5 million, specifically driven by a decline within Asia-Pacific countries due to the introduced tariff regime in prior years paired with a decline in dosimetry product sales, partially offset by price increases of $5.4 million and organic volume growth of $3.4 million within the cameras product line.
+
+Income from operations was $14.8 million and $10.9 million for the three months ended June 30, 2026 and 2025, respectively, representing a $3.9 million increase in income from operations period over period. The increase in income from operations period over period was largely due to a reduction in amortization expense of $0.8 million and improved gross margins from the prior period as a result of positive margin mix, partially offset by decreased revenues as described above and increased employee compensation costs of $0.9 million.
+
+Corporate and other
+
+Corporate and other costs include costs associated with our corporate headquarters located in Georgia, as well as centralized global functions including Executive, Finance, Legal and Compliance, Human Resources, Technology, Strategy, and Marketing and other costs related to company-wide initiatives (e.g., business combination transaction expenses, merger and acquisition activities, restructuring and other initiatives).
+
+Corporate and other costs were $22.9 million for the three months ended June 30, 2026 and $20.0 million for the three months ended June 30, 2025, which represents an increase of $2.9 million period over period. The increase versus the comparable period was predominantly driven by increased stock compensation costs of $2.7 million, including $1.8 million of additional expense related to PSOs granted during the quarter, and $1.0 million of costs associated with the establishment of a new artificial intelligence function. These were partially offset by a $1.0 million decrease in employee compensation costs.
+
+54
+
+Table of Contents
+
+For reconciliations of segment operating income and corporate and other costs to our consolidated results, see Note 15, Segment Information, to the unaudited Condensed Consolidated Financial Statements included elsewhere in this Quarterly Report on Form 10-Q.
+
+For the Six Months Ended June 30, 2026 and the Six Months Ended June 30, 2025
+
+The following table summarizes our results of operations for the periods presented below (in millions):
+
+Unaudited
+
+Six Months Ended June 30, 2026 Six Months Ended June 30, 2025
+
+Revenues $ 524.4 $ 424.9
+
+Cost of revenues 272.2 226.3
+
+Gross profit 252.2 198.6
+
+Selling, general and administrative expenses 210.9 161.3
+
+Research and development 19.7 18.7
+
+Income from operations 21.6 18.6
+
+Interest expense, net 10.8 20.4
+
+Loss on debt extinguishment — 5.8
+
+Foreign currency loss (gain), net 4.7 (16.3)
+
+Other expense, net — 0.3
+
+Income before income taxes 6.1 8.4
+
+Income tax expense (benefit) 1.4 (0.5)
+
+Net income 4.7 8.9
+
+Income attributable to noncontrolling interests 0.4 0.3
+
+Net income attributable to Mirion Technologies, Inc. $ 4.3 $ 8.6
+
+Overview
+
+Revenues were $524.4 million for the six months ended June 30, 2026 and $424.9 million for the six months ended June 30, 2025. Our Nuclear & Safety segment contributed $371.7 million and $275.1 million of revenues for the six months ended June 30, 2026 and 2025, respectively. Our Medical segment contributed $152.7 million and $149.8 million of revenues for the six months ended June 30, 2026 and 2025, respectively. Gross profit was $252.2 million and $198.6 million for the six months ended June 30, 2026 and 2025, respectively, resulting in a $53.6 million increase from the six months ended June 30, 2025.
+
+Net income was $4.7 million for the six months ended June 30, 2026 and net income was $8.9 million for the six months ended June 30, 2025. Our Nuclear & Safety segment contributed $46.9 million and $40.7 million of income from operations for the six months ended June 30, 2026 and 2025, respectively. Our Medical segment contributed $22.6 million and $17.6 million of income from operations for the six months ended June 30, 2026 and 2025, respectively. The overall decrease in net income is primarily driven by a $4.7 million unrealized foreign currency loss in the current period as opposed to a $16.3 million gain in the prior period as a result of fluctuations in the exchange rate between the US Dollar and the Euro, increased amortization of intangible assets associated with recent acquisitions, increased employee compensation costs, and an increase in income tax expense. Partially offsetting these items were increased revenues in both segments, improved gross margins, decreased interest expense, and a non

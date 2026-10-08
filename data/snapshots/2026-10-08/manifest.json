@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-10-08",
+  "last_price_date": "2026-10-08",
+  "universe_rule": "tradable US-listed (NYSE/Nasdaq/AMEX/Arca/BATS) operating companies with an SEC CIK and a 10-K/10-Q/20-F/40-F in the last 18 months; close >= $1; 50-day avg dollar volume >= $1,000,000; one listing per CIK",
+  "n_companies": 3827,
+  "short_interest_settlement": "2026-09-15",
+  "benchmark_closes": {
+    "IWM": 277.57,
+    "QQQ": 747.58,
+    "SMH": 607.27,
+    "SOXX": 563.28,
+    "SPY": 773.93,
+    "XLB": 49.27,
+    "XLC": 112.07,
+    "XLE": 65.24,
+    "XLF": 54.23,
+    "XLI": 168.4,
+    "XLK": 197.78,
+    "XLP": 83.42,
+    "XLRE": 40.85,
+    "XLU": 41.07,
+    "XLV": 168.16,
+    "XLY": 111.71
+  },
+  "files": {
+    "prices.csv.gz": {
+      "sha256": "2fb70ee43a9d30a4174c2353a1eca23798fb267cd09557d74d1af3cc6146d0e1",
+      "bytes": 50692072
+    },
+    "features.csv.gz": {
+      "sha256": "cf63f29b2cc08badaf287c158d7e85c689a249e386a9f0f9c0b85029e0510c87",
+      "bytes": 3541921
+    }
+  }
+}
