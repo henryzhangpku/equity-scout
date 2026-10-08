@@ -1,0 +1,28 @@
+[project]
+name = "equity-scout"
+version = "0.1.0"
+description = "Plain-English investment observation -> typed screen -> ranked names -> cited explanations. Free point-in-time data."
+readme = "README.md"
+authors = [{ name = "Henry Zhang", email = "heng.henry.zhang@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "requests>=2.32",
+]
+
+[project.scripts]
+scout = "scout.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["uv_build>=0.9.3,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "scout"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
