@@ -114,6 +114,12 @@ INDUSTRIES: dict[str, tuple[str, set[int]]] = {
 # Curated theme baskets: fixed ticker lists, defined and reviewed in code (never by the model),
 # for themes SIC cannot isolate. A licensed deployment would use a vendor theme classification.
 THEMES: dict[str, tuple[str, set[str]]] = {
+    "ai_semis": ("curated: AI compute, memory, connectivity and power silicon, packaging and wafer-fab equipment",
+                 {"NVDA", "AMD", "AVGO", "MRVL", "MU", "ALAB", "CRDO", "MPWR", "AMKR", "AMAT", "LRCX", "KLAC", "TER"}),
+    "ai_networking": ("curated: data-center switching, optical modules and components, network systems",
+                      {"ANET", "CSCO", "CIEN", "COHR", "LITE", "FN", "AAOI", "CLS"}),
+    "ai_power": ("curated: data-center power, cooling and grid equipment, and power producers selling to data centers",
+                 {"VRT", "ETN", "GEV", "PWR", "NVT", "MOD", "POWL", "BE", "VST", "CEG", "TLN"}),
     "data_center_reits": ("curated: REITs whose business is data centers", {"EQIX", "DLR"}),
     "neoclouds": ("curated: GPU cloud / AI-compute providers", {"CRWV", "NBIS", "IREN", "APLD"}),
 }

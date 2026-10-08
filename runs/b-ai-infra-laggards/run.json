@@ -1,0 +1,1228 @@
+{
+ "tool": "equity-scout 0.1.0",
+ "as_of": "2026-10-08",
+ "generated_at": "2026-10-08T22:46:52+00:00",
+ "data": {
+  "as_of": "2026-10-08",
+  "last_price_date": "2026-10-08",
+  "universe_rule": "tradable US-listed (NYSE/Nasdaq/AMEX/Arca/BATS) operating companies with an SEC CIK and a 10-K/10-Q/20-F/40-F in the last 18 months; close >= $1; 50-day avg dollar volume >= $1,000,000; one listing per CIK",
+  "n_companies": 3827,
+  "short_interest_settlement": "2026-09-15",
+  "benchmark_closes": {
+   "IWM": 277.57,
+   "QQQ": 747.58,
+   "SMH": 607.27,
+   "SOXX": 563.28,
+   "SPY": 773.93,
+   "XLB": 49.27,
+   "XLC": 112.07,
+   "XLE": 65.24,
+   "XLF": 54.23,
+   "XLI": 168.4,
+   "XLK": 197.78,
+   "XLP": 83.42,
+   "XLRE": 40.85,
+   "XLU": 41.07,
+   "XLV": 168.16,
+   "XLY": 111.71
+  },
+  "files": {
+   "prices.csv.gz": {
+    "sha256": "2fb70ee43a9d30a4174c2353a1eca23798fb267cd09557d74d1af3cc6146d0e1",
+    "bytes": 50692072
+   },
+   "features.csv.gz": {
+    "sha256": "cf63f29b2cc08badaf287c158d7e85c689a249e386a9f0f9c0b85029e0510c87",
+    "bytes": 3541921
+   }
+  }
+ },
+ "llm": {
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro"
+ },
+ "observation": "AI-infrastructure suppliers (semis, networking, power, data-center REITs and neoclouds) whose shares lag the semiconductor index over 3 months while revenue growth is accelerating.",
+ "spec": {
+  "version": 1,
+  "observation": "AI-infrastructure suppliers (semis, networking, power, data-center REITs and neoclouds) whose shares lag the semiconductor index over 3 months while revenue growth is accelerating.",
+  "universe": {
+   "themes": [
+    "ai_semis",
+    "ai_networking",
+    "ai_power",
+    "data_center_reits",
+    "neoclouds"
+   ]
+  },
+  "conditions": [
+   {
+    "field": "rs_3m_vs_soxx",
+    "op": "<",
+    "value": 0,
+    "why": "shares lag the semiconductor index over 3 months"
+   },
+   {
+    "field": "revenue_growth_accel",
+    "op": ">",
+    "value": 0,
+    "why": "revenue growth is accelerating"
+   }
+  ],
+  "rank": [
+   {
+    "field": "revenue_growth_accel",
+    "direction": "desc",
+    "weight": 1
+   }
+  ],
+  "top_n": 5,
+  "unmapped": [],
+  "notes": "SOXX is used as the semiconductor index. The AI-infrastructure supplier universe is defined by the listed curated theme baskets, which include the named segments. No explicit ranking was requested, so results are ranked by revenue growth acceleration to surface the most accelerating names among the filtered set."
+ },
+ "translation_attempts": [
+  {
+   "response": "{\n  \"version\": 1,\n  \"observation\": \"AI-infrastructure suppliers (semis, networking, power, data-center REITs and neoclouds) whose shares lag the semiconductor index over 3 months while revenue growth is accelerating.\",\n  \"universe\": {\n    \"themes\": [\"ai_semis\", \"ai_networking\", \"ai_power\", \"data_center_reits\", \"neoclouds\"]\n  },\n  \"conditions\": [\n    {\n      \"field\": \"rs_3m_vs_soxx\",\n      \"op\": \"<\",\n      \"value\": 0,\n      \"why\": \"shares lag the semiconductor index over 3 months\"\n    },\n    {\n      \"field\": \"revenue_growth_accel\",\n      \"op\": \">\",\n      \"value\": 0,\n      \"why\": \"revenue growth is accelerating\"\n    }\n  ],\n  \"rank\": [\n    {\n      \"field\": \"revenue_growth_accel\",\n      \"direction\": \"desc\",\n      \"weight\": 1\n    }\n  ],\n  \"top_n\": 5,\n  \"unmapped\": [],\n  \"notes\": \"SOXX is used as the semiconductor index. The AI-infrastructure supplier universe is defined by the listed curated theme baskets, which include the named segments. No explicit ranking was requested, so results are ranked by revenue growth acceleration to surface the most accelerating names among the filtered set.\"\n}",
+   "problems": []
+  }
+ ],
+ "funnel": [
+  {
+   "step": "universe (liquid US common stocks with SEC filings)",
+   "kind": "start",
+   "n_in": 3827,
+   "n_pass": 3827,
+   "n_fail": 0,
+   "n_missing": 0
+  },
+  {
+   "step": "theme in ['ai_semis', 'ai_networking', 'ai_power', 'data_center_reits', 'neoclouds']",
+   "kind": "universe",
+   "n_in": 3827,
+   "n_pass": 38,
+   "n_fail": 3789,
+   "n_missing": 0
+  },
+  {
+   "step": "rs_3m_vs_soxx < +0.0%",
+   "kind": "condition",
+   "n_in": 38,
+   "n_pass": 20,
+   "n_fail": 18,
+   "n_missing": 0
+  },
+  {
+   "step": "revenue_growth_accel > +0.0%",
+   "kind": "condition",
+   "n_in": 20,
+   "n_pass": 13,
+   "n_fail": 6,
+   "n_missing": 1
+  }
+ ],
+ "ranked": [
+  {
+   "rank": 1,
+   "score": 1.0,
+   "symbol": "AVGO",
+   "name": "Broadcom Inc.",
+   "sic_desc": "Semiconductors & Related Devices",
+   "market_cap": 1719175059581.1,
+   "close": 360.14,
+   "drawdown_52w": -0.2496145351502271,
+   "pct_vs_sma50": -0.031619841279658,
+   "mom_3m": -0.0979360785492435,
+   "rsi14": 49.43799332614326,
+   "volume_ratio_50d": 1.1606712298478992,
+   "revenue_growth_yoy": 0.4869005106297768,
+   "revenue_growth_q_yoy": 0.8550025075225678,
+   "revenue_growth_accel": 0.3762635045900164,
+   "fcf_margin": 0.4422135931046866,
+   "operating_margin": 0.4804947028191776,
+   "short_pct_shares_out": 0.0108768749292211,
+   "days_to_cover": 1.7,
+   "prov_revenue_period_end": "2026-08-02",
+   "prov_revenue_filed": "2026-09-10",
+   "rank_pct_revenue_growth_accel": 1.0,
+   "rs_3m_vs_soxx": -0.0675036907772798,
+   "cik": 1730168
+  },
+  {
+   "rank": 2,
+   "score": 0.9230769230769231,
+   "symbol": "AAOI",
+   "name": "APPLIED OPTOELECTRONICS, INC.",
+   "sic_desc": "Semiconductors & Related Devices",
+   "market_cap": 8955882198.300001,
+   "close": 105.9,
+   "drawdown_52w": -0.5253249663827879,
+   "pct_vs_sma50": -0.0669784374223582,
+   "mom_3m": -0.1169112741827884,
+   "rsi14": 47.47469461093157,
+   "volume_ratio_50d": 1.967466154450384,
+   "revenue_growth_yoy": 0.6184589648401964,
+   "revenue_growth_q_yoy": 0.8641891366850571,
+   "revenue_growth_accel": 0.3506149971483103,
+   "fcf_margin": null,
+   "operating_margin": -0.1131030085406983,
+   "short_pct_shares_out": 0.1455274569876987,
+   "days_to_cover": 1.97,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-08-06",
+   "rank_pct_revenue_growth_accel": 0.9230769230769231,
+   "rs_3m_vs_soxx": -0.0864788864108246,
+   "cik": 1158114
+  },
+  {
+   "rank": 3,
+   "score": 0.8461538461538461,
+   "symbol": "AMAT",
+   "name": "APPLIED MATERIALS INC /DE",
+   "sic_desc": "Semiconductors & Related Devices",
+   "market_cap": 404393449029.51,
+   "close": 509.57,
+   "drawdown_52w": -0.2944491367016048,
+   "pct_vs_sma50": 0.0406404645091302,
+   "mom_3m": -0.1533413086099757,
+   "rsi14": 55.56249802008642,
+   "volume_ratio_50d": 0.9889508567831036,
+   "revenue_growth_yoy": 0.0777269073498061,
+   "revenue_growth_q_yoy": 0.2482881402355519,
+   "revenue_growth_accel": 0.1342036331932983,
+   "fcf_margin": 0.182345883192269,
+   "operating_margin": 0.2964296137756591,
+   "short_pct_shares_out": 0.0177777626735624,
+   "days_to_cover": 2.44,
+   "prov_revenue_period_end": "2026-07-26",
+   "prov_revenue_filed": "2026-08-20",
+   "rank_pct_revenue_growth_accel": 0.8461538461538461,
+   "rs_3m_vs_soxx": -0.1229089208380119,
+   "cik": 6951
+  },
+  {
+   "rank": 4,
+   "score": 0.7692307692307693,
+   "symbol": "COHR",
+   "name": "COHERENT CORP.",
+   "sic_desc": "Optical Instruments & Lenses",
+   "market_cap": 59209879578.100006,
+   "close": 302.35,
+   "drawdown_52w": -0.29173791843332,
+   "pct_vs_sma50": -0.0015679032892945,
+   "mom_3m": -0.0682588597842834,
+   "rsi14": 48.71773378537774,
+   "volume_ratio_50d": 1.3363522502086016,
+   "revenue_growth_yoy": 0.2251359912841657,
+   "revenue_growth_q_yoy": 0.3374426912927379,
+   "revenue_growth_accel": 0.1319774968411167,
+   "fcf_margin": -0.1437719833198959,
+   "operating_margin": null,
+   "short_pct_shares_out": 0.0519753217761695,
+   "days_to_cover": 1.7,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-08-14",
+   "rank_pct_revenue_growth_accel": 0.7692307692307693,
+   "rs_3m_vs_soxx": -0.0378264720123197,
+   "cik": 820318
+  },
+  {
+   "rank": 5,
+   "score": 0.6923076923076923,
+   "symbol": "AMKR",
+   "name": "AMKOR TECHNOLOGY, INC.",
+   "sic_desc": "Semiconductors & Related Devices",
+   "market_cap": 12641498418.0,
+   "close": 51.0,
+   "drawdown_52w": -0.4538445063182694,
+   "pct_vs_sma50": -0.0118921683735744,
+   "mom_3m": -0.2749502416832527,
+   "rsi14": 46.73647553806487,
+   "volume_ratio_50d": 0.8132713157632712,
+   "revenue_growth_yoy": 0.1270930842704114,
+   "revenue_growth_q_yoy": 0.2747676068327565,
+   "revenue_growth_accel": 0.1158300713073985,
+   "fcf_margin": 0.023648630971077,
+   "operating_margin": 0.0758224985140233,
+   "short_pct_shares_out": 0.0399434357624107,
+   "days_to_cover": 2.37,
+   "prov_revenue_period_end": "2026-03-31",
+   "prov_revenue_filed": "2026-04-28",
+   "rank_pct_revenue_growth_accel": 0.6923076923076923,
+   "rs_3m_vs_soxx": -0.244517853911289,
+   "cik": 1047127
+  },
+  {
+   "rank": 6,
+   "score": 0.6153846153846154,
+   "symbol": "ALAB",
+   "name": "Astera Labs, Inc.",
+   "sic_desc": "Semiconductors & Related Devices",
+   "market_cap": 60208005343.200005,
+   "close": 347.05,
+   "drawdown_52w": -0.2814997308600058,
+   "pct_vs_sma50": 0.0961532144562724,
+   "mom_3m": -0.1596241857762065,
+   "rsi14": 52.769055627759,
+   "volume_ratio_50d": 1.5345255516827423,
+   "revenue_growth_yoy": 0.9848418542512662,
+   "revenue_growth_q_yoy": 1.044548651817116,
+   "revenue_growth_accel": 0.110547573054933,
+   "fcf_margin": 0.2301952128221619,
+   "operating_margin": 0.2275070117037837,
+   "short_pct_shares_out": 0.0500671804076043,
+   "days_to_cover": 2.24,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-08-05",
+   "rank_pct_revenue_growth_accel": 0.6153846153846154,
+   "rs_3m_vs_soxx": -0.1291917980042427,
+   "cik": 1736297
+  },
+  {
+   "rank": 7,
+   "score": 0.5384615384615384,
+   "symbol": "EQIX",
+   "name": "EQUINIX INC",
+   "sic_desc": "Real Estate Investment Trusts",
+   "market_cap": 99772862015.76,
+   "close": 1011.16,
+   "drawdown_52w": -0.0895617802508487,
+   "pct_vs_sma50": -0.0288679275363904,
+   "mom_3m": -0.0335018782080079,
+   "rsi14": 44.30541055377989,
+   "volume_ratio_50d": 1.197764019415219,
+   "revenue_growth_yoy": 0.0963882366096389,
+   "revenue_growth_q_yoy": 0.1635638297872339,
+   "revenue_growth_accel": 0.065136863495099,
+   "fcf_margin": null,
+   "operating_margin": 0.2180520142784293,
+   "short_pct_shares_out": 0.0171892573113628,
+   "days_to_cover": 3.29,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-07-29",
+   "rank_pct_revenue_growth_accel": 0.5384615384615384,
+   "rs_3m_vs_soxx": -0.0030694904360442,
+   "cik": 1101239
+  },
+  {
+   "rank": 8,
+   "score": 0.46153846153846156,
+   "symbol": "LRCX",
+   "name": "LAM RESEARCH CORP",
+   "sic_desc": "Special Industry Machinery, NEC",
+   "market_cap": 401160999390.0,
+   "close": 320.59,
+   "drawdown_52w": -0.2593850347679443,
+   "pct_vs_sma50": 0.0340845679191543,
+   "mom_3m": -0.0839238770145159,
+   "rsi14": 52.14191188348259,
+   "volume_ratio_50d": 0.9943892714617176,
+   "revenue_growth_yoy": 0.26020858240997,
+   "revenue_growth_q_yoy": 0.2998892174700318,
+   "revenue_growth_accel": 0.0623317116572177,
+   "fcf_margin": 0.2105331754523475,
+   "operating_margin": 0.3529421259440899,
+   "short_pct_shares_out": 0.0208428380887078,
+   "days_to_cover": 3.08,
+   "prov_revenue_period_end": "2026-06-28",
+   "prov_revenue_filed": "2026-08-07",
+   "rank_pct_revenue_growth_accel": 0.46153846153846156,
+   "rs_3m_vs_soxx": -0.0534914892425522,
+   "cik": 707549
+  },
+  {
+   "rank": 9,
+   "score": 0.38461538461538464,
+   "symbol": "CSCO",
+   "name": "CISCO SYSTEMS, INC.",
+   "sic_desc": "Computer Communications Equipment",
+   "market_cap": 452963805838.97,
+   "close": 114.89,
+   "drawdown_52w": -0.1095179042008991,
+   "pct_vs_sma50": 0.0273445883110379,
+   "mom_3m": -0.049238662694472,
+   "rsi14": 59.48707160872007,
+   "volume_ratio_50d": 0.6733206213834352,
+   "revenue_growth_yoy": 0.1177498499664631,
+   "revenue_growth_q_yoy": 0.1757650105636201,
+   "revenue_growth_accel": 0.0561805876362047,
+   "fcf_margin": 0.2016107382550335,
+   "operating_margin": 0.2426845637583892,
+   "short_pct_shares_out": 0.0146293172117503,
+   "days_to_cover": 4.42,
+   "prov_revenue_period_end": "2026-07-25",
+   "prov_revenue_filed": "2026-09-02",
+   "rank_pct_revenue_growth_accel": 0.38461538461538464,
+   "rs_3m_vs_soxx": -0.0188062749225083,
+   "cik": 858877
+  },
+  {
+   "rank": 10,
+   "score": 0.3076923076923077,
+   "symbol": "GEV",
+   "name": "GE Vernova Inc.",
+   "sic_desc": "Electronic & Other Electrical Equipment (No Computer Equip)",
+   "market_cap": 266160464172.35,
+   "close": 999.35,
+   "drawdown_52w": -0.1493880121886862,
+   "pct_vs_sma50": 0.0321144739763801,
+   "mom_3m": -0.0844838168876022,
+   "rsi14": 57.11545234191309,
+   "volume_ratio_50d": 1.0914232475350822,
+   "revenue_growth_yoy": 0.1298101870817971,
+   "revenue_growth_q_yoy": 0.218746570080123,
+   "revenue_growth_accel": 0.0560224664944655,
+   "fcf_margin": 0.3006671823631792,
+   "operating_margin": 0.0434877199767936,
+   "short_pct_shares_out": 0.0328806377593068,
+   "days_to_cover": 4.57,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-07-22",
+   "rank_pct_revenue_growth_accel": 0.3076923076923077,
+   "rs_3m_vs_soxx": -0.0540514291156384,
+   "cik": 1996810
+  },
+  {
+   "rank": 11,
+   "score": 0.23076923076923078,
+   "symbol": "KLAC",
+   "name": "KLA CORP",
+   "sic_desc": "Optical Instruments & Lenses",
+   "market_cap": 257023883151.76,
+   "close": 196.72,
+   "drawdown_52w": -0.347247569432923,
+   "pct_vs_sma50": 0.048472115182699,
+   "mom_3m": -0.1493557035371443,
+   "rsi14": 55.943232376536464,
+   "volume_ratio_50d": 1.033388832434014,
+   "revenue_growth_yoy": 0.1170858038910636,
+   "revenue_growth_q_yoy": 0.1520801224414842,
+   "revenue_growth_accel": 0.0371452001798928,
+   "fcf_margin": 0.2774137971155883,
+   "operating_margin": null,
+   "short_pct_shares_out": 0.0180277042555773,
+   "days_to_cover": 2.5,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-08-06",
+   "rank_pct_revenue_growth_accel": 0.23076923076923078,
+   "rs_3m_vs_soxx": -0.1189233157651805,
+   "cik": 319201
+  },
+  {
+   "rank": 12,
+   "score": 0.15384615384615385,
+   "symbol": "POWL",
+   "name": "POWELL INDUSTRIES INC",
+   "sic_desc": "Switchgear & Switchboard Apparatus",
+   "market_cap": 6895591388.280001,
+   "close": 189.27,
+   "drawdown_52w": -0.4118396519577377,
+   "pct_vs_sma50": -0.0192105595894228,
+   "mom_3m": -0.1844973932526175,
+   "rsi14": 48.3687695309848,
+   "volume_ratio_50d": 1.2260029369278864,
+   "revenue_growth_yoy": 0.0703940639801441,
+   "revenue_growth_q_yoy": 0.0889605376685891,
+   "revenue_growth_accel": 0.0244163914680586,
+   "fcf_margin": 0.2107588451882556,
+   "operating_margin": 0.1966899981166664,
+   "short_pct_shares_out": 0.0658180137966682,
+   "days_to_cover": 4.1,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-08-04",
+   "rank_pct_revenue_growth_accel": 0.15384615384615385,
+   "rs_3m_vs_soxx": -0.1540650054806537,
+   "cik": 80420
+  },
+  {
+   "rank": 13,
+   "score": 0.07692307692307693,
+   "symbol": "CRWV",
+   "name": "CoreWeave, Inc.",
+   "sic_desc": "Services-Prepackaged Software",
+   "market_cap": 44950580000.0,
+   "close": 81.58,
+   "drawdown_52w": -0.4298294660329885,
+   "pct_vs_sma50": -0.0757294576963254,
+   "mom_3m": -0.082133213321332,
+   "rsi14": 42.990905051598375,
+   "volume_ratio_50d": 1.454981281704396,
+   "revenue_growth_yoy": 1.1531059349862196,
+   "revenue_growth_q_yoy": 1.1245874587458746,
+   "revenue_growth_accel": 0.0084978457112514,
+   "fcf_margin": -1.7991772930781411,
+   "operating_margin": -0.0304020775853209,
+   "short_pct_shares_out": 0.0997083956442831,
+   "days_to_cover": 2.43,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-08-12",
+   "rank_pct_revenue_growth_accel": 0.07692307692307693,
+   "rs_3m_vs_soxx": -0.0517008255493682,
+   "cik": 1769628
+  }
+ ],
+ "top_n": 5,
+ "explanations": [
+  {
+   "symbol": "AVGO",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "Broadcom reported third-quarter revenue of $29.6 billion, up 86 percent from the prior year period, indicating strong fundamental growth despite the stock's underperformance.",
+     "quote": "Revenue of $29.6 billion for the third quarter, up 86 percent from the prior year period",
+     "doc_id": "AVGO-8K-2026-09-02-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Broadcom's AI semiconductor revenue grew 221% year-over-year to $16.7 billion in the third quarter, driving the reported revenue acceleration.",
+     "quote": "Q3 AI semiconductor revenue of $16.7 billion grew 221% year-over-year, and 54% quarter-over-quarter",
+     "doc_id": "AVGO-8K-2026-09-02-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "The company states that deploying AI infrastructure to meet demand requires customers to access significant capital, a financing dependency that may explain investor caution.",
+     "quote": "deploying AI infrastructure to meet this demand requires our customers to access significant capital",
+     "doc_id": "AVGO-10Q-2026-09-10-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "A news report says OpenAI's annualized revenue was about $20 billion below earlier reports, as AI stocks fell, which could explain sector-wide price pressure on Broadcom.",
+     "quote": "New figures put OpenAI’s annualized revenue near $50 billion, about $20 billion below earlier reports, as AI stocks fell.",
+     "doc_id": "AVGO-news-2026-10-08-62257221",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/markets/prediction-markets/26/10/62257221/openai-revenue-run-rate-ai-stocks",
+     "source_kind": "news"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "Broadcom's revenue is highly concentrated, with a single distributor customer accounting for 50% of net revenue in the fiscal quarter.",
+     "quote": "Direct sales to one semiconductor solutions customer, which is a distributor, accounted for 50% and 46% of our net revenue for the fiscal quarter and three fiscal quarters ended August 2, 2026, respectively",
+     "doc_id": "AVGO-10Q-2026-09-10-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "Broadcom's AI XPV platform exposes the company to a maximum backstop liability of approximately $29 billion if the customer defaults.",
+     "quote": "Our maximum potential liability under the Backstop upon the deployment of all AI racks, on an undiscounted basis, was approximately $29 billion.",
+     "doc_id": "AVGO-10Q-2026-09-10-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "A news report says Broadcom is among companies seeking blockbuster debt deals to pay for AI chips, increasing financial leverage risk.",
+     "quote": "'Oracle, Broadcom and SpaceX Seek Blockbuster Debt Deals To Pay for AI Chips'- WSJ Exclusive",
+     "doc_id": "AVGO-news-2026-10-07-62234456",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/10/62234456/oracle-broadcom-and-spacex-seek-blockbuster-debt-deals-to-pay-for-ai-chips-wsj-exclusive",
+     "source_kind": "news"
+    }
+   ],
+   "stripped": [],
+   "documents": [
+    {
+     "doc_id": "AVGO-8K-2026-09-02-ex99",
+     "kind": "earnings_release",
+     "title": "AVGO 8-K earnings release (Exhibit 99.1), filed 2026-09-02",
+     "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
+     "filed": "2026-09-02",
+     "chars_total": 23341,
+     "chars_shown": 23341
+    },
+    {
+     "doc_id": "AVGO-10Q-2026-09-10-mdna",
+     "kind": "mdna",
+     "title": "AVGO 10-Q for period 2026-08-02, MD&A, filed 2026-09-10",
+     "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+     "filed": "2026-09-10",
+     "chars_total": 32120,
+     "chars_shown": 32120
+    },
+    {
+     "doc_id": "AVGO-news-2026-10-08-62257221",
+     "kind": "news",
+     "title": "Benzinga: OpenAI Revenue $20B Below Previous Reports, ORCL, NVDA Tumble (2026-10-08)",
+     "url": "https://www.benzinga.com/markets/prediction-markets/26/10/62257221/openai-revenue-run-rate-ai-stocks",
+     "filed": "2026-10-08",
+     "chars_total": 183,
+     "chars_shown": 183
+    },
+    {
+     "doc_id": "AVGO-news-2026-10-08-62254694",
+     "kind": "news",
+     "title": "Benzinga: EXCLUSIVE: TSMC Plans Up to $64 Billion in Capex and Still Isn’t ‘Building Enough,’ Says Applied Materials Veteran (2026-10-08)",
+     "url": "https://www.benzinga.com/markets/prediction-markets/26/10/62254694/tsmc-capex-64-billion-building-enough",
+     "filed": "2026-10-08",
+     "chars_total": 238,
+     "chars_shown": 238
+    },
+    {
+     "doc_id": "AVGO-news-2026-10-07-62234456",
+     "kind": "news",
+     "title": "Benzinga: 'Oracle, Broadcom and SpaceX Seek Blockbuster Debt Deals To Pay for AI Chips'- WSJ Exclusive (2026-10-07)",
+     "url": "https://www.benzinga.com/news/26/10/62234456/oracle-broadcom-and-spacex-seek-blockbuster-debt-deals-to-pay-for-ai-chips-wsj-exclusive",
+     "filed": "2026-10-07",
+     "chars_total": 92,
+     "chars_shown": 92
+    },
+    {
+     "doc_id": "AVGO-news-2026-10-07-62235453",
+     "kind": "news",
+     "title": "Benzinga: $100 Invested In Broadcom 15 Years Ago Would Be Worth This Much Today (2026-10-07)",
+     "url": "https://www.benzinga.com/news/26/10/62235453/100-invested-broadcom-15-years-ago-would-be-worth-much-today",
+     "filed": "2026-10-07",
+     "chars_total": 289,
+     "chars_shown": 289
+    },
+    {
+     "doc_id": "AVGO-news-2026-10-07-62228208",
+     "kind": "news",
+     "title": "Benzinga: Marvell Stock Is Up 230% This Year: Bank of America Sees a Further 40% Upside (2026-10-07)",
+     "url": "https://www.benzinga.com/markets/tech/26/10/62228208/marvell-stock-investor-day-up-230-percent-2026-bofa-40-percent-upside",
+     "filed": "2026-10-07",
+     "chars_total": 193,
+     "chars_shown": 193
+    },
+    {
+     "doc_id": "AVGO-news-2026-10-07-62215731",
+     "kind": "news",
+     "title": "Benzinga: What's Going On With Broadcom Stock Wednesday? (2026-10-07)",
+     "url": "https://www.benzinga.com/markets/tech/26/10/62215731/whats-going-on-with-broadcom-stock-wednesday-7",
+     "filed": "2026-10-07",
+     "chars_total": 179,
+     "chars_shown": 179
+    },
+    {
+     "doc_id": "AVGO-news-2026-10-06-62200140",
+     "kind": "news",
+     "title": "Benzinga: Challenging Nvidia's Dominance: Broadcom Pairs Custom TPU Chips with $60 Billion Debt Package (2026-10-06)",
+     "url": "https://www.benzinga.com/markets/tech/26/10/62200140/challenging-nvidias-dominance-broadcom-pairs-custom-tpu-chips-with-60-billion-debt-package",
+     "filed": "2026-10-06",
+     "chars_total": 227,
+     "chars_shown": 227
+    },
+    {
+     "doc_id": "AVGO-news-2026-10-06-62198664",
+     "kind": "news",
+     "title": "Benzinga: Jim Cramer Sees Marvell Sending a Bigger Signal to Broadcom (2026-10-06)",
+     "url": "https://www.benzinga.com/markets/tech/26/10/62198664/jim-cramer-sees-marvell-sending-a-bigger-signal-to-broadcom",
+     "filed": "2026-10-06",
+     "chars_total": 198,
+     "chars_shown": 198
+    },
+    {
+     "doc_id": "AVGO-news-2026-10-05-62178697",
+     "kind": "news",
+     "title": "Benzinga: 'Wall Street banks launch record $60B chip deal for Broadcom and Anthropic'- Financial Times (2026-10-05)",
+     "url": "https://www.benzinga.com/news/26/10/62178697/wall-street-banks-launch-record-60b-chip-deal-broadcom-and-anthropic-financial-times",
+     "filed": "2026-10-05",
+     "chars_total": 92,
+     "chars_shown": 92
+    },
+    {
+     "doc_id": "AVGO-news-2026-10-05-62174172",
+     "kind": "news",
+     "title": "Benzinga: Nvidia, Broadcom May Be Surprisingly Safe From a 32-GW Hole in the AI Boom, Morgan Stanley Says (2026-10-05)",
+     "url": "https://www.benzinga.com/markets/prediction-markets/26/10/62174172/nvidia-broadcom-ai-power-shortage",
+     "filed": "2026-10-05",
+     "chars_total": 219,
+     "chars_shown": 219
+    },
+    {
+     "doc_id": "AVGO-news-2026-10-04-62152166",
+     "kind": "news",
+     "title": "Benzinga: LinkedIn Cofounder Defends Massive AI Infrastructure Spending, Says AI Capital Is 'the Only Reason We’re Not in a Recession' (2026-10-04)",
+     "url": "https://www.benzinga.com/markets/economic-data/26/10/62152166/linkedin-cofounder-defends-massive-ai-infrastructure-spending-says-ai-capital-is-the-only-reason-were-not-in-a-recession",
+     "filed": "2026-10-04",
+     "chars_total": 264,
+     "chars_shown": 264
+    },
+    {
+     "doc_id": "AVGO-news-2026-10-02-62143884",
+     "kind": "news",
+     "title": "Benzinga: Taiwan Semiconductor Stock Rises on Broadcom's $60 Billion Chip Deal (2026-10-02)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62143884/taiwan-semiconductor-stock-rises-on-broadcoms-60-billion-chip-deal",
+     "filed": "2026-10-02",
+     "chars_total": 209,
+     "chars_shown": 209
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "AAOI",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "Although revenue increased sharply year over year, GAAP net loss widened to $22.8 million from $9.1 million, which may explain why the stock underperformed despite strong sales growth.",
+     "quote": "GAAP net loss was $22.8 million, or $0.28 per basic share, compared with net loss of $9.1 million, or $0.16 per basic share in the second quarter of 2025, and a net loss of $14.3 million, or $0.19 per basic share in the first quarter of 2026.",
+     "doc_id": "AAOI-8K-2026-08-06-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826006055/aaoi_ex9901.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "The company's gross margin declined to 27.7% from 30.3% a year earlier, indicating that revenue growth is coming at the cost of profitability, a potential reason for investor skepticism.",
+     "quote": "GAAP gross margin was 27.7%, compared with 30.3% in the second quarter of 2025 and 29.1% in the first quarter of 2026.",
+     "doc_id": "AAOI-8K-2026-08-06-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826006055/aaoi_ex9901.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "The company issued a large number of shares through at-the-market offerings, which may have pressured the stock price despite strong fundamentals.",
+     "quote": "On April 2, 2026, the Company completed the First ATM Offering and sold approximately 4.8 million shares at a weighted average price of $103.51 per share, providing proceeds of approximately $490 million, net of expenses and underwriting discounts and commissions.",
+     "doc_id": "AAOI-10Q-2026-08-06-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "A news report says the stock slid alongside the broader fiber optic connectivity sector, suggesting sector-wide pressure rather than company-specific bad news.",
+     "quote": "Applied Optoelectronics shares fall Monday afternoon, sliding alongside the broader fiber optic connectivity sector.",
+     "doc_id": "AAOI-news-2026-09-28-62035697",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/09/62035697/applied-optoelectronics-stock-slides-monday-whats-happening",
+     "source_kind": "news"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "Net cash used in operating activities was $73.8 million in the first half of 2026, meaning the company is still consuming cash despite rapid revenue growth.",
+     "quote": "Net cash used in operating activities was $73.8 million during the six months ended June 30, 2026 as compared to $116.4 million during the six months ended June 30, 2025, a decrease of 36.6%.",
+     "doc_id": "AAOI-10Q-2026-08-06-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The company's GAAP net loss widened to $22.8 million from $9.1 million a year earlier, indicating profitability remains elusive.",
+     "quote": "GAAP net loss was $22.8 million, or $0.28 per basic share, compared with net loss of $9.1 million, or $0.16 per basic share in the second quarter of 2025, and a net loss of $14.3 million, or $0.19 per basic share in the first quarter of 2026.",
+     "doc_id": "AAOI-8K-2026-08-06-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826006055/aaoi_ex9901.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Revenues from a single customer, Digicomm, represented approximately 42.8% of consolidated revenues, exposing the company to significant customer concentration risk.",
+     "quote": "For the six months ended June 30, 2026, revenues from Digicomm were approximately $147.0 million, representing approximately 42.8% of consolidated revenues.",
+     "doc_id": "AAOI-10Q-2026-08-06-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "stripped": [],
+   "documents": [
+    {
+     "doc_id": "AAOI-8K-2026-08-06-ex99",
+     "kind": "earnings_release",
+     "title": "AAOI 8-K earnings release (Exhibit 99.1), filed 2026-08-06",
+     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826006055/aaoi_ex9901.htm",
+     "filed": "2026-08-06",
+     "chars_total": 18597,
+     "chars_shown": 18597
+    },
+    {
+     "doc_id": "AAOI-10Q-2026-08-06-mdna",
+     "kind": "mdna",
+     "title": "AAOI 10-Q for period 2026-06-30, MD&A, filed 2026-08-06",
+     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
+     "filed": "2026-08-06",
+     "chars_total": 45805,
+     "chars_shown": 40000
+    },
+    {
+     "doc_id": "AAOI-news-2026-10-06-62194091",
+     "kind": "news",
+     "title": "Benzinga: Applied Optoelectronics Stock Rises on Possible Continued Momentum as It Completes Share Sale (2026-10-06)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62194091/applied-optoelectronics-stock-rises-on-possible-continued-momentum-as-it-completes-share-sale",
+     "filed": "2026-10-06",
+     "chars_total": 232,
+     "chars_shown": 232
+    },
+    {
+     "doc_id": "AAOI-news-2026-09-28-62035697",
+     "kind": "news",
+     "title": "Benzinga: Applied Optoelectronics Stock Slides Monday: What's Happening? (2026-09-28)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/09/62035697/applied-optoelectronics-stock-slides-monday-whats-happening",
+     "filed": "2026-09-28",
+     "chars_total": 179,
+     "chars_shown": 179
+    },
+    {
+     "doc_id": "AAOI-news-2026-09-08-61666003",
+     "kind": "news",
+     "title": "Benzinga: Why Is Applied Optoelectronics Stock Surging Tuesday? (2026-09-08)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61666003/why-is-applied-optoelectronics-stock-surging-tuesday",
+     "filed": "2026-09-08",
+     "chars_total": 178,
+     "chars_shown": 178
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "AMAT",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "Applied reported record revenue of $9.12 billion, up 25 percent year over year, while its stock underperformed peers, suggesting a dislocation driven by non-operating concerns.",
+     "quote": "Record revenue $9.12 billion, up 25 percent year over year",
+     "doc_id": "AMAT-8K-2026-08-13-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026056699/exhibit991q32026earningsre.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "The company's own forward-looking risk disclosure cites export-license and trade-policy uncertainties that may explain the stock's relative underperformance despite accelerating revenue.",
+     "quote": "global trade issues, changes in trade and export regulations, license requirements, and their interpretation, and our ability to obtain licenses or authorizations on a timely basis, if at all",
+     "doc_id": "AMAT-8K-2026-08-13-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026056699/exhibit991q32026earningsre.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "A news report says Morgan Stanley maintained an Equal-Weight rating and lowered its price target to $563, indicating analyst caution despite the strong earnings release.",
+     "quote": "Morgan Stanley Maintains Equal-Weight on Applied Materials, Lowers Price Target to $563",
+     "doc_id": "AMAT-news-2026-09-28-62019127",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/09/62019127/morgan-stanley-maintains-equal-weight-applied-materials-lowers-price-target-563",
+     "source_kind": "news"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "U.S. export controls have already limited Applied's ability to sell certain products and services to customers in China, and further updates could reduce its revenue in that key market.",
+     "quote": "The United States government has implemented export regulations for U.S. semiconductor technology sold or provided to customers in China, which have limited our ability to provide certain products and services to customers in China, over the past several years.",
+     "doc_id": "AMAT-10Q-2026-08-20-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026058235/amat-20260726.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The company's forward-looking risk factors include the concentrated nature of its customer base, which may make investors discount robust current growth.",
+     "quote": "the concentrated nature of our customer base",
+     "doc_id": "AMAT-8K-2026-08-13-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026056699/exhibit991q32026earningsre.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "stripped": [],
+   "documents": [
+    {
+     "doc_id": "AMAT-8K-2026-08-13-ex99",
+     "kind": "earnings_release",
+     "title": "AMAT 8-K earnings release (Exhibit 99.1), filed 2026-08-13",
+     "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026056699/exhibit991q32026earningsre.htm",
+     "filed": "2026-08-13",
+     "chars_total": 29178,
+     "chars_shown": 24000
+    },
+    {
+     "doc_id": "AMAT-10Q-2026-08-20-mdna",
+     "kind": "mdna",
+     "title": "AMAT 10-Q for period 2026-07-26, MD&A, filed 2026-08-20",
+     "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026058235/amat-20260726.htm",
+     "filed": "2026-08-20",
+     "chars_total": 37677,
+     "chars_shown": 37677
+    },
+    {
+     "doc_id": "AMAT-news-2026-10-08-62254694",
+     "kind": "news",
+     "title": "Benzinga: EXCLUSIVE: TSMC Plans Up to $64 Billion in Capex and Still Isn’t ‘Building Enough,’ Says Applied Materials Veteran (2026-10-08)",
+     "url": "https://www.benzinga.com/markets/prediction-markets/26/10/62254694/tsmc-capex-64-billion-building-enough",
+     "filed": "2026-10-08",
+     "chars_total": 238,
+     "chars_shown": 238
+    },
+    {
+     "doc_id": "AMAT-news-2026-10-08-62249820",
+     "kind": "news",
+     "title": "Benzinga: New Jersey Rep. Josh Gottheimer Sold Up to $30K Worth of Applied Materials Stock (2026-10-08)",
+     "url": "https://www.benzinga.com/government/26/10/62249820/new-jersey-rep-josh-gottheimer-sold-30k-worth-applied-materials-stock",
+     "filed": "2026-10-08",
+     "chars_total": 294,
+     "chars_shown": 294
+    },
+    {
+     "doc_id": "AMAT-news-2026-10-06-62194124",
+     "kind": "news",
+     "title": "Benzinga: Here’s How Much You Would Have Made Owning Applied Materials Stock In The Last 20 Years (2026-10-06)",
+     "url": "https://www.benzinga.com/news/26/10/62194124/here-s-how-much-you-would-have-made-owning-applied-materials-stock-last-20-years",
+     "filed": "2026-10-06",
+     "chars_total": 305,
+     "chars_shown": 305
+    },
+    {
+     "doc_id": "AMAT-news-2026-10-06-62189088",
+     "kind": "news",
+     "title": "Benzinga: Applied Materials, Intel Partnering Over Development Of Chipmaking Innovations For Transistors, Interconnects, Packing Technologies (2026-10-06)",
+     "url": "https://www.benzinga.com/news/26/10/62189088/applied-materials-intel-partnering-over-development-chipmaking-innovations-transistors-interconnects",
+     "filed": "2026-10-06",
+     "chars_total": 131,
+     "chars_shown": 131
+    },
+    {
+     "doc_id": "AMAT-news-2026-10-01-62105025",
+     "kind": "news",
+     "title": "Benzinga: Applied Materials, BE Semiconductor Industries Announce BE Joins EPIC Center As Innovation Partner (2026-10-01)",
+     "url": "https://www.benzinga.com/news/26/10/62105025/applied-materials-be-semiconductor-industries-announce-be-joins-epic-center-innovation-partner",
+     "filed": "2026-10-01",
+     "chars_total": 98,
+     "chars_shown": 98
+    },
+    {
+     "doc_id": "AMAT-news-2026-09-30-62076294",
+     "kind": "news",
+     "title": "Benzinga: What's Going On With Applied Materials Stock Wednesday? (2026-09-30)",
+     "url": "https://www.benzinga.com/markets/tech/26/09/62076294/whats-going-on-with-applied-materials-stock-tuesday",
+     "filed": "2026-09-30",
+     "chars_total": 174,
+     "chars_shown": 174
+    },
+    {
+     "doc_id": "AMAT-news-2026-09-29-62065311",
+     "kind": "news",
+     "title": "Benzinga: Applied Materials Says Kioxia Joins Its EPIC Center As Partner To Develop Next-Generation AI Memory Technologies (2026-09-29)",
+     "url": "https://www.benzinga.com/quote/AMAT",
+     "filed": "2026-09-29",
+     "chars_total": 112,
+     "chars_shown": 112
+    },
+    {
+     "doc_id": "AMAT-news-2026-09-28-62019127",
+     "kind": "news",
+     "title": "Benzinga: Morgan Stanley Maintains Equal-Weight on Applied Materials, Lowers Price Target to $563 (2026-09-28)",
+     "url": "https://www.benzinga.com/news/26/09/62019127/morgan-stanley-maintains-equal-weight-applied-materials-lowers-price-target-563",
+     "filed": "2026-09-28",
+     "chars_total": 87,
+     "chars_shown": 87
+    },
+    {
+     "doc_id": "AMAT-news-2026-09-23-61950302",
+     "kind": "news",
+     "title": "Benzinga: $100 Invested In Applied Materials 20 Years Ago Would Be Worth This Much Today (2026-09-23)",
+     "url": "https://www.benzinga.com/news/26/09/61950302/100-invested-applied-materials-20-years-ago-would-be-worth-much-today",
+     "filed": "2026-09-23",
+     "chars_total": 296,
+     "chars_shown": 296
+    },
+    {
+     "doc_id": "AMAT-news-2026-09-18-61869553",
+     "kind": "news",
+     "title": "Benzinga: What's Going On With Applied Materials Stock Friday? (2026-09-18)",
+     "url": "https://www.benzinga.com/markets/tech/26/09/61869553/whats-going-on-with-applied-materials-stock-friday",
+     "filed": "2026-09-18",
+     "chars_total": 184,
+     "chars_shown": 184
+    },
+    {
+     "doc_id": "AMAT-news-2026-09-17-61834041",
+     "kind": "news",
+     "title": "Benzinga: Applied Materials To Invest $5B In India Over Next Decade To Deepen Semiconductor R&D (2026-09-17)",
+     "url": "https://www.benzinga.com/news/26/09/61834041/applied-materials-invest-5b-india-over-next-decade-deepen-semiconductor-r-d",
+     "filed": "2026-09-17",
+     "chars_total": 85,
+     "chars_shown": 85
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "COHR",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "Coherent reported fiscal Q4 revenue of $2.05B, up 34% year over year and 42% on a pro forma basis, showing accelerating growth that contrasts with its three-month relative underperformance.",
+     "quote": "Q4 REVENUE OF $2.05B, INCREASED 34% Y/Y AND 42% Y/Y ON A PRO FORMA BASIS",
+     "doc_id": "COHR-8K-2026-08-12-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526346860/d128030dex991.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "The company attributes revenue acceleration to AI datacenter demand, as hyperscale investments have boosted demand for its datacenter transceivers.",
+     "quote": "The increasing investments by hyperscale and other cloud providers in AI datacenter infrastructures have significantly boosted demand for our datacenter transceivers.",
+     "doc_id": "COHR-10K-2026-08-14-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000020/iivi-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The company is investing in manufacturing capacity for its Datacenter and Communications markets, which may pressure near-term free cash flow despite the revenue acceleration.",
+     "quote": "We are investing in manufacturing capacity for the Datacenter and Communications markets, including expanding our indium phosphide capacity in Sherman, Texas, to address our increased customer demand and industry-wide shortage.",
+     "doc_id": "COHR-10K-2026-08-14-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000020/iivi-20260630.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "Goodwill in the Lasers reporting unit is sensitive, with estimated fair value exceeding carrying value by only about 8%, leaving little cushion for a possible impairment charge.",
+     "quote": "For the Lasers reporting unit, as of April 1, 2026, the estimated fair value exceeded the carrying value by approximately 8%.",
+     "doc_id": "COHR-10K-2026-08-14-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000020/iivi-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The company's own risk disclosures state that its stock price may not trade in line with industrial technology leaders, which could explain the relative underperformance.",
+     "quote": "the risks that the Company’s stock price will not trade in line with industrial technology leaders",
+     "doc_id": "COHR-8K-2026-08-12-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526346860/d128030dex991.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "stripped": [],
+   "documents": [
+    {
+     "doc_id": "COHR-8K-2026-08-12-ex99",
+     "kind": "earnings_release",
+     "title": "COHR 8-K earnings release (Exhibit 99.1), filed 2026-08-12",
+     "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526346860/d128030dex991.htm",
+     "filed": "2026-08-12",
+     "chars_total": 31267,
+     "chars_shown": 24000
+    },
+    {
+     "doc_id": "COHR-10K-2026-08-14-mdna",
+     "kind": "mdna",
+     "title": "COHR 10-K for period 2026-06-30, MD&A, filed 2026-08-14",
+     "url": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000020/iivi-20260630.htm",
+     "filed": "2026-08-14",
+     "chars_total": 51178,
+     "chars_shown": 40000
+    },
+    {
+     "doc_id": "COHR-news-2026-10-02-62125706",
+     "kind": "news",
+     "title": "Benzinga: Nike, Corteva, Mattel, Accenture and Coherent: Why These 5 Stocks Are on Investors' Radars Today (2026-10-02)",
+     "url": "https://www.benzinga.com/news/26/10/62125706/nike-corteva-mattel-accenture-and-coherent-why-these-5-stocks-are-on-investors-radars-today",
+     "filed": "2026-10-02",
+     "chars_total": 185,
+     "chars_shown": 185
+    },
+    {
+     "doc_id": "COHR-news-2026-10-01-62117250",
+     "kind": "news",
+     "title": "Benzinga: Lumentum, Coherent Rip Higher As Washington Targets Chinese Optical Transceivers (2026-10-01)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62117250/lumentum-coherent-rip-higher-as-washington-targets-chinese-optical-transceivers",
+     "filed": "2026-10-01",
+     "chars_total": 202,
+     "chars_shown": 202
+    },
+    {
+     "doc_id": "COHR-news-2026-09-30-62073486",
+     "kind": "news",
+     "title": "Benzinga: Bernstein Initiates Coverage On Coherent with Outperform Rating, Announces Price Target of $350 (2026-09-30)",
+     "url": "https://www.benzinga.com/news/26/09/62073486/bernstein-initiates-coverage-coherent-outperform-rating-announces-price-target-350",
+     "filed": "2026-09-30",
+     "chars_total": 95,
+     "chars_shown": 95
+    },
+    {
+     "doc_id": "COHR-news-2026-09-29-62068212",
+     "kind": "news",
+     "title": "Benzinga: If You Invested $1000 In Coherent Stock 20 Years Ago, You Would Have This Much Today (2026-09-29)",
+     "url": "https://www.benzinga.com/news/26/09/62068212/if-you-invested-1000-coherent-stock-20-years-ago-you-would-have-much-today",
+     "filed": "2026-09-29",
+     "chars_total": 300,
+     "chars_shown": 300
+    },
+    {
+     "doc_id": "COHR-news-2026-09-26-62010472",
+     "kind": "news",
+     "title": "Benzinga: Bipartisan Lawmakers Seek to Bar a Chinese AI Data Center Component From Sensitive US Government Systems: ‘We Shouldn’t Rely on China’ (2026-09-26)",
+     "url": "https://www.benzinga.com/markets/tech/26/09/62010472/bipartisan-lawmakers-seek-to-bar-a-chinese-ai-data-center-component-from-sensitive-us-government-systems-we-shouldnt-rely-on-china",
+     "filed": "2026-09-26",
+     "chars_total": 259,
+     "chars_shown": 259
+    },
+    {
+     "doc_id": "COHR-news-2026-09-21-61888036",
+     "kind": "news",
+     "title": "Benzinga: CUbIQ And Coherent Announce Successful Proof-Of-Concept QKD Demonstrator, A Major Milestone Toward Deploying Physical-Layer Security In Existing AI Infrastructure (2026-09-21)",
+     "url": "https://www.benzinga.com/quote/COHR",
+     "filed": "2026-09-21",
+     "chars_total": 162,
+     "chars_shown": 162
+    },
+    {
+     "doc_id": "COHR-news-2026-09-17-61856234",
+     "kind": "news",
+     "title": "Benzinga: Coherent Expands Pluggable Optical Line System Portfolio, With Full C-Band, High-Power Variable-Gain Amplifier Optical Line System In Compact QSFP Form Factor (2026-09-17)",
+     "url": "https://www.benzinga.com/news/26/09/61856234/coherent-expands-pluggable-optical-line-system-portfolio-full-c-band-high-power-variable-gain-amplif",
+     "filed": "2026-09-17",
+     "chars_total": 158,
+     "chars_shown": 158
+    },
+    {
+     "doc_id": "COHR-news-2026-09-08-61673353",
+     "kind": "news",
+     "title": "Benzinga: $100 Invested In Coherent 15 Years Ago Would Be Worth This Much Today (2026-09-08)",
+     "url": "https://www.benzinga.com/news/26/09/61673353/100-invested-coherent-15-years-ago-would-be-worth-much-today",
+     "filed": "2026-09-08",
+     "chars_total": 286,
+     "chars_shown": 286
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "AMKR",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "Capital expenditures tripled to $688.4 million in the first half of 2026 from $226.1 million a year earlier, reflecting an aggressive buildout that may worry investors.",
+     "quote": "Our capital expenditures totaled $688.4 million for the six months ended June 30, 2026 compared to $226.1 million for the six months ended June 30, 2025.",
+     "doc_id": "AMKR-10Q-2026-07-28-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000046/amkr-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The company's own risk disclosures concede that the convertible notes may dilute shareholders or depress the stock price, which could explain the price decline.",
+     "quote": "terms of our convertible notes could delay or prevent an otherwise beneficial takeover of us, may dilute the ownership interest of existing stockholders or may otherwise adversely affect the price of our common stock",
+     "doc_id": "AMKR-8K-2026-07-27-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000043/amkr6302026erex-991.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "A news report says the Arizona campus expansion will raise the project's planned investment to about $12 billion, adding to concerns about capital intensity.",
+     "quote": "Amkor Technology Reveals Phase 2 Of Arizona Advanced Packaging And Test Campus; The Expansion Increases The Project’s Planned Investment To ~$12B",
+     "doc_id": "AMKR-news-2026-09-08-61674271",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/09/61674271/amkor-technology-reveals-phase-2-arizona-advanced-packaging-and-test-campus-expansion-increases-proj",
+     "source_kind": "news"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "The company is exposed to a cyclical semiconductor industry, and any downturn could hurt revenue and margins.",
+     "quote": "dependence on the cyclical and volatile semiconductor industry and vulnerability to industry downturns and declines in global economic and financial conditions",
+     "doc_id": "AMKR-8K-2026-07-27-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000043/amkr6302026erex-991.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Heavy investments in equipment and facilities may not pay off if customer demand fails to materialize as expected.",
+     "quote": "We make substantial investments in equipment and facilities to support the demand of our customers, which may materially and adversely affect our business if the demand of our customers does not develop as we expect or is adversely affected.",
+     "doc_id": "AMKR-10Q-2026-07-28-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000046/amkr-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "Concentration in a few key customers or end markets, such as mobile and automotive, increases earnings risk.",
+     "quote": "dependence on key customers or concentration of customers in certain end markets, such as mobile communications and automotive",
+     "doc_id": "AMKR-8K-2026-07-27-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000043/amkr6302026erex-991.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "stripped": [
+    {
+     "claim": "The company's free cash flow turned negative at -$269.9 million in the first half of 2026 despite record revenue, as high capital spending consumed cash.",
+     "quote": "Free cash flow $ (269,860) $ 63,080",
+     "doc_id": "AMKR-10Q-2026-07-28-mdna",
+     "ok": false,
+     "reason": "claim states numbers not in its quote: ['2026', '269.9']",
+     "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000046/amkr-20260630.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "documents": [
+    {
+     "doc_id": "AMKR-8K-2026-07-27-ex99",
+     "kind": "earnings_release",
+     "title": "AMKR 8-K earnings release (Exhibit 99.1), filed 2026-07-27",
+     "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000043/amkr6302026erex-991.htm",
+     "filed": "2026-07-27",
+     "chars_total": 17529,
+     "chars_shown": 17529
+    },
+    {
+     "doc_id": "AMKR-10Q-2026-07-28-mdna",
+     "kind": "mdna",
+     "title": "AMKR 10-Q for period 2026-06-30, MD&A, filed 2026-07-28",
+     "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000046/amkr-20260630.htm",
+     "filed": "2026-07-28",
+     "chars_total": 32600,
+     "chars_shown": 32600
+    },
+    {
+     "doc_id": "AMKR-news-2026-09-30-62074203",
+     "kind": "news",
+     "title": "Benzinga: AI’s Semiconductor Boom Has a Clear Center of Gravity: Taiwan Semiconductor (2026-09-30)",
+     "url": "https://www.benzinga.com/markets/tech/26/09/62074203/ais-semiconductor-boom-has-a-clear-center-of-gravity-taiwan-semiconductor",
+     "filed": "2026-09-30",
+     "chars_total": 201,
+     "chars_shown": 201
+    },
+    {
+     "doc_id": "AMKR-news-2026-09-08-61674271",
+     "kind": "news",
+     "title": "Benzinga: Amkor Technology Reveals Phase 2 Of Arizona Advanced Packaging And Test Campus; The Expansion Increases The Project’s Planned Investment To ~$12B (2026-09-08)",
+     "url": "https://www.benzinga.com/news/26/09/61674271/amkor-technology-reveals-phase-2-arizona-advanced-packaging-and-test-campus-expansion-increases-proj",
+     "filed": "2026-09-08",
+     "chars_total": 145,
+     "chars_shown": 145
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  }
+ ],
+ "limits": [
+  "Prices: Alpaca SIP daily bars, split and dividend adjusted; no intraday data used.",
+  "Fundamentals: SEC XBRL companyfacts, US-GAAP filers only. Foreign private issuers (IFRS, 20-F/40-F) and companies without standard tags drop out as 'missing', they are not guessed.",
+  "Market cap uses the latest cover-page share count; for multi-class issuers it can understate.",
+  "Industry groups are SEC SIC codes, a coarse proxy for a theme (no GICS/BICS in free data).",
+  "Short interest: FINRA consolidated short interest (twice monthly, non-commercial use); % is of shares outstanding, not float.",
+  "Earnings-call transcripts are licensed content and were not used; explanations rely on the 8-K earnings release, 10-Q/10-K MD&A, and news headlines and summaries (Alpaca / Benzinga), never full articles.",
+  "No consensus estimates, revisions, ownership or borrow-cost data: those need a licensed source."
+ ]
+}

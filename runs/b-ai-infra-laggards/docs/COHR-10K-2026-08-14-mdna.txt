@@ -1,0 +1,345 @@
+Item 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (MD&A) is designed to provide a reader of Coherent’s financial statements with a narrative from the perspective of management. The following discussion and analysis of our financial condition and results of operations should be read in conjunction with our Consolidated Financial Statements and related notes included under Item 8 of this report. Coherent’s MD&A is presented in the following sections:
+
+•Overview
+
+•Trends and Other Matters Affecting our Business
+
+•Critical Accounting Policies and Estimates
+
+•Conversion of Series B Preferred Stock
+
+•Fiscal Year 2026 Compared to Fiscal Year 2025
+
+•Fiscal Year 2025 Compared to Fiscal Year 2024
+
+•Liquidity and Capital Resources
+
+•Off Balance Sheet Arrangements
+
+Forward-looking statements in Item 7 may involve risks and uncertainties that could cause results to differ materially from those projected (refer to Item 1A for discussion of these risks and uncertainties, which are incorporated herein by reference).
+
+Overview
+
+For an overview of our business, see Part I - Item 1. Business - General Description of Business of this Annual Report on Form 10-K for further information
+
+Trends and Other Matters Affecting Our Business
+
+Industry Conditions
+
+Coherent is a global leader in photonic technology. Our broad photonic technology platform is foundational to the performance and scalability of AI datacenters. AI runs on compute, but it scales on optical connectivity. Coherent is at the center of an extraordinary expansion in optical networking infrastructure, driven by the rapid growth of AI, the transition from copper to optical connectivity, and the increasing need for bandwidth and energy efficiency across increasingly complex datacenter architectures. We continue to experience continued strong demand in our Datacenter and Communications markets. The increasing investments by hyperscale and other cloud providers in AI datacenter infrastructures have significantly boosted demand for our datacenter transceivers. Elevated demand for our new ZR/ZR+ transceivers and sustained growth in traditional telecom transport products drove higher shipment volumes for our telecom and other communications solutions. We are investing in manufacturing capacity for the Datacenter and Communications markets, including expanding our indium phosphide capacity in Sherman, Texas, to address our increased customer demand and industry-wide shortage. In our Industrial markets, we are experiencing strong demand in semiconductor capital equipment.
+
+Agreements with NVIDIA
+
+On March 2, 2026, the Company entered into a multi-year strategic agreement with NVIDIA to advance the development of advanced optics technologies, including manufacturing capacity and research and development, to enable next-generation AI infrastructure. The non-exclusive agreement includes a multi-billion-dollar purchase commitment with NVIDIA, as well as future access and capacity rights for advanced laser and optical networking products. Separately, on March 2, 2026, NVIDIA made a $2 billion investment in the Company, through the purchase of shares of the Company’s Common Stock in a private placement. The proceeds from the investment will be used to support research and development, future capacity and operations as we build out our manufacturing capabilities. See Note 14. Equity and Redeemable Preferred Stock for further information.
+
+Change in Reportable Segments
+
+Effective July 1, 2025, we realigned our organizational structure and identified multiple operating segments which have been aggregated into two reportable segments based on our internal management structure and CODM oversight: (i) Datacenter & Communications, and (ii) Industrial. See Note 20. Segment and Geographic Reporting for further information.
+
+Restructuring Plans
+
+2023 Plan
+
+On May 23, 2023, the Board of Directors approved the 2023 Plan which includes site consolidations, facilities moves and closures, as well as the relocation and requalification of certain manufacturing facilities. These restructuring actions were
+
+36
+
+Table of Contents
+
+intended to realign our cost structure as part of a transformation to a simpler, more streamlined, resilient and sustainable business model.
+
+In fiscal 2026, these activities resulted in net charges of $1 million, primarily for site move costs partially offset by adjustments to employee termination costs. In fiscal 2025, these activities resulted in charges of $53 million, primarily for impairment losses associated with the sale of our Newton Aycliffe business, impairment of right-of-use (“ROU”) assets, employee termination costs, site move costs and accelerated depreciation. In fiscal 2024, these activities resulted in $27 million of charges primarily for acceleration of depreciation, write-off of property and equipment, and site move costs. See Note 12. Restructuring Plans for further information.
+
+2025 Plan
+
+Commencing in the quarter ended March 31, 2025, and as part of the ongoing strategic review of the Company’s business, the Company’s management approved the 2025 Plan to take a number of restructuring actions, including site consolidations, facilities moves and closures, workforce reductions, contract terminations, and certain other associated cost reductions. The 2023 Plan and the 2025 Plan are collectively referred to as the “Restructuring Plans.”
+
+In fiscal 2026, these activities resulted in $62 million of net charges primarily related to write-off of property and equipment, employee termination and site closure costs. In fiscal 2025, these activities resulted in $107 million of net charges primarily for the write-off of property and equipment and ROU assets, employee and contract termination costs. See Note 12. Restructuring Plans for further information.
+
+Synergy and Site Consolidation Plan
+
+On May 20, 2023, the Company announced that it had accelerated some of the actions planned as part of its multi-year synergy and site consolidation efforts following the acquisition of Coherent, Inc., including site consolidations and relocations to lower cost sites. These relocations and other actions resulted in the Company achieving its previously announced $250 million synergy plan, which included savings from supply chain management, internal supply of enabling materials and components, operational efficiencies in all functions due to scale, global functional model efficiencies and consolidation of corporate costs. In fiscal 2025, the acceleration of these activities resulted in $17 million of charges primarily for overlapping labor related to transition of manufacturing operations to other sites, shut down costs and employee termination costs. In fiscal 2024, the acceleration of these activities resulted in $40 million of charges primarily for overlapping labor related to transition of manufacturing operations to other sites, shut down costs for sites being exited, accelerated depreciation and employee termination costs.
+
+Impairment of Assets Held-for-Sale and Sale of Business
+
+In the fourth quarter of fiscal 2025, management entered into non-binding agreements to sell several entities. As a result of classifying these entities as held-for-sale, we recorded non-cash impairment charges of $85 million within the Industrial segment. These charges were recognized in Impairment of assets held-for-sale in our Consolidated Statements of Earnings (Loss) for the fourth quarter of fiscal 2025 to reduce the carrying values of the entities to their estimated fair value. In the year ended June 30, 2026, we recorded additional non-cash impairment charges of $64 million, within the Industrial segment, related to these entities as well as an additional business that was classified as held-for-sale in the fourth quarter of fiscal 2026. The charges were recorded in Impairment of assets held-for-sale in the Consolidated Statements of Earnings (Loss) to reduce the carrying values of the entities that continue to meet the held-for-sale criteria to their estimated fair value.
+
+On September 2, 2025, we completed the sale of our aerospace and defense business, which was part of our Industrial segment, for approximately $400 million and recorded a gain of $115 million to Gain on sale of business in our Consolidated Statements of Earnings (Loss) in fiscal 2026.
+
+On January 30, 2026, the Company completed the sale of its product division based in Munich, Germany. The loss associated with the sale was $96 million, with a substantial portion of this loss recognized through impairment charges within Impairment of assets held-for-sale in the Consolidated Statement of Earnings (Loss), including $81 million in the fourth quarter of fiscal 2025, $13 million in the first quarter of fiscal 2026 and $11 million in the second quarter of fiscal 2026. This was partially offset by a gain of $9 million recorded within Gain on sale of business in the Consolidated Statements of Earnings (Loss) in fiscal 2026.
+
+See Note 7. Assets Held-for-Sale and Sale of Businesses for further information.
+
+Macroeconomic Conditions - Tariffs and Export Controls
+
+In early 2025, the United States implemented significant new tariffs and export restrictions affecting a broad range of countries, commodities and industries. These actions have prompted retaliatory measures from certain foreign governments, including the imposition of tariffs and export controls. On February 20, 2026, the U.S. Supreme Court ruled that tariffs imposed under the International Emergency Economic Powers Act (“IEEPA”) were not authorized by the statute. The Company is the importer of
+
+37
+
+Table of Contents
+
+record for certain raw materials and products that were previously subject to such tariffs under IEEPA. During the fourth quarter of fiscal 2026, following the orders of the U.S. Court of International Trade directing U.S. Customs and Border Protection to refund such duties, the Company concluded that recovery of a portion of previously paid tariffs was probable. As a result, the Company recorded the receipt of tariff refunds received and recognized a net receivable for additional refunds expected to be recovered. The amounts recorded were not material to the Company. The receivable represents the Company’s estimate of recoverable tariffs associated with eligible import entries based on information available as of June 30, 2026, including shipment‑level data and applicable court rulings guidance. The timing of collection remains subject to U.S. Customs and Border Protection’s administrative processes, and actual amounts ultimately received may differ from estimates as refund claims are reviewed and validated.
+
+As a global company with a substantial and diversified manufacturing footprint, we have some ability to mitigate the effects of tariffs, trade sanctions, and other geopolitical challenges. Our global supply chain and internal production capabilities for many critical components provides flexibility in sourcing and manufacturing, which helps support costumer demand and business continuity. However, sustained disruption in global trade conditions could increase costs, disrupt operations, reduce demand or delay production, adversely affecting our business, financial condition, results of operations and cash flows.
+
+Critical Accounting Policies and Estimates
+
+The preparation of financial statements and related disclosures in conformity with accounting principles generally accepted in the United States requires the Company’s management to make judgments, assumptions and estimates that affect the amounts reported in its Consolidated Financial Statements and accompanying notes. Note 1. Nature of Business and Summary of Significant Accounting Policies, of the Notes to our Consolidated Financial Statements contained in Item 8 of this Annual Report on Form 10-K, describes the significant accounting policies and accounting methods used in the preparation of the Company’s Consolidated Financial Statements. Management bases its estimates on historical experience and on various other assumptions that it believes to be reasonable under the circumstances, the results of which form the basis for making judgments about the carrying values of assets and liabilities. Actual results may differ from these estimates.
+
+Management has discussed the development and selection of the critical accounting policies and estimates described below with the Audit Committee of the Board of Directors and the Audit Committee has reviewed the related disclosure. In addition, there are other items within our Consolidated Financial Statements that require estimation but are not deemed critical. Changes in estimates used in these and other items could impact the Consolidated Financial Statements.
+
+Goodwill
+
+We test goodwill for impairment annually, and whenever events or changes in circumstances indicate that goodwill might be impaired. The assessment requires significant judgment regarding future operating performance, including projections of revenues, profitability and cash flows, as well as assumptions regarding market conditions and discount rates. For fiscal year 2026, we performed a quantitative impairment assessment. Fair value was estimated using a discounted cash flow analysis based on the reporting unit’s long-term strategic plans, current operating performance and a market-based analysis.
+
+For the Lasers reporting unit, as of April 1, 2026, the estimated fair value exceeded the carrying value by approximately 8%. Accordingly, we concluded that goodwill was not impaired; however, the reporting unit remains sensitive to changes in assumptions and future operating performance. Our Lasers reporting unit has goodwill of approximately $3.1 billion at June 30, 2026. In evaluating the Lasers reporting unit, significant weight was provided to the forecasted revenue and related gross margins as we determined that these have the most significant impact on its fair value. The forecasted profitability is expected to increase as volumes increase and the achievement of operating efficiencies and the benefit from the multi-year synergy and site consolidation plans are realized. The valuation utilized a discount rate of 11.0%, representing the rate of return a market participant would require for an investment in the reporting unit. If actual results differ materially from management’s estimates and assumptions, a material goodwill impairment charge could occur in future periods.
+
+Due to the cyclical nature of our business, and the other factors described in the section on Risk Factors set forth in Item 1A of this Annual Report on Form 10-K, the profitability of our individual reporting units may periodically be affected by downturns in customer demand, operational challenges and other factors. If material adverse conditions occur that impact one or more of our reporting units, our determination of future fair value might not support the carrying amount of one or more of our reporting units, and the related goodwill would need to be impaired. We will continue to monitor any changes to our assumptions and will evaluate goodwill as deemed warranted during future periods.
+
+38
+
+Table of Contents
+
+Income Taxes
+
+The Company prepares and files tax returns based on its interpretation of tax laws and regulations and records estimates based on these judgments and interpretations. In the normal course of business, the Company’s tax returns are subject to examination by various taxing authorities, which may result in future tax, interest and penalty assessments by these authorities. The Company recognizes the tax benefit from an uncertain tax position only if it is more likely than not that the tax position will be sustained on examination by the taxing authorities, based on the technical merits of the position. The tax benefits recognized in the financial statements from such a position are measured based on the largest benefit that has a greater than 50% likelihood of being realized upon ultimate resolution. The amount of unrecognized tax benefits is adjusted for changes in facts and circumstances. For example, adjustments could result from significant amendments to existing tax law and the issuance of regulations or interpretations by the taxing authorities, new information obtained during a tax examination, or resolution of an examination. The Company believes that its estimates for uncertain tax positions are appropriate and sufficient to pay assessments that may result from examinations of its tax returns. The Company recognizes both accrued interest and penalties related to unrecognized tax benefits in income tax expense.
+
+Management evaluates the realizability of deferred tax assets for each jurisdiction in which it operates. If the Company experiences cumulative pretax income in a particular jurisdiction in a three-year period including the current and prior two years, management normally concludes that the income tax assets will more likely than not be realizable and no valuation allowance is recognized, unless known or planned operating developments, or changes in tax laws, would lead management to conclude otherwise. However, if the Company experiences cumulative pretax losses in a particular jurisdiction in a three-year period, management then considers a series of factors in the determination of whether the deferred tax assets can be realized. The Company has recorded valuation allowances against certain of its deferred tax assets, primarily those that have been generated from net operating losses in certain foreign taxing jurisdictions and acquired U.S. carryforwards. In evaluating whether the Company would more likely than not recover these deferred tax assets, it has not assumed any future taxable income or tax planning strategies in the jurisdictions associated with these carryforwards where history does not support such an assumption. Implementation of tax planning strategies to recover these deferred tax assets or future income generation in these jurisdictions could lead to the reversal of these valuation allowances and a reduction of income tax expense.
+
+The OECD, a global policy forum, introduced a framework to implement a global minimum tax of 15% applicable to multinational corporations known as Pillar Two. Nearly all OECD member jurisdictions agreed in principle to adopt these provisions and numerous jurisdictions enacted legislation, including jurisdictions where the Company operates. On January 5, 2026, the OECD released a package of safe harbours including a “side-by-side” agreement intended to exempt U.S.-parented multinational entities from certain provisions of Pillar Two. The Company continues to analyze the impact of the “side-by-side” agreement as well as its implementation globally. Pillar Two did not have a material impact on the Company’s Consolidated Financial Statements in fiscal years 2026, 2025 or 2024, but further changes in implementation may have a material impact in the future.
+
+On July 4, 2025, the One Big Beautiful Bill Act (“OBBBA”) was enacted in the United States. OBBBA includes provisions affecting various aspects of domestic and international taxation applicable to U.S. multinational corporations. The Company has evaluated the provisions effective for fiscal year 2026 and reflected the applicable impacts in its fiscal 2026 income tax provision. Certain provisions of OBBBA become effective in future years and the Company will continue to assess the impact of the legislation on future reporting periods.
+
+New Accounting Standards
+
+See Note 2. Recently Issued Financial Accounting Standards for a description of recent accounting pronouncements, including the expected dates of adoption and estimated effects, if any, on our consolidated financial statements.
+
+Conversion of Series B Preferred Stock
+
+All outstanding shares of Series B-1 and Series B-2 Preferred Stock were converted to Company Common Stock in the second quarter of fiscal 2026, and no shares of Preferred Stock are currently issued and outstanding. See Note 14. Equity and Redeemable Preferred Stock for further information.
+
+Fiscal Year 2026 Compared to Fiscal Year 2025
+
+The Company reports its financial results in the following two designated segments: (i) Datacenter & Communications, and (ii) Industrial.
+
+The following table sets forth select items from our Consolidated Statements of Earnings (Loss) for the years ended June 30, 2026 and 2025 ($ in millions except per share information) (1):
+
+39
+
+Year Ended
+
+June 30, 2026 Year Ended
+
+June 30, 2025
+
+% of
+
+Revenues % of
+
+Revenues
+
+Revenues $ 7,118 100 % $ 5,810 100 %
+
+Cost of goods sold 4,449 63 3,767 65
+
+Gross margin 2,669 37 2,043 35
+
+Operating expenses:
+
+Research and development 723 10 582 10
+
+Selling, general and administrative 1,045 15 926 16
+
+Restructuring charges 63 1 160 3
+
+Impairment of assets held-for-sale 64 1 85 1
+
+Gain on sale of business (124) (2) — —
+
+Interest and other, net 50 1 196 3
+
+Earnings Before Income Taxes 848 12 94 2
+
+Income Tax Expense 61 1 64 1
+
+Net Earnings 787 11 30 1
+
+Net Loss Attributable to Noncontrolling Interests (18) — (19) —
+
+Net Earnings Attributable to Coherent Corp. $ 805 11 % $ 49 1 %
+
+Diluted Earnings (Loss) Per Share $ 4.12 $ (0.52)
+
+(1) Some amounts may not add due to rounding.
+
+Consolidated
+
+Revenues. Revenues for the year ended June 30, 2026 increased 23% to $7,118 million, compared to $5,810 million for the same period last fiscal year. Revenues increased $1,519 million, or 40%, in the Datacenter & Communications segment. Revenue growth in our Datacenter business was fueled by continued strong AI datacenter demand while our Communications business benefited from increased demand in data center interconnect, scale across and traditional telecom applications. In the Industrial segment, revenue decreased $211 million, or 10%, primarily due to the divestitures of our aerospace and defense business on September 2, 2025 and our Munich, Germany business on January 30, 2026.
+
+Gross margin. Gross margin for the year ended June 30, 2026 was $2,669 million, or 37% of revenues, compared to $2,043 million, or 35% of revenues, for the same period last fiscal year, representing an increase of 233 basis points. The increase as a percent of revenue was primarily driven by cost reductions in product input costs, efficiency gains from improved cycle times in the manufacturing process as well as yield improvements in the Datacenter & Communications segment. In addition, gross margin benefited from pricing optimization and lower amortization of intangibles in both the Datacenter & Communications and Industrial segments. Gross margin in the Industrial segment also benefited from the divestiture of our aerospace and defense business on September 2, 2025 and our Munich, Germany business on January 30, 2026.
+
+Research and development. Research and development (“R&D”) expenses for the year ended June 30, 2026 were $723 million, or 10% of revenues, compared to $582 million, or 10% of revenues, for the same period last fiscal year. The increase in R&D expense was primarily driven by continued investment in our product portfolios, particularly within our Datacenter & Communications segment. These investments support both near and long-term revenue growth initiatives, namely in Transceivers and CPO, as well as new high margin, high value systems such as OCS and Multi-rail solutions, which support our long-term growth strategy.
+
+Selling, general and administrative. Selling, general and administrative (“SG&A”) expenses for the year ended June 30, 2026 were $1,045 million, or 15% of revenues, compared to $926 million, or 16% of revenues, for the same period last fiscal year. Although lower as a percentage of revenue, the increases in SG&A expenses were primarily driven by higher legal, integration and divestiture-related consulting costs, higher facility exit costs and higher share-based and variable compensation expense, partially offset by efficiencies achieved from cost reduction initiatives.
+
+40
+
+Restructuring charges. Restructuring charges for the year ended June 30, 2026 were $63 million, compared to $160 million for the prior fiscal year. Charges in fiscal 2026 consisted primarily of employee termination costs, asset write-offs and move and other costs related to the consolidation and closure of certain manufacturing sites. Charges in fiscal 2025 consisted primarily of asset write-offs, employee termination costs, move costs, contract termination costs and accelerated depreciation due to the consolidation and closure of certain manufacturing sites, and impairment losses associated with the sale of our Newton Aycliffe business. See Note 12. Restructuring Plans for further information.
+
+Impairment of assets held-for-sale. Impairment of assets held-for-sale for the year ended June 30, 2026 was $64 million compared to $85 million in the prior fiscal year. The charges represent non-cash impairment adjustments to reduce the carrying value of entities classified as held-for-sale to their estimated fair value. See Note 7. Assets Held-for-Sale and Sale of Businesses for further information.
+
+Gain on sale of business. Gain on sale of business for the year ended June 30, 2026 was $124 million and relates to the sales of our aerospace and defense and our Munich, Germany businesses. See Note 7. Assets Held-for-Sale and Sale of Businesses for further information.
+
+Interest and other, net. Interest and other, net expense for the year ended June 30, 2026 was $50 million, compared to $196 million for the same period in the prior fiscal year, a decrease of $146 million. Included in Interest and other, net, were interest expense on borrowings, foreign currency gains and losses, amortization of debt issuance costs, losses on debt extinguishment, equity gains and losses from unconsolidated investments, and interest and dividend income on cash balances. The decrease was primarily driven by a $74 million gain on the sale of an equity investment, $53 million lower interest expense and $34 million lower foreign exchange net losses. Lower interest expense was primarily due to reduced borrowings and lower interest rates on our Term Loans, partially offset by lower benefit from our interest rate cap and swap. The $34 million lower foreign exchange net losses were primarily due to lower volatility of exchange rates during the year ended June 30, 2026.
+
+Income taxes. Our effective income tax rate for fiscal 2026 was 7% compared to an effective tax rate of 68% last fiscal year. The variance from the U.S. statutory federal income tax rate of 21% was primarily driven by releases of uncertain tax positions, excess tax benefits associated with stock-based compensation, benefits related to changes in German tax law, and differences between U.S. and foreign tax rates.
+
+Net loss attributable to noncontrolling interests. Net loss attributable to noncontrolling interests for the year ended June 30, 2026 was $18 million, compared to $19 million last fiscal year and represents the noncontrolling interest holders’ shares of losses of Silicon Carbide LLC. See Note 15. Noncontrolling Interests for further information.
+
+Segment Reporting
+
+Revenues and segment profit for the Company’s reportable segments are discussed below. Our CODM evaluates each segment’s operations for decision-making and performance assessment based on segment revenue and segment profit, as our CODM believes segment profit is a more comprehensive profitability measure for each operating segment. Segment profit includes operating expenses directly managed by operating segments, including research and development, direct sales, marketing and administrative expenses. Segment profit does not include share-based compensation, acquisition or integration related costs, amortization and impairment of intangible assets, restructuring charges, impairment charges on assets held-for-sale, gain on sale of businesses and certain other charges. Additionally, we do not allocate Corporate strategic research and development, strategic marketing and sales expenses and shared general and administrative expenses, as these expenses are not directly attributable to our operating segments. Management believes segment profit to be a useful measure for investors, as it reflects the results of segment performance over which management has direct control and is used by management in its evaluation of segment performance. See Note 20. Segment and Geographic Reporting for further information on the Company’s reportable segments and for the reconciliation of the Company’s segment profit to earnings (loss) before income taxes, which is incorporated herein by reference.
+
+Effective July 1, 2025, we report our financial results in the following two designated segments based on our internal management structure and CODM oversight: (i) Datacenter & Communications, and (ii) Industrial. The change in our operating segments had no impact on our previously reported consolidated results of operations, financial condition, or cash flows. Comparative prior year segment information has been recast to conform to the new segments.
+
+41
+
+Datacenter & Communications ($ in millions)
+
+Year Ended
+
+June 30, % Increase
+
+2026 2025
+
+Revenues $ 5,275 $ 3,755 40 %
+
+Segment profit $ 1,330 $ 904 47 %
+
+Revenues for the year ended June 30, 2026 for Datacenter & Communications increased 40% to $5,275 million, compared to $3,755 million last fiscal year. The increase in revenues of $1,519 million during fiscal 2026 was primarily driven by growth in our Datacenter business reflecting continued strong AI datacenter demand, driven primarily by transceivers, as well as higher Communications business volumes due to increased demand for datacenter interconnect, scale across and traditional telecom applications.
+
+Segment profit for the year ended June 30, 2026 for Datacenter & Communications increased 47% to $1,330 million, compared to segment profit of $904 million last fiscal year. The increase in segment profit for fiscal 2026 was primarily driven by higher revenues, partially offset by increased R&D investments to support expansion of our product portfolio.
+
+Industrial ($ in millions)
+
+Year Ended
+
+June 30, % Increase (Decrease)
+
+2026 2025
+
+Revenues $ 1,844 $ 2,055 (10) %
+
+Segment profit $ 423 $ 407 4 %
+
+Revenues for the fiscal year ended June 30, 2026 for Industrial decreased 10% to $1,844 million, compared to revenues of $2,055 million last fiscal year. The decrease in revenues during the current fiscal year was primarily attributable to the divestitures of our aerospace and defense business on September 2, 2025 and our Munich, Germany business on January 30, 2026.
+
+Segment profit for the fiscal year ended June 30, 2026 for Industrial increased 4% to $423 million, compared to segment profit of $407 million last fiscal year. The increase was primarily driven by the divestitures of our aerospace and defense business as well as the Munich, Germany business in addition to pricing optimization initiatives and lower manufacturing costs.
+
+42
+
+Fiscal Year 2025 Compared to Fiscal Year 2024
+
+The following table sets forth select items from our Consolidated Statements of Earnings (Loss) for the years ended June 30, 2025 and 2024 ($ in millions except per share information) (1):
+
+Year Ended June 30, 2025 Year Ended June 30, 2024
+
+% of
+
+Revenues % of
+
+Revenues
+
+Revenues $ 5,810 100 % $ 4,708 100 %
+
+Cost of goods sold 3,767 65 3,252 69
+
+Gross margin 2,043 35 1,456 31
+
+Operating expenses:
+
+Research and development 582 10 479 10
+
+Selling, general and administrative 926 16 854 18
+
+Restructuring charges 160 3 27 1
+
+Impairment of assets held-for-sale 85 1 — —
+
+Interest and other, net 196 3 244 5
+
+Earnings (Loss) Before Income Taxes 94 2 (148) (3)
+
+Income Tax Expense 64 1 11 —
+
+Net Earnings (Loss) 30 1 (159) (3)
+
+Net Loss Attributable to Noncontrolling Interests (19) — (3) —
+
+Net Earnings (Loss) Attributable to Coherent Corp. $ 49 1 % $ (156) (3) %
+
+Diluted Earnings (Loss) Per Share $ (0.52) $ (1.84)
+
+(1) Some amounts may not add due to rounding.
+
+Consolidated
+
+Revenues. Revenues for the year ended June 30, 2025 increased 23% to $5,810 million, compared to $4,708 million for fiscal 2024.
+
+Revenues increased $1,124 million, or 43%, in the Datacenter & Communications segment, with increases in datacom driven primarily by ongoing strong AI datacenter demand and growth in our telecom revenue due to higher demand in the data center interconnect and the telecom transport business. In our Industrial segment, revenue decreased $21 million, or 1% due to macroeconomic softness.
+
+Gross margin. Gross margin for the year ended June 30, 2025 was $2,043 million, or 35%, of total revenues, compared to $1,456 million, or 31% of total revenues, for fiscal 2024, an increase of 424 basis points. The increase as a percent of revenue for fiscal 2025 was primarily due to higher revenue volume particularly in the communications market in the Datacenter & Communications segment, improvements in both pricing optimization and cost reductions, partially offset by unfavorable mix and foreign exchange impacts. Cost reductions included both lower manufacturing costs and improvements in manufacturing yields.
+
+Research and development. Research and development (“R&D”) expenses for the fiscal year ended June 30, 2025 were $582 million, or 10% of revenues, compared to $479 million, or 10% of revenues, for fiscal 2024. The increase of $103 million for fiscal 2025 was primarily related to continued investment in our product portfolios, particularly in datacom. We continue to focus on investing our R&D in those projects with the highest return on investment.
+
+Selling, general and administrative. Selling, general and administrative (“SG&A”) expenses for the year ended June 30, 2025 were $926 million, or 16% of revenues, compared to $854 million, or 18% of revenues, for fiscal 2024. The decrease in SG&A as a percentage of revenue for fiscal 2025 compared to fiscal 2024 was primarily the result of higher sales volumes and lower executive transition costs partially offset by the impact of higher variable and share-based compensation.
+
+43
+
+Restructuring charges. Restructuring charges for the year ended June 30, 2025 were $160 million, or 3% of revenues. The restructuring charges consisted primarily of asset write-offs, employee termination costs, move costs, contract termination costs and accelerated depreciation due to the consolidation and closure of certain manufacturing sites as well as impairment losses associated with the sale of our Newton Aycliffe business. Restructuring charges related to our 2023 Restructuring Plan for the year ended June 30, 2024 were $27 million, or 1% of revenues, and consisted primarily of severance, accelerated depreciation, equipment write-offs and move costs due to the consolidation of certain manufacturing sites. See Note 12. Restructuring Plans for further information.
+
+Impairment of assets held-for-sale. Impairment of assets held-for-sale for the year ended June 30, 2025 were $85 million, or 1% of revenues and represented non-cash impairment charges to reduce our carrying value in entities held-for-sale at June 30, 2025 to fair value. See Note 7. Assets Held-for-Sale and Sale of Businesses for further information.
+
+Interest and other, net. Interest and other, net for the year ended June 30, 2025 was expense of $196 million compared to expense of $244 million for fiscal 2024, a decrease of $48 million. Included in Interest and other, net, were interest expense on borrowings, foreign currency gains and losses, amortization of debt issuance costs, equity gains and losses from unconsolidated investments, interest and dividend income on excess cash balances and income from an insurance settlement. The decrease of $48 million in comparison to fiscal 2024 was driven by driven by $45 million lower interest expense, $8 million higher interest income and $8 million higher income from insurance settlements partially offset by $19 million higher foreign exchange net losses. The $45 million lower interest expense was primarily due to lower interest expense on our New Term B Loans resulting from lower balances and lower interest rates partially offset by lower interest expense benefit from our interest rate cap and swap. The $8 million higher interest and dividend income is primarily due to increases in interest rates earned on investments as well as the increase in average restricted cash balances due to the timing of receipt from our investment in Silicon Carbide LLC in the second quarter of fiscal 2024. The $19 million higher foreign exchange net losses were primarily due to higher volatility of exchange rates, particularly the Euro, during fiscal 2025 in addition to the cessation of our balance sheet hedging program at the end of September 2024.
+
+Income taxes. Our effective income tax rate for fiscal 2025 was 68%, compared to an effective tax rate of (8)% for fiscal 2024. The difference between our effective tax rate and the U.S. statutory rate of 21% was due to tax rate differentials between U.S. and foreign jurisdictions. The fiscal 2025 rate was impacted by the classification of assets held for sale and an increase in the U.S. valuation allowance.
+
+Net loss attributable to noncontrolling interests. Net loss attributable to noncontrolling interests for the year ended June 30, 2025 was $19 million, compared to $3 million for fiscal 2024 and represents the noncontrolling interest holders’ shares of losses of Silicon Carbide LLC. See Note 15. Noncontrolling Interests for further information.
+
+Segment Reporting
+
+For a discussion of revenues and segment profit measures, refer to our disclosure under “Segment Reporting” within “Fiscal Year 2025 Compared to Fiscal Year 2024” above.
+
+The change in our operating segments had no impact on our previously reported consolidated results of operations, financial condition, or cash flows. Comparative prior year segment information has been recast to conform to the new segments.
+
+Datacenter & Communications ($ in millions)
+
+Year Ended June 30, % Increase
+
+2025 2024
+
+Revenues $ 3,755 $ 2,631 43%
+
+Segment profit $ 904 $ 500 81%
+
+Revenues for the year ended June 30, 2025 for Datacenter & Communications increased 43% to $3,755 million, compared to $2,631 million for fiscal 2024. The increase in revenues of $1,124 million during fiscal 2025 was primarily due to increased AI datacenter related revenue in our Datacenter & Communications segment resulting from increased volumes in the datacom vertical and growth in the telecom vertical due to increased demand in data center interconnect and the telecom transport business.
+
+Segment profit for the year ended June 30, 2025 for Datacenter & Communications increased 81% to $904 million, compared to segment profit of $500 million for fiscal 2024. The increase in segment profit for fiscal 2025 was driven by $1,124 million higher revenues partially offset by higher R&D investments in our product portfolio.
+
+44
+
+Industrial ($ in millions)
+
+Year Ended June 30, % Increase (Decrease)
+
+2025 2024
+
+Revenues $ 2,055 $ 2,076 (1)%
+
+Segment profit $ 407 $ 298 37%
+
+Revenues for the fiscal year ended June 30, 2025 for Industrial decreased 1% to $2,055 million, compared to revenues of $2,076 million for fiscal 2024. The decrease in revenues during fiscal 2025 was primarily related to weak automotive and Silicon Carbide end market demand and macroeconomic conditions in the industrial segment, partially offset by $73 million higher shipments of laser systems in our display capital equipment market.
+
+Segment profit for the fiscal year ended June 30, 2025 for Industrial increased 37%, with segment profit of $407 million in fiscal 2025 compared to segment profit of $298 million for fiscal 2024. The increase in segment profit during fiscal 2025

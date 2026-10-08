@@ -67,8 +67,9 @@ def universe_steps(spec: Spec) -> list[tuple[str, callable]]:
         syms = set().union(set(), *(THEMES[t][1] for t in u.get("themes", [])))
         label = " or ".join(x for x in [f"industry in {u['industries']}" if u.get("industries") else "",
                                          f"theme in {u['themes']}" if u.get("themes") else ""] if x)
+        # a missing SIC only matters when SIC groups are part of the test
         steps.append((label, lambda d: (d["sic"].isin(codes) | d["symbol"].isin(syms),
-                                        d["sic"].isna() & ~d["symbol"].isin(syms))))
+                                        d["sic"].isna() & ~d["symbol"].isin(syms) & bool(codes))))
     if "exclude_industries" in u:
         codes_x = set().union(*(INDUSTRIES[g][1] for g in u["exclude_industries"]))
         steps.append((f"industry not in {u['exclude_industries']}",
