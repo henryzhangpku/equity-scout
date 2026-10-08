@@ -3,6 +3,7 @@
     scout run "<observation>" [--as-of YYYY-MM-DD] [--top 5] [--yes] [--offline] [--provider deepseek|kimi]
     scout spec "<observation>"            translate only, print the validated spec
     scout replay runs/<run>               rerun a recorded run offline and check it reproduces
+    scout serve [--offline] [--port 8765] local web app: observation -> spec -> confirm -> live run
     scout track                           mark every recorded pick sheet to market vs SPY and SMH
     scout build --as-of YYYY-MM-DD        fetch data and build the feature snapshot
     scout site                            export recorded runs for the static site in docs/
@@ -156,6 +157,11 @@ def cmd_track(a) -> None:
             print(f"    #{p['rank']} {p['symbol']:<6} entry {p['entry_close']:.2f}  {f(p['return'])}")
 
 
+def cmd_serve(a) -> None:
+    from .serve import serve
+    serve(port=a.port, offline=a.offline, as_of=a.as_of, open_browser=not a.no_browser)
+
+
 def cmd_site(a) -> None:
     from .site import export
     export()
@@ -183,9 +189,14 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--as-of", required=True)
     sub.add_parser("site")
     sub.add_parser("track")
+    p = sub.add_parser("serve", help="local web app for live demos")
+    p.add_argument("--port", type=int, default=8765)
+    p.add_argument("--offline", action="store_true", help="recorded material only: LLM cache and saved documents")
+    p.add_argument("--as-of")
+    p.add_argument("--no-browser", action="store_true")
     a = ap.parse_args(argv)
     {"run": cmd_run, "spec": cmd_spec, "replay": cmd_replay, "build": cmd_build, "site": cmd_site,
-     "track": cmd_track}[a.cmd](a)
+     "track": cmd_track, "serve": cmd_serve}[a.cmd](a)
 
 
 if __name__ == "__main__":

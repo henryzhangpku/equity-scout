@@ -39,6 +39,7 @@ class LLM:
     model: str | None = None
     cache_dir: Path = LLM_CACHE
     offline: bool = False  # True: never call the network, fail on a cache miss
+    timeout: float = 600.0  # seconds per HTTP request
 
     def __post_init__(self):
         if self.provider not in PROVIDERS:
@@ -69,7 +70,7 @@ class LLM:
             body["response_format"] = {"type": "json_object"}
         t0 = time.time()
         for attempt in range(4):
-            r = requests.post(cfg["base"] + "/chat/completions", json=body, timeout=600,
+            r = requests.post(cfg["base"] + "/chat/completions", json=body, timeout=self.timeout,
                               headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
             if r.status_code in (429, 500, 502, 503, 504):
                 time.sleep(5 * (attempt + 1))

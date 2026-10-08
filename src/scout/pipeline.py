@@ -96,9 +96,28 @@ def why_flagged(row: pd.Series, spec: Spec) -> list[str]:
 DEFAULT = object()
 
 
+def _table(ranked: pd.DataFrame, spec: Spec) -> list[dict]:
+    rank_cols = ["rank", "score"] + TABLE_FIELDS + [c for c in ranked.columns if c.startswith("rank_pct_")]
+    cond_cols = sorted({c["field"] for c in spec.conditions} | {c["ref"] for c in spec.conditions if "ref" in c}
+                       | {r["field"] for r in spec.rank})
+    cols = list(dict.fromkeys(rank_cols + cond_cols + ["cik"]))
+    return [{k: _clean(v) for k, v in r.items()} for r in ranked[[c for c in cols if c in ranked.columns]]
+            .to_dict(orient="records")]
+
+
 def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_source=None,
             run_dir: Path | None = None, top_n: int | None = None, log=print,
-            news_source=DEFAULT, record_picks: bool = False) -> RunResult:
+            news_source=DEFAULT, record_picks: bool = False, on_event=None,
+            tolerate_errors: bool = False) -> RunResult:
+    """Run the screen and the narrative engine and write the run folder.
+
+    on_event(kind, payload), if given, is called as results become available:
+    "screen" (funnel + ranked table), "explaining" (symbol), "explanation" (one
+    name's validated explanation). With tolerate_errors, a failure while reading
+    one name's documents or calling the model becomes that name's
+    "not enough evidence" card instead of aborting the run (used by scout serve).
+    """
+    emit = on_event or (lambda kind, payload: None)
     features, manifest = load_features(as_of)
     funnel, survivors = run_screen(features, spec)
     check_funnel(funnel)
@@ -114,27 +133,32 @@ def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_sour
         from .data.news import AlpacaNews
         news_source = AlpacaNews()
     transcripts = NoTranscripts()
+    table = _table(ranked, spec)
+    emit("screen", {"funnel": funnel, "ranked": table, "top_n": n, "as_of": as_of, "data": manifest})
     explanations = []
     shown: dict[str, str] = {}
-    for _, row in top.iterrows():
+    for i, (_, row) in enumerate(top.iterrows()):
         log(f"  reading filings for {row['symbol']} ...")
-        docs = docs_source.earnings_documents(row["symbol"], int(row["cik"]), date.fromisoformat(as_of))
-        if news_source is not None:
-            docs += news_source.news(row["symbol"], date.fromisoformat(as_of))
-        docs += transcripts.transcripts(row["symbol"], date.fromisoformat(as_of))
-        metrics = {k: _clean(row.get(k)) for k in TABLE_FIELDS if k not in ("symbol", "name")}
-        ex = explain(row["symbol"], row["name"], metrics, why_flagged(row, spec), docs, llm,
-                     transcripts_note=f"no earnings-call transcript was consulted ({transcripts.reason})")
-        for d in docs:
-            shown[d.doc_id] = shown_text(d)
-        explanations.append(ex.to_dict())
+        emit("explaining", {"symbol": row["symbol"], "i": i + 1, "n": len(top)})
+        try:
+            docs = docs_source.earnings_documents(row["symbol"], int(row["cik"]), date.fromisoformat(as_of))
+            if news_source is not None:
+                docs += news_source.news(row["symbol"], date.fromisoformat(as_of))
+            docs += transcripts.transcripts(row["symbol"], date.fromisoformat(as_of))
+            metrics = {k: _clean(row.get(k)) for k in TABLE_FIELDS if k not in ("symbol", "name")}
+            ex = explain(row["symbol"], row["name"], metrics, why_flagged(row, spec), docs, llm,
+                         transcripts_note=f"no earnings-call transcript was consulted ({transcripts.reason})").to_dict()
+            for d in docs:
+                shown[d.doc_id] = shown_text(d)
+        except Exception as e:  # noqa: BLE001 - one name's failure must not end a live demo
+            if not tolerate_errors:
+                raise
+            from .narrative import Explanation
+            ex = Explanation(symbol=row["symbol"], verdict="not enough evidence",
+                             model_status=f"failed: {type(e).__name__}: {str(e)[:200]}").to_dict()
+        explanations.append(ex)
+        emit("explanation", ex)
 
-    rank_cols = ["rank", "score"] + TABLE_FIELDS + [c for c in ranked.columns if c.startswith("rank_pct_")]
-    cond_cols = sorted({c["field"] for c in spec.conditions} | {c["ref"] for c in spec.conditions if "ref" in c}
-                       | {r["field"] for r in spec.rank})
-    cols = list(dict.fromkeys(rank_cols + cond_cols + ["cik"]))
-    table = [{k: _clean(v) for k, v in r.items()} for r in ranked[[c for c in cols if c in ranked.columns]]
-             .to_dict(orient="records")]
     record = {
         "tool": f"equity-scout {VERSION}",
         "as_of": as_of,

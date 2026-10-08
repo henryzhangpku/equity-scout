@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equity Scout Live</title>
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css">
+<style>
+  .stages { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 0; }
+  .stage { font-size: 12.5px; padding: 3px 9px; border-radius: 12px; border: 1px solid var(--line); color: var(--muted); }
+  .stage.on { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+  .stage.ok { border-color: var(--good); color: var(--good); }
+  .stage.bad { border-color: var(--bad); color: var(--bad); }
+  .statusline { font-size: 14px; margin-top: 8px; min-height: 1.5em; }
+  .spinner { display: inline-block; width: 10px; height: 10px; border: 2px solid var(--accent); border-right-color: transparent;
+    border-radius: 50%; animation: spin .8s linear infinite; margin-right: 6px; vertical-align: -1px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .card.pending { border-style: dashed; color: var(--muted); }
+  .badge { font-size: 12px; padding: 2px 8px; border-radius: 10px; border: 1px solid var(--line); color: var(--muted); }
+  .badge.live { color: var(--good); border-color: var(--good); }
+  .badge.off { color: var(--warn); border-color: var(--warn); }
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="wrap navin">
+  <span class="brand"><img src="/static/favicon.svg" alt="" width="24" height="24"><span>Equity Scout</span></span>
+  <div class="navlinks"><span id="mode" class="badge">…</span></div>
+</div></nav>
+<main class="wrap">
+  <div class="panel" style="margin-top:18px">
+    <div class="step">Observation</div>
+    <textarea id="obs" rows="3" style="font-family:inherit;font-size:16px" placeholder="e.g. Profitable mid-caps that have pulled back 20%+ from their 52-week high but still grow revenue over 10%"></textarea>
+    <div class="row">
+      <button id="propose" class="primary">Propose a screen spec</button>
+      <span class="muted">or</span>
+      <select id="replay-run"></select>
+      <button id="replay" class="ghost">Replay a recorded run</button>
+    </div>
+    <div id="meta" class="meta"></div>
+    <div class="stages" id="stages"></div>
+    <div class="statusline" id="status"></div>
+  </div>
+
+  <div id="confirm" class="panel" hidden>
+    <div id="spec-view"></div>
+    <details><summary>Edit the spec JSON before running</summary><textarea id="spec-json" rows="14" spellcheck="false"></textarea></details>
+    <div class="row">
+      <button id="run" class="primary">Looks right: run it on the snapshot and read the filings</button>
+      <button id="cancel" class="ghost">Cancel</button>
+    </div>
+    <div id="refusal"></div>
+  </div>
+
+  <div id="out"></div>
+
+  <div id="record-box" class="panel" hidden>
+    <div class="row"><button id="record">Record these picks in the ledger</button>
+      <span class="muted" id="record-msg">Appends the top names and entry closes to runs/picks.jsonl (hash-chained). Nothing is recorded unless you click.</span></div>
+  </div>
+</main>
+<script src="/static/ui.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
