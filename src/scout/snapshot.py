@@ -140,11 +140,17 @@ def build(as_of: date, workers: int = 6) -> Path:
                          f"50-day avg dollar volume >= ${MIN_ADV:,.0f}; one listing per CIK",
         "n_companies": int(len(df)),
         "short_interest_settlement": None if si.empty else str(si["settlement_date"].iloc[0]),
+        "benchmark_closes": benchmark_closes(bars, tag),
         "files": {p.name: {"sha256": sha256_file(p), "bytes": p.stat().st_size} for p in (prices_p, feat_p)},
     }
     (out / "manifest.json").write_text(json.dumps(manifest, indent=2))
     _log(f"features: {len(df)} rows -> {feat_p}")
     return feat_p
+
+
+def benchmark_closes(bars: pd.DataFrame, as_of: str) -> dict:
+    b = bars[(bars["symbol"].isin(BENCHMARKS)) & (bars["date"] == as_of)]
+    return {r.symbol: float(r.close) for r in b.itertuples()}
 
 
 def load(as_of: date | str) -> tuple[pd.DataFrame, dict]:

@@ -3,6 +3,7 @@
     scout run "<observation>" [--as-of YYYY-MM-DD] [--top 5] [--yes] [--offline] [--provider deepseek|kimi]
     scout spec "<observation>"            translate only, print the validated spec
     scout replay runs/<run>               rerun a recorded run offline and check it reproduces
+    scout track                           mark every recorded pick sheet to market vs SPY and SMH
     scout build --as-of YYYY-MM-DD        fetch data and build the feature snapshot
     scout site                            export recorded runs for the static site in docs/
 """
@@ -78,7 +79,7 @@ def cmd_run(a) -> None:
         if input("\nRun this screen? [Y/n] ").strip().lower() in ("n", "no"):
             sys.exit(0)
     res = execute(spec, attempts, as_of, llm, top_n=a.top,
-                  run_dir=Path(a.out) if a.out else None)
+                  run_dir=Path(a.out) if a.out else None, record_picks=not a.no_ledger)
     _print_result(res.record)
     print(f"\nSaved: {res.run_dir / 'run.json'} and report.md")
 
@@ -104,7 +105,7 @@ def replay(run_dir: Path) -> tuple[dict, dict]:
     tmp = run_dir.parent / f".replay-{run_dir.name}"
     try:
         new = execute(spec, attempts, old["as_of"], llm, docs_source=RecordedDocuments(run_dir),
-                      run_dir=tmp, top_n=old["top_n"], log=lambda *_: None).record
+                      news_source=None, run_dir=tmp, top_n=old["top_n"], log=lambda *_: None).record
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     return old, new
@@ -135,6 +136,26 @@ def cmd_build(a) -> None:
     print(f"snapshot -> {dst}")
 
 
+def cmd_track(a) -> None:
+    from .track import track
+    r = track()
+    if not r["chain_ok"]:
+        print("pick ledger chain BROKEN:
+  - " + "
+  - ".join(r["chain_problems"]))
+        sys.exit(1)
+    print(f"pick ledger: {r['n_entries']} entries, hash chain intact. ({r['label']})")
+    for m in r["marks"]:
+        b = m["benchmarks"]
+        f = lambda v: "n/a" if v is None else f"{v * 100:+.2f}%"
+        print(f"
+  {m['run_id']}  as of {m['as_of']}, marked to {m['marked_to']} ({m['trading_days']} trading days)")
+        print(f"    basket {f(m['basket_return'])}  SPY {f(b['SPY'])}  SMH {f(b['SMH'])}  "
+              f"basket-SPY {f(m['basket_vs']['SPY'])}  basket-SMH {f(m['basket_vs']['SMH'])}")
+        for p in m["picks"]:
+            print(f"    #{p['rank']} {p['symbol']:<6} entry {p['entry_close']:.2f}  {f(p['return'])}")
+
+
 def cmd_site(a) -> None:
     from .site import export
     export()
@@ -155,13 +176,16 @@ def main(argv: list[str] | None = None) -> None:
             p.add_argument("--top", type=int)
             p.add_argument("--yes", action="store_true", help="do not ask before running the spec")
             p.add_argument("--out")
+            p.add_argument("--no-ledger", action="store_true", help="do not append the picks to runs/picks.jsonl")
     p = sub.add_parser("replay")
     p.add_argument("run_dir")
     p = sub.add_parser("build")
     p.add_argument("--as-of", required=True)
     sub.add_parser("site")
+    sub.add_parser("track")
     a = ap.parse_args(argv)
-    {"run": cmd_run, "spec": cmd_spec, "replay": cmd_replay, "build": cmd_build, "site": cmd_site}[a.cmd](a)
+    {"run": cmd_run, "spec": cmd_spec, "replay": cmd_replay, "build": cmd_build, "site": cmd_site,
+     "track": cmd_track}[a.cmd](a)
 
 
 if __name__ == "__main__":

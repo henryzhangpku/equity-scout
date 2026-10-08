@@ -42,8 +42,13 @@ def export() -> None:
         })
     dst = ROOT / "docs" / "data" / "runs.js"
     dst.parent.mkdir(parents=True, exist_ok=True)
+    tracking = {}
+    tp = RUNS / "tracking.json"
+    if tp.exists():
+        tracking = json.loads(tp.read_text(encoding="utf-8"))
     fields = {f.name: {"kind": f.kind, "desc": f.desc} for f in FIELDS.values()}
     dst.write_text("window.SCOUT_FIELDS = " + json.dumps(fields) + ";\n"
+                   + "window.SCOUT_TRACKING = " + json.dumps(tracking, indent=1) + ";\n"
                    + "window.SCOUT_RUNS = " + json.dumps(out, ensure_ascii=False, indent=1) + ";\n",
                    encoding="utf-8")
     print(f"wrote {dst} ({len(out)} runs)")

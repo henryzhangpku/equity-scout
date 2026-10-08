@@ -28,6 +28,11 @@
   <nav id="tabs" class="tabs" role="tablist"></nav>
   <section id="run"></section>
 
+  <section class="panel">
+    <h2>Forward tracking</h2>
+    <div id="tracking"><p class="muted">No tracking data yet.</p></div>
+  </section>
+
   <section class="panel" id="architecture">
     <h2>Architecture</h2>
     <p class="muted">Each data layer sits behind a small interface, so a licensed source replaces the free one
@@ -39,6 +44,7 @@
       <div class="arch-row"><div>Classification</div><div>SEC SIC codes in named groups</div><div>GICS, BICS, TRBC, curated theme baskets</div><div>Theme membership (e.g. data-center REITs vs all REITs)</div></div>
       <div class="arch-row"><div>Short interest</div><div>FINRA consolidated short interest, twice monthly</div><div>Exchange / securities-lending feeds (borrow cost, utilisation)</div><div>Float-based %, daily cadence, borrow cost</div></div>
       <div class="arch-row"><div>Documents</div><div>EDGAR 8-K Exhibit 99.1 and 10-Q / 10-K MD&amp;A</div><div>Bloomberg / LSEG / Capital IQ document search</div><div>Earnings-call transcripts (licensed; interface kept, not used)</div></div>
+      <div class="arch-row"><div>News</div><div>Alpaca news API (Benzinga): headlines and summaries only, cut at the as-of close</div><div>Bloomberg / LSEG / Dow Jones news with full text and entitlements</div><div>Full articles, broad source coverage, story-level entity tagging</div></div>
       <div class="arch-row"><div>Language model</div><div>DeepSeek (Kimi alternative), every prompt and response recorded</div><div>A frontier model inside the firm's controls</div><div>Nothing structural: the model only fills the spec and writes cited prose</div></div>
     </div>
     <ol class="flow">
@@ -47,8 +53,8 @@
       <li><strong>Screen.</strong> Code applies each condition in order and records how many names enter, pass,
         fail and lack data. Gaps stay gaps.</li>
       <li><strong>Rank.</strong> A weighted mean of percentile ranks, ties broken by market cap then ticker.</li>
-      <li><strong>Explain.</strong> For the top names the model gets the computed numbers and the filing text; each
-        claim must quote the filing. Code keeps a claim only if the quote is found verbatim and every number in
+      <li><strong>Explain.</strong> For the top names the model gets the computed numbers, the filing text and recent
+        news headlines and summaries; each claim must quote one of them. Code keeps a claim only if the quote is found verbatim and every number in
         the claim is in the quote; with fewer than two surviving claims the verdict is <em>not enough evidence</em>.</li>
     </ol>
   </section>

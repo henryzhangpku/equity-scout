@@ -93,8 +93,12 @@ def why_flagged(row: pd.Series, spec: Spec) -> list[str]:
     return out
 
 
+DEFAULT = object()
+
+
 def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_source=None,
-            run_dir: Path | None = None, top_n: int | None = None, log=print) -> RunResult:
+            run_dir: Path | None = None, top_n: int | None = None, log=print,
+            news_source=DEFAULT, record_picks: bool = False) -> RunResult:
     features, manifest = load_features(as_of)
     funnel, survivors = run_screen(features, spec)
     check_funnel(funnel)
@@ -106,12 +110,17 @@ def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_sour
     if docs_source is None:
         from .data.edgar_docs import EdgarDocuments
         docs_source = EdgarDocuments()
+    if news_source is DEFAULT:
+        from .data.news import AlpacaNews
+        news_source = AlpacaNews()
     transcripts = NoTranscripts()
     explanations = []
     shown: dict[str, str] = {}
     for _, row in top.iterrows():
         log(f"  reading filings for {row['symbol']} ...")
         docs = docs_source.earnings_documents(row["symbol"], int(row["cik"]), date.fromisoformat(as_of))
+        if news_source is not None:
+            docs += news_source.news(row["symbol"], date.fromisoformat(as_of))
         docs += transcripts.transcripts(row["symbol"], date.fromisoformat(as_of))
         metrics = {k: _clean(row.get(k)) for k in TABLE_FIELDS if k not in ("symbol", "name")}
         ex = explain(row["symbol"], row["name"], metrics, why_flagged(row, spec), docs, llm,
@@ -149,6 +158,11 @@ def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_sour
     (run_dir / "run.json").write_text(json.dumps(record, indent=1, ensure_ascii=False), encoding="utf-8")
     from .report import markdown
     (run_dir / "report.md").write_text(markdown(record), encoding="utf-8")
+    if record_picks:
+        from .track import append_picks
+        picks = [{"symbol": r["symbol"], "rank": r["rank"], "entry_close": r["close"]} for r in table[:n]]
+        bench = {k: v for k, v in (manifest.get("benchmark_closes") or {}).items() if k in ("SPY", "SMH")}
+        append_picks(run_dir.name, as_of, spec.observation, picks, bench)
     return RunResult(run_dir=run_dir, record=record)
 
 
@@ -161,6 +175,7 @@ LIMITS = [
     "Short interest: FINRA consolidated short interest (twice monthly, non-commercial use); "
     "% is of shares outstanding, not float.",
     "Earnings-call transcripts are licensed content and were not used; explanations rely on the "
-    "8-K earnings release and 10-Q/10-K MD&A only.",
+    "8-K earnings release, 10-Q/10-K MD&A, and news headlines and summaries (Alpaca / Benzinga), "
+    "never full articles.",
     "No consensus estimates, revisions, ownership or borrow-cost data: those need a licensed source.",
 ]

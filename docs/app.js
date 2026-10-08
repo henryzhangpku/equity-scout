@@ -110,7 +110,9 @@
         if (!ex[part[0]].length) return;
         h.push('<div class="sub">' + part[1] + "</div>");
         ex[part[0]].forEach(function (c) {
-          h.push('<div class="claim">' + esc(c.claim) + "<q>“" + esc(c.quote) + '” <a class="cite" href="' + esc(c.url) +
+          var tag = c.source_kind === "news" ? '<span class="tag news">news headline/summary</span> ' :
+            '<span class="tag filing">' + (c.source_kind === "mdna" ? "10-Q/10-K MD&amp;A" : "8-K earnings release") + "</span> ";
+          h.push('<div class="claim">' + tag + esc(c.claim) + "<q>“" + esc(c.quote) + '” <a class="cite" href="' + esc(c.url) +
             '" target="_blank" rel="noopener">' + esc(c.doc_id) + "</a></q></div>");
         });
       });
@@ -144,6 +146,21 @@
   RUNS.forEach(function (r, i) { if (location.hash === "#" + r.id) start = i; });
   if (tabs.children[start]) tabs.children[start].click();
   if (!RUNS.length) document.getElementById("run").innerHTML = '<p class="muted">No recorded runs yet.</p>';
+  var T = window.SCOUT_TRACKING || {};
+  var tr = document.getElementById("tracking");
+  if (tr && T.marks) {
+    var pct = function (v) { return v == null ? "n/a" : (v >= 0 ? "+" : "") + (v * 100).toFixed(2) + "%"; };
+    var t = ['<p class="muted" style="margin-top:0"><strong>' + esc(T.label) + ".</strong> Each live run appends its top names and entry closes to an append-only, hash-chained ledger (runs/picks.jsonl); <code>scout track</code> marks them to market from Alpaca closes. Hash chain: " +
+      (T.chain_ok ? "intact" : "BROKEN") + ", " + esc(T.n_entries) + " entries, generated " + esc(T.generated_at) + ".</p>"];
+    t.push('<div class="tablewrap"><table><thead><tr><th class="l">Run</th><th>As of</th><th>Marked to</th><th>Trading days</th><th class="l">Picks</th><th>Basket</th><th>SPY</th><th>SMH</th><th>Basket − SPY</th><th>Basket − SMH</th></tr></thead><tbody>');
+    T.marks.forEach(function (m) {
+      t.push('<tr><td class="l">' + esc(m.run_id) + "</td><td>" + esc(m.as_of) + "</td><td>" + esc(m.marked_to) + "</td><td>" + m.trading_days +
+        '</td><td class="l">' + m.picks.map(function (p) { return esc(p.symbol) + " " + pct(p.return); }).join(", ") + "</td><td>" + pct(m.basket_return) +
+        "</td><td>" + pct(m.benchmarks.SPY) + "</td><td>" + pct(m.benchmarks.SMH) + "</td><td>" + pct(m.basket_vs.SPY) + "</td><td>" + pct(m.basket_vs.SMH) + "</td></tr>");
+    });
+    t.push("</tbody></table></div>");
+    tr.innerHTML = t.join("");
+  }
   var f = document.getElementById("foot");
   if (RUNS.length) {
     f.innerHTML = "Recorded runs use real data as of " + esc(RUNS[0].as_of) + ". Data limits: <ul>" +

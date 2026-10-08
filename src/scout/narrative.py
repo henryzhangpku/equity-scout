@@ -20,7 +20,7 @@ from .data.base import Document
 from .llm import LLM, parse_json
 
 MIN_THESIS_CLAIMS = 2
-DOC_CHAR_LIMIT = {"earnings_release": 24_000, "mdna": 40_000, "transcript": 40_000}
+DOC_CHAR_LIMIT = {"earnings_release": 24_000, "mdna": 40_000, "transcript": 40_000, "news": 2_000}
 
 _TYPO = str.maketrans({"‘": "'", "’": "'", "“": '"', "”": '"', "–": "-",
                        "—": "-", "‒": "-", "−": "-", " ": " ", " ": " ", " ": " "})
@@ -45,6 +45,7 @@ class Claim:
     ok: bool = False
     reason: str = ""
     url: str = ""
+    source_kind: str = ""   # earnings_release | mdna | news, set by code from the cited document
 
 
 @dataclass
@@ -89,15 +90,19 @@ def shown_text(d: Document) -> str:
 
 SYSTEM = """You are an equity research analyst. A deterministic screen has flagged a stock as a
 possible dislocation: its price behaviour and its reported fundamentals point in different
-directions. You receive the computed numbers (exact, from code) and excerpts of the company's
-own recent SEC filings. Explain what in the filings might account for the dislocation, and give
-the bear case.
+directions. You receive the computed numbers (exact, from code), excerpts of the company's own
+recent SEC filings, and recent news items (headline plus short summary only, from a news wire).
+Explain what in these sources might account for the dislocation, and give the bear case.
+
+Sources differ in weight: filings are the company's own reported facts; news items are third-party
+headlines and summaries (analyst actions, deals, reported events) and must be described as reported
+news, e.g. "A news report says ...". Prefer filings for facts about the business.
 
 Hard rules:
 - Every claim must carry a quote copied EXACTLY, character for character, from one of the
   documents provided, plus that document's doc_id. 6 to 60 words per quote. Code verifies
   each quote by exact string match and deletes any claim whose quote is not found.
-- Do not use outside knowledge, news, price targets or anything not in the documents.
+- Do not use outside knowledge or anything not in the documents provided.
 - Any number in a claim must appear in its quote. Put the computed screen numbers aside;
   they are context only.
 - If the documents do not explain the dislocation, say so: return few or no thesis claims
@@ -140,6 +145,7 @@ def explain(symbol: str, name: str, metrics: dict, why_flagged: list[str], docs:
         ex.model_status = "model output was not valid JSON; nothing kept"
         return ex
     urls = {d.doc_id: d.url for d in docs}
+    kinds = {d.doc_id: d.kind for d in docs}
     for part in ("thesis", "bear_case"):
         for item in j.get(part, []) or []:
             if not isinstance(item, dict):
@@ -147,6 +153,7 @@ def explain(symbol: str, name: str, metrics: dict, why_flagged: list[str], docs:
             c = check_claim(Claim(claim=str(item.get("claim", "")), quote=str(item.get("quote", "")),
                                   doc_id=str(item.get("doc_id", ""))), texts)
             c.url = urls.get(c.doc_id, "")
+            c.source_kind = kinds.get(c.doc_id, "")
             (getattr(ex, part) if c.ok else ex.stripped).append(c)
     ex.model_status = f"model said evidence: {j.get('evidence', 'unspecified')}"
     if len(ex.thesis) >= MIN_THESIS_CLAIMS and j.get("evidence") != "thin":

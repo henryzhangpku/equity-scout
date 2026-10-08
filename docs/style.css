@@ -91,3 +91,6 @@ footer { padding: 10px 16px 40px; font-size: 13px; }
   .frow { grid-template-columns: 1fr 64px; }
   .frow .bar { grid-column: 1 / -1; order: 3; }
 }
+.tag { font-size: 11px; padding: 1px 6px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.tag.news { border-style: dashed; }
+code { font: 12.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--code); padding: 1px 4px; border-radius: 3px; }
