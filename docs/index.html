@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equity Scout</title>
+<meta name="description" content="Plain-English investment observation to a typed screen across US equities, a ranked list, and explanations that cite SEC filings verbatim. The model proposes, deterministic code decides.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Equity Scout: from an observation to cited, ranked names">
+<meta property="og:description" content="An English observation becomes a validated screen spec; code filters, ranks and computes every number; the model explains each name only with quotes that code verifies in the SEC filing.">
+<meta property="og:image" content="og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wrap">
+  <div class="brand"><img src="favicon.svg" alt="" width="28" height="28"><span>Equity Scout</span></div>
+  <h1>From an investment observation to ranked names and cited explanations</h1>
+  <p class="lede">Write an observation in plain English. A language model translates it into a typed screen
+    spec; code validates the spec, screens the US equity universe on point-in-time data, ranks the survivors
+    and computes every number. The model then reads each top name's latest earnings release and MD&amp;A and
+    explains the dislocation, and code deletes any claim whose quote is not found verbatim in the filing.</p>
+  <p class="rule"><strong>The model proposes, deterministic code decides.</strong></p>
+</header>
+
+<main class="wrap">
+  <nav id="tabs" class="tabs" role="tablist"></nav>
+  <section id="run"></section>
+
+  <section class="panel" id="architecture">
+    <h2>Architecture</h2>
+    <p class="muted">Each data layer sits behind a small interface, so a licensed source replaces the free one
+      without touching the screen, the ranking or the citation check.</p>
+    <div class="arch">
+      <div class="arch-row head"><div>Layer</div><div>This demo (free)</div><div>Institutional equivalent</div><div>What the free version lacks</div></div>
+      <div class="arch-row"><div>Universe + prices</div><div>Alpaca assets and daily SIP bars, split and dividend adjusted</div><div>Bloomberg BQL / BQuant, LSEG Workspace, S&amp;P Capital IQ</div><div>Survivorship-free history, delisted names, intraday, corporate-action audit trail</div></div>
+      <div class="arch-row"><div>Fundamentals</div><div>SEC XBRL companyfacts, every fact gated by its filed date</div><div>BQL fundamentals, Capital IQ / Compustat point-in-time</div><div>IFRS filers, standardised line items, segment data, estimates and revisions</div></div>
+      <div class="arch-row"><div>Classification</div><div>SEC SIC codes in named groups</div><div>GICS, BICS, TRBC, curated theme baskets</div><div>Theme membership (e.g. data-center REITs vs all REITs)</div></div>
+      <div class="arch-row"><div>Short interest</div><div>FINRA consolidated short interest, twice monthly</div><div>Exchange / securities-lending feeds (borrow cost, utilisation)</div><div>Float-based %, daily cadence, borrow cost</div></div>
+      <div class="arch-row"><div>Documents</div><div>EDGAR 8-K Exhibit 99.1 and 10-Q / 10-K MD&amp;A</div><div>Bloomberg / LSEG / Capital IQ document search</div><div>Earnings-call transcripts (licensed; interface kept, not used)</div></div>
+      <div class="arch-row"><div>Language model</div><div>DeepSeek (Kimi alternative), every prompt and response recorded</div><div>A frontier model inside the firm's controls</div><div>Nothing structural: the model only fills the spec and writes cited prose</div></div>
+    </div>
+    <ol class="flow">
+      <li><strong>Translate.</strong> The model fills a whitelisted JSON spec. Unknown fields, operators, units or
+        industries are refused with a reason; anything the schema cannot express is listed as <em>not screened</em>.</li>
+      <li><strong>Screen.</strong> Code applies each condition in order and records how many names enter, pass,
+        fail and lack data. Gaps stay gaps.</li>
+      <li><strong>Rank.</strong> A weighted mean of percentile ranks, ties broken by market cap then ticker.</li>
+      <li><strong>Explain.</strong> For the top names the model gets the computed numbers and the filing text; each
+        claim must quote the filing. Code keeps a claim only if the quote is found verbatim and every number in
+        the claim is in the quote; with fewer than two surviving claims the verdict is <em>not enough evidence</em>.</li>
+    </ol>
+  </section>
+</main>
+
+<footer class="wrap muted" id="foot"></footer>
+
+<script src="data/runs.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

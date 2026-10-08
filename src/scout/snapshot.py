@@ -82,10 +82,11 @@ def build(as_of: date, workers: int = 6) -> Path:
     # 3. technicals
     bench = {b: bars[bars["symbol"] == b].set_index("date")["close"] for b in BENCHMARKS}
     tech = {}
+    last_day = bars["date"].max()
     for sym, g in bars.groupby("symbol", sort=False):
         if sym in BENCHMARKS or len(g) < 60:
             continue
-        if g["date"].iloc[-1] != bars["date"].max():
+        if g["date"].iloc[-1] != last_day:
             continue  # no bar on the as-of session: halted or delisted
         tech[sym] = I.snapshot(g, {b.lower(): s for b, s in bench.items()})
     tech = pd.DataFrame.from_dict(tech, orient="index")
@@ -98,10 +99,13 @@ def build(as_of: date, workers: int = 6) -> Path:
 
     # 4. fundamentals + industry
     def one(row) -> dict:
-        raw = sec.raw_facts(row.cik)
-        facts = extract_facts(raw)
-        fu = F.compute(facts, as_of, row.close)
-        sic, sic_desc = sic_of(sec.profile(row.cik))
+        try:
+            raw = sec.raw_facts(row.cik)
+            facts = extract_facts(raw)
+            fu = F.compute(facts, as_of, row.close)
+            sic, sic_desc = sic_of(sec.profile(row.cik))
+        except Exception as e:  # one bad filer must not sink the snapshot; the gap is recorded
+            return {"symbol": row.symbol, "prov_error": f"{type(e).__name__}: {e}"[:200]}
         return {"symbol": row.symbol, "sic": sic, "sic_desc": sic_desc,
                 **fu.values, **{f"prov_{k}": v for k, v in fu.provenance.items()}}
 
