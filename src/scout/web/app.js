@@ -34,6 +34,9 @@
         (s.keys.alpaca ? "on" : "<strong>off</strong> (keys missing)") + ". Rebuild the snapshot with <code>scout build --as-of YYYY-MM-DD</code>.";
       $("replay-run").innerHTML = s.runs.map(function (r) { return '<option value="' + esc(r.id) + '">' + esc(r.id) + "</option>"; }).join("");
       stages("translate");
+      var q = new URLSearchParams(location.search);
+      if (q.get("obs")) $("obs").value = q.get("obs");
+      if (q.get("replay")) { $("replay-run").value = q.get("replay"); $("replay").click(); }
     }).catch(function () { status('<span class="err">Cannot reach the local server.</span>'); });
   }
 
@@ -111,14 +114,12 @@
     es = new EventSource("/api/jobs/" + jobId + "/events");
     function on(name, fn) { es.addEventListener(name, function (m) { var e = JSON.parse(m.data); lastT = e.t; fn(e.data); }); }
     on("status", function (d) { status(esc(d.message), true); });
-    on("spec", function (d) { if (!specShown) $("o-spec").innerHTML = U.specHtml(d, "Recorded spec (replay)"); });
+    on("spec", function (d) { if (!specShown) { spec = d; $("o-spec").innerHTML = U.specHtml(d, "Recorded spec (replay)"); } });
     on("screen", function (d) {
       $("o-funnel").hidden = false; $("o-table").hidden = false;
       $("o-funnel").innerHTML = U.funnelHtml(d.funnel, "Funnel (computed by code, snapshot as of " + d.as_of + ")");
       var sp = spec || { conditions: [], rank: [] };
       var cols = d.ranked.length ? U.tableColumns(sp).filter(function (c) { return c in d.ranked[0] || c === "rank"; }) : [];
-      if (!spec) cols = ["rank", "symbol", "name", "score", "market_cap"].concat(Object.keys(d.ranked[0] || {}).filter(function (k) {
-        return k.indexOf("rank_pct_") === 0; }).map(function (k) { return k.slice(9); })).filter(function (c, i, a) { return a.indexOf(c) === i; });
       $("o-table").innerHTML = U.tableHtml(cols, d.ranked.slice(0, 25), d.top_n, d.ranked.length);
       if (d.top_n && d.ranked.length) {
         $("o-ex").hidden = false;

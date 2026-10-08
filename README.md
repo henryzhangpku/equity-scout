@@ -9,8 +9,44 @@ might disagree. Code deletes any claim whose quote does not appear verbatim in i
 
 ![Recorded run A on the demo site](docs/screenshot.png)
 
-The demo site is `docs/index.html`. It has no build step and works opened straight from disk or from GitHub Pages
-(source: `docs/`). It shows three recorded runs end to end.
+## Try it
+
+**In the browser, with nothing installed:** open the demo site
+([henryzhangpku.github.io/equity-scout](https://henryzhangpku.github.io/equity-scout/), or `docs/index.html` from disk)
+and open **Try your own**.
+
+* The panel loads the full 2026-10-08 feature snapshot for 3,827 companies. That is 5.2 MB raw and about 2.1 MB
+  gzipped, fetched only when the panel opens. The screen, funnel and ranking then run in the page.
+  `docs/scout-core.js` is a line-by-line port of the Python validator, screen and ranker. A parity test runs the
+  recorded specs through both implementations and requires identical funnels, rankings and refusal messages.
+* **Spec editor.** Start from any recorded run's spec, or from a blank one. Choose fields, operators and
+  thresholds from the whitelist, or edit the JSON. The browser validator applies the same rules as the app and shows
+  each refusal.
+* **Bring your own key (optional).** Paste a DeepSeek key and the page sends your observation, with the same system
+  prompt the app uses, straight to `api.deepseek.com`. DeepSeek's API allows browser CORS; this was checked before
+  the feature was built. The key stays in a JavaScript variable, is never stored, and goes nowhere else. The
+  proposed spec fills the editor; nothing runs until you press Run.
+* **Explanations are not generated in the browser.** SEC documents cannot be fetched from a browser, because EDGAR
+  has no CORS. Results are labelled *snapshot as of 2026-10-08 close; explanations need the local app*. When a
+  name already has an explanation from a recorded run, that explanation is shown.
+
+![Try your own: spec editor and in-browser screen](docs/screenshot-try.png)
+
+**Locally, for live demos:** `uv run scout serve` opens `http://127.0.0.1:8765/`. Type an observation and the model
+proposes a spec. After you confirm, the full pipeline runs on the latest snapshot plus live EDGAR filings and
+Alpaca news. The funnel and table appear first. The cited explanations then stream in, one per name, about 40 s
+each, with links to the SEC documents.
+
+* Each stage is shown on screen. Each model call times out after 180 s. A failure on one name turns into a *not
+  enough evidence* card and the run continues. Any error message points to the fallback.
+* **Replay a recorded run** streams a recorded run with no network.
+* `scout serve --offline` answers only from recorded material (the LLM cache and saved documents). It is the safe
+  mode when the network is unreliable.
+* Picks go into the hash-chained ledger only when you click **Record**.
+* Keys come from the environment, as for the CLI, and never reach the page.
+* `?replay=<run-id>` in the URL starts a replay on page load.
+
+![scout serve replaying run C](docs/screenshot-serve.png)
 
 ## The rule: the model proposes, deterministic code decides
 
@@ -115,8 +151,9 @@ uv run scout replay runs/b-ai-infra-laggards
 # live: needs DEEPSEEK_API_KEY, plus ALPACA_API_KEY / ALPACA_API_SECRET for news
 uv run scout run "Profitable mid-caps ... back above the 50-day average." --top 5
 uv run scout spec "..."          # translate only; prints the validated spec
+uv run scout serve               # local web app (add --offline for recorded material only)
 uv run scout track               # mark the pick ledger to market vs SPY and SMH
-uv run scout site                # export runs to docs/data/runs.js
+uv run scout site                # export runs, schema and the browser snapshot to docs/data/
 
 # rebuild the feature snapshot for a new date (Alpaca + SEC + FINRA, about 30 min cold, cached afterwards)
 uv run scout build --as-of 2026-10-08
@@ -132,7 +169,7 @@ library.
 
 ## Tests
 
-`uv run pytest`: 68 tests, none skipped.
+`uv run pytest`: 83 tests, none skipped. The browser parity tests need Node.js on the PATH.
 
 * indicators against hand-computed values (SMA, Wilder RSI step by step, EMA/MACD, momentum, volume ratio,
   drawdown, relative strength)
@@ -144,6 +181,10 @@ library.
 * funnel arithmetic on a hand-built universe, including missing data counts
 * the pick ledger detects edits and deletions; mark-to-market arithmetic
 * news cut at the as-of close, with full article text never used
+* browser parity: the JS validator, screen and ranker under Node give the same funnels, rankings and
+  refusal messages as Python, on the shipped browser snapshot and against the recorded runs
+* `scout serve` endpoints, offline: status, translate from the recorded cache, refusals, a streamed run that
+  reproduces run C, record-on-click (one ledger entry, chain intact), replay, path and job guards
 * offline replay of all three recorded runs, with the network disabled, reproduces spec, funnel, ranking and
   explanations exactly
 
