@@ -109,8 +109,53 @@ def test_stale_fundamentals_are_missing_not_reused():
 
 def test_market_cap_uses_latest_visible_shares():
     rows = quarters()
-    rows.append(fact("shares", "EntityCommonStockSharesOutstanding", None, "2025-10-20", 1_000, "2025-10-30"))
-    rows.append(fact("shares", "EntityCommonStockSharesOutstanding", None, "2026-01-20", 2_000, "2026-01-30"))
+    rows.append(fact("shares", "EntityCommonStockSharesOutstanding", None, "2025-10-20", 1e6, "2025-10-30"))
+    rows.append(fact("shares", "EntityCommonStockSharesOutstanding", None, "2026-01-20", 2e6, "2026-01-30"))
     df = pd.DataFrame(rows)
-    assert F.compute(df, "2026-01-29", price=5.0).values["market_cap"] == 5_000
-    assert F.compute(df, "2026-02-01", price=5.0).values["market_cap"] == 10_000
+    # revenue is tiny in this fixture, so scale it up to keep price/sales plausible
+    df.loc[df["item"] == "revenue", "val"] *= 1e4
+    assert F.compute(df, "2026-01-29", price=5.0).values["market_cap"] == 5e6
+    assert F.compute(df, "2026-02-01", price=5.0).values["market_cap"] == 1e7
+
+
+def _rev_scaled(mult=1e6):
+    rows = quarters()
+    for r in rows:
+        r["val"] *= mult
+    return rows
+
+
+def test_tiny_share_count_is_rejected():
+    rows = _rev_scaled()
+    rows.append(fact("shares", "CommonStockSharesOutstanding", None, "2026-01-20", 1_891, "2026-01-30"))
+    fu = F.compute(pd.DataFrame(rows), "2026-03-01", price=50.0)
+    assert math.isnan(fu.values["market_cap"])
+
+
+def test_multi_class_falls_back_to_weighted_average():
+    rows = _rev_scaled()
+    # cover page tags only Class A (1M) while EPS uses 30M basic shares across classes
+    rows.append(fact("shares", "EntityCommonStockSharesOutstanding", None, "2026-01-20", 1e6, "2026-01-30"))
+    rows.append(fact("shares", "WeightedAverageNumberOfSharesOutstandingBasic", "2025-10-01", "2025-12-31", 3e7,
+                     "2026-01-30"))
+    fu = F.compute(pd.DataFrame(rows), "2026-03-01", price=50.0)
+    assert fu.values["market_cap"] == 1.5e9
+    assert fu.provenance["shares_concept"] == "WeightedAverageNumberOfSharesOutstandingBasic"
+
+
+def test_impossible_price_to_sales_rejects_market_cap():
+    rows = _rev_scaled(1e9)                    # TTM revenue 620e9
+    rows.append(fact("shares", "EntityCommonStockSharesOutstanding", None, "2026-01-20", 1e6, "2026-01-30"))
+    fu = F.compute(pd.DataFrame(rows), "2026-03-01", price=500.0)   # 0.5e9 market cap, P/S 0.0008
+    assert math.isnan(fu.values["market_cap"])
+    assert "price/sales" in fu.provenance["market_cap_rejected"]
+
+
+def test_quarters_never_derived_across_concepts():
+    # 6M under one tag and 3M under another must not be subtracted from each other
+    rows = [
+        fact("revenue", "Revenues", "2025-01-01", "2025-03-31", 100, "2025-05-01"),
+        fact("revenue", REV, "2025-01-01", "2025-06-30", 50, "2025-08-01"),
+    ]
+    q = F.item_quarterly(pd.DataFrame(rows), "revenue")
+    assert list(q["end"]) == ["2025-03-31"]

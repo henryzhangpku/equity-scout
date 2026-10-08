@@ -51,7 +51,7 @@ class LLM:
         return hashlib.sha256(blob.encode()).hexdigest()[:24]
 
     def complete(self, messages: list[dict], *, json_mode: bool = True, temperature: float = 0.0,
-                 max_tokens: int = 4000, tag: str = "") -> str:
+                 max_tokens: int = 8000, tag: str = "") -> str:
         params = {"temperature": temperature, "max_tokens": max_tokens, "json_mode": json_mode}
         h = self._key(messages, params)
         path = self.cache_dir / f"{h}.json"

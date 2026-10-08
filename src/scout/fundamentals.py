@@ -25,6 +25,8 @@ import pandas as pd
 from .data.sec import CONCEPTS
 
 STALE_DAYS = 220
+MIN_SHARES = 100_000          # fewer reported shares is a scaling or share-class tagging error
+MIN_PRICE_TO_SALES = 0.01     # below this the share count, not the market, is wrong
 NAN = float("nan")
 
 
@@ -54,6 +56,30 @@ def item_facts(facts: pd.DataFrame, item: str) -> pd.DataFrame:
     df = _dedupe_latest_filed(df, ["concept"] + keys)
     df = df.sort_values("_r").drop_duplicates(keys, keep="first")
     return df.drop(columns="_r").sort_values("end").reset_index(drop=True)
+
+
+def _ranked_concepts(df: pd.DataFrame, item: str) -> list[str]:
+    order = [c for _, c, _ in CONCEPTS[item]]
+    latest = df.groupby("concept")["end"].max()
+    primary = sorted(latest.index, key=lambda c: (-pd.Timestamp(latest[c]).value, order.index(c)))[0]
+    return [primary] + [c for c in order if c != primary and c in latest.index]
+
+
+def item_quarterly(facts: pd.DataFrame, item: str) -> pd.DataFrame:
+    """Quarterly series for one item. Quarters are derived within a single concept
+    (never 9M of one tag minus 6M of another); the primary concept's quarters win
+    and other concepts only fill quarters it does not have."""
+    df = facts[facts["item"] == item]
+    if df.empty:
+        return quarterly(df)
+    merged = None
+    for c in _ranked_concepts(df, item):
+        q = quarterly(_dedupe_latest_filed(df[df["concept"] == c], ["start", "end"]))
+        if merged is None:
+            merged = q
+        elif not q.empty:
+            merged = pd.concat([merged, q[~q["end"].isin(merged["end"])]], ignore_index=True)
+    return merged.sort_values("end").reset_index(drop=True)
 
 
 def _days(a: str, b: str) -> int:
@@ -128,6 +154,28 @@ def _growth(a: float, b: float) -> float:
     return a / b - 1.0 if (b and b > 0 and np.isfinite(a) and np.isfinite(b)) else NAN
 
 
+def pick_shares(f: pd.DataFrame, as_of: str) -> tuple[float, str | None, str | None, str | None]:
+    """Shares outstanding as of `as_of`.
+
+    Prefer a point-in-time count (cover page, then balance sheet). Multi-class
+    issuers often tag only one class without a dimension, which shows up as a
+    point count far below the weighted-average basic count (which covers all
+    classes); then the weighted average is used. Counts under MIN_SHARES or
+    older than 400 days are rejected as tagging errors.
+    """
+    sh = item_facts(f, "shares")
+    sh = sh[(sh["val"] >= MIN_SHARES) & (sh["end"] >= (pd.Timestamp(as_of) - pd.Timedelta(days=400)).date().isoformat())]
+    wavg = sh[sh["concept"] == "WeightedAverageNumberOfSharesOutstandingBasic"]
+    point = sh[sh["concept"] != "WeightedAverageNumberOfSharesOutstandingBasic"]
+    p = latest_instant(point)
+    w = latest_instant(wavg)
+    if np.isfinite(p[0]) and not (np.isfinite(w[0]) and p[0] < 0.5 * w[0]):
+        return p
+    if np.isfinite(w[0]):
+        return w
+    return NAN, None, None, None
+
+
 @dataclass
 class Fundamentals:
     values: dict
@@ -141,7 +189,7 @@ def compute(facts: pd.DataFrame, as_of: date | str, price: float) -> Fundamental
     v: dict = {}
     prov: dict = {}
 
-    rev_q = quarterly(item_facts(f, "revenue"))
+    rev_q = item_quarterly(f, "revenue")
     stale = rev_q.empty or _days(rev_q["end"].iloc[-1], a) > STALE_DAYS
     if not rev_q.empty:
         prov["revenue_period_end"] = rev_q["end"].iloc[-1]
@@ -149,7 +197,7 @@ def compute(facts: pd.DataFrame, as_of: date | str, price: float) -> Fundamental
     prov["stale"] = bool(stale)
 
     def ttm_item(item: str) -> float:
-        q = quarterly(item_facts(f, item))
+        q = item_quarterly(f, item)
         if q.empty or rev_q.empty:
             return NAN
         # align on the revenue quarter so margins compare like with like
@@ -195,13 +243,15 @@ def compute(facts: pd.DataFrame, as_of: date | str, price: float) -> Fundamental
         v["fcf_ttm"] = fcf
         v["fcf_margin"] = fcf / rev_ttm if ok and np.isfinite(fcf) else NAN
 
-    sh = item_facts(f, "shares")
-    # prefer a point-in-time count (cover page / balance sheet) over the weighted average
-    point = sh[sh["concept"] != "WeightedAverageNumberOfSharesOutstandingBasic"]
-    shares, s_end, s_filed, s_concept = latest_instant(point if not point.empty else sh)
+    shares, s_end, s_filed, s_concept = pick_shares(f, a)
     prov["shares_as_of"], prov["shares_filed"], prov["shares_concept"] = s_end, s_filed, s_concept
     v["shares_out"] = shares
     mcap = shares * price if np.isfinite(shares) and shares > 0 and np.isfinite(price) else NAN
+    rev_ok = np.isfinite(v.get("revenue_ttm", NAN)) and v.get("revenue_ttm", 0) > 0
+    if np.isfinite(mcap) and rev_ok and mcap / v["revenue_ttm"] < MIN_PRICE_TO_SALES:
+        # e.g. a Class A share count times a Class B price: an impossible valuation is a data error
+        prov["market_cap_rejected"] = f"price/sales {mcap / v['revenue_ttm']:.2g} < {MIN_PRICE_TO_SALES}"
+        mcap = NAN
     v["market_cap"] = mcap
     if not stale:
         cash = np.nansum([latest_instant(item_facts(f, "cash"))[0],

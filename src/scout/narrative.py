@@ -137,7 +137,7 @@ def explain(symbol: str, name: str, metrics: dict, why_flagged: list[str], docs:
         trunc = " (truncated)" if len(t) < len(d.text) else ""
         body.append(f"=== doc_id: {d.doc_id} | {d.title}{trunc} ===\n{t}\n")
     messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": "\n".join(body)}]
-    raw = llm.complete(messages, tag=f"explain {symbol}", max_tokens=3000)
+    raw = llm.complete(messages, tag=f"explain {symbol}", max_tokens=16000)
     ex = Explanation(symbol=symbol, verdict="not enough evidence", documents=meta)
     try:
         j = parse_json(raw)

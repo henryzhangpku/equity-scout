@@ -16,7 +16,8 @@ from __future__ import annotations
 import hashlib
 import json
 import sys
-from concurrent.futures import ThreadPoolExecutor
+import os
+from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -97,26 +98,18 @@ def build(as_of: date, workers: int = 6) -> Path:
     df = df.sort_values("avg_dollar_volume_50d", ascending=False).drop_duplicates("cik")
     _log(f"liquid universe: {len(df)} companies")
 
-    # 4. fundamentals + industry
-    def one(row) -> dict:
-        try:
-            raw = sec.raw_facts(row.cik)
-            facts = extract_facts(raw)
-            fu = F.compute(facts, as_of, row.close)
-            prof = sec.profile(row.cik)
-            sic, sic_desc = sic_of(prof)
-            periodic, last_form = periodic_filer(prof, as_of)
-        except Exception as e:  # one bad filer must not sink the snapshot; the gap is recorded
-            return {"symbol": row.symbol, "prov_error": f"{type(e).__name__}: {e}"[:200]}
-        return {"symbol": row.symbol, "sic": sic, "sic_desc": sic_desc, "periodic_filer": periodic,
-                "last_periodic_form": last_form, **fu.values, **{f"prov_{k}": v for k, v in fu.provenance.items()}}
-
-    rows = []
+    # 4. fundamentals + industry: fetch with polite threads (network), compute in processes (CPU)
+    jobs = list(df[["symbol", "cik", "close"]].itertuples(index=False, name=None))
     with ThreadPoolExecutor(workers) as ex:
-        for i, r in enumerate(ex.map(one, df.itertuples(index=False))):
+        for i, _ in enumerate(ex.map(lambda j: (sec.raw_facts(j[1]), sec.profile(j[1])) and None, jobs)):
+            if i % 500 == 0:
+                _log(f"  filings fetched {i}/{len(jobs)}")
+    rows = []
+    with ProcessPoolExecutor(max(1, (os.cpu_count() or 2) - 1)) as ex:
+        for i, r in enumerate(ex.map(_fundamentals_row, [(s, c, px, tag) for s, c, px in jobs], chunksize=20)):
             rows.append(r)
-            if i % 250 == 0:
-                _log(f"  fundamentals {i}/{len(df)}")
+            if i % 500 == 0:
+                _log(f"  fundamentals {i}/{len(jobs)}")
     df = df.merge(pd.DataFrame(rows), on="symbol", how="left")
     # operating companies only: must file 10-K/10-Q/20-F/40-F; commodity and crypto trusts (SIC 6221) are out
     n0 = len(df)
@@ -146,6 +139,21 @@ def build(as_of: date, workers: int = 6) -> Path:
     (out / "manifest.json").write_text(json.dumps(manifest, indent=2))
     _log(f"features: {len(df)} rows -> {feat_p}")
     return feat_p
+
+
+def _fundamentals_row(job: tuple) -> dict:
+    """One company's PIT fundamentals and profile, from the on-disk cache (process-pool worker)."""
+    symbol, cik, close, as_of = job
+    sec = SecData()
+    try:
+        fu = F.compute(extract_facts(sec.raw_facts(cik)), as_of, close)
+        prof = sec.profile(cik)
+        sic, sic_desc = sic_of(prof)
+        periodic, last_form = periodic_filer(prof, date.fromisoformat(as_of))
+    except Exception as e:  # one bad filer must not sink the snapshot; the gap is recorded
+        return {"symbol": symbol, "prov_error": f"{type(e).__name__}: {e}"[:200]}
+    return {"symbol": symbol, "sic": sic, "sic_desc": sic_desc, "periodic_filer": periodic,
+            "last_periodic_form": last_form, **fu.values, **{f"prov_{k}": v for k, v in fu.provenance.items()}}
 
 
 def benchmark_closes(bars: pd.DataFrame, as_of: str) -> dict:
