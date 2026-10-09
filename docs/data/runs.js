@@ -132,7 +132,7 @@ window.SCOUT_TRACKING = {
  ]
 };
 window.SCOUT_BENCH = {"spy": "the S&P 500 (SPY)", "qqq": "the Nasdaq-100 (QQQ)", "iwm": "the Russell 2000 (IWM)", "smh": "the chip index (SMH)", "soxx": "the chip index (SOXX)", "xlk": "tech stocks (XLK)", "xlf": "financials (XLF)", "xle": "energy stocks (XLE)", "xlv": "health care (XLV)", "xli": "industrials (XLI)", "xlu": "utilities (XLU)", "xly": "consumer discretionary (XLY)", "xlp": "consumer staples (XLP)", "xlb": "materials (XLB)", "xlre": "real estate (XLRE)", "xlc": "communication services (XLC)"};
-window.SCOUT_CHIPS = [{"id": "chip-quality-drawdown", "label": "Profitable names over $2B, down 30%+ and still growing", "observation": "Profitable companies worth over 2 billion dollars, down 30% or more from their highs, still growing revenue and generating free cash flow", "spec": {"version": 1, "observation": "Profitable companies worth over 2 billion dollars, down 30% or more from their highs, still growing revenue and generating free cash flow", "universe": {"market_cap_min": 2000000000}, "conditions": [{"field": "net_income_ttm", "op": ">", "value": 0, "why": "Profitable companies"}, {"field": "drawdown_52w", "op": "<=", "value": -0.3, "why": "down 30% or more from their highs"}, {"field": "revenue_growth_yoy", "op": ">", "value": 0, "why": "still growing revenue"}, {"field": "fcf_ttm", "op": ">", "value": 0, "why": "generating free cash flow"}], "rank": [{"field": "drawdown_52w", "direction": "asc", "weight": 1}], "top_n": 5, "unmapped": [], "notes": "Interpreted 'worth over 2 billion dollars' as market capitalization greater than $2B. 'Profitable' as positive trailing twelve-month net income. 'Down 30% or more from their highs' as current close at least 30% below its 52-week high. 'Growing revenue' as positive year-over-year TTM revenue growth. 'Generating free cash flow' as positive trailing twelve-month free cash flow. Ranked by drawdown_52w ascending to surface the most beaten-down stocks first, as the observation emphasizes the drawdown."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}, {"id": "chip-ai-laggards", "label": "AI suppliers lagging the chip index while revenue accelerates", "observation": "AI suppliers lagging the chip index while revenue accelerates", "spec": {"version": 1, "observation": "AI suppliers lagging the chip index while revenue accelerates", "universe": {"themes": ["ai_semis", "ai_networking", "ai_power"]}, "conditions": [{"field": "rs_3m_vs_smh", "op": "<", "value": 0, "why": "lagging the chip index"}, {"field": "revenue_growth_accel", "op": ">", "value": 0, "why": "revenue accelerates"}], "rank": [{"field": "revenue_growth_accel", "direction": "desc", "weight": 1}], "top_n": 5, "unmapped": [], "notes": "Interpreted AI suppliers as the ai_semis, ai_networking, and ai_power theme baskets. Used SMH as the chip index and a 3-month relative return below zero for lagging; revenue acceleration is latest quarter YoY growth minus prior quarter YoY growth."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}, {"id": "chip-oversold-volume", "label": "Oversold large caps on heavy volume", "observation": "Oversold large caps on heavy volume", "spec": {"version": 1, "observation": "Oversold large caps on heavy volume", "universe": {"market_cap_min": 10000000000}, "conditions": [{"field": "rsi14", "op": "<", "value": 30, "why": "oversold"}, {"field": "volume_ratio_50d", "op": ">", "value": 2.0, "why": "heavy volume"}], "rank": [{"field": "rsi14", "direction": "asc", "weight": 1}], "top_n": 5, "unmapped": [], "notes": "Interpreted oversold as RSI(14) below 30, heavy volume as volume at least twice the 50-day average, and large cap as market cap above $10B. Thresholds are defaults since exact levels were not specified."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}, {"id": "chip-cash-rich-lows", "label": "Cash-rich small caps down 40%+ from their highs", "observation": "Small caps between 300 million and 2 billion dollars with more cash than debt, down 40% or more from their highs, still generating free cash flow", "spec": {"version": 1, "observation": "Small caps between 300 million and 2 billion dollars with more cash than debt, down 40% or more from their highs, still generating free cash flow", "universe": {"market_cap_min": 300000000, "market_cap_max": 2000000000}, "conditions": [{"field": "net_debt", "op": "<", "value": 0, "why": "more cash than debt"}, {"field": "drawdown_52w", "op": "<=", "value": -0.4, "why": "down 40% or more from their highs"}, {"field": "fcf_ttm", "op": ">", "value": 0, "why": "still generating free cash flow"}], "rank": [{"field": "fcf_ttm", "direction": "desc", "weight": 1}], "top_n": 5, "unmapped": [], "notes": "Interpreted 'down from their highs' as the drawdown from the 52-week high close, since all-time high data is not available. Net debt less than zero captures more cash than debt. Ranked by absolute free cash flow to emphasize the positive cash flow requirement."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}, {"id": "chip-short-squeeze-setup", "label": "Heavily shorted, profitable, back above the 50-day average", "observation": "Profitable companies with heavy short interest that are moving back above their 50-day average", "spec": {"version": 1, "observation": "Profitable companies with heavy short interest that are moving back above their 50-day average", "universe": {}, "conditions": [{"field": "net_income_ttm", "op": ">", "value": 0, "why": "Profitable companies"}, {"field": "short_pct_shares_out", "op": ">", "value": 0.2, "why": "heavy short interest"}, {"field": "close", "op": ">", "ref": "sma50", "why": "moving back above their 50-day average"}], "rank": [{"field": "short_pct_shares_out", "direction": "desc", "weight": 1}], "top_n": 5, "unmapped": [{"text": "moving back above their 50-day average", "reason": "Current close above SMA50 is used; the crossover from below is not directly observable with available fields."}, {"text": "heavy short interest", "reason": "No objective threshold in the observation; used short interest > 20% of shares outstanding as a proxy, note float data is unavailable."}], "notes": "Interpreted profitable as positive TTM net income and moving back above 50-day average as close > SMA50. Heavy short interest is proxied by short interest > 20% of shares outstanding because float is not available."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}, {"id": "chip-growth-momentum", "label": "Fast growers over $2B beating the S&P 500", "observation": "Companies worth over 2 billion dollars growing revenue 30% or more, with price above the 200-day average and beating the S&P 500 over 3 months", "spec": {"version": 1, "observation": "Companies worth over 2 billion dollars growing revenue 30% or more, with price above the 200-day average and beating the S&P 500 over 3 months", "universe": {"market_cap_min": 2000000000}, "conditions": [{"field": "revenue_growth_yoy", "op": ">=", "value": 0.3, "why": "growing revenue 30% or more"}, {"field": "close", "op": ">", "ref": "sma200", "why": "price above the 200-day average"}, {"field": "rs_3m_vs_spy", "op": ">", "value": 0, "why": "beating the S&P 500 over 3 months"}], "rank": [{"field": "revenue_growth_yoy", "direction": "desc", "weight": 1}], "top_n": 5, "unmapped": [], "notes": "Revenue growth is interpreted as trailing twelve months revenue versus the prior year. After applying the required filters, companies are ranked by revenue growth with higher growth ranked better."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}];
+window.SCOUT_CHIPS = [{"id": "chip-consumer-brands", "label": "Quality consumer brands down 30%+ with strong free cash flow", "observation": "Quality consumer brands down 30% from their highs that still generate strong free cash flow", "spec": {"version": 1, "observation": "Quality consumer brands down 30% from their highs that still generate strong free cash flow", "universe": {"industry_groups": ["Food & Beverage", "Household & Personal Products", "Apparel & Luxury", "Restaurants", "Tobacco"]}, "conditions": [{"field": "drawdown_52w", "op": "<=", "value": -0.3, "why": "down 30% from their highs"}, {"field": "fcf_margin", "op": ">", "value": 0.1, "why": "still generate strong free cash flow"}], "rank": [{"field": "fcf_margin", "direction": "desc", "weight": 1}], "top_n": 5, "unmapped": [{"text": "Quality consumer brands", "reason": "Brand strength/quality is not directly measurable; approximated by consumer industry groups and a strong free cash flow margin."}], "notes": "Mapped 'consumer brands' to the listed consumer industry groups (Food & Beverage, Household & Personal Products, Apparel & Luxury, Restaurants, Tobacco). 'Down 30% from highs' is enforced as drawdown_52w <= -0.30; 'strong free cash flow' is interpreted as TTM FCF margin > 10% and ranked by that margin."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}, {"id": "chip-quality-drawdown", "label": "Profitable names over $2B, down 30%+ and still growing", "observation": "Profitable companies worth over 2 billion dollars, down 30% or more from their highs, still growing revenue and generating free cash flow", "spec": {"version": 1, "observation": "Profitable companies worth over 2 billion dollars, down 30% or more from their highs, still growing revenue and generating free cash flow", "universe": {"market_cap_min": 2000000000}, "conditions": [{"field": "net_income_ttm", "op": ">", "value": 0, "why": "Profitable companies"}, {"field": "drawdown_52w", "op": "<=", "value": -0.3, "why": "down 30% or more from their highs"}, {"field": "revenue_growth_yoy", "op": ">", "value": 0, "why": "still growing revenue"}, {"field": "fcf_ttm", "op": ">", "value": 0, "why": "generating free cash flow"}], "rank": [{"field": "drawdown_52w", "direction": "asc", "weight": 1}], "top_n": 5, "unmapped": [], "notes": "Interpreted 'worth over 2 billion dollars' as market capitalization greater than $2B. 'Profitable' as positive trailing twelve-month net income. 'Down 30% or more from their highs' as current close at least 30% below its 52-week high. 'Growing revenue' as positive year-over-year TTM revenue growth. 'Generating free cash flow' as positive trailing twelve-month free cash flow. Ranked by drawdown_52w ascending to surface the most beaten-down stocks first, as the observation emphasizes the drawdown."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}, {"id": "chip-ai-laggards", "label": "AI suppliers lagging the chip index while revenue accelerates", "observation": "AI suppliers lagging the chip index while revenue accelerates", "spec": {"version": 1, "observation": "AI suppliers lagging the chip index while revenue accelerates", "universe": {"themes": ["ai_semis", "ai_networking", "ai_power"]}, "conditions": [{"field": "rs_3m_vs_smh", "op": "<", "value": 0, "why": "lagging the chip index"}, {"field": "revenue_growth_accel", "op": ">", "value": 0, "why": "revenue accelerates"}], "rank": [{"field": "revenue_growth_accel", "direction": "desc", "weight": 1}], "top_n": 5, "unmapped": [], "notes": "Interpreted AI suppliers as the ai_semis, ai_networking, and ai_power theme baskets. Used SMH as the chip index and a 3-month relative return below zero for lagging; revenue acceleration is latest quarter YoY growth minus prior quarter YoY growth."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}, {"id": "chip-oversold-volume", "label": "Oversold large caps on heavy volume", "observation": "Oversold large caps on heavy volume", "spec": {"version": 1, "observation": "Oversold large caps on heavy volume", "universe": {"market_cap_min": 10000000000}, "conditions": [{"field": "rsi14", "op": "<", "value": 30, "why": "oversold"}, {"field": "volume_ratio_50d", "op": ">", "value": 2.0, "why": "heavy volume"}], "rank": [{"field": "rsi14", "direction": "asc", "weight": 1}], "top_n": 5, "unmapped": [], "notes": "Interpreted oversold as RSI(14) below 30, heavy volume as volume at least twice the 50-day average, and large cap as market cap above $10B. Thresholds are defaults since exact levels were not specified."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}, {"id": "chip-cash-rich-lows", "label": "Cash-rich small caps down 40%+ from their highs", "observation": "Small caps between 300 million and 2 billion dollars with more cash than debt, down 40% or more from their highs, still generating free cash flow", "spec": {"version": 1, "observation": "Small caps between 300 million and 2 billion dollars with more cash than debt, down 40% or more from their highs, still generating free cash flow", "universe": {"market_cap_min": 300000000, "market_cap_max": 2000000000}, "conditions": [{"field": "net_debt", "op": "<", "value": 0, "why": "more cash than debt"}, {"field": "drawdown_52w", "op": "<=", "value": -0.4, "why": "down 40% or more from their highs"}, {"field": "fcf_ttm", "op": ">", "value": 0, "why": "still generating free cash flow"}], "rank": [{"field": "fcf_ttm", "direction": "desc", "weight": 1}], "top_n": 5, "unmapped": [], "notes": "Interpreted 'down from their highs' as the drawdown from the 52-week high close, since all-time high data is not available. Net debt less than zero captures more cash than debt. Ranked by absolute free cash flow to emphasize the positive cash flow requirement."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}, {"id": "chip-short-squeeze-setup", "label": "Heavily shorted, profitable, back above the 50-day average", "observation": "Profitable companies with heavy short interest that are moving back above their 50-day average", "spec": {"version": 1, "observation": "Profitable companies with heavy short interest that are moving back above their 50-day average", "universe": {}, "conditions": [{"field": "net_income_ttm", "op": ">", "value": 0, "why": "Profitable companies"}, {"field": "short_pct_shares_out", "op": ">", "value": 0.2, "why": "heavy short interest"}, {"field": "close", "op": ">", "ref": "sma50", "why": "moving back above their 50-day average"}], "rank": [{"field": "short_pct_shares_out", "direction": "desc", "weight": 1}], "top_n": 5, "unmapped": [{"text": "moving back above their 50-day average", "reason": "Current close above SMA50 is used; the crossover from below is not directly observable with available fields."}, {"text": "heavy short interest", "reason": "No objective threshold in the observation; used short interest > 20% of shares outstanding as a proxy, note float data is unavailable."}], "notes": "Interpreted profitable as positive TTM net income and moving back above 50-day average as close > SMA50. Heavy short interest is proxied by short interest > 20% of shares outstanding because float is not available."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}, {"id": "chip-growth-momentum", "label": "Fast growers over $2B beating the S&P 500", "observation": "Companies worth over 2 billion dollars growing revenue 30% or more, with price above the 200-day average and beating the S&P 500 over 3 months", "spec": {"version": 1, "observation": "Companies worth over 2 billion dollars growing revenue 30% or more, with price above the 200-day average and beating the S&P 500 over 3 months", "universe": {"market_cap_min": 2000000000}, "conditions": [{"field": "revenue_growth_yoy", "op": ">=", "value": 0.3, "why": "growing revenue 30% or more"}, {"field": "close", "op": ">", "ref": "sma200", "why": "price above the 200-day average"}, {"field": "rs_3m_vs_spy", "op": ">", "value": 0, "why": "beating the S&P 500 over 3 months"}], "rank": [{"field": "revenue_growth_yoy", "direction": "desc", "weight": 1}], "top_n": 5, "unmapped": [], "notes": "Revenue growth is interpreted as trailing twelve months revenue versus the prior year. After applying the required filters, companies are ranked by revenue growth with higher growth ranked better."}, "generated": "2026-10-09", "as_of": "2026-10-08", "model": "deepseek-v4-pro"}];
 window.SCOUT_RUNS = [
  {
   "id": "a-midcap-pullback",
@@ -299,6 +299,7 @@ window.SCOUT_RUNS = [
    "rank",
    "symbol",
    "name",
+   "sector",
    "score",
    "market_cap",
    "net_income_ttm",
@@ -313,6 +314,7 @@ window.SCOUT_RUNS = [
     "rank": 1,
     "symbol": "VICR",
     "name": "VICOR CORP",
+    "sector": "Information Technology",
     "score": 1.0,
     "market_cap": 11927690400.0,
     "net_income_ttm": 136681000.0,
@@ -326,6 +328,7 @@ window.SCOUT_RUNS = [
     "rank": 2,
     "symbol": "SITM",
     "name": "SITIME Corp",
+    "sector": "Information Technology",
     "score": 0.9565217391304348,
     "market_cap": 19397622482.16,
     "net_income_ttm": 14095000.0,
@@ -339,6 +342,7 @@ window.SCOUT_RUNS = [
     "rank": 3,
     "symbol": "STRL",
     "name": "STERLING INFRASTRUCTURE, INC.",
+    "sector": "Industrials",
     "score": 0.9130434782608695,
     "market_cap": 15857393616.38,
     "net_income_ttm": 431480000.0,
@@ -352,6 +356,7 @@ window.SCOUT_RUNS = [
     "rank": 4,
     "symbol": "SANM",
     "name": "SANMINA CORP",
+    "sector": "Information Technology",
     "score": 0.8695652173913043,
     "market_cap": 11281171490.88,
     "net_income_ttm": 308127000.0,
@@ -365,6 +370,7 @@ window.SCOUT_RUNS = [
     "rank": 5,
     "symbol": "KLIC",
     "name": "KULICKE & SOFFA INDUSTRIES INC",
+    "sector": "Information Technology",
     "score": 0.8260869565217391,
     "market_cap": 4757763135.8,
     "net_income_ttm": 115739000.0,
@@ -378,6 +384,7 @@ window.SCOUT_RUNS = [
     "rank": 6,
     "symbol": "FN",
     "name": "Fabrinet",
+    "sector": "Information Technology",
     "score": 0.782608695652174,
     "market_cap": 17463404273.12,
     "net_income_ttm": 473027000.0,
@@ -391,6 +398,7 @@ window.SCOUT_RUNS = [
     "rank": 7,
     "symbol": "ELF",
     "name": "e.l.f. Beauty, Inc.",
+    "sector": "Consumer Staples",
     "score": 0.7391304347826086,
     "market_cap": 6252487256.16,
     "net_income_ttm": 59606000.0,
@@ -404,6 +412,7 @@ window.SCOUT_RUNS = [
     "rank": 8,
     "symbol": "MOD",
     "name": "MODINE MANUFACTURING CO",
+    "sector": "Consumer Discretionary",
     "score": 0.6956521739130435,
     "market_cap": 9660670458.12,
     "net_income_ttm": 144200000.0,
@@ -417,6 +426,7 @@ window.SCOUT_RUNS = [
     "rank": 9,
     "symbol": "KVYO",
     "name": "Klaviyo, Inc.",
+    "sector": "Information Technology",
     "score": 0.6521739130434783,
     "market_cap": 5215686231.42,
     "net_income_ttm": 6791000.0,
@@ -430,6 +440,7 @@ window.SCOUT_RUNS = [
     "rank": 10,
     "symbol": "HUBS",
     "name": "HUBSPOT INC",
+    "sector": "Information Technology",
     "score": 0.6086956521739131,
     "market_cap": 11560980039.84,
     "net_income_ttm": 146854000.0,
@@ -443,6 +454,7 @@ window.SCOUT_RUNS = [
     "rank": 11,
     "symbol": "WK",
     "name": "WORKIVA INC",
+    "sector": "Information Technology",
     "score": 0.5652173913043478,
     "market_cap": 4100032456.94,
     "net_income_ttm": 47040000.0,
@@ -456,6 +468,7 @@ window.SCOUT_RUNS = [
     "rank": 12,
     "symbol": "WAY",
     "name": "Waystar Holding Corp.",
+    "sector": "Information Technology",
     "score": 0.5217391304347826,
     "market_cap": 5077498055.68,
     "net_income_ttm": 134797000.0,
@@ -469,6 +482,7 @@ window.SCOUT_RUNS = [
     "rank": 13,
     "symbol": "RMBS",
     "name": "RAMBUS INC",
+    "sector": "Information Technology",
     "score": 0.4782608695652174,
     "market_cap": 11729616810.49,
     "net_income_ttm": 230010000.0,
@@ -482,6 +496,7 @@ window.SCOUT_RUNS = [
     "rank": 14,
     "symbol": "DIOD",
     "name": "DIODES INC /DEL/",
+    "sector": "Information Technology",
     "score": 0.43478260869565216,
     "market_cap": 4432016089.2,
     "net_income_ttm": 86090000.0,
@@ -495,6 +510,7 @@ window.SCOUT_RUNS = [
     "rank": 15,
     "symbol": "MYRG",
     "name": "MYR GROUP INC.",
+    "sector": "Industrials",
     "score": 0.391304347826087,
     "market_cap": 4839078592.5,
     "net_income_ttm": 165293000.0,
@@ -503,6 +519,28 @@ window.SCOUT_RUNS = [
     "fcf_ttm": 193363000.0,
     "close": 310.81,
     "sma50": 305.4861
+   }
+  ],
+  "sector_breakdown": [
+   {
+    "sector": "Information Technology",
+    "n": 17
+   },
+   {
+    "sector": "Consumer Staples",
+    "n": 2
+   },
+   {
+    "sector": "Industrials",
+    "n": 2
+   },
+   {
+    "sector": "Consumer Discretionary",
+    "n": 1
+   },
+   {
+    "sector": "Health Care",
+    "n": 1
    }
   ],
   "n_ranked": 23,
@@ -1230,6 +1268,7 @@ window.SCOUT_RUNS = [
    "rank",
    "symbol",
    "name",
+   "sector",
    "score",
    "market_cap",
    "rs_3m_vs_soxx",
@@ -1240,6 +1279,7 @@ window.SCOUT_RUNS = [
     "rank": 1,
     "symbol": "AVGO",
     "name": "Broadcom Inc.",
+    "sector": "Information Technology",
     "score": 1.0,
     "market_cap": 1719175059581.1,
     "rs_3m_vs_soxx": -0.0675036907772798,
@@ -1249,6 +1289,7 @@ window.SCOUT_RUNS = [
     "rank": 2,
     "symbol": "AAOI",
     "name": "APPLIED OPTOELECTRONICS, INC.",
+    "sector": "Information Technology",
     "score": 0.9230769230769231,
     "market_cap": 8955882198.300001,
     "rs_3m_vs_soxx": -0.0864788864108246,
@@ -1258,6 +1299,7 @@ window.SCOUT_RUNS = [
     "rank": 3,
     "symbol": "AMAT",
     "name": "APPLIED MATERIALS INC /DE",
+    "sector": "Information Technology",
     "score": 0.8461538461538461,
     "market_cap": 404393449029.51,
     "rs_3m_vs_soxx": -0.1229089208380119,
@@ -1267,6 +1309,7 @@ window.SCOUT_RUNS = [
     "rank": 4,
     "symbol": "COHR",
     "name": "COHERENT CORP.",
+    "sector": "Information Technology",
     "score": 0.7692307692307693,
     "market_cap": 59209879578.100006,
     "rs_3m_vs_soxx": -0.0378264720123197,
@@ -1276,6 +1319,7 @@ window.SCOUT_RUNS = [
     "rank": 5,
     "symbol": "AMKR",
     "name": "AMKOR TECHNOLOGY, INC.",
+    "sector": "Information Technology",
     "score": 0.6923076923076923,
     "market_cap": 12641498418.0,
     "rs_3m_vs_soxx": -0.244517853911289,
@@ -1285,6 +1329,7 @@ window.SCOUT_RUNS = [
     "rank": 6,
     "symbol": "ALAB",
     "name": "Astera Labs, Inc.",
+    "sector": "Information Technology",
     "score": 0.6153846153846154,
     "market_cap": 60208005343.200005,
     "rs_3m_vs_soxx": -0.1291917980042427,
@@ -1294,6 +1339,7 @@ window.SCOUT_RUNS = [
     "rank": 7,
     "symbol": "EQIX",
     "name": "EQUINIX INC",
+    "sector": "Real Estate",
     "score": 0.5384615384615384,
     "market_cap": 99772862015.76,
     "rs_3m_vs_soxx": -0.0030694904360442,
@@ -1303,6 +1349,7 @@ window.SCOUT_RUNS = [
     "rank": 8,
     "symbol": "LRCX",
     "name": "LAM RESEARCH CORP",
+    "sector": "Information Technology",
     "score": 0.46153846153846156,
     "market_cap": 401160999390.0,
     "rs_3m_vs_soxx": -0.0534914892425522,
@@ -1312,6 +1359,7 @@ window.SCOUT_RUNS = [
     "rank": 9,
     "symbol": "CSCO",
     "name": "CISCO SYSTEMS, INC.",
+    "sector": "Information Technology",
     "score": 0.38461538461538464,
     "market_cap": 452963805838.97,
     "rs_3m_vs_soxx": -0.0188062749225083,
@@ -1321,6 +1369,7 @@ window.SCOUT_RUNS = [
     "rank": 10,
     "symbol": "GEV",
     "name": "GE Vernova Inc.",
+    "sector": "Industrials",
     "score": 0.3076923076923077,
     "market_cap": 266160464172.35,
     "rs_3m_vs_soxx": -0.0540514291156384,
@@ -1330,6 +1379,7 @@ window.SCOUT_RUNS = [
     "rank": 11,
     "symbol": "KLAC",
     "name": "KLA CORP",
+    "sector": "Information Technology",
     "score": 0.23076923076923078,
     "market_cap": 257023883151.76,
     "rs_3m_vs_soxx": -0.1189233157651805,
@@ -1339,6 +1389,7 @@ window.SCOUT_RUNS = [
     "rank": 12,
     "symbol": "POWL",
     "name": "POWELL INDUSTRIES INC",
+    "sector": "Industrials",
     "score": 0.15384615384615385,
     "market_cap": 6895591388.280001,
     "rs_3m_vs_soxx": -0.1540650054806537,
@@ -1348,10 +1399,25 @@ window.SCOUT_RUNS = [
     "rank": 13,
     "symbol": "CRWV",
     "name": "CoreWeave, Inc.",
+    "sector": "Information Technology",
     "score": 0.07692307692307693,
     "market_cap": 44950580000.0,
     "rs_3m_vs_soxx": -0.0517008255493682,
     "revenue_growth_accel": 0.0084978457112514
+   }
+  ],
+  "sector_breakdown": [
+   {
+    "sector": "Information Technology",
+    "n": 10
+   },
+   {
+    "sector": "Industrials",
+    "n": 2
+   },
+   {
+    "sector": "Real Estate",
+    "n": 1
    }
   ],
   "n_ranked": 13,
@@ -2283,6 +2349,7 @@ window.SCOUT_RUNS = [
    "rank",
    "symbol",
    "name",
+   "sector",
    "score",
    "market_cap",
    "rsi14",
@@ -2296,6 +2363,7 @@ window.SCOUT_RUNS = [
     "rank": 1,
     "symbol": "BX",
     "name": "Blackstone Inc.",
+    "sector": "Financials",
     "score": 1.0,
     "market_cap": 84580437845.52,
     "rsi14": 31.255072641815676,
@@ -2308,6 +2376,7 @@ window.SCOUT_RUNS = [
     "rank": 2,
     "symbol": "SBUX",
     "name": "STARBUCKS CORP",
+    "sector": "Consumer Discretionary",
     "score": 0.5,
     "market_cap": 106259400000.0,
     "rsi14": 34.44323201509681,
@@ -2315,6 +2384,16 @@ window.SCOUT_RUNS = [
     "sma50_above_sma200": true,
     "fcf_ttm": 3642100000.0,
     "short_pct_shares_out": 0.0349853938596491
+   }
+  ],
+  "sector_breakdown": [
+   {
+    "sector": "Consumer Discretionary",
+    "n": 1
+   },
+   {
+    "sector": "Financials",
+    "n": 1
    }
   ],
   "n_ranked": 2,

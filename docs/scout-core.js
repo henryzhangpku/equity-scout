@@ -91,6 +91,16 @@
       var v = u[k];
       if (S.universe_keys.indexOf(k) < 0) {
         p.push("unknown universe key '" + k + "' (allowed: " + pyList(S.universe_keys.slice().sort()) + ")");
+      } else if (k === "sectors" || k === "industry_groups") {
+        var allowedL = k === "sectors" ? S.sector_map.sectors.slice() : Object.keys(S.sector_map.groups);
+        var labelL = k === "sectors" ? "sector" : "industry group name";
+        if (!Array.isArray(v) || !v.every(function (x) { return typeof x === "string"; })) {
+          p.push("universe." + k + " must be a list of " + labelL + "s");
+        } else {
+          v.forEach(function (x) {
+            if (allowedL.indexOf(x) < 0) p.push("unknown " + labelL + " '" + x + "' (allowed: " + pyList(allowedL.slice().sort()) + ")");
+          });
+        }
       } else if (k === "industries" || k === "exclude_industries" || k === "themes") {
         var allowed = k === "themes" ? S.themes : S.industries;
         var label = k === "themes" ? "theme basket" : "industry group";
@@ -201,6 +211,32 @@
               ">": function (a, b) { return a > b; }, ">=": function (a, b) { return a >= b; } };
   function num(v) { return (typeof v === "number" && isFinite(v)) ? v : null; }
 
+  // ---------- sectors (port of src/scout/sectors.py classify) ----------
+  function classify(sic, symbol) {
+    var M = S.sector_map;
+    if (symbol && Object.prototype.hasOwnProperty.call(M.overrides, symbol)) return [M.overrides[symbol][0], M.overrides[symbol][1]];
+    if (typeof sic !== "number" || !isFinite(sic)) return [null, null];
+    var code = Math.trunc(sic);
+    for (var i = 0; i < M.rules.length; i++) {
+      var r = M.rules[i];
+      if (code >= r[0] && code <= r[1]) return [r[2], r[3]];
+    }
+    return [null, null];
+  }
+  function ensureSectors(snap) {
+    if (snap.columns.sector) return;
+    var sic = snap.columns.sic, sym = snap.columns.symbol, sec = [], grp = [];
+    for (var i = 0; i < snap.n; i++) { var c = classify(sic ? sic[i] : null, sym ? sym[i] : null); sec.push(c[0]); grp.push(c[1]); }
+    snap.columns.sector = sec; snap.columns.industry_group = grp;
+  }
+  function sectorBreakdown(snap, idx) {
+    ensureSectors(snap);
+    var counts = {};
+    idx.forEach(function (i) { var k = snap.columns.sector[i] || "No sector"; counts[k] = (counts[k] || 0) + 1; });
+    return Object.keys(counts).map(function (k) { return { sector: k, n: counts[k] }; })
+      .sort(function (a, b) { return b.n - a.n || (a.sector < b.sector ? -1 : a.sector > b.sector ? 1 : 0); });
+  }
+
   // snapshot: {columns: {name: [...]}, n}; rows are referenced by index
   function col(snap, name) { return snap.columns[name]; }
 
@@ -240,6 +276,21 @@
           var s = num(sic[i]), inTheme = has(syms, sym[i]);
           pass.push((s !== null && has(codes, s)) || inTheme);
           miss.push(s === null && !inTheme && anyCodes);
+        });
+        return [pass, miss];
+      }]);
+    }
+    if ((u.sectors && u.sectors.length) || (u.industry_groups && u.industry_groups.length)) {
+      var secs = u.sectors || [], grps = u.industry_groups || [];
+      var sp = [];
+      if (secs.length) sp.push("sector in " + pyList(secs));
+      if (grps.length) sp.push("industry group in " + pyList(grps));
+      steps.push([sp.join(" or "), function (snap, idx) {
+        ensureSectors(snap);
+        var sc = snap.columns.sector, gc = snap.columns.industry_group, pass = [], miss = [];
+        idx.forEach(function (i) {
+          pass.push(secs.indexOf(sc[i]) >= 0 || grps.indexOf(gc[i]) >= 0);
+          miss.push(sc[i] === null || sc[i] === undefined);
         });
         return [pass, miss];
       }]);
@@ -332,6 +383,7 @@
     return rows;
   }
 
-  return { setSchema: setSchema, validate: validate, runScreen: runScreen, rank: rank,
+  return { setSchema: setSchema, validate: validate, runScreen: runScreen, rank: rank, classify: classify,
+           ensureSectors: ensureSectors, sectorBreakdown: sectorBreakdown,
            describe: describe, fmtValue: fmtValue, pyG: pyG, pyFixed: pyFixed };
 });

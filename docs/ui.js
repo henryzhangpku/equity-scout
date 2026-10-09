@@ -29,7 +29,8 @@
     if (c.op === "between") return fmt(c.field, c.value[0]) + " ≤ " + c.field + " ≤ " + fmt(c.field, c.value[1]);
     return c.field + " " + c.op + " " + fmt(c.field, c.value);
   }
-  var LABELS = { rank: "#", symbol: "Ticker", name: "Company", score: "Score", market_cap: "Market cap" };
+  var LABELS = { rank: "#", symbol: "Ticker", name: "Company", score: "Score", market_cap: "Market cap", sector: "Sector",
+                 industry_group: "Industry group" };
   function label(f) { return LABELS[f] || (fields()[f] || {}).label || f; }
   var BSHORT = { spy: "S&P 500", qqq: "Nasdaq-100", iwm: "Russell 2000", smh: "chips (SMH)", soxx: "chips (SOXX)" };
   var HSHORT = { revenue_growth_yoy: "Revenue growth (YoY)", revenue_growth_q_yoy: "Qtr revenue growth (YoY)",
@@ -101,6 +102,12 @@
       if (u.themes && u.themes.length) parts.push((parts.length ? "theme: " : "Theme: ") + u.themes.map(pretty).join(", "));
       out.push(parts.join(" or "));
     }
+    if ((u.sectors && u.sectors.length) || (u.industry_groups && u.industry_groups.length)) {
+      var sp = [];
+      if (u.sectors && u.sectors.length) sp.push("Sector: " + u.sectors.join(", "));
+      if (u.industry_groups && u.industry_groups.length) sp.push((sp.length ? "industry: " : "Industry: ") + u.industry_groups.join(", "));
+      out.push(sp.join(" or "));
+    }
     if (u.exclude_industries) out.push("Excluding " + u.exclude_industries.map(pretty).join(", "));
     if (u.market_cap_min != null) out.push("Market cap at least " + money(u.market_cap_min));
     if (u.market_cap_max != null) out.push("Market cap at most " + money(u.market_cap_max));
@@ -111,7 +118,7 @@
   }
 
   function tableColumns(spec) {
-    var cols = ["rank", "symbol", "name", "score", "market_cap"];
+    var cols = ["rank", "symbol", "name", "sector", "score", "market_cap"];
     spec.conditions.forEach(function (c) { cols.push(c.field); if (c.ref) cols.push(c.ref); });
     spec.rank.forEach(function (r) { cols.push(r.field); });
     return cols.filter(function (c, i) { return cols.indexOf(c) === i; });
@@ -160,20 +167,32 @@
     if (!rows.length) return h.join("") + '<p class="muted">No company passed every condition.</p>';
     h.push('<div class="tablewrap"><table><thead><tr>');
     columns.forEach(function (c) {
-      var cls = (c === "symbol" || c === "name") ? ' class="l"' : "";
+      var cls = (c === "symbol" || c === "name" || c === "sector") ? ' class="l"' : "";
       h.push("<th" + cls + ' title="' + esc(label(c) + ": " + ((fields()[c] || {}).desc || c)) + '">' + esc(headLabel(c)) + "</th>");
     });
     h.push("</tr></thead><tbody>");
     rows.forEach(function (row) {
       h.push('<tr class="' + (row.rank <= topN ? "top" : "") + '">');
       columns.forEach(function (c) {
-        var cls = c === "symbol" ? ' class="l"' : c === "name" ? ' class="l name"' : "";
+        var cls = c === "symbol" ? ' class="l"' : c === "name" ? ' class="l name"' : c === "sector" ? ' class="l sec"' : "";
         var v = c === "name" ? row[c] : fmt(c, row[c]);
         h.push("<td" + cls + (c === "name" ? ' title="' + esc(row[c]) + '"' : "") + ">" + esc(v) + "</td>");
       });
       h.push("</tr>");
     });
     h.push("</tbody></table></div>");
+    return h.join("");
+  }
+
+  function sectorHtml(breakdown, title) {
+    if (!breakdown || !breakdown.length) return "";
+    var max = breakdown[0].n || 1, total = breakdown.reduce(function (a, b) { return a + b.n; }, 0);
+    var h = ['<div class="step">' + esc(title || "Survivors by sector") + '</div><div class="secs">'];
+    breakdown.forEach(function (b) {
+      h.push('<div class="secrow"><span class="secname">' + esc(b.sector) + '</span><span class="bar"><span class="p" style="width:' +
+        (100 * b.n / max) + '%"></span></span><span class="secn">' + b.n + ' <span class="muted">(' + Math.round(100 * b.n / total) + "%)</span></span></div>");
+    });
+    h.push('</div><p class="meta">Sectors are mapped from each company\u2019s SEC SIC code (<a href="sectors.html">mapping table</a>), not a licensed classification.</p>');
     return h.join("");
   }
 
@@ -211,6 +230,6 @@
   }
 
   window.ScoutUI = { esc: esc, fmt: fmt, cond: cond, label: label, plainCond: plainCond, plainSteps: plainSteps,
-                     tableColumns: tableColumns, specHtml: specHtml,
+                     tableColumns: tableColumns, specHtml: specHtml, sectorHtml: sectorHtml,
                      funnelHtml: funnelHtml, tableHtml: tableHtml, cardHtml: cardHtml };
 })();

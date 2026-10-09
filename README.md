@@ -112,10 +112,32 @@ The universe in run B comes from curated baskets (`THEMES` in `spec.py`). SIC co
 REITs from other REITs or find neoclouds at all, and with SIC alone the top of the list was micro-caps. The
 baskets are a fixed list in code, open to review, and the model can only choose among them.
 
+### Sectors and industry groups
+
+Screens can filter by 11 investor sectors (Communication Services through Utilities) and 45 industry groups, for
+example Software, Semiconductors, Banks, Insurance, Biotech, Pharma, Medical Devices, Retail, Restaurants, Apparel &
+Luxury, Food & Beverage, Household & Personal Products, Autos, Aerospace & Defense, Oil & Gas, REITs, Media &
+Entertainment and Telecom.
+
+* The mapping lives in `src/scout/sectors.py` and is versioned (`MAPPING_VERSION`). It is published with coverage,
+  every rule, the overrides and known misfits at [docs/sectors.html](https://henryzhangpku.github.io/equity-scout/sectors.html).
+* Each sector comes from the company's SEC SIC code. Rules are ordered, so specific codes win over broad ranges.
+* 32 ticker overrides fix large misfits, each with a one-line reason. Examples: Alphabet and Meta (SIC 7370)
+  move to Interactive Media; Visa and Mastercard (7389) move to payments; LRCX (3559) moves to Semiconductors.
+* Coverage: 3,786 of the 3,827 names (98.9%) get a sector. The rest have no usable SIC and count as "no data" in the
+  funnel.
+* This is not the licensed GICS classification.
+
+The `sectors` and `industry_groups` universe filters are whitelisted and validated in Python and in the browser core,
+with parity tests. The translation prompt (version 2) maps phrases like "consumer brands", "banks", "defense names",
+"chip companies" and "pharma" to them. Recorded runs keep replaying with the frozen version-1 prompt, and the older
+SIC `industries` filter still works. Results show a Sector column and a survivors-by-sector breakdown.
+
 ### One-click examples (same snapshot; explanations generated 2026-10-09 UTC)
 
 | Example | Funnel | Top names |
 |---|---|---|
+| Quality consumer brands down 30%+ with strong free cash flow | 3,827 → 177 → 64 → 9 | DECK, HSY, WING, COCO, CELH |
 | Profitable names over $2B, down 30%+ and still growing | 3,827 → 1,902 → 1,120 → 239 → 205 → 163 | CTVA, TTD, LQDA, Z, CSGP |
 | AI suppliers lagging the chip index while revenue accelerates | 3,827 → 32 → 18 → 12 | AVGO, AAOI, AMAT, COHR, AMKR |
 | Oversold large caps on heavy volume | 3,827 → 872 → 35 → 7 | EMA, ARGX, NLY, DOC, HRL |
@@ -233,7 +255,7 @@ Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`)
 
 ## Tests
 
-`uv run pytest`: 106 tests, none skipped. The browser parity tests need Node.js on the PATH.
+`uv run pytest`: 111 tests, none skipped. The browser parity tests need Node.js on the PATH.
 
 * indicators against hand-computed values (SMA, Wilder RSI step by step, EMA/MACD, momentum, volume ratio,
   drawdown, relative strength)

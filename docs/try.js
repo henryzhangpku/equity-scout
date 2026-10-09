@@ -26,9 +26,9 @@
   function ensureLoaded() {
     if (loading) return loading;
     showOut('<div class="panel"><p class="muted" style="margin:0">Loading the 2026-10-08 snapshot of about 3,800 companies (about 2 MB)…</p></div>');
-    loading = loadScript("data/schema.js").then(function () {
+    loading = loadScript("data/schema.js?v=20261009a").then(function () {
       S = window.SCOUT_SCHEMA; ScoutCore.setSchema(S);
-      return Promise.all([loadScript(SNAP_FILE), loadScript("data/chips-ex.js")]);
+      return Promise.all([loadScript(SNAP_FILE), loadScript("data/chips-ex.js?v=20261009a")]);
     }).then(function () { SNAP = window.SCOUT_SNAPSHOT; buildAdvanced(); showOut(""); })
       .catch(function (e) { showOut('<div class="panel refusal"><p class="err" style="margin:0">' + esc(e.message) + "</p></div>"); loading = null; throw e; });
     return loading;
@@ -114,7 +114,7 @@
         return;
       }
       var cols = U.tableColumns(spec);
-      renderResults({ spec: spec, funnel: r.funnel, rows: r.ranked, nRanked: r.n_ranked, topN: r.top_n,
+      renderResults({ spec: spec, funnel: r.funnel, rows: r.ranked, nRanked: r.n_ranked, topN: r.top_n, breakdown: r.sector_breakdown,
         note: "<strong>Live run</strong> on the snapshot as of " + esc(r.last_price_date) + " close. Explanations read today’s SEC filings and news; they appear as each name finishes.",
         cols: cols, pending: r.ranked.slice(0, r.top_n).map(function (x) { return x.symbol; }) });
       poll(r.job);
@@ -142,6 +142,7 @@
     h.push('<div class="panel"><p class="label-note">' + o.note + "</p>" + U.specHtml(o.spec, "What was screened") + "</div>");
     h.push('<div class="panel">' + U.funnelHtml(o.funnel, "How the list narrowed", o.spec) + "</div>");
     h.push('<div class="panel">' + U.tableHtml(o.cols, o.rows, o.topN, o.nRanked, "Ranked results") + "</div>");
+    if (o.breakdown && o.breakdown.length) h.push('<div class="panel">' + U.sectorHtml(o.breakdown, "Survivors by sector (all " + o.nRanked + ")") + "</div>");
     var top = o.rows.slice(0, o.topN);
     if (top.length) {
       h.push('<div class="panel"><div class="step">Why the price and the business may disagree — top ' + top.length + "</div>");
@@ -185,6 +186,7 @@
       var exs = {};
       ((window.SCOUT_CHIP_EX || {})[id] || []).forEach(function (ex) { exs[ex.symbol] = ex; });
       renderResults({ spec: v.spec, funnel: res.funnel, rows: res.rows, nRanked: res.n, topN: v.spec.top_n, cols: res.cols,
+        breakdown: res.breakdown,
         note: "<strong>Example:</strong> “" + esc(c.observation) + "”<br>Snapshot as of " + esc(S.data.last_price_date) +
           " close, screened in your browser. Explanations were generated on " + esc(c.generated) + " (UTC) from live SEC filings and news.",
         explanations: exs });
@@ -192,6 +194,7 @@
     });
   }
   function screen(spec) {
+    ScoutCore.ensureSectors(SNAP);
     var res = ScoutCore.runScreen(SNAP, spec);
     var ranked = ScoutCore.rank(SNAP, res.survivors, spec);
     var cols = U.tableColumns(spec), C = SNAP.columns;
@@ -200,7 +203,7 @@
       cols.forEach(function (c) { if (c !== "rank" && c !== "score") o[c] = C[c] ? C[c][r._i] : null; });
       return o;
     });
-    return { funnel: res.funnel, rows: rows, n: ranked.length, cols: cols };
+    return { funnel: res.funnel, rows: rows, n: ranked.length, cols: cols, breakdown: ScoutCore.sectorBreakdown(SNAP, res.survivors) };
   }
 
   // cached explanations from the recorded runs, by symbol (shown for Advanced runs)

@@ -244,3 +244,11 @@ footer ul { padding-left: 18px; }
   td.name { max-width: 150px; }
 }
 @media (max-width: 380px) { .brand span { display: none; } }
+
+/* sector breakdown */
+.secs { display: grid; gap: 8px; }
+.secrow { display: grid; grid-template-columns: minmax(0, 220px) minmax(60px, 1fr) 90px; gap: 14px; align-items: center; font-size: 14px; }
+.secname { color: var(--head); overflow-wrap: anywhere; }
+.secn { text-align: right; font-variant-numeric: tabular-nums; }
+td.sec { color: var(--muted); font-weight: 400; max-width: 190px; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 760px) { .secrow { grid-template-columns: minmax(0, 1fr) 70px; } .secrow .bar { grid-column: 1 / -1; order: 3; } }
