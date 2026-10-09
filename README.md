@@ -11,42 +11,39 @@ might disagree. Code deletes any claim whose quote does not appear verbatim in i
 
 ## Try it
 
-**In the browser, with nothing installed:** open the demo site
-([henryzhangpku.github.io/equity-scout](https://henryzhangpku.github.io/equity-scout/), or `docs/index.html` from disk)
-and open **Try your own**.
+**In the browser, nothing to install:** open the site
+([henryzhangpku.github.io/equity-scout](https://henryzhangpku.github.io/equity-scout/), or `docs/index.html` from disk).
 
-* The panel loads the full 2026-10-08 feature snapshot for 3,827 companies. That is 5.2 MB raw and about 2.1 MB
-  gzipped, fetched only when the panel opens. The screen, funnel and ranking then run in the page.
-  `docs/scout-core.js` is a line-by-line port of the Python validator, screen and ranker. A parity test runs the
-  recorded specs through both implementations and requires identical funnels, rankings and refusal messages.
-* **Spec editor.** Start from any recorded run's spec, or from a blank one. Choose fields, operators and
-  thresholds from the whitelist, or edit the JSON. The browser validator applies the same rules as the app and shows
-  each refusal.
-* **Bring your own key (optional).** Paste a DeepSeek key and the page sends your observation, with the same system
-  prompt the app uses, straight to `api.deepseek.com`. DeepSeek's API allows browser CORS; this was checked before
-  the feature was built. The key stays in a JavaScript variable, is never stored, and goes nowhere else. The
-  proposed spec fills the editor; nothing runs until you press Run.
-* **Explanations are not generated in the browser.** SEC documents cannot be fetched from a browser, because EDGAR
-  has no CORS. Results are labelled *snapshot as of 2026-10-08 close; explanations need the local app*. When a
-  name already has an explanation from a recorded run, that explanation is shown.
+* **One-click examples** sit just under the headline: plain-English ideas a trader would write ("Oversold large
+  caps on heavy volume", "AI suppliers lagging the chip index while revenue accelerates", and others). Each was
+  translated by the model once and checked by code. Its spec, prompt and response are in `llm_cache/` and the full
+  run is in `runs/chip-*`. Clicking an example re-runs the screen in the page on the 2026-10-08 snapshot and shows
+  the cited explanations the local pipeline wrote for its top names, labelled with the run date. No key is needed.
+* **Ask your own question.** When the hosted API is reachable (its URL is set in `docs/config.js`), the box sends
+  the question to it. The model proposes a screen, you see it in plain English and confirm, code runs it, and
+  explanations arrive name by name. The status pill reads *Live* or *Snapshot (offline)*. If the API is down,
+  capped or not configured, the page says so and the examples keep working.
+* **Advanced** (collapsed): a spec editor limited to whitelisted fields, plus bring-your-own-key translation.
+  DeepSeek allows browser CORS; the key stays in memory and goes only to api.deepseek.com.
+* Everything a visitor reads is in plain English: "Down at least 20% from 52-week high", "Free cash flow, last 12
+  months > $0". Raw field names appear only under *Show spec*.
+* The screen, funnel and ranking in the page come from `docs/scout-core.js`, a line-by-line port of the Python code.
+  A parity test runs every recorded spec, including each example, through both implementations and requires
+  identical funnels and rankings. The snapshot is 5.2 MB raw and about 2.1 MB gzipped, and loads on first use.
+* Light and dark themes follow the system setting. A toggle in the nav overrides it, and the choice is remembered
+  when browser storage works.
 
-![Try your own: spec editor and in-browser screen](docs/screenshot-try.png)
+![One-click example run in the browser](docs/screenshot-try.png)
 
 **Locally, for live demos:** `uv run scout serve` opens `http://127.0.0.1:8765/`. Type an observation and the model
-proposes a spec. After you confirm, the full pipeline runs on the latest snapshot plus live EDGAR filings and
-Alpaca news. The funnel and table appear first. The cited explanations then stream in, one per name, about 40 s
-each, with links to the SEC documents.
+proposes a spec. After you confirm, the full pipeline runs on the latest snapshot plus live EDGAR filings and Alpaca
+news, and cited explanations stream in one name at a time.
 
-* Each stage is shown on screen. Each model call times out after 180 s. A failure on one name turns into a *not
-  enough evidence* card and the run continues. Any error message points to the fallback.
-* **Replay a recorded run** streams a recorded run with no network.
-* `scout serve --offline` answers only from recorded material (the LLM cache and saved documents). It is the safe
-  mode when the network is unreliable.
+* *Replay a recorded run* needs no network.
+* `--offline` answers only from recorded material.
 * Picks go into the hash-chained ledger only when you click **Record**.
-* Keys come from the environment, as for the CLI, and never reach the page.
-* `?replay=<run-id>` in the URL starts a replay on page load.
 
-![scout serve replaying run C](docs/screenshot-serve.png)
+![scout serve](docs/screenshot-serve.png)
 
 ## The rule: the model proposes, deterministic code decides
 
@@ -115,6 +112,17 @@ The universe in run B comes from curated baskets (`THEMES` in `spec.py`). SIC co
 REITs from other REITs or find neoclouds at all, and with SIC alone the top of the list was micro-caps. The
 baskets are a fixed list in code, open to review, and the model can only choose among them.
 
+### One-click examples (same snapshot; explanations generated 2026-10-09 UTC)
+
+| Example | Funnel | Top names |
+|---|---|---|
+| Profitable names over $2B, down 30%+ and still growing | 3,827 → 1,902 → 1,120 → 239 → 205 → 163 | CTVA, TTD, LQDA, Z, CSGP |
+| AI suppliers lagging the chip index while revenue accelerates | 3,827 → 32 → 18 → 12 | AVGO, AAOI, AMAT, COHR, AMKR |
+| Oversold large caps on heavy volume | 3,827 → 872 → 35 → 7 | EMA, ARGX, NLY, DOC, HRL |
+| Cash-rich small caps down 40%+ from their highs | 3,827 → 3,060 → 1,158 → 389 → 111 → 31 | OPFI, COLL, YELP, TDOC, CRMD |
+| Heavily shorted, profitable, back above the 50-day average | 3,827 → 1,633 → 28 → 6 | WOLF, KSS, CBRL, MNRO, SWKS |
+| Fast growers over $2B beating the S&P 500 | 3,827 → 1,902 → 206 → 106 → 66 | BMNR, VAL, IBRX, MU, TARS |
+
 ## Forward tracking
 
 Every live run appends its top names and entry closes to `runs/picks.jsonl`. The file is append-only and
@@ -167,9 +175,65 @@ the key used here belongs to a plan that the Kimi coding endpoint rejected (HTTP
 Dependencies: `numpy`, `pandas`, `requests`, plus `pytest` for development. HTML is parsed with the standard
 library.
 
+
+## Deploy (hosted API)
+
+`scout serve` doubles as the live API behind the static site. With `SCOUT_HOSTED=1` it:
+
+* binds `0.0.0.0:$PORT` and reads all configuration from the environment;
+* limits CORS to the allowed origins;
+* rate-limits each IP and caps the whole service per day;
+* disables the ledger "record" action (the append-only ledger stays local and authoritative);
+* keeps runs in a temp directory;
+* never returns upstream errors or keys;
+* logs one JSON line per action, with client IPs hashed.
+
+| Variable | Default | Meaning |
+|---|---|---|
+| `PORT` | 8765 locally, 8080 in the image | port to bind (Railway sets it) |
+| `SCOUT_HOSTED` | unset (`1` in the image) | hosted mode |
+| `DEEPSEEK_API_KEY` | none | model for translation and explanations; without it the API reports `live: false` |
+| `ALPACA_API_KEY`, `ALPACA_API_SECRET` | none | news headlines for explanations (optional; filings-only without them) |
+| `SCOUT_SEC_CONTACT` | the author's address | contact in the SEC User-Agent (fair-access rule) |
+| `SCOUT_ALLOWED_ORIGINS` | `https://henryzhangpku.github.io`, localhost, `null` | comma-separated CORS allowlist |
+| `SCOUT_DAILY_RUN_CAP` | 40 | live runs per UTC day, whole service (translations get 3x) |
+| `SCOUT_PER_IP_PER_HOUR` | 5 | live runs per IP per hour (translations get 3x) |
+| `SCOUT_KILL` | unset | `1` refuses new translations and runs with a friendly message |
+| `SCOUT_LOG_SALT` | random per process | salt for hashing client IPs in logs |
+| `SCOUT_DATA_DIR` | `./data` | where feature snapshots live (a mounted volume if refreshed in place) |
+| `SCOUT_LLM_CACHE` | `./llm_cache` | model response cache (identical requests are free) |
+| `HOST` | `0.0.0.0` when hosted | bind address override |
+
+Other fixed limits: observations up to 500 characters, at most 5 names explained per run, one concurrent run per IP,
+60 s to read a request, 180 s per model call, jobs kept in memory for an hour.
+
+API (JSON; CORS for allowed origins only):
+
+* `GET /api/health`: snapshot date, `live`, `killed`, runs remaining.
+* `POST /api/translate {observation}`: returns the validated spec, or the refusals.
+* `POST /api/run {spec}`: returns the funnel, the ranked table and a job id.
+* `GET /api/run/<job>`: explanations so far plus the names still pending.
+
+**Build and start.** The repo has a `Dockerfile`, `railway.json` (Dockerfile builder, healthcheck on `/api/health`)
+and a `Procfile`.
+
+```bash
+docker build -t equity-scout .
+docker run -p 8080:8080 -e DEEPSEEK_API_KEY=... -e ALPACA_API_KEY=... -e ALPACA_API_SECRET=... equity-scout
+# start command inside the image: scout serve --no-browser --port $PORT   (SCOUT_HOSTED=1 is set in the image)
+```
+
+The image ships the latest committed snapshot (`data/snapshots/`). To serve fresh data, either rebuild and commit a
+snapshot (`uv run scout build --as-of today`, then redeploy), or mount a volume at `SCOUT_DATA_DIR` and run
+`scout build --as-of today` against it on a schedule. The server picks up the newest snapshot on the next run. The
+cold build takes about 30 minutes and needs the Alpaca keys. `--as-of today` resolves to the latest US session that
+has closed.
+
+Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`) and redeploy Pages.
+
 ## Tests
 
-`uv run pytest`: 83 tests, none skipped. The browser parity tests need Node.js on the PATH.
+`uv run pytest`: 106 tests, none skipped. The browser parity tests need Node.js on the PATH.
 
 * indicators against hand-computed values (SMA, Wilder RSI step by step, EMA/MACD, momentum, volume ratio,
   drawdown, relative strength)
@@ -185,7 +249,9 @@ library.
   refusal messages as Python, on the shipped browser snapshot and against the recorded runs
 * `scout serve` endpoints, offline: status, translate from the recorded cache, refusals, a streamed run that
   reproduces run C, record-on-click (one ledger entry, chain intact), replay, path and job guards
-* offline replay of all three recorded runs, with the network disabled, reproduces spec, funnel, ranking and
+* hosted mode: CORS allowlist, per-IP and daily caps, one run per IP, kill switch, input limits, disabled record/replay,
+  generic upstream errors, hashed IPs in logs, and no key ever appearing in any response
+* offline replay of every recorded run, including the six examples, with the network disabled, reproduces spec, funnel, ranking and
   explanations exactly
 
 Research tool only: it places no orders and makes no recommendations.

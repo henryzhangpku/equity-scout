@@ -12,51 +12,73 @@
 <meta property="og:url" content="https://henryzhangpku.github.io/equity-scout/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
 <link rel="stylesheet" href="style.css">
+<script src="theme.js"></script>
 </head>
 <body>
 <nav class="topnav" aria-label="Site">
-  <div class="wrap navin">
-    <a class="brand" href="#top"><img src="favicon.svg" alt="" width="24" height="24"><span>Equity Scout</span></a>
+  <div class="navin">
+    <a class="brand" href="#top"><img src="favicon.svg" alt="" width="28" height="28"><span>Equity Scout</span></a>
     <div class="navlinks">
-      <a href="#runs">Recorded runs</a>
-      <a href="#try">Try your own</a>
-      <a href="#architecture">Architecture</a>
+      <a href="#try">Try it</a>
+      <a class="opt" href="#runs">Recorded runs</a>
+      <a class="opt" href="#architecture">How it works</a>
       <a class="code" href="https://github.com/henryzhangpku/equity-scout" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>Code</span></a>
+      <button id="theme-toggle" class="iconbtn" type="button" aria-label="Switch theme"></button>
     </div>
   </div>
 </nav>
-<header class="wrap" id="top">
-  <h1>From an investment observation to ranked names and cited explanations</h1>
-  <p class="lede">Write an observation in plain English. A language model translates it into a typed screen
-    spec; code validates the spec, screens the US equity universe on point-in-time data, ranks the survivors
-    and computes every number. The model then reads each top name's latest earnings release, MD&amp;A and recent news
-    headlines and explains the dislocation; code deletes any claim whose quote is not found verbatim in its source.</p>
-  <p class="rule"><strong>The model proposes, deterministic code decides.</strong></p>
+
+<header class="wrap hero" id="top">
+  <span class="eyebrow">US equities &middot; free point-in-time data &middot; every claim cited</span>
+  <h1>Turn an investment idea into a ranked list, with the evidence.</h1>
+  <p class="lede">Say what you are looking for in plain English. Code screens about 3,800 US companies, ranks what
+    survives, and explains each top name using only quotes it has verified in the company&rsquo;s own filings.</p>
+  <div class="btnrow">
+    <a class="btn grad" href="#try">Try it</a>
+    <a class="btn" href="https://github.com/henryzhangpku/equity-scout" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> See the code</a>
+  </div>
+  <p class="examples-label">One click, instant result</p>
+  <div id="chips" class="chiprow"></div>
+  <p id="chip-note" class="meta"></p>
 </header>
 
 <main class="wrap">
-  <section id="runs" class="anchor">
-    <h2 class="sec">Recorded runs</h2>
+  <section class="block" id="try">
+    <div class="panel">
+      <div class="row" style="justify-content:space-between;margin-top:0;align-items:flex-start">
+        <div><h2 style="margin-bottom:4px">Ask your own question</h2>
+          <p class="muted" style="margin:0">The model proposes a screen; code checks it and decides everything else.</p></div>
+        <span id="api-status" class="status-pill" title="Live analysis status"><span class="dot"></span><span>Snapshot</span></span>
+      </div>
+      <div id="ask"></div>
+      <details id="advanced" class="disclose" style="margin-top:18px">
+        <summary><h3>Advanced: build a screen yourself, or use your own DeepSeek key</h3></summary>
+        <div id="try-body" style="margin-top:16px"></div>
+      </details>
+    </div>
+    <div id="t-out"></div>
+  </section>
+
+  <section class="block" id="runs">
+    <h2>Recorded runs</h2>
+    <p class="section-intro">Three end-to-end runs, saved with their prompts, the model&rsquo;s responses and the exact filing text the model saw, so anyone can check every quote.</p>
     <nav id="tabs" class="tabs" role="tablist"></nav>
     <div id="run"></div>
   </section>
 
-  <section id="try-sec" class="anchor">
-    <details id="try" class="panel trypanel">
-      <summary><h2 class="sec inline">Try your own</h2>
-        <span class="muted">Build or translate a screen and run it in your browser on the 2026-10-08 snapshot (loads about 2 MB when opened)</span></summary>
-      <div id="try-body"></div>
-    </details>
+  <section class="block" id="tracking-sec">
+    <div class="panel">
+      <h2>Forward tracking</h2>
+      <div id="tracking"><p class="muted">No tracking data yet.</p></div>
+    </div>
   </section>
 
-  <section class="panel">
-    <h2>Forward tracking</h2>
-    <div id="tracking"><p class="muted">No tracking data yet.</p></div>
-  </section>
-
-  <section class="panel" id="architecture">
-    <h2>Architecture</h2>
+  <section class="block" id="architecture"><div class="panel">
+    <h2>How it works</h2>
     <p class="muted">Each data layer sits behind a small interface, so a licensed source replaces the free one
       without touching the screen, the ranking or the citation check.</p>
     <div class="arch">
@@ -67,7 +89,7 @@
       <div class="arch-row"><div>Short interest</div><div>FINRA consolidated short interest, twice monthly</div><div>Exchange / securities-lending feeds (borrow cost, utilisation)</div><div>Float-based %, daily cadence, borrow cost</div></div>
       <div class="arch-row"><div>Documents</div><div>EDGAR 8-K Exhibit 99.1 and 10-Q / 10-K MD&amp;A</div><div>Bloomberg / LSEG / Capital IQ document search</div><div>Earnings-call transcripts (licensed; interface kept, not used)</div></div>
       <div class="arch-row"><div>News</div><div>Alpaca news API (Benzinga): headlines and summaries only, cut at the as-of close</div><div>Bloomberg / LSEG / Dow Jones news with full text and entitlements</div><div>Full articles, broad source coverage, story-level entity tagging</div></div>
-      <div class="arch-row"><div>Language model</div><div>DeepSeek (Kimi alternative), every prompt and response recorded</div><div>A frontier model inside the firm's controls</div><div>Nothing structural: the model only fills the spec and writes cited prose</div></div>
+      <div class="arch-row"><div>Language model</div><div>DeepSeek (Kimi alternative), every prompt and response recorded; a hosted API can serve live runs</div><div>A frontier model inside the firm's controls</div><div>Nothing structural: the model only fills the spec and writes cited prose</div></div>
     </div>
     <ol class="flow">
       <li><strong>Translate.</strong> The model fills a whitelisted JSON spec. Unknown fields, operators, units or
@@ -79,15 +101,16 @@
         news headlines and summaries; each claim must quote one of them. Code keeps a claim only if the quote is found verbatim and every number in
         the claim is in the quote; with fewer than two surviving claims the verdict is <em>not enough evidence</em>.</li>
     </ol>
-  </section>
+  </div></section>
 </main>
 
-<footer class="wrap muted" id="foot">
+<footer class="wrap" id="foot">
   <div id="foot-limits"></div>
   <p>Research demo only: no orders, no recommendations. Every run, prompt and model response is in the repository.
     <a class="code" href="https://github.com/henryzhangpku/equity-scout" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>Code on GitHub</span></a></p>
 </footer>
 
+<script src="config.js"></script>
 <script src="data/runs.js"></script>
 <script src="ui.js"></script>
 <script src="scout-core.js"></script>

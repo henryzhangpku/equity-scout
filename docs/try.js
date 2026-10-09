@@ -1,17 +1,20 @@
-/* "Try your own": build or translate a screen spec and run it in the browser on the shipped snapshot.
+/* "Try it": ask the hosted API in plain English, click an example, or (Advanced) build a spec / bring your own key.
  *
- * Everything runs locally in the page. The snapshot (2026-10-08 close) loads only when the panel opens.
- * Optional: translate an observation with your own DeepSeek key. The key lives in a JS variable for this
- * page only, is never stored, and is sent only to api.deepseek.com (which allows browser CORS).
+ * Examples and Advanced run entirely in the page on the shipped snapshot, which loads only when first needed.
+ * Bring-your-own-key: the key lives in a JS variable for this page only, is never stored, and is sent only to
+ * api.deepseek.com (which allows browser CORS). The hosted API base URL comes from config.js.
  */
 (function () {
   "use strict";
   var U = window.ScoutUI, esc = U.esc;
   var SNAP_FILE = "data/snapshot-2026-10-08.js";
-  var S = null, SNAP = null, loading = null;
+  var API = (window.SCOUT_API_BASE || "").replace(/\/+$/, "");
+  var S = null, SNAP = null, loading = null, apiLive = false, health = null;
   var apiKey = "";                // memory only
   var root = document.getElementById("try-body");
-  var panel = document.getElementById("try");
+  var adv = document.getElementById("advanced");
+  var CHIPS = window.SCOUT_CHIPS || [];
+  function byId(id) { return document.getElementById(id); }
 
   function loadScript(src) {
     return new Promise(function (ok, fail) {
@@ -24,16 +27,192 @@
 
   function ensureLoaded() {
     if (loading) return loading;
-    root.innerHTML = '<p class="muted" id="try-loading">Loading the 2026-10-08 snapshot for ~3,800 companies (about 2 MB)…</p>';
+    showOut('<div class="panel"><p class="muted" style="margin:0">Loading the 2026-10-08 snapshot of about 3,800 companies (about 2 MB)…</p></div>');
     loading = loadScript("data/schema.js").then(function () {
       S = window.SCOUT_SCHEMA; ScoutCore.setSchema(S);
-      return loadScript(SNAP_FILE);
-    }).then(function () { SNAP = window.SCOUT_SNAPSHOT; build(); })
-      .catch(function (e) { root.innerHTML = '<p class="err">' + esc(e.message) + "</p>"; loading = null; });
+      return Promise.all([loadScript(SNAP_FILE), loadScript("data/chips-ex.js")]);
+    }).then(function () { SNAP = window.SCOUT_SNAPSHOT; buildAdvanced(); showOut(""); })
+      .catch(function (e) { showOut('<div class="panel refusal"><p class="err" style="margin:0">' + esc(e.message) + "</p></div>"); loading = null; throw e; });
     return loading;
   }
 
-  // ---------- state ----------
+  function showOut(html) { byId("t-out").innerHTML = html; }
+
+  // ---------- hosted API: status pill + ask box ----------
+  function pill(live, text) {
+    var p = byId("api-status");
+    p.className = "status-pill" + (live ? " live" : "");
+    p.lastElementChild.textContent = text;
+  }
+  function apiFetch(path, opts, ms) {
+    var ctrl = new AbortController(), t = setTimeout(function () { ctrl.abort(); }, ms || 15000);
+    opts = opts || {};
+    opts.signal = ctrl.signal;
+    if (opts.body) opts.headers = { "Content-Type": "application/json" };
+    return fetch(API + path, opts).then(function (r) {
+      return r.json().catch(function () { return { ok: false, error: "Unexpected response from the live service." }; })
+        .then(function (j) { j._status = r.status; return j; });
+    }).finally(function () { clearTimeout(t); });
+  }
+  function renderAsk() {
+    var box = byId("ask");
+    box.innerHTML =
+      '<label for="ask-text" class="step" style="display:block;margin:14px 0 8px">Describe what you are looking for</label>' +
+      '<textarea id="ask-text" class="prose" rows="2" maxlength="500" placeholder="e.g. Cash-rich small caps trading near their lows, with growing revenue"></textarea>' +
+      '<div class="row"><button id="ask-go" class="primary">Analyze</button><span id="ask-msg" class="meta" style="margin:0"></span></div>';
+    byId("ask-go").onclick = ask;
+    byId("ask-text").addEventListener("keydown", function (e) { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) ask(); });
+  }
+  function askMsg(html) { byId("ask-msg").innerHTML = html; }
+  function offlineNote() {
+    return "Live analysis is offline right now, so plain-English questions cannot be answered. Pick an example above, or open " +
+      "<em>Advanced</em> to build a screen or use your own DeepSeek key.";
+  }
+  function checkApi() {
+    if (!API) { pill(false, "Snapshot (offline)"); askMsg(offlineNote()); return; }
+    apiFetch("/api/health", null, 5000).then(function (h) {
+      health = h;
+      apiLive = !!(h && h.ok && h.live);
+      pill(apiLive, apiLive ? "Live" : "Snapshot (offline)");
+      if (!apiLive) askMsg(h && h.killed ? "Live analysis is paused. Pick an example above." : offlineNote());
+      else askMsg("Live: the model proposes a screen, code runs it on the " + esc(h.last_price_date) + " snapshot, then reads the top " +
+        esc(h.max_explain) + " names’ filings (about a minute per name).");
+    }).catch(function () { apiLive = false; pill(false, "Snapshot (offline)"); askMsg(offlineNote()); });
+  }
+
+  function ask() {
+    var obs = byId("ask-text").value.trim();
+    if (!obs) { askMsg("Write what you are looking for first."); return; }
+    if (!apiLive) { askMsg(offlineNote()); return; }
+    var btn = byId("ask-go"); btn.disabled = true;
+    var t0 = Date.now(), tick = setInterval(function () { askMsg('<span class="spinner"></span>Turning your words into a screen… ' + Math.round((Date.now() - t0) / 1000) + " s"); }, 500);
+    apiFetch("/api/translate", { method: "POST", body: JSON.stringify({ observation: obs }) }, 180000).then(function (r) {
+      if (r.ok) { askMsg(""); confirmLive(r.spec); return; }
+      if (r.refused) { askMsg('<span class="err">The proposed screen did not pass the checks:</span> ' + esc(r.problems.join("; "))); return; }
+      askMsg('<span class="err">' + esc(r.error || "The live service could not answer.") + "</span>");
+      if (r.limited) pill(false, "Snapshot (limit reached)");
+    }).catch(function (e) {
+      askMsg('<span class="err">' + (e.name === "AbortError" ? "That took too long." : "The live service is unreachable.") + "</span> Pick an example above instead.");
+    }).then(function () { clearInterval(tick); btn.disabled = false; });
+  }
+
+  function confirmLive(spec) {
+    showOut('<div class="panel">' + U.specHtml(spec, "The screen the model proposed (checked by code)") +
+      '<div class="row"><button id="live-run" class="primary">Run this screen</button>' +
+      '<button id="live-edit" class="ghost">Adjust it under Advanced</button></div></div>');
+    byId("live-run").onclick = function () { runLive(spec); };
+    byId("live-edit").onclick = function () {
+      adv.open = true;
+      ensureLoaded().then(function () { setSpec(JSON.parse(JSON.stringify(spec))); byId("t-form").scrollIntoView({ behavior: "smooth" }); });
+    };
+    byId("t-out").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function runLive(spec) {
+    var btn = byId("live-run"); if (btn) btn.disabled = true;
+    apiFetch("/api/run", { method: "POST", body: JSON.stringify({ spec: spec }) }, 90000).then(function (r) {
+      if (!r.ok) {
+        var msg = r.refused ? "Refused: " + r.problems.join("; ") : (r.error || "The live service could not run this.");
+        showOut('<div class="panel refusal"><p class="err" style="margin:0">' + esc(msg) + "</p></div>");
+        return;
+      }
+      var cols = U.tableColumns(spec);
+      renderResults({ spec: spec, funnel: r.funnel, rows: r.ranked, nRanked: r.n_ranked, topN: r.top_n,
+        note: "<strong>Live run</strong> on the snapshot as of " + esc(r.last_price_date) + " close. Explanations read today’s SEC filings and news; they appear as each name finishes.",
+        cols: cols, pending: r.ranked.slice(0, r.top_n).map(function (x) { return x.symbol; }) });
+      poll(r.job);
+    }).catch(function () { showOut('<div class="panel refusal"><p class="err" style="margin:0">The live service is unreachable. Try an example above.</p></div>'); });
+  }
+
+  function poll(job) {
+    apiFetch("/api/run/" + job, null, 20000).then(function (p) {
+      if (!p.ok) { setCardsNote('<span class="err">' + esc(p.error || "Lost track of this analysis.") + "</span>"); return; }
+      p.explanations.forEach(function (ex) {
+        var c = byId("card-" + ex.symbol);
+        if (c && c.classList.contains("pending")) c.outerHTML = U.cardHtml(ex);
+      });
+      if (p.working_on) { var w = byId("card-" + p.working_on); if (w) w.querySelector(".verdict").textContent = "reading filings…"; }
+      if (p.error) { setCardsNote('<span class="err">' + esc(p.error.message) + "</span>"); return; }
+      if (!p.done) setTimeout(function () { poll(job); }, 2500);
+      else setCardsNote("Done in " + Math.round(p.elapsed) + " s.");
+    }).catch(function () { setTimeout(function () { poll(job); }, 5000); });
+  }
+  function setCardsNote(html) { var n = byId("cards-note"); if (n) n.innerHTML = html; }
+
+  // ---------- shared results renderer ----------
+  function renderResults(o) {
+    var h = [];
+    h.push('<div class="panel"><p class="label-note">' + o.note + "</p>" + U.specHtml(o.spec, "What was screened") + "</div>");
+    h.push('<div class="panel">' + U.funnelHtml(o.funnel, "How the list narrowed", o.spec) + "</div>");
+    h.push('<div class="panel">' + U.tableHtml(o.cols, o.rows, o.topN, o.nRanked, "Ranked results") + "</div>");
+    var top = o.rows.slice(0, o.topN);
+    if (top.length) {
+      h.push('<div class="panel"><div class="step">Why the price and the business may disagree — top ' + top.length + "</div>");
+      h.push('<p class="muted" style="margin-top:0">' + (o.exNote || "Each quote was checked by code to appear word for word in its linked source.") +
+        ' <span id="cards-note"></span></p><div class="cards">');
+      top.forEach(function (r) {
+        var ex = o.explanations && o.explanations[r.symbol];
+        if (ex) h.push(U.cardHtml(ex));
+        else if (o.pending && o.pending.indexOf(r.symbol) >= 0)
+          h.push('<div class="card pending" id="card-' + esc(r.symbol) + '"><div class="hd"><h3>' + esc(r.symbol) + '</h3><span class="verdict thin">waiting</span></div><p class="meta">' + esc(r.name || "") + "</p></div>");
+        else h.push('<div class="card"><div class="hd"><h3>' + esc(r.symbol) + '</h3><span class="verdict thin">no explanation yet</span></div><p class="meta">' +
+          esc(r.name || "") + ". " + (o.missingNote || "") + "</p></div>");
+      });
+      h.push("</div></div>");
+    }
+    showOut(h.join(""));
+  }
+
+  // ---------- examples ----------
+  function renderChips() {
+    var box = byId("chips");
+    if (!CHIPS.length) { box.innerHTML = '<span class="muted">No examples bundled.</span>'; return; }
+    box.innerHTML = CHIPS.map(function (c) { return '<button class="chipbtn" data-chip="' + esc(c.id) + '">' + esc(c.label) + "</button>"; }).join("");
+    box.querySelectorAll("[data-chip]").forEach(function (b) {
+      b.onclick = function () {
+        box.querySelectorAll(".chipbtn").forEach(function (x) { x.classList.remove("on"); });
+        b.classList.add("on");
+        runChip(b.getAttribute("data-chip"));
+      };
+    });
+    byId("chip-note").innerHTML = "Each example was translated by the model once, checked by code, and its top names explained from live SEC filings and news on " +
+      esc(CHIPS[0].generated) + " (UTC). The screen itself re-runs here, in your browser.";
+  }
+  function runChip(id) {
+    var c = CHIPS.filter(function (x) { return x.id === id; })[0];
+    ensureLoaded().then(function () {
+      setSpec(JSON.parse(JSON.stringify(c.spec)));
+      var v = ScoutCore.validate(c.spec, S.short_interest_available);
+      if (!v.ok) { showOut('<div class="panel refusal">' + esc(v.problems.join("; ")) + "</div>"); return; }
+      var res = screen(v.spec);
+      var exs = {};
+      ((window.SCOUT_CHIP_EX || {})[id] || []).forEach(function (ex) { exs[ex.symbol] = ex; });
+      renderResults({ spec: v.spec, funnel: res.funnel, rows: res.rows, nRanked: res.n, topN: v.spec.top_n, cols: res.cols,
+        note: "<strong>Example:</strong> “" + esc(c.observation) + "”<br>Snapshot as of " + esc(S.data.last_price_date) +
+          " close, screened in your browser. Explanations were generated on " + esc(c.generated) + " (UTC) by the local app (live SEC filings, news and DeepSeek).",
+        explanations: exs });
+      byId("t-out").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+  function screen(spec) {
+    var res = ScoutCore.runScreen(SNAP, spec);
+    var ranked = ScoutCore.rank(SNAP, res.survivors, spec);
+    var cols = U.tableColumns(spec), C = SNAP.columns;
+    var rows = ranked.slice(0, 25).map(function (r) {
+      var o = { rank: r.rank, score: r.score };
+      cols.forEach(function (c) { if (c !== "rank" && c !== "score") o[c] = C[c] ? C[c][r._i] : null; });
+      return o;
+    });
+    return { funnel: res.funnel, rows: rows, n: ranked.length, cols: cols };
+  }
+
+  // cached explanations from the recorded runs, by symbol (shown for Advanced runs)
+  var cached = {};
+  (window.SCOUT_RUNS || []).forEach(function (r) {
+    r.explanations.forEach(function (ex) { cached[ex.symbol] = { ex: ex, run: r.id, as_of: r.as_of }; });
+  });
+
+  // ---------- Advanced: spec editor + bring-your-own-key ----------
   var spec = null;
   function blankSpec() {
     return { version: 1, observation: "My observation", universe: { market_cap_min: 2e9 },
@@ -41,58 +220,49 @@
              rank: [{ field: "drawdown_52w", direction: "asc", weight: 1 }], top_n: 5, unmapped: [], notes: "" };
   }
   function clone(x) { return JSON.parse(JSON.stringify(x)); }
+  function status(html) { byId("t-status").innerHTML = html; }
 
-  // cached explanations from the recorded runs, by symbol
-  var cached = {};
-  (window.SCOUT_RUNS || []).forEach(function (r) {
-    r.explanations.forEach(function (ex) { cached[ex.symbol] = { ex: ex, run: r.id, as_of: r.as_of }; });
-  });
-
-  // ---------- UI skeleton ----------
-  function build() {
+  function buildAdvanced() {
     var runs = window.SCOUT_RUNS || [];
-    var opts = runs.map(function (r) { return '<option value="' + esc(r.id) + '">Recorded run: ' + esc(r.observation.slice(0, 70)) + "…</option>"; }).join("");
+    var opts = runs.map(function (r) { return '<option value="run:' + esc(r.id) + '">Recorded run: ' + esc(r.observation.slice(0, 60)) + "…</option>"; }).join("") +
+      CHIPS.map(function (c) { return '<option value="chip:' + esc(c.id) + '">Example: ' + esc(c.label) + "</option>"; }).join("");
     root.innerHTML =
       '<p class="label-note"><strong>Snapshot as of ' + esc(S.data.last_price_date) + ' close; explanations need the local app (SEC documents can’t be fetched from a browser).</strong> ' +
-      esc(S.data.n_companies) + " companies. Universe: " + esc(S.data.universe_rule) + ".</p>" +
-      '<div class="try-grid">' +
-      '<div class="subpanel"><h3>A · Translate an observation (optional, your own DeepSeek key)</h3>' +
-      '<textarea id="t-obs" rows="3" placeholder="e.g. Small caps under $2B with revenue growth above 25%, positive free cash flow, and RSI below 40"></textarea>' +
-      '<div class="row"><input id="t-key" type="password" autocomplete="off" spellcheck="false" placeholder="DeepSeek API key (kept in memory only)">' +
+      esc(S.data.n_companies) + " companies.</p>" +
+      '<div class="subpanel"><h3>Translate with your own DeepSeek key</h3>' +
+      '<textarea id="t-obs" class="prose" rows="2" placeholder="e.g. Small caps under $2B with revenue growth above 25%, positive free cash flow, and RSI below 40"></textarea>' +
+      '<div class="row"><input id="t-key" type="password" autocomplete="off" spellcheck="false" placeholder="DeepSeek API key (kept in memory only)" style="flex:1 1 220px">' +
       '<button id="t-translate">Translate</button><button id="t-forget" class="ghost">Forget key</button></div>' +
       '<p class="meta">The key stays in this page’s memory and is sent only to api.deepseek.com; it is never stored or sent anywhere else. ' +
-      "The model (" + esc(S.model) + ") only fills the spec below; nothing runs until you press Run.</p>" +
+      "The model (" + esc(S.model) + ") only fills the screen below; nothing runs until you press Run.</p>" +
       '<div id="t-status" class="meta"></div></div>' +
-      '<div class="subpanel"><h3>B · Edit the spec (whitelisted fields only)</h3>' +
+      '<div class="subpanel"><h3>Build the screen (allowed fields only)</h3>' +
       '<div class="row"><select id="t-template"><option value="">Start from…</option>' + opts + '<option value="__blank">Blank example</option></select></div>' +
       '<div id="t-form"></div>' +
       '<details><summary>Edit as JSON</summary><textarea id="t-json" rows="14" spellcheck="false"></textarea>' +
       '<div class="row"><button id="t-apply" class="ghost">Load JSON into the form</button></div></details>' +
-      '<div class="row"><button id="t-run" class="primary">Validate and run</button></div></div>' +
-      "</div>" +
-      '<div id="t-out"></div>';
+      '<div class="row"><button id="t-run" class="primary">Check and run</button></div></div>';
     byId("t-template").onchange = function () {
       var v = this.value; if (!v) return;
-      var r = runs.filter(function (x) { return x.id === v; })[0];
-      setSpec(r ? clone(r.spec) : blankSpec());
+      if (v === "__blank") return setSpec(blankSpec());
+      var parts = v.split(":"), src = parts[0] === "run" ? runs.filter(function (x) { return x.id === parts[1]; })[0]
+        : CHIPS.filter(function (x) { return x.id === parts[1]; })[0];
+      setSpec(clone(src.spec));
     };
     byId("t-apply").onclick = function () {
       try { setSpec(JSON.parse(byId("t-json").value)); status(""); }
       catch (e) { showOut('<div class="panel refusal"><strong>Not valid JSON:</strong> ' + esc(e.message) + "</div>"); }
     };
-    byId("t-run").onclick = run;
+    byId("t-run").onclick = runAdvanced;
     byId("t-translate").onclick = translate;
     byId("t-forget").onclick = function () { apiKey = ""; byId("t-key").value = ""; status("Key forgotten."); };
-    setSpec(runs.length ? clone(runs[0].spec) : blankSpec());
+    setSpec(CHIPS.length ? clone(CHIPS[0].spec) : runs.length ? clone(runs[0].spec) : blankSpec());
   }
-  function byId(id) { return document.getElementById(id); }
-  function status(html) { byId("t-status").innerHTML = html; }
-  function showOut(html) { byId("t-out").innerHTML = html; }
 
-  // ---------- form <-> spec ----------
   function setSpec(s) { spec = s; renderForm(); syncJson(); }
   function syncJson() { byId("t-json").value = JSON.stringify(spec, null, 2); }
 
+  var GROUPS = { size: "Size and liquidity", technical: "Price, trend and volume", fundamental: "Fundamentals", short_interest: "Short interest" };
   function fieldOptions(sel, allowBool) {
     var groups = {};
     Object.keys(S.fields).forEach(function (k) {
@@ -103,8 +273,8 @@
     var h = "";
     if (sel && !S.fields[sel]) h += '<option value="' + esc(sel) + '" selected>' + esc(sel) + " (not in whitelist)</option>";
     Object.keys(groups).forEach(function (g) {
-      h += '<optgroup label="' + esc(g) + '">' + groups[g].map(function (k) {
-        return '<option value="' + k + '"' + (k === sel ? " selected" : "") + ' title="' + esc(S.fields[k].desc) + '">' + k + "</option>";
+      h += '<optgroup label="' + esc(GROUPS[g] || g) + '">' + groups[g].map(function (k) {
+        return '<option value="' + k + '"' + (k === sel ? " selected" : "") + ' title="' + esc(k + ": " + S.fields[k].desc) + '">' + esc(U.label(k)) + "</option>";
       }).join("") + "</optgroup>";
     });
     return h;
@@ -116,7 +286,7 @@
     var h = [];
     h.push('<div class="row"><label>Observation <input id="f-obs" value="' + esc(spec.observation || "") + '"></label></div>');
     h.push('<div class="formsec">Universe</div><div class="row wrap">');
-    [["market_cap_min", "Market cap ≥ (USD)"], ["market_cap_max", "Market cap ≤ (USD)"], ["min_price", "Close ≥ ($)"],
+    [["market_cap_min", "Market cap ≥ (USD)"], ["market_cap_max", "Market cap ≤ (USD)"], ["min_price", "Price ≥ ($)"],
      ["min_avg_dollar_volume", "50-day $ volume ≥"]].forEach(function (k) {
       h.push('<label class="sm">' + k[1] + ' <input data-u="' + k[0] + '" value="' + esc(numText(u[k[0]])) + '" placeholder="none" inputmode="decimal"></label>');
     });
@@ -231,46 +401,24 @@
     byId("f-topn").onchange = function () { var v = parseNum(this.value); if (v === undefined) delete spec.top_n; else spec.top_n = v; syncJson(); };
   }
 
-  // ---------- run ----------
-  function run() {
+  // ---------- run (Advanced) ----------
+  function runAdvanced() {
     var raw;
     try { raw = JSON.parse(byId("t-json").value); }
     catch (e) { showOut('<div class="panel refusal"><strong>Not valid JSON:</strong> ' + esc(e.message) + "</div>"); return; }
     var v = ScoutCore.validate(raw, S.short_interest_available);
     if (!v.ok) {
-      showOut('<div class="panel refusal"><strong>Refused by the validator</strong> (same rules as the Python app; nothing was screened):<ul>' +
+      showOut('<div class="panel refusal"><strong>Refused by the checks</strong> (same rules as the Python app; nothing was screened):<ul>' +
         v.problems.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul></div>");
+      byId("t-out").scrollIntoView({ behavior: "smooth", block: "start" });
       return;
     }
-    var t0 = performance.now();
-    var res = ScoutCore.runScreen(SNAP, v.spec);
-    var ranked = ScoutCore.rank(SNAP, res.survivors, v.spec);
-    var ms = Math.round(performance.now() - t0);
-    var cols = U.tableColumns(v.spec), C = SNAP.columns;
-    var rows = ranked.slice(0, 25).map(function (r) {
-      var o = { rank: r.rank, score: r.score };
-      cols.forEach(function (c) { if (c !== "rank" && c !== "score") o[c] = C[c] ? C[c][r._i] : null; });
-      return o;
-    });
-    var h = [];
-    h.push('<div class="panel"><p class="label-note"><strong>Snapshot as of ' + esc(S.data.last_price_date) + " close; explanations need the local app (SEC documents can’t be fetched from a browser).</strong> Screened " +
-      esc(SNAP.n) + " companies in " + ms + " ms, in your browser.</p>" + U.specHtml(v.spec, "Screen spec — validated in the browser") + "</div>");
-    h.push('<div class="panel">' + U.funnelHtml(res.funnel) + "</div>");
-    h.push('<div class="panel">' + U.tableHtml(cols, rows, v.spec.top_n, ranked.length) + "</div>");
-    var top = ranked.slice(0, v.spec.top_n);
-    if (top.length) {
-      h.push('<div class="panel"><div class="step">Explanations for the top ' + top.length + "</div>");
-      h.push('<p class="muted" style="margin-top:0">The browser cannot fetch SEC filings (no CORS), so new explanations need the local app: <code>uv run scout serve</code>. ' +
-        "Where a name already has a recorded explanation from one of the recorded runs, it is shown below; it was written for that run’s screen, not this one.</p><div class=\"cards\">");
-      top.forEach(function (r) {
-        var sym = C.symbol[r._i], c = cached[sym];
-        if (c) h.push(U.cardHtml(c.ex, "Recorded in run <strong>" + esc(c.run) + "</strong> (as of " + esc(c.as_of) + ")."));
-        else h.push('<div class="card"><div class="hd"><h3>' + esc(sym) + '</h3><span class="verdict thin">no recorded explanation</span></div><p class="meta">' +
-          esc(C.name[r._i] || "") + ". Run this spec in the local app to read its 8-K, MD&amp;A and news with verified citations.</p></div>");
-      });
-      h.push("</div></div>");
-    }
-    showOut(h.join(""));
+    var res = screen(v.spec), exs = {};
+    res.rows.slice(0, v.spec.top_n).forEach(function (r) { if (cached[r.symbol]) exs[r.symbol] = cached[r.symbol].ex; });
+    renderResults({ spec: v.spec, funnel: res.funnel, rows: res.rows, nRanked: res.n, topN: v.spec.top_n, cols: res.cols,
+      note: "<strong>Snapshot as of " + esc(S.data.last_price_date) + " close; explanations need the local app (SEC documents can’t be fetched from a browser).</strong> Screened in your browser.",
+      exNote: "Where a name already has an explanation from a recorded run it is shown; it was written for that run’s screen, not this one. Run this screen in the local app (<code>uv run scout serve</code>) for fresh, cited explanations.",
+      explanations: exs, missingNote: "No recorded explanation for this name." });
     byId("t-out").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
@@ -297,7 +445,7 @@
     var k = byId("t-key").value.trim();
     if (k) { apiKey = k; byId("t-key").value = ""; byId("t-key").placeholder = "key held in memory (Forget key to clear)"; }
     if (!obs) { status("Write an observation first."); return; }
-    if (!apiKey) { status("Paste a DeepSeek API key, or skip this and edit the spec directly."); return; }
+    if (!apiKey) { status("Paste a DeepSeek API key, or skip this and edit the screen directly."); return; }
     var ctrl = new AbortController(), t0 = Date.now();
     var timer = setInterval(function () { status("Asking " + esc(S.model) + "… " + Math.round((Date.now() - t0) / 1000) + " s (reasoning models take 10-60 s)"); }, 500);
     var timeout = setTimeout(function () { ctrl.abort(); }, 150000);
@@ -317,7 +465,7 @@
     };
     attempt(0).then(function (r) {
       setSpec(r.spec);
-      status("Proposed by the model" + (r.rounds ? " after one correction round" : "") + " and accepted by the validator. Review it below, then press <strong>Validate and run</strong>." +
+      status("Proposed by the model" + (r.rounds ? " after one correction round" : "") + " and accepted by the checks. Review it below, then press <strong>Check and run</strong>." +
         (r.spec.unmapped.length ? " Not screened: " + r.spec.unmapped.map(function (u) { return "“" + esc(u.text) + "”"; }).join(", ") + "." : ""));
       byId("t-form").scrollIntoView({ behavior: "smooth", block: "start" });
     }).catch(function (e) {
@@ -331,9 +479,12 @@
     }).then(function () { clearInterval(timer); clearTimeout(timeout); btn.disabled = false; });
   }
 
-  if (panel) {
-    panel.addEventListener("toggle", function () { if (panel.open) ensureLoaded(); });
-    if (location.hash === "#try") { panel.open = true; ensureLoaded(); }
-    window.addEventListener("hashchange", function () { if (location.hash === "#try") { panel.open = true; ensureLoaded(); } });
-  }
+  // ---------- boot ----------
+  renderAsk();
+  renderChips();
+  checkApi();
+  if (adv) adv.addEventListener("toggle", function () { if (adv.open) ensureLoaded(); });
+  var q = new URLSearchParams(location.search);
+  if (q.get("example")) runChip(q.get("example"));
+  if (location.hash === "#advanced") { adv.open = true; ensureLoaded(); }
 })();

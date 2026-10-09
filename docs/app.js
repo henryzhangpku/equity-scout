@@ -9,11 +9,10 @@
     h.push('<div class="meta">As of <strong>' + esc(r.as_of) + "</strong> (prices to " + esc(r.data.last_price_date) +
       ", FINRA short interest settlement " + esc(r.data.short_interest_settlement || "n/a") + "). Universe: " +
       esc(r.data.universe_rule) + ". " + esc(r.data.n_companies) + " companies.</div></div>");
-    h.push('<div class="panel">' + U.specHtml(r.spec, "2 · Screen spec — proposed by " + r.llm.provider + " / " + r.llm.model +
-      ", validated by code" + (r.attempts > 1 ? " after " + (r.attempts - 1) + " correction round" : "")) + "</div>");
-    h.push('<div class="panel">' + U.funnelHtml(r.funnel, "3 · Funnel (computed by code)") + "</div>");
-    h.push('<div class="panel">' + U.tableHtml(r.columns, r.ranked, r.top_n, r.n_ranked, "4 · Ranked survivors") + "</div>");
-    h.push('<div class="panel"><div class="step">5 · Why the dislocation might exist — top ' + r.explanations.length +
+    h.push('<div class="panel">' + U.specHtml(r.spec, "2 · The screen — proposed by " + r.llm.model + ", checked by code" + (r.attempts > 1 ? " after " + (r.attempts - 1) + " correction round" : "")) + "</div>");
+    h.push('<div class="panel">' + U.funnelHtml(r.funnel, "3 · How the list narrowed (computed by code)", r.spec) + "</div>");
+    h.push('<div class="panel">' + U.tableHtml(r.columns, r.ranked, r.top_n, r.n_ranked, "4 · Ranked results") + "</div>");
+    h.push('<div class="panel"><div class="step">5 · Why the price and the business may disagree — top ' + r.explanations.length +
       '</div><p class="muted" style="margin-top:0">Each quote was checked by code to appear verbatim in its linked source; claims that failed were removed and are listed under each card. No earnings-call transcripts were used (licensed content).</p><div class="cards">');
     r.explanations.forEach(function (ex) { h.push(U.cardHtml(ex)); });
     h.push("</div></div>");
