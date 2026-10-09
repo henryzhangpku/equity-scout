@@ -196,6 +196,113 @@
     return h.join("");
   }
 
+  // ---------- backtest ----------
+  function pct(v, d) { return v === null || v === undefined || !isFinite(v) ? "n/a" : (v >= 0 ? "+" : "") + (v * 100).toFixed(d === undefined ? 1 : d) + "%"; }
+  function chartSvg(curve) {
+    var W = 760, H = 260, L = 48, R = 12, T = 14, Bm = 28;
+    var keys = [["universe", "u"], ["spy", "s"], ["strategy", "x"]];
+    var ys = [1];
+    curve.forEach(function (c) { keys.forEach(function (k) { ys.push(c[k[0]]); }); });
+    var lo = Math.min.apply(null, ys), hi = Math.max.apply(null, ys);
+    var pad = (hi - lo) * 0.08 || 0.05; lo -= pad; hi += pad;
+    var n = curve.length;
+    function X(i) { return L + (W - L - R) * (i / n); }
+    function Y(v) { return T + (H - T - Bm) * (1 - (v - lo) / (hi - lo)); }
+    var h = ['<svg class="btchart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Growth of $1: screen vs benchmarks">'];
+    var steps = [0.05, 0.1, 0.25, 0.5, 1, 2, 5, 10, 25], step = steps[steps.length - 1];
+    for (var si = 0; si < steps.length; si++) { if ((hi - lo) / steps[si] <= 6) { step = steps[si]; break; } }
+    for (var g = Math.ceil(lo / step) * step; g <= hi; g += step) {
+      h.push('<line x1="' + L + '" x2="' + (W - R) + '" y1="' + Y(g) + '" y2="' + Y(g) + '" class="grid"/>' +
+        '<text x="' + (L - 6) + '" y="' + (Y(g) + 4) + '" class="ax" text-anchor="end">$' + g.toFixed(2) + "</text>");
+    }
+    h.push('<line x1="' + L + '" x2="' + (W - R) + '" y1="' + Y(1) + '" y2="' + Y(1) + '" class="base"/>');
+    keys.forEach(function (k) {
+      var pts = [X(0) + "," + Y(1)].concat(curve.map(function (c, i) { return X(i + 1) + "," + Y(c[k[0]]); }));
+      h.push('<polyline class="ln ' + k[1] + '" points="' + pts.join(" ") + '"/>');
+    });
+    var first = curve.length ? curve[0].date : "", last = curve.length ? curve[curve.length - 1].date : "";
+    h.push('<text x="' + L + '" y="' + (H - 8) + '" class="ax">' + esc(first.slice(0, 7)) + '</text><text x="' + (W - R) + '" y="' + (H - 8) +
+      '" class="ax" text-anchor="end">' + esc(last.slice(0, 7)) + "</text></svg>");
+    return h.join("");
+  }
+  function backtestHtml(r) {
+    var h = [], st = r.stats, P = r.params;
+    var cls = r.verdict === "Edge on this history" ? "ok" : r.verdict === "No edge" ? "bad" : "thin";
+    h.push('<div class="btverdict ' + cls + '"><div class="step" style="margin:0 0 4px">Backtest verdict</div><div class="vtext">' + esc(r.verdict) +
+      '</div><p class="meta" style="margin:6px 0 0">Monthly rebalance, top ' + P.top_n + " names equal weight, " + P.cost_bps_per_side +
+      " bps cost per side, " + esc(P.first) + " to " + esc(P.last) + " (" + P.n_months + " months). This is evidence on a short history, not proof.</p>" +
+      r.caveats.filter(function (c) { return c.indexOf("Look-ahead") === 0; }).map(function (c) { return '<p class="err" style="margin:8px 0 0;font-size:14px">' + esc(c) + "</p>"; }).join("") + "</div>");
+    h.push('<div class="btgrid"><div><div class="step">Growth of $1</div>' + chartSvg(r.curve) +
+      '<div class="legend"><span><i class="sw x"></i>This screen (after costs)</span><span><i class="sw u"></i>Equal-weight universe (no conditions)</span><span><i class="sw s"></i>SPY</span></div></div>');
+    h.push('<div><div class="step">Gates (all must pass)</div><ul class="gates">');
+    r.gates.forEach(function (g) {
+      var val = g.id === "floor" ? g.value + " months" : pct(g.value, 2) + " / month";
+      h.push('<li class="' + (g.pass ? "pass" : "fail") + '"><span class="gmark">' + (g.pass ? "\u2713" : "\u2715") + "</span><span>" + esc(g.label) +
+        ' <span class="muted">(' + esc(val) + ")</span></span></li>");
+    });
+    h.push("</ul></div></div>");
+    var rows = [["This screen", st.strategy], ["Equal-weight universe", st.universe], ["SPY", st.spy]];
+    h.push('<div class="tablewrap" style="margin-top:16px"><table><thead><tr><th class="l">Series</th><th>Total</th><th>CAGR</th><th>Volatility</th><th>Sharpe</th><th>Max drawdown</th></tr></thead><tbody>');
+    rows.forEach(function (x) {
+      var s = x[1];
+      h.push('<tr><td class="l">' + x[0] + "</td><td>" + pct(s.total) + "</td><td>" + pct(s.cagr) + "</td><td>" + pct(s.vol) + "</td><td>" +
+        (s.sharpe === null ? "n/a" : s.sharpe.toFixed(2)) + "</td><td>" + pct(s.max_drawdown) + "</td></tr>");
+    });
+    h.push("</tbody></table></div>");
+    h.push('<p class="meta">Beat SPY in ' + pct(st.hit_rate_vs_spy, 0).replace("+", "") + " of months held \u00b7 average " + st.avg_names.toFixed(1) +
+      " names \u00b7 average turnover " + pct(st.avg_turnover, 0).replace("+", "") + " per rebalance \u00b7 " + st.months_too_few +
+      " months with fewer than " + P.min_names + " names (held cash) \u00b7 " + st.names_stopped + " exits at a last close (name stopped trading)</p>");
+    h.push('<details><summary>Caveats</summary><ul class="caveats">' + r.caveats.map(function (c) { return "<li>" + esc(c) + "</li>"; }).join("") + "</ul></details>");
+    h.push('<details><summary>Month by month: names held and returns</summary><div class="tablewrap"><table><thead><tr><th class="l">From</th><th>Names</th><th>Screen (net)</th><th>SPY</th><th class="l">Held</th></tr></thead><tbody>');
+    r.months.forEach(function (m) {
+      h.push('<tr><td class="l">' + esc(m.date) + "</td><td>" + m.n + "</td><td>" + pct(m.net) + "</td><td>" + pct(m.spy) + '</td><td class="l held">' +
+        esc(m.held.join(", ")) + "</td></tr>");
+    });
+    h.push("</tbody></table></div></details>");
+    return h.join("");
+  }
+
+  // Backtest button + result. opts: {key: precomputed id or null, spec, api: base URL ("" = same origin) or null,
+  // live: function () -> bool, precomputedSrc: script URL holding window.SCOUT_BACKTESTS}
+  function mountBacktest(el, opts) {
+    el.innerHTML = '<div class="btbar"><button class="primary" type="button">Backtest this screen</button>' +
+      '<span class="meta" style="margin:0">Did this kind of idea work historically? Monthly, point-in-time, pure code.</span></div><div class="btout"></div>';
+    var btn = el.querySelector("button"), out = el.querySelector(".btout");
+    function show(r) { out.innerHTML = '<div style="margin-top:18px">' + backtestHtml(r) + "</div>"; }
+    function fromApi() {
+      if (opts.api === null || opts.api === undefined || !(opts.live ? opts.live() : true)) {
+        out.innerHTML = '<p class="meta">Backtests for new screens run on the live service, which is offline right now. The examples and recorded runs have saved backtests.</p>';
+        return;
+      }
+      var t0 = Date.now(), tick = setInterval(function () {
+        out.innerHTML = '<p class="meta"><span class="spinner"></span>Running the screen on every month-end since 2023\u2026 ' + Math.round((Date.now() - t0) / 1000) + " s</p>"; }, 400);
+      var ctrl = new AbortController(), to = setTimeout(function () { ctrl.abort(); }, 120000);
+      btn.disabled = true;
+      fetch(opts.api + "/api/backtest", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ spec: opts.spec }), signal: ctrl.signal })
+        .then(function (r) { return r.json(); })
+        .then(function (r) {
+          if (r.ok) show(r);
+          else out.innerHTML = '<p class="err">' + esc(r.refused ? "Refused: " + r.problems.join("; ") : (r.error || "The backtest failed.")) + "</p>";
+        })
+        .catch(function (e) { out.innerHTML = '<p class="err">' + (e.name === "AbortError" ? "The backtest took too long." : "The live service is unreachable.") + "</p>"; })
+        .then(function () { clearInterval(tick); clearTimeout(to); btn.disabled = false; });
+    }
+    btn.onclick = function () {
+      var table = window.SCOUT_BACKTESTS;
+      if (opts.key && table && table[opts.key]) return show(table[opts.key]);
+      if (opts.key && !table && opts.precomputedSrc) {
+        out.innerHTML = '<p class="meta"><span class="spinner"></span>Loading the saved backtest\u2026</p>';
+        var sc = document.createElement("script");
+        sc.src = opts.precomputedSrc;
+        sc.onload = function () { var t = window.SCOUT_BACKTESTS || {}; if (t[opts.key]) show(t[opts.key]); else fromApi(); };
+        sc.onerror = fromApi;
+        document.head.appendChild(sc);
+        return;
+      }
+      fromApi();
+    };
+  }
+
   function cardHtml(ex, note) {
     var h = [], ok = ex.verdict === "explained";
     h.push('<div class="card"><div class="hd"><h3>' + esc(ex.symbol) + '</h3><span class="verdict ' + (ok ? "ok" : "thin") + '">' + esc(ex.verdict) + "</span></div>");
@@ -230,6 +337,7 @@
   }
 
   window.ScoutUI = { esc: esc, fmt: fmt, cond: cond, label: label, plainCond: plainCond, plainSteps: plainSteps,
-                     tableColumns: tableColumns, specHtml: specHtml, sectorHtml: sectorHtml,
+                     tableColumns: tableColumns, specHtml: specHtml, sectorHtml: sectorHtml, backtestHtml: backtestHtml,
+                     mountBacktest: mountBacktest,
                      funnelHtml: funnelHtml, tableHtml: tableHtml, cardHtml: cardHtml };
 })();

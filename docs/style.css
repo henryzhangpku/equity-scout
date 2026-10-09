@@ -252,3 +252,28 @@ footer ul { padding-left: 18px; }
 .secn { text-align: right; font-variant-numeric: tabular-nums; }
 td.sec { color: var(--muted); font-weight: 400; max-width: 190px; overflow: hidden; text-overflow: ellipsis; }
 @media (max-width: 760px) { .secrow { grid-template-columns: minmax(0, 1fr) 70px; } .secrow .bar { grid-column: 1 / -1; order: 3; } }
+
+/* backtest */
+.btverdict { border-radius: var(--r-sm); padding: 14px 18px; margin-bottom: 18px; background: var(--bg-soft); border-left: 4px solid var(--warn); }
+.btverdict.ok { border-left-color: var(--good); }
+.btverdict.bad { border-left-color: var(--bad); }
+.btverdict .vtext { font: 700 22px/1.2 var(--font-head); color: var(--head); letter-spacing: -.01em; }
+.btgrid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.btchart { width: 100%; height: auto; display: block; }
+.btchart .grid { stroke: var(--line); stroke-width: 1; }
+.btchart .base { stroke: var(--line-strong); stroke-width: 1; stroke-dasharray: 3 3; }
+.btchart .ax { fill: var(--muted); font: 13px var(--font); }
+.btchart .ln { fill: none; stroke-width: 2.2; stroke-linejoin: round; stroke-linecap: round; }
+.btchart .ln.x { stroke: var(--accent-2); stroke-width: 2.8; }
+.btchart .ln.u { stroke: var(--muted); stroke-dasharray: 5 4; }
+.btchart .ln.s { stroke: var(--head); opacity: .65; }
+.sw.x { background: var(--accent-2); } .sw.u { background: repeating-linear-gradient(90deg, var(--muted) 0 3px, transparent 3px 5px); } .sw.s { background: var(--head); opacity: .65; }
+.gates { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; font-size: 14px; }
+.gates li { display: flex; gap: 10px; align-items: baseline; }
+.gmark { flex: none; width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700; color: #fff; }
+.gates .pass .gmark { background: var(--good); } .gates .fail .gmark { background: var(--bad); }
+.caveats { font-size: 14px; color: var(--muted); padding-left: 18px; }
+td.held { white-space: normal; min-width: 220px; color: var(--muted); }
+.btbar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+@media (max-width: 760px) { .btgrid { grid-template-columns: 1fr; } .btverdict .vtext { font-size: 19px; } }

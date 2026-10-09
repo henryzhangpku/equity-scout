@@ -26,9 +26,9 @@
   function ensureLoaded() {
     if (loading) return loading;
     showOut('<div class="panel"><p class="muted" style="margin:0">Loading the 2026-10-08 snapshot of about 3,800 companies (about 2 MB)…</p></div>');
-    loading = loadScript("data/schema.js?v=20261009a").then(function () {
+    loading = loadScript("data/schema.js?v=20261009b").then(function () {
       S = window.SCOUT_SCHEMA; ScoutCore.setSchema(S);
-      return Promise.all([loadScript(SNAP_FILE), loadScript("data/chips-ex.js?v=20261009a")]);
+      return Promise.all([loadScript(SNAP_FILE), loadScript("data/chips-ex.js?v=20261009b")]);
     }).then(function () { SNAP = window.SCOUT_SNAPSHOT; buildAdvanced(); showOut(""); })
       .catch(function (e) { showOut('<div class="panel refusal"><p class="err" style="margin:0">' + esc(e.message) + "</p></div>"); loading = null; throw e; });
     return loading;
@@ -158,7 +158,10 @@
       });
       h.push("</div></div>");
     }
+    h.push('<div class="panel" id="bt-panel"></div>');
     showOut(h.join(""));
+    U.mountBacktest(byId("bt-panel"), { key: o.btKey || null, spec: o.spec, api: API || null,
+      live: function () { return apiLive; }, precomputedSrc: "data/backtests.js?v=20261009b" });
   }
 
   // ---------- examples ----------
@@ -186,7 +189,7 @@
       var exs = {};
       ((window.SCOUT_CHIP_EX || {})[id] || []).forEach(function (ex) { exs[ex.symbol] = ex; });
       renderResults({ spec: v.spec, funnel: res.funnel, rows: res.rows, nRanked: res.n, topN: v.spec.top_n, cols: res.cols,
-        breakdown: res.breakdown,
+        breakdown: res.breakdown, btKey: c.id,
         note: "<strong>Example:</strong> “" + esc(c.observation) + "”<br>Snapshot as of " + esc(S.data.last_price_date) +
           " close, screened in your browser. Explanations were generated on " + esc(c.generated) + " (UTC) from live SEC filings and news.",
         explanations: exs });

@@ -145,6 +145,59 @@ SIC `industries` filter still works. Results show a Sector column and a survivor
 | Heavily shorted, profitable, back above the 50-day average | 3,827 → 1,633 → 28 → 6 | WOLF, KSS, CBRL, MNRO, SWKS |
 | Fast growers over $2B beating the S&P 500 | 3,827 → 1,902 → 206 → 106 → 66 | BMNR, VAL, IBRX, MU, TARS |
 
+## Backtest this screen
+
+Any screen can be backtested: an example, a recorded run, a live-translated one, or one built under Advanced. The
+model plays no part; this is pure code (`src/scout/backtest.py`).
+
+* **Point-in-time monthly panels** (`scout build-panels`, `src/scout/panels.py`): 45 month-end rebalances, from
+  2023-01-31 to 2026-09-30 (44 holding months).
+  * Each panel holds the feature set as it was knowable on that date: prices up to the date, fundamentals from facts
+    filed on or before it, short interest from the latest FINRA settlement visible then, and the liquidity rule
+    applied as of that date.
+  * Price history runs from Alpaca back to 2021-12, so the 12-month indicators exist from the first rebalance.
+  * Storage is one compressed NumPy archive, `data/panels/panels.npz`, 32.6 MB, float32, shipped in the image.
+  * The build takes about 34 minutes cold (prices about 1 minute, fundamentals about 25, FINRA the rest).
+  * Relative strength against the sector ETFs is left out to keep the file small. Screens that use it are refused
+    with a message.
+  * A check slice built on the snapshot date gives the same screens as the live snapshot (parity test).
+* **Engine.** At each rebalance it screens, ranks, and holds the top N (the spec's `top_n`) equal-weight until the
+  next month end.
+  * Returns come from adjusted closes. A name without a bar on the next date exits at its last close, and this is
+    counted.
+  * Costs are 10 bps per side on turnover.
+  * Benchmarks: SPY, and the equal-weight universe (universe filters only, no conditions).
+* **Stats:** growth of $1 for all three, CAGR, volatility, Sharpe (rf = 0), max drawdown, hit rate vs SPY,
+  average names held, turnover, months with too few names (held as cash), and exits at a last close.
+* **Gates**, all required: the monthly excess over SPY must be positive (a) on average after costs, (b) in the
+  first half and (c) the second half, (d) with the best month removed, and (e) at double costs. There must also be
+  at least 18 months holding 3 or more names. Verdict: *Edge on this history* / *No edge* / *Not enough data*,
+  always described as evidence on a short history, not proof.
+* **Caveats shown with every result:**
+  * survivorship (only today's listed companies);
+  * the short history;
+  * the point-in-time rules followed;
+  * no news and no model;
+  * today's SIC sectors applied to the past;
+  * fields that are mostly missing historically;
+  * for theme baskets, a look-ahead warning: they were picked in 2026, knowing the AI winners.
+* **Where it runs:**
+  * `POST /api/backtest {spec}` on the hosted API, rate-limited separately (20 per IP per hour, 400 per day);
+  * the local app;
+  * `scout backtest runs/<run>` from the CLI;
+  * on the static site, saved backtests for every example and recorded run (`docs/data/backtests.js`), plus live
+    backtests for new screens when the API is up.
+
+| Screen | Verdict (gates floor,a,b,c,d,e) | Screen / universe / SPY, total 2023-01 to 2026-09 |
+|---|---|---|
+| Quality consumer brands down 30%+ | No edge (✓✗✗✗✗✗) | -2% / -6% / +97% |
+| Profitable names over $2B, down 30%+ | No edge (✓✗✗✓✗✗) | +19% / +38% / +97% |
+| AI suppliers lagging the chip index | Edge on this history (all ✓), **look-ahead biased** | +844% / +903% / +97% |
+| Oversold large caps on heavy volume | No edge (✓✗✗✗✗✗) | -68% / +37% / +97% |
+| Cash-rich small caps down 40%+ | Edge on this history (all ✓) | +124% / +60% / +97% |
+| Heavily shorted, profitable, above the 50-day | No edge (✓✗✓✗✗✗) | 0% / +58% / +97% |
+| Fast growers over $2B beating the S&P 500 | No edge (✓✗✗✗✗✗) | -15% / +38% / +97% |
+
 ## Forward tracking
 
 Every live run appends its top names and entry closes to `runs/picks.jsonl`. The file is append-only and
@@ -225,6 +278,8 @@ library.
 | `SCOUT_DATA_DIR` | `./data` | where feature snapshots live (a mounted volume if refreshed in place) |
 | `SCOUT_LLM_CACHE` | `./llm_cache` | model response cache (identical requests are free) |
 | `HOST` | `0.0.0.0` when hosted | bind address override |
+| `SCOUT_BACKTEST_PER_IP_PER_HOUR` | 20 | backtests per IP per hour |
+| `SCOUT_BACKTEST_DAILY_CAP` | 400 | backtests per UTC day, whole service |
 
 Other fixed limits: observations up to 500 characters, at most 5 names explained per run, one concurrent run per IP,
 60 s to read a request, 180 s per model call, jobs kept in memory for an hour.
@@ -255,7 +310,7 @@ Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`)
 
 ## Tests
 
-`uv run pytest`: 111 tests, none skipped. The browser parity tests need Node.js on the PATH.
+`uv run pytest`: 126 tests, none skipped. The browser parity tests need Node.js on the PATH.
 
 * indicators against hand-computed values (SMA, Wilder RSI step by step, EMA/MACD, momentum, volume ratio,
   drawdown, relative strength)

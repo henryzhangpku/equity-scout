@@ -17,7 +17,9 @@
       '</div><p class="muted" style="margin-top:0">Each quote was checked by code to appear verbatim in its linked source; claims that failed were removed and are listed under each card. No earnings-call transcripts were used (licensed content).</p><div class="cards">');
     r.explanations.forEach(function (ex) { h.push(U.cardHtml(ex)); });
     h.push("</div></div>");
+    h.push('<div class="panel" id="bt-run"></div>');
     document.getElementById("run").innerHTML = h.join("");
+    U.mountBacktest(document.getElementById("bt-run"), { key: r.id, spec: r.spec, api: null, precomputedSrc: "data/backtests.js?v=20261009b" });
   }
 
   var tabs = document.getElementById("tabs");
