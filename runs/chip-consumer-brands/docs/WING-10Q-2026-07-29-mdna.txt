@@ -1,0 +1,594 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+The following discussion and analysis of the financial condition and results of operations of Wingstop Inc. (collectively with its direct and indirect subsidiaries on a consolidated basis, “Wingstop,” the “Company,” “we,” “our,” or “us”) should be read in conjunction with the accompanying unaudited consolidated financial statements and related notes in Part I, Item 1 of this Quarterly Report on Form 10-Q (this “Quarterly Report”) and with the audited consolidated financial statements and the related notes included in our Annual Report on Form 10-K for the fiscal year ended December 27, 2025 (our “Annual Report”). The statements in this discussion regarding industry outlook, our expectations regarding our future performance, liquidity and capital resources, and other non-historical statements are forward-looking statements. These forward-looking statements are subject to risks and uncertainties, including, but not limited to, the risks and uncertainties described in “Special Note Regarding Forward-Looking Statements,” below and “Risk Factors” beginning on page 11 of our Annual Report. Our actual results may differ materially from those contained in or implied by any forward-looking statements.
+
+We operate on a 52- or 53-week fiscal year ending on the last Saturday of each calendar year. Our fiscal quarters are comprised of 13 weeks, with the exception of the fourth quarter of a 53-week year, which contains 14 weeks. Fiscal years 2026 and 2025 each contain 52 weeks.
+
+Overview
+
+Wingstop is the largest fast casual chicken wings-focused restaurant chain in the world, with over 3,250 locations worldwide. We are dedicated to serving the world flavor through an unparalleled guest experience and offering of classic wings, boneless wings, tenders, and chicken sandwiches, always cooked to order and hand-sauced-and-tossed in 12 bold, distinctive flavors.
+
+The Company is primarily a franchisor, with approximately 98% of Wingstop’s restaurants currently owned and operated by independent franchisees. We believe our asset-light, highly-franchised business model generates strong operating margins and requires low capital expenditures, creating stockholder value through strong and consistent free cash flow and capital-efficient growth.
+
+Highlights for the fiscal second quarter 2026 compared to the fiscal second quarter 2025:
+
+•System-wide sales increased 5.3% to $1.4 billion;
+
+•102 net new openings in the fiscal second quarter 2026;
+
+•Domestic same store sales decreased 7.5%;
+
+•Total revenue increased 6.4% to $185.6 million;
+
+•Net income increased 16.9% to $31.3 million, or $1.15 per diluted share;
+
+•Adjusted net income and adjusted earnings per diluted share, both non-GAAP measures, increased 14.9% to $32.1 million, or $1.18 per diluted share; and
+
+•Adjusted EBITDA, a non-GAAP measure, increased 12.5% to $66.6 million.
+
+Highlights for the year-to-date second quarter of 2026 compared to the year-to-date second quarter of 2025:
+
+•System-wide sales increased 5.6% to $2.8 billion;
+
+•199 net new openings in the year-to-date second quarter of 2026;
+
+•Domestic same store sales decreased 8.1% over the prior fiscal year-to-date period;
+
+•Total revenue increased 6.9% to $369.3 million over the prior fiscal year-to-date period;
+
+•Net income decreased 48.6% to $61.2 million, or $2.23 per diluted share;
+
+•Adjusted net income and adjusted earnings per diluted share, both non-GAAP measures, increased 14.8% to $64.6 million, or $2.35 per diluted share; and
+
+•Adjusted EBITDA, a non-GAAP measure, increased 11.2% to $132.0 million.
+
+16
+
+Key Performance Indicators
+
+Key measures that we use in evaluating our restaurants and assessing our business include the following:
+
+Number of restaurants. Management reviews the number of new restaurants, the number of closed restaurants, and the number of acquisitions and divestitures of restaurants to assess net new restaurant growth.
+
+Thirteen Weeks Ended Twenty-Six Weeks Ended
+
+June 27,
+
+2026 June 28,
+
+2025 June 27,
+
+2026 June 28,
+
+2025
+
+Domestic Franchised Activity:
+
+Beginning of period 2,596 2,250 2,529 2,154
+
+Openings 76 110 143 206
+
+Closures (1) — (1) —
+
+Acquired by Company — (3) — (3)
+
+Restaurants end of period 2,671 2,357 2,671 2,357
+
+Domestic Company-Owned Activity:
+
+Beginning of period 57 51 57 50
+
+Openings — 1 — 2
+
+Closures — (1) — (1)
+
+Acquired by Company — 3 — 3
+
+Restaurants end of period 57 54 57 54
+
+Total Domestic Restaurants 2,728 2,411 2,728 2,411
+
+International Franchised Activity (1):
+
+Beginning of period 500 388 470 359
+
+Openings 30 21 63 51
+
+Closures (3) (2) (6) (3)
+
+Restaurants end of period 527 407 527 407
+
+Total System-wide Restaurants 3,255 2,818 3,255 2,818
+
+(1) Including U.S. territories.
+
+System-wide sales. System-wide sales represents net sales for all of our company-owned and franchised restaurants, as reported by franchisees. This measure allows management to better assess changes in our royalty revenue, our overall store performance, the health of our brand, and the strength of our market position relative to competitors. Our system-wide sales growth is driven by new restaurant openings as well as increases in same store sales.
+
+Domestic average unit volume (“AUV”). Domestic AUV consists of the average annual sales of all restaurants that have been open for a trailing 52-week period or longer. This measure is calculated by dividing sales during the applicable period for all restaurants being measured by the number of restaurants being measured. Domestic AUV includes revenue from both company-owned and franchised restaurants. Domestic AUV allows management to assess our domestic company-owned and franchised restaurant economics. Changes in domestic AUV are primarily driven by changes in same store sales and are also influenced by opening new restaurants.
+
+Domestic same store sales. Domestic same store sales reflects the change in year-over-year sales for the same store restaurant base. We define the same store restaurant base to include those restaurants open for at least 52 full weeks. This measure highlights the performance of existing restaurants, while excluding the impact of new restaurant openings and permanent closures. We review same store sales for domestic company-owned restaurants as well as system-wide domestic restaurants. Domestic same store sales growth is driven by increases in transactions and average transaction size. Transaction size increases are driven by price increases or favorable mix shift from either an increase in items purchased or shifts into higher priced items.
+
+17
+
+EBITDA and Adjusted EBITDA. We define EBITDA as net income before interest expense, net, income tax expense (benefit), and depreciation and amortization. We define Adjusted EBITDA as net income before interest expense, net, income tax expense (benefit), and depreciation and amortization, with further adjustments for losses on debt extinguishment and financing transactions, transaction costs, costs and fees associated with investments in our strategic initiatives, certain system implementation costs, gains and losses on non-recurring transactions, certain restructuring charges, and stock-based compensation expense. Adjusted EBITDA may not be comparable to other similarly titled captions of other companies due to differences in methods of calculation. For a reconciliation of net income to EBITDA and Adjusted EBITDA and for further discussion of EBITDA and Adjusted EBITDA as non-GAAP measures and how we utilize them, see footnote 2 below.
+
+Adjusted Net Income and Adjusted Earnings Per Diluted Share. We define Adjusted net income as net income adjusted for losses on debt extinguishment and financing transactions, transaction costs, costs and fees associated with investments in our strategic initiatives, gains and losses on non-recurring transactions, certain system implementation costs, certain restructuring charges, and related tax adjustments that management believes are not indicative of the Company’s core operating results or business outlook over the long term. We define Adjusted earnings per diluted share as Adjusted net income divided by weighted average diluted share count. For a reconciliation of net income to Adjusted net income and for further discussion of Adjusted net income and Adjusted earnings per diluted share as non-GAAP measures and how we utilize them, see footnote 3 below.
+
+The following table sets forth our key performance indicators for the thirteen and twenty-six weeks ended June 27, 2026 and June 28, 2025 (in thousands, except unit data):
+
+Thirteen Weeks Ended Twenty-Six Weeks Ended
+
+June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025
+
+Number of system-wide restaurants open at end of period 3,255 2,818 3,255 2,818
+
+System-wide sales (1)
+$ 1,411,181 $ 1,339,829 $ 2,787,849 $ 2,640,058
+
+Domestic restaurant AUV $ 1,893 $ 2,112 $ 1,893 $ 2,112
+
+Domestic same store sales growth (7.5) % (1.9) % (8.1) % (0.7) %
+
+Company-owned domestic same store sales growth (2.5) % 3.6 % (2.4) % 2.5 %
+
+Total revenue $ 185,564 $ 174,329 $ 369,289 $ 345,423
+
+Net income $ 31,288 $ 26,763 $ 61,171 $ 119,028
+
+Adjusted EBITDA (2)
+$ 66,627 $ 59,205 $ 132,030 $ 118,703
+
+Adjusted net income (3)
+$ 32,092 $ 27,929 $ 64,561 $ 56,246
+
+(1) The percentage of system-wide sales attributable to company-owned restaurants was 2.4% and 2.4% for the thirteen and twenty-six weeks ended June 27, 2026 and June 28, 2025, respectively. The remainder was generated by franchised restaurants, as reported by our franchisees.
+
+(2) EBITDA and Adjusted EBITDA are supplemental measures of our performance that are not required by, or presented in accordance with, GAAP. EBITDA and Adjusted EBITDA should not be considered as an alternative to net income or any other performance measure derived in accordance with GAAP, or as an alternative to cash flow from operating activities as a measure of our liquidity.
+
+We caution investors that amounts presented in accordance with our definitions of EBITDA and Adjusted EBITDA may not be comparable to similar measures disclosed by our competitors, because not all companies and analysts calculate EBITDA and Adjusted EBITDA in the same manner. We present EBITDA and Adjusted EBITDA because we consider them to be important supplemental measures of our performance and believe they are frequently used by securities analysts, investors, and other interested parties in the evaluation of companies in our industry. Management believes that investors’ understanding of our performance is enhanced by including these non-GAAP financial measures as a reasonable basis for comparing our ongoing results of operations. Many investors are interested in understanding the performance of our business by comparing our results from ongoing operations on a period-over-period basis and would ordinarily add back non-cash expenses such as depreciation and amortization, as well as items that are not part of normal day-to-day operations of our business.
+
+Management uses EBITDA and Adjusted EBITDA:
+
+•as a measurement of operating performance because we believe they assist us in comparing the operating performance of our restaurants on a consistent basis, as they remove the impact of items not directly resulting from our core operations;
+
+18
+
+•for planning purposes, including the preparation of our internal annual operating budget and financial projections;
+
+•to evaluate the performance and effectiveness of our operational strategies;
+
+•to evaluate our capacity to fund capital expenditures and expand our business; and
+
+•to calculate incentive compensation payments for our employees, including assessing performance under our annual incentive compensation plan.
+
+By providing these non-GAAP financial measures, together with a reconciliation to the most comparable GAAP measure, we believe we are enhancing investors’ understanding of our business and our results of operations, as well as assisting investors in evaluating how well we are executing our strategic initiatives. EBITDA and Adjusted EBITDA have limitations as analytical tools and should not be considered in isolation, or as an alternative to, or a substitute for net income or other financial statement data presented in our consolidated financial statements as indicators of financial performance. Some of the limitations are:
+
+•such measures do not reflect our cash expenditures or future requirements for capital expenditures or contractual commitments;
+
+•such measures do not reflect changes in, or cash requirements for, our working capital needs;
+
+•such measures do not reflect the interest expense or the cash requirements necessary to service interest or principal payments on our debt;
+
+•such measures do not reflect our tax expense or the cash requirements to pay our taxes;
+
+•although depreciation and amortization are non-cash charges, the assets being depreciated and amortized will often have to be replaced in the future and such measures do not reflect any cash requirements for such replacements; and
+
+•other companies in our industry may calculate such measures differently than we do, limiting their usefulness as comparative measures.
+
+Due to these limitations, EBITDA and Adjusted EBITDA should not be considered as measures of discretionary cash available to us to invest in the growth of our business. We compensate for these limitations by relying primarily on our GAAP results and using these non-GAAP measures only as performance measures and supplementally. As noted in the table below, Adjusted EBITDA includes adjustments for losses on debt extinguishment and financing transactions, transaction costs, costs and fees associated with investments in our strategic initiatives, certain system implementation costs, gains and losses on non-recurring transactions, certain restructuring charges, and stock-based compensation expense. We believe these adjustments are appropriate because the amounts recognized can vary significantly from period to period, do not directly relate to the ongoing operations of our restaurants, and complicate comparisons of our internal operating results and operating results of other restaurant companies over time. Each of the normal recurring adjustments and other adjustments described in this paragraph and in the reconciliation table below help management measure our core operating performance over time by removing items that are not related to day-to-day operations.
+
+19
+
+The following table reconciles net income to EBITDA and Adjusted EBITDA for the thirteen and twenty-six weeks ended June 27, 2026 and June 28, 2025 (in thousands):
+
+Thirteen Weeks Ended Twenty-Six Weeks Ended
+
+June 27,
+
+2026 June 28,
+
+2025 June 27,
+
+2026 June 28,
+
+2025
+
+Net income $ 31,288 $ 26,763 $ 61,171 $ 119,028
+
+Interest expense, net 9,813 8,469 19,577 17,379
+
+Income tax expense 13,363 10,002 24,052 40,927
+
+Depreciation and amortization 7,212 6,220 14,053 12,448
+
+EBITDA $ 61,676 $ 51,454 $ 118,853 $ 189,782
+
+Additional adjustments:
+
+Transaction costs (a)
+— — — 497
+
+Loss on disposal of building (b)
+— — — 6,534
+
+Gain on sale of investment (c)
+— — — (92,485)
+
+System implementation costs (d)
+514 1,534 1,060 2,846
+
+Amortization of capitalized system implementation costs (e)
+467 — 934 —
+
+Restructuring charges (f)
+77 — 2,467 —
+
+Stock-based compensation expense (g)
+3,893 6,217 8,716 11,529
+
+Adjusted EBITDA $ 66,627 $ 59,205 $ 132,030 $ 118,703
+
+(a) Represents non-recurring transaction costs that are not part of our ongoing operations and were incurred to execute the sale and subsequent reinvestment of the Company’s unconsolidated equity method investment in LPH, the Company’s United Kingdom master franchisee, during the fiscal first quarter 2025; all transaction costs are included in Selling, general and administrative on the Consolidated Statements of Comprehensive Income.
+
+(b) Represents a non-recurring loss on the sale of an office building during the fiscal first quarter 2025, which was included in Loss on disposal of assets on the Consolidated Statements of Comprehensive Income.
+
+(c) Represents a non-recurring gain related to the sale of the Company’s unconsolidated equity method investment in LPH during the fiscal first quarter 2025, which was included in Investment income, net on the Consolidated Statements of Comprehensive Income. Refer to Note 9 in the Consolidated Financial Statements for additional information.
+
+(d) System implementation costs represent non-recurring expenses incurred related to the development and implementation of new enterprise resource planning, human capital management, and global development technology, which are included in Selling, general and administrative on the Consolidated Statements of Comprehensive Income. Costs related to these initiatives are not expected to recur beyond the current period.
+
+(e) Represents amortization associated with capitalized cloud computing costs related to our system implementation, which are included in Selling, general and administrative on the Consolidated Statements of Comprehensive Income.
+
+(f) Represents certain restructuring charges related to corporate realignment announced on January 13, 2026.
+
+(g) Includes non-cash, stock-based compensation, net of forfeitures.
+
+(3) Adjusted net income and adjusted earnings per diluted share are supplemental measures of operating performance that do not represent and should not be considered alternatives to net income and earnings per share, as determined by GAAP. These measures have not been prepared in accordance with Article 11 of Regulation S-X promulgated under the Securities Act of 1933, as amended (the “Securities Act”). The Company believes the use of adjusted net income allows investors and analysts to better understand the results of the operations of the Company, by excluding certain items that have a disproportionate impact on the Company’s results for a particular period. Additionally, management believes adjusted net income and adjusted earnings per diluted share supplement GAAP measures and enable management to more effectively evaluate the Company’s performance period-over-period and relative to competitors.
+
+20
+
+The following table reconciles net income to Adjusted net income and calculates adjusted earnings per diluted share for the thirteen and twenty-six weeks ended June 27, 2026 and June 28, 2025 (in thousands):
+
+Thirteen Weeks Ended Twenty-Six Weeks Ended
+
+June 27,
+
+2026 June 28,
+
+2025 June 27,
+
+2026 June 28,
+
+2025
+
+Numerator:
+
+Net income $ 31,288 $ 26,763 $ 61,171 $ 119,028
+
+Adjustments:
+
+Transaction costs (a)
+— — — 497
+
+Loss on disposal of building (b)
+— — — 6,534
+
+Gain on sale of investment (c)
+— — — (92,485)
+
+System implementation costs (d)
+514 1,534 1,060 2,846
+
+Amortization of capitalized system implementation costs (e)
+467 — 934 —
+
+Restructuring charges (f)
+77 — 2,467 —
+
+Tax effect of adjustments (g)
+(254) (368) (1,071) 19,826
+
+Adjusted net income $ 32,092 $ 27,929 $ 64,561 $ 56,246
+
+Denominator:
+
+Weighted-average shares outstanding - diluted 27,252 27,997 27,425 28,255
+
+Adjusted earnings per diluted share $ 1.18 $ 1.00 $ 2.35 $ 1.99
+
+(a) Represents non-recurring transaction costs that are not part of our ongoing operations and were incurred to execute the sale and subsequent reinvestment of the Company’s unconsolidated equity method investment in LPH, the Company’s United Kingdom master franchisee, during the fiscal first quarter 2025; all transaction costs are included in Selling, general and administrative on the Consolidated Statements of Comprehensive Income.
+
+(b) Represents a non-recurring loss on the sale of an office building during the fiscal first quarter 2025, which was included in Loss on disposal of assets on the Consolidated Statements of Comprehensive Income.
+
+(c) Represents a non-recurring gain related to the sale of the Company’s unconsolidated equity method investment in LPH during the fiscal first quarter 2025, which was included in Investment income, net on the Consolidated Statements of Comprehensive Income. Refer to Note 9 in the Consolidated Financial Statements for additional information.
+
+(d) System implementation costs represent non-recurring expenses incurred related to the development and implementation of new enterprise resource planning, human capital management, and global development technology, which are included in Selling, general and administrative on the Consolidated Statements of Comprehensive Income. Costs related to these initiatives are not expected to recur beyond the current period.
+
+(e) Represents amortization associated with capitalized cloud computing costs related to our system implementation, which are included in Selling, general and administrative on the Consolidated Statements of Comprehensive Income.
+
+(f) Represents certain restructuring charges related to corporate realignment announced on January 13, 2026.
+
+(g) Represents the tax effect of the aforementioned adjustments to reflect corporate income taxes at an assumed effective tax rate of 24% for the thirteen and twenty-six weeks ended June 27, 2026, which includes provisions for U.S. federal income taxes, and assumes the respective statutory rates for applicable state and local jurisdictions.
+
+21
+
+Results of Operations
+
+Thirteen Weeks Ended June 27, 2026 compared to Thirteen Weeks Ended June 28, 2025
+
+The following table sets forth our results of operations for the thirteen weeks ended June 27, 2026 and June 28, 2025 (dollars in thousands):
+
+Thirteen Weeks Ended Increase / (Decrease)
+
+June 27,
+
+2026 June 28,
+
+2025 $ %
+
+Revenue:
+
+Royalty revenue, franchise fees and other $ 86,844 $ 79,889 $ 6,955 8.7 %
+
+Advertising fees 64,536 61,962 2,574 4.2 %
+
+Company-owned restaurant sales 34,184 32,478 1,706 5.3 %
+
+Total revenue 185,564 174,329 11,235 6.4 %
+
+Costs and expenses:
+
+Cost of sales (1)
+25,068 24,405 663 2.7 %
+
+Advertising expenses 68,417 65,533 2,884 4.4 %
+
+Selling, general and administrative 30,236 32,937 (2,701) (8.2) %
+
+Depreciation and amortization 7,212 6,220 992 15.9 %
+
+Total costs and expenses 130,933 129,095 1,838 1.4 %
+
+Operating income 54,631 45,234 9,397 20.8 %
+
+Interest expense, net 9,813 8,469 1,344 15.9 %
+
+Investment (income) expense 167 — 167 NM*
+
+Income before income tax expense 44,651 36,765 7,886 21.4 %
+
+Income tax expense 13,363 10,002 3,361 33.6 %
+
+Net income $ 31,288 $ 26,763 $ 4,525 16.9 %
+
+(1) Cost of sales includes all operating expenses of company-owned restaurants, including advertising expenses, but excludes depreciation and amortization, which are presented separately.
+
+*Not meaningful.
+
+Revenue
+
+During the thirteen weeks ended June 27, 2026, total revenue was $185.6 million, an increase of $11.2 million, or 6.4%, compared to $174.3 million in the comparable period in 2025.
+
+Royalty revenue, franchise fees and other increased $7.0 million, primarily driven by $11.2 million from net new franchise restaurant development and a $0.8 million increase from vendor rebates, partially offset by a $5.0 million decrease attributable to a 7.5% decline in domestic same store sales.
+
+Advertising fees increased $2.6 million due to a 5.3% increase in system-wide sales during the thirteen weeks ended June 27, 2026.
+
+Company-owned restaurant sales increased $1.7 million, driven by three additional corporate stores opened or acquired since the prior year period.
+
+22
+
+Cost of sales
+
+The table below presents the major components of cost of sales (dollars in thousands):
+
+Thirteen Weeks Ended
+
+June 27, 2026 June 28, 2025
+
+In dollars As a % of company-owned restaurant sales In dollars As a % of company-owned restaurant sales
+
+Food, beverage and packaging costs $ 12,040 35.2 % $ 11,937 36.8 %
+
+Labor costs 7,763 22.7 % 7,441 22.9 %
+
+Other restaurant operating expenses 6,180 18.1 % 5,821 17.9 %
+
+Vendor rebates (915) (2.7) % (794) (2.4) %
+
+Total cost of sales $ 25,068 73.3 % $ 24,405 75.2 %
+
+Food, beverage and packaging costs as a percentage of company-owned restaurant sales were 35.2% in the thirteen weeks ended June 27, 2026, compared to 36.8% in the comparable period in 2025. This decrease as a percentage of company-owned restaurant sales was primarily due to a 9.1% decrease in the cost of bone-in chicken wings as compared to the prior year period.
+
+Labor costs as a percentage of company-owned restaurant sales were 22.7% for the thirteen weeks ended June 27, 2026, which was comparable to 22.9% for the thirteen weeks ended June 28, 2025.
+
+Other restaurant operating expenses as a percentage of company-owned restaurant sales were 18.1% for the thirteen weeks ended June 27, 2026, which was comparable to 17.9% for the thirteen weeks ended June 28, 2025.
+
+Advertising expenses
+
+During the thirteen weeks ended June 27, 2026, advertising expenses were $68.4 million, an increase of $2.9 million compared to $65.5 million in the comparable period in 2025. Advertising expenses are recognized at the same time the related revenue is recognized, which does not necessarily correlate to the actual timing of the related advertising spend.
+
+Selling, general and administrative (“SG&A”)
+
+During the thirteen weeks ended June 27, 2026, SG&A expense was $30.2 million, a decrease of $2.7 million compared to $32.9 million in the comparable period in 2025. The decrease in SG&A expense was primarily driven by $2.3 million in reduced stock compensation expense due to forfeitures recognized in the current period. Also contributing to the decrease was a $1.6 million reduction in payroll costs which was partially offset by a $1.5 million increase in professional fees.
+
+Depreciation and amortization
+
+During the thirteen weeks ended June 27, 2026, depreciation and amortization was $7.2 million, an increase of $1.0 million compared to $6.2 million in the comparable period in 2025. The increase in depreciation and amortization was primarily due to capital expenditures placed in service during the period related to our technology investments.
+
+Interest expense, net
+
+During the thirteen weeks ended June 27, 2026, interest expense, net increased to $9.8 million from $8.5 million in the prior year period, primarily driven by a $1.0 million decline in interest income due to lower average cash balances and $0.3 million of additional interest expense.
+
+Investment (income) expense
+
+Investment income decreased by $0.2 million and was comparable to the prior year period.
+
+Income tax expense
+
+During the thirteen weeks ended June 27, 2026, we recognized income tax expense of $13.4 million, yielding an effective tax rate of 29.9%, compared to an effective tax rate of 27.2% in the prior year period. The increase in the effective tax rate was primarily due to an increase in state income taxes and other non-deductible items.
+
+23
+
+Twenty-Six Weeks Ended June 27, 2026 compared to Twenty-Six Weeks Ended June 28, 2025
+
+The following table sets forth our results of operations for the twenty-six weeks ended June 27, 2026 and June 28, 2025 (dollars in thousands):
+
+Twenty-Six Weeks Ended Increase / (Decrease)
+
+June 27,
+
+2026 June 28,
+
+2025 $ %
+
+Revenue:
+
+Royalty revenue, franchise fees and other $ 174,314 $ 158,664 $ 15,650 9.9 %
+
+Advertising fees 127,805 124,234 3,571 2.9 %
+
+Company-owned restaurant sales 67,170 62,525 4,645 7.4 %
+
+Total revenue 369,289 345,423 23,866 6.9 %
+
+Costs and expenses:
+
+Cost of sales (1)
+49,784 47,240 2,544 5.4 %
+
+Advertising expenses 135,728 131,328 4,400 3.4 %
+
+Selling, general and administrative 64,685 64,377 308 0.5 %
+
+Depreciation and amortization 14,053 12,448 1,605 12.9 %
+
+Loss on disposal of assets — 6,535 (6,535) 100.0 %
+
+Total costs and expenses 264,250 261,928 2,322 0.9 %
+
+Operating income 105,039 83,495 21,544 25.8 %
+
+Interest expense, net 19,577 17,379 2,198 12.6 %
+
+Investment (income) expense 239 (93,839) 94,078 NM*
+
+Income before income tax expense 85,223 159,955 (74,732) (46.7) %
+
+Income tax expense 24,052 40,927 (16,875) (41.2) %
+
+Net income $ 61,171 $ 119,028 $ (57,857) (48.6) %
+
+(1) Cost of sales includes all operating expenses of company-owned restaurants, including advertising expenses, and excludes depreciation and amortization, which are presented separately.
+
+*Not meaningful.
+
+Revenue
+
+During the twenty-six weeks ended June 27, 2026, total revenue was $369.3 million, an increase of $23.9 million, or 6.9%, compared to $345.4 million in the comparable period in 2025.
+
+Royalty revenue, franchise fees and other increased $15.7 million, of which $22.4 million was due to net new franchise restaurant development and a $4.1 million increase in vendor rebates, partially offset by a decrease of $10.8 million due to a decline in domestic same store sales growth of 8.1%.
+
+Advertising fees increased $3.6 million due to a 5.6% increase in system-wide sales during the twenty-six weeks ended June 27, 2026.
+
+Company-owned restaurant sales increased $4.6 million, which was largely driven by company-owned restaurants opened and acquired since the prior fiscal second quarter.
+
+24
+
+Cost of sales
+
+The table below presents the major components of cost of sales (dollars in thousands):
+
+Twenty-Six Weeks Ended
+
+June 27, 2026 June 28, 2025
+
+In dollars As a % of company-owned restaurant sales In dollars As a % of company-owned restaurant sales
+
+Food, beverage and packaging costs $ 23,835 35.5 % $ 23,178 37.1 %
+
+Labor costs 15,652 23.3 % 14,594 23.3 %
+
+Other restaurant operating expenses 12,049 17.9 % 11,012 17.6 %
+
+Vendor rebates (1,752) (2.6) % (1,544) (2.5) %
+
+Total cost of sales $ 49,784 74.1 % $ 47,240 75.5 %
+
+Food, beverage and packaging costs as a percentage of company-owned restaurant sales were 35.5% in the twenty-six weeks ended June 27, 2026, compared to 37.1% in the comparable period in 2025. The decrease as a percentage of company-owned restaurant sales was primarily due to a 10.7% decrease in the cost of bone-in chicken wings, which favorably impacted margins, as compared to the prior year period. This was partially offset by increases in other food costs during the period.
+
+Labor costs as a percentage of company-owned restaurant sales were 23.3% for the twenty-six weeks ended June 27, 2026, which was comparable to the prior year period.
+
+Other restaurant operating expenses as a percentage of company-owned restaurant sales were 17.9% for the twenty-six weeks ended June 27, 2026, compared to 17.6% in the prior year period in 2025. The increase as a percentage of company-owned restaurant sales was primarily due to increased rent charges.
+
+Advertising expenses
+
+During the twenty-six weeks ended June 27, 2026, advertising expenses were $135.7 million, an increase of $4.4 million compared to $131.3 million in the comparable period in 2025. Advertising expenses are recognized at the same time the related revenue is recognized, which does not necessarily correlate to the actual timing of the related advertising spend.
+
+Selling, general and administrative (SG&A)
+
+During the twenty-six weeks ended June 27, 2026, SG&A expense was $64.7 million, an increase of $0.3 million compared to $64.4 million in the comparable period in 2025. The increase in SG&A expense was driven by an increase in professional fees of $1.8 million and an increase of $1.5 million in IT service agreements for the twenty-six weeks ended June 27, 2026. These increased costs were slightly offset by a reduction in stock-based compensation expense of $2.8 million due to forfeitures recognized in the current period.
+
+Depreciation and amortization
+
+During the twenty-six weeks ended June 27, 2026, depreciation and amortization was $14.1 million, an increase of $1.6 million compared to $12.4 million in the comparable period in 2025. The increase in depreciation and amortization was primarily due to capital expenditures related to our technology investments.
+
+Interest expense, net
+
+During the twenty-six weeks ended June 27, 2026, interest expense, net was $19.6 million, an increase of $2.2 million compared to $17.4 million in the comparable period in 2025. The increase was primarily driven by a $1.6 million decline in interest income due to lower average cash balances and $0.6 million of additional interest expense.
+
+Investment income, net
+
+During the twenty-six weeks ended June 27, 2026, investment income, net was $0.2 million, a decrease of $94.0 million compared to $93.8 million in the comparable period in 2025. The decrease was driven almost entirely by a non-recurring gain recorded on the sale of the Company’s unconsolidated equity method investment in its United Kingdom franchisee during the fiscal first quarter 2025.
+
+25
+
+Income tax expense
+
+During the twenty-six weeks ended June 27, 2026, we recognized income tax expense of $24.1 million yielding an effective tax rate of 28.2%, compared to an effective tax rate of 25.6% in the prior year period. The increase in the effective tax rate is primarily related to the impact of nondeductible expenses for executive compensation during the twenty-six weeks ended June 27, 2026.
+
+Liquidity and Capital Resources
+
+General. Our primary sources of liquidity and capital resources are cash provided from operating activities, cash and cash equivalents on hand, and borrowings available under our securitized financing facility. Our primary requirements for liquidity and capital are working capital, general corporate needs, capital expenditures, income tax payments, debt service requirements, dividend payments. We generally utilize available cash flows from operations to invest in our business, service our debt obligations, pay dividends, and execute our share repurchase program. As of June 27, 2026, the Company had $157.4 of cash, cash equivalents, and restricted cash.
+
+Based upon current levels of operations and anticipated growth, we expect that cash flows from operations, combined with our securitized financing facility, including our Variable Funding Notes, will be sufficient to meet our capital expenditure, working capital and debt service requirements for at least the next twelve months and the foreseeable future.
+
+The following table shows summary cash flows information for the twenty-six weeks ended June 27, 2026 and June 28, 2025 (in thousands):
+
+Twenty-Six Weeks Ended
+
+June 27,
+
+2026 June 28,
+
+2025
+
+Net cash provided by (used in):
+
+Operating activities $ 68,301 $ 31,876
+
+Investing activities (35,936) 16,915
+
+Financing activities (103,378) (149,152)
+
+Net change in cash, cash equivalents, and restricted cash $ (71,013) $ (100,361)
+
+Operating activities. Our cash flows from operating activities are principally driven by sales at both franchise restaurants and company-owned restaurants, as well as franchise and development fees. We collect franchise royalties from our franchise owners on a weekly basis. Restaurant-level operating costs at our company-owned restaurants, unearned franchise and development fees, and corporate overhead costs also impact our cash flow from operating activities.
+
+Net cash provided by operating activities was $68.3 million in the twenty-six weeks ended June 27, 2026, an increase of $36.4 million from net cash provided by operating activities of $31.9 million in the twenty-six weeks ended June 28, 2025, primarily related to changes in Ad Fund cash and cash equivalents, directly related to the timing of payments for expenses incurred for national advertising, as well as changes in working capital.
+
+Investing activities. Our net cash used in investing activities was $35.9 million in the twenty-six weeks ended June 27, 2026, a change of $52.9 million from net cash provided by investing activities of $16.9 million in the twenty-six weeks ended June 28, 2025. The increase in capital expenditures primarily relates to our investments in technology and equipment. The prior year period included proceeds of $107.7 million from the sale of our non-controlling interest in LPH, partially offset by reinvestment in the newly formed entity of $75.4 million, as well as proceeds from the sale of an office building of $17.3 million in the prior year period.
+
+Financing activities. Our net cash used in financing activities was $103.4 million in the twenty-six weeks ended June 27, 2026, a decrease of $45.8 million from net cash used in financing activities of $149.2 million in the twenty-six weeks ended June 28, 2025. The decrease is primarily related to an additional $42.2 million in common stock repurchased under our share repurchase program in the prior year period compared to the current year period.
+
+26
+
+Securitized financing facility. On December 3, 2024, the Company completed a securitized financing transaction, in which Wingstop Funding LLC, a limited purpose, bankruptcy-remote, indirect wholly owned subsidiary of the Company (the “Issuer”), issued $500 million of its Series 2024-1 5.858% Fixed Rate Senior Secured Notes, Class A-2 (the “2024 Class A-2 Notes”). The Issuer also increased the capacity of its revolving financing facility of Series 2022-1 Variable Funding Senior Notes, Class A-1 (the “Variable Funding Notes”) from $200 million to $300 million. Following the increase, borrowing capacity under the Variable Funding Notes permits borrowings of up to a maximum principal amount of $300 million, a portion of which may be used to issue letters of credit. The 2024 Class A-2 Notes and the Variable Funding Notes are referred to collectively as the “2024 Notes.” The proceeds from the securitized financing transaction were used to pay related transaction fees and expenses, strengthen the Company's liquidity position and for general corporate purposes, including the repurchase of shares of the Company’s common stock.
+
+In addition to the 2024 Notes, the Company’s outstanding debt consists of its existing Series 2022-1 3.734% Fixed Rate Senior Secured Notes, Class A-2 (the “2022 Class A-2 Notes”) and Series 2020-1 2.84% Fixed Rate Senior Secured Notes, Class A-2 (the “2020 Class A-2 Notes”).
+
+During the fiscal second quarter of 2026, the Company continued to have a leverage ratio under the 2020 Class A-2 Notes, the 2022 Class A-2 Notes, and 2024 Class A-2 Notes of less than 5.0x. Per the terms of the Company’s debt agreements, principal payments can be suspended at the borrower’s election until the repayment date, as long as the Company maintains a leverage ratio of less than 5.0x. Accordingly, the Company elected to suspend payments, and the entire outstanding balance of the 2020 Class A-2 Notes, the 2022 Class A-2 Notes, and the 2024 Class A-2 Notes has been classified as long-term debt due after fiscal year 2026.
+
+Dividends. We paid a quarterly cash dividend of $0.30 per share of common stock in each of the first two quarters of 2026, resulting in aggregate declared dividends of $16.4 million during the twenty-six weeks ended June 27, 2026. On July 28, 2026 the Company’s Board of Directors declared a dividend of $0.33 per share, to be paid on September 5, 2026 to stockholders of record as of August 15, 2026, totaling approximately $9 million.
+
+We do not currently expect the restrictions in our debt instruments to impact our ability to make regular quarterly dividends pursuant to our quarterly dividend program. However, any future declarations of dividends, as well as the amount and timing of such dividends, are subject to capital availability and the discretion of our Board of Directors, which must evaluate, among other things, whether cash dividends are in the best interest of the Company and our stockholders.
+
+Share Repurchase Program. On March 5, 2026, the Company’s Board of Directors authorized the repurchase of up to an additional $300.0 million of its outstanding shares of common stock under its existing share repurchase program (the “Share Repurchase Program”). During the twenty-six weeks ended June 27, 2026, the Company repurchased and retired 374,324 shares of its common stock at an average price of $208.08 per share. As of June 27, 2026, $313.4 million remained available under the Share Repurchase Program. The authorization for the repurchase continues unti

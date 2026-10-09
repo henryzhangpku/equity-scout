@@ -1,0 +1,926 @@
+{
+ "tool": "equity-scout 0.1.0",
+ "as_of": "2026-10-08",
+ "generated_at": "2026-10-09T01:25:30+00:00",
+ "data": {
+  "as_of": "2026-10-08",
+  "last_price_date": "2026-10-08",
+  "universe_rule": "tradable US-listed (NYSE/Nasdaq/AMEX/Arca/BATS) operating companies with an SEC CIK and a 10-K/10-Q/20-F/40-F in the last 18 months; close >= $1; 50-day avg dollar volume >= $1,000,000; one listing per CIK",
+  "n_companies": 3827,
+  "short_interest_settlement": "2026-09-15",
+  "benchmark_closes": {
+   "IWM": 277.57,
+   "QQQ": 747.58,
+   "SMH": 607.27,
+   "SOXX": 563.28,
+   "SPY": 773.93,
+   "XLB": 49.27,
+   "XLC": 112.07,
+   "XLE": 65.24,
+   "XLF": 54.23,
+   "XLI": 168.4,
+   "XLK": 197.78,
+   "XLP": 83.42,
+   "XLRE": 40.85,
+   "XLU": 41.07,
+   "XLV": 168.16,
+   "XLY": 111.71
+  },
+  "files": {
+   "prices.csv.gz": {
+    "sha256": "2fb70ee43a9d30a4174c2353a1eca23798fb267cd09557d74d1af3cc6146d0e1",
+    "bytes": 50692072
+   },
+   "features.csv.gz": {
+    "sha256": "cf63f29b2cc08badaf287c158d7e85c689a249e386a9f0f9c0b85029e0510c87",
+    "bytes": 3541921
+   }
+  }
+ },
+ "llm": {
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro"
+ },
+ "observation": "Quality consumer brands down 30% from their highs that still generate strong free cash flow",
+ "spec": {
+  "version": 1,
+  "observation": "Quality consumer brands down 30% from their highs that still generate strong free cash flow",
+  "universe": {
+   "industry_groups": [
+    "Food & Beverage",
+    "Household & Personal Products",
+    "Apparel & Luxury",
+    "Restaurants",
+    "Tobacco"
+   ]
+  },
+  "conditions": [
+   {
+    "field": "drawdown_52w",
+    "op": "<=",
+    "value": -0.3,
+    "why": "down 30% from their highs"
+   },
+   {
+    "field": "fcf_margin",
+    "op": ">",
+    "value": 0.1,
+    "why": "still generate strong free cash flow"
+   }
+  ],
+  "rank": [
+   {
+    "field": "fcf_margin",
+    "direction": "desc",
+    "weight": 1
+   }
+  ],
+  "top_n": 5,
+  "unmapped": [
+   {
+    "text": "Quality consumer brands",
+    "reason": "Brand strength/quality is not directly measurable; approximated by consumer industry groups and a strong free cash flow margin."
+   }
+  ],
+  "notes": "Mapped 'consumer brands' to the listed consumer industry groups (Food & Beverage, Household & Personal Products, Apparel & Luxury, Restaurants, Tobacco). 'Down 30% from highs' is enforced as drawdown_52w <= -0.30; 'strong free cash flow' is interpreted as TTM FCF margin > 10% and ranked by that margin."
+ },
+ "translation_attempts": [
+  {
+   "response": "{\n  \"version\": 1,\n  \"observation\": \"Quality consumer brands down 30% from their highs that still generate strong free cash flow\",\n  \"universe\": {\n    \"industry_groups\": [\"Food & Beverage\", \"Household & Personal Products\", \"Apparel & Luxury\", \"Restaurants\", \"Tobacco\"]\n  },\n  \"conditions\": [\n    {\n      \"field\": \"drawdown_52w\",\n      \"op\": \"<=\",\n      \"value\": -0.30,\n      \"why\": \"down 30% from their highs\"\n    },\n    {\n      \"field\": \"fcf_margin\",\n      \"op\": \">\",\n      \"value\": 0.10,\n      \"why\": \"still generate strong free cash flow\"\n    }\n  ],\n  \"rank\": [\n    {\n      \"field\": \"fcf_margin\",\n      \"direction\": \"desc\",\n      \"weight\": 1\n    }\n  ],\n  \"top_n\": 5,\n  \"unmapped\": [\n    {\n      \"text\": \"Quality consumer brands\",\n      \"reason\": \"Brand strength/quality is not directly measurable; approximated by consumer industry groups and a strong free cash flow margin.\"\n    }\n  ],\n  \"notes\": \"Mapped 'consumer brands' to the listed consumer industry groups (Food & Beverage, Household & Personal Products, Apparel & Luxury, Restaurants, Tobacco). 'Down 30% from highs' is enforced as drawdown_52w <= -0.30; 'strong free cash flow' is interpreted as TTM FCF margin > 10% and ranked by that margin.\"\n}",
+   "problems": []
+  }
+ ],
+ "prompt_version": 2,
+ "funnel": [
+  {
+   "step": "universe (liquid US common stocks with SEC filings)",
+   "kind": "start",
+   "n_in": 3827,
+   "n_pass": 3827,
+   "n_fail": 0,
+   "n_missing": 0
+  },
+  {
+   "step": "industry group in ['Food & Beverage', 'Household & Personal Products', 'Apparel & Luxury', 'Restaurants', 'Tobacco']",
+   "kind": "universe",
+   "n_in": 3827,
+   "n_pass": 177,
+   "n_fail": 3609,
+   "n_missing": 41
+  },
+  {
+   "step": "drawdown_52w <= -30.0%",
+   "kind": "condition",
+   "n_in": 177,
+   "n_pass": 64,
+   "n_fail": 110,
+   "n_missing": 3
+  },
+  {
+   "step": "fcf_margin > +10.0%",
+   "kind": "condition",
+   "n_in": 64,
+   "n_pass": 9,
+   "n_fail": 33,
+   "n_missing": 22
+  }
+ ],
+ "ranked": [
+  {
+   "rank": 1,
+   "score": 1.0,
+   "symbol": "DECK",
+   "name": "DECKERS OUTDOOR CORP",
+   "sector": "Consumer Discretionary",
+   "industry_group": "Apparel & Luxury",
+   "sic_desc": "Rubber & Plastics Footwear",
+   "market_cap": 11262358581.12,
+   "close": 82.56,
+   "drawdown_52w": -0.3173474450140565,
+   "pct_vs_sma50": -0.0429157682409403,
+   "mom_3m": -0.2210585904330596,
+   "rsi14": 52.21884448277856,
+   "volume_ratio_50d": 1.0447217310031605,
+   "revenue_growth_yoy": 0.0785368725392956,
+   "revenue_growth_q_yoy": 0.0570148610008107,
+   "revenue_growth_accel": -0.0384939569443438,
+   "fcf_margin": 0.2022344046059469,
+   "operating_margin": 0.226678395140909,
+   "short_pct_shares_out": 0.0693256283305406,
+   "days_to_cover": 2.95,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-07-30",
+   "rank_pct_fcf_margin": 1.0,
+   "cik": 910521
+  },
+  {
+   "rank": 2,
+   "score": 0.8888888888888888,
+   "symbol": "HSY",
+   "name": "HERSHEY CO",
+   "sector": "Consumer Staples",
+   "industry_group": "Food & Beverage",
+   "sic_desc": "Sugar & Confectionery Products",
+   "market_cap": 32969557686.24,
+   "close": 162.54,
+   "drawdown_52w": -0.3013539651837524,
+   "pct_vs_sma50": -0.0678196477053358,
+   "mom_3m": -0.0567001334803551,
+   "rsi14": 38.38992143709766,
+   "volume_ratio_50d": 1.1349473567961772,
+   "revenue_growth_yoy": 0.0769126027397018,
+   "revenue_growth_q_yoy": 0.0660063532663943,
+   "revenue_growth_accel": -0.0404832655748552,
+   "fcf_margin": 0.1831776652116523,
+   "operating_margin": 0.1778071067926173,
+   "short_pct_shares_out": 0.045248336449555,
+   "days_to_cover": 6.78,
+   "prov_revenue_period_end": "2026-06-28",
+   "prov_revenue_filed": "2026-07-30",
+   "rank_pct_fcf_margin": 0.8888888888888888,
+   "cik": 47111
+  },
+  {
+   "rank": 3,
+   "score": 0.7777777777777778,
+   "symbol": "WING",
+   "name": "Wingstop Inc.",
+   "sector": "Consumer Discretionary",
+   "industry_group": "Restaurants",
+   "sic_desc": "Retail-Eating  Places",
+   "market_cap": 3228241701.0,
+   "close": 118.5,
+   "drawdown_52w": -0.5809166784552271,
+   "pct_vs_sma50": 0.0568901208868244,
+   "mom_3m": -0.2247301275760549,
+   "rsi14": 61.23739090761133,
+   "volume_ratio_50d": 0.9258111277920118,
+   "revenue_growth_yoy": 0.0761143843450165,
+   "revenue_growth_q_yoy": 0.0644471086279392,
+   "revenue_growth_accel": -0.0093778063310892,
+   "fcf_margin": 0.1782858506574684,
+   "operating_margin": 0.2786592277989064,
+   "short_pct_shares_out": 0.1819858907460411,
+   "days_to_cover": 3.74,
+   "prov_revenue_period_end": "2026-06-27",
+   "prov_revenue_filed": "2026-07-29",
+   "rank_pct_fcf_margin": 0.7777777777777778,
+   "cik": 1636222
+  },
+  {
+   "rank": 4,
+   "score": 0.6666666666666666,
+   "symbol": "COCO",
+   "name": "Vita Coco Company, Inc.",
+   "sector": "Consumer Staples",
+   "industry_group": "Food & Beverage",
+   "sic_desc": "Beverages",
+   "market_cap": 3213088650.36,
+   "close": 55.98,
+   "drawdown_52w": -0.3337300642704118,
+   "pct_vs_sma50": -0.0605585632151117,
+   "mom_3m": -0.2159663865546219,
+   "rsi14": 47.25279698898712,
+   "volume_ratio_50d": 1.942097391872056,
+   "revenue_growth_yoy": 0.261018898726332,
+   "revenue_growth_q_yoy": 0.280838355287718,
+   "revenue_growth_accel": -0.0922415936891458,
+   "fcf_margin": 0.1762561294471245,
+   "operating_margin": 0.190983799279905,
+   "short_pct_shares_out": 0.1015255967193593,
+   "days_to_cover": 3.63,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-07-23",
+   "rank_pct_fcf_margin": 0.6666666666666666,
+   "cik": 1482981
+  },
+  {
+   "rank": 5,
+   "score": 0.5555555555555556,
+   "symbol": "CELH",
+   "name": "Celsius Holdings, Inc.",
+   "sector": "Consumer Staples",
+   "industry_group": "Food & Beverage",
+   "sic_desc": "Bottled & Canned Soft Drinks & Carbonated Waters",
+   "market_cap": 6933160287.799999,
+   "close": 27.4,
+   "drawdown_52w": -0.5775516497070614,
+   "pct_vs_sma50": -0.0643418635305044,
+   "mom_3m": -0.1045751633986928,
+   "rsi14": 43.80302432215685,
+   "volume_ratio_50d": 0.5789808280229812,
+   "revenue_growth_yoy": 0.8285691997503721,
+   "revenue_growth_q_yoy": 0.1064119611665195,
+   "revenue_growth_accel": -1.2703631454309854,
+   "fcf_margin": 0.1518649127055854,
+   "operating_margin": 0.0526089875738118,
+   "short_pct_shares_out": 0.1212046606334339,
+   "days_to_cover": 4.14,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-08-06",
+   "rank_pct_fcf_margin": 0.5555555555555556,
+   "cik": 1341766
+  },
+  {
+   "rank": 6,
+   "score": 0.4444444444444444,
+   "symbol": "LULU",
+   "name": "lululemon athletica inc.",
+   "sector": "Consumer Discretionary",
+   "industry_group": "Apparel & Luxury",
+   "sic_desc": "Apparel & Other Finishd Prods of  Fabrics & Similar Matl",
+   "market_cap": 9786457851.52,
+   "close": 92.68,
+   "drawdown_52w": -0.5706874189364461,
+   "pct_vs_sma50": -0.1569295424878219,
+   "mom_3m": -0.2228743920845212,
+   "rsi14": 33.57996815556324,
+   "volume_ratio_50d": 0.8331146636251863,
+   "revenue_growth_yoy": 0.0174173122685947,
+   "revenue_growth_q_yoy": -0.0433974241442028,
+   "revenue_growth_accel": -0.0859775495101348,
+   "fcf_margin": 0.122078735671814,
+   "operating_margin": 0.178365154717141,
+   "short_pct_shares_out": 0.1304910946509266,
+   "days_to_cover": 1.33,
+   "prov_revenue_period_end": "2026-08-02",
+   "prov_revenue_filed": "2026-09-03",
+   "rank_pct_fcf_margin": 0.4444444444444444,
+   "cik": 1397187
+  },
+  {
+   "rank": 7,
+   "score": 0.3333333333333333,
+   "symbol": "SAM",
+   "name": "BOSTON BEER CO INC",
+   "sector": "Consumer Staples",
+   "industry_group": "Food & Beverage",
+   "sic_desc": "Malt Beverages",
+   "market_cap": 1777942789.9999998,
+   "close": 171.17,
+   "drawdown_52w": -0.3417804268409922,
+   "pct_vs_sma50": -0.0269798915620051,
+   "mom_3m": -0.0317891283443634,
+   "rsi14": 51.74271522239926,
+   "volume_ratio_50d": 1.2156088612940328,
+   "revenue_growth_yoy": -0.0605710795124102,
+   "revenue_growth_q_yoy": -0.0333549338463029,
+   "revenue_growth_accel": 0.0105720315422359,
+   "fcf_margin": 0.1070100122257388,
+   "operating_margin": -0.047081559285485,
+   "short_pct_shares_out": 0.1522759218253586,
+   "days_to_cover": 7.15,
+   "prov_revenue_period_end": "2026-06-27",
+   "prov_revenue_filed": "2026-07-23",
+   "rank_pct_fcf_margin": 0.3333333333333333,
+   "cik": 949870
+  },
+  {
+   "rank": 8,
+   "score": 0.2222222222222222,
+   "symbol": "MZTI",
+   "name": "MARZETTI CO",
+   "sector": "Consumer Staples",
+   "industry_group": "Food & Beverage",
+   "sic_desc": "Canned, Frozen & Preservd Fruit, Veg & Food Specialties",
+   "market_cap": 2788867290.0,
+   "close": 102.19,
+   "drawdown_52w": -0.3975001473969696,
+   "pct_vs_sma50": -0.0437700481717564,
+   "mom_3m": -0.1013103508926215,
+   "rsi14": 48.09074746207086,
+   "volume_ratio_50d": 1.3289028526155822,
+   "revenue_growth_yoy": 0.0108432043630528,
+   "revenue_growth_q_yoy": -0.0218687621864134,
+   "revenue_growth_accel": -0.0121098091988808,
+   "fcf_margin": 0.1068165318788303,
+   "operating_margin": 0.1236958000811473,
+   "short_pct_shares_out": 0.0925752812282437,
+   "days_to_cover": 5.9,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-08-25",
+   "rank_pct_fcf_margin": 0.2222222222222222,
+   "cik": 57515
+  },
+  {
+   "rank": 9,
+   "score": 0.1111111111111111,
+   "symbol": "MGPI",
+   "name": "MGP INGREDIENTS INC",
+   "sector": "Consumer Staples",
+   "industry_group": "Food & Beverage",
+   "sic_desc": "Wholesale-Beer, Wine & Distilled Alcoholic Beverages",
+   "market_cap": 294281933.49,
+   "close": 13.77,
+   "drawdown_52w": -0.4679289026275116,
+   "pct_vs_sma50": -0.1235997963340121,
+   "mom_3m": -0.1876106194690265,
+   "rsi14": 45.31774525146099,
+   "volume_ratio_50d": 1.710313947387862,
+   "revenue_growth_yoy": -0.2040063233620735,
+   "revenue_growth_q_yoy": -0.1251592644653235,
+   "revenue_growth_accel": 0.1098016859981823,
+   "fcf_margin": 0.1007677266962039,
+   "operating_margin": -0.5124618870994667,
+   "short_pct_shares_out": 0.0472366667404418,
+   "days_to_cover": 4.04,
+   "prov_revenue_period_end": "2026-03-31",
+   "prov_revenue_filed": "2026-04-29",
+   "rank_pct_fcf_margin": 0.1111111111111111,
+   "cik": 835011
+  }
+ ],
+ "top_n": 5,
+ "sector_breakdown": [
+  {
+   "sector": "Consumer Staples",
+   "n": 6
+  },
+  {
+   "sector": "Consumer Discretionary",
+   "n": 3
+  }
+ ],
+ "sector_mapping_version": "2026-10-09.1",
+ "explanations": [
+  {
+   "symbol": "DECK",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "The company's reported operating margin contracted by 190 basis points to 15.2% in the first quarter.",
+     "quote": "Income from operations as a percentage of net sales (operating margin) decreased 190 basis points to 15.2%.",
+     "doc_id": "DECK-10Q-2026-07-30-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/910521/000091052126000022/deck-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The company said the decrease in net income was due to lower operating margins on higher net sales.",
+     "quote": "The decrease in net income, compared to the prior period, was due to lower operating margins on higher net sales.",
+     "doc_id": "DECK-10Q-2026-07-30-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/910521/000091052126000022/deck-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "A news report says BMO Capital initiated coverage on Deckers with an Underperform rating and a $70 price target.",
+     "quote": "BMO Capital Initiates Coverage On Deckers Outdoor with Underperform Rating, Announces Price Target of $70",
+     "doc_id": "DECK-news-2026-09-09-61679953",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/09/61679953/bmo-capital-initiates-coverage-deckers-outdoor-underperform-rating-announces-price-target-70",
+     "source_kind": "news"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "Advertising, marketing, and promotion expenses rose approximately $10,300, driven by higher promotional marketing spend.",
+     "quote": "Increased advertising, marketing, and promotion expenses of approximately $10,300, primarily due to higher promotional marketing expenses for the HOKA brand and UGG brand to drive global brand awareness and market share gains",
+     "doc_id": "DECK-10Q-2026-07-30-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/910521/000091052126000022/deck-20260630.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "stripped": [
+    {
+     "claim": "Management does not expect mitigation strategies to fully offset the incremental tariff impact expected in fiscal 2027.",
+     "quote": "While we continue to pursue mitigation strategies, we do not expect these efforts to fully offset the incremental impact of tariffs we expect to incur during the current fiscal year, excluding the impact of any potential refunds of IEEPA tariffs.",
+     "doc_id": "DECK-10Q-2026-07-30-mdna",
+     "ok": false,
+     "reason": "claim states numbers not in its quote: ['2027']",
+     "url": "https://www.sec.gov/Archives/edgar/data/910521/000091052126000022/deck-20260630.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "documents": [
+    {
+     "doc_id": "DECK-8K-2026-07-23-ex99",
+     "kind": "earnings_release",
+     "title": "DECK 8-K earnings release (Exhibit 99.1), filed 2026-07-23",
+     "url": "https://www.sec.gov/Archives/edgar/data/910521/000091052126000015/deckex991pressrelease-6302.htm",
+     "filed": "2026-07-23",
+     "chars_total": 13586,
+     "chars_shown": 13586
+    },
+    {
+     "doc_id": "DECK-10Q-2026-07-30-mdna",
+     "kind": "mdna",
+     "title": "DECK 10-Q for period 2026-06-30, MD&A, filed 2026-07-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/910521/000091052126000022/deck-20260630.htm",
+     "filed": "2026-07-30",
+     "chars_total": 32430,
+     "chars_shown": 32430
+    },
+    {
+     "doc_id": "DECK-news-2026-09-09-61682144",
+     "kind": "news",
+     "title": "Benzinga: This Robinhood Analyst Begins Coverage On A Bullish Note; Here Are Top 5 Initiations For Wednesday (2026-09-09)",
+     "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/09/61682144/this-robinhood-analyst-begins-coverage-on-a-bullish-note-here-are-top-5-initiations-for-wednesday",
+     "filed": "2026-09-09",
+     "chars_total": 224,
+     "chars_shown": 224
+    },
+    {
+     "doc_id": "DECK-news-2026-09-09-61679953",
+     "kind": "news",
+     "title": "Benzinga: BMO Capital Initiates Coverage On Deckers Outdoor with Underperform Rating, Announces Price Target of $70 (2026-09-09)",
+     "url": "https://www.benzinga.com/news/26/09/61679953/bmo-capital-initiates-coverage-deckers-outdoor-underperform-rating-announces-price-target-70",
+     "filed": "2026-09-09",
+     "chars_total": 105,
+     "chars_shown": 105
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "HSY",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "The stock's decline despite strong free cash flow margin may reflect concern that reported sales growth is driven by price increases while unit volume is falling.",
+     "quote": "Organic, constant currency net sales increased 3.6%, driven by net price realization of approximately 12 points. Volume declined approximately 8 points primarily reflecting elasticity impacts in North America Confectionery and International, partially offset by growth in North America Salty Snacks.",
+     "doc_id": "HSY-8K-2026-07-30-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/47111/000162828026050769/exhibit991_2026xq2.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "The company's core U.S. candy, mint and gum share declined due to increased competitive innovation, which may undercut investor confidence.",
+     "quote": "Hershey’s U.S. candy, mint and gum (CMG) retail takeaway for the 12-week period ended July 19, 20263 in the multi-outlet plus convenience store channels (MULO+ w/ Convenience) increased 3.7%. For this period, Hershey’s CMG share declined compared to the prior year due to increased competitive innovation.",
+     "doc_id": "HSY-8K-2026-07-30-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/47111/000162828026050769/exhibit991_2026xq2.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Persistently higher manufacturing, logistics, and supply chain costs challenge the business and drive incremental costs, potentially limiting margin expansion.",
+     "quote": "Higher manufacturing, logistics, and supply chain costs continue to challenge the business and drive incremental costs",
+     "doc_id": "HSY-10Q-2026-07-30-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/47111/000162828026050900/hsy-20260628.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "North America Salty Snacks segment income decreased 5.9% as higher logistic costs and lower price realization more than offset higher volume, indicating profitability pressure in a growth segment.",
+     "quote": "North America Salty Snacks segment income was $62.6 million in the second quarter of 2026, a decrease of 5.9% versus the second quarter of 2025, driven by higher logistic costs, lower net price realization, increased consumer marketing investments, and unfavorable mix, which more than offset benefits from supply chain productivity and higher volume.",
+     "doc_id": "HSY-8K-2026-07-30-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/47111/000162828026050769/exhibit991_2026xq2.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "International segment loss widened by $24.9 million due to increased raw material and manufacturing costs, showing weakness in overseas markets.",
+     "quote": "International segment loss was $5.1 million in the second quarter of 2026, a decrease of $24.9 million versus the prior year period driven by increased raw material and manufacturing costs and higher advertising investment, partially offset by net price realization and supply chain productivity and transformation program savings.",
+     "doc_id": "HSY-8K-2026-07-30-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/47111/000162828026050769/exhibit991_2026xq2.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "A news report says Wells Fargo lowered its price target on Hershey to $170 while maintaining an Equal-Weight rating.",
+     "quote": "Wells Fargo Maintains Equal-Weight on Hershey, Lowers Price Target to $170",
+     "doc_id": "HSY-news-2026-10-05-62163018",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/10/62163018/wells-fargo-maintains-equal-weight-hershey-lowers-price-target-170",
+     "source_kind": "news"
+    }
+   ],
+   "stripped": [],
+   "documents": [
+    {
+     "doc_id": "HSY-8K-2026-07-30-ex99",
+     "kind": "earnings_release",
+     "title": "HSY 8-K earnings release (Exhibit 99.1), filed 2026-07-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/47111/000162828026050769/exhibit991_2026xq2.htm",
+     "filed": "2026-07-30",
+     "chars_total": 31464,
+     "chars_shown": 24000
+    },
+    {
+     "doc_id": "HSY-10Q-2026-07-30-mdna",
+     "kind": "mdna",
+     "title": "HSY 10-Q for period 2026-06-28, MD&A, filed 2026-07-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/47111/000162828026050900/hsy-20260628.htm",
+     "filed": "2026-07-30",
+     "chars_total": 3035,
+     "chars_shown": 3035
+    },
+    {
+     "doc_id": "HSY-news-2026-10-05-62163018",
+     "kind": "news",
+     "title": "Benzinga: Wells Fargo Maintains Equal-Weight on Hershey, Lowers Price Target to $170 (2026-10-05)",
+     "url": "https://www.benzinga.com/news/26/10/62163018/wells-fargo-maintains-equal-weight-hershey-lowers-price-target-170",
+     "filed": "2026-10-05",
+     "chars_total": 74,
+     "chars_shown": 74
+    },
+    {
+     "doc_id": "HSY-news-2026-10-01-62101807",
+     "kind": "news",
+     "title": "Benzinga: Top 3 Risk Off Stocks You'll Regret Missing This Month (2026-10-01)",
+     "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/10/62101807/top-3-risk-off-stocks-youll-regret-missing-this-month-2",
+     "filed": "2026-10-01",
+     "chars_total": 198,
+     "chars_shown": 198
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "WING",
+   "verdict": "not enough evidence",
+   "thesis": [
+    {
+     "claim": "A news report says TD Cowen maintained a Hold rating and lowered its price target to $120, reflecting reduced analyst expectations.",
+     "quote": "TD Cowen Maintains Hold on Wingstop, Lowers Price Target to $120",
+     "doc_id": "WING-news-2026-09-11-61734137",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/09/61734137/td-cowen-maintains-hold-wingstop-lowers-price-target-120",
+     "source_kind": "news"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "The company attributed the same-store sales decline to lower transaction volumes and continued pressure on consumer spending.",
+     "quote": "partially offset by a decrease of $5.0 million due to a 7.5% decline in domestic same store sales contributed by lower transaction volumes, reflecting continued pressure on consumer spending.",
+     "doc_id": "WING-8K-2026-07-29-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1636222/000162828026050401/a991wingearningsreleasefin.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "A news report says August dining traffic fell 2.4% nationwide, indicating a broader restaurant demand slowdown.",
+     "quote": "August dining traffic fell 2.4% nationwide, according to Placer.ai.",
+     "doc_id": "WING-news-2026-09-16-61810347",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61810347/whats-going-on-with-wingstop-stock-on-wednesday",
+     "source_kind": "news"
+    },
+    {
+     "claim": "A news report says RBC Capital lowered its price target to $150, suggesting limited upside from prior expectations.",
+     "quote": "RBC Capital Maintains Outperform on Wingstop, Lowers Price Target to $150",
+     "doc_id": "WING-news-2026-09-17-61841893",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/09/61841893/rbc-capital-maintains-outperform-wingstop-lowers-price-target-150",
+     "source_kind": "news"
+    }
+   ],
+   "stripped": [
+    {
+     "claim": "The company reported that domestic same store sales decreased 7.5% in the second quarter of 2026 versus the prior year, a sharp decline that likely contributed to the stock's weakness.",
+     "quote": "Domestic same store sales decreased 7.5% vs. Q2 2025",
+     "doc_id": "WING-8K-2026-07-29-ex99",
+     "ok": false,
+     "reason": "claim states numbers not in its quote: ['2026']",
+     "url": "https://www.sec.gov/Archives/edgar/data/1636222/000162828026050401/a991wingearningsreleasefin.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Management's 2026 guidance now projects a further decline of 4% to 6% in domestic same store sales, signaling continued expected weakness.",
+     "quote": "A decline of 4% to 6% in domestic same store sales growth;",
+     "doc_id": "WING-8K-2026-07-29-ex99",
+     "ok": false,
+     "reason": "claim states numbers not in its quote: ['2026']",
+     "url": "https://www.sec.gov/Archives/edgar/data/1636222/000162828026050401/a991wingearningsreleasefin.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "documents": [
+    {
+     "doc_id": "WING-8K-2026-07-29-ex99",
+     "kind": "earnings_release",
+     "title": "WING 8-K earnings release (Exhibit 99.1), filed 2026-07-29",
+     "url": "https://www.sec.gov/Archives/edgar/data/1636222/000162828026050401/a991wingearningsreleasefin.htm",
+     "filed": "2026-07-29",
+     "chars_total": 22184,
+     "chars_shown": 22184
+    },
+    {
+     "doc_id": "WING-10Q-2026-07-29-mdna",
+     "kind": "mdna",
+     "title": "WING 10-Q for period 2026-06-27, MD&A, filed 2026-07-29",
+     "url": "https://www.sec.gov/Archives/edgar/data/1636222/000162828026050580/wing-20260627.htm",
+     "filed": "2026-07-29",
+     "chars_total": 47115,
+     "chars_shown": 40000
+    },
+    {
+     "doc_id": "WING-news-2026-09-16-61810347",
+     "kind": "news",
+     "title": "Benzinga: What's Going On With Wingstop Stock On Wednesday? (2026-09-16)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61810347/whats-going-on-with-wingstop-stock-on-wednesday",
+     "filed": "2026-09-16",
+     "chars_total": 198,
+     "chars_shown": 198
+    },
+    {
+     "doc_id": "WING-news-2026-09-17-61841893",
+     "kind": "news",
+     "title": "Benzinga: RBC Capital Maintains Outperform on Wingstop, Lowers Price Target to $150 (2026-09-17)",
+     "url": "https://www.benzinga.com/news/26/09/61841893/rbc-capital-maintains-outperform-wingstop-lowers-price-target-150",
+     "filed": "2026-09-17",
+     "chars_total": 73,
+     "chars_shown": 73
+    },
+    {
+     "doc_id": "WING-news-2026-09-11-61734137",
+     "kind": "news",
+     "title": "Benzinga: TD Cowen Maintains Hold on Wingstop, Lowers Price Target to $120 (2026-09-11)",
+     "url": "https://www.benzinga.com/news/26/09/61734137/td-cowen-maintains-hold-wingstop-lowers-price-target-120",
+     "filed": "2026-09-11",
+     "chars_total": 64,
+     "chars_shown": 64
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "COCO",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "The screen's strong free cash flow margin may be distorted by one-time tariff refunds that boosted second-quarter earnings, causing investors to treat the print as not repeatable.",
+     "quote": "The refunds represent the recovery of tariffs paid in prior periods and provided a one-time benefit to our results during the quarter.",
+     "doc_id": "COCO-10Q-2026-07-23-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1482981/000148298126000173/coco-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The company's acquisition of Copra shortly after quarter-end involves a large cash outlay and potential future payments, which may have driven price weakness despite positive results.",
+     "quote": "The initial consideration for this transaction was $175.0 million, including $140.0 million in cash and $35.0 million paid in our Common Stock at the date of closing.",
+     "doc_id": "COCO-10Q-2026-07-23-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1482981/000148298126000173/coco-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "Management's own guidance warning about geopolitical instability and tariff changes may explain why the market is cautious despite raised full-year guidance.",
+     "quote": "Uncertainty and instability in the current operating environment, geopolitical landscape, and global economies, including the military conflict in Iran and related impacts, changes in tariff rates, natural disasters, associated potential competitive pricing actions and our own price elasticity, could affect this outlook and our future results.",
+     "doc_id": "COCO-8K-2026-07-23-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1482981/000162828026049279/coco-20260630xexx991pressr.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "The company expects current cost pressures to temporarily reduce gross margin for the rest of the year, which could compress future profitability relative to the just-reported quarter.",
+     "quote": "While we still expect to see current cost pressures temporarily reduce gross margin for the balance of year, our strong underlying performance allows us to increase our investments in sales and marketing in the second half in order to maintain our momentum into 2027.",
+     "doc_id": "COCO-8K-2026-07-23-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1482981/000162828026049279/coco-20260630xexx991pressr.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "The administration has announced its intent to impose additional tariffs under other statutory authorities, which could raise costs and pressure margins if implemented.",
+     "quote": "The administration has announced its intent to impose additional tariffs under other statutory authorities.",
+     "doc_id": "COCO-10Q-2026-07-23-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1482981/000148298126000173/coco-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The company's global supply chain is subject to geopolitical instability and volatility in costs, posing an ongoing operational risk.",
+     "quote": "Our global supply chain is subject to risks arising from geopolitical instability, including the ongoing military conflict involving Iran, as well as volatility in interest rates, foreign exchange rates, and our cost of goods including raw materials, factory costs, and transportation costs.",
+     "doc_id": "COCO-10Q-2026-07-23-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1482981/000148298126000173/coco-20260630.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "stripped": [],
+   "documents": [
+    {
+     "doc_id": "COCO-8K-2026-07-23-ex99",
+     "kind": "earnings_release",
+     "title": "COCO 8-K earnings release (Exhibit 99.1), filed 2026-07-23",
+     "url": "https://www.sec.gov/Archives/edgar/data/1482981/000162828026049279/coco-20260630xexx991pressr.htm",
+     "filed": "2026-07-23",
+     "chars_total": 23451,
+     "chars_shown": 23451
+    },
+    {
+     "doc_id": "COCO-10Q-2026-07-23-mdna",
+     "kind": "mdna",
+     "title": "COCO 10-Q for period 2026-06-30, MD&A, filed 2026-07-23",
+     "url": "https://www.sec.gov/Archives/edgar/data/1482981/000148298126000173/coco-20260630.htm",
+     "filed": "2026-07-23",
+     "chars_total": 39401,
+     "chars_shown": 39401
+    },
+    {
+     "doc_id": "COCO-news-2026-10-05-62162704",
+     "kind": "news",
+     "title": "Benzinga: Wells Fargo Maintains Overweight on The Vita Coco Co, Lowers Price Target to $65 (2026-10-05)",
+     "url": "https://www.benzinga.com/news/26/10/62162704/wells-fargo-maintains-overweight-vita-coco-co-lowers-price-target-65",
+     "filed": "2026-10-05",
+     "chars_total": 80,
+     "chars_shown": 80
+    },
+    {
+     "doc_id": "COCO-news-2026-10-01-62113639",
+     "kind": "news",
+     "title": "Benzinga: This Toll Brothers Analyst Begins Coverage On A Bullish Note; Here Are Top 5 Initiations For Thursday (2026-10-01)",
+     "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/10/62113639/this-toll-brothers-analyst-begins-coverage-on-a-bullish-note-here-are-top-5-initiations-for-thursday",
+     "filed": "2026-10-01",
+     "chars_total": 248,
+     "chars_shown": 248
+    },
+    {
+     "doc_id": "COCO-news-2026-10-01-62099476",
+     "kind": "news",
+     "title": "Benzinga: Oppenheimer Initiates Coverage On The Vita Coco Co with Outperform Rating, Announces Price Target of $70 (2026-10-01)",
+     "url": "https://www.benzinga.com/news/26/10/62099476/oppenheimer-initiates-coverage-vita-coco-co-outperform-rating-announces-price-target-70",
+     "filed": "2026-10-01",
+     "chars_total": 104,
+     "chars_shown": 104
+    },
+    {
+     "doc_id": "COCO-news-2026-09-10-61719059",
+     "kind": "news",
+     "title": "Benzinga: Piper Sandler Maintains Overweight on The Vita Coco Co, Lowers Price Target to $83 (2026-09-10)",
+     "url": "https://www.benzinga.com/news/26/09/61719059/piper-sandler-maintains-overweight-vita-coco-co-lowers-price-target-83",
+     "filed": "2026-09-10",
+     "chars_total": 82,
+     "chars_shown": 82
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "CELH",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "The flagship Celsius brand's revenue fell by approximately 11.7% year over year in the second quarter of 2026, indicating core-brand weakness that can explain the price decline despite positive free cash flow.",
+     "quote": "CELSIUS brand revenue decreased by approximately 11.7% in the second quarter of 2026 compared to the same period last year",
+     "doc_id": "CELH-8K-2026-08-06-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Diluted EPS dropped to $0.14 from $0.33 in the prior-year period, showing reported profitability deteriorated sharply.",
+     "quote": "Diluted earnings per share for the second quarter of 2026 was $0.14 compared to $0.33 for the prior-year period.",
+     "doc_id": "CELH-8K-2026-08-06-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "The company attributed the decline in net income attributable to common stockholders primarily to distributor termination fees and dividends on Series B Preferred Stock that was not outstanding in the prior-year period.",
+     "quote": "The decrease in net income attributable to common stockholders for the three months ended June 30, 2026 was primarily driven by distributor termination fees related to the termination of certain former Alani Nu distributors and by dividends on our Series B Preferred Stock, which was not outstanding in the prior year period.",
+     "doc_id": "CELH-10Q-2026-08-06-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000050/celh-20260630.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "The company's gross profit margin decreased because of higher promotional and incentive activity as a percentage of revenue and channel mix.",
+     "quote": "The decrease in gross profit margin was primarily driven by higher promotional and incentive activity as a percentage of revenue and channel mix.",
+     "doc_id": "CELH-10Q-2026-08-06-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000050/celh-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The Celsius brand's U.S. retail sales decreased 2% year over year and its dollar share was approximately 9.5%, suggesting the core brand is losing share in the energy category.",
+     "quote": "CELSIUS brand retail sales decreased 2% year over year for the 13-week period ended June 28, 2026,3 and the brand held an approximate 9.5% dollar share in the U.S. RTD energy category for the period.",
+     "doc_id": "CELH-8K-2026-08-06-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "A news report says investors are weighing cautious commentary on core-brand volume pressure and margin headwinds, suggesting the market is focused on deteriorating fundamentals rather than free cash flow.",
+     "quote": "Celsius Holdings is trading lower Thursday as investors weigh cautious commentary on core-brand volume pressure and margin headwinds.",
+     "doc_id": "CELH-news-2026-09-10-61715822",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61715822/celsius-stock-edges-lower-whats-happening",
+     "source_kind": "news"
+    }
+   ],
+   "stripped": [],
+   "documents": [
+    {
+     "doc_id": "CELH-8K-2026-08-06-ex99",
+     "kind": "earnings_release",
+     "title": "CELH 8-K earnings release (Exhibit 99.1), filed 2026-08-06",
+     "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm",
+     "filed": "2026-08-06",
+     "chars_total": 29940,
+     "chars_shown": 24000
+    },
+    {
+     "doc_id": "CELH-10Q-2026-08-06-mdna",
+     "kind": "mdna",
+     "title": "CELH 10-Q for period 2026-06-30, MD&A, filed 2026-08-06",
+     "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000050/celh-20260630.htm",
+     "filed": "2026-08-06",
+     "chars_total": 35151,
+     "chars_shown": 35151
+    },
+    {
+     "doc_id": "CELH-news-2026-10-05-62157891",
+     "kind": "news",
+     "title": "Benzinga: Celsius Holdings Reports Q2 2026 Results: Full Earnings Call Transcript (2026-10-05)",
+     "url": "https://www.benzinga.com/news/26/10/62157891/celsius-holdings-reports-q2-2026-results-full-earnings-call-transcript",
+     "filed": "2026-10-05",
+     "chars_total": 289,
+     "chars_shown": 289
+    },
+    {
+     "doc_id": "CELH-news-2026-09-10-61715822",
+     "kind": "news",
+     "title": "Benzinga: Celsius Stock Edges Lower: What's Happening? (2026-09-10)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61715822/celsius-stock-edges-lower-whats-happening",
+     "filed": "2026-09-10",
+     "chars_total": 178,
+     "chars_shown": 178
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  }
+ ],
+ "limits": [
+  "Prices: Alpaca SIP daily bars, split and dividend adjusted; no intraday data used.",
+  "Fundamentals: SEC XBRL companyfacts, US-GAAP filers only. Foreign private issuers (IFRS, 20-F/40-F) and companies without standard tags drop out as 'missing', they are not guessed.",
+  "Market cap uses the latest cover-page share count; for multi-class issuers it can understate.",
+  "Industry groups are SEC SIC codes, a coarse proxy for a theme (no GICS/BICS in free data).",
+  "Short interest: FINRA consolidated short interest (twice monthly, non-commercial use); % is of shares outstanding, not float.",
+  "Earnings-call transcripts are licensed content and were not used; explanations rely on the 8-K earnings release, 10-Q/10-K MD&A, and news headlines and summaries (Alpaca / Benzinga), never full articles.",
+  "No consensus estimates, revisions, ownership or borrow-cost data: those need a licensed source."
+ ]
+}

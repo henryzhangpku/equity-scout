@@ -1,0 +1,482 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+
+You should read the following discussion and analysis of our financial condition and results of operations together with our condensed consolidated financial statements and related notes included elsewhere in this Quarterly Report on Form 10-Q, as well as our audited consolidated financial statements and related notes as disclosed in our Annual Report on Form 10-K for the fiscal year ended December 31, 2025 and filed with the Securities and Exchange Commission ("SEC") on February 18, 2026 (the “Form 10-K”). This discussion contains forward-looking statements based upon current plans, expectations and beliefs involving risks and uncertainties. Our actual results may differ materially from those anticipated in these forward-looking statements as a result of various factors, including those set forth in Part I, Item 1A, “Risk Factors” of the Form 10-K and other factors set forth in the Form 10-K and Quarterly Reports on Form 10-Q.
+
+Overview
+
+The Vita Coco Company pioneered packaged coconut water in 2004 and we have extended our business into other categories. Our mission is to deliver great tasting, natural and nutritious products that we believe are better for consumers and better for the world. We are one of the largest brands globally in the coconut and other plant waters category, and a large supplier of Private Label coconut water.
+
+Our branded portfolio is led by our Vita Coco brand, which is the leader in the coconut water category in the United States, and also includes coconut oil, juice, and milk offerings. Our portfolio also includes PWR LIFT, a protein-infused fitness drink. Additionally, we supply Private Label products to key retailers in both the coconut water and coconut oil categories and generate revenue from bulk product sales to beverage and food companies.
+
+As of June 30, 2026, we sourced our products from a diversified global network of approximately 20 factories and co-packers, supported by coconut farmers across the world. As we did not own any of these facilities, our supply chain is a fixed asset-lite model designed to better service our customers and react to changes in the market or consumer preferences.
+
+Vita Coco is available in over 35 countries, with our primary markets located in North America, the United Kingdom ("U.K."), and Germany. Our primary markets for Private Label are North America and Europe. Our products are distributed primarily through club, food, drug, mass, convenience, e-commerce and food service channels. Our products are also available in a variety of on-premise locations such as corporate offices, fitness clubs, airports, and educational institutions.
+
+Recent Developments
+
+On July 22, 2026, we completed the acquisition of Copra Inc., a super-premium Thai Nam Hom coconut water producer of private label and Copra branded products that owns and operates a factory in Thailand, which became a wholly owned subsidiary of the Company. We believe the acquisition enhances our supply chain capabilities and supports our long-term growth strategy. Additional information regarding the acquisition is included in Note 18, Subsequent Events.
+
+Key Factors Affecting Our Performance
+
+We believe that our performance and future success depend on a number of factors that present significant opportunities for us. For changes to such factors from those described in the Form 10-K under the heading “Key Factors Affecting our Performance” please see below and the risks and challenges discussed in "Risk Factors" in Part II, Item 1A. of this Form 10-Q and Part I, Item 1A of the Form 10-K.
+
+•Our global supply chain is subject to risks arising from geopolitical instability, including the ongoing military conflict involving Iran, as well as volatility in interest rates, foreign exchange rates, and our cost of goods including raw materials, factory costs, and transportation costs. The extent and duration of these conditions, and their ultimate impact on our business, results of operations, financial condition, and liquidity, cannot be determined with precision. For a further discussion of the risks and challenges posed by these events, please see "Risk Factors" in Part II, Item 1A of this Form 10-Q and Part II, Item 1A of our Form 10-K.
+
+•We source products imported into the U.S. primarily from the Philippines and Brazil, with additional sourcing from several other countries. During 2025, tariffs imposed on certain imports increased our costs. In November 2025, the U.S. government granted exemptions applicable to most of our coconut water products and waived
+
+23
+
+Table of Contents
+
+incremental tariffs on coconut water imports from Brazil, significantly reducing our tariff exposure, although certain miscellaneous tariffs remain in effect.
+
+•On February 20, 2026, the U.S. Supreme Court ruled that certain tariffs imposed under the International Emergency Economic Powers Act ("IEEPA") were unlawful. Following the ruling, U.S. Customs and Border Protection ("CBP") established a process for importers to seek refunds of previously paid tariffs. We submitted claims for eligible tariff payments made in prior periods and, during the three months ended June 30, 2026, received tariff refunds totaling approximately $15.6 million. The refunds were recognized as a reduction of cost of goods sold and favorably impacted gross profit, operating income, net income, and diluted earnings per share for the three and six months ended June 30, 2026. The refunds represent the recovery of tariffs paid in prior periods and provided a one-time benefit to our results during the quarter. The administration has announced its intent to impose additional tariffs under other statutory authorities. While tariffs announced to date have not had a material adverse impact on us, the scope, duration, and impact of future tariff policies remain uncertain and could adversely affect our business, financial condition, results of operations, and cash flows. We continue to monitor developments and may pursue pricing actions, sourcing modifications, and other cost-mitigation measures; however, there can be no assurance that such actions will fully offset the impact of future tariff changes or related economic effects.
+
+•Our sales to one of our major customers include branded and Private Label product. As discussed in our Form 10-K, the Private Label coconut oil business with this customer discontinued in early 2024 and we also experienced an impact in Private Label coconut water sales in 2025 with this customer due to the loss of some regions that we previously serviced for this customer. In early 2026, at the request of this customer, we restarted supply to one of those lost regions. We continue to service their needs, as asked and as it aligns with our long-term targets. For a further discussion of the risks and challenges posed by these events, please see "Risk Factors" in Part I, Item 1A. of the Form 10-K and Part II, Item 1A of this Form 10-Q.
+
+Components of Our Results of Operations
+
+Net Sales
+
+We generate revenue through the sale of our Vita Coco branded coconut water, Private Label, and Other products in the Americas and International segments. Our sales are predominantly made to distributors or to retailers for final sale to consumers through retail channels, which includes sales to traditional brick and mortar retailers, who may also resell our products through their own online platforms. Our revenue is recognized net of allowances for returns, discounts, credits, and any taxes collected from consumers.
+
+We provide trade promotions and sales discounts to our customers and distributors. Since these sales promotions and sales discounts do not meet the criteria for a distinct good or service, they are primarily accounted for as a reduction of revenue and include payments to customers and distributors for performing activities on our behalf, such as payments for in-store displays, payments to gain distribution of new products, payments for shelf space and discounts to promote lower retail prices. The accompanying condensed consolidated financial statements include accruals for these promotions and discounts. The accruals are made for invoices that have not yet been received as of the end of the reporting period and are recorded as a reduction of sales, and are based on contract terms and our historical experience with similar programs and require management judgment with respect to estimating customer and consumer participation and performance levels.
+
+Cost of Goods Sold
+
+Cost of goods sold includes the costs of the products sold to customers, inbound and outbound shipping and handling costs, freight, duties and tariffs, shipping and packaging supplies, and warehouse fulfillment costs.
+
+Gross Profit and Gross Margin
+
+Gross profit is net sales less cost of goods sold, and gross margin is gross profit as a percentage of net sales. Gross profit has been, and will continue to be, affected by various factors, including the mix of products we sell, the channels through which we sell our products, the promotional environment in the marketplace, manufacturing costs, commodity prices, warehouse costs, tariffs, and transportation rates. We expect that our gross margin will fluctuate from period to period depending on the interplay of these variables.
+
+Management believes gross margin provides investors with useful information related to the profitability of our business prior to considering the operating costs incurred. Management uses gross profit and gross margin as key measures in making financial, operating, and planning decisions and in evaluating our performance.
+
+24
+
+Table of Contents
+
+Operating Expenses
+
+Selling, General and Administrative Expenses
+
+Selling, general and administrative expenses ("SG&A") include marketing expenses, promotional expenses, and general and administrative expenses. Marketing and promotional expenses consist primarily of costs incurred promoting and marketing our products and are primarily driven by investments to grow our business and retain customers. General and administrative expenses include payroll, employee benefits, stock-based compensation, broker commissions and other headcount-related expenses associated with supply chain & operations, finance, information technology, human resources and other administrative-related personnel, as well as general overhead costs of the business, including research and development for new innovations, rent and related facilities and maintenance costs, depreciation and amortization, and legal, accounting, and professional fees.
+
+Other Income (Expense), Net
+
+Unrealized Gain (Loss) on Derivative Instruments
+
+We are subject to foreign currency risks as a result of our inventory purchases and intercompany transactions. In order to mitigate the foreign currency risks, we and our subsidiaries enter into foreign currency exchange contracts which are recorded at fair value. Unrealized gain/(loss) on derivative instruments consists of gains or losses on such foreign currency exchange contracts which are unsettled as of period end. See Part I, Item 3 “Quantitative and Qualitative Disclosures about Market Risk—Foreign Currency Exchange Risk” for further information.
+
+Foreign Currency Gain (Loss)
+
+Our reporting currency is the U.S. dollar. We maintain the financial statements of each entity within the group in its local currency, which is also the entity’s functional currency. Foreign currency gain/(loss) represents the transaction gains and losses that arise from exchange rate fluctuations on transactions denominated in a currency other than the functional currency. See “—Quantitative and Qualitative Disclosures about Market Risk—Foreign Currency Exchange Risk” for further information.
+
+Interest Income
+
+Interest income consists of interest income earned on our cash and cash equivalents, and money market funds.
+
+Income Tax Expense
+
+We are subject to federal and state income taxes in the U.S. and taxes in foreign jurisdictions in which we operate. We recognize deferred tax assets and liabilities based on temporary differences between the financial reporting and income tax bases of assets and liabilities using statutory rates. We regularly assess the need to record a valuation allowance against net deferred tax assets if, based upon the available evidence, it is more likely than not that some or all of the deferred tax assets will not be realized.
+
+Operating Segments
+
+We operate in two reporting segments:
+
+•Americas—The Americas segment is comprised of our operations in the Americas region, primarily in the U.S. and Canada.
+
+•International—The International segment is comprised of our operations primarily in Europe, the Middle East, and the Asia Pacific regions, which includes our procurement arm.
+
+Each segment derives its revenues from the following product categories:
+
+•Vita Coco Coconut Water—This product category consists of all branded coconut water product offerings under the Vita Coco labels, where the majority ingredient is coconut water. For these products, control is transferred upon customer receipt, at which point we recognize the transaction price for the product as revenue.
+
+•Private Label —This product category consists of all Private Label product offerings, which includes coconut water and coconut oil. We determined the production and distribution of Private Label products represents a distinct performance obligation. Since there is no alternative use for these products and we have the right to
+
+25
+
+Table of Contents
+
+payment for performance completed to date, we recognize the revenue for these Private Label products over time as the products become available for shipment.
+
+•Other—This product category consists of all other products, which includes Vita Coco product extensions beyond coconut water, consisting of coconut milk products, including Vita Coco Treats; and PWR LIFT product offerings; Vita Coco coconut oil sold internationally; and other revenue transactions (e.g., bulk product sales). For these products, control is transferred upon customer receipt, at which point we recognize the transaction price for the product as revenue.
+
+Results of Operations
+
+Comparison of the Three and Six Months Ended June 30, 2026 and 2025
+
+The following table summarizes our results of operations for the three and six months ended June 30, 2026 and 2025, respectively:
+
+(in thousands) Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+Net sales $ 216,153 $ 168,759 $ 395,918 $ 299,680
+
+Cost of goods sold 110,842 107,494 218,794 190,330
+
+Gross profit 105,311 61,265 177,124 109,350
+
+Operating expenses
+
+Selling, general, and administrative 42,172 36,143 80,403 64,935
+
+Income from operations
+63,139 25,122 96,721 44,415
+
+Other income (expense)
+
+Unrealized (loss) gain on derivative instruments (233) 1,067 2,594 3,884
+
+Foreign currency (loss) gain
+(1,046) 482 (1,545) 1,062
+
+Interest income, net 2,483 1,500 4,021 3,018
+
+Other income, net 14 — 8 155
+
+Total other income
+1,218 3,049 5,078 8,119
+
+Income before income taxes 64,357 28,171 101,799 52,534
+
+Income tax expense 14,906 5,263 21,874 10,744
+
+Net income $ 49,451 $ 22,908 $ 79,925 $ 41,790
+
+Net Sales
+
+The following table provides a comparative summary of net sales by operating segment and product category:
+
+(in thousands) Three Months Ended June 30, Change Six Months Ended June 30, Change
+
+2026 2025 Amount Percentage 2026 2025 Amount Percentage
+
+Americas segment
+
+Vita Coco Coconut Water
+$ 137,921 $ 120,450 $ 17,471 14.5 % $ 255,954 $ 206,568 $ 49,386 23.9 %
+
+Private Label 26,901 14,685 12,216 83.2 % 51,301 35,882 15,419 43.0 %
+
+Other 7,643 6,826 817 12.0 % 13,374 12,111 1,263 10.4 %
+
+Subtotal $ 172,465 $ 141,961 $ 30,504 21.5 % $ 320,629 $ 254,561 $ 66,068 26.0 %
+
+International segment
+
+Vita Coco Coconut Water
+$ 31,763 $ 19,882 $ 11,881 59.8 % 54,283 33,059 $ 21,224 64.2 %
+
+Private Label 11,328 6,222 5,106 82.1 % 20,165 10,981 9,184 83.6 %
+
+Other 597 694 (97) (14.0) % 841 1,079 (238) (22.1) %
+
+Subtotal $ 43,688 $ 26,798 $ 16,890 63.0 % $ 75,289 $ 45,119 $ 30,170 66.9 %
+
+Total net sales $ 216,153 $ 168,759 $ 47,394 28.1 % $ 395,918 $ 299,680 $ 96,238 32.1 %
+
+26
+
+Table of Contents
+
+For the three months ended June 30, 2026, consolidated net sales increased 28.1%, primarily driven by strong Vita Coco Coconut Water volume growth across both the Americas and International segments. Vita Coco Coconut Water net sales increased 20.9%, underpinned by a case equivalents ("CE") volume increase of 15.0% driven by increased demand, particularly within the International segment, and improved net pricing. The growth was partially offset by the timing shift of a significant retailer promotion, which occurred primarily in the first quarter of 2026 compared to the second quarter of 2025. Private Label net sales increased 82.8% driven by a CE volume increase of 78.1%, while Other category net sales increased 9.6%.
+
+For the six months ended June 30, 2026, the consolidated net sales increased 32.1%, driven by Vita Coco Coconut Water, which had a 29.5% net sales increase, with a case equivalents CE volume increase of 22.1%. Private label net sales increased 52.5%, driven by CE volume growth of 50.2%. Other category net sales increased 7.8%.
+
+Volume in Case Equivalents
+
+The following table provides a comparative summary of the percentage change in our volume in CE for the three and six months ended June 30, 2026 compared to the three and six months ended June 30, 2025, by operating segment and product category:
+
+Percentage Change - Three Months Ended June 30, 2026 vs. 2025
+
+Americas
+
+International
+
+Total
+
+Vita Coco Coconut Water
+6.6 % 60.3 % 15.0 %
+
+Private Label 81.7 % 71.0 % 78.1 %
+
+Other 4.7 % (78.5) % 1.9 %
+
+Total volume (CE) 16.1 % 62.2 % 24.3 %
+
+Percentage Change - Six Months Ended June 30, 2026 vs. 2025
+
+Americas
+
+International
+
+Total
+
+Vita Coco Coconut Water 16.0 % 53.7 % 22.1 %
+
+Private Label 44.1 % 66.9 % 50.2 %
+
+Other 8.8 % (33.5) % 7.4 %
+
+Total volume (CE) 20.5 % 57.0 % 26.9 %
+
+Note: A CE is a standard volume measure used by management, which is defined as a case of 12 bottles of 330ml liquid beverages or the same liter volume of oil. We may have immaterial sales of raw materials at times that are treated as zero CEs for the purposes of these calculations.
+
+Americas Segment
+
+For the three months ended June 30, 2026, the increase in Vita Coco Coconut Water net sales was primarily driven by higher sales volume and favorable pricing, partially offset by the earlier timing of a retailer promotion in the first quarter of 2026 compared to primarily in the second quarter of 2025. For the six months ended June 30, 2026, the increase in Vita Coco Coconut Water net sales was primarily driven by the increase in CE volume driven by strong consumer demand, and by favorable pricing.
+
+For the three and six months ended June 30, 2026, the increase in Private Label net sales was primarily driven by an increase in CE volume, due to new and regained distribution and increased velocities.
+
+For the three and six months ended June 30, 2026, the increase in Other net sales was primarily driven by CE volume growth in Vita Coco Treats.
+
+International Segment
+
+For the three months ended June 30, 2026, the increase in Vita Coco Coconut Water net sales was primarily driven by strong volume growth in Europe, particularly in Germany and the U.K.. For the six months ended June 30, 2026, the
+
+27
+
+Table of Contents
+
+increase in Vita Coco Coconut Water net sales was primarily driven by strong CE volume growth in Europe, particularly in Germany and the U.K., coupled with favorable pricing.
+
+For the three and six months ended June 30, 2026, the increase in Private Label net sales was primarily driven by the 71.0% and 66.9% increase, respectively, in CE volume in Europe due to very strong demand growth, coupled with favorable pricing.
+
+Net sales from Other products decreased during both the three and six months ended June 30, 2026 compared to the prior-year periods, reflecting lower sales volumes across certain non-core product offerings.
+
+($ in thousands)
+Three Months Ended June 30, Change Six Months Ended June 30, Change
+
+2026 2025 Amount Percentage 2026 2025 Amount Percentage
+
+Cost of goods sold
+
+Americas segment $ 83,185 $ 90,915 $ (7,730) (8.5) % $ 170,415 $ 161,203 $ 9,212 5.7 %
+
+International segment 27,657 16,579 11,078 66.8 % 48,379 29,127 19,252 66.1 %
+
+Total cost of goods sold $ 110,842 $ 107,494 $ 3,348 3.1 % $ 218,794 $ 190,330 $ 28,464 15.0 %
+
+Gross profit
+
+Americas segment $ 89,281 $ 51,046 $ 38,235 74.9 % $ 150,215 $ 93,358 $ 56,857 60.9 %
+
+International segment 16,030 10,219 5,811 56.9 % 26,909 15,992 10,917 68.3 %
+
+Total gross profit $ 105,311 $ 61,265 $ 44,046 71.9 % $ 177,124 $ 109,350 $ 67,774 62.0 %
+
+Gross margin
+
+Americas segment 51.8 % 36.0 % 1,580 bps 46.9 % 36.7 % 1,020 bps
+
+International segment 36.7 % 38.1 % (140) bps 35.7 % 35.4 % 30 bps
+
+Consolidated 48.7 % 36.3 % 1,240 bps 44.7 % 36.5 % 820 bps
+
+For the three months ended June 30, 2026, the increase in cost of goods sold was primarily driven by higher CE volume and higher domestic logistics costs, partially offset by the recognition of the tariff refunds and lower ocean freight costs and lower finished goods costs. For the six months ended June 30, 2026, the increase in cost of goods sold was primarily related to increased CE volume, higher domestic logistics and finished goods costs, partially offset by the recognition of the tariff refunds and lower ocean freight costs.
+
+For the three months ended June 30, 2026, the increase in consolidated gross profit was primarily driven by the recognition of the tariff refunds, higher sales, favorable pricing, and lower ocean freight and finished goods costs, partially offset by higher domestic logistics costs. For the six months ended June 30, 2026, the increase in gross profit was primarily driven by the recognition of the tariff refunds, higher sales, favorable pricing, and lower ocean freight costs.
+
+Gross margin increased for both the three and six months ended June 30, 2026, primarily due to the recognition of the tariff refunds, favorable pricing, and lower ocean freight rates, slightly offset by higher domestic logistics costs.
+
+Operating Expenses
+
+($ in thousands)
+Three Months Ended June 30, Change Six Months Ended June 30, Change
+
+2026 2025 Amount Percentage 2026 2025 Amount Percentage
+
+Selling, general, and administrative $ 42,172 $ 36,143 $ 6,029 16.7 % 80,403 64,935 15,468 23.8 %
+
+Selling, General and Administrative Expenses
+
+For the three months ended June 30, 2026, the increase in SG&A was primarily driven by higher people‑related expenses of $4.1 million, reflecting increased incentive compensation, headcount growth, and stock-based compensation,
+
+28
+
+Table of Contents
+
+as well as a $2.0 million increase in marketing expense to support sales growth initiatives and expansion into new markets. For the six months ended June 30, 2026, the increase in SG&A was primarily driven by higher people-related costs of approximately $7.7 million, a $5.7 million increase in marketing investments and a distributor‑related expense increase of $2.1 million.
+
+Other (Expense) Income, Net
+
+($ in thousands)
+Three Months Ended June 30, Change Six Months Ended June 30, Change
+
+2026 2025 Amount Percentage 2026 2025 Amount Percentage
+
+Unrealized (loss) gain on derivative instruments $ (233) $ 1,067 $ (1,300) (121.8 %) $ 2,594 $ 3,884 $ (1,290) (33.2 %)
+
+Foreign currency (loss) gain
+(1,046) 482 (1,528) n/m (1,545) 1,062 (2,607) n/m
+
+Interest income, net 2,483 1,500 983 65.5 % 4,021 3,018 1,003 33.2 %
+
+Other income, net 14 — 14 n/m 8 155 (147) (94.8 %)
+
+$ 1,218 $ 3,049 $ (1,831) (60.1 %) $ 5,078 $ 8,119 $ (3,041) (37.5 %)
+
+Unrealized Gain (Loss) on Derivative Instruments
+
+For the three months ended June 30, 2026, the change in fair value of our outstanding forward foreign currency exchange contracts was less favorable than in the prior year period, primarily driven by unfavorable movements in the fair values of Brazilian Real and Thai Baht hedge contracts.
+
+For the six months ended June 30, 2026, gains recognized on our outstanding forward foreign currency exchange contracts were lower than in the prior year period reflecting less favorable fair value adjustments in Brazilian Real and Thai Baht hedge contracts. These impacts were partially offset by more favorable adjustments on Great British Pound, Euro, and Canadian Dollar hedge contracts.
+
+Foreign Currency (Loss) Gain
+
+Foreign currency (loss) gain represents transaction gains and losses arising from exchange rate fluctuations on transactions denominated in a currency other than the functional currency. The foreign currency loss recorded during the three months ended June 30, 2026 was primarily driven by increased losses on operational foreign currency transactions and less favorable remeasurement of foreign currency-denominated balances, partially offset by higher realized gains on foreign currency derivative contracts used to economically hedge the Company's foreign currency exposures. See "Quantitative and Qualitative Disclosures about Market Risk - Foreign Currency Exchange Risk" for further information. The foreign currency loss in the six months ended June 30, 2026 was primarily driven by increased losses on operational foreign currency transactions. This impact was partially offset by higher realized gains on foreign currency derivative contracts and favorable changes in the remeasurement of foreign currency-denominated balances.
+
+Interest Income, net
+
+The increase in interest income for both the three and six months ended June 30, 2026 was primarily attributable to approximately $0.6 million of interest received from the U.S. government related to tariff refunds and $0.4 million increase in interest earned on cash investments. Higher average invested cash balances contributed to the increase in interest earned on cash investments, partially offset by lower interest rates.
+
+Other Income, net
+
+For the three months ended June 30, 2026, the change in other income, net was immaterial. For the six months ended June 30, 2026, the change in other income, net is due to the sale of intellectual property in the prior year period.
+
+29
+
+Table of Contents
+
+Income Tax Expense
+
+($ in thousands)
+Three Months Ended June 30, Change Six Months Ended June 30, Change
+
+2026 2025 Amount Percentage 2026 2025 Amount Percentage
+
+Income tax expense 14,906 5,263 $ 9,643 183.2 % $ 21,874 $ 10,744 $ 11,130 103.6 %
+
+Tax rate 23.2 % 18.7 % 21.5 % 20.5 %
+
+Our quarterly income tax provision is based on an estimated annual effective tax rate applied to our consolidated year-to-date pre-tax income or loss. The effective income tax rate is based upon the estimated income for the year, the composition of that income in different countries, and adjustments, if any, in the applicable quarterly periods for the potential tax consequences, benefits, resolutions of tax audits or other tax contingencies.
+
+For the six months ended June 30, 2026 and 2025, our effective tax rate was 21.5% and 20.5%, respectively. The effective tax rate for the current period was higher than the U.S. federal statutory rate of 21.0%, primarily due to the geographic mix of earnings across jurisdictions with different tax rates. The increase in the effective tax rate compared to the prior-year period was primarily attributable to a lower benefit from discrete tax items, largely driven by reduced tax benefits associated with stock-based compensation awards.
+
+Non-GAAP Financial Measures
+
+EBITDA and Adjusted EBITDA are supplemental non-GAAP financial measures that are used by management and external users of our financial statements, such as industry analysts, investors and lenders. These non-GAAP measures should not be considered as alternatives to net income as a measure of financial performance or cash flows from operations as a measure of liquidity, or any other performance measure derived in accordance with GAAP and should not be construed as an inference that our future results will be unaffected by unusual or non-recurring items.
+
+These non-GAAP measures are a key metric used by management and our Board to assess our financial performance. We present these non-GAAP measures because we believe they assist investors in comparing our performance across reporting periods on a consistent basis by excluding items that we do not believe are indicative of our core operating performance and because we believe it is useful for investors to see the measures that management uses to evaluate the Company.
+
+We define EBITDA as net income before interest, taxes, depreciation, and amortization. Adjusted EBITDA is defined as EBITDA with adjustments to eliminate the impact of certain items, including certain non-cash and other items, that we do not consider representative of our ongoing operating performance.
+
+A reconciliation from net income to EBITDA and Adjusted EBITDA is set forth below:
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+(in thousands) (in thousands)
+
+Net income 49,451 22,908 79,925 41,790
+
+Depreciation and amortization 489 206 965 408
+
+Interest income, net (2,483) (1,500) (4,021) (3,018)
+
+Income tax expense 14,906 5,263 21,874 10,744
+
+EBITDA 62,363 26,877 98,743 49,924
+
+Stock-based compensation (a) 3,590 2,962 8,216 5,148
+
+Unrealized loss (gain) on derivative instruments (b) 233 (1,067) (2,594) (3,884)
+
+Foreign currency loss (gain) (b) 1,046 (482) 1,545 (1,062)
+
+Other adjustments (c) — 952 — 1,621
+
+Adjusted EBITDA $ 67,232 $ 29,242 105,910 $ 51,747
+
+____________
+
+30
+
+Table of Contents
+
+(a)Non-cash charges related to stock-based compensation, which vary from period to period depending on volume and vesting timing of awards and forfeitures. We adjusted for these charges to facilitate comparison from period to period.
+
+(b)Unrealized gains or losses on derivative instruments and foreign currency gains or losses are not considered in our evaluation of our ongoing performance.
+
+(c)The three and six months ended June 30, 2025 included $0.6 million and $1.2 million, respectively, related to a one-time incentive program established in 2023 and measured based on full-year 2025 performance, and $0.4 million and $0.7 million, respectively, of overlapping rent expense associated with our new New York City office. The six-month period was partially offset by $0.1 million of partial recoveries of prepaid inventory from a supplier (refer to the Form 10-K for further details) and a $0.2 million gain from a sale of intellectual property.
+
+Liquidity and Capital Resources
+
+Since our inception, we have financed our operations primarily through cash generated from our business operations and proceeds on borrowings through our credit facilities and term loans. We had $278.6 million and $196.9 million of cash and cash equivalents as of June 30, 2026 and December 31, 2025, respectively. From time to time, we may supplement our liquidity needs with incremental borrowing capacity under the Credit Facility.
+
+As earlier disclosed, on July 22, 2026, we completed the acquisition of Copra Inc., a super-premium Thai Nam Hom coconut water producer of private label and Copra branded products, that owns and operates a factory in Thailand. The initial consideration for this transaction was $175.0 million, including $140.0 million in cash and $35.0 million paid in our Common Stock at the date of closing. The initial purchase price is subject to customary closing adjustments, with additional earnout consideration to be paid in 2029 based on 2028 financial performance with a minimum of $45 million and maximum of $100.0 million, which will be payable in a combination of cash and our Common Stock. The closing cash consideration of $140.0 million was funded with cash on hand.
+
+Considering recent market conditions and our business assumptions, we have reevaluated our operating cash flows and cash requirements and believe that current cash, cash equivalents, future cash flows from operating activities and cash available under our Credit Facility will be sufficient to meet our anticipated cash needs, including working capital needs, capital expenditures and contractual obligations for at least 12 months from the issuance date of the condensed consolidated financial statements included herein and the foreseeable future.
+
+Our future capital requirements will depend on many factors, including our revenue growth rate, our working capital needs primarily for inventory build, our global footprint, the expansion of our marketing activities, the timing and extent of spending to support product development efforts, the introduction of new and enhanced products and the continued market consumption of our products, as well as any shareholder distribution either through equity buybacks or dividends. Our asset-lite operating model has historically provided us with a low cost, nimble, and scalable supply chain, which allows us to adapt to changes in the market or consumer preferences while also efficiently introducing new products across our platform. We may seek additional equity or debt financing in the future in order to acquire or invest in complementary businesses, products and/or new IT infrastructures. In the event that we require additional financing, we may not be able to raise such financing on terms acceptable to us or at all. If we are unable to raise additional capital or generate cash flows necessary to expand our operations and invest in continued product innovation, we may not be able to compete successfully, which would harm our business, operations and financial condition.
+
+31
+
+Table of Contents
+
+Cash Flows
+
+The following tables summarize our sources and uses of cash:
+
+Six Months Ended June 30, Change
+
+2026 2025 Amount Percentage
+
+($ in thousands)
+
+Cash flows provided by (used in):
+
+Operating activities $ 96,529 $ 12,010 $ 84,519 n/m
+
+Investing activities (612) (1,508) 896 (59.4 %)
+
+Financing activities (13,899) (9,081) (4,818) 53.1 %
+
+Effects of exchange rate changes on cash and cash equivalents (246) 961 (1,207) (125.6 %)
+
+Net increase in cash and cash equivalents $ 81,772 $ 2,382 $ 79,390 n/m
+
+Operating Activities
+
+Our main source of operating cash is payments received from our customers. Our primary use of cash in operating activities are for cost of goods sold and SG&A expenses.
+
+During the six months ended June 30, 2026, cash provided by operating activities increased $84.5 million compared to the six months ended June 30, 2025. The increase was driven by a $41.8 million rise in net income, after adjusting for non-cash items, and a $42.7 million improvement in working capital, primarily attributable to the timing of vendor invoices and inventory sales exceeding inventory purchases. Net income benefited from $15.6 million in tariff refunds and $0.6 million of related interest income.
+
+Investing Activities
+
+During the six months ended June 30, 2026, cash used in investing activities was $0.6 million compared to $1.5 million for the six months ended June 30, 2025. The decrease of cash used for investing activities was primarily due to the absence of leasehold improvements related spend on our new offices during the six months ended June 30, 2025.
+
+Financing Activities
+
+During the six months ended June 30, 2026 compared to the six months ended June 30, 2025, net cash used by financing activities increased by $4.8 million, primarily driven by higher volume and price of share repurchases in the six months ended June 30, 2026 compared to the prior year period, partially offset by increased proceeds from the exercise of stock options. See Note 10, Stockholders' Equity, in our condensed consolidated financial statements included in this Quarterly Report on Form 10-Q, for further discussion on share repurchases.
+
+Revolving Credit Facility
+
+In May 2020, we entered into the Credit Facility, which currently provides for committed borrowings of $60 million. On February 14, 2025, the Credit Facility was amended, extending the maturity five years to February 13, 2030.
+
+Starting in December 2022, borrowings on the Credit Facility bear interest at rates based on either: 1) a fluctuating rate per annum determined to be the sum of Daily Simple SOFR plus the Spread; or 2) a fixed rate per annum determined to be the sum of the Term SOFR plus the Spread. The Spread ranges from 1.00% to 1.75%, which is based on our leverage ratio (as defined in the credit agreement) for the immediately preceding fiscal quarter as defined in the credit agreement. In addition, through February 13, 2025, we were subject to an unused commitment fee ranging from 0.10% and 0.20% on the unused amount of the line of credit, with the rate based on our leverage ratio (as defined in the credit agreement). Starting February 14, 2025, the unused commitment fees ranged from 0.13% and 0.23% on the unused amount of the line of credit, with the rate being based on our leverage ratio (as defined in the credit agreement).
+
+There were no drawn amounts on the Credit Facility as of June 30, 2026 and December 31, 2025, respectively. As of June 30, 2026, we were compliant with all financial covenants.
+
+32
+
+Table of Contents
+
+For additional information, see Note 6, Debt, in our condensed consolidated financial statements included in this Quarterly Report on Form 10-Q.
+
+Critical Accounting Policies and Significant Judgments and Estimates
+
+Our consolidated financial statements are prepared in accordance with U.S. GAAP. The preparation of our consolidated financial statements and related disclosures requires us to make estimates and judgments that affect the reported amounts of assets, liabilities, costs and expenses, and the disclosure of contingent assets and liabilities in our consolidated financial statements. We base our estimates on historical experience, known trends and events and various other factors that we believe are reasonable under the circumstances, the results of which form the basis for making judgments about the carrying values of assets and liabilities that are not readily apparent from other sources. We evaluate our estimates and assumptions on an ongoing basis. Our actual results may differ from these estimates under different assumptions or conditions.
+
+Our critical accounting policies are described under the heading “Management’s Discussion and Analysis of Financial Condition and Results of Operations—Critical Accounting Policies and Significant Judgments and Estimates” in the Form 10-K and the notes to the unaudited condensed consolidated financial statements included in this Quarterly Report on Form 10-Q. During the six months ended June 30, 2026, there were no material changes to our critical accounting policies from those discussed in the Form 10-K.
+
+Contractual Obligations and Commitments
+
+There have been no material changes to our contractual obligations from those described in the Form 10-K.
+
+Recent Accounting Pronouncements
+
+A description of recently adopted and issued accounting pronouncements that may potentially impact our financial position and results of operations is disclosed in Note 2, Summary of Significant Accounting Policies, to our condensed consolidated financial statements, included in this Quarterly Report on Form 10-Q.
