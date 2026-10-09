@@ -127,8 +127,20 @@ def cmd_replay(a) -> None:
         sys.exit(1)
 
 
+def resolve_as_of(text: str) -> str:
+    """'today' -> the latest US trading session that has closed (New York time); else the date given."""
+    if text != "today":
+        return date.fromisoformat(text).isoformat()
+    import numpy as np
+    import pandas as pd
+    now = pd.Timestamp.now(tz="America/New_York")
+    d = now.date() if now.hour * 60 + now.minute >= 16 * 60 + 30 else (now - pd.Timedelta(days=1)).date()
+    return str(np.busday_offset(np.datetime64(d.isoformat()), 0, roll="backward"))
+
+
 def cmd_build(a) -> None:
     from . import snapshot
+    a.as_of = resolve_as_of(a.as_of)
     p = snapshot.build(date.fromisoformat(a.as_of))
     dst = SNAPSHOTS / a.as_of
     dst.mkdir(parents=True, exist_ok=True)
@@ -159,7 +171,7 @@ def cmd_track(a) -> None:
 
 def cmd_serve(a) -> None:
     from .serve import serve
-    serve(port=a.port, offline=a.offline, as_of=a.as_of, open_browser=not a.no_browser)
+    serve(port=a.port, host=a.host, offline=a.offline, as_of=a.as_of, open_browser=not a.no_browser)
 
 
 def cmd_site(a) -> None:
@@ -186,11 +198,12 @@ def main(argv: list[str] | None = None) -> None:
     p = sub.add_parser("replay")
     p.add_argument("run_dir")
     p = sub.add_parser("build")
-    p.add_argument("--as-of", required=True)
+    p.add_argument("--as-of", required=True, help="YYYY-MM-DD, or 'today' for the latest closed session (cron-friendly)")
     sub.add_parser("site")
     sub.add_parser("track")
     p = sub.add_parser("serve", help="local web app for live demos")
-    p.add_argument("--port", type=int, default=8765)
+    p.add_argument("--port", type=int, help="default: $PORT, else 8765")
+    p.add_argument("--host", help="default: $HOST, else 0.0.0.0 when SCOUT_HOSTED=1, else 127.0.0.1")
     p.add_argument("--offline", action="store_true", help="recorded material only: LLM cache and saved documents")
     p.add_argument("--as-of")
     p.add_argument("--no-browser", action="store_true")

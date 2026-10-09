@@ -84,6 +84,40 @@ BENCHMARK_LABELS = {
 }
 FIELDS = _fields()
 
+# Plain-English names for visitors. Raw field names stay in the spec JSON only.
+BENCH_PLAIN = {"spy": "the S&P 500 (SPY)", "qqq": "the Nasdaq-100 (QQQ)", "iwm": "the Russell 2000 (IWM)",
+               "smh": "the chip index (SMH)", "soxx": "the chip index (SOXX)", "xlk": "tech stocks (XLK)",
+               "xlf": "financials (XLF)", "xle": "energy stocks (XLE)", "xlv": "health care (XLV)",
+               "xli": "industrials (XLI)", "xlu": "utilities (XLU)", "xly": "consumer discretionary (XLY)",
+               "xlp": "consumer staples (XLP)", "xlb": "materials (XLB)", "xlre": "real estate (XLRE)",
+               "xlc": "communication services (XLC)"}
+
+
+def _labels() -> dict[str, str]:
+    lab = {
+        "market_cap": "Market cap", "ev": "Enterprise value", "close": "Price", "avg_dollar_volume_50d":
+        "Avg daily $ volume (50 days)", "sma20": "20-day average", "sma50": "50-day average", "sma200": "200-day average",
+        "pct_vs_sma20": "Price vs 20-day average", "pct_vs_sma50": "Price vs 50-day average",
+        "pct_vs_sma200": "Price vs 200-day average", "sma50_above_sma200": "50-day above 200-day average",
+        "rsi14": "RSI (14-day)", "macd": "MACD", "macd_signal": "MACD signal", "macd_hist": "MACD minus signal",
+        "volume_ratio_50d": "Volume vs 50-day average", "drawdown_52w": "From 52-week high",
+        "revenue_ttm": "Revenue, last 12 months", "revenue_growth_yoy": "Revenue growth (year over year)",
+        "revenue_growth_q_yoy": "Revenue growth, latest quarter (year over year)",
+        "revenue_growth_accel": "Revenue growth acceleration", "gross_margin": "Gross margin",
+        "operating_margin": "Operating margin", "net_margin": "Net margin", "net_income_ttm": "Net income, last 12 months",
+        "fcf_ttm": "Free cash flow, last 12 months", "fcf_margin": "Free cash flow margin",
+        "fcf_yield": "Free cash flow yield", "net_debt": "Net debt", "ev_to_sales": "EV / sales",
+        "short_pct_shares_out": "Short interest (% of shares)", "days_to_cover": "Days to cover (short interest)",
+    }
+    for m in (1, 3, 6, 12):
+        lab[f"mom_{m}m"] = f"{m}-month return"
+        for b, name in BENCH_PLAIN.items():
+            lab[f"rs_{m}m_vs_{b}"] = f"{m}-month return vs {name}"
+    return lab
+
+
+LABELS = _labels()
+
 # Industry groups are fixed sets of SEC SIC codes. SIC is coarse: it cannot, for
 # example, separate data-center REITs from other REITs. The report says so.
 INDUSTRIES: dict[str, tuple[str, set[int]]] = {

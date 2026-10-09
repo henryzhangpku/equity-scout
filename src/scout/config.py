@@ -15,9 +15,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 CACHE = Path(os.environ.get("SCOUT_CACHE", ROOT / ".cache"))
 RUNS = ROOT / "runs"
-LLM_CACHE = ROOT / "llm_cache"
+LLM_CACHE = Path(os.environ.get("SCOUT_LLM_CACHE", ROOT / "llm_cache"))
+# feature snapshots: the committed ones by default; a mounted volume in a hosted deployment
+DATA_DIR = Path(os.environ.get("SCOUT_DATA_DIR", ROOT / "data"))
 
-SEC_USER_AGENT = "equity-scout research demo heng.henry.zhang@gmail.com"
+# SEC fair-access rules require a descriptive User-Agent with a contact address
+SEC_CONTACT = os.environ.get("SCOUT_SEC_CONTACT", "heng.henry.zhang@gmail.com")
+SEC_USER_AGENT = f"equity-scout research demo {SEC_CONTACT}"
 
 
 def secret(name: str) -> str | None:

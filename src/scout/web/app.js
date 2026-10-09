@@ -117,7 +117,7 @@
     on("spec", function (d) { if (!specShown) { spec = d; $("o-spec").innerHTML = U.specHtml(d, "Recorded spec (replay)"); } });
     on("screen", function (d) {
       $("o-funnel").hidden = false; $("o-table").hidden = false;
-      $("o-funnel").innerHTML = U.funnelHtml(d.funnel, "Funnel (computed by code, snapshot as of " + d.as_of + ")");
+      $("o-funnel").innerHTML = U.funnelHtml(d.funnel, "How the list narrowed (computed by code, snapshot as of " + d.as_of + ")", spec);
       var sp = spec || { conditions: [], rank: [] };
       var cols = d.ranked.length ? U.tableColumns(sp).filter(function (c) { return c in d.ranked[0] || c === "rank"; }) : [];
       $("o-table").innerHTML = U.tableHtml(cols, d.ranked.slice(0, 25), d.top_n, d.ranked.length);

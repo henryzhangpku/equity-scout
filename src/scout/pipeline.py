@@ -13,14 +13,14 @@ import numpy as np
 import pandas as pd
 
 from . import VERSION
-from .config import ROOT, RUNS
+from .config import DATA_DIR, ROOT, RUNS
 from .data.base import Document, NoTranscripts
 from .llm import LLM
 from .narrative import explain, shown_text
 from .screen import check_funnel, describe, rank, run_screen
 from .spec import FIELDS, Spec
 
-SNAPSHOTS = ROOT / "data" / "snapshots"
+SNAPSHOTS = DATA_DIR / "snapshots"
 
 TABLE_FIELDS = ["symbol", "name", "sic_desc", "market_cap", "close", "drawdown_52w", "pct_vs_sma50",
                 "mom_3m", "rsi14", "volume_ratio_50d", "revenue_growth_yoy", "revenue_growth_q_yoy",

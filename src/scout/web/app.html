@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Equity Scout Live</title>
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
 <link rel="stylesheet" href="/static/style.css">
+<script src="/static/theme.js"></script>
 <style>
   .stages { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 0; }
   .stage { font-size: 12.5px; padding: 3px 9px; border-radius: 12px; border: 1px solid var(--line); color: var(--muted); }
-  .stage.on { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+  .stage.on { border-color: transparent; color: #fff; background: var(--grad); }
   .stage.ok { border-color: var(--good); color: var(--good); }
   .stage.bad { border-color: var(--bad); color: var(--bad); }
   .statusline { font-size: 14px; margin-top: 8px; min-height: 1.5em; }
-  .spinner { display: inline-block; width: 10px; height: 10px; border: 2px solid var(--accent); border-right-color: transparent;
-    border-radius: 50%; animation: spin .8s linear infinite; margin-right: 6px; vertical-align: -1px; }
-  @keyframes spin { to { transform: rotate(360deg); } }
   .card.pending { border-style: dashed; color: var(--muted); }
   .badge { font-size: 12px; padding: 2px 8px; border-radius: 10px; border: 1px solid var(--line); color: var(--muted); }
   .badge.live { color: var(--good); border-color: var(--good); }
@@ -23,14 +23,15 @@
 </style>
 </head>
 <body>
-<nav class="topnav"><div class="wrap navin">
-  <span class="brand"><img src="/static/favicon.svg" alt="" width="24" height="24"><span>Equity Scout</span></span>
-  <div class="navlinks"><span id="mode" class="badge">…</span></div>
+<nav class="topnav"><div class="navin">
+  <span class="brand"><img src="/static/favicon.svg" alt="" width="28" height="28"><span>Equity Scout</span></span>
+  <div class="navlinks"><span id="mode" class="badge">…</span>
+    <button id="theme-toggle" class="iconbtn" type="button" aria-label="Switch theme"></button></div>
 </div></nav>
 <main class="wrap">
-  <div class="panel" style="margin-top:18px">
+  <div class="panel" style="margin-top:28px">
     <div class="step">Observation</div>
-    <textarea id="obs" rows="3" style="font-family:inherit;font-size:16px" placeholder="e.g. Profitable mid-caps that have pulled back 20%+ from their 52-week high but still grow revenue over 10%"></textarea>
+    <textarea id="obs" class="prose" rows="3" placeholder="e.g. Profitable mid-caps that have pulled back 20%+ from their 52-week high but still grow revenue over 10%"></textarea>
     <div class="row">
       <button id="propose" class="primary">Propose a screen spec</button>
       <span class="muted">or</span>
