@@ -1,0 +1,995 @@
+Item 2. Management's Discussion and Analysis of Financial Condition and Results of Operations
+
+Recent Developments
+
+On May 12, 2023, we entered into a reclassification agreement (the “Reclassification Agreement”) with the holders (the “Class C Holders”) of our Class C Convertible Preferred Stock (the “Class C Preferred Stock”) to reclassify our equity capital structure to eliminate the Class C Preferred Stock. In accordance with the Reclassification Agreement, on June 18, 2026, one business day prior to the record date for the Company’s 2026 annual meeting, all outstanding shares of the Class C Preferred Stock automatically converted into Common Stock. A total of 19,664 shares of Class C Preferred Stock, with a par value of $1.50 per share and a conversion ratio of 61.275 shares of Common Stock per preferred share, were converted into 1,204,908 shares of Common Stock. Any fractional shares resulting from the conversion were settled in cash. See additional discussion in Note 10 of our consolidated financial statements.
+
+On May 21, 2026, we entered into an amendment (the “Sixth Amendment”) to our Credit Facility, which, among other things, amends the terms of certain of the financial and restrictive covenants in the Credit Facility to provide us with additional flexibility to operate our business. See additional discussion related to the Sixth Amendment in Note 7 to our consolidated financial statements.
+
+Financial Summary
+
+First quarter 2027 included the following notable items:
+
+Diluted loss per common share was $0.08.
+
+Adjusted diluted loss per common share, a non-GAAP measure, was $0.09.
+
+Sales decreased 4.6 percent, due to closed stores and lower comparable store sales.
+
+Comparable store sales decreased 1.7 percent from the prior year period.
+
+Operating income was $3.7 million.
+
+Adjusted operating income, a non-GAAP measure, was $2.2 million.
+
+Net loss was $2.1 million.
+
+Adjusted net loss, a non-GAAP measure, was $2.3 million.
+
+(Loss) Earnings Per Common Share
+
+Three Months Ended
+
+June 27, 2026
+
+June 28, 2025
+
+Change
+
+Diluted loss per common share
+
+$
+
+(0.08)
+
+$
+
+(0.28)
+
+71.4
+
+%
+
+Adjustments
+
+(0.01)
+
+0.50
+
+Adjusted diluted (loss) earnings per common share
+
+$
+
+(0.09)
+
+$
+
+0.22
+
+(140.9)
+
+%
+
+Adjusted operating income, adjusted net (loss) income and adjusted diluted (loss) earnings per share, each of which is a measure not derived in accordance with GAAP, exclude the impact of certain items. Management believes that adjusted operating income, adjusted net (loss) income and adjusted diluted (loss) earnings per share are useful in providing period-to-period comparisons of the results of our operations by excluding certain items that are not part of our core operations, such as pension settlement expense, consulting costs related to the Company’s Operational Improvement Plan, transition costs related to back-office optimization, write-off of debt issuance costs, costs related to shareholder matters, and store closing costs, net of gains (losses) on sales of closed stores, lease assignments and early lease terminations. Reconciliations of these non-GAAP financial measures to GAAP measures are provided on page 19 under “Non-GAAP Financial Measures.”
+
+We define comparable store sales as sales for locations that have been opened or owned at least one full fiscal year. We believe this period is generally required for new store sales levels to begin to normalize. Management uses comparable store sales to assess the operating performance of the Company’s stores and believes the metric is useful to investors because our overall results are dependent upon the results of our stores. Comparable sales measures vary across the retail industry. Therefore, our comparable store sales calculation is not necessarily comparable to similarly titled measures reported by other companies.
+
+Analysis of Results of Operations
+
+Summary of Operating Income (Loss)
+
+Three Months Ended
+
+(thousands)
+
+June 27, 2026
+
+June 28, 2025
+
+Change
+
+Sales
+
+$
+
+287,129
+
+$
+
+301,035
+
+(4.6)
+
+%
+
+Cost of sales, including occupancy costs
+
+186,734
+
+194,129
+
+(3.8)
+
+Gross profit
+
+100,395
+
+106,906
+
+(6.1)
+
+Operating, selling, general and administrative expenses
+
+96,700
+
+112,981
+
+(14.4)
+
+Operating income (loss)
+
+$
+
+3,695
+
+$
+
+(6,075)
+
+160.8
+
+%
+
+Monro, Inc. Q1 2027 Form 10-Q
+
+16
+
+Table of Contents
+
+MANAGEMENT’S DISCUSSION AND ANALYSIS
+
+Sales
+
+Sales include automotive undercar repair, tire replacement and tire related service sales, net of discounts, returns, and revenue from the sale of warranty agreements and commissions earned from the delivery of tires. See Note 6 to our consolidated financial statements for further information. We use comparable store sales to evaluate the performance of our existing stores by measuring the change in sales for a period over the comparable, prior-year period. There were 90 selling days in each of the three months ended June 27, 2026 and June 28, 2025.
+
+Sales growth – from both comparable store sales and new stores – represents an important driver of our long-term profitability. We expect that comparable store sales growth will significantly impact our total sales growth. We believe that our ability to successfully differentiate our customers’, often referred to as “guests”, experience through a careful combination of merchandise assortment, price strategy, convenience, and other factors will, over the long-term, drive both increasing guest traffic and the average ticket amount spent.
+
+Sales
+
+Three Months Ended
+
+(thousands)
+
+June 27, 2026
+
+June 28, 2025
+
+Sales
+
+$
+
+287,129
+
+$
+
+301,035
+
+Dollar change compared to prior year
+
+$
+
+(13,906)
+
+Percentage change compared to prior year
+
+(4.6)
+
+%
+
+The sales decrease was due to closed stores and lower comparable store sales. The following table shows the primary drivers of the change in sales for the three months ended June 27, 2026, as compared to the same period ended June 28, 2025.
+
+Sales Percentage Change
+
+Three Months Ended
+
+June 27, 2026
+
+Sales change
+
+(4.6)
+
+%
+
+Primary drivers of change in sales
+
+Closed store sales
+
+(2.9)
+
+%
+
+Comparable store sales
+
+(1.7)
+
+%
+
+During the three months ended June 27, 2026, comparable store sales increased in our batteries, front end/shocks and alignment categories. The following table shows the primary drivers of the comparable store product category sales change for the three months ended June 27, 2026, as compared to the same period ended June 28, 2025.
+
+Comparable Store Product Category Sales Change
+
+Three Months Ended
+
+June 27, 2026
+
+June 28, 2025
+
+Batteries
+
+8
+
+%
+
+9
+
+%
+
+Front end/shocks
+
+1
+
+%
+
+26
+
+%
+
+Alignment
+
+1
+
+%
+
+0
+
+%
+
+Tires
+
+(1)
+
+%
+
+4
+
+%
+
+Brakes
+
+(1)
+
+%
+
+9
+
+%
+
+Maintenance service
+
+(5)
+
+%
+
+4
+
+%
+
+Sales by Product Category
+
+Three Months Ended
+
+June 27, 2026
+
+June 28, 2025
+
+Tires
+
+46
+
+%
+
+46
+
+%
+
+Maintenance service
+
+27
+
+28
+
+Brakes
+
+15
+
+15
+
+Steering (a)
+
+9
+
+9
+
+Batteries
+
+2
+
+1
+
+Other
+
+1
+
+1
+
+Total
+
+100
+
+%
+
+100
+
+%
+
+(a)Steering product category includes front end/shocks and alignment product category sales.
+
+Change in Number of Company-Operated Retail Stores
+
+Three Months Ended
+
+June 27, 2026
+
+June 28, 2025
+
+Beginning store count
+
+1,115
+
+1,260
+
+Closed (a)
+
+—
+
+(145)
+
+Ending store count
+
+1,115
+
+1,115
+
+(a)All 145 stores were closed in the first quarter of fiscal 2026 as a result of the Store Closure Plan.
+
+Monro, Inc. Q1 2027 Form 10-Q
+
+17
+
+Table of Contents
+
+MANAGEMENT’S DISCUSSION AND ANALYSIS
+
+Cost of Sales and Gross Profit
+
+Gross Profit
+
+Three Months Ended
+
+(thousands)
+
+June 27, 2026
+
+June 28, 2025
+
+Gross profit
+
+$
+
+100,395
+
+$
+
+106,906
+
+Percentage of sales
+
+35.0
+
+%
+
+35.5
+
+%
+
+Dollar change compared to prior year
+
+$
+
+(6,511)
+
+Percentage change compared to prior year
+
+(6.1)
+
+%
+
+Gross profit, as a percentage of sales, decreased 50 basis points (“bps”) for the three months ended June 27, 2026, as compared to the prior year comparable period. Occupancy costs, as a percentage of sales, increased as we lost leverage on these largely fixed costs. Partially offsetting this was a decrease in technician labor costs, as a percentage of sales, due primarily to improvements in labor productivity and efficiency.
+
+Gross Profit as a Percentage of Sales Change
+
+Three Months Ended
+
+June 27, 2026
+
+Gross profit change
+
+(50)
+
+bps
+
+Primary drivers of change in gross profit as a percentage of sales:
+
+Occupancy costs
+
+(90)
+
+bps
+
+Technician labor costs
+
+40
+
+bps
+
+OSG&A Expenses
+
+OSG&A Expenses
+
+Three Months Ended
+
+(thousands)
+
+June 27, 2026
+
+June 28, 2025
+
+OSG&A Expenses
+
+$
+
+96,700
+
+$
+
+112,981
+
+Percentage of sales
+
+33.7
+
+%
+
+37.5
+
+%
+
+Dollar change compared to prior year
+
+$
+
+(16,281)
+
+Percentage change compared to prior year
+
+(14.4)
+
+%
+
+The decrease of $16.3 million in operating, selling, general and administrative (“OSG&A”) expenses for the three months ended June 27, 2026, from the comparable prior year period is primarily due to a decrease in store closing costs, net of gains (losses) on sales of closed stores, lease assignments and early lease terminations. The following table shows the impact of these costs on the change in OSG&A expenses for the three months ended June 27, 2026, as compared to the same period ended June 28, 2025.
+
+OSG&A Expenses Change
+
+Three Months Ended
+
+(thousands)
+
+June 27, 2026
+
+OSG&A expenses change
+
+$
+
+(16,281)
+
+Drivers of change in OSG&A expenses:
+
+Decrease in store closing costs, net
+
+$
+
+(17,776)
+
+Decrease from closed stores
+
+$
+
+(4,136)
+
+Decrease in consulting costs related to the Operational Improvement Plan
+
+$
+
+(3,713)
+
+Decrease from transition costs related to back-office optimization
+
+$
+
+(238)
+
+Increase from costs related to shareholder matters
+
+$
+
+80
+
+Increase from comparable stores
+
+$
+
+4,581
+
+Increase in store advertising costs
+
+$
+
+4,921
+
+Other Performance Factors
+
+Net Interest Expense
+
+Net interest expense of $4.6 million for the three months ended June 27, 2026 decreased $0.1 million as compared to the prior year period, and remained as a percentage of sales at 1.6 percent. Weighted average debt outstanding for the three months ended June 27, 2026 decreased by approximately $14.1 million as compared to the three months ended June 28, 2025. This decrease is primarily related to lower finance lease debt related to our stores. The weighted average interest rate increased approximately 10 basis points as compared to the same period of the prior year.
+
+Monro, Inc. Q1 2027 Form 10-Q
+
+18
+
+Table of Contents
+
+MANAGEMENT’S DISCUSSION AND ANALYSIS
+
+Provision for Income Taxes
+
+For the three months ended June 27, 2026, our effective income tax rate was (7.7) percent compared to 24.8 percent for the three months ended June 28, 2025. The year-over-year difference in effective tax rate is primarily related to a decrease in unrecognized tax benefits as well as the impact from other adjustments, none of which are significant, on the change in pre-tax loss.
+
+Non-GAAP Financial Measures
+
+In addition to reporting operating income (loss), net loss and diluted loss per share, which are GAAP measures, this Form 10-Q includes adjusted operating income, adjusted net (loss) income and adjusted diluted (loss) earnings per share, which are non-GAAP financial measures. We have included reconciliations to adjusted operating income, adjusted net (loss) income and adjusted diluted (loss) earnings per share from our most directly comparable GAAP measures, operating income (loss), net loss, and diluted loss per share below. Management views these non-GAAP financial measures as indicators to better assess comparability between periods because management believes these non-GAAP financial measures reflect our core business operations while excluding certain items that are not part of our core operations, such as pension settlement expense, consulting costs related to the Company’s Operational Improvement Plan, transition costs related to back-office optimization, write-off of debt issuance costs, costs related to shareholder matters, and store closing costs, net of gains (losses) on sales of closed stores, lease assignments and early lease terminations.
+
+These non-GAAP financial measures are not intended to represent, and should not be considered more meaningful than, or as an alternative to, their most directly comparable GAAP measures. These non-GAAP financial measures may be different from similarly titled non-GAAP financial measures used by other companies.
+
+Adjusted operating income is summarized as follows:
+
+Reconciliation of Adjusted Operating Income
+
+Three Months Ended
+
+(thousands)
+
+June 27, 2026
+
+June 28, 2025
+
+Operating income (loss)
+
+$
+
+3,695
+
+$
+
+(6,075)
+
+Consulting costs related to the Operational Improvement Plan
+
+1,009
+
+4,722
+
+Transition costs related to back-office optimization
+
+333
+
+571
+
+Costs related to shareholder matters
+
+80
+
+—
+
+Store closing costs, net (a)
+
+(2,960)
+
+14,816
+
+Adjusted operating income
+
+$
+
+2,157
+
+$
+
+14,034
+
+(a)Amounts include the closing costs and asset write-offs related to the closure of 145 underperforming stores, in accordance with the Store Closure Plan, net of related gains on the sale of owned locations, lease assignments and early lease terminations.
+
+Adjusted net (loss) income is summarized as follows:
+
+Reconciliation of Adjusted Net (Loss) Income
+
+Three Months Ended
+
+(thousands)
+
+June 27, 2026
+
+June 28, 2025
+
+Net loss
+
+$
+
+(2,149)
+
+$
+
+(8,050)
+
+Pension settlement expense
+
+1,171
+
+—
+
+Consulting costs related to the Operational Improvement Plan
+
+1,009
+
+4,722
+
+Transition costs related to back-office optimization
+
+333
+
+571
+
+Write-off of debt issuance costs
+
+221
+
+263
+
+Costs related to shareholder matters
+
+80
+
+—
+
+Store closing costs, net (a)
+
+(2,960)
+
+14,816
+
+Provision for (benefit from) income taxes on pre-tax adjustments
+
+38
+
+(5,297)
+
+Adjusted net (loss) income
+
+$
+
+(2,257)
+
+$
+
+7,025
+
+(a)Amounts include the closing costs and asset write-offs related to the closure of 145 underperforming stores, in accordance with the Store Closure Plan, net of related gains on the sale of owned locations, lease assignments and early lease terminations.
+
+Monro, Inc. Q1 2027 Form 10-Q
+
+19
+
+Table of Contents
+
+MANAGEMENT’S DISCUSSION AND ANALYSIS
+
+Adjusted diluted (loss) earnings per share is summarized as follows:
+
+Reconciliation of Adjusted Diluted (Loss) Earnings per Share
+
+Three Months Ended
+
+June 27, 2026
+
+June 28, 2025
+
+Diluted loss per share
+
+$
+
+(0.08)
+
+$
+
+(0.28)
+
+Pension settlement expense
+
+0.03
+
+—
+
+Consulting costs related to the Operational Improvement Plan
+
+0.02
+
+0.12
+
+Transition costs related to back-office optimization
+
+0.01
+
+0.01
+
+Write-off of debt issuance costs
+
+0.01
+
+0.01
+
+Costs related to shareholder matters (b)
+
+0.00
+
+—
+
+Store closing costs, net (a)
+
+(0.07)
+
+0.37
+
+Adjusted diluted (loss) earnings per share
+
+$
+
+(0.09)
+
+$
+
+0.22
+
+(a)Amounts include the closing costs and asset write-offs related to the closure of 145 underperforming stores, in accordance with the Store Closure Plan, net of related gains on the sale of owned locations, lease assignments and early lease terminations.
+
+(b)Amounts, in the periods presented, may be too minor in amount, net of the impact from income taxes, to have an impact on the calculation of adjusted diluted (loss) earnings per share.
+
+Note: The calculation of the impact of non-GAAP adjustments on diluted (loss) earnings per share is performed on each line independently. The table may not add down +/- $0.01 due to rounding.
+
+The other adjustments to diluted (loss) earnings per share reflect estimated annual effective income tax rates of 26.0 percent for the three months ended June 27, 2026 and June 28, 2025. This represents the tax effect of non-GAAP adjustments calculated at an estimated blended statutory tax rate. See adjustments from the Reconciliation of Adjusted Net (Loss) Income table above for pre-tax amounts.
+
+Analysis of Financial Condition
+
+Liquidity and Capital Resources
+
+Capital Allocation
+
+We expect to continue to generate positive operating cash flow as we have done in each of the last three fiscal years. We believe the cash we generate from our operations will allow us to continue to support business operations and pay down debt. Additionally, we intend to return cash to our shareholders through our dividend program.
+
+In addition, because we believe a large portion of our future expenditures will be to fund our growth, through acquisition of retail stores and/or opening greenfield stores, we continually evaluate our cash needs and may decide it is best to fund the growth of our business through borrowings on our Credit Facility. Conversely, we may also periodically determine that it is in our best interests to voluntarily repay certain indebtedness early.
+
+Future Cash Requirements
+
+We currently expect our capital expenditures to support our projects, including upgrading our facilities and systems, to be $25 million to $35 million in the aggregate in fiscal 2027. Additionally, we have contractual finance lease and operating lease commitments with landlords through October 2040 for $430.2 million in lease payments, of which $92.4 million is due within one year. For details regarding these lease commitments, see Note 8 to our consolidated financial statements.
+
+As of June 27, 2026 we had $108.4 million outstanding under the Credit Facility, none of which is due in the succeeding 12 months. For details regarding our indebtedness that is due, see Note 7 to our consolidated financial statements.
+
+Dividends
+
+We declared and paid dividends of $0.28 per share totaling $8.7 million for each of the three months ended June 27, 2026 and June 28, 2025.
+
+Working Capital Management
+
+As of June 27, 2026, we had a working capital deficit of $241.1 million, a decrease of $40.1 million from a deficit of $281.2 million as of March 28, 2026. The overall working capital deficit is a result of our supply chain finance program. We have agreed to contractual payment terms and conditions with our suppliers. As part of our working capital management, we facilitate a voluntary supply chain finance program to provide our suppliers with the opportunity to sell receivables due from the Company to a participating financial institution subject to the independent discretion of both the supplier and participating financial institution. For details regarding our supply chain finance program, see Note 9 to our consolidated financial statements.
+
+Monro, Inc. Q1 2027 Form 10-Q
+
+20
+
+Table of Contents
+
+MANAGEMENT’S DISCUSSION AND ANALYSIS
+
+Sources and Conditions of Liquidity
+
+Our sources to fund our material cash requirements are predominantly cash from operations, availability under our Credit Facility, and cash and equivalents on hand.
+
+As of June 27, 2026, we had $9.5 million of cash and equivalents. In addition, we had $261.5 million available under the Credit Facility as of June 27, 2026, subject to compliance with our covenants.
+
+We believe that our current sources of funds will provide us with adequate liquidity during the 12-month period following June 27, 2026, as well as in the long-term.
+
+Summary of Cash Flows
+
+The following table presents a summary of our cash flows from operating, investing and financing activities.
+
+Summary of Cash Flows
+
+Three Months Ended
+
+(thousands)
+
+June 27, 2026
+
+June 28, 2025
+
+Cash used for operating activities
+
+$
+
+(30,388)
+
+$
+
+(1,939)
+
+Cash used for investing activities
+
+(4,546)
+
+(2,366)
+
+Cash provided by (used for) financing activities
+
+29,827
+
+(8,656)
+
+Decrease in cash and equivalents
+
+(5,107)
+
+(12,961)
+
+Cash and equivalents at beginning of period
+
+14,633
+
+20,762
+
+Cash and equivalents at end of period
+
+$
+
+9,526
+
+$
+
+7,801
+
+Cash used for operating activities
+
+For the three months ended June 27, 2026, cash used for operating activities was $30.4 million, which consisted of a net loss of $2.1 million and a change in operating assets and liabilities of $44.6 million, partially offset by non-cash adjustments of $16.3 million. The change in operating assets and liabilities was largely driven by timing of payments that caused accounts payable and accrued expenses to be a use of cash of $43.2 million. The non-cash charges were largely driven by $15.7 million of depreciation and amortization, $1.6 million in share-based compensation expenses and $1.2 million in pension settlement expense, offset by a $2.3 million net gain on disposal of assets.
+
+For the three months ended June 28, 2025, cash used for operating activities was $1.9 million, which consisted of a net loss of $8.1 million and a change in operating assets and liabilities of $9.2 million, partially offset by non-cash adjustments of $15.4 million. The change in operating assets and liabilities was driven by timing of payments that caused accounts payable to be a use of cash of $21.3 million. This was partially offset by our inventory being a source of cash of $7.4 million and accrued expenses being a source of cash of $4.3 million. The non-cash charges were driven by $15.6 million of depreciation and amortization, $1.5 million in loss on disposal of assets and $1.0 million in share-based compensation expense, offset by $2.7 million in deferred income tax expense.
+
+Cash used for investing activities
+
+For the three months ended June 27, 2026, cash used for investing activities was $4.5 million. This was primarily due to cash used for capital expenditures, including property and equipment, of $7.5 million, partially offset by proceeds from the disposal of property and equipment of $3.0 million.
+
+For the three months ended June 28, 2025, cash used for investing activities was $2.4 million. This was primarily due to cash used for capital expenditures, including property and equipment, of $7.4 million, partially offset by subsequent proceeds from the sale of our wholesale tire locations and distribution assets and proceeds from the disposal of property and equipment of $3.5 million and $1.6 million, respectively.
+
+Cash provided by (used for) financing activities
+
+For the three months ended June 27, 2026, cash provided by financing activities was $29.8 million. This was primarily due to amounts borrowed on our Credit Facility, net of payments made during the period, of $48.4 million. This was offset by payment of finance lease principal and dividends of $9.3 million and $8.7 million, respectively, as well as deferred financing costs of $0.6 million.
+
+Monro, Inc. Q1 2027 Form 10-Q
+
+21
+
+Table of Contents
+
+MANAGEMENT’S DISCUSSION AND ANALYSIS
+
+For the three months ended June 28, 2025, cash used for financing activities was $8.7 million. This was primarily due to payment of finance lease principal and dividends of $9.8 million and $8.7 million, respectively, as well as deferred financing costs of $0.5 million. These were offset by amounts borrowed on our Credit Facility, net of payments made during the period, of $10.3 million.
+
+Critical Accounting Estimates
+
+The consolidated financial statements are prepared in accordance with GAAP. The preparation of the consolidated financial statements requires us to make estimates and assumptions that affect the reported amounts of assets, liabilities, revenues, costs and expenses, and related disclosures. We base our estimates on historical experience, as appropriate, and on various other assumptions that we believe to be reasonable under the circumstances. Changes in the accounting estimates are reasonably likely to occur from period to period. Accordingly, actual results could differ significantly from the estimates made by management. We evaluate our estimates and assumptions on an ongoing basis. To the extent that there are material differences between these estimates and actual results, our future financial statement presentation, financial condition, results of operations, and cash flows may be affected.
+
+For a description of our critical accounting estimates, refer to Part II, Item 7., “Management's Discussion and Analysis of Financial Condition and Results of Operations” of our Form 10-K for the fiscal year ended March 28, 2026. There have been no material changes to our critical accounting estimates since our Form 10-K for the year ended March 28, 2026 was filed.
+
+Recent Accounting Pronouncements
+
+See “Recent Accounting Pronouncements” in Note 1 to our consolidated financial statements for a discussion of the impact of recently issued accounting standards on our consolidated financial statements as of June 27, 2026 and the expected impact on the consolidated financial statements for future periods.
+
+Cautionary Note Regarding Forward-Looking Statements
+
+This Quarterly Report on Form 10-Q contains “forward-looking statements” as that term is used in the Private Securities Litigation Reform Act of 1995. Forward-looking statements can be identified by the fact that they address future events, developments, and results and do not relate strictly to historical facts. Any statements contained herein that are not statements of historical fact may be deemed to be forward-looking statements. Forward-looking statements include, without limitation, statements preceded by, followed by, or including words such as “anticipate,” “believe,” “can,” “could,” “estimate,” “expect,” “intend,” “may,” “plan,” “potential,” “should,” “strategy,” “will,” “would” and variations thereof and similar expressions. Forward-looking statements are subject to risks, uncertainties, and other important factors that could cause actual results to differ materially from those expressed. For example, our forward-looking statements include, without limitation, statements regarding:
+
+•the impact of competitive services and pricing;
+
+•the effect of economic conditions and geopolitical uncertainty, seasonality, and the impact of weather conditions and natural disasters on customer demand;
+
+•advances in automotive technologies including adoption of electronic vehicle technology;
+
+•our dependence on third-party vendors for certain inventory;
+
+•the risks associated with vendor relationships and international trade, particularly goods sourced from countries targeted with import tariffs;
+
+•the impact of changes in U.S. trade relations and ongoing trade disputes between the United States, China, and other countries and other potential impediments to imports;
+
+•our ability to generate sufficient cash flows from operations and service our debt obligations, including our expected annual interest expense, fund our capital expenditures and working capital requirements, and to comply with the debt covenants of our Credit Facility;
+
+•our anticipated sales, comparable store sales, gross profit margin, costs of goods sold (including product mix), OSG&A expenses and other fixed costs, and our ability to leverage those costs;
+
+•management’s estimates and expectations as they relate to income tax liabilities, deferred income taxes, and uncertain tax positions;
+
+•management’s estimates associated with our critical accounting policies, including insurance liabilities, income taxes, and valuations for our goodwill and long-lived assets impairment analyses;
+
+•the impact of industry regulation, including changes in environmental, consumer protection, and labor laws;
+
+Monro, Inc. Q1 2027 Form 10-Q
+
+22
+
+Table of Contents
+
+MANAGEMENT’S DISCUSSION AND ANALYSIS
+
+•potential outcomes related to pending or future litigation matters;
+
+•business interruptions;
+
+•risks relating to disruption or unauthorized access to our computer systems;
+
+•our ability to protect customer and employee personal data;
+
+•risks relating to acquisitions and the integration of acquired businesses with ours;
+
+•our growth plans, including our plans to add, renovate, re-brand, expand, remodel, relocate, or close stores and any related costs or charges, our leasing strategy for future expansion, and our ability to renew leases at existing store locations;
+
+•the impact of costs related to planned store closings or potential impairment of goodwill, other intangible assets, and long-lived assets;
+
+•expected dividend payments;
+
+•our ability to protect our brands and our reputation; and
+
+•our ability to attract, motivate, and retain skilled field personnel and our key executives.
+
+Any of these factors, as well as such other factors as discussed in Part I, Item 1A., “Risk Factors” of our Form 10-K for the fiscal year ended March 28, 2026 as well as in our periodic filings with the SEC, could cause our actual results to differ materially from our anticipated results. The information provided in this report is based upon the facts and circumstances known as of the date of this report, and any forward-looking statements made by us in this report speak only as of the date on which they are made. Except as required by law, we undertake no obligation to update these forward-looking statements after the date of this Form 10-Q to reflect events or circumstances after such date, or to reflect the occurrence of unanticipated events.
+
+Monro, Inc. Q1 2027 Form 10-Q
+
+23
+
+Table of Contents
+
+DISCLOSURES ABOUT MARKET RISK & CONTROLS AND PROCEDURES

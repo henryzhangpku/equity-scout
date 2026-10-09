@@ -1,0 +1,871 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+For purposes of the following discussion, unless noted, all references to "the quarter” and “the second quarter” are for the three fiscal months (13 weeks) ended August 1, 2026 or August 2, 2025. References to "year to date" and "first half" are for the six fiscal months (26 weeks) ended August 1, 2026 or August 2, 2025. References to "first quarter" are for the three fiscal months (13 weeks) ended May 2, 2026 or May 3, 2025.
+
+This Form 10-Q contains “forward-looking statements” within the meaning of the Private Securities Litigation Reform Act of 1995. Words such as "believes," "anticipates," "plans," "may," "intends," "will," "should," "expects," and similar expressions are intended to identify forward-looking statements. Forward-looking statements include certain statements under Management's Discussion and Analysis and may include comments about our future sales or financial performance and our plans, performance and other objectives, expectations or intentions, such as statements regarding our liquidity, debt service requirements, planned capital expenditures, future store initiatives, adequacy of capital resources and reserves, and the impact of macroeconomic events, including inflation, consumer behavior, and changes in global trade policies, such as tariffs, and our response to such events. Forward-looking statements are based on management’s then-current views and assumptions and, as a result, are subject to certain risks and uncertainties that could cause actual results to differ materially from those projected. Any such forward-looking statements are qualified by the important risk factors, described in Part I Item 1A of our 2025 Form 10-K, in Part II Item 1A of our Quarterly Reports on Form 10-Q for the first and second quarters of 2026, or disclosed from time to time in our filings with the SEC, that could cause actual results to differ materially from those predicted by the forward-looking statements. Forward-looking statements relate to the date initially made, and we undertake no obligation to update them. Certain amounts set forth below may not foot or crossfoot due to rounding.
+
+Executive Summary
+
+Kohl's is a leading omnichannel retailer operating 1,151 stores and a website (www.Kohls.com) as of August 1, 2026. Our Kohl's stores and website sell moderately-priced proprietary and national brand apparel, footwear, accessories, beauty, and home products. Our Kohl's stores generally carry a consistent merchandise assortment with some differences attributable to local preferences and store size. Our website includes merchandise which is available in our stores, as well as merchandise that is available only online.
+
+Key financial results for the second quarter include:
+
+•
+Net sales decreased 0.9%, to $3.3 billion, with comparable sales down 0.9%.
+
+•
+Gross margin as a percentage of net sales was 43.0%, an increase of 305 basis points year-over-year.
+
+•
+Selling, general, and administrative ("SG&A") expenses decreased 0.9%, to $1.2 billion. As a percentage of total revenue, SG&A expenses were 33.8%, consistent with the prior year.
+
+•
+Operating income was $261 million compared to $279 million in the prior year. As a percentage of total revenue, operating income was 7.4%, a decrease of 45 basis points year-over-year. In the prior year, adjusted non-GAAP operating income was $161 million and 4.6% of total revenue.(a)
+
+•
+Net income was $151 million, or $1.28 per diluted share. This compares to net income of $153 million, or $1.35 per diluted share in the prior year. In the prior year, adjusted non-GAAP net income was $64 million, or $0.56 per adjusted diluted share.(a)
+
+•
+Inventory was $2.9 billion, a decrease of 3% year-over-year.
+
+•
+Operating cash flow was $552 million compared to $598 million in the prior year.
+
+•
+Tariff refunds of approximately $150 million were received in the quarter of which approximately $100 million was recognized within gross margin.
+
+(a)
+Non-GAAP financial measures. Please see the “GAAP to Non-GAAP Reconciliation” for a reconciliation of adjusted operating income to operating income, adjusted net income to net income, and adjusted diluted earnings per share to diluted earnings per share.
+
+15
+
+Table of Contents
+
+Our Strategy
+
+Kohl's remains committed to driving long-term shareholder value by providing our customers with great product, great value, and a great experience. We have three key initiatives to achieve this: we offer a curated and more balanced assortment that fulfills needs of all customers, we are reestablishing Kohl’s as a leader in value and quality, and we are delivering a frictionless shopping experience across our omnichannel platforms.
+
+Results of Operations
+
+Total Revenue
+
+Three Months Ended
+
+Six Months Ended
+
+(Dollars in Millions)
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+Net sales
+
+$3,318
+
+$3,347
+
+$(29)
+
+$6,316
+
+$6,396
+
+$(80)
+
+Other revenue
+
+197
+
+199
+
+(2)
+
+366
+
+383
+
+(17)
+
+Total revenue
+
+$3,515
+
+$3,546
+
+$(31)
+
+$6,682
+
+$6,779
+
+$(97)
+
+Net sales includes revenue from the sale of merchandise, net of expected returns and deferrals due to future performance obligations, and shipping revenue.
+
+Net sales decreased 0.9% in the second quarter of 2026 and 1.2% year to date 2026.
+
+•
+The decrease in the second quarter was driven by an equal decrease in average transaction value and in transaction volume. The decrease year to date was driven by a 2% decrease in transaction volume offset by an increase in average transaction value of approximately 1%.
+
+•
+In the second quarter and year to date 2026, Home, Accessories, and Children's net sales performed better than the total Company average. Year to date 2026, Women's net sales also performed better than the total Company average.
+
+Three Months Ended
+
+Six Months Ended
+
+(Dollars in Millions)
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+Women's
+
+$928
+
+$943
+
+(1.6%)
+
+$1,777
+
+$1,794
+
+(0.9%)
+
+Accessories (including Sephora)
+
+673
+
+673
+
+—
+
+1,315
+
+1,319
+
+(0.3%)
+
+Men's
+
+682
+
+689
+
+(1.0%)
+
+1,249
+
+1,273
+
+(1.9%)
+
+Home
+
+411
+
+406
+
+1.2%
+
+780
+
+776
+
+0.5%
+
+Children's
+
+334
+
+335
+
+(0.3%)
+
+643
+
+647
+
+(0.6%)
+
+Footwear
+
+290
+
+301
+
+(3.7%)
+
+552
+
+587
+
+(6.0%)
+
+Net sales
+
+$3,318
+
+$3,347
+
+(0.9%)
+
+$6,316
+
+$6,396
+
+(1.2%)
+
+Comparable sales decreased 0.9% in the second quarter of 2026 and 1.0% year to date 2026. Comparable sales is a measure that highlights the performance of our stores and digital channel by measuring the change in sales for a period over the comparable, prior-year period of equivalent length. Comparable sales includes all store and digital sales, except sales from stores open less than twelve months, stores that have been closed, and stores that have been relocated where square footage has changed by more than 10%.
+
+Digital sales increased 2.8% in the second quarter of 2026 and 3.4% year to date 2026. Digital penetration represented 27% of net sales in the second quarter of 2026 and 26% year to date 2026, compared to 26% in the second quarter of 2025 and 25% year to date 2025. We measure the change in digital sales by including all sales initiated online or through mobile applications, including omnichannel transactions which are fulfilled through our stores. We measure digital penetration as digital sales over net sales. These amounts do not take into consideration fulfillment node, digital returns processed in stores, and coupon behaviors.
+
+16
+
+Table of Contents
+
+Comparable sales and digital penetration measures vary across the retail industry. As a result, our comparable sales calculation and digital penetration may not be consistent with the similarly titled measures reported by other companies.
+
+Other revenue includes revenue from credit card operations, third-party advertising on our website, unused gift cards and merchandise return cards (breakage), commissions from our third-party digital marketplace, and other non-merchandise revenue.
+
+Other revenue decreased $2 million in the second quarter of 2026 and $17 million year to date 2026, due to lower revenue from our credit card operations. This was driven by lower late fees and finance charges partially offset by lower write-off activity.
+
+Cost of Merchandise Sold and Gross Margin
+
+Three Months Ended
+
+Six Months Ended
+
+(Dollars in Millions)
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+Net sales
+
+$3,318
+
+$3,347
+
+$(29)
+
+$6,316
+
+$6,396
+
+$(80)
+
+Cost of merchandise sold
+
+1,893
+
+2,011
+
+(118)
+
+3,695
+
+3,845
+
+(150)
+
+Gross margin
+
+$1,425
+
+$1,336
+
+$89
+
+$2,621
+
+$2,551
+
+$70
+
+Gross margin as a percent of net sales
+
+43.0%
+
+39.9%
+
+305
+
+bps
+
+41.5%
+
+39.9%
+
+162
+
+bps
+
+Cost of merchandise sold includes the total cost of products sold, including product development costs, net of vendor payments other than reimbursement of specific, incremental, and identifiable costs; inventory shrink; markdowns; freight expenses associated with moving merchandise from our vendors to our distribution centers; shipping expenses for digital sales; terms cash discount; and amounts due to Sephora for their share of operating profits under the Sephora arrangement. Our cost of merchandise sold may not be comparable with that of other retailers because we include distribution center and buying costs in selling, general, and administrative expenses while other retailers may include these expenses in cost of merchandise sold.
+
+Gross margin is calculated as net sales less cost of merchandise sold. For the second quarter of 2026, gross margin was 43.0% of net sales and 41.5% of net sales year to date 2026, an increase of 305 and 162 basis points to last year, respectively. The increase was driven by tariff refunds, partially offset by repayments to vendors and investments to drive value for our customers.
+
+Selling, General, and Administrative Expense
+
+Three Months Ended
+
+Six Months Ended
+
+(Dollars in Millions)
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+SG&A
+
+$1,188
+
+$1,199
+
+$(11)
+
+$2,333
+
+$2,363
+
+$(30)
+
+As a percent of total revenue
+
+33.8%
+
+33.8%
+
+0
+
+bps
+
+34.9%
+
+34.9%
+
+6
+
+bps
+
+SG&A includes compensation and benefit costs (including stores, corporate, buying, and distribution centers); occupancy and operating costs of our retail, distribution, and corporate facilities; freight expenses associated with moving merchandise from our distribution centers to our retail stores and among distribution and retail facilities other than expenses to fulfill digital sales; marketing expenses, offset by vendor payments for reimbursement of specific, incremental, and identifiable costs; expenses related to our credit card operations; and other administrative revenues and expenses. We do not include depreciation and amortization in SG&A. The classification of these expenses varies across the retail industry.
+
+17
+
+Table of Contents
+
+Many of our expenses, including store payroll and distribution costs, are variable in nature. These costs generally increase as sales increase and decrease as sales decrease. We measure our expenses as a percentage of revenue and changes in this percentage compared to the prior year. If the expense as a percent of revenue decreased from the prior year, the expense "leveraged." If the expense as a percent of revenue increased over the prior year, the expense "deleveraged."
+
+The following table summarizes the changes in SG&A by expense type:
+
+Three Months Ended
+
+Six Months Ended
+
+(Dollars in Millions)
+
+August 1, 2026
+
+August 1, 2026
+
+Corporate and other
+
+$(5)
+
+$(22)
+
+Store expenses
+
+(9)
+
+(10)
+
+Distribution
+
+2
+
+1
+
+Marketing
+
+1
+
+1
+
+Total decrease
+
+$(11)
+
+$(30)
+
+During the second quarter, SG&A expenses decreased $11 million, or 0.9%, to $1.2 billion. As a percentage of revenue, SG&A was flat to last year. Year to date 2026, SG&A expenses decreased $30 million, or 1.3%, to $2.3 billion. As a percentage of revenue, SG&A deleveraged by 6 basis points. The decreases for both periods were driven by expense savings across stores, corporate, and credit, which are included in corporate and other costs.
+
+Other Expenses
+
+Three Months Ended
+
+Six Months Ended
+
+(Dollars in Millions)
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+Depreciation and amortization
+
+$173
+
+$175
+
+$(2)
+
+$347
+
+$350
+
+$(3)
+
+Impairments, store closing, and other costs
+
+—
+
+11
+
+(11)
+
+—
+
+11
+
+(11)
+
+(Gain) on legal settlement
+
+—
+
+(129)
+
+129
+
+—
+
+(129)
+
+129
+
+Interest expense, net
+
+63
+
+78
+
+(15)
+
+126
+
+154
+
+(28)
+
+The decreases in depreciation and amortization in the second quarter and year to date 2026 were driven by lower capital spend.
+
+In the second quarter of 2025, we recognized $11 million of Impairments, store closing, and other costs. Included in this amount was $11 million of non-cash charges related to asset impairments, $7 million of severance, and $4 million of other costs primarily related to the closure of our Monroe, Ohio E-commerce Fulfillment Center. We also reversed $11 million of other exit costs initially recognized in the fourth quarter of 2024, related to the closure of our San Bernardino, California E-commerce Fulfillment Center and 27 underperforming stores due to favorable landlord negotiations.
+
+Also in the second quarter of 2025, Kohl’s entered into a settlement agreement to resolve a credit card interchange fee lawsuit in which we were a plaintiff. We recorded a gain, net of legal fees, and received cash of $129 million.
+
+Net interest expense decreased in the first half of 2026 due to gains on extinguishment of debt recognized in net interest expense and no outstanding balance on the revolving credit facility. The gains on extinguishment of debt resulted from open market purchases of long term debt, totaling $6 million for the second quarter and $15 million year to date.
+
+Income Taxes
+
+Three Months Ended
+
+Six Months Ended
+
+(Dollars in Millions)
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+Provision for income taxes
+
+$47
+
+$48
+
+$(1)
+
+$44
+
+$46
+
+$(2)
+
+18
+
+Table of Contents
+
+The effective tax rate for the second quarter of 2026 was 23.3% compared to 23.8% for the second quarter of 2025. Year to date, the tax rate was 24.1% and 25.0% for 2026 and 2025, respectively.
+
+GAAP to Non-GAAP Reconciliation
+
+In addition to reporting our financial results in accordance with U.S. GAAP, this Quarterly Report on Form 10-Q contains certain non-GAAP financial results, including adjusted operating income, adjusted net income, and adjusted diluted earnings per share for the prior year. These adjusted results exclude the gains, impairments, other costs, and reversals associated with the closing of 27 underperforming stores, our San Bernardino, California and Monroe, Ohio E-commerce Fulfillment Centers and settlement of a credit card interchange fee lawsuit, as we believe such items are not representative of our normal business activity. We believe these non-GAAP measures are useful, as they are more representative of our core business, enhance comparability across reporting periods and to industry peers, and align with the measures used by management to evaluate the Company’s performance. The adjusted, non-GAAP results are provided and should be evaluated in addition to, and not as an alternative for, our results reported in accordance with GAAP. Shown in the following table is a reconciliation of each non-GAAP measure referenced throughout this report to the most comparable GAAP measure. No adjustments were made to our results for the first half of fiscal 2026 and therefore these results are not included in the following table. Operating income was $261 million and $307 million in the second quarter and first half of 2026. Net income was $151 million, or $1.28 per diluted share, and $137 million, or $1.18 per diluted share, in the second quarter and first half of 2026.
+
+Diluted Earnings per
+
+(Dollars in Millions, Except per Share Data)
+
+Operating Income
+
+Net Income
+
+Share
+
+Three months ended August 2, 2025
+
+GAAP
+
+$279
+
+$153
+
+$1.35
+
+Impairments, store closing, and other costs
+
+11
+
+11
+
+0.10
+
+(Gain) on legal settlement
+
+(129)
+
+(129)
+
+(1.14)
+
+Income tax impact of items noted above
+
+—
+
+29
+
+0.25
+
+Adjusted (non-GAAP)
+
+$161
+
+$64
+
+$0.56
+
+Six months ended August 2, 2025
+
+GAAP
+
+$339
+
+$139
+
+$1.23
+
+Impairments, store closing, and other costs
+
+11
+
+11
+
+0.10
+
+(Gain) on legal settlement
+
+(129)
+
+(129)
+
+(1.14)
+
+Income tax impact of items noted above
+
+—
+
+29
+
+0.25
+
+Adjusted (non-GAAP)
+
+$221
+
+$50
+
+$0.44
+
+Inflation, Global Economic Conditions, and Trade Policies
+
+We expect that our operations will continue to be influenced by general economic conditions, including food, fuel and energy prices, unemployment levels, wage inflation, and costs to source our merchandise, including tariffs. During 2025, the U.S. government utilized the IEEPA to impose additional tariffs on a broad range of imports, including certain consumer goods. On February 20, 2026, the U.S. Supreme Court issued a ruling in Learning Resources, Inc. v. Trump striking down certain tariffs previously imposed under IEEPA. Following this decision, the U.S. administration invoked Section 122 of the Trade Act of 1974 to impose new tariffs on imports, effective February 24, 2026. Although the U.S. Court of International Trade issued a ruling finding the Section 122 tariffs unlawful in May 2026, duty collections continued under a judicial stay until the 150-day statutory window expired on July 24, 2026. The administration subsequently transitioned to replacement trade actions, implementing new tariffs under authorities such as Section 301. We continue to pay applicable duties under these authorities, while monitoring the legal developments. The global trade environment remains fluid and further tariff-related actions may increase merchandise costs, affect merchandise availability, and impact our operational results.
+
+19
+
+Table of Contents
+
+The Company paid approximately $190 million in IEEPA tariffs during fiscal 2025 and February 2026. We submitted claims seeking approximately $185 million in refunds of previously paid IEEPA tariffs as part of the Phase 1 and Phase 2 CAPE tariff refunds. As of August 1, 2026, the Company has received approximately $150 million in refund payments. The Company’s remaining IEEPA refund claims continue to be accounted for as gain contingencies. Uncertainty remains regarding the timing, amount and ultimate receipt of any further refunds.
+
+To mitigate the impact of these tariffs, the Company took proactive measures to reduce our exposure to tariffs by leveraging our diverse factory network to move production, adjusting orders based on pricing elasticity analyses, and working closely with our supplier and vendor base to proactively manage any impacts, with the goal of continuing to drive value to our customers. There can be no assurances that such factors will not impact our business in the future.
+
+Liquidity and Capital Resources
+
+Capital Allocation
+
+Our capital allocation strategy is to invest to maximize our overall long-term return and maintain a strong balance sheet. We follow a disciplined approach to capital allocation based on the following priorities: first, we invest in our business to drive long-term profitable growth; second, we pay a quarterly dividend; third, we will capitalize on opportunities to further reduce our debt and overall leverage when appropriate; and fourth, we return excess cash to shareholders through our share repurchase program.
+
+We will continue to invest in the business, as we plan to invest approximately $350 to $400 million in capital expenditures in 2026 towards our strategic priorities. On August 18, 2026, our Board of Directors declared a quarterly cash dividend of $0.125 per share. The dividend will be paid on September 23, 2026, to all shareholders of record at the close of business on September 9, 2026. During the second quarter of 2026, we reduced our outstanding debt by $63 million aggregate principal through repurchases of various notes on the open market. Year to date, we have reduced our outstanding debt by $113 million through repurchases. Under our existing $3 billion board authorization, we are resuming our share repurchase program with plans to buy back approximately $100 million in stock in 2026.
+
+Our period-end cash and cash equivalents balance increased to $821 million from $174 million in the second quarter of 2025. Our Cash and cash equivalents balance includes short-term investments of $682 million and $17 million as of August 1, 2026, and August 2, 2025, respectively. Our investment policy is designed to preserve principal and liquidity of our short-term investments. This policy allows investments in large money market funds or in highly rated direct short-term instruments. We also place dollar limits on our investments in individual funds or instruments.
+
+20
+
+Table of Contents
+
+The following table presents our primary uses and sources of cash:
+
+Cash Uses
+
+Cash Sources
+
+•
+Operational needs, including compensation and benefit costs, rent, taxes, and other operating costs
+
+•
+Inventory
+
+•
+Capital expenditures
+
+•
+Dividend payments
+
+•
+Debt repayments and repurchases
+
+•
+Share repurchases
+
+•
+Cash flow from operations
+
+•
+Line of credit under our revolving credit facility
+
+•
+Issuance of debt
+
+Six Months Ended
+
+(Dollars in Millions)
+
+August 1, 2026
+
+August 2, 2025
+
+Change
+
+Net cash provided by (used in):
+
+Operating activities
+
+$478
+
+$506
+
+$(28)
+
+Investing activities
+
+(153)
+
+(179)
+
+26
+
+Financing activities
+
+(178)
+
+(287)
+
+109
+
+Operating Activities
+
+Our operating cash outflows generally consist of payments to our employees for wages, salaries and other employee benefits, payments to our merchandise vendors for inventory (net of vendor allowances), payments to our shipping carriers, and payments to our landlords for rent. Operating cash outflows also include payments for income taxes and interest payments on our debt borrowings.
+
+Operating activities provided $478 million of cash in the first half of 2026 compared to $506 million in the first half of 2025. The decrease in cash provided by operating activities is primarily driven by timing of payments.
+
+Investing Activities
+
+Our investing cash outflows include payments for capital expenditures, including investments in new and existing stores, improvements to supply chain, and technology costs. Our investing cash inflows are generally from proceeds from sales of property and real estate.
+
+Investing activities used $153 million in the first half of 2026 compared to $179 million in the first half of 2025. The decrease in cash used in investing activities was primarily driven by our reduced capital expenditure plans for fiscal 2026.
+
+In 2026, we anticipate capital expenditures of approximately $350 to $400 million as we continue to invest in our business, including enhancing omnichannel capabilities.
+
+Financing Activities
+
+Our financing strategy is to ensure adequate liquidity and access to capital markets. We also strive to maintain a balanced portfolio of debt maturities, while minimizing our borrowing costs. Our ability to access the public debt market has provided us with adequate sources of liquidity. Our continued access to these markets depends on multiple factors, including the condition of debt capital markets, our operating performance, and our credit ratings.
+
+21
+
+Table of Contents
+
+During the second quarter of 2026, S&P upgraded their outlook to stable.
+
+As of August 1, 2026, our corporate credit ratings and outlook were as follows:
+
+Moody’s
+
+S&P
+
+Fitch
+
+Corporate credit
+
+B2
+
+B+
+
+BB-
+
+Outlook
+
+Positive
+
+Stable
+
+Negative
+
+The interest rate on our 3.375% notes due May 2031 is subject to a coupon adjustment provision within the notes that can cause the interest rate to step up if our long-term debt is downgraded to below a BBB- credit rating by S&P Global Ratings or Baa3 by Moody’s Investor Service, Inc., which has occurred in recent years. In total, the interest rate on the notes due May 2031 has increased 175 basis points since their issuance due to the coupon adjustment provision within the notes.
+
+The majority of our financing activities generally include proceeds from and/or repayments of borrowings under our revolving credit facility and long-term debt, dividend payments, and repurchases of common stock. Financing cash outflows also include payments to our landlords for leases classified as finance leases and financing obligations.
+
+Financing activities used $178 million of cash in the first half of 2026 compared to $287 million of cash in the first half of 2025.
+
+Cash dividend payments were $28 million ($0.25 per share) in both the first half of 2026 and the first half of 2025.
+
+In the first half of 2026, we had no net activity on our $1.5 billion credit facility, compared to net repayments of $215 million in the first half of 2025. Borrowings outstanding under the revolving credit facility, recorded as short-term debt, were $0 as of August 1, 2026, and $75 million as of August 2, 2025.
+
+Also in the first half of 2026, we reduced our outstanding debt by $113 million aggregate principal through repurchases of various notes on the open market.
+
+In the second quarter of 2025, we issued $360 million aggregate principal amount of 10.000% senior secured notes due 2030 and received proceeds of $357 million, net of the debt discount. Also in the second quarter of 2025, $353 million in aggregate principal amount of our 4.25% notes matured and were repaid.
+
+There was no cash used for treasury stock purchases in the first half of 2026 or 2025. Share repurchases are discretionary in nature. The timing and amount of repurchases are based upon available cash balances, our stock price, and other factors. Under our existing $3 billion board authorization, we are resuming our share repurchase program with plans to buy back approximately $100 million in stock in 2026.
+
+Key Financial Ratios
+
+Key financial ratios that provide certain measures of our liquidity are as follows:
+
+(Dollars in Millions)
+
+August 1, 2026
+
+August 2, 2025
+
+Working capital
+
+$1,323
+
+$926
+
+Current ratio
+
+1.49
+
+1.36
+
+Our working capital and inventory levels typically build throughout the fall, peaking during the November and December holiday selling season.
+
+The increases in our working capital and current ratio are driven by an increase in cash and cash equivalents.
+
+22
+
+Table of Contents
+
+Debt Covenant Compliance
+
+Our senior secured, asset based revolving credit facility contains customary events of default and financial, affirmative and negative covenants, including but not limited to, a springing financial covenant relating to our fixed charge coverage ratio and restrictions on indebtedness, liens, investments, asset dispositions, and restricted payments. As of August 1, 2026, we were in compliance with all covenants.
+
+Contractual Obligations
+
+There have been no significant changes in the contractual obligations disclosed in our 2025 Form 10-K.
+
+Off-Balance Sheet Arrangements
+
+We have not provided any financial guarantees arising from arrangements with unconsolidated entities or persons as of August 1, 2026.
+
+We have not created, and are not a party to, any special-purpose or off-balance sheet entities for the purpose of raising capital, incurring debt, or operating our business. We do not have any arrangements or relationships with entities that are not consolidated into our financial statements that are reasonably likely to materially affect our financial condition, liquidity, results of operations, or capital resources.
+
+Critical Accounting Policies and Estimates
+
+The preparation of financial statements in conformity with U.S. GAAP requires us to make estimates and assumptions that affect reported amounts. Management has discussed the development, selection, and disclosure of its estimates and assumptions with the Audit Committee of our Board of Directors. There have been no significant changes in the critical accounting policies and estimates discussed in our 2025 Form 10-K.
+
+23
+
+Table of Contents

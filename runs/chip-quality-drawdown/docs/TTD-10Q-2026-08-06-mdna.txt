@@ -1,0 +1,292 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+This Quarterly Report on Form 10-Q contains forward-looking statements within the meaning of Section 27A of the Securities Act of 1933, as amended, and Section 21E of the Securities Exchange Act of 1934, as amended (the “Exchange Act”). Forward-looking statements generally relate to future events or our future financial or operating performance and may include statements concerning, among other things, our business strategy (including anticipated trends and developments in, and management plans for, our business and the markets in which we operate), financial results, the impact of macroeconomic uncertainty on our business, operations, and the markets and communities in which we, our clients, and partners operate, results of operations, revenues, operating expenses, taxes, capital expenditures including share repurchases, sales and marketing initiatives and competition. In some cases, you can identify forward-looking statements because they contain words such as “may,” “might,” “will,” “should,” “expects,” “plans,” “anticipates,” “could,” “intends,” “target,” “projects,” “contemplates,” “believes,” “estimates,” “predicts,” “suggests,” “potential” or “continue” or the negative of these words or other similar terms or expressions that concern our expectations, strategy, plans or intentions. These statements are not guarantees of future performance; they reflect our current views with respect to future events and are based on assumptions and are subject to known and unknown risks, uncertainties and other factors that may cause our actual results, performance or achievements to be materially different from expectations or results projected or implied by forward-looking statements.
+
+We discuss many of these risks in Part II of this Quarterly Report on Form 10-Q in greater detail under the heading “Risk Factors” and in other filings we make from time to time with the Securities and Exchange Commission (the “SEC”). Also, these forward-looking statements represent our estimates and assumptions only as of the date of this Quarterly Report on Form 10-Q, which are inherently subject to change and involve risks and uncertainties. Unless required by federal securities laws, we assume no obligation to update any of these forward-looking statements, or to update the reasons actual results could differ materially from those anticipated, to reflect circumstances or events that occur after the statements are made. Given these uncertainties, investors should not place undue reliance on these forward-looking statements.
+
+Investors should read this Quarterly Report on Form 10-Q and the documents that we reference in this report and have filed with the SEC, including our Annual Report on Form 10-K for the year ended December 31, 2025, completely and with the understanding that our actual future results may be materially different from what we expect. We qualify all of our forward-looking statements by these cautionary statements.
+
+References to “Notes” are notes included in our unaudited condensed consolidated financial statements appearing elsewhere in this Quarterly Report on Form 10-Q.
+
+Overview
+
+We are a global leader in advertising technology. We empower ad buyers to create, manage and optimize digital advertising campaigns across ad formats, channels and devices. Our platform’s depth, AI capabilities and rich ecosystem of inventory, publisher and data partner integrations enable superior reach and decisioning for clients. In addition to the primary capabilities provided by our self-service platform, our enterprise APIs equip our clients with the ability to customize and expand platform functionality.
+
+Since our founding in 2009, we have been committed to building a more transparent and objective advertising ecosystem and enabling more expressive and data-driven campaigns through pioneering technology innovations.
+
+Our clients are advertising agencies, advertisers and other service providers for agencies or advertisers, with whom we enter into ongoing MSAs. We generate revenue by charging our clients a platform fee generally based on a percentage of our clients’ total spend on our platform and from providing value-added services and data to support their advertising campaigns.
+
+20
+
+Table of Contents
+
+Executive Summary
+
+Highlights
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+Dollars Change Dollars Change
+
+2026 2025 $ % 2026 2025 $ %
+
+(in thousands, except percentages)
+
+Revenue $ 715,057 $ 694,039 $ 21,018 3 % $ 1,403,914 $ 1,310,060 $ 93,854 7 %
+
+Net income $ 64,394 $ 90,129 $ (25,735) (29) % $ 104,391 $ 140,807 $ (36,416) (26) %
+
+Adjusted EBITDA(1)
+$ 241,279 $ 270,755 $ (29,476) (11) % $ 447,345 $ 478,630 $ (31,285) (7) %
+
+___________
+
+(1) To supplement our condensed consolidated financial statements, which are prepared and presented in accordance with GAAP, we present Adjusted EBITDA, which is a Non-GAAP financial measure. Additional information can be found in “— Non-GAAP Financial Measures” below, including reconciliations of Adjusted EBITDA to the corresponding GAAP measure of net income.
+
+Trends, Opportunities and Challenges
+
+Since our founding, we have focused on developing the most sophisticated, rich and objective platform for buyers of advertising. The growing digitization of media, fragmentation of audiences and ongoing lack of transparency in the advertising technology ecosystem have increased the complexity of advertising, and thereby increased the need for an ad buying platform that users can trust. Our platform delivers valuable insights and results to clients without the conflict of interest and lack of objectivity that come with also selling owned advertising inventory. We believe our continued success relies on further developing our platform’s programmatic capabilities while expanding access to advertising inventory, value-added services and data to support our clients’ advertising campaigns.
+
+We believe that our key opportunities include (i) our ongoing global expansion, (ii) continuing development of our omnichannel ad inventory (including in channels such as CTV and other video, mobile, audio and others, including potentially in any new inventory sources that may arise with the advent of AI), (iii) continuing development, optimization and adoption of the data usage, measurement and targeting capabilities provided by our platform, which create a natural flywheel in our business, (iv) the adoption and utilization of third-party data, in particular, retail data, and first-party data by our clients, and (v) continuing development and incorporation of AI in our platform and related offerings.
+
+We believe that growth of the programmatic advertising market is important for our ability to grow our business. Adoption of programmatic advertising by advertisers allows us to acquire new clients and grow revenue from existing clients. Although our clients include some of the largest advertising agencies and advertisers in the world, we believe there is significant room for us to expand our business relationships with these clients to gain a larger portion of their advertising spend through our platform. We also believe that the industry trends noted above will lead to advertisers adopting programmatic advertising through platforms such as ours. Accordingly, we see a significant market opportunity across advertisers and agencies with which we do not yet do business.
+
+Similarly, the adoption of programmatic advertising by inventory owners and content providers allows us to expand the volume and type of advertising inventory we present to our clients. For example, we have expanded our CTV, audio and other advertising offerings through our integrations with supply-side partners and publishers. In addition, we have expanded our efforts to improve the efficiency and transparency of complex open internet supply channels.
+
+Our recent growth has been largely driven by expanding our share of spend by our existing clients and adding new clients. Our clients include some of the largest advertising agencies and advertisers in the world, and we believe there is significant room for us to expand further within these clients, including room to expand the aperture of clients we support across the mid-market. As a result, future revenue growth depends, in large part, upon our ability to retain our existing clients and to gain a larger amount of their spend through our platform in a highly competitive advertising market. This includes our ability to differentiate to clients our platform’s overall value from competitors’ platforms that may offer artificially low prices, which are enabled by inherent conflicts of interest and a lack of objectivity that come with also selling advertising inventory. We believe that we offer differentiated offerings with superior value to new and existing clients.
+
+21
+
+Table of Contents
+
+Our future growth will also depend on our ability to continue innovating and improving the technology underlying our platform and related offerings and enhancing their functionality, including the development of new or improved value-added services or the inclusion of additional data, and driving continual and increased adoption of such value-added services and data by our clients.
+
+We remain focused on operating efficiently while investing in significant opportunities to contribute toward long-term growth. We anticipate that our platform operations and technology and development operating expenses will continue to increase as we invest in platform operations for our hosting capabilities as well as technology and development to enhance our platform and related offerings, including our continued focus on the development and incorporation of AI. We also aim for balanced investments in sales and marketing activities in order to acquire new clients and reinforce our relationships with existing clients. In addition, we expect to continue making disciplined investments in our infrastructure, including our information technology, financial and administrative systems and controls to support our growing operations.
+
+We believe the markets outside of the United States, and in particular across Europe and Asia in markets such as the U.K., Germany, France, China, Japan, India and Australia, offer opportunities for growth. We intend to make balanced investments in our platform and our team to capitalize on the opportunity in international markets.
+
+We believe that these investments will contribute to our long-term growth, although they may negatively impact profitability in the near term.
+
+Our business model has allowed us to grow significantly over the long term, and we believe that our operating leverage enables us to support future long-term growth profitably.
+
+Macroeconomic Uncertainty
+
+Changes in interest rates, foreign currency exchange rates, trade policies and practices, inflation and other geopolitical developments have resulted, and may continue to result, in a global slowdown of economic activity, which may decrease demand for a broad variety of goods and services in various industries, including those provided by our clients, while also disrupting supply chains, sales channels and advertising and marketing activities for an unknown period of time until economic activity normalizes. In addition, due to high demand for hosting infrastructure components, their prices have become increasingly inelastic and the cost for such components has been rising. As a result of the current uncertainty in economic activity, we are unable to predict the size and duration of the impact on our revenue and our results of operations. The extent of the impact of these macroeconomic factors on our operational and financial performance will depend on a variety of factors, and the duration and extent of geopolitical and global economic disruption and their respective impacts on our clients, partners, industry and employees, all of which are uncertain at this time and cannot be accurately predicted. See “Item 1A. Risk Factors” in Part II. Other Information for further discussion of the adverse impacts of macroeconomic uncertainty on our business.
+
+22
+
+Table of Contents
+
+Results of Operations for the Three and Six Months Ended June 30, 2026 Compared with the Three and Six Months Ended June 30, 2025
+
+The following tables set forth our condensed consolidated results of operations for the periods presented.
+
+Three Months Ended June 30,
+
+2026 2025
+
+(in thousands) (% of Revenue) (in thousands) (% of Revenue)
+
+Revenue $ 715,057 100 % $ 694,039 100 %
+
+Operating expenses:
+
+Platform operations 184,333 26 % 150,980 22 %
+
+Sales and marketing 174,404 24 % 161,131 23 %
+
+Technology and development 140,742 20 % 134,251 19 %
+
+General and administrative 114,001 16 % 130,900 19 %
+
+Total operating expenses 613,480 86 % 577,262 83 %
+
+Income from operations 101,577 14 % 116,777 17 %
+
+Other expense (income):
+
+Total other income, net (11,514) (2) % (16,424) (2) %
+
+Income before income taxes 113,091 16 % 133,201 19 %
+
+Provision for income taxes 48,697 7 % 43,072 6 %
+
+Net income $ 64,394 9 % $ 90,129 13 %
+
+Six Months Ended June 30,
+
+2026 2025
+
+(in thousands) (% of Revenue) (in thousands) (% of Revenue)
+
+Revenue $ 1,403,914 100 % $ 1,310,060 100 %
+
+Operating expenses:
+
+Platform operations 366,303 26 % 293,819 22 %
+
+Sales and marketing 346,583 25 % 313,874 24 %
+
+Technology and development 283,462 20 % 266,653 20 %
+
+General and administrative 239,342 17 % 264,485 20 %
+
+Total operating expenses 1,235,690 88 % 1,138,831 87 %
+
+Income from operations 168,224 12 % 171,229 13 %
+
+Other expense (income):
+
+Total other income, net (23,825) (2) % (37,741) (3) %
+
+Income before income taxes 192,049 14 % 208,970 16 %
+
+Provision for income taxes 87,658 6 % 68,163 5 %
+
+Net income $ 104,391 7 % $ 140,807 11 %
+
+_______________
+
+Note: Percentages may not sum due to rounding.
+
+Revenue
+
+Revenue increased by $21 million, or 3%, for the three months ended June 30, 2026, as compared to the three months ended June 30, 2025. The increase was primarily due to an increase in gross spend on our platform, which was primarily driven by more overall advertising campaigns executed by new clients, partially offset by a decrease in gross spend from existing clients. The increase in revenue was also driven by a higher proportion of revenue earned from client spend due to increased pricing associated with value-added services, as well as the continued evolution of certain value-added services and data offerings, including changes to the use of supplier-provided components within those offerings, which resulted in the recognition of certain costs in platform operations rather than as reductions to revenue. These increases were partially offset by volume and other discounts in connection with joint business plans and other strategic partnerships in an effort to drive future growth.
+
+23
+
+Table of Contents
+
+Revenue increased by $94 million, or 7%, for the six months ended June 30, 2026, as compared to the six months ended June 30, 2025. The increase was primarily due to an increase in gross spend on our platform, which was primarily driven by more overall advertising campaigns executed by new and existing clients and increased application of and changes in the mix of revenue-generating value-added services. The increase in revenue was also driven by a higher proportion of revenue earned from client spend due to increased pricing associated with value-added services; the continued evolution of certain value-added services and data offerings, including changes to the use of supplier-provided components within those offerings, which resulted in the recognition of certain costs in platform operations rather than as reductions to revenue; and higher utilization of our value-added services. These increases were partially offset by volume and other discounts in connection with joint business plans and other strategic partnerships in an effort to drive future growth.
+
+Enhancements to our platform and the value-added services available to clients, including from Kokai and other features, and increased pricing associated with value-added services, enabled both our clients and us to capture increased value and drove higher utilization of our value-added services.
+
+Revenue earned from our clients’ gross spend on our platform may fluctuate from period to period based on the types of services rendered and the extent to which our platform’s value-added services and data are utilized by clients; our client and channel mix; changes in our platform or related offerings; pricing; volume and other discounts; and the amount of certain costs of supplier-provided components of value-added services and data recorded as reductions to revenue versus as expenses in platform operations. We expect that our revenue earned from our clients’ gross spend will fluctuate in the future pursuant to these factors, especially as our platform evolves and we introduce new and enhanced platform features and related offerings that may be adopted by our clients, expand our omnichannel capabilities, continue to enter into joint business plans and other strategic partnerships, extend our reach to more CTV and other inventory and add additional clients whose businesses may have different underlying business models.
+
+Platform Operations
+
+Platform operations expense increased by $33 million, or 22%, for the three months ended June 30, 2026, as compared to the three months ended June 30, 2025. The increase was primarily due to increases of $18 million in costs from supplier-provided components of value-added services and data, $8 million in hosting costs and $3 million in personnel costs. The increase in costs from supplier provided-components of value-added services and data was primarily attributable to the continued evolution of certain value-added services and data offerings, including changes to the use of supplier-provided components within those offerings, which resulted in the recognition of certain costs in platform operations rather than as reductions to revenue. The increase in hosting costs was primarily attributable to support costs relating to the increased use of our platform to query ad opportunities and purchase ad impressions while leveraging the AI and machine learning capabilities of our platform; investment in new data centers to support the continued growth of our platform; and increased use of features by our technical teams in support of our platform. The increase in hosting costs was partially offset by a gain on the sale of computing and networking equipment in connection with a normal-course decommissioning of certain data center assets as well as a change in the estimated useful lives of certain other data center computing and networking equipment. Refer to Note 2 - Basis of Presentation and Summary of Significant Accounting Policies for additional information. The increase in personnel costs was primarily due to headcount growth.
+
+Platform operations expense increased by $72 million, or 25%, for the six months ended June 30, 2026, as compared to the six months ended June 30, 2025. The increase was primarily due to increases of $31 million in hosting costs, $26 million in costs from supplier-provided components of value-added services and data and $7 million in personnel costs. The increase in hosting costs was primarily attributable to support costs relating to the increased use of our platform to query ad opportunities and purchase ad impressions while leveraging the AI and machine learning capabilities of our platform; investment in new data centers to support the continued growth of our platform; and increased use of features by our technical teams in support of our platform. The increase in hosting costs was partially offset by a gain on the sale of computing and networking equipment in connection with a normal-course decommissioning of certain data center assets as well as a change in the estimated useful lives of certain other data center computing and networking equipment. Refer to Note 2 - Basis of Presentation and Summary of Significant Accounting Policies for additional information. The increase in costs from supplier provided-components of value-added services and data was primarily attributable to the continued evolution of certain value-added services and data offerings, including changes to the use of supplier-provided components within those offerings, which resulted in the recognition of certain costs in platform operations rather than as reductions to revenue. The increase in personnel costs was primarily due to headcount growth.
+
+We expect platform operations expense will fluctuate period to period, including as a percentage of revenue. We expect to experience an increased volume of queries per second (“QPS”) and media impressions purchased through our
+
+24
+
+Table of Contents
+
+platform and invest in our hosting capabilities, including to support new technical features and functionality of our platform and related offerings and our growing AI and machine learning capabilities, subject to rising prices for data center components. We expect to invest in hiring and retaining top talent to support our clients while balancing platform support needs with other strategic priorities. Platform operations expense also may vary due to the amount of certain costs of supplier-provided components of value-added services and data recorded as platform operations expense versus as reductions to revenue.
+
+Sales and Marketing
+
+Sales and marketing expense increased by $13 million, or 8%, for the three months ended June 30, 2026, as compared to the three months ended June 30, 2025. The increase was primarily due to increases of $11 million in personnel costs and $3 million in marketing costs. The increase in personnel costs was primarily due to an increase in incentive compensation driven by changes in incentive plan structure, salary increases in connection with regular merit and promotion cycles and an increase in headcount to support our sales efforts and to continue to develop and maintain relationships with our clients. The increase in marketing costs was primarily due to an increase from marketing events.
+
+Sales and marketing expense increased by $33 million, or 10%, for the six months ended June 30, 2026, as compared to the six months ended June 30, 2025. The increase was primarily due to increases of $29 million in personnel costs and $4 million in marketing costs. The increase in personnel costs was primarily due to an increase in incentive compensation driven by changes in incentive plan targets and structure, commissionable headcount growth and gross spend growth; salary increases in connection with regular merit and promotion cycles; and an increase in headcount to support our sales efforts and to continue to develop and maintain relationships with our clients. The increase in marketing costs was primarily due to an increase from marketing events.
+
+We expect sales and marketing expense will fluctuate in future periods, including as a percentage of revenue, as we expect to make disciplined investments in hiring, retaining and incentivizing top talent while balancing other needs across our business to optimize for our strategic priorities.
+
+Technology and Development
+
+Technology and development expense increased by $6 million, or 5%, for the three months ended June 30, 2026, as compared to the three months ended June 30, 2025. The increase was due to increases of $4 million in personnel costs and $2 million in third-party costs. The increase in personnel costs was primarily attributable to headcount growth to maintain and support further development of our platform and related offerings as well as salary increases in connection with regular merit and promotion cycles. The increase in third-party costs was primarily attributable to increased use of AI software tools to support our development efforts.
+
+Technology and development expense increased by $17 million, or 6%, for the six months ended June 30, 2026, as compared to the six months ended June 30, 2025. The increase was due to increases of $14 million in personnel costs and $3 million in third-party costs. The increase in personnel costs was primarily attributable to headcount growth to maintain and support further development of our platform and related offerings as well as salary increases in connection with regular merit and promotion cycles. The increase in third-party costs was primarily attributable to increased use of AI software tools to support our development efforts.
+
+We expect technology and development expense will fluctuate in future periods, including as a percentage of revenue, as we optimize our investments in the development of our platform and related offerings to support additional platform features and functionality, including AI and machine learning, the anticipated increase in advertising inventory and data suppliers and the anticipated increase in volume of QPS on our platform. We expect to invest in hiring and retaining top talent as well as utilizing other development tools, such as AI, to optimize for our business and focus development on offerings that support efficient and scalable growth.
+
+General and Administrative
+
+General and administrative expense decreased by $17 million, or 13%, for the three months ended June 30, 2026, as compared to the three months ended June 30, 2025, primarily due to a $20 million decrease in stock-based compensation, partially offset by an increase of $3 million in personnel costs. The decrease in stock-based compensation was primarily due to a $19 million decrease relating to the CEO Performance Option, which was fully recognized by the
+
+25
+
+Table of Contents
+
+end of the first quarter of 2026. The increase in personnel costs was primarily attributable to salary increases in connection with regular merit and promotion cycles as well as increased headcount to support our growth.
+
+General and administrative expense decreased by $25 million, or 10%, for the six months ended June 30, 2026, as compared to the six months ended June 30, 2025, primarily due to a $36 million decrease in stock-based compensation, partially offset by an increase of $11 million in personnel costs. The decrease in stock-based compensation was primarily due to a $38 million decrease relating to the CEO Performance Option driven by the graded-vesting attribution method, under which more expense is recognized earlier in the option’s life. The increase in personnel costs was primarily attributable to increased headcount to support our growth as well as salary increases in connection with regular merit and promotion cycles.
+
+Excluding the prior impact of the CEO Performance Option, we expect general and administrative expense will fluctuate period to period, including as a percentage of revenue, as we make disciplined investments in corporate infrastructure. We expect general and administrative expenses will also fluctuate based upon various litigation, regulatory and governance matters. We expect to invest in hiring and retaining top talent while optimizing for our business and strategic priorities.
+
+Total Other Income, Net
+
+Total other income, net, decreased by $5 million for the three months ended June 30, 2026, as compared to the three months ended June 30, 2025. The decrease was primarily due to lower interest income on our cash and cash equivalents and short-term investments primarily driven by lower amounts invested and falling portfolio interest rates as well as foreign currency transaction losses driven by changes in foreign currency exchange rates against the U.S. Dollar, partially offset by gains on foreign currency forwards.
+
+Total other income, net, decreased by $14 million for the six months ended June 30, 2026, as compared to the six months ended June 30, 2025. The decrease was primarily due to lower interest income on our cash and cash equivalents and short-term investments primarily driven by lower amounts invested and falling portfolio interest rates as well as foreign currency transaction losses driven by changes in foreign currency exchange rates against the U.S. Dollar, partially offset by gains on foreign currency forwards.
+
+Provision for Income Taxes
+
+The U.S. federal statutory tax rate was 21% for the three and six months ended June 30, 2026 and 2025.
+
+The provision for income taxes increased by $6 million for the three months ended June 30, 2026, as compared to the three months ended June 30, 2025. The increase was primarily due to tax detriments associated with employee stock-based awards, compared to tax benefits associated with employee stock-based awards in the three months ended June 30, 2025, partially offset by lower pre-tax profitability.
+
+The provision for income taxes increased by $19 million for the six months ended June 30, 2026, as compared to the six months ended June 30, 2025. The increase was primarily due to tax detriments associated with employee stock-based awards, compared to tax benefits associated with employee stock-based awards in the six months ended June 30, 2025, partially offset by lower pre-tax profitability.
+
+Liquidity and Capital Resources
+
+As of June 30, 2026, we had working capital of $2.0 billion, which included $1.1 billion in cash and cash equivalents, $92 million of which was held by our international subsidiaries, and $362 million in short-term investments in marketable securities. Additionally, as of June 30, 2026, we had $745 million available under our Revolving Facility (refer to “— Credit Facility” below). For the six months ended June 30, 2026, we generated $545 million in cash flows from operating activities.
+
+We believe our existing cash and cash equivalents, cash flow from operations, and our undrawn available balance under our Revolving Facility (refer to “— Credit Facility” below) will be sufficient to meet our working capital requirements and investments we make from time to time for at least the next 12 months. We believe our existing cash and cash equivalents, short-term investments and cash flow from operations will be sufficient to fund our share repurchase program. Further, we have a shelf registration statement on Form S-3 on file with the SEC (the “Shelf Registration”),
+
+26
+
+Table of Contents
+
+which permits us to issue equity securities and equity-linked securities from time to time, subject to certain limitations. The Shelf Registration is intended to provide us with additional flexibility to access capital markets for general corporate purposes, subject to market conditions and our capital needs. Our future capital requirements and the adequacy of available funds will depend on many factors, including those set forth in “Item 1A. Risk Factors” within this Quarterly Report on Form 10-Q.
+
+In the future, we may attempt to raise additional capital through the sale of equity securities or through equity-linked or debt-financing arrangements. If we raise additional funds by issuing equity or equity-linked securities, the ownership of our existing stockholders will be diluted. If we raise additional financing by incurring additional indebtedness, we may be subject to increased fixed payment obligations and could also be subject to additional restrictive covenants, such as limitations on our ability to incur additional debt, and other operating restrictions that could adversely impact our ability to conduct our business. Any future indebtedness we incur may result in terms that could be unfavorable to equity investors.
+
+There can be no assurance that we will be able to raise additional capital. The inability to raise capital would adversely affect our ability to achieve our business objectives. In addition, if our operating performance during the next 12 months is below our expectations, our liquidity and ability to operate our business could be adversely affected. We are closely monitoring the effect that current macroeconomic factors may have on our working capital requirements.
+
+Credit Facility
+
+On June 15, 2021, we and a syndicate of banks, led by JPMorgan Chase Bank, N.A., as agent, entered into a Loan and Security Agreement (the “Credit Facility”). The Credit Facility consisted of a $450 million revolving loan facility, with a $20 million sublimit for swingline borrowings and a $15 million sublimit for the issuance of letters of credit. Under certain circumstances, we had the right to increase the Credit Facility by an amount not to exceed $300 million.
+
+On December 17, 2021, we amended the Credit Facility to expand the process for issuing letters of credit and the related invoicing, particularly with respect to letters of credit not denominated in U.S. Dollars. On February 9, 2023, we further amended the Credit Facility (as amended, the “Amended Credit Facility”) to transition from a variable interest rate based on the London Interbank Offered Rate (“LIBOR”) to a variable interest rate based on the Secured Overnight Financing Rate (“SOFR”).
+
+On April 14, 2026, we entered into an amended and restated loan and security agreement, among us, as borrower, and a syndicate of banks, led by JPMorgan Chase Bank, N.A., as agent and arranger (the “Restated Loan and Security Agreement”), which amends and restates the terms of our Amended Credit Facility (as so amended and restated, the “Revolving Facility”). Pursuant to the terms of the Restated Loan and Security Agreement, the Revolving Facility consists of a $750 million revolving loan facility, with a $100 million sublimit for the issuance of letters of credit and a $75 million sublimit for swingline borrowings. Under certain circumstances, including receipt of additional lender commitments, we have the right to increase the Revolving Facility by an additional amount not to exceed $750 million.
+
+Outstanding letters of credit under the Amended Credit Facility continued in full and unchanged subsequent to the execution of the Restated Loan and Security Agreement. No outstanding debt balance existed under the Amended Credit Facility at the time of the execution of the Restated Loan and Security Agreement. We paid immaterial accrued interest and fees upon execution of the Restated Loan and Security Agreement. The Revolving Facility has a scheduled maturity of April 14, 2031, at which time all outstanding amounts become due and payable, subject to certain extension mechanics set forth in the Restated Loan and Security Agreement.
+
+As of June 30, 2026, we did not have an outstanding debt balance under the Revolving Facility. Availability under the Revolving Facility was $745 million as of June 30, 2026, which is net of outstanding letters of credit of $5 million. As of June 30, 2026, we were in compliance with all covenants.
+
+For additional information regarding the Amended Credit Facility and the Restated Loan and Security Agreement, refer to Note 6—Debt.
+
+27
+
+Table of Contents
+
+Share Repurchase Program
+
+In February 2023, our board of directors approved a share repurchase program to repurchase our Class A common stock. The share repurchase program, which has no expiration date, is designed to help offset the impact of future share dilution from employee stock issuances. Repurchases under the program may be made in the open market, in privately negotiated transactions or otherwise, with the amount and timing of repurchases determined at our discretion, depending on market conditions and corporate needs. Open market repurchases are structured to occur in accordance with applicable federal securities laws, including within the pricing and volume requirements of Rule 10b-18 under the Exchange Act. We may also, from time to time, enter into Rule 10b5-1 plans to facilitate repurchases of shares under this authorization. This program does not obligate us to acquire any particular amount of Class A common stock, and may be modified, suspended or terminated at any time at the discretion of our board of directors.
+
+As of December 31, 2025, $150 million remained available and authorized for repurchases. In February 2026, an additional $350 million was authorized under this program, bringing the total amount available for future repurchases to $500 million. During the three months ended June 30, 2026, we repurchased and subsequently retired 3 million shares of our Class A common stock for an aggregate repurchase amount of $59 million. During the six months ended June 30, 2026, we repurchased and subsequently retired 10 million shares of our Class A common stock for an aggregate repurchase amount of $233 million. The aggregate repurchase amounts for the three and six months ended June 30, 2026, included immaterial amounts relating to the 1% excise tax on share repurchases, net of share issuances, from the Inflation Reduction Act of 2022 (“IRA”). As of June 30, 2026, $269 million remained available and authorized for repurchases.
+
+Cash Flows
+
+The following table summarizes our cash flows for the periods presented:
+
+Six Months Ended June 30,
+
+2026 2025
+
+(in thousands)
+
+Net cash provided by operating activities $ 545,399 $ 456,446
+
+Net cash provided by (used in) investing activities $ 164,919 $ (346,155)
+
+Net cash used in financing activities $ (245,514) $ (583,367)
+
+Operating Activities
+
+Our cash flows from operating activities are primarily influenced by growth in our operations, increases or decreases in collections from our clients and related payments to our suppliers for Supplier Components. We typically pay suppliers in advance of collections from our clients. Our collection and payment cycles can vary from period to period. In addition, we expect seasonality to impact cash flows from operating activities on a sequential quarterly basis during the year.
+
+For the six months ended June 30, 2026, cash provided by operating activities of $545 million resulted primarily from net income adjusted for noncash items of $418 million and a net increase from our operating assets and liabilities of $127 million. The net increase from our operating assets and liabilities was due to a $548 million decrease in accounts receivable and a $60 million decrease in prepaid expenses and other assets, partially offset by a $428 million decrease in accounts payable, a $36 million decrease in operating lease liabilities and a $17 million decrease in accrued expenses and other liabilities. The decrease in accounts receivable was due to the timing and seasonality of cash receipts from clients. The decrease in prepaid expenses and other assets was primarily due to a reduction in income taxes receivable driven by the current tax provision, net of tax payments, and the receipt of a tax refund. The decrease in accounts payable was due to the timing and seasonality of payments for Supplier Components. The decrease in operating lease liabilities was primarily due to rent payments. The decrease in accrued expenses and other liabilities was primarily due to the timing and seasonality of payments for certain personnel costs and a reduction of the liability relating to the ESPP due to the purchase of shares in accordance with the plan.
+
+For the six months ended June 30, 2025, cash provided by operating activities of $456 million resulted primarily from net income adjusted for noncash items of $470 million and a net decrease from our operating assets and liabilities of $14 million. The net decrease from our operating assets and liabilities was due to a $32 million decrease in operating lease liabilities, a $24 million decrease in accrued expenses and other liabilities, a $20 million decrease in accounts payable and
+
+28
+
+Table of Contents
+
+an $18 million increase in prepaid expenses and other assets, partially offset by an $80 million decrease in accounts receivable. The decrease in operating lease liabilities was due primarily to rent payments. The decrease in accrued expenses and other liabilitie

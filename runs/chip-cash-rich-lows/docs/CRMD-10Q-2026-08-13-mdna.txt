@@ -1,0 +1,227 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+
+The following discussion and analysis of our financial condition and results of operations should be read in conjunction with the unaudited financial information and the notes thereto included in this Quarterly Report on Form 10-Q and our audited 2025 Annual Report on Form 10-K, filed with the Securities and Exchange Commission (the “SEC”), on March 5, 2026.
+
+Forward Looking Statements
+
+This Quarterly Report on Form 10-Q contains “forward-looking statements” within the meaning of the Private Securities Litigation Reform Act of 1995, Section 27A of the Securities Act of 1933, as amended (the “Securities Act”), and Section 21E of the Securities Exchange Act of 1934, as amended (the “Exchange Act”), that are subject to risks and uncertainties. Forward-looking statements are often identified by the use of words such as, but not limited to, “anticipate,” “believe,” “can,” “continue,” “could,” “estimate,” “expect,” “intend,” “may,” “plan,” “project,” “seek,” “should,” “target,” “will,” “would,” and similar expressions or variations intended to identify forward-looking statements. All statements, other than statements of historical facts, regarding management’s expectations, beliefs, goals, plans or CorMedix’s prospects should be considered forward-looking statements. Readers are cautioned that actual results may differ materially from projections or estimates due to a variety of important factors, and readers are directed to the Risk Factors identified in CorMedix’s filings with the SEC, including its most recent Annual Report on Form 10-K, copies of which are available free of charge at the SEC’s website at www.sec.gov or upon request from CorMedix. CorMedix may not actually achieve the goals or plans described in its forward-looking statements, and such forward-looking statements speak only as of the date of this Quarterly Report on Form 10-Q. Investors should not place undue reliance on these statements. CorMedix assumes no obligation and does not intend to update these forward-looking statements, except as required by law.
+
+Forward-looking statements involve estimates, expectations, projections, goals, forecasts, assumptions, risks and uncertainties. Actual outcomes or results may differ from anticipated results, sometimes materially. Factors that could cause actual results to differ include, but are not limited to: the ability of the combined company to achieve the identified synergies; the ability to integrate the Melinta business into CorMedix and realize the anticipated strategic benefits of the transaction within the expected time-frames or at all; that such integration may be more difficult, time-consuming or costly than expected; that operating costs, customer loss and business disruption (including, without limitation, difficulties in maintaining relationships with employees, customers or suppliers) may be greater than expected following the closing of the transaction; the expected benefits and success of Melinta’s products and product candidates; potential litigation relating to the transaction that could be instituted against CorMedix or its directors; rating agency actions and CorMedix’s ability to access short- and long-term debt markets on a timely and affordable basis; general economic conditions that are less favorable than expected; geopolitical developments and additional changes in international trade policies and relations, including tariffs; and the ability of our products and product candidates to compete effectively against current and future competitors.
+
+Overview
+
+CorMedix Inc. (collectively, with our wholly owned subsidiaries, referred to herein as “we,” “us,” “our” or the “Company”) is a biopharmaceutical company focused on developing and commercializing therapeutic products for life-threatening diseases and conditions. Our results of operations are driven by the commercialization of DefenCath® in the United States and, following the acquisition of Melinta in August 2025 (the "merger"), a diversified portfolio of hospital- and clinic-focused infectious disease products. The financial results of Melinta have been included in our consolidated financial statements since the acquisition date, and, as a result, comparisons to prior periods may not be meaningful.
+
+There have been no material changes to our business, strategy or key drivers of our results of operations from those described in our Annual Report on Form 10-K for the year ended December 31, 2025. Accordingly, this discussion should be read in conjunction with the information presented in the Form 10-K, including Item 7, Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+
+Our operating results continue to be influenced by a number of factors, including product adoption and utilization trends, pricing and reimbursement dynamics, including those applicable to DefenCath, and the ongoing integration and performance of the Melinta portfolio. In addition, our results reflect the impact of our capital structure, including interest expense associated with our convertible senior notes, as well as investments in our commercial infrastructure and development activities.
+
+26
+
+Table of Contents
+
+We continue to focus on executing our commercial strategy, supporting product adoption across our portfolio, and advancing initiatives designed to optimize our operating model, improve efficiency within the broader organization, and support long-term growth. While our strategy and key drivers remain unchanged, our results may continue to be affected by the timing and pace of product adoption, reimbursement dynamics, and the execution of cost optimization initiatives.
+
+Recent Developments
+
+REZZAYO is currently approved for the treatment of candidemia and invasive candidiasis in adults. On April 27, 2026, CorMedix announced positive Phase III topline results from the global ReSPECT clinical trial evaluating REZZAYO (rezafungin for injection) for prophylaxis of invasive fungal diseases in adult patients undergoing allogeneic hematopoietic stem cell transplantation, and if approved by the FDA, it is targeting commercialization of REZZAYO in this second indication beginning in 2027.
+
+On April 2, 2026, the U.S. government issued an executive order imposing new tariffs on certain imported goods, including active pharmaceutical ingredients (“APIs”), excipients, and packaging materials commonly used in the pharmaceutical industry. The Company is currently assessing the impact of the tariffs, which may adversely affect our gross margins and operating results. We are currently in the process of onshoring the manufacture of a number of products into the U.S., which we believe will both drive lower manufacturing costs and mitigate certain incremental costs related to tariffs. However, there can be no assurance that we will be able to fully or substantially offset these incremental costs.
+
+On June 8, 2026, the United States Court of Appeals for the Federal Circuit affirmed the judgment of the U.S. District Court for the Northern District of Illinois that the patents covering its product MINOCIN® for Injection are valid and infringed by the product developed by Nexus Pharmaceuticals, Inc.
+
+Results of Operations
+
+Our results of operations are primarily driven by product sales across our portfolio, including contributions from the Melinta acquisition and continued momentum of DefenCath. Operating expenses reflect investments in commercialization, integration activities and personnel to support the expanded business. In addition, our results are impacted by our capital structure, including interest expense associated with our convertible senior notes. Period-to-period comparisons are affected by the inclusion of Melinta's results of operations beginning on August 29, 2025, in connection with the merger.
+
+On July 1, 2026, DefenCath’s TDAPA reimbursement transitioned into a post-TDAPA Add-On Adjustment, the calculation of which is determined by CMS. As a result of the methodology utilized by CMS, the level of reimbursement provided to institutions treating dialysis patients significantly declined, and as a result, CorMedix expects a corresponding reduction to its net pricing, resulting in lower net sales, for DefenCath in the second half of 2026 relative to historical periods. We currently estimate, based on the known CMS methodology for calculation of the post TDAPA Add-on, that the 2027 payment could increase meaningfully above the payment rate for the second half of 2026.
+
+27
+
+Table of Contents
+
+Comparison of the Three and Six Months Ended June 30, 2026 and 2025.
+
+The following is a tabular presentation of our unaudited condensed consolidated operating results for the three and six months ended June 30, 2026 and 2025 (in thousands):
+
+For the Three Months Ended
+
+June 30, % Increase/ (Decrease) For the Six Months Ended
+
+June 30, % Increase/ (Decrease)
+
+2026 2025 2026 2025
+
+Revenue and Grant Income:
+
+Product sales, net $ 94,341 $ 39,736 137 % $ 216,257 $ 78,818 174 %
+
+Contract revenue 4,966 - 100 % 8,048 - 100 %
+
+Grant income 2,624 - 100 % 5,053 - 100 %
+
+Total Revenue and Grant Income $ 101,931 $ 39,736 157 % $ 229,358 $ 78,818 191 %
+
+Cost of sales (exclusive of amortization of intangibles) 14,505 1,810 701 % 26,510 3,355 690 %
+
+Amortization of intangibles 10,300 52 19,708 % 20,600 104 19,708 %
+
+Gross profit $ 77,126 $ 37,874 104 % $ 182,248 $ 75,359 142 %
+
+Operating Expenses:
+
+Research and development 6,684 2,442 174 % 13,896 5,635 147 %
+
+Selling and marketing 12,447 6,384 95 % 24,979 10,858 130 %
+
+General and administrative 15,085 9,504 59 % 36,805 19,197 92 %
+
+Total Operating Expenses 34,216 18,330 87 % 75,680 35,690 112 %
+
+Income From Operations $ 42,910 $ 19,544 120 % $ 106,568 $ 39,669 169 %
+
+Other (Expense) Income:
+
+Unrealized gain (loss) on marketable equity security 2,546 - 100 % (1,000) - 100 %
+
+Change in contingent consideration (6,652) - 100 % (10,851) - 100 %
+
+Other non-operating (expense) income, net (71) 806 (109) % (339) 1,325 (126) %
+
+Total Other (Expense) Income $ (4,177) $ 806 (618) % $ (12,190) $ 1,325 (1,020) %
+
+Income before income taxes $ 38,733 $ 20,350 90 % $ 94,378 $ 40,994 130 %
+
+Tax expense 12,745 522 2,342 % 29,789 522 5,607 %
+
+Net Income $ 25,988 $ 19,828 31 % $ 64,589 $ 40,472 60 %
+
+Revenue and grant income for the three months ended June 30, 2026 was $101.9 million as compared to $39.7 million for the same period in 2025, an increase of $62.2 million or 157%. Revenue for the six months ended June 30, 2026 was $229.4 million as compared to $78.8 million for the same period in 2025, an increase of $150.5 million or 191%. The increase for both the three and six months ended June 30, 2026 is due to higher demand of DefenCath along with the inclusion of the Melinta portfolio in 2026.
+
+For the three months ended June 30, 2026 and 2025, Product sales were $94.3 million and $39.7 million, respectively, representing an increase of $54.6 million or 137%. For the six months ended June 30, 2026 and 2025, Product sales were $216.3 million and $78.8 million, respectively, representing an increase of $137.4 million or 174%. The increase was primarily due to sustained DefenCath demand, including with the onboarding of our large dialysis customer mid-last year, along with the addition of Melinta revenue. Product sales during the periods consist primarily of
+
+28
+
+Table of Contents
+
+sales of DefenCath and reflects the shipment of DefenCath to direct customers and specialty distributors, net of estimates for applicable variable consideration, which consists primarily of distribution service fees, prompt pay and other discounts, product returns, chargebacks, rebates and volume incentive rebates, shelf-stock adjustments and data fees, and includes a change in accounting estimate for Medicaid and returns' sales allowances of zero and $9.0 million during the three and six months ended June 30, 2026, respectively. Revenue from the Melinta Portfolio represents $28.2 million and $52.6 million of product sales in the three and six months ended June 30, 2026. The six-month Melinta Portfolio revenue reflects typical purchasing patterns for the relevant period, including the impact of lower wholesaler channel inventory levels at the end of the second quarter of 2026 relative to the fourth quarter of 2025.
+
+Contract revenue reflects $5.0 million and $8.0 million, respectively, related to milestone, royalty, and inventory revenue under Melinta’s licensing agreements for the three and six months ended June 30, 2026. There was no contract revenue for the three and six months ended June 30, 2025.
+
+Grant income reflects $2.7 million and $5.1 million, respectively, earned under the BARDA agreement for the three and six months ended June 30, 2026. There was no grant income for the three and six months ended June 30, 2025.
+
+The following is a summary of our Total Revenue between the DefenCath sales and the contribution from the Melinta Portfolio (in thousands):
+
+Three Months Ended
+
+June 30, Six Months Ended
+
+June 30,
+
+2026 2025 2026 2025
+
+Product Sales:
+
+DefenCath $ 66,119 $ 39,736 $ 163,630 $ 78,818
+
+Melinta Portfolio 28,222 - 52,627 -
+
+Total Product Sales, net 94,341 39,736 216,257 78,818
+
+Contract Revenue 4,966 - 8,048 -
+
+Grant Income 2,624 - 5,053 -
+
+Total Revenue and Grant Income 101,931 39,736 229,358 78,818
+
+Cost of Sales for the three months ended June 30, 2026 was $14.5 million as compared to $1.8 million for the same period in 2025, an increase of $12.7 million, or 701%. Cost of sales for the six months ended June 30, 2026 was $26.5 million compared to $3.4 million in 2025, an increase of $23.1 million, or 690%. Cost of revenues include direct and indirect costs related to the manufacturing and distribution of DefenCath and Melinta Portfolio, including product cost, packaging services, freight, and an allocation of overhead costs that are primarily fixed such as salaries, benefits and insurance. The increase from 2025 to 2026 is primarily due to higher product sales, driven by higher volume of DefenCath sales and the acquisition of Melinta in August 2025.
+
+Intangible Asset Amortization was $10.3 million and $0.1 million for the three months ended June 30, 2026 and June 30, 2025, an increase of $10.2 million, or 19,708%, respectively. Intangible asset amortization for the six months ended June 30, 2026 was $20.6 million compared to $0.1 million in 2025, respectively, an increase of $20.5 million or 19,708%, respectively. The increase was due to the intangible assets acquired in connection with the acquisition of Melinta completed in the third quarter of 2025.
+
+Research and Development Expense ("R&D") expense for the three months ended June 30, 2026 was $6.7 million, an increase of $4.3 million, or 174%, from $2.4 million for the same period in 2025. R&D expense for the six months ended June 30, 2026 was $13.9 million compared to $5.6 million in 2025, an increase of $8.3 million or 147%. The increase was driven primarily by increased personnel and clinical trial services related to pediatric programs for certain Melinta portfolio products, as well as activities supporting additional DefenCath indications.
+
+Selling and Marketing Expense ("S&M") expense was $12.4 million for the three months ended June 30, 2026, an increase of $6.1 million, or 95%, from $6.4 million for the same period in 2025. S&M expense for the six months ended June 30, 2026 was $25.0 million compared to $10.9 million, an increase of $14.1 million, or 130%. The increase was primarily due to higher personnel cost associated with the larger product portfolio and marketing programs resulting from our acquisition of Melinta.
+
+29
+
+Table of Contents
+
+General and Administrative Expense ("G&A") expense for the three months ended June 30, 2026 was $15.1 million, an increase of $5.6 million, or 59%, from $9.5 million for the same period in 2025. G&A expenses for the six months ended June 30, 2026 was $36.8 million, an increase of $17.6 million, or 92% from the six months ended June 30, 2025 of $19.2 million. The increase was primarily attributable to higher costs associated with operating as a combined company following the merger, including increased facilities, personnel, patent-related costs, information technology infrastructure, and Prescription Drug User Fee Act (“PDUFA”) fees. In addition, general and administrative expense increased due to higher branded prescription drug fees driven by growth in product sales. The increase was partially offset by the recognition of $4.2 million of loss recoveries during the three months ended June 30, 2026, associated with amounts expected to be reimbursed for incurred, qualified litigation-related legal fees under the Company's insurance coverage supporting its ongoing securities litigation. Of the $4.2 million, $2.4 million and $1.5 million, respectively, relates to qualified legal fees incurred in the first quarter of 2026 and the second quarter of 2026.
+
+Unrealized loss on marketable security represents the change in fair value for its marketable equity securities in Talphera, a publicly-traded biotechnology company. For the three months and six months ended, June 30, 2026, we recognized a $2.5 million gain and $1.0 million loss respectively related to the change in fair value of the Talphera stock. As the investment was purchased in the third quarter of 2025, there was no comparative amount in 2025.
+
+Change in contingent consideration for the three and six months ended June 30, 2026, we recognized change in the fair value of contingent consideration of $6.7 million and $10.9 million, primarily driven by the changes in the present value of expected payments resulting from discount accretion. As the merger closed in the third quarter of 2025, there was no comparative amount in 2025.
+
+Other non-operating (expense) income was $0.1 million of expense for the three months ended June 30, 2026 compared to $0.8 million of income for the same period last year, a decrease of $0.9 million, or 109%. Other non-operating (expense) income for the six months ended June 30, 2026 was $0.3 million of expense compared to $1.3 million of income for the same period last year, a decrease of $1.7 million, or 126%. The change was primarily due to interest expense on our $150.0 million aggregate principal amount of convertible senior notes due 2030, which were issued during the third quarter of 2025, and partially offset by interest income on cash and short-term investments.
+
+Tax Expense was $12.7 million for the three months ended June 30, 2026, compared to $0.5 million for the same period in the prior year. Tax expense for the six months ended June 30, 2026 was $29.8 million compared to $0.5 million in the same period of 2025. The tax expense for the current period reflects estimated federal and state income taxes. In contrast, the prior year only reflected state tax as the company had a full valuation allowance against its federal tax basis.
+
+Liquidity and Capital Resources
+
+Sources of Liquidity
+
+As of June 30, 2026, we had cash, cash equivalents and short-term investments of $256.7 million, excluding restricted cash of $1.0 million, compared to $148.5 million as of December 31, 2025, excluding restricted cash of $1.0 million. Our primary sources of liquidity continue to be cash generated from operations, cash on hand, and available capital raising capacity. As of June 30, 2026, $22.1 million of our common stock remained available for potential sale under our at-the-market issuance sales agreement, and $15.0 million remained available under our shelf registration statement.
+
+Net Cash Provided by Operating Activities
+
+Net cash provided by operating activities for the six months ended June 30, 2026 was $128.6 million, compared to $49.7 million for the six months ended June 30, 2025. Cash flows from operating activities were primarily driven by net income, adjusted for non-cash items, and changes in working capital, including accounts receivable, inventory and accrued liabilities. The period-over-period change was primarily attributable to higher net income driven by product sales.
+
+Net Cash Provided by (Used in) Investing Activities
+
+Net cash provided by investing activities for the six months ended June 30, 2026 was $2.4 million, compared to $20.4 million used in investing activities for the six months ended June 30, 2025. Investing activities during the period primarily consisted of proceeds from short-term investments converted into cash partially offset by capital expenditures to support the validation of new contract manufacturing organizations in connection with our initiatives to lower our products'
+
+30
+
+Table of Contents
+
+costs of goods as well as to onshore the manufacture of our products, compared to the prior-year period, which did not include significant transactions.
+
+Net Cash Provided by (Used in) Financing Activities
+
+Net cash used in financing activities for the six months ended June 30, 2026 was $19.2 million, compared to $89.3 million in cash provided by financing activities in the six months ended June 30, 2025. Financing activities during the current period primarily consisted of activity under our stock repurchase program and payments of employee withholding taxes for vested restricted stock units, compared to the prior year period which included net proceeds generated from the sale of our common stock in our ATM program, partially offset by payments of employee withholding taxes for vested restricted stock units.
+
+Funding Requirements and Liquidity
+
+We expect to continue to fund day-to-day operations from cash collections of accounts receivable, our cash on hand, cash equivalents and short-term investments. To support strategic initiatives, we may seek to sell additional equity or debt securities through one or more discrete transactions, but can provide no assurances that any such financing will be available on acceptable terms, or at all. Moreover, the incurrence of indebtedness would result in increased fixed obligations and could contain covenants that would restrict our operations.
+
+Our actual cash requirements may vary materially from those now planned due to a number of factors, including any material change in commercial operations pertaining to our Products or the focus and direction of our research and development programs, any acquisition or pursuit of development of new product candidates, competitive and technical advances, the costs of commercializing any of our product candidates, and costs of filing, prosecuting, defending and enforcing any patent claims and any other intellectual property rights.
+
+We currently estimate that as of June 30, 2026, we have sufficient cash, cash equivalents and short-term investments to fund operations for at least twelve months from the issuance of these financial statements.
+
+Contractual Obligations
+
+There have been no material changes to our contractual obligations and commitments from those disclosed in our Annual Report on Form 10-K for the year ended December 31, 2025, with the exception of an additional commitment of €6.2 million for the purchase of the active pharmaceutical ingredient (API) for VABOMERE from the CMO in 2027.
+
+Critical Accounting Estimates
+
+We prepare our consolidated financial statements in accordance with U.S. generally accepted accounting principles, which require our management to make estimates that affect the reported amounts of assets, liabilities and disclosures of contingent assets and liabilities at the balance sheet dates, as well as the reported amounts of revenues and expenses during the reporting periods. To the extent that there are material differences between these estimates and actual results, our financial condition or results of operations would be affected. We base our estimates on our own historical experience and other assumptions that we believe are reasonable after taking account of our circumstances and expectations for the future based on available information. We evaluate these estimates on an ongoing basis. We consider an accounting estimate to be critical if: (1) the accounting estimate requires us to make assumptions about matters that were highly uncertain at the time the accounting estimate was made, and (2) changes in the estimate that are reasonably likely to occur from period to period, or use of different estimates that we reasonably could have used in the current period, would have a material impact on our financial condition or results of operations. Management has discussed the development and selection of these critical accounting estimates with the Audit Committee of our Board of Directors. In addition, there are other items within our financial statements that require estimation, but are not deemed critical as defined above. Changes in estimates used in these and other items could have a material impact on our financial statements.
+
+● Litigation contingencies are assessed and judgments are made to determine if an unfavorable outcome is considered probable or reasonably possible, and when considered reasonably possible but not probable, the contingency is disclosed along with an estimate of the possible loss or range of loss. If a liability is possible or probable, but no reasonable estimation of loss can be made, we will disclose the nature of the contingency and state that such an estimate cannot be made. Such estimates and judgments are based on information obtained through the discovery process, court filings and follow on filings by the plaintiffs as well as the stage of litigation.
+
+31
+
+Table of Contents
+
+● We account for product revenue from the sale of our Products in accordance with ASC 606, Revenue from Contracts with Customers (“ASC 606”), which entails our estimates and judgments primarily in determining the transaction price and more specifically as it relates to variable consideration associated with the contracts. Our customers are primarily located in the United States and consist primarily of outpatient service providers and to a lesser extent specialty wholesale distributors. Variable consideration pertaining to an allowance for product returns of short-dated or expired product requires estimation as our customers may have differing utilization, storage and distribution methods and we do not yet have significant historical trends specific to DefenCath. The Company’s product return accrual takes into consideration estimates of product held by its customers, the distribution channel, the shelf life of the product held by customers, as well as when the product is eligible for return based on our returns good policy. We have established the estimate for returns based on specific customer circumstances, industry best practices and management experiences, which will continuously be refined as new information is received. At June 30, 2026, we had $11.9 million in accrued returns allowance including the balance recorded for the Melinta Portfolio.
+
+Variable consideration pertaining to accrued Medicaid rebates requires estimation as our customers may have differing utilizations rates of Medicaid coverage, different utilization within States which may be in either the primary or secondary positions, as well as general fluctuations in patient populations over time. Based on the relatively short time since product launch of DefenCath and the inherent lag time in states’ Medicaid processing, the utilization of information the Company has received is limited and, as such, there is a lack of significant historical trends for Medicaid utilization. The Company’s accrual does take into consideration its customers’ recent actual Medicaid utilization rates as well as anticipated Medicaid utilization rates. At June 30, 2026, the Company had $10.3 million in accrued Medicaid rebates, including the balance recorded for the Melinta Portfolio.
+
+During the three months ended March 31, 2026, the Company recorded a change in estimate related to variable consideration for Medicaid rebates and product returns. During the three months ended March 31, 2026, the Company obtained new information regarding Medicaid utilization and updated its assumptions based on substantially completed historical claims data. Such estimates are subject to uncertainty due to the timing and completeness of claims processing. In addition, the Company updated its estimate of product returns as initial rate of return history for DefenCath recently became available, which was lower than previously estimated. For the three months ended June 30, 2026, there were no changes in estimate that impacted sales or income. For the six months ended June 30, 2026, the resulting changes in accounting estimates positively impacted net sales by $9.0 million, and positively impacted income from continuing operations and net income by $6.1 million, net of taxes, and increased basic and diluted earnings per share by $0.08 and $0.07 per share, respectively.
+
+● We account for acquired businesses using the acquisition method of accounting under Business Combinations (Topic 805). With respect to business combinations, we determine the purchase price, including contingent consideration, and allocate the purchase price of acquired businesses to the tangible and intangible assets acquired and liabilities assumed, based on estimated fair values. The excess of the purchase price over the identifiable assets acquired and liabilities assumed is recorded as goodwill.
+
+We engaged a third-party professional service provider to assist us in determining the fair values of the purchase consideration, assets acquired, and liabilities assumed. Such valuations require management to make significant estimates and assumptions, especially with respect to contingent liabilities associated with the purchase price and intangible assets, such as developed product rights and in-process research and development programs. Critical estimates that we have used in valuing these elements include, but are not limited to, future expected cash flows using valuation techniques (i.e., Monte Carlo simulation models) and discount rates. Management’s estimates of fair value are based upon assumptions believed to be reasonable, but which are inherently uncertain and unpredictable.
+
+We record the different elements of contingent consideration resulting from a business combination at their respective fair values on the acquisition date. The purchase price of Melinta included contingent consideration related to certain tiered royalty payments based on future net sales, as well as to regulatory milestones associated with the acquired products. Over time, increases in fair value from the passage of time are accreted and recorded as non-cash interest expense in the consolidated statements of operation.
+
+Changes to contingent consideration obligations, other than the passage of time, may result from adjustments related, but not limited, to changes in discount rates and the number of remaining periods to which the discount rate is applied, updates in the assumed achievement or timing of any regulatory milestone or changes in the probability of certain clinical events, changes in our forecasted sales of products acquired, and changes in the assumed probability associated with regulatory approval. At the end of each reporting period, we evaluate the need to remeasure the contingent
+
+32
+
+Table of Contents
+
+consideration and, if appropriate, we revalue these obligations and record increases or decreases in their fair value in other (expense) income within the accompanying consolidated statements of operations.
+
+Significant judgment is employed in determining the appropriateness of these assumptions as of the acquisition date and for each subsequent period. Accordingly, any change in the assumptions described above, could have a material impact on the amount we may be obligated to pay as well as the results of our condensed consolidated results of operations in any given reporting period.
+
+The Company evaluates long-lived assets for recoverability whenever events or changes in circumstances indicate that the carrying amount may not be recoverable. Certain acquired product-related intangible assets, including assets associated with the oritavancin product group (KIMYRSA and ORBACTIV), require significant management judgment regarding future net cash flows, including assumptions related to market demand, competitive dynamics, pricing, reimbursement, commercialization strategies and projected operating costs. Although management concluded that no impairment existed as of June 30, 2026, these estimates are inherently uncertain. It is reasonably possible that changes in facts and circumstances or revisions to key assumptions could materially affect projected cash flows and result in a material impairment charge in a future reporting period.

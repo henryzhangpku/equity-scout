@@ -1,0 +1,508 @@
+ITEM 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS.
+
+Forward-Looking Statements
+
+The following discussion and analysis of our financial condition and results of operations should be read together with the description of our business and the condensed consolidated financial statements and related notes thereto Part I, Item 1. “Financial Statements” in this Quarterly Report. This Quarterly Report contains forward-looking statements within the meaning of Section 27A of the Securities Act and Section 21E of the Exchange Act that are based on our management’s beliefs and assumptions and on information currently available to our management. Actual results could differ materially from those discussed in or implied by such forward-looking statements. Factors that could cause or contribute to these differences include those discussed below and elsewhere in this Quarterly Report, particularly in Part II, Item 1A. “Risk Factors.” Except as required by law, we do not undertake any responsibility to update any of these factors or to announce publicly any revisions to any of the forward-looking statements contained in this or any document, whether as a result of new information, future events, or otherwise. Forward-looking statements include, but are not limited to:
+
+•our ability to successfully commercialize ANKTIVA globally in current and future approved indications (including NMIBC and NSCLC), and to obtain incremental regulatory approvals for new indications (including BCG-unresponsive NMIBC with CIS, with or without papillary tumors, BCG-unresponsive NMIBC papillary only, and NSCLC) from the FDA and applicable international regulatory agencies;
+
+•our expectations regarding the operation and effectiveness of our approved product and product candidates and related benefits, potential future uses and applications of our approved product and product candidates, including potential use in cancer vaccines and across multiple tumor types, and the benefits and uses or our strategy and technology generally;
+
+•our ability to obtain additional financing to fund our operations and advance the commercialization of our approved product and the development and commercialization of our other product candidates;
+
+•our ability to comply with the terms, conditions, covenants, restrictions, and obligations set forth in the RIPA and related transaction documents;
+
+•our ability to forecast operating results, including estimates regarding our future revenue and operating expenses, and make period-to-period comparisons predictive of future performance, including due to the impact of fluctuations in warrant, derivative, and fair value accounting measurement values;
+
+•our beliefs regarding the benefits and perceived limitations of competing approaches, and the future of competing technologies and our industry;
+
+•our beliefs regarding the success, cost and timing of our approved product and product candidate development activities and current and future clinical trials and studies, including study design, the enrollment of patients, and the timing of data readouts related thereto;
+
+•our expectations regarding our ability to utilize the Phase 1/2 aNK, haNK®, taNK, and NK-CAR (t-haNK™) clinical trials data to support the development of our product candidates, including our NK-CAR (t-haNK), MSC, and M-ceNK™ product candidates; the timing or likelihood of regulatory filings or other actions and related regulatory authority responses in the U.S. and jurisdictions outside of the U.S., including any planned meetings, investigational new drug, BLA, NDA or marketing authorization application or similar filings or pursuit of accelerated regulatory approval pathways or orphan drug status and Breakthrough Therapy, Fast Track or RMAT designations and any designation’s impact on BLA submission filing or approval timing and or approval probability;
+
+•the ability and willingness of various third parties to engage in research and development activities involving our product or product candidates, and our ability to leverage those activities;
+
+•our ability to enter into and successfully execute on clinical, regulatory and commercial arrangements internationally to accelerate the development and commercialization of ANKTIVA and our other product candidates;
+
+38
+
+Table of Contents
+
+ImmunityBio, Inc. and Subsidiaries
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+
+•our expectations regarding the ease of administration and patient compatibility associated with our approved product and product candidates;
+
+•our beliefs regarding the potential markets for our approved product and product candidates and our ability to serve those markets, including the rate and degree of market acceptance of any approved products;
+
+•our beliefs regarding the potential manufacturing and distribution benefits associated with our approved product and product candidates, and our third-party CMOs’ abilities to follow cGMP standards to scale up the production of our approved product and product candidates;
+
+•our plans regarding manufacturing and distribution of our approved product and potential future products, including the enhancement of our in-house manufacturing capabilities;
+
+•our ability to attract and retain key personnel;
+
+•our ability to obtain, maintain, protect, and enforce patent protection and other proprietary rights for our approved product and our other product candidates, and other technologies in development;
+
+•the terms and conditions of licenses granted to us and our ability to license additional intellectual property relating to our product, product candidates and technology;
+
+•our expectations regarding the results of market access initiatives and coverage under medical reimbursement policies;
+
+•our expectations regarding the abilities of our international partners to drive commercialization of ANKTIVA in the EU and Middle East and North Africa regions;
+
+•the expected shelf life of ANKTIVA drug substance and drug product and availability of product supply;
+
+•our global expansion efforts and the accuracy of our assumptions related to tariffs and government policy changes, including Most-Favored Nation Prescription Drug Pricing;
+
+•any government shutdown or budget disruption, which could adversely affect the U.S. and global economies, and materially and adversely affect our business and/or our future BLA submissions;
+
+•the impact on us, if any, if the CVRs held by former Altor stockholders become due and payable; and
+
+•regulatory developments in the U.S. and foreign countries.
+
+Forward-looking statements include statements that are not historical facts and can be identified by terms such as “anticipates,” “believes,” “continues,” “goal,” “could,” “estimates,” “scheduled,” “expects,” “intends,” “may,” “plans,” “potential,” “predicts,” “indicate,” “projects,” “seeks,” “should,” “will,” “would,” “strategy,” and variations of such words or similar expressions. and the negatives of those terms. In addition, statements that “we believe” and similar statements reflect our beliefs and opinions on the relevant subject. Statements of past performance, efforts, or results of our preclinical and clinical trials, about which inferences or assumptions may be made, can also be forward-looking statements and are not indicative of future performance or results. These statements are based upon information available to us as of the date of this Quarterly Report, and although we believe such information forms a reasonable basis for such statements, such information may be limited or incomplete, and our statements should not be read to indicate that we have conducted a thorough inquiry into, or review of, all potentially available relevant information. These statements are inherently uncertain, and investors are cautioned not to unduly rely upon these statements.
+
+39
+
+Table of Contents
+
+ImmunityBio, Inc. and Subsidiaries
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+
+Forward-looking statements involve known and unknown risks, uncertainties, and other factors that may cause our actual results, performance, or achievements to be materially different from any future results, performance, or achievements expressed or implied by the forward-looking statements. We discuss these risks in greater detail in Part II, Item 1A. “Risk Factors” of this Quarterly Report. Given these uncertainties, you should not place undue reliance on these forward-looking statements as a representation or warranty by us or any other person that we will achieve our objectives and plans in any specified time frame. Also, forward-looking statements represent our management’s beliefs and assumptions only as of the date of this Quarterly Report.
+
+Except as required by law, we assume no obligation to update these forward-looking statements, or to update the reasons actual results could differ materially from those anticipated in these forward-looking statements, even if new information becomes available in the future. You should read this Quarterly Report completely and with the understanding that our actual future results may be materially different from what we expect.
+
+ImmunityBio, ImmunityBio Care, ANKTIVA, ThAnktiva, haNK, taNK, ceNK, NK-92, Nant Cancer Vaccine, BioShield (and other BioShield-related trademarks), NANT 001, NANT XL, NANT 001 and Design, QUILT, Outsmart Your Disease, Smart Therapies for Difficult Diseases, NantKwest, VivaBioCell, and Infacell are trademarks or registered trademarks of ImmunityBio, Inc., its subsidiaries and affiliates.
+
+ANKTIVA is approved or authorized in five regulatory jurisdictions, expanding its global footprint to 34 countries, for use in combination with BCG for the treatment of adult patients with BCG-unresponsive NMIBC with CIS, with or without papillary tumors. ANKTIVA has also received marketing authorization from the EDE and accelerated conditional approval from the SFDA in combination with checkpoint therapy for adult patients with metastatic NSCLC whose disease has progressed following standard-of-care therapy. Other than as set forth in such specific approved label, our product candidates, including N-803, are investigational agents that are restricted by federal law to investigational use only, and safety and efficacy have not been established by any agency, including, without limitation, the FDA.
+
+This Quarterly Report contains references to our products and trademarks and products and trademarks belonging to other entities. Solely for convenience, trademarks and trade names referred to in this Quarterly Report, including logos, artwork, and other visual displays, may appear without the ® or TM symbols, but such references are not intended to indicate, in any way, that we will not assert, to the fullest extent under applicable law, our rights or the rights of the applicable licensor to these trademarks and trade names. We do not intend our use or display of other companies’ products or trade names or trademarks to imply a relationship with, or endorsement or sponsorship of us, by any other companies.
+
+In this Quarterly Report, the terms “ImmunityBio,” “the company,” “we,” “us,” and “our” refer to ImmunityBio, Inc. and its subsidiaries.
+
+40
+
+Table of Contents
+
+ImmunityBio, Inc. and Subsidiaries
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+
+Our Business
+
+ImmunityBio, Inc. is a biotechnology company focused on innovating, developing, and commercializing next-generation immunotherapies designed to activate the patient’s immune system and deliver durable protection against cancer and infectious diseases. Our approach harnesses both the adaptive and innate immune systems with the goal of restoring immune function and generating lasting immunological memory in patients. At the core of our strategy is the Cancer BioShield platform, which is designed to stimulate critical lymphocytes, including natural killer (NK) cells, cytotoxic T cells, and memory T cells via our proprietary IL-15 superagonist, ANKTIVA. Our Cancer BioShield platform is anchored by this antibody-cytokine fusion protein and is complemented by a portfolio that includes adenovirus-vectored vaccines, allogeneic (off-the-shelf) and autologous NK-cell therapies, and additional immunomodulators intended to promote immunogenic cell death and support durable immune responses while potentially reducing reliance on high-dose chemo-radiation therapy.
+
+ANKTIVA is our lead biological product and a first-in-class IL-15 receptor superagonist antibody-cytokine fusion protein. We are commercializing ANKTIVA for the treatment of BCG-unresponsive NMIBC with CIS, with or without papillary tumors.
+
+ANKTIVA is approved or authorized in five regulatory jurisdictions, expanding its global footprint to 34 countries, for use in combination with BCG for the treatment of adult patients with BCG-unresponsive NMIBC with CIS, with or without papillary tumors. ANKTIVA has also received accelerated conditional approval from the SFDA in combination with checkpoint therapy for adult patients with metastatic NSCLC whose disease has progressed following standard-of-care therapy. The approved and conditionally approved labels highlight ANKTIVA’s ability to simultaneously activate NK cells, cytotoxic T cells, and memory T cells.
+
+In May 2026, we announced the FDA accepted for review our sBLA for ANKTIVA indicated with BCG for the treatment of adult patients with BCG-unresponsive NMIBC with papillary tumors without CIS and assigned a PDUFA target action date of January 6, 2027. There can be no assurance that the FDA will ultimately approve our sBLA.
+
+In July 2026, we announced the EDE of the UAE granted marketing authorization for ANKTIVA indicated with BCG for the treatment of adult patients with BCG-unresponsive NMIBC with CIS, with or without papillary tumours, and BCG-unresponsive NMIBC with papillary tumours without CIS, as well as for ANKTIVA in combination with CPIs for the treatment of adult patients with metastatic NSCLC whose disease has progressed following standard-of-care therapy.
+
+ANKTIVA in combination with our CAR-NK therapy (PD-L1 t-haNK) has received RMAT designation from the FDA for use in combination with standard-of-care chemotherapy/radiotherapy for the reversal of lymphopenia and treatment of multiply relapsed locally advanced or metastatic pancreatic cancer. Separately, the FDA has authorized an EAP for ANKTIVA to treat lymphopenia in adult patients with refractory or relapsed solid tumors, regardless of tumor type, who have progressed following first-line standard-of-care treatment, including chemotherapy, radiation, or immunotherapy. The EAP includes patients with solid tumors who have failed first-line therapy and have a low ALC (ALC <1,000/μL).
+
+41
+
+Table of Contents
+
+ImmunityBio, Inc. and Subsidiaries
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+
+We are seeking to expand development of ANKTIVA in combination with current standard-of-care therapies across multiple solid and liquid tumor indications including:
+
+•BCG-unresponsive NMIBC with papillary tumors;
+
+•BCG-naïve NMIBC;
+
+•Second-line NSCLC;
+
+•First-line NSCLC;
+
+•Glioblastoma;
+
+•Indolent non-Hodgkin lymphoma, including Waldenström macroglobulinemia;
+
+•Pancreatic cancer;
+
+•Prostate cancer; and
+
+•Ovarian cancer.
+
+In addition, ANKTIVA has been selected by the NCI for evaluation in a cancer prevention study in patients with Lynch syndrome, and we are evaluating the combination of ANKTIVA with other agents in colorectal cancer. The company is also supporting an ongoing EAP for rBCG to help address U.S. supply constraints. We are also establishing or conducting trials in multiple myeloma, HCC, and triple-negative breast cancer.
+
+Significant Developments
+
+The following is a summary of selected significant developments affecting our business that occurred since the filing of our Quarterly Report dated March 31, 2026 with the SEC on May 7, 2026:
+
+•Q2 2026 net product revenue of $50.7 million, up 92% year-over-year and 15% sequentially from Q1 2026, marking the eighth consecutive quarter of sequential revenue growth since the commercial launch of ANKTIVA, driven by continued adoption among U.S. urologists and strong market access
+
+•First-half 2026 net product revenue of $94.8 million, up 121% compared with the first half of 2025
+
+•In July 2026, we announced the EDE of the UAE granted the broadest marketing authorization for ANKTIVA across BCG-unresponsive NMIBC for CIS and papillary disease and metastatic NSCLC
+
+•The FDA accepted for review the company’s sBLA for ANKTIVA indicated with BCG in patients with BCG-unresponsive NMIBC with papillary tumors without CIS and assigned a PDUFA target action date of January 6, 2027
+
+•Continued advancement across the clinical pipeline, with multiple anticipated regulatory, clinical, and data milestones expected over the next 12 months, including a planned 2026 sBLA submission for the Phase 2B QUILT-2.005 trial in BCG-naïve NMIBC CIS (with or without papillary tumors)
+
+•Entered into an exclusive development and supply agreement with JBL, securing exclusive U.S. rights to develop, import, and commercialize intravesical Tokyo-172 BCG to support long-term supply for patients with NMIBC
+
+42
+
+Table of Contents
+
+ImmunityBio, Inc. and Subsidiaries
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+
+Pipeline Summary
+
+Product Candidate Indication Phase Status
+
+ANKTIVA + BCG BCG-unresponsive NMIBC CIS Approved FDA, MHRA, SFDA, and EDE approval; EMA conditional marketing authorization
+
+ANKTIVA + BCG BCG-unresponsive papillary sBLA
+EDE approval; FDA PDUFA target action date (January 6, 2027)
+
+ANKTIVA + CPI Progressing, metastatic NSCLC Approved/Phase 3 EDE approval; SFDA accelerated conditional approval
+
+ANKTIVA + BCG BCG-naïve NMIBC Phase 2B Fully enrolled
+
+ANKTIVA + PD-L1 CAR-NK Recurrent GBM Phase 2/3 Phase 2 complete. Registrational trial planned.
+
+ANKTIVA + PD-L1 CAR-NK Pancreatic cancer Phase 2 RMAT designation
+
+CD19 CAR-NK + rituximab NHL Phase 1 QUILT-106
+
+ANKTIVA Lymphopenia (solid tumors) Expanded Access FDA EAP authorized
+
+rBCG (Serum Institute) NMIBC Expanded Access FDA EAP authorized
+
+M-ceNK Solid tumors Phase 1 Completed
+
+Ad-HPV HPV Phase 2 Initiated and enrolling
+
+Cancer BioShield Platform Components Addressing the Immune System
+
+As of June 30, 2026, our pipeline includes clinical-stage programs in the following indications:
+
+•Bladder Cancer: BCG-unresponsive NMIBC with CIS, with or without papillary tumors (approved), BCG-unresponsive papillary (PDUFA target action date (January 6, 2027)), BCG-naïve NMIBC
+
+•Lung Cancer: Progressing, metastatic NSCLC in combination with CPIs (marketing authorization from the EDE and accelerated conditional approval from the SFDA)
+
+•Lymphopenia: Tumor-agnostic treatment of chemotherapy/radiation-induced lymphopenia (EAP authorized)
+
+•Pancreatic Cancer: Advanced/metastatic disease (RMAT designation)
+
+•Glioblastoma: Recurrent GBM (registrational trial planned)
+
+•Non-Hodgkin Lymphoma: Waldenström macroglobulinemia and other CD19+/CD20+ lymphomas
+
+•Colorectal Cancer/Lynch Syndrome: Cancer prevention in high-risk patients (NCI-sponsored)
+
+•Prostate Cancer: High-risk prostate cancer
+
+•Ovarian Cancer: Platinum-resistant ovarian cancer
+
+•Infectious Diseases: HIV, Long COVID, universal nucleocapsid vaccine
+
+•Apheresis Platform: M-ceNK with cryopreservation and storage
+
+43
+
+Table of Contents
+
+ImmunityBio, Inc. and Subsidiaries
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+
+Collaboration Agreements
+
+We anticipate that strategic collaborations will continue to be an integral part of our operations, providing opportunities to leverage our partners’ expertise and capabilities to gain access to new markets for our approved product and acquire new technologies or further expand the potential of our technologies, approved product and product candidates across relevant platforms. We have initiated strategic commercial partnerships in Europe and the Middle East to expand access to our approved product and expect to continue to form additional commercial partnerships in other regions as our business grows. We also have a global arrangement with Serum Institute, one of the world’s largest vaccine manufacturers, to supply us with rBCG for use in our clinical development programs, and a development and supply agreement for the U.S. with JBL for Tokyo-172 BCG to address TICE BCG shortages.
+
+We believe that our innovative approach to orchestrate and combine therapies for optimal immune system response will become a therapeutic foundation across multiple indications. Additionally, we believe that data from multiple clinical trials indicates ANKTIVA has broad potential to enhance the activity of therapeutic monoclonal antibodies, including CPIs, across a wide range of tumor types and potentially rescue lymphopenia by proliferation and activation of NK and T cells. We may also enter into supply arrangements for various investigational agents to be used in our clinical trials. See Part I, Item 1. “Business—Collaboration and License Agreements” of our Annual Report filed with the SEC on February 23, 2026 for a more detailed discussion regarding our collaboration and license agreements.
+
+Agreements with Related Parties
+
+Our Executive Chairman and Global Chief Scientific and Medical Officer also founded and has a controlling interest in NantWorks, which is a collection of companies in the healthcare and technology space. We have entered into arrangements with NantWorks, and certain affiliates of NantWorks. Affiliates of NantWorks are also affiliates of the company due to the common control by and/or common ownership interest of our Founder, Executive Chairman and Global Chief Scientific and Medical Officer.
+
+Related-Party Debt
+
+See Note 11 “Related-Party Debt” of the “Notes to Unaudited Condensed Consolidated Financial Statements” that appears in Part I, Item 1. “Financial Statements” of this Quarterly Report for information regarding our related-party debt.
+
+NantWorks, LLC
+
+Our Founder, Executive Chairman and Global Chief Scientific and Medical Officer also founded and has a controlling interest in NantWorks, which is a collection of companies in the healthcare and technology space. We have entered into arrangements with NantWorks, and certain affiliates of NantWorks. Affiliates of NantWorks are also affiliates of the company due to the common control by and/or common ownership interest of our Founder, Executive Chairman and Global Chief Scientific and Medical Officer. See Note 12 “Related-Party Agreements” of the “Notes to Unaudited Condensed Consolidated Financial Statements” that appears in Part I, Item 1. “Financial Statements” of this Quarterly Report for more information regarding our agreements with NantWorks.
+
+Immuno-Oncology Clinic, Inc.
+
+We have entered into multiple agreements with the Clinic to conduct clinical trials related to certain of our product candidates. The Clinic is a related party as it is owned by an officer of the company, and NantWorks manages the administrative operations of the Clinic. See Note 12 “Related-Party Agreements” of the “Notes to Unaudited Condensed Consolidated Financial Statements” that appears in Part I, Item 1. “Financial Statements” of this Quarterly Report for more information regarding our agreements with the Clinic.
+
+Related-Party Leases
+
+We lease property in multiple facilities across the U.S. and Italy, including facilities located in El Segundo and Culver City, CA that are leased from related parties. See Note 12 “Related-Party Agreements” of the “Notes to Unaudited Condensed Consolidated Financial Statements” that appears in Part I, Item 1. “Financial Statements” of this Quarterly Report for more information about our related-party leases.
+
+44
+
+Table of Contents
+
+ImmunityBio, Inc. and Subsidiaries
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+
+Related-Party Warrants
+
+A total of 1,638,000 warrants issued to an affiliate of Dr. Soon-Shiong with an exercise price of $3.24 per share were outstanding as of June 30, 2026. See Note 15 “Stock-Based Compensation” of the “Notes to Unaudited Condensed Consolidated Financial Statements” that appears in Part I, Item 1. “Financial Statements” of this Quarterly Report for more information regarding the related-party warrants.
+
+Contingent Value Rights
+
+In connection with our 2017 acquisition of Altor, we issued CVRs under which we agreed to pay the prior stockholders of Altor approximately $304.0 million of contingent consideration upon calendar-year worldwide net sales of ANKTIVA exceeding $1.0 billion prior to December 31, 2026, with amounts payable in cash or shares of our common stock or a combination thereof. As of June 30, 2026, Dr. Soon-Shiong, our Founder, Executive Chairman and Global Chief Scientific and Medical Officer, and his related party hold approximately $139.8 million of net sales CVRs. See Note 8 “Commitments and Contingencies” of the “Notes to Unaudited Condensed Consolidated Financial Statements” that appears in Part I, Item 1. “Financial Statements” of this Quarterly Report for more information regarding the CVRs.
+
+45
+
+Table of Contents
+
+ImmunityBio, Inc. and Subsidiaries
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+
+Discussion of Condensed Consolidated Results of Operations
+
+Comparison of the Three Months Ended June 30, 2026 and 2025
+
+Three Months Ended
+
+June 30,
+
+2026 2025 $ Change % Change
+
+($ in thousands)
+
+Revenue
+
+Product revenue, net $ 50,672 $ 26,421 $ 24,251 92 %
+
+Other revenues 568 4 564 *
+
+Total revenue 51,240 26,425 24,815 94 %
+
+Operating cost and expenses
+
+Cost of sales 298 136 162 119 %
+
+Research and development (including amounts
+
+with related parties)
+60,816 55,236 5,580 10 %
+
+Selling, general and administrative (including
+
+amounts with related parties)
+51,823 42,338 9,485 22 %
+
+Total operating costs and expenses 112,937 97,710 15,227 16 %
+
+Loss from operations (61,697) (71,285) 9,588 (13) %
+
+Other income (expense), net:
+
+Interest and investment income, net 3,155 1,153 2,002 174 %
+
+Change in fair value of related-party convertible note (95,964) 1,169 (97,133) *
+
+Change in fair value of warrant liabilities (44,190) 3,889 (48,079) *
+
+Interest expense related to the revenue interest liability (17,192) (13,405) (3,787) 28 %
+
+Interest expense (including amounts with related parties) (14,052) (15,479) 1,427 (9) %
+
+Change in fair value of derivative liabilities (692) 1,931 (2,623) (136) %
+
+Other income (expense), net 242 (278) 520 (187) %
+
+Total other expense, net (168,693) (21,020) (147,673) 703 %
+
+Loss before income taxes and noncontrolling interests (230,390) (92,305) (138,085) 150 %
+
+Income tax expense — (269) 269 (100) %
+
+Net loss $ (230,390) $ (92,574) $ (137,816) 149 %
+
+_______________
+
+*Not meaningful.
+
+Product Revenue, Net
+
+Product revenue, net increased $24.3 million during the three months ended June 30, 2026, as compared to the three months ended June 30, 2025, due to an increase in sales of ANKTIVA.
+
+Other Revenues
+
+Other revenues increased $0.6 million during the three months ended June 30, 2026, as compared to the three months ended June 30, 2025, primarily due to increased bioreactor and related consumable product sales.
+
+46
+
+Table of Contents
+
+ImmunityBio, Inc. and Subsidiaries
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+
+Cost of Sales
+
+Cost of sales increased $0.2 million during the three months ended June 30, 2026, as compared to the three months ended June 30, 2025. Cost of sales consists primarily of third-party manufacturing, distribution, and overhead costs. All costs associated with the production of ANKTIVA prior to receiving regulatory approval were expensed in research and development expense, on the condensed consolidated statement of operations in the period incurred and therefore are not reflected in cost of sales. As a result, our initial product gross margin is higher as our pre-launch inventory costs are not included in the cost of sales. We expect the cost of sales for ANKTIVA to increase and product gross margin to normalize in relation to product revenues as we deplete these inventories.
+
+Research and Development Expense
+
+Research and development expense consists of expenses incurred while performing research and development activities to expand the approved markets, label, and indications of our approved product ANKTIVA and to discover and develop our technology and product candidates. This includes conducting preclinical studies and clinical trials, manufacturing development efforts, and activities related to regulatory submissions for our approved product and product candidates. We expense research and development costs as they are incurred.
+
+Our research and development expenses primarily consist of:
+
+•clinical trial and regulatory-related costs;
+
+•expenses incurred under agreements with investigative sites, CROs, and consultants that conduct our clinical trials;
+
+•expenses incurred under collaborative agreements;
+
+•manufacturing and testing costs and related supplies and materials;
+
+•employee-related expenses, including salaries, benefits, travel and stock-based compensation; and
+
+•facility and equipment expenses dedicated to research and development.
+
+The company classifies its research and development expenses as either external or internal. The company’s external research and development expenses support its various preclinical and clinical programs. The company’s internal research and development expenses include payroll and benefits expenses, facilities and equipment expense, and other indirect research and development expenses incurred in support of its research and development activities. The company’s external and internal resources are not directly tied to any one research or drug discovery program and are typically deployed across multiple programs and are not allocated to specific product candidates or development programs.
+
+We expect our research and development expenses to increase significantly for the foreseeable future as we continue to invest in research and development activities related to expanding our product into new indications and markets, developing our other product candidates, and conducting our ongoing and planned clinical trials.
+
+47
+
+Table of Contents
+
+ImmunityBio, Inc. and Subsidiaries
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+
+The process of conducting clinical trials necessary to obtain regulatory approval is costly and time consuming. The successful development of product candidates is highly uncertain. At this time, we cannot reasonably estimate the nature, timing or costs required to complete the remaining development of our other product candidates or to expand potential approved markets and indications for ANKTIVA. This is due to the numerous risks and uncertainties associated with the development of product candidates.
+
+The costs of clinical trials may vary significantly over the life of a project owing to, but not limited to, the following:
+
+•per patient trial costs;
+
+•the number of sites included in the clinical trials;
+
+•the countries in which the clinical trials are conducted;
+
+•the length of time required to enroll eligible patients;
+
+•the number of patients that participate in the clinical trials;
+
+•the number of doses that patients receive;
+
+•the cost of comparative or combination agents used in clinical trials;
+
+•the drop-out or discontinuation rates of patients;
+
+•potential additional safety monitoring or other studies or incremental cohorts requested by regulatory agencies;
+
+•potential CRO costs and overhead;
+
+•the duration of patient follow-up; and
+
+•the safety profile and efficacy of the product candidate.
+
+Research and development expense increased $5.6 million during the three months ended June 30, 2026, as compared to the three months ended June 30, 2025. The following table summarizes our research and development expense during the three months ended June 30, 2026 and 2025, together with the changes in those items (in thousands):
+
+Three Months Ended
+
+June 30,
+
+2026 2025 $ Change
+
+External research and development expenses $ 10,424 $ 8,552 $ 1,872
+
+Internal research and development expenses:
+
+Personnel-related costs 26,602 23,632 2,970
+
+Equipment, depreciation, and facility costs 13,410 13,111 299
+
+Other research and development costs 10,380 9,941 439
+
+Total internal research and development expenses 50,392 46,684 3,708
+
+Total research and development expense $ 60,816 $ 55,236 $ 5,580
+
+48
+
+Table of Contents
+
+ImmunityBio, Inc. and Subsidiaries
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+
+Research and development expense increased $5.6 million primarily attributable to the following:
+
+•a $1.9 million increase in external research and development expenses, driven by higher clinical trial expenses, and external manufacturing costs, partially offset by lower regulatory expenses and lower external testing expenses;
+
+•a $3.0 million increase in personnel-related costs, primarily due to higher salaries and benefits driven by increased headcount;
+
+•a $0.3 million increase in equipment, depreciation, and facility costs, primarily due to higher depreciation expenses and lease expenses driven by the Dunkirk Lease amendment, and higher facility security costs, partially offset by lower building repair expenses; and
+
+•a $0.4 million increase in other research and development costs, primarily due to higher distribution costs, and higher software license fees, partially offset by fewer supplies and materials purchases, and lower research agreement expenses.
+
+We expect our research and development expense to increase significantly as we pursue label expansions for ANKTIVA in the U.S. and globally, advance our product pipeline, and execute planned clinical trials.
+
+Selling, General and Administrative Expense
+
+Selling, general and administrative expense consists primarily of salaries and personnel-related costs, including employee benefits and any stock-based compensation, for employees performing functions other than research and development. This includes personnel in executive, finance, human resources, information technology, legal, sales and administrative support functions. Other selling, general and administrative expenses include sales and marketing costs, facility-related costs not otherwise allocated to research and development expense, professional fees for auditing, tax and legal services, advertising costs, expenses associated with strategic business transactions and business development efforts, obtaining and maintaining patents, consulting costs, royalties and licensing costs, and costs of our information systems.
+
+We expect that our selling, general and administrative expense will increase for the foreseeable future as we continue commercializing our approved product and expand operations in the U.S. and globally, build out information systems and increase our headcount to support continued research activities and the development of our clinical programs. We have incurred and expect that we will continue to incur in the future, additional costs associated with operating as a public company, including costs to comply with stock exchange listing and SEC requirements, future funding efforts, corporate governance, internal controls, investor relations, disclosure and similar requirements applicable to public companies. Additionally, as we pursue international product sales of our approved product we expect to incur the associated increases in our selling, general and administrative expense. If and when we believe that a regulatory approval of one of our other product candidates appears likely, we expect to incur significant increases in our selling, general and administrative expense related to the sales and marketing of any additional approved product candidates.
+
+Selling, general and administrative expense increased $9.5 million during the three months ended June 30, 2026, as compared to the three months ended June 30, 2025, primarily attributable to the following:
+
+•a $3.5 million increase in professional service expenses that was primarily attributable to an increase in consulting fees driven by commercialization and marketing related services, and an increase in audit and tax fees, partially offset by a decrease in legal expenses;
+
+•a $2.7 million increase in personnel-related costs including salaries and benefits, commissions, recruiting and training expenses, and travel expenses due to growing sales and marketing activities, partially offset by a decrease in stock-based compensation;
+
+•a $2.1 million increase in commercial-related expenses that was primarily driven by higher marketing expenses and higher distribution costs as a result of continued commercialization development and sales growth;
+
+49
+
+Table of Contents
+
+ImmunityBio, Inc. and Subsidiaries
+
+Management’s Discussion and Analysis of Financial Condition and Results of Operations (Continued)
+
+•a $0.6 million increase in equipment expenses that was primarily due to increased software license fees, and higher IT equipment purchase costs; and
+
+•a $0.6 million increase in other expenses that was primarily attributable to a reduction in net shared service benefits, and an increase in depreciation and amortization expenses.
+
+Other Income (Expense), Net
+
+Other income (expense), net consists primarily of interest and investment income, interest expense, unrealized gains and losses from investments in equity securities, changes in fair value of warrant liabilities, derivative liabilities, and convertible notes, realized gains and losses on debt and equity securities, warrant issuance costs, write-off of a convertible note receivable, and gains and losses on foreign currency transactions.
+
+Total other expense, net, increased $147.7 million during the three months ended June 30, 2026, as compared to the three months ended June 30, 2025, primarily attributable to the following:
+
+•an increase of $97.1 million from the change in fair value of a related-party convertible note driven by the revaluation loss of $96.0 million associated with the increase in our common stock price during the three months ended June 30, 2026, as compared to the revaluation gain of $1.1 million during the three months ended June 30, 2025;
+
+•an increase of $48.1 million from the change in fair value of warrant liabilities mainly driven by the increase in our common stock price and a corresponding increase in the fair value of the warrant liabilities;
+
+•an increase of $3.8 million in interest expense related to the revenue interest liability as a result of the increased RIPA debt principal balance;
+
+•an increase of $2.6 million from the change in fair value of derivative liabilities driven by recurring fair value adjustments at the end of each reporting period; partially offset by
+
+•an increase of $2.0 million in interest and investment income, net, driven by a higher outstanding balance of treasury security holdings;
+
+•a decrease of $1.4 million in interest expense due to the lower December 2024 Convertible Promissory Note balance, coupled with a decreased interest rate driven by a lower Term SOFR; and
+
+•a decrease of $0.5 million in other income (expense), net, primarily due to income recognized from promotional equipment received during the three months ended June 30, 2026, compared to a loss on asset disposals during the three months ended June 30, 2025.
+
+50
+
+Table of Contents
+
+ImmunityBio, Inc. and Sub

@@ -1,0 +1,530 @@
+Exhibit 99.1
+
+Teladoc Health Reports Second Quarter 2026 Results
+
+NEW YORK, July 29, 2026— Teladoc Health, Inc. (NYSE: TDOC), the global leader in virtual care, today reported financial results for the three months ended June 30, 2026 (“Second Quarter 2026”). Unless otherwise noted, percentage and other changes are relative to the three months ended June 30, 2025 (“Second Quarter 2025”).
+
+Highlights
+
+•Second Quarter 2026 revenue of $606.9 million, down 4% year-over-year
+
+•Second Quarter 2026 net loss of $38.9 million, or $0.21 per share
+
+•Second Quarter 2026 adjusted EBITDA of $65.7 million, down 5% year-over-year
+
+•Integrated Care segment revenue of $394.3 million, up 1% year-over-year, and adjusted EBITDA margin of 16.5%
+
+•BetterHelp segment revenue of $212.6 million, down 12% year-over-year, and adjusted EBITDA margin of 0.2%
+
+“We continue to make progress on the priorities we believe are most important to the long-term success of Teladoc Health. Our second-quarter results were within our guidance ranges on a consolidated basis and reflected distinct dynamics across our two segments,” said Chuck Divita, Chief Executive Officer of Teladoc Health. “We delivered solid Integrated Care segment performance, with revenue growth and adjusted EBITDA margin above the midpoint of our guidance ranges and continued to advance new innovations designed to strengthen the value we provide to clients and members, including the launch of Teladoc One, our new connected care model for the U.S. market.”
+
+“In the BetterHelp segment, insurance revenue came in near the high end of our expectations. However, pressure on cash pay revenue accelerated further in late May and into June, beyond the assumptions underlying our prior outlook. We saw stronger than anticipated demand for insurance covered services that outpaced available provider capacity, limiting our ability to convert a greater share of that demand into sessions and revenue to offset the cash pay decline. Given strong consumer preference for insurance, we accelerated the nationwide insurance rollout ahead of plan, and we are taking focused actions to further support the scaling of insurance.
+
+We continue to expect 2026 insurance revenue within our previously communicated range, but we have lowered our BetterHelp segment revenue outlook to reflect updated assumptions for cash pay including prioritization of the growing insurance market. We are addressing BetterHelp’s near-term challenges with urgency and discipline and believe these actions will strengthen our ability to meet growing insurance demand and position the segment for more durable performance over time.”
+
+Key Financial Data
+
+(In thousands, except per share data, unaudited)
+
+Three Months Ended Six Months Ended
+
+June 30, June 30,
+
+2026 2025 Change 2026 2025 Change
+
+Revenue $ 606,927 $ 631,900 (4) % $ 1,220,772 $ 1,261,269 (3) %
+
+Net loss $ (38,908) $ (32,660) (19) % $ (102,745) $ (125,672) 18 %
+
+Net loss per share $ (0.21) $ (0.19) (11) % $ (0.57) $ (0.72) 21 %
+
+Adjusted EBITDA (1) $ 65,713 $ 69,311 (5) % $ 123,882 $ 127,404 (3) %
+
+See note (1) in the Notes section that follows.
+
+1
+
+Second Quarter 2026
+
+Revenue decreased 4% to $606.9 million from $631.9 million in Second Quarter 2025. Access fees revenue decreased 9% to $474.2 million while other revenue increased 23% to $132.7 million. U.S. revenue decreased 6% to $487.4 million while International revenue increased 7% to $119.6 million.
+
+Integrated Care segment revenue increased 1% to $394.3 million in Second Quarter 2026 while BetterHelp segment revenue decreased 12% to $212.6 million.
+
+Net loss totaled $38.9 million, or $0.21 per share, for Second Quarter 2026, compared to $32.7 million, or $0.19 per share, for Second Quarter 2025. Results for Second Quarter 2026 included amortization of intangibles of $88.4 million, or $0.49 per share pre-tax, and stock-based compensation expense of $9.3 million, or $0.05 per share pre-tax.
+
+Results for Second Quarter 2025 included amortization of intangibles of $88.7 million, or $0.50 per share pre-tax, and stock-based compensation expense of $22.3 million or $0.13 per share pre-tax. Net loss for Second Quarter 2025 also included restructuring costs related to severance costs and costs associated with office space reductions of $5.7 million, or $0.03 per share pre-tax. These items were partially offset by an acquisition related tax benefit of $9.7 million, or $0.06 per share.
+
+Adjusted EBITDA(1) decreased 5% to $65.7 million, compared to $69.3 million for Second Quarter 2025. The Integrated Care segment adjusted EBITDA increase of $7.8 million was offset by a $11.4 million decrease of the BetterHelp segment adjusted EBITDA in Second Quarter 2026.
+
+Six Months Ended June 30, 2026
+
+Revenue decreased 3% to $1,220.8 million from $1,261.3 million in the first six months of 2025. Access fees revenue decreased 9% to $958.9 million while other revenue increased 24% to $261.9 million. U.S. revenue decreased 6% to $978.9 million while International revenue increased 12% to $241.9 million.
+
+Integrated Care segment revenue increased 1% to $789.8 million in the first six months of 2026 while BetterHelp segment revenue decreased 10% to $431.0 million.
+
+Net loss totaled $102.7 million, or $0.57 per share, for the first six months of 2026, compared to $125.7 million, or $0.72 per share, for the first six months of 2025. Results for the first six months of 2026 included amortization of intangibles of $178.3 million, or $0.99 per share pre-tax, and stock-based compensation expense of $23.9 million, or $0.13 per share pre-tax. Net loss for the first six months of 2026 also included restructuring costs of $12.9 million, or $0.07 per share pre-tax, primarily related to severance costs.
+
+Results for the first six months of 2025 included a non-cash goodwill impairment charge of $59.1 million, or $0.34 per share pre-tax, amortization of intangibles of $173.0 million, or $0.99 per share pre-tax, and stock-based compensation expense of $47.5 million, or $0.27 per share pre-tax. Net loss for the first six months of 2025 also included restructuring costs related to severance costs and costs associated with office space reductions of $10.0 million, or $0.06 per share pre-tax. These items were partially offset by a discrete tax benefit of $20.1 million, or $0.11 per share, related to the completion of a research and development tax credit study and acquisition related tax benefits of $11.1 million, or $0.06 per share.
+
+The non-cash goodwill impairment charge recorded in the first six months of 2025 was the result of the fair value of the Integrated Care segment being less than its carrying value at the time of the acquisition of Catapult Health, LLC.
+
+Adjusted EBITDA(1) decreased 3% to $123.9 million, compared to $127.4 million for the first six months of 2025. The Integrated Care segment adjusted EBITDA increase of $13.7 million was offset by a $17.2 million decrease of the BetterHelp segment adjusted EBITDA in the first six months of 2026.
+
+Capex and Cash Flow
+
+Cash flow from operations was $64.7 million in Second Quarter 2026, compared to $91.4 million in Second Quarter 2025, and was $74.2 million in the first six months of 2026, compared to $107.4 million in the first six months of 2025. Capital expenditures and capitalized software development costs (together, “Capex”)
+
+2
+
+were $28.9 million in Second Quarter 2026, compared to $30.2 million in Second Quarter 2025, and were $64.7 million in the first six months of 2026, compared to $61.8 million in the first six months of 2025. Free cash flow was $35.7 million in Second Quarter 2026, compared to $61.2 million in Second Quarter 2025, and was $9.4 million in the first six months of 2026, compared to $45.5 million in the first six months of 2025.
+
+Financial Outlook
+
+The outlook provided below is based on current market conditions and expectations and what we know today.
+
+For the full year of 2026, we expect:
+
+Full Year 2026 Outlook Range
+
+Revenue $2,362 - $2,447 million
+
+Adjusted EBITDA $271 - $303 million
+
+Net loss per share ($1.00) - ($0.75)
+
+Free Cash Flow $130 - $170 million
+
+U.S. Integrated Care Members (2) 98.5 - 100.5 million
+
+Integrated Care
+
+Revenue growth percentage (year-over-year) 0.8% - 2.4%
+
+Adjusted EBITDA margin 15.6% - 16.4%
+
+BetterHelp
+
+Revenue growth percentage (year-over-year) (19.0%) - (12.7%)
+
+Adjusted EBITDA margin 3.0% - 4.6%
+
+For the third quarter of 2026, we expect:
+
+3Q 2026 Outlook Range
+
+Revenue $569 - $609 million
+
+Adjusted EBITDA $62 - $74 million
+
+Net loss per share ($0.30) - ($0.20)
+
+U.S. Integrated Care Members (2) 99.0 - 100.5 million
+
+Integrated Care
+
+Revenue growth percentage (year-over-year) 0.0% - 3.0%
+
+Adjusted EBITDA margin 15.7% - 17.2%
+
+BetterHelp
+
+Revenue growth percentage (year-over-year) (24.2%) - (12.3%)
+
+Adjusted EBITDA margin 0.5% - 2.5%
+
+See note (2) in the Notes section that follows.
+
+3
+
+Earnings Conference Call
+
+The Second Quarter 2026 earnings conference call and webcast will be held Wednesday, July 29, 2026 at 5:00 p.m. E.T. The conference call can be accessed by dialing 833-461-5787 for U.S. participants and using the conference ID # 478 236 923. For international participants, please visit the following link for global dial-in numbers, using the same conference ID # 478 236 923: https://help.events.q4inc.com/eahc/international-dial-in-numbers. A live audio webcast will also be available online at http://ir.teladoc.com/news-and-events/events-and-presentations/. A replay of the call will be available via webcast for on-demand listening shortly after the completion of the call, at the same web link, and will remain available for approximately 90 days.
+
+About Teladoc Health
+
+Teladoc Health is the global leader in virtual care. The company is delivering and orchestrating care across patients, care providers, platforms, and partners — transforming virtual care into a catalyst for how better health happens. Through our relationships with health plans, employers, providers, health systems and consumers, we are enabling more access, driving better outcomes, extending provider capacity and lowering costs. Learn more at www.teladochealth.com.
+
+Cautionary Note Regarding Forward-Looking Statements
+
+This press release contains “forward-looking statements” within the meaning of the safe harbor provisions of the U.S. Private Securities Litigation Reform Act of 1995. Forward-looking statements can be identified by words such as: “anticipate,” “intend,” “plan,” “believe,” “project,” “estimate,” “expect,” “may,” “should,” “will” and similar references to future periods. Examples of forward-looking statements include, among others, the information under the caption “Financial Outlook” and statements we make regarding future financial or operating results, future numbers of members, BetterHelp paying users or clients, litigation outcomes, regulatory developments, market developments, new products and growth strategies, initiatives to improve our efficiency and competitiveness, and the effects of any of the foregoing on our future results of operations or financial condition.
+
+Forward-looking statements are neither historical facts nor assurances of future performance. Instead, they are based only on our current beliefs, expectations and assumptions regarding the future of our business, future plans and strategies, projections, anticipated events and trends, the economy and other future conditions. Because forward-looking statements relate to the future, they are subject to inherent uncertainties, risks and changes in circumstances that are difficult to predict and many of which are outside of our control. Our actual results and financial condition may differ materially from those indicated in the forward-looking statements. Important factors that have in the past and/or may in the future cause our actual results and financial condition to differ materially from those indicated in the forward-looking statements include, among others, the following: (i) changes in laws and regulations applicable to our business model; (ii) changes in market conditions and receptivity to our services and offerings, including our ability to effectively compete; (iii) results of litigation or regulatory actions; (iv) the loss of one or more key clients or the loss of a significant number of members or BetterHelp paying users; (v) a decrease in revenue from users who pay directly out-of-pocket without offsetting growth in insurance-covered services in our BetterHelp segment; (vi) changes in valuations or useful lives of our assets; (vii) changes to our abilities to recruit and retain qualified providers into our network; (viii) the impact of and risk related to impairment losses with respect to goodwill or other assets; (ix) the success of our initiatives to improve our efficiency and competitiveness; (x) imposed and threatened tariffs by the United States and its trading partners, and any resulting disruptions or inefficiencies in our supply chain; (xi) the rate and magnitude of declines in BetterHelp cash-pay users and revenue; (xii) the extent to which insurance availability changes users’ payment choices; (xiii) available provider capacity including on a state and payer specific basis; (xiv) the timing, cost and effectiveness of provider recruitment, credentialing, enrollment, activation, compensation and retention; (xv) the performance of insurance-specific eligibility, matching, booking, scheduling, utilization, session-duration, claims and collection workflows; (xvi) the effectiveness and revenue consequences of changes in advertising and marketing spending; (xvii) the effects of BetterHelp’s reduced near term emphasis and investment outside the United States; (xviii) the cost, timing and effectiveness of platform and provider-capacity investments; (xix) the margin effects of the insurance mix; and (xx) potential impairment of BetterHelp goodwill. For a detailed discussion of the risk factors that could affect our actual results, please refer to the risk factors identified in our SEC reports, including, but not limited to, our Annual Report on Form 10-K and Quarterly Reports on Form 10-Q, as filed with the SEC.
+
+4
+
+Any forward-looking statement made by us in this press release is based only on information currently available to us and speaks only as of the date on which it is made. We undertake no obligation to publicly update any forward-looking statement, whether written or oral, that may be made from time to time, whether as a result of new information, future developments or otherwise, except as required by law.
+
+5
+
+TELADOC HEALTH, INC.
+
+CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS
+
+(In thousands, except share and per share data, unaudited)
+
+Three Months Ended
+June 30, Six Months Ended
+June 30,
+
+2026 2025 2026 2025
+
+Revenue $ 606,927 $ 631,900 $ 1,220,772 $ 1,261,269
+
+Costs and expenses:
+
+Cost of revenue (exclusive of depreciation and amortization, which are shown separately below) 190,837 190,537 388,363 387,366
+
+Advertising and marketing 143,397 167,547 294,924 335,732
+
+Sales 49,391 49,951 100,667 98,644
+
+Technology and development 62,861 68,784 130,726 138,742
+
+General and administrative 104,029 108,114 206,122 220,888
+
+Goodwill impairment — — — 59,138
+
+Acquisition, integration, and transformation costs 1,690 2,658 2,754 4,846
+
+Restructuring costs 904 5,692 12,879 10,039
+
+Amortization of intangible assets 88,442 88,664 178,268 172,968
+
+Depreciation of property and equipment 2,468 4,338 4,929 7,902
+
+Total costs and expenses 644,019 686,285 1,319,632 1,436,265
+
+Loss from operations (37,092) (54,385) (98,860) (174,996)
+
+Interest income (6,481) (10,064) (12,971) (22,738)
+
+Interest expense 5,109 4,473 10,477 10,238
+
+Other expense (income), net 2,191 (8,371) 2,387 (10,806)
+
+Loss before provision for income taxes (37,911) (40,423) (98,753) (151,690)
+
+Provision for income taxes 997 (7,763) 3,992 (26,018)
+
+Net loss $ (38,908) $ (32,660) $ (102,745) $ (125,672)
+
+Net loss per share, basic and diluted $ (0.21) $ (0.19) $ (0.57) $ (0.72)
+
+Weighted-average shares used to compute basic and diluted net loss per share 181,026,004 175,917,380 180,079,395 175,040,625
+
+Stock-based Compensation Summary
+
+Compensation expense for stock-based awards was classified as follows (in thousands, unaudited):
+
+Three Months Ended
+June 30, Six Months Ended
+June 30,
+
+2026 2025 2026 2025
+
+Cost of revenue (exclusive of depreciation and amortization, which are shown separately) $ 124 $ 506 $ 471 $ 1,079
+
+Advertising and marketing 426 1,302 1,286 2,805
+
+Sales 1,460 3,594 3,537 7,853
+
+Technology and development 1,735 4,247 4,462 10,032
+
+General and administrative 5,556 12,695 14,156 25,738
+
+Total stock-based compensation expense (3) $ 9,301 $ 22,344 $ 23,912 $ 47,507
+
+See note (3) in the Notes section that follows.
+
+6
+
+Revenues
+
+Three Months Ended Six Months Ended
+
+June 30, June 30,
+
+(In thousands, unaudited) 2026 2025 Change 2026 2025 Change
+
+Revenue by Type
+
+Access Fees $ 474,215 $ 523,703 (9) % $ 958,870 $ 1,049,439 (9) %
+
+Other 132,712 108,197 23 % 261,902 211,830 24 %
+
+Total Revenue $ 606,927 $ 631,900 (4) % $ 1,220,772 $ 1,261,269 (3) %
+
+Revenue by Geography
+
+U.S. $ 487,360 $ 519,689 (6) % $ 978,865 $ 1,044,659 (6) %
+
+International 119,567 112,211 7 % 241,907 216,610 12 %
+
+Total Revenue $ 606,927 $ 631,900 (4) % $ 1,220,772 $ 1,261,269 (3) %
+
+Summary Operating Metrics
+
+Consolidated
+
+Three Months Ended Six Months Ended
+
+June 30, June 30,
+
+(In millions) 2026 2025 Change 2026 2025 Change
+
+Total Visits 4.1 4.1 (2) % 8.4 8.6 (2) %
+
+Integrated Care
+
+As of June 30,
+
+(In millions)
+2026 2025 Change
+
+U.S. Integrated Care Members (2) 100.3 102.4 (2) %
+
+Chronic Care Program Enrollment (4) 1.272 1.117 14 %
+
+Three Months Ended Six Months Ended
+
+June 30, June 30,
+
+2026 2025 Change 2026 2025 Change
+
+Average Monthly Revenue
+Per U.S. Integrated Care Member (5) $ 1.31 $ 1.27 3 % $ 1.31 $ 1.27 3 %
+
+BetterHelp
+
+Average for Average for
+
+Three Months Ended Six Months Ended
+
+June 30, June 30,
+
+(In millions) 2026 2025 Change 2026 2025 Change
+
+BetterHelp Paying Users (6) 0.346 0.388 (11) % 0.353 0.393 (10) %
+
+See notes (2), (4), (5), and (6) in the Notes section that follows.
+
+7
+
+Operating Results by Segment (see note (7) in the Notes section that follows)
+
+The following table presents operating results by reportable segment for the periods indicated:
+
+Three Months Ended Six Months Ended
+
+June 30, June 30,
+
+(In thousands, unaudited) 2026 2025 Change 2026 2025 Change
+
+Integrated Care
+
+Revenue $ 394,305 $ 391,510 1 % $ 789,750 $ 780,978 1 %
+
+Adjusted EBITDA $ 65,242 $ 57,450 14 % $ 121,519 $ 107,829 13%
+
+Adjusted EBITDA margin % 16.5 % 14.7 % 15.4 % 13.8 %
+
+BetterHelp
+
+Consumer and Other $ 190,852 $ 238,262 (20) % $ 396,315 $ 478,163 (17) %
+
+Insurance Covered Services 21,770 2,128 N/M 34,707 2,128 N/M
+
+Total Revenue $ 212,622 $ 240,390 (12) % $ 431,022 $ 480,291 (10) %
+
+Adjusted EBITDA $ 471 $ 11,861 (96) % $ 2,363 $ 19,575 (88) %
+
+Adjusted EBITDA margin % 0.2 % 4.9 % 0.5 % 4.1 %
+
+N/M - not meaningful
+
+8
+
+TELADOC HEALTH, INC.
+
+CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS
+
+(In thousands, unaudited)
+
+Six Months Ended
+June 30,
+
+2026 2025
+
+Cash flows from operating activities:
+
+Net loss $ (102,745) $ (125,672)
+
+Adjustments to reconcile net loss to net cash flows from operating activities:
+
+Goodwill impairment — 59,138
+
+Amortization of intangible assets 178,268 172,968
+
+Stock-based compensation 23,912 47,507
+
+Depreciation of property and equipment 4,929 7,902
+
+Amortization of right-of-use assets 3,394 4,190
+
+Provision for allowances for doubtful accounts 807 377
+
+Deferred income taxes (1,673) (34,072)
+
+Other, net 2,812 2,049
+
+Changes in operating assets and liabilities:
+
+Accounts receivable (28,647) (8,497)
+
+Prepaid expenses and other current assets (17,071) (16,434)
+
+Inventory 8,628 861
+
+Other assets 2,337 7,616
+
+Accounts payable (9,656) 19,278
+
+Accrued expenses and other current liabilities 44,676 (5,149)
+
+Accrued compensation (31,246) (9,545)
+
+Deferred revenue (44) (6,084)
+
+Operating lease liabilities (4,586) (5,170)
+
+Other liabilities 83 (3,912)
+
+Net cash provided by operating activities 74,178 107,351
+
+Cash flows from investing activities:
+
+Capital expenditures (2,588) (3,994)
+
+Capitalized software development costs (62,152) (57,824)
+
+Proceeds from the sale of investment — 740
+
+Acquisitions accounted for as business combinations, net of cash acquired — (65,302)
+
+Asset acquisition resulting in net intangible assets (12,675) (29,569)
+
+Payments for investments (700) (27,075)
+
+Other, net 3 60
+
+Net cash used in investing activities (78,112) (182,964)
+
+Cash flows from financing activities:
+
+Proceeds from the exercise of stock options 33 81
+
+Proceeds from employee stock purchase plan 1,241 1,384
+
+Repayment of convertible senior notes — (550,629)
+
+Other, net (2,848) —
+
+Net cash used in financing activities (1,574) (549,164)
+
+Net decrease in cash and cash equivalents (5,508) (624,777)
+
+Effect of foreign currency exchange rate changes (1,228) 6,071
+
+Cash and cash equivalents at beginning of the period 781,084 1,298,327
+
+Cash and cash equivalents at end of the period $ 774,348 $ 679,621
+
+9
+
+TELADOC HEALTH, INC.
+
+CONDENSED CONSOLIDATED BALANCE SHEETS
+
+(In thousands, except share and per share data, unaudited)
+
+June 30,
+2026 December 31,
+2025
+
+ASSETS
+
+Current assets:
+
+Cash and cash equivalents $ 774,348 $ 781,084
+
+Accounts receivable, net of allowance for doubtful accounts of $3,628 and $4,033 at June 30, 2026 and December 31, 2025, respectively
+221,015 192,826
+
+Inventories 28,823 38,203
+
+Prepaid expenses and other current assets 124,175 107,016
+
+Total current assets 1,148,361 1,119,129
+
+Property and equipment, net 24,690 26,972
+
+Goodwill 283,190 283,190
+
+Intangible assets, net 1,175,669 1,297,087
+
+Operating lease—right-of-use assets 22,718 26,119
+
+Other assets 103,997 105,803
+
+Total assets $ 2,758,625 $ 2,858,300
+
+LIABILITIES AND STOCKHOLDERS’ EQUITY
+
+Current liabilities:
+
+Accounts payable $ 37,496 $ 47,967
+
+Accrued expenses and other current liabilities 226,550 198,208
+
+Accrued compensation 60,172 96,258
+
+Deferred revenue, current 60,812 62,305
+
+Convertible senior notes, net—current 996,700 —
+
+Total current liabilities 1,381,730 404,738
+
+Operating lease liabilities, net of current portion 29,537 34,204
+
+Deferred revenue, net of current portion 9,669 9,139
+
+Deferred taxes, net 26,881 28,945
+
+Convertible senior notes, net—non-current — 994,925
+
+Other liabilities 700 643
+
+Total liabilities 1,448,517 1,472,594
+
+Commitments and contingencies
+
+Stockholders’ equity:
+
+Common stock, $0.001 par value; 300,000,000 shares authorized; 181,649,591 shares and 178,315,400 shares issued and outstanding as of June 30, 2026 and December 31, 2025 respectively
+182 178
+
+Additional paid-in capital 17,876,827 17,850,478
+
+Accumulated deficit (16,532,967) (16,430,222)
+
+Accumulated other comprehensive loss (33,934) (34,728)
+
+Total stockholders’ equity 1,310,108 1,385,706
+
+Total liabilities and stockholders’ equity $ 2,758,625 $ 2,858,300
+
+10
+
+Non-GAAP Financial Measures:
+
+To supplement our financial information presented in accordance with generally accepted accounting principles in the United States (“GAAP”), we use certain non-GAAP financial measures to clarify and enhance an understanding of past performance, which include adjusted EBITDA and free cash flow. We believe that the presentation of these financial measures enhances an investor’s understanding of our financial performance and are commonly used by investors to evaluate our performance and that of our competitors. We further believe that these financial measures are useful to assess our operating performance and financial and business trends from period-to-period by excluding certain items that we believe are not representative of our core business, and that free cash flow reflects an additional way of viewing our liquidity that, when viewed together with GAAP results, provides management, investors, and other users of our financial in

@@ -1,0 +1,427 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+Special Note Regarding Forward-Looking Statements
+
+This Quarterly Report on Form 10-Q contains forward-looking statements within the meaning of Section 21E of the Securities Exchange Act of 1934 and the safe-harbor provisions of the Private Securities Litigation Reform Act of 1995. Statements that are not statements of historical fact, including statements about our beliefs, expectations, plans, strategies, outlook and possible or assumed future results of operations, are forward-looking statements and should be evaluated as such. These statements often include words such as “anticipates,” “believes,” “suggests,” “targets,” “projects,” “plans,” “expects,” “future,” “intends,” “estimates,” “predicts,” “potential,” “may,” “will,” “should,” “could,” “would,” “likely,” “foresee,” “forecast,” “continue” and similar words or phrases, as well as statements in the future tense. We base these forward-looking statements on our current expectations, plans and assumptions in light of our experience, historical trends, current conditions, expected future developments and other factors we believe are appropriate under the circumstances. These statements are not guarantees of performance or results and are subject to risks, uncertainties and assumptions. Factors that have in the past and/or may in the future cause actual results to differ materially include, among others, a decrease in revenue from users who pay directly out-of-pocket without offsetting growth in insurance-covered services in our BetterHelp segment; the rate and magnitude of declines in BetterHelp cash-pay users and revenue; the extent to which insurance availability changes users’ payment choices; available provider capacity including on a state and payer-specific basis; the timing, cost and effectiveness of provider recruitment, credentialing, enrollment, activation, compensation and retention; the performance of insurance-specific eligibility, matching, booking, scheduling, utilization, session-duration, claims and collection workflows; the effectiveness and revenue consequences of changes in advertising and marketing spending; the effects of BetterHelp’s reduced near-term emphasis and investment outside the United States; the cost, timing and effectiveness of platform and provider-capacity investments; the margin effects of the insurance mix; potential impairment of BetterHelp goodwill; and the other risks described in “Risk Factors” in our Annual Report on Form 10-K for the year ended December 31, 2025 (the “2025 Form 10-K”), this Form 10-Q and our other reports and SEC filings. You should not place undue reliance on forward-looking statements. These cautionary statements are not exhaustive and speak only as of the date of this Form 10-Q. We undertake no obligation to update or revise any forward-looking statement as a result of new information, future events or otherwise, except as required by law.
+
+Overview
+
+Teladoc, Inc. was incorporated in the State of Texas in June 2002 and changed its state of incorporation to the State of Delaware in October 2008. Effective August 10, 2018, Teladoc, Inc. changed its corporate name to Teladoc Health, Inc. Unless the context otherwise requires, Teladoc Health, Inc., together with its subsidiaries, is referred to herein as “Teladoc Health,” the “Company,” or “we.” In June 2025, the Company relocated its principal executive office from Purchase, New York to New York, New York. Teladoc Health is the global leader in virtual care.
+
+More than 20 years ago, we were founded on a simple, yet revolutionary idea: that everyone should have access to the best healthcare, anywhere in the world on their terms.
+
+Our mission is to empower all people everywhere to live their healthiest lives by transforming the healthcare experience. Today, we are transforming virtual care into a catalyst for how better health happens around the world. We connect patients, care providers, healthcare platforms and partners to provide more complete and personalized care. Through our unique technology, breadth of services and depth of clinical expertise, we are delivering and orchestrating care in order to improve health outcomes and reduce healthcare costs around the world.
+
+The impact that the imposition of tariffs and changes to global trade policies will have on our consolidated results of operations is uncertain. We expect tariffs on goods imported into the U.S. from Canada, Mexico, and China, and other countries upon which tariffs may be imposed, to continue to be met with retaliatory tariffs from those countries which would impact our consolidated results of operations as we import components for assembling welcome kits, refill kits, and replacement components for our chronic care management solutions and virtual care devices manufactured for sale or lease as part of our hosted virtual care platform solution. The extent and duration of tariffs and the resulting impact on macroeconomic conditions and on our business are uncertain and may depend on various factors, including negotiations between the U.S. and affected countries, retaliation imposed by other countries, tariff exemptions, negative sentiment toward U.S. companies and products, and availability of lower cost inputs that may be sourced domestically or in other countries with no or lower tariffs. We will continue to evaluate the nature and extent of the impact to our business and consolidated results of operations. For further information, see “Risk Factors—We depend on a limited number of third-party suppliers for certain components of our medical devices, and the loss of any of these suppliers, or their inability to provide us with an adequate supply of materials, could harm our business,” and “—Our international operations pose certain political, legal and compliance, operational, regulatory, economic, and other risks to our business that may be
+
+24
+
+Table of Contents
+
+different from or more significant than risks associated with our domestic operations, and our exposure to these risks is expected to increase” included in our 2025 Form 10-K.
+
+Key Factors Affecting Our Performance
+
+We believe that our future performance will depend on many factors, including the following:
+
+As it relates to the Integrated Care segment:
+
+Number of U.S. Integrated Care Members. U.S. Integrated Care members represent the number of unique individuals at the end of the applicable period who have access to our suite of integrated care services in the U.S. under paid access fee and/or visit-based arrangements. Individuals who have paid access fees offer a greater margin than those who have visit fee only arrangements and, over time, the mix of those who have paid access fees as compared to those who have visit fee only arrangements has declined. The number of members with visit fee only arrangements is less directly correlated to revenue than the number of members who have paid access fees, and therefore as the mix of members with visit fee only arrangements continues to grow we expect that the total number of U.S. Integrated Care members will less directly impact our revenue growth rate. Our revenue growth rate and long-term profitability are also affected by our ability to increase cross selling capability among our existing members. Therefore, we believe that our ability to add new members and retain existing members, and to increase utilization and penetration further into existing and new health plan, employer, and other Clients is a key indicator of our increasing market adoption, the growth of our business, and our future revenue potential.
+
+We further believe that increasing our overall membership level is an integral objective that will provide us with the ability to continually innovate our services and support initiatives that will enhance members’ experiences. However, certain health plans that have historically promoted our services to our employer Clients have developed, and may in the future continue to develop, solutions that replicate our services or offer competitive services at discounted prices to our current or prospective Clients, which could result in a loss of members. For further information, see “Risk Factors—Risks Related to Our Business and Industry—We operate in a competitive industry, and if we are not able to compete effectively, our business, financial condition, and results of operations will be harmed,” and “—A significant portion of our revenue comes from a limited number of Clients, the loss of which could have a material adverse effect on our business, financial condition and results of operations” included in our 2025 Form 10-K. U.S. Integrated Care members decreased by 2.1 million, or 2%, to 100.3 million at June 30, 2026, compared to the same period in 2025.
+
+Chronic Care Program Enrollment. Chronic care program enrollment represents the total number of enrollees across our suite of chronic care programs at the end of a given period. Our chronic care program enrollments are one of the key components of our virtual care platform that we believe positions us to drive greater engagement with our platforms and increase revenue. Chronic care program enrollment increased to 1.272 million, or 14%, at June 30, 2026, compared to 1.117 million at June 30, 2025, driven by an increase in multi-condition product bundles.
+
+Average Monthly Revenue Per U.S. Integrated Care Member. Average monthly revenue per U.S. Integrated Care member measures the average monthly amount of global revenue that we generate from a U.S. Integrated Care member for a particular period. It is calculated by dividing the total revenue generated from the Integrated Care segment by the average number of U.S. Integrated Care members during the applicable period. Approximately 22% of total Integrated Care revenues relates to international and hospital and health systems for which membership is not considered as a management metric. We believe that our ability to increase the revenue generated from each member over time is also a key indicator of our increasing market adoption and further product adoption among our Client-base to drive future revenue growth potential. Average monthly revenue per U.S. Integrated Care member was $1.31 in the three months ended June 30, 2026, compared to $1.27 in the same period in 2025. Average monthly revenue per U.S. Integrated Care member was $1.31 in the six months ended June 30, 2026, compared to $1.27 in the same period in 2025. The change in average monthly revenue versus the prior period is reflective of the decrease in members and the mix of their fees.
+
+As it relates to the BetterHelp segment:
+
+BetterHelp Paying Users. BetterHelp Paying Users represent the average number of global monthly paying users of our BetterHelp therapy and psychiatry services during the applicable period, including both those who pay directly out-of-pocket and those who utilize their insurance coverage. We believe that our ability to add new paying users, including through Insurance Covered Services, and retain existing users is a key indicator of the market adoption of BetterHelp, the stability and growth of this segment, and future revenue potential. Effectively reaching potential paying users through various advertising channels remains critical to our success, including the level of advertising and marketing spending deployed. BetterHelp Paying Users decreased by 11% to 0.346 million for the three months ended June 30, 2026, compared to 0.388 million for the three months ended June 30, 2025, and decreased by 10% to 0.353 million for the six
+
+25
+
+Table of Contents
+
+months ended June 30, 2026, compared to 0.393 million for the six months ended June 30, 2025. See “Item 1A. Risk Factors— Our BetterHelp segment has experienced, and may continue to experience, declines in revenue from users who pay directly out-of-pocket, and growth in insurance-covered services may not offset those declines as quickly as we expect or at all.” included elsewhere in this Quarterly Report on Form 10-Q.
+
+As it relates to the Company:
+
+Seasonality. Our business has historically been subject to seasonality. In our Integrated Care segment, a concentration of our new Client contracts have an effective date of January 1 as a result of many Clients’ introduction of new services at the start of each calendar year. Therefore, service utilization and enrollment rates may not directly align with the timing of membership changes. In addition, as a result of seasonal cold and flu trends, we historically have experienced our highest level of visit and other fee revenue during the first and fourth quarters of each year.
+
+Due to the higher cost of customer acquisition during the end-of-year holiday season, our BetterHelp segment has historically reduced marketing activity during the fourth quarter. As a result of this dynamic, we have typically experienced fewer new user additions and generally a stronger operating income performance in the fourth quarter. Conversely, as marketing activity typically resumes at the start of the year, we typically experience weaker operating income performance during the first quarter as new user acquisition and associated revenue tend to lag marketing spend.
+
+Critical Accounting Estimates and Policies
+
+Our discussion and analysis of our results of operations, liquidity and capital resources are based on our condensed consolidated financial statements which have been prepared in conformity with accounting principles generally accepted in the U.S. (“GAAP”). The preparation of these condensed consolidated financial statements requires us to make estimates and judgments that affect the reported amounts of assets, liabilities, revenues and expenses, and disclosure of contingent assets and liabilities.
+
+As of June 30, 2026, goodwill was $283.2 million, which all related to the BetterHelp reporting unit. During the three months ended June 30, 2026, we revised the expected financial performance of the BetterHelp reporting unit. We determined that this was a triggering event and accordingly performed a quantitative goodwill impairment test. The assessment indicated that the fair value of the reporting unit exceeded its carrying value and no impairment was identified. We will continue to monitor and evaluate events and circumstances, including a sustained decrease in our share price and the future performance of the BetterHelp segment, and should any change occur, it could require further testing of the goodwill, which may result in an impairment of the BetterHelp reporting unit's goodwill. Additionally, if the carrying value of the Integrated Care reporting unit exceeds its fair value as of the date of any future business combinations, future business combinations that would be part of the Integrated Care reporting unit could result in goodwill impairment charges.
+
+On an ongoing basis, we evaluate our estimates and judgments, including those related to revenue recognition, business combinations, goodwill and other intangible assets, income taxes, and other items. We base our estimates on historical and anticipated results and trends and on various other assumptions that we believe are reasonable under the circumstances, including assumptions as to future events. These estimates form the basis for making judgments about the carrying values of assets and liabilities that are not readily apparent from other sources. By their nature, estimates are subject to an inherent degree of uncertainty. Actual results may differ from our estimates and could have a significant adverse effect on our results of operations and financial position. For a discussion of our critical accounting estimates and policies see Part II, Item 7. “Management’s Discussion and Analysis of Financial Condition and Results of Operations” in the 2025 Form 10-K.
+
+Non-GAAP Financial Measures
+
+To supplement our financial information presented in accordance with GAAP, we use certain non-GAAP financial measures to clarify and enhance an understanding of past performance, which include Adjusted EBITDA (as defined below) and free cash flow. We believe that the presentation of these financial measures enhances an investor’s understanding of our financial performance, and are commonly used by investors to evaluate our performance and that of our competitors. We further believe that these financial measures are useful to assess our operating performance and financial and business trends from period-to-period by excluding certain items that we believe are not representative of our core business, and that free cash flow reflects an additional way of viewing our liquidity that, when viewed together with GAAP results, provides management, investors, and other users of our financial information with a more complete understanding of factors and trends affecting our cash flows. We use these non-GAAP financial measures for business
+
+26
+
+Table of Contents
+
+planning purposes and in measuring our performance relative to that of our competitors. We utilize Adjusted EBITDA as a key measure of our performance.
+
+Adjusted EBITDA consists of net loss before provision for income taxes; other expense (income), net; interest income; interest expense; depreciation of property and equipment; amortization of intangible assets; restructuring costs; acquisition, integration, and transformation costs; goodwill impairments; and stock-based compensation.
+
+Free cash flow is net cash provided by operating activities less capital expenditures and capitalized software development costs.
+
+Our use of these non-GAAP terms may vary from that of others in our industry, and other companies may calculate such measures differently than we do, limiting their usefulness as comparative measures.
+
+Non-GAAP measures have important limitations as analytical tools and you should not consider them in isolation, and they should not be considered as an alternative to net loss before provision for income taxes, net loss, net loss per share, net cash from operating activities or any other measures derived in accordance with GAAP. Some of these limitations are:
+
+•Adjusted EBITDA eliminates the impact of the provision for income taxes on our results of operations, and does not reflect other expense (income), net, interest income, or interest expense;
+
+•Adjusted EBITDA does not reflect restructuring costs. Restructuring costs may include certain lease impairment costs, certain losses related to early lease terminations, and severance;
+
+•Adjusted EBITDA does not reflect significant acquisition, integration, and transformation costs. Acquisition, integration, and transformation costs include investment banking, financing, legal, accounting, consultancy, integration, fair value changes related to contingent consideration and certain other transaction costs related to mergers and acquisitions. It also includes costs related to certain business transformation initiatives focused on integrating and optimizing various operations and systems, including upgrading our ERP system. These transformation cost adjustments made to our results do not represent normal, recurring, operating expenses necessary to operate the business but rather, incremental costs incurred in connection with our acquisition and integration activities;
+
+•Adjusted EBITDA does not reflect goodwill impairment charges; and
+
+•Adjusted EBITDA does not reflect the significant non-cash stock-based compensation expense which should be viewed as a component of recurring operating costs.
+
+In addition, although amortization of intangible assets and depreciation of property and equipment are non-cash charges, the assets being amortized and depreciated will often have to be replaced in the future, and Adjusted EBITDA does not reflect any expenditures for such replacements.
+
+We compensate for these limitations by using these non-GAAP measures along with other comparative tools, together with GAAP measurements, to assist in the evaluation of operating performance. Such GAAP measurements include net loss, net loss per share, net cash from operating activities, and other performance measures.
+
+In evaluating these financial measures, you should be aware that in the future we may incur expenses similar to those eliminated in this presentation. Our presentation of these non-GAAP measures should not be construed as an inference that our future results will be unaffected by unusual or nonrecurring items.
+
+27
+
+Table of Contents
+
+Condensed Consolidated Results of Operations
+
+The following table sets forth our condensed consolidated statements of operations data for the three months ended June 30, 2026 and 2025 and the dollar and percentage change between the respective periods (dollars in thousands, except per share data):
+
+Three Months Ended
+
+June 30,
+
+2026 2025 Variance %
+
+Revenue $ 606,927 $ 631,900 $ (24,973) (4) %
+
+Costs and expenses:
+
+Cost of revenue (exclusive of depreciation and amortization, which are shown separately below) 190,837 190,537 300 — %
+
+Advertising and marketing 143,397 167,547 (24,150) (14) %
+
+Sales 49,391 49,951 (560) (1) %
+
+Technology and development 62,861 68,784 (5,923) (9) %
+
+General and administrative 104,029 108,114 (4,085) (4) %
+
+Acquisition, integration, and transformation costs 1,690 2,658 (968) (36) %
+
+Restructuring costs 904 5,692 (4,788) (84) %
+
+Amortization of intangible assets 88,442 88,664 (222) — %
+
+Depreciation of property and equipment 2,468 4,338 (1,870) (43) %
+
+Total costs and expenses 644,019 686,285 (42,266) (6) %
+
+Loss from operations (37,092) (54,385) 17,293 (32) %
+
+Interest income (6,481) (10,064) 3,583 (36) %
+
+Interest expense 5,109 4,473 636 14 %
+
+Other expense (income), net 2,191 (8,371) 10,562 (126) %
+
+Loss before provision for income taxes (37,911) (40,423) 2,512 (6) %
+
+Provision for income taxes 997 (7,763) 8,760 (113) %
+
+Net loss $ (38,908) $ (32,660) $ (6,248) 19 %
+
+Net loss per share, basic and diluted $ (0.21) $ (0.19) $ (0.02) 11 %
+
+Adjusted EBITDA (1) $ 65,713 $ 69,311 $ (3,598) (5) %
+
+(1)Non-GAAP Financial Measure
+
+28
+
+Table of Contents
+
+The following table sets forth our condensed consolidated statements of operations data for the six months ended June 30, 2026 and 2025 and the dollar and percentage change between the respective periods (dollars in thousands, except per share data):
+
+Six Months Ended
+
+June 30,
+
+2026 2025 Variance %
+
+Revenue $ 1,220,772 $ 1,261,269 $ (40,497) (3) %
+
+Costs and expenses:
+
+Cost of revenue (exclusive of depreciation and amortization, which are shown separately below) 388,363 387,366 997 — %
+
+Advertising and marketing 294,924 335,732 (40,808) (12) %
+
+Sales 100,667 98,644 2,023 2 %
+
+Technology and development 130,726 138,742 (8,016) (6) %
+
+General and administrative 206,122 220,888 (14,766) (7) %
+
+Goodwill impairment — 59,138 (59,138) (100) %
+
+Acquisition, integration, and transformation costs 2,754 4,846 (2,092) (43) %
+
+Restructuring costs 12,879 10,039 2,840 28 %
+
+Amortization of intangible assets 178,268 172,968 5,300 3 %
+
+Depreciation of property and equipment 4,929 7,902 (2,973) (38) %
+
+Total costs and expenses 1,319,632 1,436,265 (116,633) (8) %
+
+Loss from operations (98,860) (174,996) 76,136 (44) %
+
+Interest income (12,971) (22,738) 9,767 (43) %
+
+Interest expense 10,477 10,238 239 2 %
+
+Other expense (income), net 2,387 (10,806) 13,193 (122) %
+
+Loss before provision for income taxes (98,753) (151,690) 52,937 (35) %
+
+Provision for income taxes 3,992 (26,018) 30,010 (115) %
+
+Net loss $ (102,745) $ (125,672) $ 22,927 (18) %
+
+Net loss per share, basic and diluted $ (0.57) $ (0.72) $ 0.15 (21) %
+
+Adjusted EBITDA (1) $ 123,882 $ 127,404 $ (3,522) (3) %
+
+(1)Non-GAAP Financial Measure
+
+29
+
+Table of Contents
+
+The following table reconciles net loss, the most directly comparable GAAP financial measure, to Adjusted EBITDA for the three and six months ended June 30, 2026 and 2025 (in thousands):
+
+Three Months Ended
+
+June 30, Six Months Ended
+
+June 30,
+
+2026 2025 2026 2025
+
+Net loss $ (38,908) $ (32,660) $ (102,745) $ (125,672)
+
+Add:
+
+Provision for income taxes 997 (7,763) 3,992 (26,018)
+
+Other expense (income), net 2,191 (8,371) 2,387 (10,806)
+
+Interest expense 5,109 4,473 10,477 10,238
+
+Interest income (6,481) (10,064) (12,971) (22,738)
+
+Depreciation of property and equipment 2,468 4,338 4,929 7,902
+
+Amortization of intangible assets 88,442 88,664 178,268 172,968
+
+Restructuring costs 904 5,692 12,879 10,039
+
+Acquisition, integration, and transformation costs 1,690 2,658 2,754 4,846
+
+Goodwill impairment — — — 59,138
+
+Stock-based compensation 9,301 22,344 23,912 47,507
+
+Adjusted EBITDA $ 65,713 $ 69,311 $ 123,882 $ 127,404
+
+Integrated Care $ 65,242 $ 57,450 $ 121,519 $ 107,829
+
+BetterHelp 471 11,861 2,363 19,575
+
+Adjusted EBITDA $ 65,713 $ 69,311 $ 123,882 $ 127,404
+
+Revenue.
+
+The following table presents revenues disaggregated by revenue source and geography for the three months ended June 30, 2026 and 2025:
+
+Three Months Ended
+
+June 30,
+
+(In thousands, unaudited) 2026 2025 Variance %
+
+Revenue by Type
+
+Access Fees $ 474,215 $ 523,703 $ (49,488) (9) %
+
+Other 132,712 108,197 24,515 23 %
+
+Total Revenue $ 606,927 $ 631,900 $ (24,973) (4) %
+
+Revenue by Geography
+
+U.S. $ 487,360 $ 519,689 $ (32,329) (6) %
+
+International 119,567 112,211 7,356 7 %
+
+Total Revenue $ 606,927 $ 631,900 $ (24,973) (4) %
+
+30
+
+Table of Contents
+
+The following table presents revenues disaggregated by revenue source and geography for the six months ended June 30, 2026 and 2025:
+
+Six Months Ended
+
+June 30,
+
+(In thousands, unaudited) 2026 2025 Variance %
+
+Revenue by Type
+
+Access Fees $ 958,870 $ 1,049,439 $ (90,569) (9) %
+
+Other 261,902 211,830 50,072 24 %
+
+Total Revenue $ 1,220,772 $ 1,261,269 $ (40,497) (3) %
+
+Revenue by Geography
+
+U.S. $ 978,865 $ 1,044,659 $ (65,794) (6) %
+
+International 241,907 216,610 25,297 12 %
+
+Total Revenue $ 1,220,772 $ 1,261,269 $ (40,497) (3) %
+
+Total revenue was $606.9 million for the three months ended June 30, 2026, compared to $631.9 million for the three months ended June 30, 2025, a decrease of $25.0 million, or 4%. This decrease in revenue was driven by lower revenue in our BetterHelp segment, reflecting actions to further prioritize insurance-covered services and decline in users paying directly out of pocket, partially offset by higher revenue in our Integrated Care segment. For further discussion regarding the decrease in revenue in our BetterHelp segment, see below under “Segment Information.” The acquisitions of Uplift and Telecare increased total revenue for the three months ended June 30, 2026 by approximately 1 percentage point. Other revenue predominately includes visit fees and, to a lesser extent, revenue from the sales of our telehealth solutions for hospitals and health systems.
+
+Total revenue was $1,220.8 million for the six months ended June 30, 2026, compared to $1,261.3 million for the six months ended June 30, 2025, a decrease of $40.5 million, or 3%. This decrease in revenue was driven by lower revenue in our BetterHelp segment, partially offset by higher revenue in our Integrated Care segment. The acquisitions of Catapult Health, Uplift, and Telecare increased total revenue for the six months ended June 30, 2026 by approximately 2 percentage points.
+
+Cost of Revenue (exclusive of depreciation and amortization, which are shown separately below). Cost of revenue was flat at $190.8 million for the three months ended June 30, 2026, compared to $190.5 million for the three months ended June 30, 2025, with higher labor costs being offset by lower technology costs. On a year-to-date basis, cost of revenue was also flat at $388.4 million compared with $387.4 million for the six months ended June 30, 2025.
+
+Advertising and Marketing Expenses. Advertising and marketing expenses were $143.4 million for the three months ended June 30, 2026, compared to $167.5 million for the three months ended June 30, 2025, a decrease of $24.2 million, or 14%. On a year-to-date basis, advertising and marketing expenses decreased by $40.8 million, or 12%, to $294.9 million. The decrease for both periods was driven mainly by lower digital and media advertising costs associated with actions to prioritize Insurance Covered Services in the BetterHelp segment, and lower employee compensation costs. For further discussion regarding the decrease in advertising and marketing expenses in our BetterHelp segment, see below under “Segment Information.”
+
+Sales Expenses. Sales expenses were $49.4 million for the three months ended June 30, 2026, compared to $50.0 million for the three months ended June 30, 2025, a decrease of $0.6 million, or 1%. This decrease reflects lower employee compensation costs and travel costs, partially offset by higher commissions. On a year-to-date basis, sales expenses increased by $2.0 million, or 2%, to $100.7 million. This increase reflects higher commissions costs, offset by lower employee compensation costs and lower travel costs.
+
+Technology and Development Expenses. Technology and development expenses were $62.9 million for the three months ended June 30, 2026, compared to $68.8 million for the three months ended June 30, 2025, a decrease of $5.9 million, or 9%. On a year-to-date basis, technology and development expenses decreased by $8.0 million, or 6% to $130.7 million. The decrease for both periods primarily reflects lower employee compensation costs and lower infrastructure, hosting, and software license costs.
+
+31
+
+Table of Contents
+
+For the three months ended June 30, 2026 and 2025, research and development costs, which exclude amounts reflected as capitalized software development costs, were $19.2 million and $22.1 million, respectively. For the six months ended June 30, 2026 and 2025, research and development costs were $39.5 million and $45.0 million, respectively.
+
+General and Administrative Expenses. General and administrative expenses decreased $4.1 million, or 4%, to $104.0 million for the three months ended June 30, 2026, compared to $108.1 million for the three months ended June 30, 2025. On a year-to-date basis, general and administrative expenses decreased by $14.8 million, or 7%, to $206.1 million, compared to $220.9 million in the prior year. The decrease for both periods was primarily driven by lower employee compensation costs, partially offset by higher professional fees, legal fees, software and infrastructure costs, and indirect taxes.
+
+Goodwill Impairments. We did not record a non-cash goodwill impairment charge for the three and six months ended June 30, 2026. In the three months ended March 31, 2025, concurrent with the completion of the acquisition of Catapult Health, we performed a goodwill impairment test on the Integrated Care reporting unit and determined that the carrying value of the reporting unit exceeded its fair value. As a result, we recognized a goodwill impairment of $59.1 million associated with the acquisition of Catapult Health.
+
+Acquisition, Integration, and Transformation Costs. Acquisition, integration, and transformation costs primarily consisted of costs to integrate and upgrade our ERP system and costs to integrate the operations of acquired businesses and were $1.7 million and $2.7 million for the three months ended June 30, 2026 and 2025, respectively, and were $2.8 million and $4.8 million for the six months ended June 30, 2026 and 2025, respectively.
+
+Restructuring Costs. Restructuring costs for the three months ended June 30, 2026 were $0.9 million, of which $0.6 million was for employee transition, severance, employee benefits, and related costs and $0.3 million was related to costs associated with office space reductions. Restructuring costs for the six months ended June 30, 2026 were $12.9 million, of which $11.6 million was for employee transition, severance, employee benefits, and related costs and $1.3 million was related to costs associated with office space reductions, including $0.2 million of right-of-use asset impairment charges.
+
+Restructuring costs for the three months ended June 30, 2025 were $5.7 million, of which $5.4 million was for employee transition, severance, employee benefits, and related costs and $0.3 million was related to costs associated with office space reductions, including $0.1 million of right-of-use asset impairment charges. Restructuring costs for the six months ended June 30, 2025 were $10.0 million, of which $9.0 million was for employee transition, severance, employee benefits, and related costs and $1.0 million was related to costs associated with office space reductions, including $0.3 million of right-of-use asset impairment charges.
+
+As a result of our review of the business to drive further efficiency, better align resources, and improve profitability, we continue to expect to incur pre-tax restructuring costs under our plan in the range of $15.0 million to $20.0 million for the year ending December 31, 2026. The charges will primarily relate to employee transition, severance, employee benefits, and other costs, including costs associated with office space reductions.
+
+Amortization of Intangible Assets.
+
+The following table shows amortization of intangible assets broken down by components for the periods indicated (in thousands):
+
+Three Months Ended
+
+June 30, Six Months Ended
+
+June 30,
+
+2026 2025 % 2026 2025 %
+
+Amortization of acquired intangibles $ 51,758 $ 44,372 17% $ 103,509 $ 86,783 19%
+
+Amortization of capitalized software development costs 36,684 44,292 (17)% 74,759 86,185 (13)%
+
+Amortization of intangible assets $ 88,442 $ 88,664 —% $ 178,268 $ 172,968 3%
+
+Amortization of intangible assets was flat at $88.4 million for the three months ended June 30, 2026, compared to $88.7 million for the three months ended June 30, 2025. Amortization of intangible assets was $178.3 million for the six months ended June 30, 2026, compared to $173.0 million for the six months ended June 30, 2025, an increase of $5.3 million, or 3%.
+
+32
+
+Table of Contents
+
+Depreciation of Property and Equipment. Depreciation of property and equipment was $2.5 million for the three months ended June 30, 2026, compared to $4.3 million for the three months ended June 30, 2025, a decrease of $1.9 million, or 43%. On a year-to-date basis, depreciation of property and equipment was $4.9 million for the six months ended June 30, 2026, compared to $7.9 million for the six months ended June 30, 2025, a decrease of $3.0 million, or 38%. The decrease in both periods was primarily driven by prior year accelerated depreciation associated with decisions to exit certain leased spaces.
+
+Interest Income. Interest income consisted of interest earned on cash and cash equivalents. Interest income was $6.5 million for the three months ended June 30, 2026, compared to $10.1 million for the three months ended June 30, 2025. Interest income was $13.0 million for the six months ended June 30, 2026, compared to $22.7 million for the six months ended June 30, 2025. The decrease for both periods was driven by lower interest rate yields and holding a lower average balance of cash and cash equivalents.
+
+Interest Expense. Interest expense consisted of interest costs and the amortization of debt discounts primarily associated with the convertible senior notes. Interest expense was $5.1 million for the three months ended June 30, 2026, compared to $4.5 million for the three months ended June 30, 2025. Interest expense was $10.5 million for the six months ended June 30, 2026, compared to $10.2 million for the six months ended June 30, 2025. The increase for both periods was primarily driven by interest associated with the Revolving Credit Facility, partially offset by the impact of the maturation of certain of the convertible senior notes in the prior year.
+
+Other Expense (Income), net. Other expense (income), net was an expense of $2.2 million for the three months ended June 30, 2026, compared to an income of $8.4 million for the three months ended June 30, 2025. Other expense (income), net was an expense of $2.4 million for the six months ended June 30, 2026, compared to an income of $10.8 million for the six months ended June 30, 2025. The change primarily reflects the impact of foreign currency exchange rate fluctuations.
+
+Provision for Income Taxes. We recorded an income tax expense of $1.0 million for the three months ended June 30, 2026 compared to an income tax benefit of $7.8 million for the three months ended June 30, 2025, and an income tax expense of $4.0 million for the six months ended June 30, 2026 compared to an income tax benefit of $26.0 million for the six months ended June 30, 2025. Tax expense recorded for six months ended June 30, 2026 was primarily due to a $19.3 million increase in the valuation allowance and a discrete tax expense related to shortfall from stock-based compensation, offset by an ordinary tax benefit of $20.7 million. The tax benefit for six months ended June 30, 2025 was primarily due to a discrete benefit of $20.1 million related to the completion of a research and development tax credit study and $11.1 million of acquisition related tax benefits, offset by ordinary tax expense of $5.0 million.
+
+33
+
+Table of Contents
+
+Segment Information
+
+The following tables set forth the results of operations by segment for the three and six months ended June 30, 2026 and 2025 (dollars in thousands):
+
+Three Months Ended
+
+June 30,
+
+Integrated Care 2026 2025 Variance %
+
+Revenue $ 394,305 $ 391,510 $ 2,795 1 %
+
+Cost of revenue, exclusive of depreciation, amortization, and stock-based compensation 129,903 126,387 3,516 3 %
+
+Advertising and marketing, exclusive of stock-based compensation 31,259 31,953 (694) (2) %
+
+Other segment expenses (1) 167,901 175,720 (7,819) (4) %
+
+Adjusted EBITDA $ 65,242 $ 57,450 $ 7,792 14 %
+
+Adjusted EBITDA margin % 16.5% 14.7%
+
+Six Months Ended
+
+June 30,
+
+Integrated Care 2026 2025 Variance %
+
+Revenue $ 789,750 $ 780,978 $ 8,772 1 %
+
+Cost of revenue, exclusive of depreciation, amortization, and stock-based compensation 265,777 257,395 8,382 3 %
+
+Advertising and marketing, exclusive of stock-based compensation 65,173 65,663 (490) (1) %
+
+Other segment expenses (1) 337,281 350,091 (12,810) (4) %
+
+Adjusted EBITDA $ 121,519 $ 107,829 $ 13,690 13 %
+
+Adjusted EBITDA margin % 15.4% 13.8%
+
+(1)Other segment expenses include sales expenses, technology and development expenses, and general and administrative expenses, each exclusive of stock-based compensation.
+
+Integrated Care total revenues increased by $2.8 million, or 1%, to $394.3 million for the three months ended June 30, 2026, and increased by $8.8 million, or 1%, to $789.8 million for the six months ended June 30, 2026. The acquisition of Telecare increased Integrated Care total revenue for the three months ended June 30, 2026 by approximately 1 percentage point and the acquisitions of Catapult Health and Telecare increased Integrated Care total revenue for the six months ended June 30, 2026 by approximately 1 percentage point.
+
+Integrated Care cost of revenue, exclusive of depreciation, amortization, and stock-based compensation, increased by $3.5 million, or 3%, to $129.9 million for the three months ended June 30, 2026, and increased by $8.4 million, or 3%, to $265.8 million for the six months ended June 30, 2026. For both periods, the increase was primarily driven by higher labor and provider costs.
+
+Integrated Care advertising and marketing, exclusive of stock-based compensation, decreased by $0.7 million, or 2%, to $31.3 million for the three months ended June 30, 2026 and decreased by $0.5 million, or 1%, to $65.2 million for the six months ended June 30, 2026. For both periods, the decrease primarily reflects lower employee compensation costs, partially offset by higher digital and media advertising costs.
+
+Integrated Care other segment expenses decreased by $7.8 million, or 4%, to $167.9 million for the three months ended June 30, 2026, and decreased by 

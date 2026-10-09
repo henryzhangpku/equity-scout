@@ -1,0 +1,546 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+
+This Quarterly Report on Form 10-Q (this “Quarterly Report”) contains forward-looking statements within the meaning of Section 21E of the Securities Exchange Act of 1934, as amended (the “Exchange Act”). For this purpose, any statements contained herein that are not statements of historical fact, including without limitation, certain statements regarding industry prospects and our results of operations or financial position, may be deemed to be forward-looking statements. Without limiting the foregoing, the words “believes,” “anticipates,” “plans,” “expects,” and similar expressions are intended to identify forward-looking statements. The important factors discussed under “Part II. Item 1A. Risk Factors,” among others, could cause actual results to differ materially from those indicated by forward-looking statements made herein and presented elsewhere by management from time to time. Such forward-looking statements represent management’s current expectations and are inherently uncertain. Investors are warned that actual results may differ from management’s expectations.
+
+Overview
+
+We are a digital asset focused company. Beginning in the third calendar quarter of 2025, management expanded its existing digital asset business to primarily focus on the Ethereum blockchain and ETH as the digital asset. This included expanding toward an asset light operating model centered on Ethereum adjacent services (including advisory) and disciplined digital asset treasury management. Our results are now driven primarily by operating efficiency in a lower capex model and Ethereum market conditions, including their impact on client activity and the value of any ETH held in our treasury.
+
+In June and July 2025, we strengthened our liquidity through an underwritten public offering of common stock, private placements, and the establishment of our at-the-market program permitting sales of up to $24.5 billion of our common stock from time to time (the “ATM Program”). We also uplisted our common stock to the NYSE American in June 2025 and subsequently to the New York Stock Exchange on April 9, 2026.
+
+27
+
+Subsequent to May 31, 2026, we completed an underwritten public offering of our Series A Preferred Stock, generating net proceeds of $273.8 million. The offering further enhanced our liquidity and capital resources, and supports our digital asset treasury strategy, strategic investments and other general corporate purposes.
+
+During the current quarter, we also deployed capital into strategic moonshot investments that we believe complement our ETH-focused operating model and treasury strategy. These investments were evaluated alongside direct ETH acquisitions as part of our broader capital allocation framework and are intended to support long-term value creation rather than near-term operating income.
+
+Unless otherwise indicated, period to period comparisons are presented for the two most recent fiscal years consistent with Item 303 of Regulation S-K, as amended.
+
+ETH Treasury Strategy, Drivers and Outlook
+
+Our operating model is now anchored by our ETH Treasury Strategy and capital-light ecosystem services. The key drivers of our results include (i) ETH market conditions, which affect the value of our holdings and the economics of any staking or staking-adjacent activities; (ii) client demand for Ethereum-adjacent services, including advisory; (iii) security, custody and compliance expenditures necessary to support institutional-grade treasury operations; and (iv) access to capital to opportunistically acquire ETH and invest in enabling infrastructure.
+
+Treasury and yield framework. Our objective is to grow our net ETH position over time, subject to risk and liquidity constraints. We evaluate staking and related mechanisms based on security, liquidity, counterparty and regulatory profiles. We expect staking yields to evolve with validator participation rates, protocol parameters and market conditions. Where we deploy ETH to staking or analogous activities, we intend to size exposures conservatively, prioritize best-in-class custody and validator operations (including multi-client diversity and performance monitoring), and maintain appropriate unencumbered liquidity to meet corporate needs. We may rebalance or unwind positions in response to changes in risk, reward, or regulatory context.
+
+Capital deployed into strategic investments is subject to similar risk discipline, liquidity considerations and governance oversight as our ETH treasury activities, and may introduce additional sources of earnings volatility unrelated to ETH price movements.
+
+Operating expenditures and investment priorities. As an ETH-focused company, we expect a mix shift in operating expenses toward cybersecurity, custody, treasury operations, compliance and technology enablement for advisory and analytics. Capital expenditures are expected to remain modest relative to a mining-centric model. We intend to maintain a flexible cost structure aligned with services activity and treasury scale. In addition to direct ETH holdings, we may selectively pursue strategic moonshot investments in operating companies, platforms or ecosystems that we believe are aligned with Ethereum adoption, infrastructure or adjacent services. These investments are evaluated within the context of our ETH Treasury Strategy and are intended to complement, rather than replace, direct exposure to ETH.
+
+Key trends and uncertainties. We are monitoring (i) protocol upgrades on Ethereum’s roadmap and their implications for staking yields, fee markets and network security; (ii) growth in L2 activity and cross-chain interoperability; (iii) institutional adoption trends, including tokenization initiatives and regulated market-structure developments; (iv) availability and terms of regulated custodial services; and (v) evolving U.S. and non-U.S. regulatory frameworks applicable to digital assets and staking.
+
+Liquidity considerations. Our liquidity planning considers ETH price volatility, potential impairment charges under applicable accounting policies, the liquidity profile of any staked positions and our ability to access capital markets through our shelf registration and at-the-market program. We intend to maintain sufficient liquidity to support operations, regulatory compliance, and security investments, while seeking opportunities to increase ETH holdings when market conditions are attractive.
+
+Known events reasonably likely to affect future results. Our future results may be materially affected by changes in ETH prices and staking economics; regulatory developments pertaining to ETH, staking and custody; counterparty
+
+28
+
+or custodian developments; cybersecurity investments and events; and market structure changes affecting liquidity and capital access for digital-asset issuers.
+
+Key Performance Drivers
+
+Key performance drivers include ETH market conditions and staking economics; client demand for advisory services; and access to capital under our shelf and ATM Program. We focus on treasury security and liquidity, sizing of staking or staking adjacent activities, and maintaining flexibility to rebalance positions as risk/return or regulatory contexts evolve. Given our pivot to an asset light, ETH focused model, energy use metrics from prior mining operations are no longer decision useful and have been excluded from MD&A.
+
+Results of Operations
+
+Comparison of Results of Operations for the Three Months Ended May 31, 2026 and 2025.
+
+Three Months Ended May 31,
+
+2026 2025 % Change
+
+Revenue from staking and validation $ 45,743 $ — NM
+
+Revenue from self-mining 624 813 (23)%
+
+Revenue from consulting 168 35 NM
+
+Revenue from leasing — 1,075 NM
+
+Revenue from the sale of mining equipment — 129 NM
+
+Total Revenue 46,535 2,052 NM
+
+Cost of Sales 5,726 1,742 NM
+
+Operating expenses:
+
+General and administrative expenses 37,270 744 NM
+
+Unrealized loss (gain) from the digital assets holdings 15,404 34 NM
+
+Total operating expenses 52,674 778 NM
+
+Loss from operations (11,865) (468) NM
+
+Other income (expense):
+
+Change in fair value of warrant liability 16,488 — NM
+
+Net loss on derivative contracts (92,093) — NM
+
+Change in the fair value of equity method investment (1,177) — NM
+
+Interest income (expense), net 5,300 (72) NM
+
+Other income (expense) (248) (83) NM
+
+Pre-tax loss (83,595) (623) NM
+
+Income tax benefit — — NM
+
+Net loss $ (83,595) $ (623) NM
+
+For the results of operations we have included the respective percentage of changes, unless greater than 100% or less than (100)%, in which case we have denoted such changes as not meaningful (“NM”).
+
+29
+
+Revenues
+
+During the three months ended May 31, 2026, revenues were $46,535, compared to $2,052 during the three months ended May 31, 2025. The increase in revenue was a result of the following:
+
+•Revenue from staking and validation. During the three months ended May 31, 2026, revenue from staking and validation was $45,743, compared to $0 in the three months ended May 31, 2025. The increase was a result of the Company initiating native staking in November 2025, with the intent for staking to become a primary yield generation strategy of the Company during the current fiscal year. Further, the Pier Two acquisition accounted for $3,527 in staking revenue for the three months ended May 31, 2026.
+
+•Revenue from self-mining. During the three months ended May 31, 2026, revenue from self-mining was $624, compared to $813 in the three months ended May 31, 2025. The Company is maintaining its small BTC mining operations. However, mining revenue declined due to the lower value of BTC for the three months ended May 31, 2026 compared to the prior year period.
+
+•Revenue from consulting. During the three months ended May 31, 2026, revenue from consulting was $168, as compared to $35 during the three months ended May 31, 2025. The increase in consulting revenue in 2026 was derived from one consulting agreement under which the Company is obligated to provide various operational, maintenance and consulting services, which saw more activity in 2026 as compared to the prior period.
+
+•Revenue from leasing. During the three months ended May 31, 2026, revenue from the leasing of miners was $0, as compared to $1,075 during the three months ended May 31, 2025. The machine lease agreements expired on December 31, 2025 and were not renewed. Thus, the revenue associated with this activity is no longer recognized.
+
+•Revenue from the sale of mining equipment. During the three months ended May 31, 2026, revenue from sale of mining equipment was $0, compared to $129 in the three months ended May 31, 2025. The decrease was a result of the Company ceasing sales of mining equipment.
+
+Cost of Sales
+
+Major components of cost of sales include rent to house mining and hosting equipment, staking, electricity, depreciation, and supplies. During the three months ended May 31, 2026, cost of sales was $5,726 compared to $1,742 during the three months ended May 31, 2025. The increase in cost of sales was related to self-mining with more Blockfusion expense incurred in the current period compared to the third period in the prior year. Further, the Company initiated native staking in November 2025, with the intent for staking to become a primary yield generation strategy of the Company during the current fiscal year, which generated more costs of sales associated with staking. The increase was partially off-set by cost of sales associated with leasing decreasing as the leasing contract ended in Q2 2026.
+
+In addition, cost of sales as a percentage of revenue increased during the three months ended May 31, 2026 period primarily due to the acquisition of Pier Two and the resulting impact on the Company's staking and validation operations, affecting comparability to prior periods.
+
+Operating Expenses
+
+•General and administrative expenses. General and administrative expenses were $37,270 in the three months ended May 31, 2026, compared to $744 in the three months ended May 31, 2025. The increase is primarily related to ETH custodian fees related to treasury operations and treasury management associated
+
+30
+
+with the strategy to shift to staking revenue being the primary source of revenue. Further, this increase in general and administrative expenses was due to the increase in employee salaries and the increase in board of director monetary and stock-based compensation.
+
+•Unrealized loss (gain) from the digital assets holdings. During the three months ended May 31, 2026, the Company recorded an unrealized loss of $15,404 related to changes in the fair value of our digital asset holdings, as compared to a loss of $34 for the three months ended May 31, 2025. The Company acquired ETH on top of its BTC holdings as part of our business expansion during the fourth quarter of fiscal year 2025. Thus, the major purchases of ETH drove the variance between the two quarters.
+
+Other Income (Expense)
+
+•Change in fair value of warrant liability. The Company recognized a $16,488 gain during the three months ended May 31, 2026. This gain reflects the change in fair value of the Liability Classified Warrants, which is reflected in other income within the consolidated statement of operations. See "Note 8. Stockholders' Equity" of the Interim Statements for additional information.
+
+•Net loss on derivative contracts. During the three months ended May 31, 2026, the Company recognized a net loss on derivative contracts of $(92,093), primarily attributable to losses on exercised option contracts of $14,026 and the net impact of option contracts that expired during the period of $78,601, partially offset by a gain of $534 related to changes in the fair value of open option contracts.The Company had no derivative activity during the three months ended May 31, 2025.
+
+•Change in the fair value of equity method investment . The Company recognized a loss of $(1,177) during the three months ended May 31, 2026. This loss reflects the change in fair value of the investment in Eightco, which is reflected in “Other Income” within the consolidated statement of operations. See "Note 8. Stockholders' Equity" of the Interim Statements for additional information.
+
+•Interest income (expense), net. Interest income was $5,300 in the three months ended May 31, 2026, as compared to an expense of $(72) during the three months ended May 31, 2025. The 2025 interest was related to the debt during the three months ended May 31, 2025 which was extinguished during fiscal 2025. The increase in interest income was associated with more cash from ATM capital that was placed into interest bearing bank accounts.
+
+•Other income (expense). The Company recognized other income (expense) of $(248) during the three months ended May 31, 2026, as compared to $(83) during the three months ended May 31, 2025. The decrease in expense is because the Company had no loss on extinguishment of debt during the three months ended May 31, 2026, as compared to a loss of ($208) during the three months ended May 31, 2025. The 2025 loss was related to the Company’s Hash Rate Sale Agreement. The Company had no debt as of May 31, 2026.
+
+Income Taxes
+
+During the three months ended May 31, 2026, the Company recognized no income tax benefit or income tax expense.
+
+31
+
+Comparison of Results of Operations for the Nine Months Ended May 31, 2026 and 2025.
+
+Nine Months Ended May 31,
+
+2026 2025 % Change
+
+Revenue from staking and validation $ 56,924 $ — NM
+
+Revenue from self-mining 845 2,814 (70)%
+
+Revenue from consulting 565 35 NM
+
+Revenue from leasing 1,536 1,075 43%
+
+Revenue from the sale of mining equipment — 846 NM
+
+Total Revenue 59,870 4,770 NM
+
+Cost of Sales 8,177 4,393 86%
+
+Operating expenses:
+
+General and administrative expenses 335,662 2,667 NM
+
+Unrealized loss (gain) from the digital assets holdings 9,038,538 (25) NM
+
+Total operating expenses 9,374,200 2,642 NM
+
+Loss from operations (9,322,507) (2,265) NM
+
+Other income (expense):
+
+Change in fair value of warrant liability 264,121 — NM
+
+Net loss on derivative contracts (133,275) — NM
+
+Issuance costs related to warrant offering (9,381) — NM
+
+Change in the fair value of equity method investment (6,793) — NM
+
+Interest income (expense), net 9,917 (200) NM
+
+Other income (expense) (480) (289) 66%
+
+Pre-tax loss (9,198,398) (2,754) NM
+
+Income tax benefit 92,295 — NM
+
+Net loss $ (9,106,103) $ (2,754) NM
+
+For the results of operations we have included the respective percentage of changes, unless greater than 100% or less than (100)%, in which case we have denoted such changes as not meaningful (“NM”).
+
+Revenues
+
+During the nine months ended May 31, 2026, revenues were $59,870, compared to $4,770 during the nine months ended May 31, 2025. The increase in revenue was a result of the following:
+
+•Revenue from staking and validation. During the nine months ended May 31, 2026, revenue from staking and validation was $56,924, compared to $0 in the nine months ended May 31, 2025. The increase was a result of the Company initiating native staking in November 2025, with the intent for staking to become a primary yield generation strategy of the Company during the current fiscal year. Further, the Pier Two acquisition accounted for $3,527 in staking revenue for the nine months ended May 31, 2026.
+
+32
+
+•Revenue from self-mining. During the nine months ended May 31, 2026, revenue from self-mining was $845, compared to $2,814 in the nine months ended May 31, 2025. The Company is maintaining its small BTC mining operations. However, mining revenue declined partially due to the suspension of self-mining operations during relocation in the nine months ended May 31, 2026.
+
+•Revenue from consulting. During the nine months ended May 31, 2026, revenue from consulting was $565, as compared to $35 during the nine months ended May 31, 2025. All of the consulting revenue in 2026 was derived from its consulting agreement with KULR Technology Group, Inc., under which the Company is obligated to provide various operational, maintenance and consulting services from May 16, 2025 to May 15, 2026.
+
+•Revenue from leasing. During the nine months ended May 31, 2026, revenue from the leasing of miners was $1,536, as compared to $1,075 during the nine months ended May 31, 2025. This was due to more activity within its leasing contracts with KULR Technology Group, Inc. for the nine month period ended May 31, 2026.
+
+•Revenue from the sale of mining equipment. During the nine months ended May 31, 2026, revenue from the sale of mining equipment was $0, compared to $846 in the nine months ended May 31, 2025. The revenue recognized during the nine months ended May 31, 2025 was primarily related to the sale of ten transformers. No such revenue was recognized during the nine months ended May 31, 2026.
+
+Cost of Sales
+
+Major components of cost of sales include rent to house mining and hosting equipment, staking, electricity, depreciation, and supplies. During the nine months ended May 31, 2026, cost of sales was $8,177 compared to $4,393 during the nine months ended May 31, 2025. The increase in cost of sales was due in part to leasing costs resulting from the Machine Lease Agreement that Bitmine entered into with KULR Technology Group, Inc. on May 16, 2025. As part of this agreement, Bitmine is responsible for maintaining the equipment, providing a contractually agreed upon level of hash rate, and ensuring continuous operation, either directly or through third-party providers. Further, the Company initiated native staking in November 2025, with the intent for staking to become a primary yield generation strategy of the Company during the current fiscal year, which generated more cost of sales associated with staking. This was partially offset by the Company continuing its strategy of winding down its proprietary self-mining exposure and deferring new site build outs during the nine months ended May 31, 2026 and the costs incurred during the nine months ended May 31, 2025 .
+
+Operating Expenses
+
+•General and administrative expenses. General and administrative expenses were $335,662 in the nine months ended May 31, 2026, compared to $2,667 in the nine months ended May 31, 2025. The increase is primarily related to treasury activity associated with the Company's ETH strategy. Due to the large purchases of ETH throughout the year, the Company incurred significantly more of these treasury expenses. Further, this increase in general and administrative expenses was due to the increase in employee salaries and the increase in board of director monetary and stock-based compensation.
+
+•Unrealized loss (gain) from the digital assets holdings. During the nine months ended May 31, 2026, the Company recorded an unrealized loss of $9,038,538 related to changes in the fair value of our digital asset holdings, as compared to a gain of $(25) for the nine months ended May 31, 2025. The Company acquired ETH on top of its BTC holdings as part of our business expansion during the last quarter of fiscal year 2025. Since the company now possesses ETH in addition to BTC, the company is more exposed to market fluctuations that result in unrealized losses or gains.
+
+33
+
+Other Income (Expense)
+
+•Change in fair value of warrant liability. The Company recognized a $264,121 gain during the nine months ended May 31, 2026. This gain reflects the change in fair value of the Liability Classified Warrants, which is reflected in other income within the consolidated statement of operations. See "Note 8. Stockholders' Equity" of the Interim Statements for additional information.
+
+•Net loss on derivative contracts. During the nine months ended May 31, 2026, the Company recognized a net loss on derivative contracts of ($133,275), primarily attributable to losses on exercised option contracts of $79,278 and the net impact of option contracts that expired during the period of $54,512, partially offset by a $515 gain related to changes in the fair value of open option contracts. The Company had no derivative activity during the nine months ended May 31, 2025.
+
+•Issuance costs related to warrant offering. The Company incurred an issuance cost of ($9,381) during the nine months ended May 31, 2026. These costs were incurred in connection with the warrant offering completed during the period and did not exist in the prior year.
+
+•Change in the fair value of equity method investment . The Company recognized a $6,793 loss during the nine months ended May 31, 2026. This loss reflects the change in fair value of the investment in Eightco, which is reflected in “Other Income” within the consolidated statement of operations. See "Note 8. Stockholders' Equity" of the Interim Statements for additional information.
+
+•Interest income (expense), net. Interest expense, net was $9,917 in the nine months ended May 31, 2026, as compared to $(200) in interest expense, net in the nine months ended May 31, 2025. The 2025 interest was related to the debt during the three months ended May 31, 2025 which was extinguished during fiscal 2025. The increase in interest income was associated with more cash from ATM capital that was placed into interest bearing bank accounts.
+
+•Other income (expense). The Company recognized other income (expense) of $(480) during the nine months ended May 31, 2026, as compared to $(289) during the nine months ended May 31, 2025. The decrease in expense is because the Company had no loss on extinguishment of debt during the nine months ended May 31, 2026, as compared to a loss of $(289) during the nine months ended May 31, 2025. The 2025 loss was related to the Company’s Hash Rate Sale Agreement. The Company had no debt as of May 31, 2026.
+
+Income Taxes
+
+During the nine months ended May 31, 2026, the Company recognized an income tax benefit of $92,295, primarily attributable to the reversal of the deferred tax liabilities associated with unrealized gains on digital assets recognized in prior periods that are now in a significant unrealized loss position. These unrealized losses resulted in the recognition of deferred tax assets, against which the Company recorded a 100% valuation allowance.
+
+Non-GAAP Financial Measures
+
+The following tables present Adjusted Earnings Before Interest, Taxes, Depreciation, and Amortization (“EBITDA”) and Adjusted Earnings Per Share (“EPS”). These are non-U.S. GAAP financial measures within the meaning of Regulation G dictated by the Securities and Exchange Commission. Adjusted EBITDA is defined as EBITDA excluding the impact of certain non-cash items for the period presented. Adjusted EPS is defined as EPS in accordance with US GAAP excluding the impact of certain non-cash items for the period presented.
+
+The Company uses Adjusted EBITDA and Adjusted EPS in explaining its results to shareholders and the investment community and in its internal evaluation and management of its businesses. The Company’s management believes
+
+34
+
+that these non-GAAP financial measures and the information they provide are useful to investors since these measures (a) permit investors to view the Company’s performance using the same tools that management uses to evaluate the Company’s past performance, (b) permit investors to compare the Company with its peers, and (c) provide consistent period-to-period comparisons of the results.
+
+While the Company believes that these measures are useful in evaluating the Company’s performance, this information should be considered as supplemental in nature and not as a substitute for or superior to the related financial information prepared in accordance with GAAP. Additionally, these measurements may differ from similar measures presented by other companies. A reconciliation of Adjusted EBITDA and Adjusted EPS is detailed below.
+
+The reconciliation of Adjusted EBITDA for the three months ended May 31, 2026 and 2025 is as follows:
+
+Three Months Ended May 31,
+
+2026 2025
+
+Net Income (loss) $ (83,595) $ (623)
+
+Interest income (expense), net (5,300) 72
+
+Depreciation and amortization expense 386 181
+
+EBITDA $ (88,509) $ (370)
+
+Adjustments
+
+Stock based compensation (1)
+$ 13,251 $ 647
+
+Change in the fair value of equity method investment(3)
+1,177 —
+
+Change in fair value of warrant liability(5)
+(16,488) —
+
+Unrealized change in fair value of ETH option contracts(6)
+(515) —
+
+Loss on the extinguishment of debt(7)
+— 208
+
+Unrealized loss (gain) from the digital assets holdings(8)
+15,404 34
+
+Adjusted EBITDA $ (75,680) $ 519
+
+The reconciliation of Adjusted EBITDA for the nine months ended May 31, 2026 and 2025 is as follows:
+
+Nine Months Ended May 31,
+
+2026 2025
+
+Net Income (loss) $ (9,106,103) $ (2,754)
+
+Interest income (expense), net (9,917) 200
+
+Provision for income taxes (92,295) —
+
+Depreciation and amortization expense 631 539
+
+EBITDA $ (9,207,684) $ (2,015)
+
+Adjustments
+
+Stock based compensation (1)
+$ 38,357 $ 1,319
+
+Loss on sale of property and equipment(2)
+200 —
+
+Change in the fair value of equity method investment(3)
+6,793 —
+
+Issuance costs related to warrant offering(4)
+9,381 —
+
+Change in fair value of warrant liability(5)
+(264,121) —
+
+Unrealized change in fair value of ETH option contracts(6)
+(515) —
+
+Loss on the extinguishment of debt(7)
+— 289
+
+Unrealized loss (gain) from the digital assets holdings(8)
+9,038,538 (25)
+
+One time consulting and legal fees(9)
+200,044 —
+
+Adjusted EBITDA $ (179,007) $ (432)
+
+35
+
+(1) Stock based compensation represents the non-cash expense recorded for the Company's restricted stock units and restricted stock awards. This includes the impact of the modification that occurred during the three and nine months ended May 31, 2026 as well as the vesting of existing awards.
+
+(2) Represents a loss recorded during the period on the sale of property, plant and equipment that was the difference between the book carrying value and the sale price.
+
+(3) Represents the change in fair value of the Company's equity held investment in Eightco's common stock for the three and nine months ended May 31, 2026.
+
+(4) Represents the issuance cost incurred for the warrant offering for the nine months ended May 31, 2026 disclosed within "Note 8. Stockholders' Equity."
+
+(5) Represents the change in fair value of the Company's liability classified warrants for the three and nine months ended May 31, 2026.
+
+(6) Represents the unrealized fair value adjustment related to the Company's outstanding ETH option contracts for the three and nine months ended May 31, 2026.
+
+(7) Represents non-recurring charges incurred in connection with the early settlement of the Company's line of credit from IDI and the Hash Rate Sale Agreement.
+
+(8) Removes the impact of unrealized changes in fair value of our digital asset holdings from net income.
+
+(9) Represents one time capital raising, advisory, legal and other consulting fees incurred during the period.
+
+The reconciliation of Adjusted EPS for the three months ended May 31, 2026 and 2025 is as follows:
+
+Three Months Ended May 31,
+
+2026 2025
+
+Pre-tax loss $ (83,595) $ (623)
+
+Adjustments:
+
+Stock based compensation (1)
+13,251 647
+
+Change in the fair value of equity method investment(3)
+1,177 —
+
+Change in fair value of warrant liability(5)
+(16,488) —
+
+Unrealized change in fair value of ETH option contracts(6)
+(515) —
+
+Loss on the extinguishment of debt(7)
+— 208
+
+Unrealized loss (gain) from the digital assets holdings(8)
+15,404 34
+
+One time consulting and legal fees(9)
+— —
+
+Adjusted net income (loss) before income tax provision $ (70,766) $ 266
+
+Income tax benefit (as reported) — —
+
+Income tax provision adjustment(10)
+— —
+
+Adjusted income tax benefit $ — $ —
+
+Adjusted net income (loss) $ (70,766) $ 266
+
+Deemed dividend on Series A Preferred Stock — —
+
+Adjusted net income (loss) attributable to common stockholders $ (70,766) $ 266
+
+Diluted weighted average common shares outstanding 551,788,656 2,006,202
+
+Adjusted diluted net income (loss) per common share $ (128.25) $ 132.59
+
+36
+
+The reconciliation of Adjusted EPS for the nine months ended May 31, 2026 and 2025 is as follows:
+
+Nine Months Ended May 31,
+
+2026 2025
+
+Pre-tax loss $ (9,198,398) $ (2,754)
+
+Adjustments:
+
+Stock based compensation(1) 38,357 1,319
+
+Loss on sale of property and equipment(2) 200 —
+
+Change in the fair value of equity method investment(3) 6,793 —
+
+Issuance costs related to warrant offering(4) 9,381 —
+
+Change in fair value of warrant liability(5) (264,121) —
+
+Unrealized change in fair value of ETH option contracts(6) (515) —
+
+Loss on the extinguishment of debt(7) — 289
+
+Unrealized loss (gain) from the digital assets holding(8) 9,038,538 (25)
+
+One time consulting and legal fees(9) 200,044 —
+
+Adjusted net income (loss) before income tax provision $ (169,721) $ (1,171)
+
+Income tax benefit (as reported) (92,295) —
+
+Income tax provision adjustment(10) 35,641 —
+
+Adjusted income tax benefit $ (56,654) $ —
+
+Adjusted net income (loss) $ (113,067) $ (1,171)
+
+Deemed dividend on Series A Preferred Stock — (2,961)
+
+Adjusted net income (loss) attributable to common stockholders $ (113,067) $ (4,132)
+
+Diluted weighted average common shares outstanding 443,947,604 2,185,206
+
+Adjusted diluted net income (loss) per common share $ (0.25) $ (535.88)
+
+(1) Stock based compensation represents the non-cash expense recorded for the Company's restricted stock units and restricted stock awards. This includes the impact of the modification that occurred during the three and nine months ended May 31, 2026 as well as the vesting of existing awards.
+
+(2) Represents a loss recorded during the period on the sale of property, plant and equipment that was the difference between the book carrying value and the sale price.
+
+(3) Represents the change in fair value of the Company's equity held investment in Eightco's common stock for the three and nine months ended May 31, 2026.
+
+(4) Represents the issuance cost incurred for the warrant offering for the nine months ended May 31, 2026 disclosed within "Note 8. Stockholders' Equity."
+
+(5) Represents the change in fair value of the Company's liability classified warrants for the three and nine months ended May 31, 2026.
+
+(6) Represents the unrealized fair value adjustment related to the Company's outstanding ETH option contracts for the three and nine months ended May 31, 2026.
+
+(7) Represents non-recurring charges incurred in connection with the early settlement of the Company's line of credit from IDI and the Hash Rate Sale Agreement.
+
+(8) Removes the impact of unrealized changes in fair value of our digital asset holdings from net income.
+
+37
+
+(9) Represents one time capital raising, advisory, legal and other consulting fees incurred during the period.
+
+(10) The income tax provision adjustment is calculated by multiplying “Adjusted income (loss) before income tax provision” by the Company’s applicable tax rate of 21%.
+
+Known Trends, Events and Uncertainties
+
+Business expansion. Following our July 2025 and ongoing financings, we have pivoted to a services-led model and reduced proprietary mining exposure, including by redeploying/retiring less-efficient machines, concentrating hash rate at lower-cost sites and phasing capex. In the second half of calendar 2025, we further reduced exposure to halving-driven volatility by pivoting to a services-led, capital-light model and by winding down new proprietary mining investments. We discuss the implications for liquidity, capital needs and accounting estimates under “Liquidity and Capital Resources” and “Critical Accounting Estimates.”
+
+This reduces direct exposure to network difficulty and power prices but increases reliance on client demand for advisory and leasing services. We expect services mix and pricing to be key drivers of variability.
+
+Ethereum market dynamics. ETH price levels influence client activity and the value of any ETH held in treasury. Increased adoption or volatility can raise demand for advisory services; conversely, sustained price declines could dampen client spending.
+
+Capital markets and liquidity. We believe our June and July 2025 transactions, shelf registration and ATM Program provide flexibility to access equity capital opportunistically to support working capital and selective investments aligned with a capital-light strategy. Adverse market conditions or unfavorable industry sentiment could constrain our ability to raise capital on acceptable terms.
+
+Regulatory environment. Evolving U.S. and foreign regulations related to digital assets, data center operations, financial markets and custody may impose new compliance obligations or restrictions.
+
+Management updates. On November 20, 2025, the Company entered into an employment agreement with Chi Tsang to serve as the Company’s Chief Executive Officer. Additionally, on January 7, 2026, the Company entered into an employment agreement with Young Kim to serve as the Company’s Chief Financial Officer and Chief Operating Officer.
+
+Liquidity and Capital Resources
+
+Current liquidity position
+
+As of May 31, 2026, the Company had $340,289 in cash on hand and working capital of $433,123.
+
+The Company's primary sources of liquidity during the nine-months ended May 31, 2026, were proceeds from equity financing transactions, including the September 2025 issuance of common stock and warrants, and proceeds generated through its ATM equity program. During the period, the Company generated gross proceeds of $12,235,110 from equity financing transactions, consisting of (i) $11,869,870 in gross proceeds from the sale of 340,748,312 shares of common stock pursuant to the ATM Offering and (ii) $365,240 in gross proceeds from the September 2025 issuance of common stock and warrants.
+
+Subsequent to May 31, 2026, the Company completed an underwritten public offering of 3,500,000 shares of its Series A Preferred Stock at a public offering price of $80.00 per share, generating net proceeds of $273.8 million after deducting underwriting discounts and offering expenses. The Series A Preferred Stock is listed on the New York Stock Exchange under the symbol "BMNP."
+
+38
+
+The Company intends to use available liquidity to support its digital asset treasury strategy, strategic investments, working capital requirements and general corporate purposes. Management continues to evaluate capital allocation opportunities, including direct digital asset acquisitions and investments in blockchain-related businesses and technologies that complement the Company's Ethereum-focused strategy.
+
+Sources and uses of cash
+
+Nine Months Ended May 31,
+
+2026 2025
+
+Net cash provided by (used in) operating activities $ (287,592) $ 1,366
+
+Net cash provided by (used in) investing activities (12,102,446) (18)
+
+Net cash provided by (used in) financing activities 12,218,362 (374)
+
+Net increase (decrease) in cash and cash equivalents $ (171,676) $ 974
+
+Net cash used in operating activities was $(287,592) for the nine months ended May 31, 2026, compared to net cash provided by operating activities of $1,366 for the nine months ended May 31, 2025. The change was driven primarily by a net loss of $9,106,084 for the current period, which included $9,038,538 of unrealized losses on the Company's ETH treasury holdings recognized through net income. On a cash basis, operating outflows increased due to one time capital raising, advisory, legal, and other consulting fees. The increase is also related to expenses associated with the Consulting Agreement. This increase in cash outflow was offset by an increase in cash received from the Company’s revenue generating activities.
+
+Net cash used in investing activities was $(12,102,446) for the nine months ended May 31, 2026, compared to $(18) for the nine months ended May 31, 2025. The increase in investing cash outflow was primarily driven by the $(11,687,493) purchase of ETH. The remaining investing cash outflow was driven by the purchases of the Company’s investments in Beast Industries and Eightco Holdings.
+
+Net cash provided by financing activities was $12,218,362 for the nine months ended May 31, 2026, compared to the $(374) used in financing activities for the nine months ended May 31, 2025. This increase was primarily driven by the $11,869,870 of proceeds received from the ATM Offering. Refer to "Note 8. Stockholder’s Equity" within the financial statements for further details regarding these offerings.
+
+Material cash requirements and known liquidity risks
+
+We expect the following material cash requirements over the next 12 months under our capital-light model:
+
+•fees payable to industry-experienced third parties for managing the Company’s ETH holdings which are expected to be in the range from approximately $40,000 to $50,000 annually. The Company expects these costs to be more than offset by staking rewards generated from its ETH holdings. However, there can be no assurances that such staking rewards will be realized at anticipated levels;
+
+•ongoing revenue participation payments under the Management Services Agreement with Eth Tower, which are based on the level of staking activity and related revenues generated by MAVAN Holdings;
+
+•modest capital expenditures of approximately $1,500, primarily related to the for maintenance of existing technology platforms and infrastructure supporting the Company's operations;
+
+•working capital requirements for general operations, approximately $1,000 per month at current run-rate activity levels; and
+
+•public company costs, including audit and compliance, of approximately $4,000 annually.
+
+•general operating and overhead costs of approximately $83,016 annually.
+
+39
+
+•dividend obligations associated with the Company's outstanding Series A Preferred Stock of approximately $33,250 annually.
+
+Our liquidity is now less sensitive to network difficulty and power price volatility than under a mining-centric model, though ETH and BTC price levels can influence client demand and the value of any digital assets held in treasury. We mitigate liquidity risks by (i) maintaining a flexible cost st

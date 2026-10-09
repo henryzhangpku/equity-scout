@@ -1,0 +1,530 @@
+ANNALY CAPITAL MANAGEMENT, INC. REPORTS 2nd QUARTER 2026 RESULTS
+
+NEW YORK—July 21, 2026—Annaly Capital Management, Inc. (NYSE: NLY) ("Annaly" or the "Company") today announced its financial results for the quarter ended June 30, 2026.
+
+Financial Highlights
+
+•GAAP net income of $1.06 per average common share for the quarter
+
+•Earnings available for distribution ("EAD") of $0.79 per average common share for the quarter
+
+•Economic return of 5.5% for the second quarter
+
+•Book value per common share of $20.15
+
+•GAAP leverage of 7.4x, up from 7.3x in the prior quarter; economic leverage of 5.6x, down from 5.7x in the prior quarter
+
+•Increased common stock cash dividend to $0.75 per share for the second quarter
+
+Business Highlights
+
+Investment and Strategy
+
+•Total portfolio of $109.4 billion, including $95.0 billion in highly liquid Agency portfolio(1)
+
+•Annaly’s Agency portfolio increased by nearly $3 billion, representing 57% of dedicated capital(2), with activity focused on investing accretive capital raised into higher coupon TBA securities and specified pools
+
+•Maintained conservative hedge positioning given elevated macro uncertainty; ended the quarter with a hedge ratio of 97% with activity focused primarily on adding swap exposure across tenors
+
+•Annaly’s Residential Credit portfolio was effectively unchanged at $10.4 billion(1), representing 22% of dedicated capital(2), reflecting continued momentum across its whole loan correspondent channel and securitization platform
+
+•Annaly's MSR portfolio was relatively unchanged at $4.1 billion(1) in market value, representing 21% of dedicated capital(2); Onslow Bay remains the fifth largest non-bank servicer of Agency MBS(3)
+
+Financing and Capital
+
+•$9.6 billion of total assets available for financing(4), including cash and unencumbered Agency MBS of $5.5 billion
+
+•During the quarter, Annaly Residential Credit Group issued a record thirteen securitizations totaling $6.8 billion across a wide array of product types
+
+–Remained the largest non-bank issuer and the second largest issuer overall of Prime Jumbo and Expanded Credit MBS(5)
+
+•Average GAAP cost of interest-bearing liabilities of 4.28%, down one basis point quarter-over-quarter, and average economic cost of interest-bearing liabilities of 3.96%, up three basis points quarter-over-quarter
+
+•Annaly’s Residential Credit business increased financing capacity by $740 million through expanded credit facilities; total warehouse capacity across the Residential Credit and MSR businesses of $8.3 billion, including $2.8 billion of committed capacity
+
+•Raised $447 million of accretive capital through the Company’s at-the-market sales program(6)
+
+"Annaly delivered another quarter of solid results, demonstrating the strength and breadth of our diversified housing finance platform, including a 5.5% economic return and EAD that exceeded the dividend for the ninth consecutive quarter," remarked Chief Executive Officer & Co-Chief Investment Officer David Finkelstein. "These results contributed to a 6.9% economic return through the first half of 2026 and supported our decision to increase the quarterly common stock dividend to $0.75 per share, reflecting the durable earnings power of our portfolio. Looking ahead, we see meaningful opportunities across all three of our investment strategies and believe our scale, liquidity and disciplined capital allocation position us to continue delivering compelling risk-adjusted returns across market cycles."
+
+(1) Total portfolio represents Annaly’s investments that are on-balance sheet and off-balance sheet in which Annaly has economic exposure. Assets exclude assets transferred or pledged to securitization vehicles of $38.3 billion, include TBA purchase contracts (market value) of $7.2 billion, include unsettled MSR commitments of $11 million and unsettled MSR sales of $136 million, include $3.9 billion of retained securities that are eliminated in consolidation and are shown net of participations issued totaling $2.6 billion. Unsettled MSR commitments and unsettled MSR sales represent the market value of deals where Annaly has executed a letter of intent prior to quarter-end. There can be no assurance whether these deals will close or when they will close.
+
+(2) Dedicated capital for each of the investment strategies is calculated as the difference between each investment strategy’s allocated assets (including TBAs) and liabilities.
+
+(3) Based on information aggregated from Fannie Mae and Freddie Mac monthly loan level files by eMBS servicing transfer data as of June 30, 2026. Excludes transfer activity related to platform acquisitions.
+
+(4) Comprised of $8.0 billion of unencumbered assets, which represents Annaly’s excess liquidity and defined as assets that have not been pledged or securitized (generally including cash and cash equivalents, Agency MBS, CRT, Non-Agency MBS, residential mortgage loans, MSR, reverse repurchase agreements, other unencumbered financial assets and capital stock), and $1.6 billion of fair value of collateral pledged for future advances.
+
+(5) Issuer ranking data from Inside Nonconforming Markets for 2025 to 2026 (July 3, 2026 issue). Used with permission.
+
+(6) Net of sales agent commissions and other offering expenses.
+
+Financial Performance
+
+The following table summarizes certain key performance indicators as of and for the quarters ended June 30, 2026, March 31, 2026 and June 30, 2025:
+
+June 30, 2026
+
+March 31, 2026
+
+June 30, 2025
+
+Book value per common share $ 20.15 $ 19.82 $ 18.45
+
+GAAP net income per average common share (1)
+$ 1.06 $ 0.33 $ 0.03
+
+Annualized GAAP return on average equity (2)
+19.88 % 7.15 % 1.82 %
+
+GAAP leverage at period-end (3)
+7.4:1 7.3:1 7.1:1
+
+Net interest margin (4)
+1.47 % 1.41 % 1.04 %
+
+Average yield on interest earning assets (5)
+5.44 % 5.36 % 5.42 %
+
+Average GAAP cost of interest bearing liabilities (6)
+4.28 % 4.29 % 4.76 %
+
+Net interest spread 1.16 % 1.07 % 0.66 %
+
+Non-GAAP metrics *
+
+Earnings available for distribution per average common share (1)
+$ 0.79 $ 0.76 $ 0.73
+
+Annualized EAD return on average equity 15.12 % 14.58 % 14.86 %
+
+Economic leverage at period-end (3)
+5.6:1 5.7:1 5.8:1
+
+Net interest margin (excluding PAA) (4)
+1.76 % 1.71 % 1.71 %
+
+Average yield on interest earning assets (excluding PAA) (5)
+5.46 % 5.35 % 5.41 %
+
+Average economic cost of interest bearing liabilities (6)
+3.96 % 3.93 % 3.94 %
+
+Net interest spread (excluding PAA) 1.50 % 1.42 % 1.47 %
+
+* Represents a non-GAAP financial measure. Please refer to the "Non-GAAP Financial Measures" section for additional information.
+
+(1) Net of dividends on preferred stock.
+
+(2) Annualized GAAP return on average equity annualizes realized and unrealized gains and (losses) which may not be indicative of full year performance, unannualized GAAP return on average equity is 4.97%, 1.79%, and 0.45% for the quarters ended June 30, 2026, March 31, 2026, and June 30, 2025, respectively.
+
+(3) GAAP leverage is computed as the sum of repurchase agreements, other secured financing, debt issued by securitization vehicles, participations issued, and U.S. Treasury securities sold, not yet purchased divided by total equity. Economic leverage is computed as the sum of recourse debt, cost basis of to-be-announced ("TBA") derivatives outstanding, and net forward purchases (sales) of investments divided by total equity. Recourse debt consists of repurchase agreements, other secured financing, structured repurchase transactions (included within Debt issued by securitization vehicles) and U.S. Treasury securities sold, not yet purchased. Debt issued by securitization vehicles (excluding structured repurchase transactions) and participations issued are non-recourse to us and are excluded from economic leverage.
+
+(4) Net interest margin represents interest income less interest expense divided by average Interest Earning Assets. Net interest margin does not include net interest component of interest rate swaps. Net interest margin (excluding PAA) represents the sum of interest income (excluding PAA) plus TBA dollar roll income and less economic interest expense divided by the sum of average Interest Earning Assets plus average outstanding TBA contract balances. PAA represents the cumulative impact on prior periods, but not the current period, of quarter-over-quarter changes in estimated long-term prepayment speeds related to the Company’s Agency mortgage-backed securities.
+
+(5) Average yield on interest earning assets represents annualized interest income divided by average interest earning assets. Average interest earning assets reflects the average amortized cost of our investments during the period. Average yield on interest earning assets (excluding PAA) is calculated using annualized interest income (excluding PAA).
+
+(6) Average GAAP cost of interest bearing liabilities represents annualized interest expense divided by average interest bearing liabilities. Average interest bearing liabilities reflects the average balances during the period. Average economic cost of interest bearing liabilities represents annualized economic interest expense divided by average interest bearing liabilities. Economic interest expense is comprised of GAAP interest expense, the net interest component of interest rate swaps, and net interest on initial margin related to interest rate swaps, which is reported in Other, net in the Company’s Consolidated Statements of Comprehensive Income (Loss). Net interest on variation margin related to interest rate swaps is included in the Net interest component of interest rate swaps in the Company’s Consolidated Statements of Comprehensive Income (Loss).
+
+2
+
+Other Information
+
+This news release contains forward-looking statements within the meaning of the Private Securities Litigation Reform Act. These statements are based on management’s beliefs and expectations, speak only as of the date on which they were made, and are subject to significant risks and uncertainties. Actual results could differ materially from those set forth in forward-looking statements. Factors that could cause actual results to differ from those contained in the forward-looking statements can be found in our most recent Annual Report on Form 10-K and any subsequent Quarterly Reports on Form 10-Q. Annaly undertakes no obligation to update or revise any forward-looking statements.
+
+We use our website and LinkedIn account as additional channels for distributing material company information, along with our press releases, SEC filings and public conference calls and webcasts.
+
+The Company prepares an investor presentation and financial supplement for the benefit of its shareholders. Please refer to the investor presentation for definitions of both GAAP and non-GAAP measures used in this news release. Both the Second Quarter 2026 Investor Presentation and the Second Quarter 2026 Financial Supplement can be found on our website.
+
+Conference Call
+
+The Company will hold the second quarter 2026 earnings conference call on July 22, 2026 at 9:00 a.m. Eastern Time. Participants are encouraged to pre-register for the conference call to receive a unique PIN to gain immediate access to the call and bypass the live operator. Pre-registration may be completed by accessing the pre-registration link found on the "Investors" section of the Company's website at www.annaly.com, or by using the following link: https://registrations.events/direct/IDX71212727. Pre-registration may be completed at any time, including up to and after the call start time.
+
+For participants who would like to join the call but have not pre-registered, access is available by dialing 888-500-3691 within the U.S., or 646-307-1951 internationally, and requesting the "Annaly Earnings Call."
+
+There will also be an audio webcast of the call on www.annaly.com. A replay of the call will be available for one week following the conference call. The replay number is 800-770-2030 for domestic calls and 609-800-9909 for international calls and the conference passcode is 71212#. If you would like to be added to the e-mail distribution list, please visit www.annaly.com, click on News & Insights, then select Subscribe and complete the email notification form.
+
+3
+
+Financial Statements
+
+ANNALY CAPITAL MANAGEMENT, INC. AND SUBSIDIARIES
+
+CONSOLIDATED STATEMENTS OF FINANCIAL CONDITION
+
+(dollars in thousands, except per share data)
+
+June 30, 2026 March 31, 2026
+December 31, 2025 (1)
+September 30, 2025 June 30, 2025
+
+(unaudited) (unaudited) (unaudited) (unaudited)
+
+Assets
+
+Cash and cash equivalents $ 2,912,086 $ 1,912,444 $ 2,037,838 $ 2,096,696 $ 2,058,845
+
+Securities 89,515,485 88,473,681 91,287,630 85,062,725 73,500,626
+
+Loans, net 7,280,979 7,230,876 5,020,784 4,008,299 3,722,272
+
+Mortgage servicing rights 4,089,485 4,115,999 3,645,865 3,476,181 3,281,190
+
+Interests in MSR 106,775 27,212 28,626 35,833 —
+
+Assets transferred or pledged to securitization vehicles 38,256,690 34,207,738 32,067,433 29,512,309 27,021,790
+
+Derivative assets 81,784 395,099 115,533 47,899 149,690
+
+Reverse repurchase agreements 33,047 33,524 34,389 35,004 —
+
+Receivable for unsettled trades 104,722 891,293 1,031 185,916 1,134,896
+
+Principal and interest receivable 846,548 806,484 926,660 959,435 830,535
+
+Intangible assets, net 5,380 6,053 6,726 7,398 8,071
+
+Other assets 508,195 437,188 437,323 433,877 433,977
+
+Total assets $ 143,741,176 $ 138,537,591 $ 135,609,838 $ 125,861,572 $ 112,141,892
+
+Liabilities and stockholders’ equity
+
+Liabilities
+
+Repurchase agreements $ 86,895,874 $ 85,068,102 $ 81,865,723 $ 75,118,963 $ 66,541,378
+
+Other secured financing 1,125,000 1,125,000 1,075,000 1,025,000 1,025,000
+
+Debt issued by securitization vehicles 34,366,098 30,719,417 28,918,753 26,601,790 24,107,249
+
+Participations issued 2,553,709 2,484,018 1,932,655 1,831,657 1,556,900
+
+U.S. Treasury securities sold, not yet purchased — — 2,396,724 2,442,570 2,528,167
+
+Derivative liabilities 247,968 207,369 53,755 199,100 425,993
+
+Payable for unsettled trades 331,586 1,522,750 2,059,386 2,604,278 1,538,526
+
+Interest payable 420,764 347,607 380,688 285,080 256,245
+
+Dividends payable 562,931 511,203 494,881 476,737 449,453
+
+Other liabilities 258,870 226,314 272,362 279,818 238,618
+
+Total liabilities 126,762,800 122,211,780 119,449,927 110,864,993 98,667,529
+
+Stockholders’ equity
+
+Preferred stock, par value $0.01 per share (2)
+1,802,480 1,802,480 1,802,480 1,802,480 1,536,569
+
+Common stock, par value $0.01 per share (3)
+7,506 7,303 7,070 6,811 6,421
+
+Additional paid-in capital 28,886,263 28,427,555 27,927,113 27,352,976 26,520,657
+
+Accumulated other comprehensive income (loss) (557,014) (533,614) (488,566) (624,387) (740,046)
+
+Accumulated deficit (13,213,859) (13,429,615) (13,157,325) (13,626,983) (13,942,302)
+
+Total stockholders’ equity 16,925,376 16,274,109 16,090,772 14,910,897 13,381,299
+
+Noncontrolling interests 53,000 51,702 69,139 85,682 93,064
+
+Total equity 16,978,376 16,325,811 16,159,911 14,996,579 13,474,363
+
+Total liabilities and equity $ 143,741,176 $ 138,537,591 $ 135,609,838 $ 125,861,572 $ 112,141,892
+
+(1) Derived from the audited consolidated financial statements at December 31, 2025.
+
+(2) 6.95% Series F Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock - Includes 28,800,000 shares authorized, issued and outstanding. 6.50% Series G Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock - Includes 17,000,000 shares authorized, issued and outstanding. 6.75% Series I Preferred Stock - Includes 17,700,000 shares authorized, issued and outstanding, and beginning with the quarter ended September 30, 2025, 8.875% Series J Fixed-Rate Cumulative Redeemable Preferred Stock - Includes 11,500,000 shares authorized, and 11,000,000 issued and outstanding.
+
+(3) Includes 1,456,750,000 shares authorized. Includes 750,574,308 shares issued and outstanding at June 30, 2026; 730,290,500 shares issued and outstanding at March 31, 2026; 706,972,452 shares issued and outstanding at December 31, 2025; 681,052,317 shares issued and outstanding at September 30, 2025; 642,076,127 shares issued and outstanding at June 30, 2025.
+
+4
+
+ANNALY CAPITAL MANAGEMENT, INC. AND SUBSIDIARIES
+CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS)
+(dollars in thousands, except per share data)
+(Unaudited)
+
+For the quarters ended
+
+June 30,
+2026 March 31,
+2026 December 31,
+2025 September 30,
+2025 June 30,
+2025
+
+Net interest income
+
+Interest income $ 1,812,198 $ 1,724,930 $ 1,690,707 $ 1,532,497 $ 1,418,893
+
+Interest expense 1,324,005 1,272,239 1,324,128 1,256,747 1,145,693
+
+Net interest income 488,193 452,691 366,579 275,750 273,200
+
+Net servicing income
+
+Servicing and related income 175,059 159,133 156,131 141,356 141,670
+
+Servicing and related expense 17,835 16,580 16,485 15,104 14,571
+
+Net servicing income 157,224 142,553 139,646 126,252 127,099
+
+Other income (loss)
+
+Net gains (losses) on investments and other (318,503) (672,119) 289,428 561,927 83,503
+
+Net gains (losses) on derivatives 552,426 409,112 251,799 (92,308) (388,785)
+
+Other, net 13,521 9,323 13,952 13,959 15,812
+
+Total other income (loss) 247,444 (253,684) 555,179 483,578 (289,470)
+
+General and administrative expenses
+
+Compensation expense 44,640 41,384 39,279 38,393 36,583
+
+Other general and administrative expenses 13,549 11,180 11,928 11,947 13,435
+
+Total general and administrative expenses 58,189 52,564 51,207 50,340 50,018
+
+Income (loss) before income taxes 834,672 288,996 1,010,197 835,240 60,811
+
+Income taxes 6,899 (1,519) (7,754) (7,823) 440
+
+Net income (loss) 827,773 290,515 1,017,951 843,063 60,371
+
+Net income (loss) attributable to noncontrolling interests 5,100 7,863 4,457 10,618 3,272
+
+Net income (loss) attributable to Annaly 822,673 282,652 1,013,494 832,445 57,099
+
+Dividends on preferred stock (1)
+41,036 40,652 42,387 41,127 37,260
+
+Net income (loss) available (related) to common stockholders $ 781,637 $ 242,000 $ 971,107 $ 791,318 $ 19,839
+
+Net income (loss) per share available (related) to common stockholders
+
+Basic $ 1.06 $ 0.33 $ 1.40 $ 1.21 $ 0.03
+
+Diluted $ 1.06 $ 0.33 $ 1.40 $ 1.20 $ 0.03
+
+Weighted average number of common shares outstanding
+
+Basic 738,926,270 722,707,153 693,011,031 656,335,974 620,208,712
+
+Diluted 740,256,247 724,364,897 695,034,348 657,856,427 621,103,218
+
+Other comprehensive income (loss)
+
+Net income (loss) $ 827,773 $ 290,515 $ 1,017,951 $ 843,063 $ 60,371
+
+Unrealized gains (losses) on available-for-sale securities (23,400) (45,048) 74,992 113,281 33,559
+
+Reclassification adjustment for net (gains) losses included in net income (loss) — — 60,829 2,378 13,797
+
+Other comprehensive income (loss) (23,400) (45,048) 135,821 115,659 47,356
+
+Comprehensive income (loss) 804,373 245,467 1,153,772 958,722 107,727
+
+Comprehensive income (loss) attributable to noncontrolling interests 5,100 7,863 4,457 10,618 3,272
+
+Comprehensive income (loss) attributable to Annaly 799,273 237,604 1,149,315 948,104 104,455
+
+Dividends on preferred stock (1)
+41,036 40,652 42,387 41,127 37,260
+
+Comprehensive income (loss) attributable to common stockholders $ 758,237 $ 196,952 $ 1,106,928 $ 906,977 $ 67,195
+
+(1) The quarter ended December 31, 2025 excludes, and the quarter ended September 30, 2025 includes, cumulative and undeclared dividends of $3.7 million on the Company's Series J Preferred Stock as of September 30, 2025.
+
+5
+
+ANNALY CAPITAL MANAGEMENT, INC. AND SUBSIDIARIES
+CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS)
+(dollars in thousands, except per share data)
+
+For the six months ended
+
+June 30, 2026 June 30, 2025
+
+(unaudited) (unaudited)
+
+Net interest income
+
+Interest income $ 3,537,128 $ 2,736,001
+
+Interest expense 2,596,244 2,242,830
+
+Net interest income 940,884 493,171
+
+Net servicing income
+
+Servicing and related income 334,192 282,105
+
+Servicing and related expense 34,415 28,684
+
+Net servicing income 299,777 253,421
+
+Other income (loss)
+
+Net gains (losses) on investments and other (990,622) 894,315
+
+Net gains (losses) on derivatives 961,538 (1,366,652)
+
+Other, net 22,844 23,210
+
+Total other income (loss) (6,240) (449,127)
+
+General and administrative expenses
+
+Compensation expense 86,024 73,880
+
+Other general and administrative expenses 24,729 24,202
+
+Total general and administrative expenses 110,753 98,082
+
+Income (loss) before income taxes 1,123,668 199,383
+
+Income taxes 5,380 8,707
+
+Net income (loss) 1,118,288 190,676
+
+Net income (loss) attributable to noncontrolling interests 12,963 9,353
+
+Net income (loss) attributable to Annaly 1,105,325 181,323
+
+Dividends on preferred stock 81,688 74,417
+
+Net income (loss) available (related) to common stockholders $ 1,023,637 $ 106,906
+
+Net income (loss) per share available (related) to common stockholders
+
+Basic $ 1.40 $ 0.18
+
+Diluted $ 1.40 $ 0.18
+
+Weighted average number of common shares outstanding
+
+Basic 730,798,630 603,770,531
+
+Diluted 732,317,721 604,882,295
+
+Other comprehensive income (loss)
+
+Net income (loss) $ 1,118,288 $ 190,676
+
+Unrealized gains (losses) on available-for-sale securities (68,448) 198,436
+
+Reclassification adjustment for net (gains) losses included in net income (loss) — 79,200
+
+Other comprehensive income (loss) (68,448) 277,636
+
+Comprehensive income (loss) 1,049,840 468,312
+
+Comprehensive income (loss) attributable to noncontrolling interests 12,963 9,353
+
+Comprehensive income (loss) attributable to Annaly 1,036,877 458,959
+
+Dividends on preferred stock 81,688 74,417
+
+Comprehensive income (loss) attributable to common stockholders $ 955,189 $ 384,542
+
+\
+
+6
+
+Key Financial Data
+
+The following table presents key metrics of the Company’s portfolio, liabilities and hedging positions, and performance as of and for the quarters ended June 30, 2026, March 31, 2026 and June 30, 2025:
+
+June 30, 2026 March 31, 2026 June 30, 2025
+
+Portfolio related metrics
+
+Fixed-rate Residential Securities as a percentage of total Residential Securities 99 % 99 % 99 %
+
+Adjustable-rate and floating-rate Residential Securities as a percentage of total Residential Securities 1 % 1 % 1 %
+
+Weighted average experienced CPR for the period 11.6 % 10.2 % 8.7 %
+
+Weighted average projected long-term CPR at period-end 11.0 % 10.4 % 9.1 %
+
+Liabilities and hedging metrics
+
+Weighted average days to maturity on repurchase agreements outstanding at period-end 33 36 49
+
+Hedge ratio (1)
+97 % 87 % 92 %
+
+Weighted average pay rate on interest rate swaps at period-end (2)
+3.20 % 3.14 % 3.14 %
+
+Weighted average receive rate on interest rate swaps at period-end (2)
+3.73 % 3.74 % 4.47 %
+
+Weighted average net rate on interest rate swaps at period-end (2)
+(0.53 %) (0.60 %) (1.33 %)
+
+GAAP leverage at period-end (3)
+7.4:1 7.3:1 7.1:1
+
+GAAP capital ratio at period-end (4)
+11.8 % 11.8 % 12.0 %
+
+Performance related metrics
+
+Book value per common share $ 20.15 $ 19.82 $ 18.45
+
+GAAP net income per average common share (5)
+$ 1.06 $ 0.33 $ 0.03
+
+Annualized GAAP return on average equity (6)
+19.88 % 7.15 % 1.82 %
+
+Net interest margin (7)
+1.47 % 1.41 % 1.04 %
+
+Average yield on interest earning assets (8)
+5.44 % 5.36 % 5.42 %
+
+Average GAAP cost of interest bearing liabilities (9)
+4.28 % 4.29 % 4.76 %
+
+Net interest spread 1.16 % 1.07 % 0.66 %
+
+Dividend declared per common share $ 0.75 $ 0.70 $ 0.70
+
+Annualized dividend yield (10)
+13.42 % 13.24 % 14.88 %
+
+Non-GAAP metrics *
+
+Earnings available for distribution per average common share (5)
+$ 0.79 $ 0.76 $ 0.73
+
+Annualized EAD return on average equity (excluding PAA) 15.12 % 14.58 % 14.86 %
+
+Economic leverage at period-end (3)
+5.6:1 5.7:1 5.8:1
+
+Economic capital ratio at period end (4)
+14.9 % 14.7 % 14.3 %
+
+Net interest margin (excluding PAA) (7)
+1.76 % 1.71 % 1.71 %
+
+Average yield on interest earning assets (excluding PAA) (8)
+5.46 % 5.35 % 5.41 %
+
+Average economic cost of interest bearing liabilities (9)
+3.96 % 3.93 % 3.94 %
+
+Net interest spread (excluding PAA) 1.50 % 1.42 % 1.47 %
+
+* Represents a non-GAAP financial measure. Please refer to the "Non-GAAP Financial Measures" section for additional information.
+
+(1) Mea

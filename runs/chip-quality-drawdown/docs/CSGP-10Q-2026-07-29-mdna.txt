@@ -1,0 +1,365 @@
+Item 2.Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+The following Management’s Discussion and Analysis of Financial Condition and Results of Operations contains “forward-looking statements,” including statements about our beliefs and expectations. There are many risks and uncertainties that could cause actual results to differ materially from those discussed in the forward-looking statements. Potential factors that could cause actual results to differ materially from those discussed in any forward-looking statements include, but are not limited to, those stated under the heading “Cautionary Statement Concerning Forward-Looking Statements” at the end of this Item 2, “Risk Factors” in Item 1A of Part I of our 2025 Form 10-K, as well as those described from time to time in our filings with the SEC.
+
+All forward-looking statements are based on information available to us on the date of this filing, and we assume no obligation to update such statements, whether as a result of new information, future events or otherwise, except as required by applicable law. The following discussion should be read in conjunction with our 2025 Form 10-K, our subsequent Quarterly Reports on Form 10-Q, Current Reports on Form 8-K, other filings with the SEC, and the condensed consolidated financial statements and related notes included in this Report.
+
+Overview
+
+CoStar Group is a leading global provider of online real estate marketplaces, information, analytics, and 3D digital twin technology in the property markets, based on the numbers of unique visitors and site visits per month; providing more information, analytics, and marketing services than many of our competitors; offering the most comprehensive commercial real estate database available; and having the largest commercial real estate research department in the industry. We have created and compiled a standardized platform of real estate information, analytics, and online marketplaces where industry professionals, consumers of commercial and residential real estate, including apartments, and the related business communities, can continuously interact and facilitate transactions by efficiently accessing and exchanging accurate and standardized real estate-related information. Our service offerings span all property types, including office, retail, industrial, multifamily, residential, land, mixed-use, and hospitality.
+
+Our services are primarily derived from a database of building-specific and marketplace information and visual content and offer customers specialized tools for accessing, analyzing, and using our information and advertising on our marketplaces. Over time, we have expanded, and we expect to continue to expand, our existing real estate information, analytics, and online marketplaces. We have developed and we expect to continue to develop additional services leveraging our centralized database and 3D digital twin technology to meet the needs of our existing customers as well as potential new categories of customers.
+
+Our services are typically distributed to our customers under subscription-based license agreements that generally renew automatically, the majority of which have a term of at least one year. Upon renewal, many of the subscription contract rates may change in accordance with contract provisions or as a result of contract renegotiations. To encourage customers to use our services regularly, we generally charge a fixed monthly amount for our subscription-based services rather than charging fees based on actual platform usage or number of paid clicks. Depending on the type of service, contract rates are generally based on the number of sites, number of users, organization size, the customer’s business focus, the customer's geographic location, the number of properties reported on or analyzed, the number and types of services to which a customer subscribes, the number of digital twins hosted, the number of properties a customer advertises, and the prominence and placement of a customer's advertised properties in the search results. Our subscription customers generally pay contract fees on a monthly basis, but in some cases may pay us on a quarterly or annual basis. Our transaction-based services primarily consist of (i) providing premium listings for individual properties on our marketplaces, (ii) providing data capture services to create digital twins, (iii) the sale of Matterport cameras and capture equipment, and (iv) Ten-X auction fees.
+
+40
+
+Services
+
+We operate, develop products, and deliver our services in two reportable segments, Commercial Real Estate and Residential Real Estate. Our Commercial Real Estate segment offers commercial real estate information, analytics, online marketplaces, and 3D digital twin technology. Our Residential Real Estate segment hosts marketplaces which aggregate consumer demand for homes and apartments and we sell marketing and leads to the agents, owners, landlords, and property management companies that need to reach those consumers with their offerings. Our principal services are described in the following paragraphs:
+
+Commercial Real Estate
+
+CoStar
+
+CoStar is our subscription-based integrated platform for commercial real estate intelligence, which includes information about commercial real estate properties, properties for sale, comparable sales, tenants, space available for lease, industry professionals and their business relationships, industry news, and market status. CoStar also provides benchmarking for the hospitality industry under the STR brand, lease analytical capabilities, and risk management and other debt solutions for lenders. We also offer SaaS for lease management under the CoStar Real Estate Manager and Visual Lease brands.
+
+LoopNet
+
+Our LoopNet Network of commercial real estate websites offers online marketplaces across the U.S., Europe, and the U.K. that enable commercial property owners, landlords, and real estate agents to advertise properties for sale or for lease. Commercial real estate agents, buyers, and tenants use the LoopNet Network of online marketplaces to search for available property listings that meet their criteria. With the Domain Acquisition, we also offer commercial real estate listings in Australia.
+
+Other Commercial Real Estate
+
+Other Commercial Real Estate includes revenue from the Matterport Acquisition, BizBuySell Network, and Ten-X's online auctions for commercial real estate. Matterport primarily provides hosting services for its 3D digital twins on a subscription basis. Matterport also provides capture services of spatial data and other add-on services to existing subscription customers and sells 3D capture cameras and accessories. Our BizBuySell Network provides online marketplaces for businesses and franchises for sale.
+
+We expect Commercial Real Estate's revenue growth rate for the year ending December 31, 2026 to moderate compared to the revenue growth rate for the year ended December 31, 2025 primarily due to the nonrecurring benefit realized in 2025 from the Matterport Acquisition.
+
+Residential Real Estate
+
+Our residential marketplaces enable renters and homebuyers to find their dream homes by combining our proprietary research and neighborhood content with listing information, while enabling property owners, managers, and real estate agents to advertise their properties. Our flagship brands in the U.S. are Apartments.com, Homes.com, and Land.com. Apartments.com and Land.com provide comprehensive advertising on a subscription basis. Homes.com offers real estate agents subscription memberships promoting the agent's listings and profile on our websites, as well as the ability for real estate agents and homeowners to promote a single listing. Domain and OnTheMarket are our primary brands in Australia and the U.K., respectively. Domain primarily provides agents premium listings for individual properties. OnTheMarket hosts agents' listings on a subscription basis.
+
+We expect Residential Real Estate's revenue growth rate for the year ending December 31, 2026 to accelerate compared to the revenue growth rate for the year ended December 31, 2025 due to a full year's benefit of the Domain Acquisition completed in August 2025 and an increase in the number of Homes.com memberships.
+
+Subscription-based Services
+
+For the three months ended June 30, 2026 and 2025, our annualized net new bookings of subscription-based services on all contracts were $69 million and $93 million, respectively. Net new bookings is calculated based on the annualized amount of change in our sales bookings resulting from new subscription-based contracts, changes to existing subscription-based contracts, and cancellations of subscription-based contracts for the period reported. Net new bookings is calculated on all subscription-based contracts without regard to contract term. Net new bookings is considered an operating metric that is an indicator of future subscription revenue growth and is also used as a metric of sales force productivity by us and investors. However,
+
+41
+
+information regarding net new bookings is not comparable to, nor should it be substituted for, an analysis of our revenue over time. Revenue from our subscription-based contracts was approximately 89% and 95% of total revenue for the three months ended June 30, 2026 and 2025, respectively. The decrease in our percentage of subscription-based revenue was primarily due to Domain, which sells premium listings for individual properties, as well as the transactional products and services sold by Matterport.
+
+For each of the trailing 12 months ended June 30, 2026 and 2025, our contract renewal rates for existing company-wide CoStar Group subscription-based services for contracts with a term of at least one year were approximately 89%, and our cancellation rates for those services during the same periods were approximately 11%. Contract renewal rates are calculated on all subscription-based contracts with a term of at least one year. Our contract renewal rate is a quantitative measurement that is typically closely correlated with our revenue results. As a result, we believe that the rate may be a reliable indicator of short-term and long-term performance absent extraordinary circumstances. Our trailing 12-month contract renewal rate may decline as a result of negative economic conditions, consolidations among our customers, reductions in customer spending, or decreases in our customer base. Revenue from our subscription-based contracts with a term of at least one year was approximately 73% and 79% of total revenue for the trailing 12 months ended June 30, 2026 and 2025, respectively. The decrease in the percentage of revenue from our subscription-based contracts with a term of at least one year was primarily due to the Domain product which are sold as premium listings for individual properties, as well as the transactional products and services sold by Matterport.
+
+During the fourth quarter of 2025, we changed the composition of our segments from geography-based to product portfolio-based. This change aligns with the internal reporting used by the CODM for assessing performance and allocating resources. See Notes 2, 3, and 12 of the Notes to the Condensed Consolidated Financial Statements included in Part I of this Report for additional information on the segment change.
+
+Development, Investments, and Expansion
+
+We plan to continue to invest in our business and our services, evaluate strategic growth opportunities, and pursue our key priorities as described below. We are committed to supporting, improving, and enhancing our real estate information, analytics, and online marketplaces solutions, including expanding and improving our offerings for our client base and site users, including property owners, property managers, buyers, commercial tenants, and residential renters and buyers. We expect to continue our software development efforts to improve existing services, introduce new services, integrate and cross-sell services, integrate recently completed acquisitions, and expand and develop supporting technologies for our research, sales, and marketing organizations. We may reevaluate our priorities as economic conditions continue to evolve.
+
+Our key priorities for the remainder of 2026 currently include:
+
+•Enhancement of our residential products and platforms. Leveraging rentals marketing and lead generation across platforms, in particular, Apartments.com and Homes.com. Scaling Homes.com through new product releases including depth advertising. Continuing to develop new and improved tools for residential agents and brokers to help amplify their reach.
+
+•International expansion of LoopNet and CoStar. We launched our LoopNet branded advertising products in Spain and France and continue to expand our footprint of commercial listings in these markets. In addition, we launched CoStar in France and plan to launch CoStar in Australia later this year.
+
+•Launching additional AI-enabled features across our products. We plan to extend the revolutionary capability of Homes Ai and Apartments Ai across the Company’s portfolio of leading platforms, including CoStar and LoopNet, ushering in a new era of intelligent, conversational real estate discovery. Our AI capabilities draw from property data, Matterport 3D digital twin technology, images, proprietary school data, neighborhood insights, and market intelligence.
+
+•Continuing to expand our CoStar offerings with additional modules, including new data and enhanced analytics. We have launched CoStar Rent Benchmark, an AI-abstracted dataset built from 4 million actual leases and lease documents. This product allows users to make more confident decisions with real data rather than using less reliable asking rents or broker report information. We are developing debt benchmarking. This feature will give lenders visibility to improve decisions across origination, portfolio risk, and compliance. We expect these enhancements will drive new subscribers and additional usage under one platform.
+
+•Leveraging technology and AI capabilities in our internal processes. We are using advanced technology, including AI, to improve data collection, data generation, and data quality. AI is driving research efficiencies, improving data
+
+42
+
+quality, and increasing the pace of product development. Proprietary data, an integrated delivery platform, and bespoke research processes underpin our product solutions.
+
+We intend to continue to assess the need for additional investments in our business in order to develop and distribute new services and functionality within our current platform or expand the reach of, or otherwise improve, our current service offerings. Any future product development or expansion of services, combination and coordination of services, or elimination of services or corporate expansion, development, or restructuring efforts could reduce our profitability and increase our capital expenditures. Any new investments, changes to our service offerings, or other unforeseen events could cause us to experience reduced revenue or generate losses and negative cash flow from operations in the future. Any development efforts must comply with our credit facility, which contains restrictive covenants that restrict our operations and use of our cash flow and may prevent us from taking certain actions that we believe could increase our profitability or otherwise enhance our business.
+
+Non-GAAP Financial Measures
+
+We prepare and publicly release quarterly unaudited financial statements prepared in accordance with GAAP. We also disclose and discuss certain non-GAAP financial measures in our public releases, investor conference calls, and filings with the SEC. The non-GAAP financial measures that we may disclose include EBITDA, Adjusted EBITDA, Adjusted EBITDA margin, Adjusted Net Income, and Adjusted EPS.
+
+EBITDA is our net income (loss) before interest income or expense, net; other expense or income, net; income taxes; depreciation; and amortization.
+
+Adjusted EBITDA is different from EBITDA because we further adjust EBITDA for stock-based compensation expense; acquisition- and integration-related costs; restructuring and related costs, including certain advisory fees; and settlements and impairments incurred outside our ordinary course of business, including judgments. Adjusted EBITDA margin represents Adjusted EBITDA divided by revenue for the period.
+
+We typically disclose EBITDA, Adjusted EBITDA, and Adjusted EBITDA Margin on a consolidated and on an operating segment basis in our earnings releases, investor conference calls, and filings with the SEC.
+
+Adjusted Net Income represents our net income (loss) adjusted for stock-based compensation expense; acquisition- and integration-related costs, including gains or losses on equity investments acquired in prospective targets and related to deal-contingent financial instruments; restructuring costs; settlement and impairment costs incurred outside our ordinary course of business, including judgments and related, non-recurring interest; and amortization of acquired intangible assets and other related costs, and then subtracting an assumed provision for income taxes.
+
+Adjusted EPS represents Adjusted Net Income divided by the number of diluted shares outstanding for the period used in the calculation of GAAP earnings per diluted share. For periods with GAAP net losses and Adjusted Net Income, the weighted average outstanding shares used to calculate Adjusted EPS includes potentially dilutive securities that were excluded from the calculation of GAAP earnings per share as the effect was anti-dilutive.
+
+We disclose Adjusted EPS and Adjusted Net Income on a consolidated basis in our earnings releases, investor conference calls, and filings with the SEC.
+
+The non-GAAP financial measures that we use may not be comparable to similarly titled measures reported by other companies. Also, in the future, we may disclose different non-GAAP financial measures in order to help our investors meaningfully evaluate and compare our results of operations to our previously reported results of operations or to those of other companies in our industry.
+
+We view EBITDA, Adjusted EBITDA, Adjusted EBITDA margin, Adjusted Net Income, and Adjusted EPS as operating performance measures. We believe that the most directly comparable GAAP financial measure to EBITDA, Adjusted EBITDA, and Adjusted Net Income is net income (loss). We believe the most directly comparable GAAP financial measure to Adjusted EPS and Adjusted EBITDA margin are earnings per diluted share and net income (loss) divided by revenue, respectively. In calculating EBITDA, Adjusted EBITDA, Adjusted EBITDA margin, Adjusted Net Income, and Adjusted EPS, we exclude from net income (loss) the financial items that we believe should be separately identified to provide additional analysis of the financial components of the day-to-day operation of our business. We have outlined below the type and scope of these exclusions and the material limitations on the use of these non-GAAP financial measures as a result of these exclusions. EBITDA, Adjusted EBITDA, Adjusted EBITDA margin, Adjusted Net Income, and Adjusted EPS are not measurements of financial performance under GAAP and should not be considered as a measure of liquidity, as an alternative to net income (loss), or as an indicator of any other measure of performance derived in accordance with GAAP. Investors and potential
+
+43
+
+investors in our securities should not rely on EBITDA, Adjusted EBITDA, Adjusted EBITDA margin, Adjusted Net Income, and Adjusted EPS as a substitute for any GAAP financial measure, including net income (loss) and earnings per diluted share. In addition, we urge investors and potential investors in our securities to carefully review the GAAP financial information included as part of our Annual Reports on Form 10-K and Quarterly Reports on Form 10-Q that are filed with the SEC, as well as our quarterly earnings releases, and compare the GAAP financial information with our EBITDA, Adjusted EBITDA, Adjusted EBITDA margin, Adjusted Net Income, and Adjusted EPS.
+
+EBITDA, Adjusted EBITDA, Adjusted EBITDA margin, Adjusted Net Income, and Adjusted EPS may be used by management to internally measure our operating and management performance and may be used by investors as supplemental financial measures to evaluate the performance of our business. We believe that these non-GAAP measures, when viewed with our GAAP results and accompanying reconciliations, provide additional information to investors that is useful to understand the factors and trends affecting our business without the impact of certain acquisition-related items. We have spent more than 35 years building our database of commercial real estate information and expanding our markets and services partially through acquisitions of complementary businesses. Due to these acquisitions, our net income (loss) has included significant charges for amortization of acquired intangible assets; depreciation and other amortization; acquisition- and integration-related costs, including gains or losses on equity investments acquired in prospective targets and related to deal-contingent financial instruments; interest income (expense); and restructuring and related costs, including certain advisory fees. Adjusted EBITDA, Adjusted EBITDA margin, Adjusted Net Income, and Adjusted EPS exclude these charges and provide meaningful information about the operating performance of our business, apart from charges for amortization of acquired intangible assets; depreciation and other amortization; acquisition- and integration-related costs; restructuring and related costs, including certain advisory fees; and settlement and impairment costs incurred outside our ordinary course of business, including judgments and related, non-recurring interest. We believe the disclosure of non-GAAP measures can help investors meaningfully evaluate and compare our performance from quarter to quarter and from year to year without the impact of these items. We also believe the non-GAAP measures we disclose are measures of our ongoing operating performance because the isolation of non-cash charges, such as amortization and depreciation, and other items, such as interest income or expense, net; other expense or income, net; income taxes; stock-based compensation expenses, acquisition- and integration-related costs; interest income (expense); restructuring and related costs, including certain advisory fees; and settlement and impairment costs incurred outside our ordinary course of business, including judgments and related, non-recurring interest, provides additional information about our cost structure, and, over time, helps track our operating progress. In addition, investors, securities analysts, and others have regularly relied on EBITDA and may rely on Adjusted EBITDA, Adjusted EBITDA margin, Adjusted Net Income, or Adjusted EPS to provide a financial measure by which to compare our operating performance against that of other companies in our industry.
+
+Set forth below are descriptions of financial items that have been excluded from net income (loss) to calculate EBITDA and the material limitations associated with using this non-GAAP financial measure as compared to net income (loss):
+
+•Amortization of acquired intangible assets in cost of revenue may be useful for investors to consider because it represents the diminishing value of any acquired trade names and other intangible assets and the use of our acquired technology, which is one of the sources of information for our database of commercial real estate information. We do not believe these charges necessarily reflect the current and ongoing cash charges related to our operating cost structure.
+
+•Amortization of acquired intangible assets in operating expenses may be useful for investors to consider because it represents the estimated attrition of our acquired customer base. We do not believe these charges necessarily reflect the current and ongoing cash charges related to our operating cost structure.
+
+•Depreciation and other amortization may be useful for investors to consider because they generally represent the wear and tear on our property and equipment used in our operations. We do not believe these charges necessarily reflect the current and ongoing cash charges related to our operating cost structure.
+
+•The amount of interest income or expense, net and other expense or income, net we generate and incur may be useful for investors to consider and may result in current cash inflows and outflows. However, we do not consider the amount of interest income or expense, net and other expense or income, net to be a representative component of the day-to-day operating performance of our business.
+
+•Income tax expense may be useful for investors to consider because it generally represents the taxes that may be payable for the period and the change in deferred income taxes during the period and may reduce the amount of funds otherwise available for use in our business. However, we do not consider the amount of income tax expense to be a representative component of the day-to-day operating performance of our business.
+
+44
+
+Set forth below are descriptions of additional financial items that have been excluded from EBITDA to calculate Adjusted EBITDA and the material limitations associated with using this non-GAAP financial measure as compared to net income (loss):
+
+•Stock-based compensation expense may be useful for investors to consider because it represents a portion of the compensation of our employees and executives. Determining the fair value of the stock-based instruments involves a high degree of judgment and estimation and the expenses recorded may bear little resemblance to the actual value realized upon the future exercise or termination of the related stock-based awards. Therefore, we believe it is useful to exclude stock-based compensation in order to better understand the long-term performance of our core business.
+
+•The amount of acquisition- and integration-related costs incurred may be useful for investors to consider because such costs generally represent professional service fees and direct expenses related to acquisitions. Because we do not acquire businesses on a predictable cycle, we do not consider the amount of acquisition- and integration-related costs to be a representative component of the day-to-day operating performance of our business.
+
+•The amount of settlement and impairment costs incurred outside of our ordinary course of business, including judgments, may be useful for investors to consider because they generally represent gains or losses from the settlement of litigation matters, including judgments, charges related to terminations of contracts or impairments of acquired intangible assets or other long-lived assets. We do not believe these charges necessarily reflect the current and ongoing cash charges related to our operating cost structure.
+
+•The amount of restructuring and related costs, including certain advisory costs, incurred may be useful for investors to consider because they generally represent costs incurred in connection with changes to the structure of our operations, governance, offices and related properties, and suppliers or employees used to deliver services and include costs to terminate contracts, advisory fees and other professional services, and severance. Because we do not carry out restructuring activities on a predictable cycle, we do not consider the amount of restructuring-related costs to be a representative component of the day-to-day operating performance of our business.
+
+The financial items that have been excluded from our net income (loss) to calculate Adjusted Net Income and Adjusted EPS are amortization of acquired intangible assets and other related costs; stock-based compensation; acquisition- and integration-related costs, including gains or losses on equity investments acquired in prospective targets and related to deal-contingent financial instruments; restructuring and related costs; and settlement and impairment costs incurred outside our ordinary course of business, including judgments. These items are the same as discussed above with respect to the calculation of Adjusted EBITDA together with the material limitations associated with using non-GAAP financial measures as compared to net income (loss). We further exclude non-recurring interest charges related to judgments from Adjusted Net Income and Adjusted EPS as this may be useful for investors to consider because these non-recurring interest charges generally represent costs associated with the settlement of litigation matters, including judgments. We do not believe these charges necessarily reflect the current and ongoing cash charges related to our operating cost structure. In addition to these exclusions from net income (loss), we subtract an assumed provision for income taxes to calculate Adjusted Net Income. In both 2026 and 2025, we assume a 26.0% tax rate, which approximates our historical long-term statutory corporate tax rate, excluding the impact of discrete items.
+
+Management compensates for the above-described limitations of using non-GAAP measures by using a non-GAAP measure only to supplement our GAAP results and to provide additional information that is useful to investors to understand the factors and trends affecting our business.
+
+45
+
+Consolidated Results of Operations
+
+Three Months Ended June 30, 2026 Compared to Three Months Ended June 30, 2025
+
+The following table compares our selected condensed consolidated results of operations for the three months ended June 30, 2026 and 2025 (in millions):
+
+Three Months Ended
+
+June 30,
+
+2026 2025 Increase (Decrease) ($) Increase (Decrease) (%)
+
+Revenue
+
+CoStar $ 337 $ 310 $ 27 9 %
+
+LoopNet 87 76 11 14
+
+Other Commercial Real Estate
+57 60 (3) (5)
+
+Total Commercial Real Estate
+481 446 35 8
+
+Residential Real Estate
+444 335 109 33
+
+Total revenue 925 781 144 18
+
+Cost of revenue 197 168 29 17
+
+Gross profit 728 613 115 19
+
+Operating expenses:
+
+Selling and marketing (excluding customer base amortization) 395 395 — —
+
+Software development 107 96 11 11
+
+General and administrative 114 122 (8) (7)
+
+Customer base amortization 36 27 9 33
+
+Total operating expenses 652 640 12 2
+
+Income (loss) from operations 76 (27) 103 NM
+
+Interest income (expense), net (2) 33 (35) NM
+
+Other income, net — 16 (16) NM
+
+Income before income taxes 74 22 52 236
+
+Income tax expense
+19 16 3 19
+
+Net income $ 55 $ 6 $ 49 817 %
+
+__________________________
+
+NM - Not meaningful
+
+Revenue. Revenue increased by $144 million, or 18%, to $925 million, driven by the following:
+
+Commercial Real Estate revenue increased by $35 million, or 8%, to $481 million due to:
+
+•an increase in CoStar revenue of $27 million, or 9%, due to an increase in subscribers, inflation-based price increases, and additional sales of STR Benchmarking,
+
+•an increase in LoopNet revenue of $11 million, or 14%, due to an increase in the number of listings, and the Domain Acquisition completed in August 2025, partially offset by
+
+•a decrease in Other Commercial Real Estate revenue of $3 million, or 5%, primarily due to fewer properties transacted on Ten-X.
+
+Residential Real Estate revenue increased by $109 million, or 33%, to $444 million, primarily due to:
+
+•$70 million of revenue from the Domain Acquisition completed in August 2025 and
+
+•an increase in the number of memberships and properties advertised on our network, partially offset by a reduction in average price.
+
+46
+
+Gross Profit and Cost of Revenue. Gross profit increased by $115 million, or 19%, to $728 million, and the gross profit margin increased from 78% to 79%. The increase in gross profit was due to higher revenue, partially offset by an increase in the cost of revenue. Cost of revenue increased by $29 million, or 17%, to $197 million and, as a percentage of revenue, decreased from 22% to 21%. The increase in cost of revenue included:
+
+•higher amortization expense related to acquired technology and trade names from the Matterport and Domain Acquisitions,
+
+•an increase in web hosting, data, and content costs of $9 million, primarily due to the Domain Acquisition,
+
+•an increase in supplies and office services expense of $4 million, primarily due to Domain operations and field research operations for existing brands,
+
+•an increase in personnel costs of $3 million, primarily due to incremental headcount added through the Domain Acquisition,
+
+•an increase of $3 million due to higher Domain occupancy costs and bank and merchant fees, partially offset by
+
+•a $2 million gain on the sale of the research plane and a $1 million decrease in professional service expense.
+
+Selling and Marketing (Excluding Customer Base Amortization) Expenses. Selling and marketing (excluding customer base amortization) expenses were consistent at $395 million and, as a percentage of revenue, decreased from 51% to 43%. The change included:
+
+•an increase of $26 million related to the Domain Acquisition, including $13 million of personnel and related costs, $11 million of marketing expenses and $2 million of indirect costs, offset by the following decreases in the remaining brands:
+
+•a decrease of $12 million in marketing expense for advertising of our brands,
+
+•a decrease of $10 million in personnel and related costs, primarily due to lower sales commissions and lower stock-based compensation expense from accelerated compensation recognized for certain Matterport employees in the prior-year period, and
+
+•a decrease of $4 million in professional services and recruiting costs.
+
+Software Development Expenses. Software development expenses increased by $11 million, or 11%, to $107 million and, as a percentage of revenue, were consistent at 12%. The increase included:
+
+•an increase in personnel costs, primarily due to additional headcount from the Domain Acquisition,
+
+•an increase in software and equipment costs of $3 million, primarily due to increased spending on AI software, and
+
+•an increase in occupancy costs of $1 million, primarily due to the Domain Acquisition.
+
+General and Administrative Expenses. General and administrative expenses decreased by $8 million, or 7%, to $114 million and, as a percentage of revenue, decreased from 16% to 12%. The decrease included:
+
+•a gain from recoveries related to the Brown Judgment received during the quarter,
+
+•a decrease of $8 million in personnel costs, primarily due to accelerated stock-based compensation expense recognized in the prior-year period for certain executives, partially offset by
+
+•an increase of $8 million in professional services fees, primarily due to higher legal-related expenses from defending our intellectual property, and
+
+•an increase in software and equipment costs of $6 million, primarily due to the Domain acquisition and increased investment in enterprise technology for existing brands.
+
+Customer Base Amortization Expense. Customer base amortization expense increased by $9 million, or 33%, to $36 million, and, as a percentage of revenue, increased from 3% to 4%. The increase was primarily due to amortization of intangible assets recognized in connection with the Domain acquisition.
+
+47
+
+Interest Income (Expense), Net. Interest income (expense), net changed by $35 million, or 106%, to a net expense of $2 million. The change was primarily due to a decrease in our cash and cash equivalents, as well as $9 million of interest expense recognized during the current quarter related to the Brown Judgment.
+
+Other Income, Net. Other income, net decreased by $16 million. The decrease included:
+
+•an unrealized gain on the deal-contingent forward U.S. dollar to Australian dollar contracts entered into in conjunction with the Domain Acquisition in the prior-year period, and
+
+•an unrealized gain of $9 million recognized in the prior-year period related to the equity securities of Domain, partially offset by
+
+•a decrease of $5 million in depreciation and amortization expense from leasing activities driven by a change in the useful life of improvements related to tenants.
+
+Income Tax Expense. Income tax expense increased by $3 million, or 19%, to $19 million, and the effective tax rate was 26% of income before income taxes for the three months ended June 30, 2026, compared to 73% of income before income taxes for the three months ended June 30, 2025. The change in income tax expense was primarily due to higher income before taxes.
+
+Three Months Ended June 30, 2025 Compared to Three Months Ended June 30, 2024
+
+The following table compares our selected condensed consolidated results of operations for the three months ended June 30, 2025 and 2024 (in millions):
+
+Three Months Ended
+
+June 30,
+
+2025
+2024(1)
+Increase (Decrease) ($) Increase (Decrease) (%)
+
+Revenue
+
+CoStar $ 310 $ 286 $ 24 8 %
+
+LoopNet 76 70 6 9
+
+Other Commercial Real Estate
+60 18 42 233
+
+Total Commercial Real Estate
+446 374 72 19
+
+Residential Real Estate
+335 304 31 10
+
+Total revenue 781 678 103 15
+
+Cost of revenue 168 136 32 24
+
+Gross profit 613 542 71 13
+
+Operating expenses:
+
+Selling and marketing (excluding customer base amortization) 395 358 37 10
+
+Software development 96 80 16 20
+
+General and administrative 122 110 12 11
+
+Customer base amortization 27 10 17 170
+
+Total operating expenses 640 558 82 15
+
+Loss from operations
+(27) (16) (11) 69
+
+Interest income, net
+33 54 (21) (39)
+
+Other income (expense), net 16 (2) 18 NM
+
+Income before income taxes 22 36 (14) (39)
+
+Income tax expense
+16 17 (1) (6)
+
+Net income $ 6 $ 19 $ (13) (68) %
+
+__________________________
+
+(1) We have recast certain prior period disclosures to align with the way we internally manage our business. See Note 2 of the Notes to the Condensed Consolidated Financial Statements included in Part I of this Report for additional information.
+
+NM - Not meaningful
+
+48
+
+Revenue. Revenue increased by $103 million, or 15%, to $781 million, driven by the following:
+
+Commercial Real Estate revenue increased by $72 million, or 19%, to $446 million due to:
+
+•an increase in CoStar revenue of $24 million, or 8%, due to increased sales driven by inflation-based price increases on renewals and an increase in subscribers, as well as the Visual Lease Acquisition,
+
+•an increase in LoopNet revenue of $6 million, or 9%, due to an increase in the average price per listing, as well as the number of listings, and
+
+•an increase in Other Commercial Real Estate revenue of $42 million, or 233%, primarily due to the Matterport Acquisition.
+
+Residential Real Estate revenue increased by $31 million, or 10%, to $335 million, primarily due to:
+
+•an increase in the number of properties advertised on our network, partially offset by
+
+•a decrease due to the discontinuation of certain products that were inconsistent with our long-term business strategy.
+
+Gross Profit and Cost of Revenue. Gross profit increased by $71 million, or 13%, to $613 million, and the gross profit margin decreased from 80% to 78%. The increase in gross profit was due to higher revenue, partially offset by an increase in cost of revenue. Cost of revenue increased by $32 million, or 24%, to $168 million and, as a percentage of revenue, increased from 20% to 22%. The increase in cost of revenue primarily included:
+
+•an increase in amortization expense for the acquired technology and trade names from the Matterport Acquisition,
+
+•an increase in $8 million in costs related to sales of Matterport capture equipment and services,
+
+•an increase in personnel costs of $8 million related to additional headcount from the Matterport Acquisition, and
+
+•an increase of $3 million for web hosting costs.
+
+Selling and Marketing (Excluding Customer Base Amortization) Expenses. Selling and marketing (excluding customer base amortization) expenses increased by $37 milli

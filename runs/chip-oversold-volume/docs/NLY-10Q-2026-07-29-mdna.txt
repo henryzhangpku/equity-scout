@@ -1,0 +1,621 @@
+Item 2. Management’s Discussion and Analysis
+
+ITEM 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+
+Special Note Regarding Forward-Looking Statements
+
+Certain statements contained in this quarterly report, and certain statements contained in our future filings with the Securities and Exchange Commission (the “SEC” or the “Commission”), in our press releases or in our other public or stockholder communications contain or incorporate by reference certain forward-looking statements which are based on various assumptions (some of which are beyond our control) and may be identified by reference to a future period or periods or by the use of forward-looking terminology, such as “may,” “will,” “believe,” “expect,” “anticipate,” “continue,” or similar terms or variations on those terms or the negative of those terms. Such statements include those relating to the Company’s future performance, macro outlook, the interest rate and credit environments, tax reform and future opportunities. Actual results could differ materially from those set forth in forward-looking statements due to a variety of factors, including, but not limited to, changes in interest rates; changes in the yield curve; changes in prepayment rates; the availability of mortgage-backed securities (“MBS”) and other securities for purchase; the availability of financing and, if available, the terms of any financing; changes in the market value of the Company’s assets; changes in business conditions and the general economy; the Company’s ability to grow its residential credit business; the Company's ability to grow its mortgage servicing rights business; credit risks related to the Company’s investments in credit risk transfer securities and residential mortgage-backed securities and related residential mortgage credit assets; risks related to investments in mortgage servicing rights; the Company’s ability to consummate any contemplated investment opportunities; changes in government regulations or policy affecting the Company’s business; the Company’s ability to maintain its qualification as a REIT for U.S. federal income tax purposes; the Company’s ability to maintain its exemption from registration under the Investment Company Act of 1940; and operational risks or risk management failures by us or critical third parties, including cybersecurity incidents. For a discussion of the risks and uncertainties which could cause actual results to differ from those contained in the forward-looking statements, see “Risk Factors” in our most recent Annual Report on Form 10-K and any subsequent Quarterly Reports on Form 10-Q. The Company does not undertake, and specifically disclaims any obligation, to publicly release the result of any revisions which may be made to any forward-looking statements to reflect the occurrence of anticipated or unanticipated events or circumstances after the date of such statements, except as required by law.
+
+This Management’s Discussion and Analysis of Financial Condition and Results of Operations should be read in conjunction with our most recent annual report on Form 10-K. All references to “Annaly,” “we,” “us,” or “our” mean Annaly Capital Management, Inc. and all entities owned by us, except where it is made clear that the term means only the parent company. Refer to the section titled “Glossary of Terms” located at the end of this Item 2 for definitions of commonly used terms in this quarterly report on Form 10-Q.
+
+39
+
+ANNALY CAPITAL MANAGEMENT, INC. AND SUBSIDIARIES
+
+Item 2. Management’s Discussion and Analysis
+
+INDEX TO ITEM 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+
+Page
+
+Overview
+
+41
+
+Business Environment
+
+41
+
+Economic Environment
+
+42
+
+Income Tax Reform
+
+42
+
+Results of Operations
+
+43
+
+Net Income (Loss) Summary
+
+44
+
+Non-GAAP Financial Measures
+
+46
+
+Earnings Available for Distribution, Earnings Available for Distribution Attributable to Common Stockholders, Earnings Available for Distribution Per Average Common Share and Annualized EAD Return on Average Equity
+
+46
+
+Premium Amortization Expense
+
+48
+
+Economic Leverage and Economic Capital Ratios
+
+48
+
+Interest Income (excluding PAA), Economic Interest Expense and Economic Net Interest Income (excluding PAA)
+
+49
+
+Experienced and Projected Long-term CPR
+
+50
+
+Average Yield on Interest Earning Assets (excluding PAA), Net Interest Spread (excluding PAA), Net Interest Margin (excluding PAA), and Average Economic Cost of Interest Bearing Liabilities
+
+51
+
+Economic Interest Expense and Average Economic Cost of Interest Bearing Liabilities
+
+52
+
+Other Income (Loss)
+
+53
+
+General and Administrative Expenses
+
+55
+
+Return on Average Equity
+
+55
+
+Unrealized Gains and Losses - Available-for-Sale Investments
+
+55
+
+Financial Condition
+
+56
+
+Residential Securities
+
+56
+
+Contractual Obligations
+
+58
+
+Commitments and Contractual Obligations with Unconsolidated Entities
+
+59
+
+Capital Management
+
+59
+
+Stockholders’ Equity
+
+59
+
+Capital Stock
+
+60
+
+Leverage and Capital
+
+61
+
+Risk Management
+
+61
+
+Risk Appetite
+
+61
+
+Governance
+
+62
+
+Description of Risks
+
+62
+
+Liquidity and Funding Risk Management
+
+63
+
+Funding
+
+63
+
+Excess Liquidity
+
+65
+
+Maturity Profile and Interest Rate Sensitivity
+
+66
+
+Stress Testing
+
+67
+
+Liquidity Management Policies
+
+67
+
+Investment/Market Risk Management
+
+67
+
+Credit Risk Management
+
+68
+
+Counterparty Risk Management
+
+69
+
+Operational Risk Management
+
+69
+
+Compliance, Regulatory and Legal Risk Management
+
+71
+
+Critical Accounting Estimates
+
+71
+
+Valuation of Financial Instruments
+
+71
+
+Residential Securities
+
+71
+
+Residential Mortgage Loans
+
+72
+
+MSR
+
+72
+
+Interest Rate Swaps
+
+72
+
+Revenue Recognition
+
+72
+
+Consolidation of Variable Interest Entities
+
+73
+
+Use of Estimates
+
+73
+
+Glossary of Terms
+
+74
+
+40
+
+ANNALY CAPITAL MANAGEMENT, INC. AND SUBSIDIARIES
+
+Item 2. Management’s Discussion and Analysis
+
+Overview
+
+We are a leading diversified capital manager with investment strategies across mortgage finance. Our principal business objective is to generate net income for distribution to our stockholders and optimize our returns through prudent management of our diversified investment strategies. We are an internally-managed Maryland corporation founded in 1997 that has elected to be taxed as a REIT. Our common stock is listed on the New York Stock Exchange under the symbol “NLY.”
+
+We use our capital coupled with borrowed funds to invest primarily in real estate related investments, earning the spread between the yield on our assets and the cost of our borrowings and hedging activities.
+
+For a full discussion of our business, refer to the section titled “Business Overview” in our most recent Annual Report on Form 10-K.
+
+Business Environment
+
+The second quarter of 2026 (“Q2 2026”) was characterized by continued robust U.S. economic growth, supported by consumer spending and technology-related investment, with labor market momentum improving relative to the softer trends experienced in the second half of 2025. Inflation remained elevated, driven by energy shocks stemming from developments in the Middle East, residual effects from tariffs, and demand for computing equipment related to artificial intelligence (“AI”). Against this backdrop, Federal Reserve (the “Fed”) officials discussed the potential for interest rate hikes, and interest rates rose over the quarter, led by the front end of the yield curve, as market pricing shifted from an expectation of roughly two 25 basis point (“bps”) cuts this year to the possibility of at least one hike.
+
+In this environment, Annaly generated a portfolio economic return of 5.5% in Q2 2026, with earnings available for distribution (“EAD”) of $0.79 per share, once again exceeding the quarterly common stock dividend, which was increased to $0.75 per share. This marked the ninth consecutive quarter in which EAD surpassed the dividend. Economic leverage stood at 5.6x, and the Company raised approximately $447 million of common equity through our at-the-market (“ATM”) sales program during the quarter.
+
+Agency mortgage-backed security (“MBS”) spreads tightened during the quarter, aided by a de-escalation of tensions in the Middle East that reduced implied volatility across financial markets. Agency MBS technicals remained favorable, with fixed income fund inflows through the first half of 2026 (“1H 2026”) running at more than double the pace of the prior three years. Overseas investors purchased approximately $65 billion of Agency MBS year-to-date, a marked shift from the net reductions recorded in the first halves of 2024 and 2025, while collateralized mortgage obligation (“CMO”) floater creation in 1H 2026 reached its highest level since 2011. Elevated interest rates continued to limit the supply of fixed-rate MBS.
+
+During the quarter, we shifted our portfolio exposure up in coupon, reducing approximately $4 billion of 4.5% coupon holdings in favor of 5.5% and 6.0% coupons, while new capital was invested primarily in production coupons and Agency commercial mortgage-backed securities (“CMBS”). Our Agency portfolio grew by $2.8 billion during the quarter to $95.0 billion (including TBA exposure), representing 57% of the firm’s capital. Specified pool holdings declined by four percentage points as a share of the aggregate portfolio over 1H 2026, reflecting improved dollar-roll implied financing, elevated valuations, strong early-year demand from the government-sponsored enterprises (“GSEs”), lower rate volatility, and a more benign prepayment outlook. Specified pool valuations became more attractive as the GSEs slowed their purchases and became opportunistic sellers. We expect future Agency investments to be more balanced across to-be-announced (“TBA”) securities and specified pools going forward, even as cheapest-to-deliver pool convexity continued to deteriorate.
+
+Our Residential Credit portfolio ended the quarter at $10.4 billion in market value (on an economic basis), an increase of $35 million quarter-over-quarter, and represented approximately 22% of firm capital. Residential credit spreads moved in line with broader credit markets, with “AAA”-rated spreads ending the quarter at 130 bps over the curve, approximately 10 bps tighter than at the onset, though residential credit modestly underperformed corporate credit amid record non-Agency gross issuance, which exceeded $150 billion year-to-date and was up approximately 50% year-over-year, putting private-label gross issuance on pace for its largest year since 2007.
+
+Our correspondent channel produced $6.7 billion of locks and $5.1 billion of fundings during the quarter, while we purchased $7.1 billion of loans, including whole-loan bulk purchases and partnership securitizations, a quarterly record. The quarter-end locked pipeline reflected a weighted average FICO score of 765 and a combined loan-to-value ratio of 67%. Annaly remained the largest issuer of expanded credit mortgages and the second-largest issuer overall, closing 13 securitizations totaling $6.8 billion in unpaid principal balance (“UPB”) during the quarter, which generated approximately $613 million of proprietary investments. Year-to-date, our securitization platform priced 26 securitizations totaling $14.5 billion across eight forms of residential collateral, including two $1 billion new-origination Non-QM transactions, the largest Non-QM transactions in several years. Our residential credit portfolio continued to benefit from scale across loan sourcing, capital markets, originator relationships, and securitization.
+
+41
+
+ANNALY CAPITAL MANAGEMENT, INC. AND SUBSIDIARIES
+
+Item 2. Management’s Discussion and Analysis
+
+In our mortgage servicing rights (“MSR”) business, the portfolio decreased modestly to $4.1 billion in market value during the quarter (including unsettled commitments), with capital allocation remaining at 21% of firm capital. During the quarter, Annaly committed to purchase approximately $200 million of MSR and committed to sell nearly $220 million of MSR across two bulk pools, monetizing assets that had become more economic for holders with large servicing platforms. Bulk supply decreased modestly from the first quarter but is expected to remain healthy through year-end, supported by originator profitability constraints and industry consolidation. Our flow channel acquired a record $31 million in market value during the quarter, helping us acquire current-coupon MSR and offset portfolio paydowns. Year-to-date, Annaly was the largest buyer of conventional MSR by servicing transfers and ranked fifth among non-bank Agency MBS servicers.
+
+Economic Environment
+
+Real gross domestic product (“GDP”) growth was 2.1% on a seasonally adjusted annualized rate (“SAAR”) basis in the first quarter of 2026 (“Q1 2026”), with consumption contributing 0.5% SAAR, private investment 7.9% SAAR, and government spending 0.5% SAAR, while net trade subtracted 1.3 percentage points from growth; real final sales to domestic purchasers rose 1.7% SAAR. Consumption is expected to have rebounded in the second quarter, tracking 1.5% SAAR quarter-to-date, while private investment is expected to remain robust given capital expenditures related to the AI buildout.
+
+Inflation readings, as measured by the year-over-year changes in the Personal Consumption Expenditures (“PCE”) Price Index, remained elevated. Headline PCE prices rose 0.45% month-over-month and 4.1% year-over-year in May, while core PCE, which excludes volatile food and energy prices, rose 0.32% month-over-month and 3.4% year-over-year. June Consumer Price Index (“CPI”) data came in much better than expected, driven by a notable decline in energy prices (-5.7% month-over-month), soft core commodity prices (-0.1% month-over-month), and a slowdown in core services inflation (0.0% month-over-month); as a result, headline CPI declined 42 bps month-over-month to 3.5% year-over-year, and core CPI declined 2 bps month-over-month to 2.6% year-over-year.
+
+The labor market showed improving momentum during the quarter. According to the Bureau of Labor Statistics, non-farm payrolls rose by 57,000 in June, bringing net job creation to 334,000 for the second quarter, compared with 218,000 in the first quarter and 116,000 for all of 2025. The unemployment rate stood at 4.2%, its lowest monthly reading since June 2025, while the labor force participation rate fell to 61.5% for the quarter, its lowest level since early 2021. Wage growth, as measured by the year-over-year change in Average Hourly Earnings, was 3.5%.
+
+U.S. interest rates repriced sharply in Q2 2026 as inflation forecasts shifted meaningfully higher. Treasury yields rose across the yield curve, led by the front end (2-year yields up 38 bps), as Fed pricing flipped from cuts to hikes, resulting in a flatter yield curve (2s10s down 23 bps during the quarter). Market-based measures of short-term inflation expectations increased meaningfully alongside higher energy prices, and long-end yields reached year-to-date peaks. Rate volatility, however, fell over the quarter.
+
+The following table presents interest rates and spreads at each date presented:
+
+June 30, 2026 March 31, 2026 June 30, 2025
+
+30-Year mortgage current coupon 5.41% 5.38% 5.48%
+
+Mortgage basis 94 bps 106 bps 125 bps
+
+10-Year U.S. Treasury rate 4.47% 4.32% 4.23%
+
+OIS SOFR Swaps
+
+1-Month 3.66% 3.66% 4.33%
+
+6-Month 3.87% 3.68% 4.15%
+
+Income Tax Reform
+
+On July 4, 2025, H.R. 1, also known as the One Big Beautiful Bill Act (the “OBBB”), was signed into law. The OBBB makes material changes to U.S. tax law, including some provisions that affect the taxation of REITs and their investors. In particular, the OBBB (i) permanently extends the 20% deduction for “qualified REIT dividends” for individuals and other non-corporate taxpayers under Section 199A of the Code and (ii) increases the percentage limit under the REIT asset test applicable to taxable REIT subsidiaries from 20% to 25% for taxable years beginning after December 31, 2025. The results of the OBBB changes are not expected to have a material effect on the Company’s financial operations or related disclosures.
+
+42
+
+ANNALY CAPITAL MANAGEMENT, INC. AND SUBSIDIARIES
+
+Item 2. Management’s Discussion and Analysis
+
+Results of Operations
+
+The results of our operations are affected by various factors, many of which are beyond our control. Certain of such risks and uncertainties are described herein (see “Special Note Regarding Forward-Looking Statements” above) and in Part I, Item 1A. “Risk Factors” of our most recent Annual Report on Form 10-K and in Part II, Item 1A. “Risk Factors” in this Quarterly Report on Form 10-Q.
+
+This Management Discussion and Analysis section contains analysis and discussion of financial results computed in accordance with U.S. generally accepted accounting principles (“GAAP”) and non-GAAP measurements. To supplement our consolidated financial statements, which are prepared and presented in accordance with GAAP, we provide non-GAAP financial measures to enhance investor understanding of our period-over-period operating performance and business trends, as well as for assessing our performance versus that of industry peers.
+
+Refer to the “Non-GAAP Financial Measures” section for additional information.
+
+43
+
+ANNALY CAPITAL MANAGEMENT, INC. AND SUBSIDIARIES
+
+Item 2. Management’s Discussion and Analysis
+
+Net Income (Loss) Summary
+
+The following table presents financial information related to our results of operations as of and for the three and six months ended June 30, 2026 and 2025.
+
+As of and for the Three Months Ended June 30,
+
+As of and for the Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+(dollars in thousands, except per share data)
+
+Interest income $ 1,812,198 $ 1,418,893 $ 3,537,128 $ 2,736,001
+
+Interest expense 1,324,005 1,145,693 2,596,244 2,242,830
+
+Net interest income 488,193 273,200 940,884 493,171
+
+Servicing and related income 175,059 141,670 334,192 282,105
+
+Servicing and related expense 17,835 14,571 34,415 28,684
+
+Net servicing income 157,224 127,099 299,777 253,421
+
+Other income (loss) 247,444 (289,470) (6,240) (449,127)
+
+Less: Total general and administrative expenses 58,189 50,018 110,753 98,082
+
+Income (loss) before income taxes 834,672 60,811 1,123,668 199,383
+
+Income taxes 6,899 440 5,380 8,707
+
+Net income (loss) 827,773 60,371 1,118,288 190,676
+
+Less: Net income (loss) attributable to noncontrolling interests 5,100 3,272 12,963 9,353
+
+Net income (loss) attributable to Annaly 822,673 57,099 1,105,325 181,323
+
+Less: Dividends on preferred stock 41,036 37,260 81,688 74,417
+
+Net income (loss) available (related) to common stockholders $ 781,637 $ 19,839 $ 1,023,637 $ 106,906
+
+Net income (loss) per share available (related) to common stockholders
+
+Basic $ 1.06 $ 0.03 $ 1.40 $ 0.18
+
+Diluted $ 1.06 $ 0.03 $ 1.40 $ 0.18
+
+Weighted average number of common shares outstanding
+
+Basic 738,926,270 620,208,712 730,798,630 603,770,531
+
+Diluted 740,256,247 621,103,218 732,317,721 604,882,295
+
+Other information
+
+Investment portfolio at period-end $ 139,249,414 $ 107,525,878 $ 139,249,414 $ 107,525,878
+
+Average total assets $ 141,139,384 $ 108,628,619 $ 139,296,202 $ 106,937,874
+
+Average equity $ 16,652,094 $ 13,279,436 $ 16,488,033 $ 13,085,274
+
+GAAP leverage at period-end (1)
+7.4:1 7.1:1 7.4:1 7.1:1
+
+GAAP capital ratio at period-end (2)
+11.8 % 12.0 % 11.8 % 12.0 %
+
+Annualized return (loss) on average total assets 2.35 % 0.22 % 1.61 % 0.36 %
+
+Annualized return (loss) on average equity (3)
+19.88 % 1.82 % 13.56 % 2.91 %
+
+Net interest margin (4)
+1.47 % 1.04 % 1.44 % 0.96 %
+
+Average yield on interest earning assets (5)
+5.44 % 5.42 % 5.40 % 5.31 %
+
+Average GAAP cost of interest bearing liabilities (6)
+4.28 % 4.76 % 4.29 % 4.76 %
+
+Net interest spread 1.16 % 0.66 % 1.11 % 0.55 %
+
+Weighted average experienced CPR for the period 11.6 % 8.7 % 10.9 % 7.9 %
+
+Weighted average projected long-term CPR at period-end 11.0 % 9.1 % 11.0 % 9.1 %
+
+Common stock book value per share $ 20.15 $ 18.45 $ 20.15 $ 18.45
+
+Non-GAAP metrics *
+
+Interest income (excluding PAA) $ 1,819,279 $ 1,415,031 $ 3,540,515 $ 2,744,435
+
+Economic interest expense (6)
+$ 1,225,164 $ 947,828 $ 2,390,038 $ 1,840,576
+
+Economic net interest income (excluding PAA) $ 594,115 $ 467,203 $ 1,150,477 $ 903,859
+
+Premium amortization adjustment cost (benefit) $ 7,081 $ (3,862) $ 3,387 $ 8,434
+
+Earnings available for distribution (7)
+$ 627,667 $ 489,906 $ 1,217,555 $ 951,763
+
+Earnings available for distribution per average common share $ 0.79 $ 0.73 $ 1.55 $ 1.45
+
+Annualized EAD return on average equity (excluding PAA) 15.12 % 14.86 % 14.82 % 14.65 %
+
+Economic leverage at period-end (1)
+5.6:1 5.8:1 5.6:1 5.8:1
+
+Economic capital ratio at period-end (2)
+14.9 % 14.3 % 14.9 % 14.3 %
+
+Net interest margin (excluding PAA) (4)
+1.76 % 1.71 % 1.74 % 1.70 %
+
+Average yield on interest earning assets (excluding PAA) (5)
+5.46 % 5.41 % 5.40 % 5.32 %
+
+Average economic cost of interest bearing liabilities (6)
+3.96 % 3.94 % 3.95 % 3.91 %
+
+Net interest spread (excluding PAA) 1.50 % 1.47 % 1.45 % 1.41 %
+
+44
+
+ANNALY CAPITAL MANAGEMENT, INC. AND SUBSIDIARIES
+
+Item 2. Management’s Discussion and Analysis
+
+* Represents a non-GAAP financial measure. Refer to the “Non-GAAP Financial Measures” section for additional information.
+
+(1) GAAP leverage is computed as the sum of repurchase agreements, other secured financing, debt issued by securitization vehicles, participations issued and U.S. Treasury securities sold, not yet purchased divided by total equity. Economic leverage is computed as the sum of recourse debt, cost basis of to-be-announced (“TBA”) derivatives outstanding, and net forward purchases (sales) of investments divided by total equity. Recourse debt consists of repurchase agreements, other secured financing, structured repurchase transactions (included within Debt issued by securitization vehicles) and U.S. Treasury securities sold, not yet purchased. Debt issued by securitization vehicles (excluding structured repurchase transactions) and participations issued are non-recourse to us and are excluded from economic leverage.
+
+(2) GAAP capital ratio is computed as total equity divided by total assets. Economic capital ratio is computed as total equity divided by total economic assets. Total economic assets include the implied market value of TBA derivatives and net of debt issued by securitization vehicles (excluding structured repurchase transactions) and participations issued.
+
+(3) Annualized GAAP return (loss) on average equity annualizes realized and unrealized gains and (losses) which may not be indicative of full year performance, unannualized GAAP return (loss) on average equity is 4.97% and 0.45% for the three months ended June 30, 2026 and 2025, respectively, and 6.78% and 1.46% for the the six months ended June 30, 2026 and 2025, respectively.
+
+(4) Net interest margin represents our interest income less interest expense divided by the average interest earning assets. Net interest margin does not include net interest component of interest rate swaps. Net interest margin (excluding PAA) represents the sum of our interest income (excluding PAA) plus TBA dollar roll income less economic interest expense divided by the sum of average interest earning assets plus average outstanding TBA contract balances.
+
+(5) Average yield on interest earning assets represents annualized interest income divided by average interest earning assets. Average interest earning assets reflects the average amortized cost of our investments during the period. Average yield on interest earning assets (excluding PAA) is calculated using annualized interest income (excluding PAA).
+
+(6) Average GAAP cost of interest bearing liabilities represents annualized interest expense divided by average interest bearing liabilities. Average interest bearing liabilities reflects the average balances during the period. Average economic cost of interest bearing liabilities represents annualized economic interest expense divided by average interest bearing liabilities. Economic interest expense is comprised of GAAP interest expense, the net interest component of interest rate swaps, and net interest on initial margin related to interest rate swaps, which is reported in Other, net in the Company’s Consolidated Statements of Comprehensive Income (Loss). Net interest on variation margin related to interest rate swaps is included in the Net interest component of interest rate swaps in the Company’s Consolidated Statements of Comprehensive Income (Loss).
+
+(7) Excludes dividends on preferred stock.
+
+GAAP
+
+Net income (loss) was $827.8 million, which includes $5.1 million attributable to noncontrolling interests, or $1.06 per average basic common share, for the three months ended June 30, 2026, compared to $60.4 million, which includes $3.3 million attributable to noncontrolling interests, or $0.03 per average basic common share, for the same period in 2025. We attribute the majority of the change in net income (loss) to favorable changes in net gains (losses) on derivatives, net interest income, and net servicing income, partially offset by an unfavorable change in net gains (losses) on investments and other. Net gains (losses) on derivatives was $552.4 million for the three months ended June 30, 2026 compared to ($388.8) million for the same period in 2025. Net interest income for the three months ended June 30, 2026 was $488.2 million, compared to $273.2 million for the same period in 2025. Net servicing income for the three months ended June 30, 2026 was $157.2 million, compared to $127.1 million for the same period in 2025. Net gains (losses) on investments and other was ($318.5) million for the three months ended June 30, 2026, compared to $83.5 million for the same period in 2025.
+
+Net income (loss) was $1.1 billion, which includes $13.0 million attributable to noncontrolling interests, or $1.40 per average basic common share, for the six months ended June 30, 2026, compared to $190.7 million, which includes $9.4 million attributable to noncontrolling interests, or $0.18 per average basic common share, for the same period in 2025. We attribute the majority of the change in net income (loss) to favorable changes in net gains (losses) on derivatives, net interest income, and net servicing income, partially offset by an unfavorable change in net gains (losses) on investments and other. Net gains on derivatives for the six months ended June 30, 2026 was $961.5 million, compared to ($1.4) billion for the same period in 2025. Net interest income for the six months ended June 30, 2026 was $940.9 million, compared to $493.2 million for the same period in 2025. Net servicing income for the six months ended June 30, 2026 was $299.8 million, compared to $253.4 million for the same period in 2025. Net gains (losses) on investments and other was ($990.6) million for the six months ended June 30, 2026, compared to $894.3 million for the same period in 2025. Refer to the section titled “Other income (loss)” located within this Item 2 for additional information related to these changes.
+
+Non-GAAP
+
+Earnings available for distribution were $627.7 million, or $0.79 per average common share, for the three months ended June 30, 2026, compared to $489.9 million, or $0.73 per average common share, for the same period in 2025. The change in earnings available for distribution during the three months ended June 30, 2026, compared to the same period in 2025, was primarily due to higher coupon income, resulting from higher average Agency securities and residential mortgage loan balances, and higher net servicing income on higher average balances. This change was partially offset by higher interest expense, resulting from higher average securitized debt and repurchase agreement balances despite lower average rates, and a decrease in the net interest component of interest rate swaps, primarily due to lower average receive rates resulting from declines in SOFR.
+
+Earnings available for distribution were $1.2 billion, or $1.55 per average common share, for the six months ended June 30, 2026, compared to $951.8 million, or $1.45 per average common share, for the same period in 2025. The change in earnings available for distribution during the six months ended June 30, 2026, compared to the same period in 2025, was primarily due
+
+45
+
+ANNALY CAPITAL MANAGEMENT, INC. AND SUBSIDIARIES
+
+Item 2. Management’s Discussion and Analysis
+
+to higher coupon income, resulting from higher average Agency securities and residential mortgage loan balances, and higher net servicing income on higher average balances. This change was partially offset by higher interest expense, resulting from higher average securitized debt and repurchase agreement balances despite lower average rates, and a decrease in the net interest component of interest rate swaps, primarily due to lower average receive rates resulting from declines in SOFR.
+
+Non-GAAP Financial Measures
+
+To supplement our consolidated financial statements, which are prepared and presented in accordance with GAAP, we provide the following non-GAAP financial measures:
+
+•earnings available for distribution (“EAD”);
+
+•earnings available for distribution attributable to common stockholders;
+
+•earnings available for distribution per average common share;
+
+•annualized EAD return on average equity;
+
+•economic leverage;
+
+•economic capital ratio;
+
+•interest income (excluding PAA);
+
+•economic interest expense;
+
+•economic net interest income (excluding PAA);
+
+•average yield on interest earning assets (excluding PAA);
+
+•average economic cost of interest bearing liabilities;
+
+•net interest margin (excluding PAA); and
+
+•net interest spread (excluding PAA).
+
+These measures should not be considered a substitute for, or superior to, financial measures computed in accordance with GAAP. While intended to offer a fuller understanding of our results and operations, non-GAAP financial measures also have limitations. For example, we may calculate our non-GAAP metrics, such as earnings available for distribution, or the PAA, differently than our peers making comparative analysis difficult. Additionally, in the case of non-GAAP measures that exclude the PAA, the amount of amortization expense excluding the PAA is not necessarily representative of the amount of future periodic amortization nor is it indicative of the term over which we will amortize the remaining unamortized premium. Changes to actual and estimated prepayments will impact the timing and amount of premium amortization and, as such, both GAAP and non-GAAP results.
+
+These non-GAAP measures provide additional detail to enhance investor understanding of our period-over-period operating performance and business trends, as well as for assessing our performance versus that of industry peers. Additional information pertaining to our use of these non-GAAP financial measures, including discussion of how each such measure may be useful to investors, and reconciliations to their most directly comparable GAAP results are provided below.
+
+Earnings Available for Distribution, Earnings Available for Distribution Attributable to Common Stockholders, Earnings Available for Distribution Per Average Common Share and Annualized EAD Return on Average Equity
+
+Our principal business objective is to generate net income for distribution to our stockholders and optimize our returns through prudent management of our diversified investment strategies. We generate net income by earning a net interest spread on our investment portfolio, which is a function of interest income from our investment portfolio less financing, hedging and operating costs. Earnings available for distribution, which is defined as the sum of (a) economic net interest income, (b) TBA dollar roll income, (c) net servicing income less realized amortization of MSR, (d) other income (loss) (excluding amortization of intangibles, non-EAD income allocated to equity method investments and other non-EAD components of other income (loss)), (e) general and administrative expenses (excluding transaction expenses and non-recurring items), and (f) income taxes (excluding the income tax effect of non-EAD income (loss) items), and excludes (g) the PAA representing the cumulative impact on prior periods, but not the current period, of quarter-over-quarter changes in estimated long-term prepayment speeds related to our Agency mortgage-backed securities, is used by management and, we believe, used by analysts and investors to measure our progress in achieving our principal business objective.
+
+We seek to fulfill our principal business objective through a variety of factors including portfolio construction, the degree of market risk exposure and related hedge profile, and the use and forms of leverage, all while operating within the parameters of our capital allocation policy and risk governance framework.
+
+We believe these non-GAAP measures provide management and investors with additional details regarding our underlying operating results and investment portfolio trends by (i) making adjustments to account for the disparate reporting of changes in fair value where certain instruments are reflected in GAAP net income (loss) while others are reflected in other comprehensive income (loss), and (ii) by excluding certain unrealized, non-cash or episodic components of GAAP net income (loss) in order to provide additional transparency into the operating performance of our portfolio. In addition, EAD serves as a useful indicator
+
+46
+
+ANNALY CAPITAL MANAGEMENT, INC. AND SUBSIDIARIES
+
+Item 2. Management’s Discussion and Analysis
+
+for investors in evaluating our performance and ability to pay dividends. Annualized EAD return on average equity, which is calculated by dividing earnings available for distribution over average stockholders’ equity, provides investors with additional detail on the earnings available for distribution generated by our invested equity capital.
+
+The following table presents a reconciliation of GAAP financial results to non-GAAP earnings available for distribution for the periods presented:
+
+For the Three Months Ended June 30,
+
+For the Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+(dollars in thousands, except per share data)
+
+GAAP net income (loss) $ 827,773 $ 60,371 $ 1,118,288 $ 190,676
+
+Adjustments to exclude reported realized and unrealized (gains) losses
+
+Net (gains) losses on investments and other (1)
+316,206 (82,854) 990,368 (893,824)
+
+Net (gains) losses on derivatives (2)
+(464,968) 574,435 (777,233) 1,743,847
+
+Other adjustments
+
+Amortization of intangibles 673 672 1,346 1,345
+
+Non-EAD (income) loss allocated to equity method investments (3)
+— (403) — (256)
+
+Transaction expenses and non-recurring items (4)
+10,246 5,706 18,197 12,488
+
+Income tax effect of non-EAD income (loss) items 5,044 1,003 232 8,358
+
+TBA dollar roll income (5)
+17,904 7,252 36,897 18,527
+
+MSR amortization (6)
+(89,816) (68,804) (168,462) (131,237)
+
+EAD attributable to noncontrolling interests (2,476) (3,610) (5,465) (6,595)
+
+Premium amortization adjustment cost (benefit) 7,081 (3,862) 3,387 8,434
+
+Earnings available for distribution *
+627,667 489,906 1,217,555 951,763
+
+Dividends on preferred stock 41,036 37,260 81,688 74,417
+
+Earnings available for distribution attributable to common stockholders *
+$ 586,631 $ 452,646 $ 1,135,867 $ 877,346
+
+GAAP net income (loss) per average common share $ 1.06 $ 0.03 $ 1.40 $ 0.18
+
+Earnings available for distribution per average common share *
+$ 0.79 $ 0.73 $ 1.55 $ 1.45
+
+Annualized GAAP return (loss) on average equity (7)
+19.88 % 1.82 % 13.56 % 2.91 %
+
+Annualized EAD return on average equity *
+15.12 % 14.86 % 14.82 % 14.65 %
+
+* Represents a non-GAAP financial measure. Refer to the disclosure within this section above for additional information on non-GAAP financial measures.
+
+(1) Includes write-downs or recoveries which are reported in Other, net in the Company's Consolidated Statements of Comprehensive Income (Loss).
+
+(2) The adjustment to add back Net (gains) losses on derivatives does not include the net interest component of interest rate swaps which is reflected in earnings available for distribution. The net interest component of interest rate swaps totaled $87.5 million and $185.7 million for the three months ended June 30, 2026 and 2025, respectively, and $184.3 million and $377.2 million for the six months ended June 30, 2026 and 2025, respectively.
+
+(3) Represents unrealized (gains) losses allocated to equity interests in a portfolio of MSR, which is a component of Other, net in the Consolidated Statements of Comprehensive Income (Loss).
+
+(4) Represents costs incurred in connection with securitizations of residential whole loans.
+
+(5) TBA dollar roll income represents a component of Net gains (losses) on derivatives in the Consolidated Statements of Comprehensive Income (Loss).
+
+(6) MSR amortization utilizes purchase date cash flow assumptions and actual unpaid principal balances and is calculated as the difference between projected MSR yield income and net servicing income for the period.
+
+(7) Annualized GAAP return (loss) on average equity annualizes realized and unrealized gains and (losses) which may not be indicative of full year performance, unannualized GAAP return (loss) on average equity is 4.97% and 0.45% for the three months ended June 30, 2026 and 2025, respectively, and 6.78% and 1.46% for the the six months ended June 30, 2026 and 2025, respectively.
+
+From time to time, we enter into TBA forward contracts as an alternate means of investing in and financing Agency MBS. A TBA contract is an agreement to purchase or sell, for future delivery, an Agency MBS with a specified issuer, term and coupon. A TBA dollar roll represents a transaction where TBA contracts with the same terms but different settlement dates are simultaneously bought and sold. The TBA contract settling in the later month typically prices at a discount to the earlier month contract with the difference in price commonly referred to as the “drop”. The drop is a reflection of the expected net interest income from an investment in similar Agency MBS, net of an implied financing cost, that would be foregone as a result of settling the contract in the later month rather than in the earlier month. The drop between the current settlement month price and the forward settlement month price occurs because in the TBA dollar roll market, the party providing the financing is the party that would retain all principal and interest payments accrued during the financing period. Accordingly, TBA dollar roll income generally represents the economic equivalent of the net interest income earned on the underlying Agency MBS less an implied financing cost.
+
+TBA dollar roll transactions are accounted for under GAAP as a series of derivatives transactions. The fair value of TBA derivatives is based on methods similar to those used to value Agency MBS. We record TBA derivatives at fair value in our
+
+47
+
+ANNALY CAPITAL MANAGEMENT, INC. AND SUBSIDIARIES
+
+Item 2. Management’s Discussion and Analysis
+
+Consolidated Statements of Financial Condition and recognize periodic changes in fair value in Net gains (losses) on derivatives in our Consolidated Statements of Comprehensive Income (Loss), which includes both unrealized and realized gains and losses on derivatives.
+
+TBA dollar roll income is calculated as the difference in price between two TBA contracts with the same terms but different settlement dates multiplied by the notional amount of the TBA contract. Although accounted for as derivatives, TBA dollar rolls capture the economic equivalent of net interest income, or carry, on the underlying Agency MBS (interest income less an implied cost of financing). TBA dollar roll income is reported as a component of Net gains (losses) on derivatives in the Consolidated Statements of Comprehensive Income (Loss).
+
+Premium Amortization Expense
+
+In acco

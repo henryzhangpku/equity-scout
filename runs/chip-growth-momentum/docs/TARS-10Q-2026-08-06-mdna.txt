@@ -1,0 +1,375 @@
+Item 2. Management's Discussion and Analysis of Financial Condition and Results of Operations
+
+Note Regarding Forward-Looking Statements
+
+This Quarterly Report on Form 10-Q contains certain forward-looking statements. All statements other than statements of historical facts contained in this report, including statements regarding our future results of operations and financial position, future revenue, business strategy, product and product candidates, planned preclinical studies and clinical trials, results of clinical trials, research and development costs, regulatory approvals, timing and likelihood of success, as well as plans and objectives of management for future operations, are forward-looking statements. These statements involve known and unknown risks, uncertainties and other important factors that are in some cases beyond our control and may cause our actual results, performance or achievements to be materially different from any future results, performance or achievements expressed or implied by the forward-looking statements.
+
+The words “anticipate,” “believe,” contemplate,” “continue,” “could,” “estimate,” “expect,” “intend,” “may,” “might,” “on track,” “plan,” “potential,” “predict,” “project,” “should,” “target,” “will,” or “would,” or the negative of these terms or other similar expressions are intended to identify forward-looking statements. Factors that may cause actual results to differ from expected results, include, among others:
+
+•our ability to continue to successfully commercialize XDEMVY®, formerly known as TP-03, for the treatment of Demodex blepharitis;
+
+•the prevalence of Demodex blepharitis and the size of the market opportunity for XDEMVY;
+
+•our plans related to the continued commercialization of XDEMVY and our product candidates, if approved, including commercialization timelines and sales strategy;
+
+•any statements regarding our ability to achieve distribution and patient access for XDEMVY and timing and breadth of payer coverage; our expectations of the potential market size, pricing, gross-to-net yields, eye care professional and patient acceptance of our product and product candidates, opportunity and patient populations for our product and product candidates, including XDEMVY;
+
+•the rate and degree of market acceptance and clinical utility of XDEMVY and our product candidates;
+
+•the likelihood of our clinical trials demonstrating safety and efficacy of our product candidates, and other positive results;
+
+•the timing and progress of our current clinical trials and timing of enrollment and initiation of our future clinical trials, and the reporting of data from our current and future trials, and our ability to hire and retain personnel to oversee and execute on our current and future trials;
+
+•the timing or likelihood of regulatory filings and approval for our product candidates and our ability to meet existing or future regulatory standards or comply with post-approval requirements;
+
+•our plans relating to the clinical development of our current and future product candidates, including the size, number and disease areas to be evaluated;
+
+•the anticipated timing, terms and benefits of the acquisition of Alkeus Pharmaceuticals, Inc. (“Alkeus”) and, assuming closing of the transaction, our ability to integrate Alkeus and realize the anticipated benefits of the pending acquisition;
+
+•our ability to integrate iRenix Medical, Inc. (“iRenix”) and realize the anticipated benefits of the acquisition;
+
+•the impact of health epidemics on our business and operations;
+
+•the impact of unfavorable global and geopolitical economic conditions on our business and operations;
+
+•the success of competing therapies that are or may become available;
+
+•our estimates of the number of patients in the United States (“U.S.”) or globally, as applicable, who suffer from Demodex blepharitis, ocular rosacea, Lyme disease and malaria and the number of patients that will enroll in our clinical trials;
+
+•the beneficial characteristics, safety, efficacy, therapeutic effects and potential advantages of our product candidates;
+
+•our ability to obtain and maintain regulatory approval of our product and our product candidates to meet existing or future regulatory standards;
+
+•our plans relating to the further development and manufacturing of our product and product candidates, including additional indications for which we may pursue;
+
+•our ability to identify additional products, product candidates or technologies with significant commercial potential that are consistent with our commercial objectives;
+
+33
+
+Table of Contents
+
+•the expected potential benefits of strategic collaborations with third parties (including, for example, the receipt of payments, achievement and timing of milestones under license agreements, and the ability of our third party collaborators to commercialize our product candidates in the territories under license) and our ability to attract collaborators with development, regulatory and commercialization expertise;
+
+•existing regulations and regulatory developments in the U.S. and other jurisdictions;
+
+•our plans and ability to obtain, maintain, or protect intellectual property rights, including extensions of existing patent terms where available;
+
+•our continued reliance on third parties to conduct additional clinical trials of our product candidates, and for the manufacture of our product candidates for preclinical studies and clinical trials;
+
+•the need to hire additional personnel and our ability to attract and retain such personnel;
+
+•the accuracy of our estimates regarding expenses, future revenue, capital requirements and needs for additional financing;
+
+•our financial performance;
+
+•the sufficiency of our existing capital resources to fund our future operating expenses and capital expenditure requirements;
+
+•our competitive position; and
+
+•our anticipated use of our existing resources and the proceeds from our initial public offering (“IPO”), our subsequent follow-on public offerings in May 2022 (the “May 2022 Public Offering”), August 2023 (the “August 2023 Public Offering”), March 2024 (the “March 2024 Public Offering”), and March 2025 (the “March 2025 Public Offering”), collectively the “Follow-On Public Offerings”, as well as proceeds from our sales agreement prospectus (the “2023 ATM Prospectus”), drawdowns from our loan and security agreement (the “2024 Credit Facility”) with funds associated with Pharmakon Advisors, LP (“Pharmakon”), and a private placement of 2,098,519 shares of our common stock at a purchase price of $56.00 per share and pre-funded warrants to purchase 133,625 shares of our common stock at a purchase price per pre-funded warrant of $55.9999 (the purchase price per share less $0.0001, the exercise price of the pre-funded warrants), which is expected to result in gross proceeds of $125.0 million, before deducting placement agent fees and offering expenses (the “PIPE Transaction”). The PIPE Transaction is expected to close on August 7, 2026, subject to the satisfaction of customary closing conditions.
+
+We have based these forward-looking statements largely on our current expectations and projections about our business, the industry in which we operate and financial trends that we believe may affect our business, financial condition, results of operations and growth prospects, and these forward-looking statements are not guarantees of future performance or development. These forward-looking statements are subject to a number of risks, uncertainties and assumptions, including those described in the section titled “Risk Factors” elsewhere in this report. Moreover, we operate in a very competitive and rapidly changing environment. New risks emerge from time to time. It is not possible for our management to predict all risks, nor can we assess the impact of all factors on our business or the extent to which any factor, or combination of factors, may cause actual results to differ materially from those contained in any forward-looking statements we may make. In light of these risks, uncertainties and assumptions, the forward-looking events and circumstances discussed in this report may not occur and actual results could differ materially and adversely from those anticipated or implied in the forward-looking statements.
+
+You should not rely upon forward-looking statements as predictions of future events. Although we believe that the expectations reflected in the forward-looking statements are reasonable, we cannot guarantee that the future results, advancements, discoveries, levels of activity, performance or events and circumstances reflected in the forward-looking statements will be achieved or occur. Moreover, except as required by law, neither we nor any other person assumes responsibility for the accuracy and completeness of the forward-looking statements. We undertake no obligation to update publicly any forward-looking statements for any reason after the date of this report to conform these statements to actual results or to changes in our expectations, except as required by law.
+
+You should read this report and the documents that we reference in this report and have filed with the Securities and Exchange Commission (“SEC”) as exhibits to this report with the understanding that our actual future results, levels of activity, performance and events and circumstances may be materially different from what we expect.
+
+References in this Quarterly Report on Form 10-Q to the terms, “Tarsus,” the “Company,” “we,” “our,” and “us” refer to Tarsus Pharmaceuticals, Inc., unless the context otherwise indicates.
+
+Overview
+
+34
+
+Table of Contents
+
+Our Business
+
+We are a commercial stage biopharmaceutical company focused on the development and commercialization of therapeutics, starting with eye care. We launched XDEMVY® (lotilaner ophthalmic solution) 0.25%, formerly known as TP-03, for the treatment of Demodex blepharitis, in August 2023 after receiving U.S. Food and Drug Administration (“FDA”) approval in July 2023. Demodex blepharitis is caused by the infestation of Demodex mites. Demodex blepharitis (“blephar” is a reference to eyelid and “itis” is a reference to inflammation) is an ophthalmic lid margin disease characterized by inflammation of the eyelid margin, redness and ocular irritation, including a specific type of eyelash dandruff called collarettes, which are pathognomonic for Demodex blepharitis. Poorly controlled and progressive Demodex blepharitis can lead to corneal damage over time and, in extreme cases, blindness. There may be as many as approximately 25 million people in the U.S. who suffer from Demodex blepharitis. XDEMVY is the first and only therapeutic approved by the FDA and we believe is the definitive standard of care for the treatment of Demodex blepharitis.
+
+XDEMVY targets and eradicates the root cause of Demodex blepharitis - Demodex mite infestation. The active pharmaceutical ingredient (“API”) of XDEMVY, lotilaner, paralyzes and eradicates mites and other parasites through the inhibition of parasite-specific gamma-aminobutyric acid-gated chloride (“GABA-Cl”) channels with no GABA-Cl inhibition in humans.
+
+To date, we have completed seven clinical trials that include a Phase 3 Saturn-2 trial, a Phase 2b/3 Saturn-1 trial, four Phase 2 trials, and a Phase 1 trial for XDEMVY in Demodex blepharitis, all of which met their primary, secondary and/or certain exploratory endpoints, with the drug well tolerated throughout each trial. We have also completed clinical trials in Demodex blepharitis patients with Meibomian Gland Disease (“MGD”), including the Phase 2a clinical trial (the “Ersa Trial”), and a pilot clinical trial (the “Rhea Trial”) involving an XDEMVY vehicle.
+
+We intend to further advance our pipeline with, e.g., lotilaner API to address several diseases in human medicine, including eye care, and infectious disease prevention. We are investigating the development of our lotilaner-based product candidates to address targeted diseases with high unmet medical needs, which currently include TP-04, an investigational sterile aqueous gel formulation of lotilaner for the potential treatment of ocular rosacea and TP-05, an investigational oral tablet formulation of lotilaner, for potential Lyme disease prophylaxis and community malaria reduction.
+
+In December 2025, we initiated a Phase 2 clinical trial (the “KORE Trial”) evaluating TP-04, a lotilaner-based sterile ophthalmic gel formulation for the potential treatment of ocular rosacea. The KORE Trial continues to progress, with topline results expected in the first half of 2027.
+
+In March 2026, we initiated and have since completed enrollment in a Phase 2 clinical trial (the “Calliope Trial”) evaluating TP-05, a novel investigational lotilaner-based oral prophylactic designed to kill ticks before potential disease transmission. Topline results are expected in the first half of 2027, which we believe could support a Phase 3-ready package by the end of 2027.
+
+In July 2026, as part of our strategic entry into the retina market, we acquired IRX-101 in connection with the acquisition of iRenix (the “iRenix Acquisition”). IRX-101 is an investigational ocular antiseptic based on a stable aqueous chlorine dioxide solution that is being developed for the potential to reduce post-procedural pain and corneal toxicity in patients receiving intravitreal therapy. Based on data from a Phase 2b/3 trial and in alignment with feedback from the FDA, we plan to initiate a Phase 3 trial (the “COMFORT Trial”) of IRX-101, an investigational ocular antiseptic designed to evaluate the tolerability and safety of IRX-101 compared to povidone-iodine. The COMFORT Trial is expected to begin enrolling in the first half of 2027 with topline results expected in 2028.
+
+Recent Business and Corporate Highlights
+
+XDEMVY:
+
+•Generated $173.9 million of net product sales in the second quarter of 2026, a year-over-year increase of more than 69%.
+
+◦The number of eye care professionals (ECPs) prescribing XDEMVY five or more times per week has doubled year-over-year, demonstrating depth of adoption.
+
+•Direct-to-Consumer (“DTC”) initiatives continued to contribute to prescription growth and awareness, including:
+
+35
+
+Table of Contents
+
+◦Launched celebrity campaign in partnership with John Cena and an unbranded television campaign featuring “Barry the Cat” increased website engagement by more than 30% since the start of both new initiatives, with high-value actions up 19%.
+
+◦Unaided awareness of Demodex blepharitis continued to increase and is now approximately 30% vs. 2% of patients surveyed at the beginning of our DTC campaign.
+
+TP-03 Demodex blepharitis in patients with MGD, Ersa and Rhea Trials:
+
+In December 2023, we announced positive topline results of the Ersa Trial evaluating XDEMVY administered twice daily (“BID”) or three times a day (“TID”) for 6 weeks and 12 weeks for the treatment of MGD in patients with Demodex mites. XDEMVY demonstrated statistically significant and clinically meaningful improvements compared to baseline in two objective measures of the disease: the presence and quality of liquid secretion as measured by the Meibomian Gland Secretion Score; and the number of glands secreting normal or clear liquid. In November 2024, additional positive data was presented from the Ersa Trial as well as data from the Rhea Trial, a pilot study evaluating XDEMVY vehicle for the treatment of MGD in patients with Demodex mites, at the American Academy of Optometry (“AAOpt”) Annual Meeting 2024, and in April 2025 at the American Society of Cataract and Refractive Surgery (“ASCRS”) Annual Meeting 2025. The Rhea Trial enrolled a similar patient population as the Ersa Trial, and evaluated the same outcomes, with the same dosing regimens, except the Rhea Trial participants received XDEMVY vehicle. Both the Ersa and Rhea Trials also assessed patient reported outcomes for some of the most commonly reported patient symptoms in Demodex blepharitis and MGD, namely fluctuating vision, itching, redness, and burning.
+
+The presentations, which combined the Ersa and Rhea Trials data in a pooled analysis, demonstrated that XDEMVY provided statistically significant and clinically meaningful improvements of the meibomian glands from baseline and when compared to vehicle, including at least three times more glands secreting normal or clear liquid in patients treated with XDEMVY compared to vehicle at day 43. These improvements were shown across three objective measures of MGD: i) the presence and quality of liquid secretion as measured by the Meibomian Gland Secretion Score; ii) the number of glands secreting normal or clear liquid; and iii) the number of glands yielding any liquid. Improvements were also demonstrated across certain patient reported outcomes, including fluctuating vision, itching and redness. Further, XDEMVY demonstrated statistically significant rates of collarette cure and lid margin erythema cure that are consistent with previous XDEMVY studies. No statistically significant differences were observed between the BID and TID treatment arms in both the Ersa and Rhea Trials, respectively, and XDEMVY and the XDEMVY vehicle were well tolerated. Given the positive results of these trials, plus the FDA’s feedback that these patients are already covered under XDEMVY’s label for the treatment of Demodex blepharitis, our medical affairs team is continuing to move forward with sharing this data with ECPs.
+
+TP-04 for the Potential Treatment of Ocular Rosacea:
+
+We are exploring the therapeutic potential of TP-04 as an investigational sterile aqueous gel formulation of lotilaner, for the treatment of ocular rosacea, a chronic eye disease characterized by prominent and visible blood vessels, or telangiectasia, as well as redness, flushing and inflammation of the eyelid margin and surrounding peri-ocular skin. Ocular rosacea is a highly prevalent disease, with approximately 15-18 million Americans impacted by ocular rosacea and there are currently no FDA-approved therapeutics to treat this disease. One of the potential root causes of ocular rosacea, similar to Demodex blepharitis, is believed to be Demodex mites.
+
+In February 2024, we announced positive topline results from the Galatea trial, a Phase 2a trial evaluating TP-04, an investigational sterile aqueous gel formulation of lotilaner, for the potential treatment of papulopustular rosacea, for which Demodex mites is believed to be one of the root causes. The positive topline results demonstrated statistically significant improvements (p<0.05) in inflammatory lesions and Investigator’s Global Assessment score (change in baseline and success rate) were observed compared to vehicle at week 12. TP-04 was generally well tolerated.
+
+After review of the Galatea trial data with the FDA and key opinion leaders, we decided to pursue development of TP-04 for the potential treatment for ocular rosacea. In December 2025, we initiated the KORE Trial, evaluating TP-04 for the potential treatment of ocular rosacea, with topline results expected in the first half of 2027.
+
+TP-05 for the Potential Prevention of Lyme Disease:
+
+We are exploring the therapeutic potential of TP-05 as a novel investigational lotilaner-based oral prophylactic designed to kill ticks. There are approximately 80 million people in the U.S. at risk of Lyme disease exposure with more than 30 million at high or moderate risk. Further, there are approximately 400,000 reported cases of Lyme disease in the U.S. each
+
+36
+
+Table of Contents
+
+year, but it is believed that the actual number of cases could be much higher. We believe TP-05 is currently the only on-demand, oral tablet in development that targets ticks, and potentially prevents Lyme disease transmission. It is designed to rapidly and durably provide systemic blood levels of lotilaner potentially sufficient to kill infected ticks attached to the human body before they can transmit the Borrelia bacteria that causes Lyme disease.
+
+In February 2024, we announced positive topline results from the Carpo Trial, which demonstrated a statistically significant increase in tick mortality compared to vehicle (p<0.001), regardless of treatment arm, and was well tolerated (the “Carpo Trial”). The Carpo Trial was designed to evaluate TP-05, an investigational oral systemic, non-vaccine pharmacological prophylactic for the potential prevention of Lyme disease in humans. The Carpo Trial evaluated the efficacy of TP-05 in killing lab grown, non-disease carrying ticks after they have attached to the skin of healthy volunteers, as well as confirm the safety, tolerability, and blood concentration of TP-05.
+
+In March 2026, we initiated and have since completed enrollment in the Calliope Trial evaluating TP-05, a novel investigational lotilaner-based oral prophylactic designed to kill ticks before potential disease transmission. Topline results are expected in the first half of 2027, which we believe could support a Phase 3-ready package by the end of 2027.
+
+The FDA confirmed that a Phase 3 trial would require a disease prevention field study that would likely require the enrollment of thousands of patients. We continue to believe that partnering this program, following completion of the Calliope Trial, could be the best approach to potentially deliver this prophylactic therapy candidate to patients.
+
+IRX-101 for the Potential Reduction of Post-Procedural Pain and Corneal Toxicity in Patients Receiving Intravitreal Therapy:
+
+In July 2026, we acquired iRenix, pursuant to an Agreement and Plan of Merger with iRenix, Dolores Merger Sub, Inc. and Fortis Advisors LLC, as the securityholders’ representative. In connection with the iRenix Acquisition, we acquired IRX-101. We are exploring the potential of IRX-101 as an investigational ocular antiseptic to reduce post-procedural pain and corneal toxicity in patients receiving intravitreal therapy. More than 11 million intravitreal injections are performed in the U.S. each year, the vast majority of which rely on povidone-iodine as a pre-procedural antiseptic. For many patients, povidone-iodine is associated with significant ocular surface toxicity, resulting in corneal damage and pain that can persist for days following treatment. Despite this, and despite being contraindicated in patients with iodine sensitivity, there have been no new FDA-approved ocular antiseptics in more than four decades. We believe IRX-101 has the potential to meaningfully improve that experience while maintaining the antiseptic activity physicians depend on.
+
+In a Phase 2b/3 RELIEF trial that was completed by iRenix prior to our acquisition of IRX-101, IRX-101 demonstrated statistically significant improvements on two co-primary endpoints versus povidone-iodine:
+
+•Pain reduction: Approximately 50% relative reduction in post-procedural pain scores (p=0.0003), with half of the patients in the IRX-101 group reporting a pain score of zero.
+
+•Corneal fluorescein staining: Approximately 25% relative reduction in corneal staining in the IRX-101 group (p=0.0003), reflecting less corneal surface damage.
+
+Based on this data and in alignment with feedback from the FDA, we plan to initiate the COMFORT Trial. The study is expected to begin enrolling in the first half of 2027 with topline results expected in 2028.
+
+Other Business Updates:
+
+Definitive Agreement to Acquire Alkeus: On July 31, 2026, we entered into an Agreement and Plan of Merger (the “Alkeus Merger Agreement”), by and among the Company, Apex 2026 Merger Sub, Inc., Alkeus and Shareholder Representative Services LLC, pursuant to which we have agreed to acquire (the “Alkeus Acquisition”) Alkeus, a privately held ophthalmology-focused biotechnology company developing gildeuretinol (ALK-001), an investigational once-daily oral therapy with a differentiated approach designed to reduce toxic Vitamin A dimer formation in the retina, targeting the underlying biology of Stargardt disease, an inherited retinal disease affecting more than 36,000 diagnosed patients and an estimated 86,000 total patients in the U.S., that can lead to blindness. The Alkeus Acquisition adds a Phase 3 clinical program and is expected to further expand our presence in retina, one of the largest and fastest-growing specialties and is an important advancement in our strategy to become a leading eye care company. The Alkeus Acquisition is expected to close in 2026, subject to the expiration or termination of the applicable waiting period under the Hart-Scott-Rodino Antitrust Improvements Act and the satisfaction of other customary closing conditions. The closing of the Alkeus Acquisition is not conditioned upon the closing of the PIPE Transaction or the receipt of any minimum amount of gross proceeds in the PIPE Transaction. There can be no assurances that the Alkeus Acquisition will be consummated on the terms and in the timing described herein or at all.
+
+37
+
+Table of Contents
+
+PIPE Transaction: On August 5, 2026, we entered into a Securities Purchase Agreement (the “Purchase Agreement”) with a syndicate of existing and new healthcare investors for the sale of shares of our common stock and pre-funded warrants to purchase shares of our common stock in a private placement. Pursuant to the terms of the Purchase Agreement, we agreed to issue and sell an aggregate of 2,098,519 shares of our common stock at a purchase price of $56.00 per share and pre-funded warrants to purchase an aggregate of 133,625 shares of our common stock at a purchase price of $55.9999 per pre-funded warrant (the purchase price per share less $0.0001, the exercise price of the pre-funded warrants), which is expected to result in gross proceeds of $125.0 million, before deducting placement agent fees and other offering expenses. The PIPE Transaction is expected to close on August 7, 2026, subject to satisfaction of customary closing conditions.
+
+Interim Chief Commercial Officer: In July 2026, we appointed Neera Clase, Interim Chief Commercial Officer, as we enter the next phase of growth. Ms. Clase has been instrumental in the development and execution of our successful commercial strategy. Her extensive knowledge of the business and established leadership across the organization position her well to support continued commercial execution.
+
+Additional Potential Growth Drivers in 2026 and Beyond:
+
+In March 2026, GrandPharma obtained regulatory approval of TP-03, in the People’s Republic of China (“PRC”), following a previous regulatory approval in Macau. The regulatory approval in the PRC, together with a previous patent issuance in the PRC relating to TP-03, triggered a $15.0 million milestone payment to us, which was recorded as license fees and collaboration revenue (see Note 9).
+
+In Europe, we have completed stability work of a preservative-free formulation in 2026 and continue to evaluate the path to possible approval of TP-03 for the potential treatment of Demodex blepharitis.
+
+In Japan, we continue to evaluate a potential path to approval of TP-03 for Demodex blepharitis.
+
+Corporate and Financial Overview
+
+We were incorporated as a Delaware corporation in November 2016, and our headquarters are located in Irvine, California. Since our inception, we have devoted substantially all of our resources to organizing and staffing our company, acquiring intellectual property, clinical development of our product candidates, commercializing XDEMVY, building our research and development capabilities, raising capital, and enhancing our corporate infrastructure.
+
+To date, we have financed our operations through private placements of preferred stock, convertible promissory notes, net proceeds from issuance of common stock in our IPO, our subsequent Follow-On Public Offerings and our 2023 ATM Prospectus, as well as proceeds from net product sales, our China Out-License, and drawdowns from the 2024 Credit Facility and the previous loan and security agreement with Hercules Capital, Inc. and Silicon Valley Bank, a division of First Citizens Bank & Trust Company (the “2022 Credit Facility”, and collectively the “Credit Facilities”). On August 5, 2026, we entered into the Purchase Agreement for the PIPE Transaction, which is expected to close on August 7, 2026, subject to satisfaction of customary closing conditions.
+
+We have incurred significant net operating losses (“NOLs”) in every year since our inception and expect to continue to incur significant operating expenses as we continue to commercialize XDEMVY for Demodex blepharitis and as we advance our other product candidates through clinical trials, regulatory submissions, and potential commercialization. Our net losses were $18.6 million and $20.3 million for the three months ended June 30, 2026 and 2025, respectively, and $25.5 million and $45.5 million for the six months ended June 30, 2026 and 2025, respectively. Our net losses may fluctuate significantly from quarter to quarter and year to year and could be substantial. We anticipate that our operating expenses will increase significantly as we:
+
+•continue to commercialize XDEMVY and our other product candidates for which we obtain regulatory approvals;
+
+•maintain regulatory approval for XDEMVY and seek regulatory approval for our other product candidates that successfully complete clinical development, if any;
+
+•advance the clinical development of various pipeline programs, including TP-04 for the potential treatment of ocular rosacea and TP-05 for the potential Lyme disease prophylaxis;
+
+38
+
+Table of Contents
+
+•engage with contract manufacturers to ensure a sufficient supply chain capacity to provide commercial quantities of XDEMVY and any other products for which we may obtain marketing approval;
+
+•maintain, expand and protect our intellectual property portfolio;
+
+•hire additional staff, including clinical, scientific, technical, regulatory, marketing, sales, operations, financial, and other support personnel, to execute our business plan; and
+
+•add information systems and personnel to support our product development and continued commercialization efforts, and to enable us to operate as a public company.
+
+We began generating XDEMVY product sales in August 2023, following FDA approval in July 2023. Our reported revenue within license fees and collaboration revenue is from our China Out-License; we expect to report additional revenue under this caption in future periods.
+
+We expect to finance our operations through existing capital balances, revenue from product sales, equity or debt financings, or collaborations, strategic alliances, or licensing arrangements with third parties. Adequate funding may not be available to us when needed on acceptable terms, or at all. If we raise additional funds through collaborations, strategic alliances, or licensing arrangements with third parties, we may have to relinquish valuable rights to our intellectual property, future revenue streams, research programs or product candidates or grant licenses on terms that may not be favorable to us. If we are unable to raise additional capital or enter into such agreements as and when needed, we could be forced to significantly delay, scale back, or discontinue our product development and/or commercialization plans, which would negatively and adversely affect our financial condition.
+
+Because of the numerous risks and uncertainties associated with drug product development and commercialization, we are unable to accurately predict the timing or amount of increased expenses or when or if we will be able to achieve or maintain profitability. Even if we are able to generate significant revenue from net product sales we may not become profitable. If we fail to become profitable or are unable to sustain profitability on a continuing basis, then we may be unable to continue our operations at planned levels.
+
+As of June 30, 2026, our aggregate cash, cash equivalents and marketable securities was $449.7 million – see the section below titled “Management’s Discussion and Analysis of Financial Condition and Results of Operations — Liquidity and Capital Resources.”
+
+Impact of the Macroeconomic Environment
+
+Recent global economic conditions have been marked by significant volatility and heightened trade tensions. In addition, persistent inflationary pressures, a prolonged higher interest rate environment, energy supply disruptions in certain regions, evolving trade policies, including increased tariffs, regulatory uncertainty, and ongoing and emerging geopolitical conflicts, including war, have contributed to regional and global macroeconomic challenges. These conditions have created uncertainty in global markets and may continue to impact economic conditions for an extended period.
+
+See the section titled Risk Factors in Item 1A of Part II of this Quarterly Report on Form 10-Q, for a further discussion of the potential adverse impact of unfavorable global and geopolitical economic conditions on our business, results of operations and financial condition.
+
+39
+
+Table of Contents
+
+Components of our Results of Operations
+
+Comparison of the Three Months Ended
+
+Three Months Ended June 30, Change
+
+2026 2025
+
+(in thousands)
+
+Revenues:
+
+Product sales, net $ 173,912 $ 102,660 $ 71,252
+
+Total revenues 173,912 102,660 71,252
+
+Operating expenses:
+
+Cost of sales 12,113 6,237 5,876
+
+Research and development 31,010 15,594 15,416
+
+Selling, general and administrative 150,697 103,013 47,684
+
+Total operating expenses 193,820 124,844 68,976
+
+Loss from operations before other income (expense) (19,908) (22,184) 2,276
+
+Other income (expense):
+
+Interest income 3,698 4,229 (531)
+
+Interest expense (2,156) (2,240) 84
+
+Gain on exchange of long-term investments 2,812 — 2,812
+
+Other income (expense), net (281) (145) (136)
+
+Total other income (expense), net 4,073 1,844 2,229
+
+Provision for income taxes (2,716) — (2,716)
+
+Net loss $ (18,551) $ (20,340) $ 1,789
+
+Product Sales, Net
+
+During the three months ended June 30, 2026 and 2025, we recognized revenue of $173.9 million and $102.7 million, respectively, from product sales, net of rebates, chargebacks, discounts, and other adjustments, an increase of 69% compared to the prior year period. This increase in revenue was driven by higher volume and improvement in the gross-to-net discounts.
+
+Cost of Sales
+
+For the three months ended June 30, 2026 and 2025, we recognized $12.1 million and $6.2 million, respectively, in cost of sales for XDEMVY, and gross margins remained consistent at 93% and 94% for the respective periods. Cost of sales consists of direct and indirect costs related to the manufacturing and distribution of XDEMVY, including raw materials, third-party manufacturing costs, packaging services, freight-in, third-party royalties payable on our product sales, net, and amortization of capitalized intangible assets associated with XDEMVY.
+
+Research and Development Expenses
+
+Three Months Ended June 30, Change
+
+2026 2025
+
+(in thousands)
+
+Direct external expenses:
+
+TP-03 program $ 6,853 $ 3,739 $ 3,114
+
+TP-04 program 1,208 962 246
+
+TP-05 program 8,525 507 8,018
+
+Other early-stage programs 1,833 1,316 517
+
+Indirect expenses:
+
+Compensation and personnel-related 11,176 7,973 3,203
+
+Other 1,415 1,097 318
+
+Total research and development expenses $ 31,010 $ 15,594 $ 15,416
+
+40
+
+Table of Contents
+
+Research and development expenses increased by $15.4 million for the three months ended June 30, 2026, as compared to the prior year period. The increase was primarily attributable to (i) an $8.0 million increase in TP-05 program expenses related to our Calliope Trial, which we initiated in March 2026 and has since completed enrollment, (ii) a $3.2 million increase in payroll and personnel-related costs (including increased stock-based compensation expense of $1.1 million) primarily due to employee additions to support our product development initiatives, (iii) a $3.1 million increase in TP-03 program expenses, and (iv) a $0.5 million increase in other early-stage development expenses.
+
+Selling, General and Administrative Expenses
+
+Selling, general and administrative expenses increased by $47.7 million for the three months ended June 30, 2026, as compared to the prior year period. The increase was primarily attributable to (i) a $21.2 million increase in commercial and marketing costs, including DTC advertising costs, as we continued to expand our promotional activities for XDEMVY, (ii) a $19.5 million increase in expenses associated with patient support functions, information technology, legal, and professional services, and (iii) a $6.7 million increase in payroll and personnel-related costs (including increased stock-based compensation expense of $3.9 million) primarily due to commercial and corporate employee additions to support our continued growth and expansion of our commercial leadership team. We expect vendor-related expenses to increase during 2026 as we continue to expand our commercial activities for XDEMVY and invest in other corporate initiatives.
+
+Other Income (Expense), Net
+
+Other income (expense), net increased by $2.2 million for the three months ended June 30, 2026, as compared to the prior year period and primarily related to a $2.8 million gain on exchange of long-term investments (see Note 12), partially offset by a $0.5 million decrease in interest income earned on our cash, cash equivalents and marketable securities.
+
+Income Taxes
+
+In July 2025, the OBBB Act was enacted in the U.S., which contains a broad range of tax reform provisions affecting businesses, including permitting the immediate expensing of domestic research and development expenditures. Provision for income taxes was $2.7 million for the three months ended June 30, 2026, primarily due to $2.4 million of state income tax expense resulting from states that do not conform to the OBBB Act and therefore continue to require the capitalization and amortization of domestic research and development expenditures. There was no provision for income taxes recorded during the three months ended June 30, 2025.
+
+41
+
+Table of Contents
+
+Comparison of the Six Months Ended
+
+Six Months Ended June 30, Change
+
+2026 2025
+
+(in thousands)
+
+Revenues:
+
+Product sales, net $ 319,299 $ 180,995 $ 138,304
+
+License fees and collaboration revenue 16,667 — 16,667
+
+Total revenues 335,966 180,995 154,971
+
+Operating expenses:
+
+Cost of sales 21,509 11,448 10,061
+
+Research and development 53,361 30,003 23,358
+
+Selling, general and administrative 287,126 188,008 99,118
+
+Total operating expenses 361,996 229,459 132,537
+
+Loss from operations before other income (expense) (26,030) (48,464) 22,434
+
+Other income (expense):
+
+Interest income 7,420 7,683 (263)
+
+Interest expense (4,284) (4,453) 169
+
+Gain on exchange of long-term investments 2,812 — 2,812
+
+Other income (expense), net (368) (226) (142)
+
+Total other income, net 5,580 3,004 2,576
+
+Provision for income taxes (5,068) — (5,068)
+
+Net loss $ (25,518) $ (45,460) $ 19,942
+
+Product Sales, Net
+
+During the six months ended June 30, 2026 and 2025, we recognized revenue of $319.3 million and $181.0 million, respectively, from product sales, net of rebates, chargebacks, discounts, and other adjustments, a year-over-year increase of more than 76%. This increase in revenue was driven by higher volume and improvement in the gross-to-net discounts.
+
+License Fees and Collaboration Revenue
+
+For the six months ended June 30, 2026, we recognized $16.7 million in license fees and collaboration revenue related to (i) a $15.0 million regulatory milestone achievement under the China Out-License (see Note 9) and (ii) $1.7 million of required China withholding tax payable by GrandPharma on the associated milestone (see Note 11). The milestone payment was recorded on a gross basis, which increased license fees and collaboration revenue by $1.7 million, with an equal offsetting amount recorded as foreign tax expense within provision for income taxes. During the six months ended Jun

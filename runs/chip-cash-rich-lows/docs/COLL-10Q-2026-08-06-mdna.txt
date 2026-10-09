@@ -1,0 +1,454 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+
+You should read the following discussion and analysis of our financial condition and results of operations together with our Condensed Consolidated Financial Statements and related notes appearing elsewhere in this Quarterly Report, and in conjunction with management’s discussion and analysis and our audited consolidated financial statements included in our Annual Report. The following discussion contains forward-looking statements that involve risks, uncertainties and assumptions. Our actual results and the timing of certain events could differ materially from those anticipated in these forward-looking statements as a result of many factors. We discuss factors that we believe could cause or contribute to these differences below and elsewhere in this Quarterly Report, including those set forth under “Forward-looking Statements” and “Risk Factors,” as revised and supplemented by those risks described from time to time in other reports which we file with the SEC.
+
+Overview
+
+We are a leading biopharmaceutical company focused on improving the lives of people living with serious and often misunderstood conditions. We have developed, licensed, and acquired a portfolio of meaningfully differentiated products for use in the treatment of attention deficit hyperactivity disorder (“ADHD”) and moderate to severe pain. We commercialize our products, consisting of Jornay PM, Azstarys, Belbuca, Xtampza ER, Nucynta ER, Nucynta IR, Nucynta ER Authorized Generic (“AG”), and Nucynta IR AG (collectively the “Nucynta Products”), and Symproic, in the United States.
+
+Jornay PM is a central nervous system (“CNS”) stimulant prescription medicine that contains methylphenidate HCl, a Schedule II methylphenidate, which was approved by the U.S. Food and Drug Administration (“FDA”) in August 2018 for the treatment of ADHD in people six years of age and older and currently the only FDA-approved stimulant medication that is dosed in the evening. We began recognizing product revenue related to Jornay PM in September 2024 following our acquisition of Ironshore Therapeutics Inc. (“Ironshore”) (the “Ironshore Acquisition”).
+
+Azstarys is a CNS stimulant prescription medicine that contains serdexmethylphenidate and dexmethylphenidate approved by the FDA in March 2021 for the treatment of ADHD in people six years of age and older. We began recognizing product revenue related to Azstarys in May 2026 following our acquisition of Azstarys (the “Azstarys Acquisition”).
+
+Belbuca is a buccal film that contains buprenorphine, a Schedule III opioid, and was approved by the FDA in October 2015 for severe and persistent pain that requires an extended treatment period with a daily opioid analgesic and for which alternative options are inadequate. We began shipping and recognizing product revenue related to Belbuca in March 2022 following our acquisition of BioDelivery Sciences International, Inc. (“BDSI”).
+
+Xtampza ER, an abuse-deterrent, extended-release, oral formulation of oxycodone, is a Schedule II opioid and was approved by the FDA in April 2016 for the management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic and for which alternative treatment options are inadequate. We commercially launched Xtampza ER in June 2016.
+
+The Nucynta Products are extended-release (“ER”) and immediate-release (“IR”) oral formulations of tapentadol, a Schedule II opioid. In November 2008, the FDA approved Nucynta ER and Nucynta IR. Nucynta ER is indicated for the management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic, including neuropathic pain associated with diabetic peripheral neuropathy in adults, and for which alternate treatment options are inadequate. Nucynta IR is indicated for the management of acute pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate in adults and pediatric patients aged 6 years and older with a body weight of at least 40 kg. We began shipping and recognizing product revenue on the Nucynta Products in January 2018 and began marketing the Nucynta Products in February 2018. In August 2023, the FDA granted New Patient Population exclusivity for Nucynta IR in pediatric patients. This grant extended the period of U.S. exclusivity for Nucynta IR from June 27, 2025 to July 3, 2026. In June 2024, the FDA granted pediatric exclusivity to the Nucynta Products for an additional six months, to January 3, 2027 for Nucynta IR and December 27, 2025 for Nucynta ER. In January 2026, a generic version of Nucynta IR 50mg, 75mg, and 100mg tablets was approved under an abbreviated New Drug Application (“ANDA”) filed by a third-party with the FDA which carves out pediatric use from its label.
+
+We have entered into an authorized generic agreement with Hikma Pharmaceuticals USA Inc. (“Hikma”), pursuant to which we granted Hikma rights relating to an authorized generic version of the Nucynta Products in the United States. Hikma launched a generic version of Nucynta IR on February 25, 2026 and a generic version of Nucynta ER on March 11, 2026.
+
+41
+
+Table of Contents
+
+Symproic, an oral formulation of naldemedine, was approved by the FDA in March 2017 for the treatment of opioid-induced constipation (“OIC”) in adult patients with chronic non-cancer pain, including patients with chronic pain related to prior cancer or its treatment who do not require frequent (e.g., weekly) opioid dosage escalation. We began shipping and recognizing product revenue related to Symproic in March 2022 following our acquisition of BDSI.
+
+Critical Accounting Policies and Significant Judgments and Estimates
+
+We believe that several accounting policies are important to understanding our historical and future performance. We refer to these policies as “critical” because these specific areas generally require us to make judgments and estimates about matters that are uncertain at the time we make the estimate, and different estimates—which also would have been reasonable—could have been used, which would have resulted in different financial results. For a description of critical accounting policies that affect our significant judgments and estimates used in the preparation of our consolidated financial statements, refer to our Annual Report.
+
+Changes in our critical accounting policies with respect to our Annual Report include business combination accounting and valuation of acquired assets, including goodwill and intangible assets, as described below.
+
+Business Combination Accounting and Valuation of Acquired Net Assets
+
+We completed the Azstarys Acquisition on May 12, 2026, which was accounted for as a business combination. To determine whether the acquisition should be accounted for as a business combination or as an asset acquisition, we made certain judgments regarding whether the acquired set of activities and assets met the definition of a business. Judgment is required in assessing whether the acquired processes or activities, along with their inputs, would be substantive to constitute a business, as defined by U.S. GAAP.
+
+The acquisition method of accounting requires that we recognize the assets acquired and liabilities assumed at their acquisition date fair values. Goodwill is measured as the excess of consideration transferred over the acquisition date net fair values of the assets acquired and the liabilities assumed. The purchase price allocation is a critical accounting estimate because the estimation of fair values of acquired assets and assumed liabilities is judgmental and requires various assumptions based on non-observable inputs. Income approaches are used to value acquired intangible assets and certain assumed liabilities; acquired inventory is valued using replacement cost and functional apportionment based on its stage of completion. These valuations are based on management's estimates of economic and market conditions, including expected cash flows, costs and expenses, discount rates, tax rates and other market-participant assumptions.
+
+While we use our best estimates and assumptions as part of the process to value assets acquired and liabilities assumed at the acquisition date, our estimates are inherently uncertain and subject to refinement. During the measurement period, which occurs before finalization of the purchase price allocation, changes in assumptions and estimates that result in adjustments to the fair values of assets acquired and liabilities assumed, if based on facts and circumstances existing at the acquisition date, are recorded on a retroactive basis as of the acquisition date, with the corresponding offset to Goodwill. Any adjustments not based on facts and circumstances existing at the acquisition date, or if subsequent to the conclusion of the measurement period, will be recorded to our consolidated statements of operations.
+
+42
+
+Table of Contents
+
+Results of Operations
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+(in thousands) (in thousands)
+
+Product revenues, net $ 199,878 $ 188,000 $ 393,398 $ 365,757
+
+Cost of product revenues
+
+Cost of product revenues (excluding intangible asset amortization) 26,633 24,143 47,434 49,103
+
+Intangible asset amortization 62,953 55,473 118,426 110,946
+
+Total cost of product revenues 89,586 79,616 165,860 160,049
+
+Gross profit 110,292 108,384 227,538 205,708
+
+Operating expenses
+
+Selling, general and administrative 106,594 73,637 192,944 150,060
+
+Gain on fair value remeasurement of contingent consideration — (358) — (1,144)
+
+Total operating expenses 106,594 73,279 192,944 148,916
+
+Income from operations 3,698 35,105 34,594 56,792
+
+Interest expense (19,519) (20,463) (35,381) (41,253)
+
+Interest income 2,289 2,383 5,995 4,608
+
+Income before income taxes (13,532) 17,025 5,208 20,147
+
+Provision for income taxes 1,519 5,042 5,763 5,747
+
+Net (loss) income $ (15,051) $ 11,983 $ (555) $ 14,400
+
+Comparison of the three months ended June 30, 2026 and June 30, 2025
+
+Product revenues, net
+
+Product revenues, net were $199.9 million for the three months ended June 30, 2026 (the “2026 Quarter”), compared to $188.0 million for the three months ended June 30, 2025 (the “2025 Quarter”). The $11.9 million increase is primarily due to increased revenue for Jornay PM of $13.4 million, Azstarys of $12.9 million, and Belbuca of $5.1 million, partially offset by the decreased revenue for Nucynta Products of $11.1 million, Xtampza ER of $7.6 million, and Symproic of $0.7 million.
+
+The increase in revenue for Jornay PM of $13.4 million is primarily due to higher sales volume, lower gross-to-net adjustments related to provisions for co-pay program incentives and product returns, and higher gross price, partially offset by higher gross-to-net adjustments related to provisions for rebates.
+
+The increase in revenue for Azstarys of $12.9 million is due to the Azstarys Acquisition in May 2026.
+
+The increase in revenue for Belbuca of $5.1 million is primarily due to higher gross price and higher sales volume, partially offset by higher gross-to-net adjustments related to provisions for chargebacks and rebates.
+
+The decrease in revenue for the Nucynta Products of $11.1 million is primarily due to the decrease in branded product revenue of $16.3 million, partially offset by the increase in authorized generic product revenue of $5.2 million. The decrease in Nucynta Products branded product revenue was primarily due to lower sales volume and higher gross-to-net adjustments related to provisions for chargebacks and co-pay program incentives, partially offset by higher gross price and lower gross-to-net adjustments related to provisions for rebates and product returns. The increase in Nucynta Products AG product revenue was due to the launch of the authorized generic products in 2026.
+
+The decrease in revenue for Xtampza ER of $7.6 million is primarily due to lower sales volume and higher gross-to-net adjustments related to provisions for rebates, including the recognition of $2.4 million related to certain rebate settlements in the 2025 Quarter that did not recur in the 2026 Quarter, partially offset by higher gross price.
+
+43
+
+Table of Contents
+
+The decrease in revenue for Symproic of $0.7 million is primarily due to higher gross-to-net adjustments related to provisions for rebates and lower sales volume, partially offset by higher gross price.
+
+Cost of product revenues
+
+Cost of product revenues (excluding intangible asset amortization) was $26.6 million for the 2026 Quarter, compared to $24.1 million for the 2025 Quarter. The $2.5 million increase was primarily due to the 2026 Quarter including $5.4 million related to the step-up basis in inventory compared to the 2025 Quarter including $2.0 million.
+
+Intangible asset amortization was $63.0 million for the 2026 Quarter, compared to $55.5 million for the 2025 Quarter. The $7.5 million increase is due to the 2026 Quarter including amortization of the intangible asset related to Azstarys acquired from the Azstarys Acquisition in May 2026. Intangible asset amortization related to Belbuca is expected to be fully amortized during 2026. Intangible asset amortization related to the Nucynta Products is fully amortized as of June 30, 2026.
+
+Operating expenses
+
+Selling, general and administrative expenses were $106.6 million for the 2026 Quarter, compared to $73.6 million for the 2025 Quarter. The $33.0 million increase was primarily related to:
+
+•an increase in acquisition-related expenses of $23.2 million primarily due to expenses incurred related to the Azstarys Acquisition;
+
+•an increase in salaries, wages and benefits of $8.6 million, primarily due to expenses incurred as a result of certain executive transitions announced in the 2026 Quarter, including stock-based compensation expense of $2.2 million related to accelerated equity awards and severance, benefits, and related expenses incurred of $1.4 million, as well as additional headcount related to the Azstarys Acquisition; and
+
+•an increase in sales and marketing expenses of $0.8 million, primarily due to expenses incurred to support Jornay PM and Azstarys.
+
+Gain on fair value remeasurement of contingent consideration was zero in the 2026 Quarter, compared to $0.4 million in the 2025 Quarter. The decrease was due to the revaluation of the contingent consideration associated with the Ironshore Acquisition and reflects the liability being reduced to zero in 2025 after the related milestone was not achieved.
+
+Interest expense and Interest income
+
+Interest expense was $19.5 million for the 2026 Quarter, compared to $20.5 million for the 2025 Quarter. The $1.0 million decrease was primarily due to a lower interest rate following the December 2025 refinancing of the 2024 Term Loan, partially offset by a higher overall principal balance following the issuance of the May 2026 delayed draw term loan, which was used to partially fund the Azstarys Acquisition.
+
+Interest income was $2.3 million for the 2026 Quarter, compared to $2.4 million for the 2025 Quarter. The $0.1 million decrease was primarily due to a lower overall balance invested in the 2026 Quarter compared to the 2025 Quarter.
+
+Taxes
+
+The provision for income taxes was $1.5 million for the 2026 Quarter, compared to $5.0 million for the 2025 Quarter. The $3.5 million decrease is primarily due to lower earnings before taxes in the 2026 Quarter compared to the 2025 Quarter, partially offset by the impact of discrete non-deductible transaction costs related to the Azstarys Acquisition and the tax treatment of losses in the Swiss subsidiary acquired in the Azstarys Acquisition. The effective tax rate was (11.2)% and 29.6% in the 2026 Quarter and 2025 Quarter, respectively.
+
+Comparison of the six months ended June 30, 2026 and June 30, 2025
+
+Product revenues, net
+
+Product revenues, net were $393.4 million for the six months ended June 30, 2026 (the “2026 Period”), compared to $365.8 million for the six months ended June 30, 2025 (the “2025 Period”). The $27.6 million increase is primarily due to increased revenue for Jornay PM of $23.8 million, Azstarys of $12.9 million, Belbuca of $6.1 million, and Symproic of $0.7 million, partially offset by decreased revenue for Nucynta Products of $11.4 million and Xtampza ER of $4.5 million.
+
+44
+
+Table of Contents
+
+The increase in revenue for Jornay PM of $23.8 million is primarily due to higher sales volume, lower gross-to-net adjustments related to provisions for co-pay program incentives and product returns, and higher gross price, partially offset by higher gross-to-net adjustments related to provisions for rebates.
+
+The increase in revenue for Azstarys of $12.9 million is due to the Azstarys Acquisition in May 2026.
+
+The increase in revenue for Belbuca of $6.1 million is primarily due to higher gross price and higher sales volume, partially offset by higher gross-to-net adjustments related to provisions for chargebacks, rebates, and co-pay program incentives.
+
+The increase in revenue for Symproic of $0.7 million is primarily due to lower gross-to-net adjustments related to provisions for product returns, higher gross price, and higher sales volume, partially offset by higher gross-to-net adjustments related to provisions for rebates.
+
+The decrease in revenue for the Nucynta Products of $11.4 million is primarily due to the decrease in branded product revenue of $19.2 million, partially offset by the increase in authorized generic product revenue of $7.8 million. The decrease in Nucynta Products branded product revenue was primarily due to lower sales volume and higher gross-to-net adjustments related to provisions for chargebacks and co-pay program incentives, partially offset by higher gross price and lower gross-to-net adjustments related to provisions for rebates. The increase in Nucynta Products AG product revenue was due to the launch of the authorized generic products in 2026.
+
+The decrease in revenue for Xtampza ER of $4.5 million is primarily due to lower sales volume and higher gross-to-net adjustments related to provisions for rebates, including the recognition of $3.2 million related to certain rebate settlements in the 2025 Period that did not recur in the 2026 Period, partially offset by higher gross price.
+
+Cost of product revenues
+
+Cost of product revenues (excluding intangible asset amortization) was $47.4 million for the 2026 Period, compared to $49.1 million for the 2025 Period. The $1.7 million decrease was primarily due to a lower royalty expense, partially offset by higher cost of goods sold from higher sales volumes.
+
+Intangible asset amortization was $118.4 million for the 2026 Period, compared to $110.9 million for the 2025 Period. The $7.5 million increase is due to the 2026 Period including amortization of the intangible asset related to Azstarys acquired from the Azstarys Acquisition in May 2026. Intangible asset amortization related to Belbuca is expected to be fully amortized during 2026. Intangible asset amortization related to the Nucynta Products is fully amortized as of June 30, 2026.
+
+Operating expenses
+
+Selling, general and administrative expenses were $192.9 million for the 2026 Period, compared to $150.1 million for the 2025 Period. The $42.8 million increase was primarily related to:
+
+•an increase in acquisition-related expenses of $28.1 million primarily due to expenses incurred related to the Azstarys Acquisition;
+
+•an increase in salaries, wages and benefits of $12.9 million, primarily due to expenses incurred as a result of certain executive transitions announced in the 2026 Period, including stock-based compensation expense of $2.2 million related to accelerated equity awards as well as, additional headcount related to the Azstarys Acquisition and the expansion of the sales force that promotes Jornay PM that occurred late in the first quarter of 2025;
+
+•an increase in sales and marketing expenses of $3.9 million, primarily due to expenses incurred to support Jornay PM and Azstarys; partially offset by
+
+•a decrease in insurance expenses of $1.2 million, primarily due to lower product liability insurance expenses.
+
+Gain on fair value remeasurement of contingent consideration was zero in the 2026 Period, compared to $1.1 million in the 2025 Period. The decrease was due to the revaluation of the contingent consideration associated with the Ironshore Acquisition and reflects the liability being reduced to zero in 2025 after the related milestone was not achieved.
+
+45
+
+Table of Contents
+
+Interest expense and Interest income
+
+Interest expense was $35.4 million for the 2026 Period, compared to $41.3 million for the 2025 Period. The $5.9 million decrease was primarily due to a lower interest rate following the December 2025 refinancing of the 2024 Term Loan in December 2025, partially offset by a higher overall principal balance following the issuance of the May 2026 delayed draw term loan, which was used to partially fund the Azstarys Acquisition.
+
+Interest income was $6.0 million for the 2026 Period, compared to $4.6 million for the 2025 Period. The $1.4 million increase was primarily due to a higher overall balance invested in the 2026 Period compared to the 2025 Period.
+
+Taxes
+
+The provision for income taxes was $5.8 million for the 2026 Period, compared to $5.7 million for the 2025 Period. The $0.1 million increase is primarily due to the impact of discrete nondeductible transaction costs related to the Azstarys Acquisition and the tax treatment of losses in the Swiss subsidiary acquired in the Azstarys Acquisition, partially offset by excess tax benefits related to stock compensation and lower earnings before taxes in the 2026 Period compared to the 2025 Period. The effective tax rate was 110.7% and 28.5% in the 2026 Period and 2025 Period, respectively.
+
+Liquidity and Capital Resources
+
+Sources of Liquidity
+
+Historically, we have funded our operations primarily through private placements and/or public offerings of our preferred stock, common stock, and convertible notes; term loan debt; and cash inflows from sales of our products. We are primarily dependent on the commercial success of Jornay PM, Azstarys, Belbuca, Xtampza ER, and the Nucynta Products.
+
+In December 2025, we entered into the 2025 Credit Agreement, which consists of the $580.0 million 2025 Term Loan, a $300.0 million of delayed draw term loan commitments, and a $100.0 million revolving credit facility, which was fully available as of June 30, 2026. The 2025 Term Loan was used to repay in full the remaining outstanding obligations under the 2024 Term Loan and to pay fees and expenses relating to the entry into the 2025 Credit Agreement and the remainder for general corporate purposes. In May 2026, the $300.0 million of delayed draw term loan was drawn to partially fund the Azstarys Acquisition.
+
+As of June 30, 2026, the outstanding principal balance of the 2025 Term Loan was $865.5 million, of which $55.0 million in principal payments are due within the next 12 months.
+
+As of June 30, 2026, the outstanding principal balance of the 2029 Convertible Notes was $241.5 million. The $241.5 million principal balance is due in 2029.
+
+As of June 30, 2026, we had $129.5 million in cash and cash equivalents. We believe that our cash and cash equivalents as of June 30, 2026, together with expected cash inflows from operations, will enable us to fund our operating expenses, debt service, and capital expenditure requirements under our current business plan for the foreseeable future.
+
+Borrowing Arrangements
+
+The following transactions represent our material borrowing arrangements: the 2025 Term Loan and the 2029 Convertible Notes. Refer to Note 12, Term Notes Payable, and Note 13, Convertible Senior Notes, for more information.
+
+46
+
+Table of Contents
+
+Cash Flows
+
+Six Months Ended June 30,
+
+2026 2025
+
+(in thousands)
+
+Net cash provided by operating activities $ 128,436 $ 127,837
+
+Net cash used in investing activities (500,964) (12,595)
+
+Net cash provided by (used in) financing activities 270,747 (73,606)
+
+Net (decrease) increase in cash, cash equivalents and restricted cash $ (101,781) $ 41,636
+
+Operating activities. Cash provided by operating activities was $128.4 million for the 2026 Period, compared to $127.8 million for the 2025 Period. The $0.6 million increase was primarily due to an increase in in cash flows from changes in working capital, partially offset by a decrease in cash flow from operating results, which reflects operating earnings after adjustment for non-cash items that are included in net loss.
+
+Investing activities. Cash used in investing activities was $501.0 million for the 2026 Period, compared to $12.6 million for the 2025 Period. The $488.4 million decrease was primarily due to $655.4 million cash paid to acquire Azstarys (net of cash acquired), partially offset by $151.8 million of cash provided by sales of marketable securities.
+
+Financing activities. Cash provided by financing activities was $270.7 million for the 2026 Period, compared to cash used in financing activities of $73.6 million in the 2025 Period. The $344.3 million increase was primarily due to $299.5 million in proceeds from the 2025 Credit Facility, a decrease in stock repurchases of $25.1 million, and a decrease in repayments of term notes of $17.8 million.
+
+Funding Requirements and Outlook
+
+We believe that our cash and cash equivalents as of June 30, 2026, together with expected cash inflows from operations, will enable us to fund our operating expenses, debt service, and capital expenditure requirements under our current business plan for the foreseeable future. However, we are subject to all the risks common to the commercialization and development of new pharmaceutical products, and we may encounter unforeseen expenses, difficulties, complications, delays and other unknown factors that may adversely affect our business.
+
+We have significant future capital requirements, including:
+
+•expected operating expenses to manufacture and commercialize our products and to operate our organization;
+
+•repayment of outstanding principal amounts and interest in connection with our 2025 Term Loan and 2029 Convertible Notes;
+
+•royalties we pay on sales of certain products within our portfolio;
+
+•operating lease obligations;
+
+•minimum purchase obligations in connection with our contract manufacturer;
+
+•cash paid for income taxes;
+
+•deferred royalty obligation in connection with Jornay PM; and
+
+•contingent payment upon the achievement of certain future commercial and manufacturing milestones related to Azstarys.
+
+In addition, we have significant potential future capital requirements, including:
+
+•we may enter into business development transactions, including the acquisitions, collaborations, licensing arrangements and equity investments, that require additional capital;
+
+•any judgments rendered against us in connection with any of the litigation matters set forth in Note 17, Commitments and Contingencies, to our financial statements; and
+
+•in July 2025, our Board of Directors authorized a new share repurchase program for the repurchase of up to $150.0 million of shares of our common stock through December 31, 2026. Future share repurchases will depend upon, among other factors, our cash balances and potential future capital requirements, our results of operations and financial conditions, the price of our common stock on the NASDAQ Global Select Market, and other factors that we may deem relevant.
+
+47
+
+Table of Contents
+
+Additional Information
+
+To supplement our financial results presented on a GAAP basis, we have included information about certain non-GAAP financial measures. We believe the presentation of these non-GAAP financial measures, when viewed with our results under GAAP and the accompanying reconciliations, provide analysts, investors, lenders, and other third parties with insights into how we evaluate normal operational activities, including our ability to generate cash from operations, on a comparable year-over-year basis and manage our budgeting and forecasting. In addition, certain non-GAAP financial measures, primarily adjusted EBITDA, are used to measure performance when determining components of annual compensation for substantially all non-sales force employees, including senior management.
+
+We may discuss the following financial measures that are not calculated in accordance with GAAP in our quarterly and annual reports, earnings press releases and conference calls.
+
+Adjusted EBITDA
+
+Adjusted EBITDA is a non-GAAP financial measure that represents GAAP net income or loss adjusted to exclude interest expense, interest income, the benefit from or provision for income taxes, depreciation, amortization, stock-based compensation, and other adjustments to reflect changes that occur in our business but do not represent ongoing operations. Adjusted EBITDA, as used by us, may be calculated differently from, and therefore may not be comparable to, similarly titled measures used by other companies.
+
+There are several limitations related to the use of adjusted EBITDA rather than net income or loss, which is the nearest GAAP equivalent, such as:
+
+•adjusted EBITDA excludes depreciation and amortization, and, although these are non-cash expenses, the assets being depreciated or amortized may have to be replaced in the future, the cash requirements for which are not reflected in adjusted EBITDA;
+
+•adjusted EBITDA does not reflect changes in, or cash requirements for, working capital needs;
+
+•adjusted EBITDA does not reflect the benefit from or provision for income taxes or the cash requirements to pay taxes;
+
+•adjusted EBITDA does not reflect historical cash expenditures or future requirements for capital expenditures or contractual commitments;
+
+•we exclude stock-based compensation expense from adjusted EBITDA although: (i) it has been, and will continue to be for the foreseeable future, a significant recurring expense for our business and an important part of our compensation strategy; and (ii) if we did not pay out a portion of our compensation in the form of stock-based compensation, the cash salary expense included in operating expenses would be higher, which would affect our cash position;
+
+•we exclude impairment expenses from adjusted EBITDA and, although these are non-cash expenses, the asset(s) being impaired may have to be replaced in the future, the cash requirements for which are not reflected in adjusted EBITDA;
+
+•we exclude restructuring expenses from adjusted EBITDA. Restructuring expenses primarily include employee severance and contract termination costs that are not related to acquisitions. The amount and/or frequency of these restructuring expenses are not part of our underlying business;
+
+•we exclude litigation settlements and contingencies that are subject to recovery from adjusted EBITDA, as well as any applicable income items, credit adjustments, or recoveries due to subsequent changes in estimates. This does not include our legal fees to defend claims, which are expensed as incurred;
+
+•we exclude acquisition-related expenses as these expenses would not have otherwise been incurred in the periods presented as part of our continuing operations and their exclusion is useful to investors because it enhances comparability of operating performance across periods. Acquisition-related expenses include transaction costs, which primarily consisted of financial advisory, banking, legal, and regulatory fees, and other consulting fees, incurred to complete the acquisition, employee-related expenses (severance cost and benefits) for terminated employees after the acquisition, legal defense expenses for specific acquired claims that relate to acts that occurred prior to our acquisition, and miscellaneous other acquisition-related expenses incurred;
+
+•we exclude recognition of the step-up basis in inventory from acquisitions (i.e., the adjustment to record inventory from historic cost to fair value at acquisition) as the adjustment does not reflect the ongoing expense associated with sale of our products as part of our underlying business;
+
+•we exclude losses on extinguishments of debt as these expenses are episodic in nature and do not directly correlate to the cost of operating our business on an ongoing basis;
+
+48
+
+Table of Contents
+
+•we exclude executive transition expenses from adjusted EBITDA as the amount and/or frequency of these expenses are episodic in nature and do not directly correlate to the cost of operating our business on an ongoing basis; and
+
+•we exclude other expenses, from time to time, that are episodic in nature and do not directly correlate to the cost of operating our business on an ongoing basis.
+
+Adjusted EBITDA for the three and six months ended June 30, 2026 and 2025 was as follows:
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+(in thousands) (in thousands)
+
+GAAP net (loss) income $ (15,051) $ 11,983 $ (555) $ 14,400
+
+Adjustments:
+
+Interest expense 19,519 20,463 35,381 41,253
+
+Interest income (2,289) (2,383) (5,995) (4,608)
+
+Provision for income taxes 1,519 5,042 5,763 5,747
+
+Depreciation 1,812 1,135 2,275 2,226
+
+Amortization 62,953 55,473 118,426 110,946
+
+Stock-based compensation 14,484 10,818 25,364 22,342
+
+Recognition of step-up basis in inventory 5,417 1,954 5,417 5,431
+
+Executive transition expense 1,393 — 1,393 1,397
+
+Acquisition-related expenses 24,086 935 30,261 2,224
+
+Gain on fair value remeasurement of contingent consideration — (358) — (1,144)
+
+Total adjustments $ 128,894 $ 93,079 $ 218,285 $ 185,814
+
+Adjusted EBITDA $ 113,843 $ 105,062 $ 217,730 $ 200,214
+
+Adjusted EBITDA was $113.8 million for the 2026 Quarter compared to $105.1 million for the 2025 Quarter. The $8.7 million increase was primarily due to higher revenues of $11.9 million, partially offset by higher adjusted operating expenses of $4.7 million.
+
+Adjusted EBITDA was $217.7 million for the 2026 Period compared to $200.2 million for the 2025 Period. The $17.5 million increase was primarily due to higher revenues of $27.6 million, partially offset by higher adjusted operating expenses of $11.8 million.
+
+49
+
+Table of Contents
+
+Adjusted Operating Expenses
+
+Adjusted operating expenses is a non-GAAP financial measure that represents GAAP operating expenses adjusted to exclude stock-based compensation expense, and other adjustments to reflect changes that occur in our business but do not represent ongoing operations.
+
+Adjusted operating expenses for three and six months ended June 30, 2026 and 2025 were as follows:
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+(in thousands) (in thousands)
+
+GAAP operating expenses $ 106,594 $ 73,279 $ 192,944 $ 148,916
+
+Adjustments:
+
+Stock-based compensation 14,484 10,818 25,364 22,342
+
+Executive transition expense 1,393 — 1,393 1,397
+
+Acquisition-related expenses 24,086 935 30,261 2,224
+
+Gain on fair value remeasurement of contingent consideration — (358) — (1,144)
+
+Total adjustments $ 39,963 $ 11,395 $ 57,018 $ 24,819
+
+Adjusted operating expenses $ 66,631 $ 61,884 $ 135,926 $ 124,097
+
+Adjusted operating expenses were $66.6 million in the 2026 Quarter compared to $61.9 million in the 2025 Quarter. The $4.7 million increase was primarily driven by:
+
+•an increase in salaries, wages, and benefits (excluding stock-based compensation and executive transition expense) of $3.5 million; and
+
+•an increase in sales and marketing expenses of $0.8 million, primarily due to expenses incurred to support Jornay PM and Azstarys.
+
+Adjusted operating expenses were $135.9 million in the 2026 Period compared to $124.1 million in the 2025 Period. The $11.8 million increase was primarily driven by:
+
+•an increase in salaries, wages, and benefits (excluding stock-based compensation and executive transition expense) of $9.8 million; and
+
+•an increase in sales and marketing expenses of $3.9 million, primarily due to expenses incurred to support Jornay PM and Azstarys; partially offset by
+
+•a decrease in insurance expenses of $1.2 million, primarily due to lower product liability insurance expenses.
+
+50
+
+Table of Contents
+
+Adjusted Net Income and Adjusted Earnings Per Share
+
+Adjusted net income is a non-GAAP financial measure that represents GAAP net income or loss adjusted to exclude significant income and expense items that are non-cash or not indicative of ongoing operations, including consideration of the tax effect of the adjustments. Adjusted earnings per share is a non-GAAP financial measure that represents adjusted net income per share. Adjusted weighted-average shares — diluted is calculated in accordance with the treasury stock, if-converted, or contingently issuable accounting methods, depending on the nature of the security.
+
+Adjusted net income and adjusted earnings per share for the three and six months ended June 30, 2026 and 2025 were as follows:
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+(in thousands, except share and per share data)
+
+GAAP net (loss) income $ (15,051) $ 11,983 $ (555) $ 14,400
+
+Adjustments:
+
+Non-cash interest expense 1,082 1,355 1,901 2,722
+
+Amortization 62,953 55,473 118,426 110,946
+
+Stock-based compensation 14,484 10,818 25,364 22,342
+
+Recognition of step-up basis in inventory 5,417 1,954 5,417 5,431
+
+Executive transition expense 1,393 — 1,393 1,397
+
+Acquisition-related expenses 24,086 935 30,261 2,224
+
+Gain on fair value remeasurement of contingent consideration — (358) — (1,144)
+
+Income tax effect of above adjustments (1)
+(18,959) (17,871) (37,588) (36,608)
+
+Total adjustments $ 90,456 $ 52,306 $ 145,174 $ 107,310
+
+Non-GAAP adjusted net income $ 75,405 $ 64,289 $ 144,619 $ 121,710
+
+Adjusted weighted-average shares — diluted (2)
+39,935,892 39,075,703 40,076,322 39,283,297
+
+Adjusted earnings per share (2)
+$ 1.92 $ 1.68 $ 3.67 $ 3.16
+
+(1)The income tax effect of the adjustments was calculated by applying our blended federal and state statutory rate to the items that have a tax effect. The blended federal and state statutory rate for the three months ended June 30, 2026 and 2025 were 22.9% and 25.7%, respectively; and the blended federal and state statutory rate for the six months ended June 30, 2026 and 2025 were 23.6% and 25.8%, respectively. As such, the non-GAAP effective tax rates for the three months ended June 30, 2026 and 2025 were 17.3% and 25.5%, respectively; and the non-GAAP effective tax rates for the six months ended June 30, 2026 and 2025 were 20.6% and 25.4%, respectively.
+
+(2)Adjusted weighted-average shares - diluted were calculated using the “if-converted” method for our convertible notes in accordance with ASC 260, Earnings per Share. As such, adjusted weighted-average shares – diluted includes shares related to the assumed conversion of our convertible notes and the associated cash interest expense is added-back to non-GAAP adjusted net income. For the three and six months ended June 30, 2026 and 2025, adjusted weighted-average shares – diluted includes 6,606,305 shares attributable to our convertible notes. In addition, adjusted earnings per share includes other potentially dilutive securities to the extent that they are not antidilutive.
+
+Contractual Obligations
+
+There have been no material changes to the contractual obligations and commitments described under Management’s Discussion and Analysis of Financial Condition and Results of Operations from our most recently filed Annual Report.
+
+51
+
+Table of Contents

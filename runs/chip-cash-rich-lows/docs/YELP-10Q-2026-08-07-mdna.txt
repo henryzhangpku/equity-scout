@@ -1,0 +1,407 @@
+ITEM 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+
+The following discussion and analysis of our financial condition and results of operations should be read in conjunction with our condensed consolidated financial statements and related notes appearing elsewhere in this Quarterly Report. This discussion contains forward-looking statements that reflect our plans, estimates and beliefs, and involve risks and uncertainties. Our actual results and the timing of certain events could differ materially from those anticipated in these forward-looking statements as a result of several factors, including those discussed in the section titled “Risk Factors” included under Part I, Item 1A in our Annual Report. See “Special Note Regarding Forward-Looking Statements” in this Quarterly Report.
+
+Overview
+
+As one of the best known Internet brands in the United States, Yelp is a trusted local resource for consumers and a partner in success for businesses of all sizes. Consumers trust us for the more than 300 million ratings and reviews available on our platform of businesses across a broad range of categories, while businesses advertise with us to reach our large audience of what we believe are purchase-oriented and generally affluent consumers.
+
+We generate substantially all of our revenue from the sale of performance-based advertising products, which our advertising platform matches to individual consumers through auctions priced on a cost-per-click (“CPC”) basis. In the three months ended June 30, 2026, our net revenue was $375.5 million, up 1% from the three months ended June 30, 2025, and we recorded net income of $31.7 million and adjusted EBITDA of $91.4 million. In the six months ended June 30, 2026, our net revenue was $737.0 million, up 1% from the six months ended June 30, 2025, and we recorded net income of $49.4 million and adjusted EBITDA of $170.8 million. For information on how we define and calculate adjusted EBITDA, and a reconciliation of this non-GAAP financial measure to net income, see “Non-GAAP Financial Measures” below.
+
+In the second quarter of 2026, we continued to make progress transforming Yelp with artificial intelligence (“AI”) through our strategic investments in product innovation:
+
+•Reconceive Yelp Around Answers and Actions. As we continued to transform the consumer experience on Yelp in the second quarter, we saw encouraging traffic trends, with year-over-year improvements in app installs and page views. As we improved the tool’s performance and user experience with features like faster response rates and increased personalization, we observed positive signs related to user engagement, including repeat usage. In Services categories, continued adoption of Yelp Assistant drove approximately 10% of all Request-a-Quote projects1 in the second quarter, contributing to overall Request-a-Quote project growth of approximately 10% year over year.
+
+•Deliver AI Tools that Help Businesses Grow, Operate and Succeed. In the second quarter, we continued to scale Yelp Host, our AI-powered call answering service for restaurants, which reached an annual run rate2 of 2.4 million calls handled in July 2026, more than tripling from January 2026. We recently expanded Yelp Host’s capabilities through the addition of food ordering functionality with point-of-sale integration, which allows restaurants to take phone pickup orders without commission fees, as well as through our recently announced integration with OpenTable, which enables customers to book, modify and cancel reservations within Yelp Host. Hatch has also demonstrated continued progress since we acquired it in February 2026, with annual run rate revenue of approximately $35 million in June 2026. With increased product and engineering resources, the Hatch team made progress against their roadmap in the second quarter, shipping conversational analytics, outbound voice, enhancements to Google Local Services Ads and ServiceTitan integrations, and several optimizations to the core voice model.
+
+•Extend Our Reach to Power Local Discovery Across the AI Ecosystem. Demand for our data licensing products was robust in the second quarter, including from our partnership with OpenAI, contributing to strong growth in other revenue. Yelp ratings and reviews recently began powering ChatGPT’s local experience in relevant categories. Building on our success with Apple Maps and Yahoo, we also expect Request-a-Quote integration with ChatGPT to launch in the coming weeks.
+
+In the second quarter, broad strength in other revenue drove modest year-over-year net revenue growth as the economic environment facing consumers and local businesses continued to be challenging. We expect these adverse conditions to persist and continue impacting advertising revenue across categories in the third quarter, driving a slight year-over-year decrease in net
+
+1 Projects created by users through a Request-a-Quote flow or Yelp Assistant.
+
+2 References to the “annual run rate” of certain metrics included in this Quarterly Report are calculated by annualizing the metric’s results for the indicated period, excluding out-of-period adjustments with respect to revenue figures. For example, we calculate annual run rate based on a metric’s results for a given month by multiplying those results by 12, or for a given quarter by multiplying the results by four.
+
+27
+
+Table of Contents
+
+revenue. As our other revenue streams continue to gain traction, we are continuing to target an annual run rate of $250 million in other revenue by the end of 2028.
+
+We expect expenses will increase sequentially in the third quarter as we invest in our AI transformation, provide Hatch with additional resources to accelerate its product roadmap and go-to-market strategy, and invest in consumer marketing, which we anticipate will result in a year-over-year decrease in adjusted EBITDA in the third quarter.
+
+Key Metrics
+
+We regularly review a number of metrics, including the key metrics set forth below, to evaluate our business, measure our performance, identify trends in our business, prepare financial projections and make strategic decisions.
+
+Ad Clicks and Average CPC
+
+The amount of revenue we generate from our pay-for-performance advertising products is determined by the number of ad clicks we deliver to advertisers and the price we charge for each ad click.
+
+Ad clicks represent user interactions with our pay-for-performance advertising products, including clicks on advertisements on our website and mobile app, clicks on syndicated advertisements on third-party platforms and Request-a-Quote submissions, among others. Ad clicks include only user interactions that we are able to track directly, and therefore do not include user interactions with ads sold through our advertising partnerships. We do not expect the exclusion of such user interactions to materially affect this metric. We report the year-over-year percentage change in ad clicks as a measure of our success in monetizing more of our consumer activity and delivering more value to advertisers.
+
+Average CPC is calculated as revenue from our performance-based ad products — excluding certain revenue adjustments that do not impact the outcome of an auction for an individual ad click, such as refunds, as well as revenue from our advertising partnerships — divided by the total number of ad clicks for a given period. Average CPC represents the average amount we charge advertisers for each ad click.
+
+We believe that ad clicks and average CPC together reflect one of the most significant dynamics affecting our advertising revenue performance: the interplay of advertiser demand and consumer activity. At the level of an auction for an individual ad click, advertiser demand — consisting of advertiser budgets and the number of advertisers competing to purchase the ad click — intersects with the supply of consumer activity — consisting of the predicted levels of relevant consumer traffic and engagement — to determine CPC, with higher advertiser demand putting upward pressure on the CPC and higher consumer activity putting downward pressure on the CPC. In aggregate, advertiser demand consists of the number of business locations advertising with us (which we refer to as paying advertising locations, as discussed below) and the aggregate budget they allocate to purchasing our advertising products. Aggregate monetizable consumer activity depends on the levels of consumer traffic and engagement with our ads, the numbers of locations where we can display ads and other monetizable features, and our click-through rate, which is the ratio of ad clicks to the number of times the ads were displayed to consumers. The relative strengths of these factors in aggregate are reflected in average CPC.
+
+Ad clicks and average CPC also provide important insight into the value we deliver to advertisers, which we believe is a significant factor in our ability to retain both revenue and customers. For example, a positive change in ad clicks for a given period combined with lower growth or a negative change in average CPC over the same period would indicate that we delivered more ad clicks at lower prices, thereby delivering more value to our advertisers; we would expect this to have a positive impact on retention. Conversely, growth in average CPC paired with a negative or lower growth rate in ad clicks would indicate we charged more without delivering more ad clicks; we would expect this to have a negative impact on retention unless we are able to increase the value we deliver through higher performing ad clicks.
+
+The following table presents year-over-year changes in our ad clicks and average CPC for the periods presented (each expressed as a percentage):
+
+Three Months Ended
+
+June 30, Six Months Ended
+
+June 30,
+
+2026 2025 2026 2025
+
+Ad Clicks (5)% (7)% (8)% (5)%
+
+Average CPC 1% 11% 4% 10%
+
+Ad clicks decreased year over year in the three and six months ended June 30, 2026, primarily due to decreases in Restaurants, Retail & Other (“RR&O”) ad clicks, partially offset by slight increases in Services ad clicks.
+
+28
+
+Table of Contents
+
+Average CPC increased in the three and six months ended June 30, 2026, primarily as a result of Services ad clicks, which generally have higher CPCs than RR&O clicks, comprising a greater portion of total ad clicks compared to the prior year, partially offset by modest decreases in average CPC in Services categories resulting from relatively stable advertiser demand together with increased consumer engagement.
+
+These trends reflect the economic uncertainties facing consumers, the challenging operating environment for local businesses and, to a lesser extent, competitive pressures in RR&O categories from food ordering and delivery providers.
+
+Advertising Revenue by Category
+
+We generate advertising revenue from the sale of our advertising products — including business page upgrades and performance-based advertising in search results and elsewhere on our platform — to businesses of all sizes, from single-location local businesses to multi-location national businesses (“Yelp Ads”). Advertising revenue also includes revenue generated from the resale of our advertising products by certain partners and monetization of advertising inventory through third-party ad networks, as well as revenue generated from RepairPal.
+
+To reflect our strategic focus on creating two differentiated experiences on Yelp, we provide a breakdown of our advertising revenue attributable to businesses in two high-level category groupings: Services and RR&O. Our Services categories consist of home, local, auto, professional, pets, events, real estate and financial services. Our RR&O categories consist of restaurants, shopping, beauty & fitness, health and other.
+
+Refer to “Results of Operations — Net Revenue” below for further discussion of our advertising revenue by category.
+
+Paying Advertising Locations
+
+Paying advertising locations comprise all business locations associated with a business account from which we recognized advertising revenue in a given month, excluding business accounts that purchased advertising through partner programs other than Yelp Ads Certified Partners, averaged over a given period. We also provide a breakdown of paying advertising locations between our Services categories and RR&O categories.
+
+We provide our paying advertising locations as a measure of the reach and scale of our business; however, this metric may exhibit short-term volatility as a result of factors such as seasonality and macroeconomic conditions. For example, macroeconomic factors, particularly those affecting local economies such as labor and supply chain issues, inflation and recessionary concerns, and interest rates, have had a predominant negative impact on RR&O paying advertising locations in recent periods. Short-term fluctuations in paying advertising locations may also reflect the acquisition or loss of single advertising accounts associated with large numbers of locations, or the pausing/restarting of advertising campaigns by such multi-location advertisers.
+
+The following table presents the number of paying advertising locations for the periods presented (in thousands, except percentages):
+
+Three Months Ended
+
+June 30, % Change Six Months Ended
+
+June 30, % Change
+
+2026 2025 2026 2025
+
+Services 259 260 —% 255 260 (2)%
+
+Restaurants, Retail & Other 251 255 (2)% 243 256 (5)%
+
+Total Paying Advertising Locations 510 515 (1)% 498 516 (4)%
+
+Paying advertising locations decreased in the three and six months ended June 30, 2026 compared to the prior-year periods, reflecting decreases in RR&O paying advertising locations and, in the six months ended June 30, 2026, a decrease in Services paying advertising locations. We believe the decreases in paying advertising locations primarily reflect the challenging operating environment facing local businesses, particularly in RR&O categories, and, to a lesser extent, competition for ad spend from such businesses, including from food ordering and delivery providers.
+
+29
+
+Table of Contents
+
+Results of Operations
+
+The following table sets forth our results of operations for the periods presented (in thousands, except percentages). The period-to-period comparison of financial results is not necessarily indicative of the results of operations to be anticipated for the full year 2026 or any future period.
+
+Three Months Ended
+
+June 30,
+% Change(1)
+Six Months Ended
+
+June 30,
+
+2026 2025 $ Change 2026 2025 $ Change
+% Change(1)
+
+Condensed Consolidated Statements of Operations Data:
+
+Net revenue by product:
+
+Services $ 240,963 $ 240,802 $ 161 — % $ 474,749 $ 472,378 $ 2,371 1 %
+
+Restaurants, Retail & Other 101,532 112,895 (11,363) (10) % 200,234 223,320 (23,086) (10) %
+
+Total advertising
+342,495 353,697 (11,202) (3) % 674,983 695,698 (20,715) (3) %
+
+Other 33,024 16,697 16,327 98 % 61,993 33,230 28,763 87 %
+
+Total net revenue 375,519 370,394 5,125 1 % 736,976 728,928 8,048 1 %
+
+Costs and expenses:
+
+Cost of revenue (exclusive of depreciation and amortization shown separately below) 41,776 35,447 6,329 18 % 80,185 70,275 9,910 14 %
+
+Sales and marketing 153,562 144,612 8,950 6 % 306,572 290,896 15,676 5 %
+
+Product development 70,468 78,362 (7,894) (10) % 147,625 162,267 (14,642) (9) %
+
+General and administrative 47,865 46,318 1,547 3 % 97,215 98,025 (810) (1) %
+
+Depreciation and amortization 18,118 12,365 5,753 47 % 34,351 24,715 9,636 39 %
+
+Total costs and expenses 331,789 317,104 14,685 5 % 665,948 646,178 19,770 3 %
+
+Income from operations 43,730 53,290 (9,560) (18) % 71,028 82,750 (11,722) (14) %
+
+Other income, net 733 5,695 (4,962) (87) % 3,319 11,466 (8,147) (71) %
+
+Income before income taxes 44,463 58,985 (14,522) (25) % 74,347 94,216 (19,869) (21) %
+
+Provision for income taxes 12,811 14,896 (2,085) (14) % 24,960 25,736 (776) (3) %
+
+Net income attributable to common stockholders $ 31,652 $ 44,089 $ (12,437) (28) % $ 49,387 $ 68,480 $ (19,093) (28) %
+
+(1) Percentage changes may not recalculate using the rounded numbers presented in this table.
+
+Three and Six Months Ended June 30, 2026 and 2025
+
+Net Revenue
+
+Net revenue increased slightly in the three months ended June 30, 2026 compared to the prior-year period, primarily driven by growth in other revenue, partially offset by a decrease in advertising revenue from RR&O businesses.
+
+Net revenue increased slightly in the six months ended June 30, 2026 compared to the prior-year period, primarily driven by growth in other revenue and higher advertising revenue from Services businesses, partially offset by a decrease in advertising revenue from RR&O businesses.
+
+Advertising. Advertising revenue for the three and six months ended June 30, 2026 decreased 3% year over year. The decline in advertising revenue for the three months ended June 30, 2026 was primarily driven by a decrease in RR&O revenue as a result of lower ad clicks and lower average CPC.
+
+The decline in advertising revenue for the six months ended June 30, 2026 was primarily driven by a decrease in RR&O revenue, partially offset by an increase in Services revenue. The decline in RR&O revenue was driven by a decrease in ad clicks, partially offset by an increase in average CPC. The growth in Services revenue was driven by an increase in ad clicks, partially offset by a decrease in average CPC.
+
+Other. We generate other revenue through non-advertising contracts, such as our subscription services, which include our Yelp Guest Manager, Yelp Receptionist, Yelp Host and Hatch offerings, as well as our Yelp Places, Yelp AI, and Yelp Insights API programs, which provide Yelp content and data for a fee. In addition, other revenue includes revenue from various transactions with consumers. We generate revenue from our partnership integrations for food ordering through a combination of transaction-based, revenue-sharing agreements, under which we act as an agent and recognize fees on a net basis upon
+
+30
+
+Table of Contents
+
+completion of each transaction, and fixed annual fee arrangements that may be adjusted based on engagement metrics such as click to order volume.
+
+Other revenue for the three and six months ended June 30, 2026 increased compared to the prior-year periods, primarily due to the addition of revenue from Hatch, as well as increased revenue from our Yelp Places API program and growth in food ordering from our partnership with DoorDash.
+
+Trends and Uncertainties of Net Revenue. We anticipate net revenue will decrease slightly in the three months ended September 30, 2026 compared to the prior-year period, reflecting the continued economic challenges facing consumers and local businesses. However, we expect our strategic initiatives will continue to drive strong growth in other revenue.
+
+Costs and Expenses
+
+Cost of Revenue (exclusive of depreciation and amortization). Our cost of revenue consists primarily of website infrastructure expense, which includes website hosting costs and employee-related costs (including stock-based compensation expense) for the infrastructure teams responsible for operating our website and mobile app as well as the RepairPal and Hatch websites, and excludes depreciation and amortization expense. Cost of revenue also includes third-party advertising fulfillment costs, credit card processing fees and revenue share payments, which primarily consist of payments to RepairPal referral partners.
+
+Cost of revenue for the three and six months ended June 30, 2026 increased compared to the prior-year periods, primarily due to:
+
+•increases in website infrastructure expense of $2.9 million and $5.2 million, respectively, as a result of maintaining and enhancing our infrastructure, including the integration of AI products; and
+
+•additional infrastructure expense of $3.3 million and $5.0 million, respectively, due to our acquisition of Hatch.
+
+The increase during the six month period was partially offset by a $2.6 million decrease in advertising fulfillment costs, largely attributable to lower costs to syndicate advertising budgets on certain third-party site as well as a decrease in Yelp Audiences spend.
+
+We expect cost of revenue to increase on an absolute dollar basis in 2026 compared to 2025, primarily due to our planned investments in AI capabilities.
+
+Sales and Marketing. Our sales and marketing expenses primarily consist of employee-related costs (including sales commission and stock-based compensation expenses) for our sales and marketing employees. Sales and marketing expenses also include business and consumer acquisition marketing, community management, as well as allocated workplace and other supporting overhead costs.
+
+Sales and marketing expenses for the three and six months ended June 30, 2026 increased compared to the prior-year periods, primarily due to:
+
+•increases of $6.5 million and $11.8 million, respectively, in marketing and advertising costs, primarily driven by our investments in acquiring Services projects as well as increased spend in business owner marketing; and
+
+•increases of $3.4 million and $3.3 million, respectively, in workplace operating costs, primarily due to the impact of a $1.2 million rent abatement that benefited the prior-year periods, as well as other increases that were not individually significant.
+
+Sales and marketing employee-related costs remained relatively flat for both periods, as additional headcount related to Hatch was offset with lower average headcount in sales and marketing roles excluding Hatch.
+
+We expect sales and marketing expenses to increase on an absolute dollar basis and as a percentage of revenue in 2026 compared to 2025, primarily due to marketing investments.
+
+Product Development. Our product development expenses primarily consist of employee-related costs (including bonuses and stock-based compensation expense, net of capitalized employee-related costs associated with capitalized website and internal-use software development) for our engineers, product management and corporate infrastructure employees. In addition, product development expenses include allocated workplace and other supporting overhead costs.
+
+Product development expenses for the three and six months ended June 30, 2026 decreased compared to the prior-year periods primarily due to decreases of $13.5 million and $22.4 million, respectively, in employee-related costs resulting from lower average headcount, a higher proportion of employee work directed toward infrastructure enhancements (resulting in more
+
+31
+
+Table of Contents
+
+costs included in cost of revenue), more employee costs being capitalized, and lower cost of labor. These decreases were partially offset by $2.7 million and $4.2 million, respectively, in additional headcount costs related to Hatch.
+
+The decrease during the six months ended June 30, 2026 was partially offset by an increase of $1.8 million in consulting costs primarily due to the acquisition of Hatch.
+
+We expect product development expenses to decrease both on an absolute dollar basis and as a percentage of revenue in 2026 compared to 2025, inclusive of additional headcount related to Hatch, as we realize cost efficiencies within our organization.
+
+General and Administrative. Our general and administrative expenses primarily consist of employee-related costs (including bonuses and stock-based compensation expense) for our executive, finance, user operations, legal, people operations and other administrative employees. Our general and administrative expenses also include our provision for credit losses, certain consulting and professional services costs, including litigation settlements, as well as allocated workplace and other supporting overhead costs.
+
+General and administrative expenses for the three months ended June 30, 2026 increased compared to the prior-year period primarily due to:
+
+•an increase of $3.5 million in acquisition and integration costs related to the acquisition of Hatch; and
+
+•an increase of $1.2 million in legal costs.
+
+These increases were partially offset by a decrease in our provision for credit losses of $3.4 million primarily due to lower customer delinquencies.
+
+General and administrative expenses for the six months ended June 30, 2026 decreased compared to the prior-year period primarily due to:
+
+•a decrease in our provision for credit losses of $4.6 million due to lower customer delinquencies; and
+
+•a decrease in indemnifiable expenses of $3.9 million related to the RepairPal acquisition.
+
+These decreases were partially offset by the inclusion of $7.9 million in acquisition and integration costs related to the acquisition of Hatch in the current year.
+
+We expect general and administrative expenses to increase on an absolute dollar basis and as a percentage of revenue in 2026 compared to 2025 as we continue to support our business and integrate Hatch.
+
+Depreciation and Amortization. Depreciation and amortization expense primarily consists of depreciation and amortization on capitalized website and internal-use software development costs, computer equipment, leasehold improvements, and intangible assets.
+
+Depreciation and amortization expense for the three and six months ended June 30, 2026 increased compared to the prior-year periods, primarily due to:
+
+•increases of $4.2 million and $7.0 million, respectively, as a result of amortization of intangible assets acquired in the Hatch acquisition. See Note 6, “Acquisitions,” of the Notes to Condensed Consolidated Financial Statements for further detail; and
+
+•increases of $2.1 million and $3.9 million, respectively, as a result of higher capitalized website and internal-use software development costs.
+
+Other Income, Net
+
+Other income, net consists primarily of the interest income earned on our cash, cash equivalents and marketable securities, research and development tax credits, the portion of our sublease income in excess of our lease cost, accretion of discounts and amortization of premiums on investments, and credit facility-related interest and fees.
+
+Other income, net for the three and six months ended June 30, 2026 decreased compared to the prior-year periods, primarily due to:
+
+•decreases in interest income of $2.6 million and $4.5 million, respectively, as a result of lower average cash, cash equivalents, and marketable securities balances and lower interest rates; and
+
+32
+
+Table of Contents
+
+•increases in interest expense of $1.5 million and $2.5 million, respectively, primarily related to credit facility borrowings incurred during the current year.
+
+Provision for Income Taxes
+
+Provision for income taxes consists of: federal and state income taxes in the United States and income taxes in certain foreign jurisdictions; and deferred income taxes reflecting the net tax effects of temporary differences between the carrying amounts of assets and liabilities for financial reporting purposes and the amounts used for income tax purposes.
+
+Provision for income taxes for the three and six months ended June 30, 2026 decreased compared to the prior-year periods primarily due to decreases in income before income taxes in the current-year periods, partially offset by increases in the discrete tax expense primarily related to stock-based compensation.
+
+As of December 31, 2025, we had approximately $115.5 million in net deferred tax assets (“DTAs”). As of June 30, 2026, we consider it more likely than not that we will have sufficient taxable income in the future that will allow us to realize these DTAs. However, it is possible that some or all of these DTAs will not be realized. Therefore, unless we are able to generate sufficient taxable income from our operations, a substantial valuation allowance may be required to reduce our DTAs, which would materially increase our expenses in the period in which we recognize the allowance and have a materially adverse impact on our condensed consolidated financial statements. The exact timing and amount of the valuation allowance recognition are subject to change on the basis of the net income that we are able to actually achieve. We will continue to evaluate the possible recognition of a valuation allowance on a quarterly basis.
+
+In July 2025, the congressional bill known as the One Big Beautiful Bill Act (“OBBBA”) was signed into law, which, among other things, restored certain favorable corporate tax provisions, including permitting full expensing of domestic research and development expenses. As of June 30, 2026, the impacts of the OBBBA are reflected in the 2026 estimated annual effective tax rate calculated in accordance with accounting principles generally accepted in the United States (“GAAP”).
+
+Non-GAAP Financial Measures
+
+Our condensed consolidated financial statements are prepared in accordance with GAAP. However, we have also disclosed below adjusted EBITDA, adjusted EBITDA margin and free cash flow, each of which is a non-GAAP financial measure.
+
+Adjusted EBITDA and free cash flow have limitations as analytical tools, and you should not consider them in isolation or as substitutes for analysis of our results as reported under GAAP. In particular, adjusted EBITDA and free cash flow should not be viewed as substitutes for, or superior to, net income (loss) or net cash provided by (used in) operating activities prepared in accordance with GAAP as measures of profitability or liquidity. Some of these limitations are:
+
+•although depreciation and amortization are non-cash charges, the assets being depreciated and amortized may have to be replaced in the future, and adjusted EBITDA does not reflect all cash capital expenditure requirements for such replacements or for new capital expenditure requirements;
+
+•adjusted EBITDA does not reflect changes in, or cash requirements for, our working capital needs;
+
+•adjusted EBITDA does not reflect the impact of the recording or release of valuation allowances or tax payments that may represent a reduction in cash available to us;
+
+•adjusted EBITDA does not consider the potentially dilutive impact of equity-based compensation;
+
+•adjusted EBITDA does not take into account certain income and expense items, such as indemnifiable expenses, acquisition and integration costs, or other costs that management determines are not indicative of ongoing operating performance;
+
+•free cash flow does not represent the total residual cash flow available for discretionary purposes because it does not reflect our contractual commitments or obligations; and
+
+•other companies, including those in our industry, may calculate adjusted EBITDA and free cash flow differently, which reduces their usefulness as comparative measures.
+
+Because of these limitations, you should consider adjusted EBITDA, adjusted EBITDA margin and free cash flow alongside other financial performance measures, including net income (loss), net cash provided by (used in) operating activities and our other GAAP results.
+
+Adjusted EBITDA. Adjusted EBITDA is a non-GAAP financial measure that we calculate as net income (loss), adjusted to exclude: provision for (benefit from) income taxes; other income (expense), net; depreciation and amortization; stock-based
+
+33
+
+Table of Contents
+
+compensation expense; and, in certain periods, certain other operating income and expense items, such as expenses for which we expect to be indemnified, acquisition and integration costs, and other items we deem not to be indicative of our ongoing operating performance.
+
+Adjusted EBITDA margin. Adjusted EBITDA margin is a non-GAAP financial measure that we calculate as adjusted EBITDA divided by net revenue.
+
+The following is a reconciliation of net income to adjusted EBITDA, as well as the calculation of net income margin and adjusted EBITDA margin, for the periods presented (in thousands, except percentages):
+
+Three Months Ended
+
+June 30, Six Months Ended
+
+June 30,
+
+2026 2025 2026 2025
+
+Reconciliation of Net Income to Adjusted EBITDA:
+
+Net income $ 31,652 $ 44,089 $ 49,387 $ 68,480
+
+Provision for income taxes 12,811 14,896 24,960 25,736
+
+Other income, net (733) (5,695) (3,319) (11,466)
+
+Depreciation and amortization 18,118 12,365 34,351 24,715
+
+Stock-based compensation 25,749 34,775 56,256 72,244
+
+Indemnifiable expenses(1)(2)
+352 55 1,248 5,181
+
+Acquisition and integration costs(1)(3)
+3,480 — 7,900 539
+
+Adjusted EBITDA $ 91,429 $ 100,485 $ 170,783 $ 185,429
+
+Net revenue $ 375,519 $ 370,394 $ 736,976 $ 728,928
+
+Net income margin 8 % 12 % 7 % 9 %
+
+Adjusted EBITDA margin 24 % 27 % 23 % 25 %
+
+(1) Recorded within general and administrative expenses on our condensed consolidated statements of operations.
+
+(2) Represents expenses for which we expect to be indemnified in connection with our acquisition of RepairPal. Indemnifiable expenses during the three and six months ended June 30, 2025 consist of expenses recorded in connection with an indemnification obligation assumed in the RepairPal acquisition, for which we were subsequently indemnified through the release of a portion of the RepairPal holdback. See Note 6, “Acquisitions,” of the Notes to Condensed Consolidated Financial Statements for further detail.
+
+(3) Acquisition and integration costs during the three and six months ended June 30, 2026 represent costs related to the Hatch acquisition and include accrued acquisition- and integration-related compensation. Acquisition and integration costs during the three and six months ended June 30, 2025 represent costs related to the RepairPal acquisition. For more information on the acquisition and integration costs, see Note 6, “Acquisitions.”
+
+Free Cash Flow. Free cash flow is a non-GAAP financial measure that we calculate as net cash provided by (used in) operating activities, less cash used for purchases of property, equipment and software.
+
+34
+
+Table of Contents
+
+The following is a reconciliation of net cash provided by operating activities to free cash flow for the periods presented (in thousands):
+
+Six Months Ended
+
+June 30,
+
+2026 2025
+
+Reconciliation of Net Cash Provided by Operating Activities to Free Cash Flow:
+
+Net cash provided by operating activities $ 133,638 $ 156,029
+
+Purchases of property, equipment and software (27,409) (23,555)
+
+Free cash flow $ 106,229 $ 132,474
+
+Net cash used in investing activities $ (183,266) $ (26,620)
+
+Net cash used in financing activities $ (72,214) $ (151,582)
+
+Liquidity and Capital Resources
+
+Sources of Liquidity
+
+Our principal sources of liquidity are our cash and cash generated from operations. As of June 30, 2026, we had cash and cash equivalents of $94.1 million, including cash held internationally of $37.5 million.
+
+We also have the ability to access backup liquidity to fund working capital and for other capital requirements, as needed, through the credit facility established pursuant to the Credit Agreement (as defined in Note 11, “Commitments and Contingencies,” of the Notes to Condensed Consolidated Financial Statements included under Part I, Item 1 in this Quarterly Report). The Credit Agreement provides for a $325.0 million senior secured revolving credit facility, which includes a $35.0 million letter of credit sub-limit, a $25.0 million bilateral letter of credit facility and an accordion option, which, if exercised, would allow us to increase the aggregate commitments by up to $250.0 million, plus additional amounts if we are able to satisfy a leverage test, subject to certain conditions. The commitments under the credit facility expire on April 28, 2028.
+
+As of June 30, 2026, we had $100.0 million of outstanding borrowings and $4.3 million of letters of credit outstanding under the credit facility sub-limit, with $220.7 million remaining available under the credit facility. The letters of credit are primarily to secure an office location. We were in compliance with all conditions and covenants thereunder as of June 30, 2026.
+
+Material Cash Requirements
+
+Our capital allocation strategy consists of investing in future growth, pursuing strategic acquisitions through a combination of cash and financing, and aiming to return more than 50% of free cash flow to shareholders each year through share repurchases. Our future capital requirements for these and other priorities, as well as the adequacy of available funds, will depend on many factors, including those set forth under “Risk Factors” included under Part I, Item 1A in our Annual Report. We believe that our existing cash, together with any cash generated from operations, will be sufficient to meet our material cash requirements in the next 12 months and beyond, including: working capital requirements; our anticipated repurchases of common stock pursuant to our stock repurchase program; payment of taxes related to the net share settlement of equity awards; payment of lease costs related to our operating leases; income tax payments; and purchases of property, equipment and software and website hosting services. We will also require cash to repay amounts outstanding under our credit facility and interest thereon, which we plan to prioritize as we pause share repurchases through the remainder of 2026. However, this estimate is based on a number of assumptions that may prove to be materially different, and we could fully utilize our available cash earlier than presently anticipated.
+
+On February 2, 2026, we completed our acquisition of Hatch for approximately $271.2 million in cash. In connection with the acquisition, we have also agreed to provide certain continuing Hatch employees with acquisition- and integration-related compensation valued in the aggregate of $30.0 million, to be paid over the next two to three years. See Note 6, “Acquisitions,” of the Notes to Condensed Consolidated Financial Statements included under Part I, Item 1 in this Quarterly Report for further detail.
+
+In addition, we are still assessing the OBBBA’s impact on our income tax payments for 2026 and beyond. We are not able to reasonably estimate the timing of future cash flows related to $55.9 million of uncertain tax positions.
+
+35
+
+Table of Contents
+
+We lease office facilities under operating lease agreements that expire from 2027 to 2031. Our cash requirements related to these lease agreements are $25.1 million, of which $8.3 million is expected to be paid within the next 12 months. The total lease obligations are partially offset by our future minimum rental receipts to be received under non-cancelable subleases of $12.5 million. See Note 8, “Leases,” of the Notes to Condensed Consolidated Financial Statements included under Part I, Item 1 in this Quarterly Report for further detail on our operating lease obligations.
+
+Our cash requirements related to off-balance sheet purchase obligations consisting of non-cancelable agreements to purchase goods and services required in the ordinary course of business — primarily website hosting services — are approximately $119.0 million, of which approximately $67.9 million is expected to be paid within the next 12 months.
+
+We may be required to draw down additional funds from our credit facility or seek additional funds through equity or debt financings to respond to business challenges associated with the uncertain macroeconomic environment or other challenges, including the need to develop new features and products or enhance existing services, improve our operating infrastructure or acquire complementary businesses and technologies. The cost of capital associated with any additional funds sought in the future might be adversely impacted by the effects of macroeconomic conditions on our business. Additionally, amounts deposited with third-party financial institutions exceed the Federal Deposit Insurance Corporation and Securities Investor Protection Corporation insurance limits, as applicable. These cash and cash equivalents could be impacted if the underlying financial institutions fail or are subjected to other adverse conditions in the financial markets. To date, we have experienced no loss o

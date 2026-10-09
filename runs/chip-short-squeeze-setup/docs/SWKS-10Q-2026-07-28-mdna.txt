@@ -1,0 +1,274 @@
+ITEM 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS.
+
+This report and other documents we have filed with the SEC contain forward-looking statements within the meaning of Section 27A of the Securities Act of 1933, as amended, and Section 21E of the Securities and Exchange Act of 1934, as amended (the “Exchange Act”), and are subject to the “safe harbor” created by those sections. Any statements that are not statements of historical fact should be considered to be forward-looking statements. Words such as “anticipates”, “believes”, “continue”, “could”, “estimates”, “expects”, “forecasts”, “intends”, “may”, “plans”, “potential”, “predicts”, “projects”, “seek”, “should”, “targets”, “will”, “would”, and similar expressions or variations or negatives of such words are intended to identify forward-looking statements, but are not the exclusive means of identifying forward-looking statements in this report. Additionally, statements concerning future matters such as our expectations and statements regarding the transaction with Qorvo, the possible impacts of geopolitical conflicts, tariffs, export controls, inflation, recession, and global health crises, as well as the development of new products, enhancements of technologies, sales levels, expense levels, the benefits of acquisitions we have made or may make in the future, and other statements regarding matters that are not historical are forward-looking statements. Although forward-looking statements in this report reflect the good faith judgment of our management as of the date the statement is first made, such statements can only be based on facts and factors then known and understood by us. Consequently, forward-looking statements involve inherent risks and uncertainties, and actual financial results and outcomes may differ materially and adversely from the results and outcomes discussed in or anticipated by the forward-looking statements. A number of important factors could cause actual financial results to differ materially and adversely from those in the forward-looking statements. We urge you to consider the risks and uncertainties discussed in the 2025 10-K, under the heading “Risk Factors” and in the other documents filed by us with the SEC in evaluating our forward-looking statements. We have no plans, and undertake no obligation, to revise or update our forward-looking statements to reflect any event or circumstance that may arise after the date of the initial filing of this Quarterly Report on Form 10-Q. We caution readers not to place undue reliance upon any such forward-looking statements, which speak only as of the date made.
+
+In this document, the words “we”, “our”, “ours”, “us”, “Skyworks”, and “the Company” refer only to Skyworks Solutions, Inc., and its consolidated subsidiaries and not any other person or entity.
+
+18
+
+Table of Contents
+
+RESULTS OF OPERATIONS
+
+Three and Nine Months Ended July 3, 2026, and June 27, 2025
+
+The following table sets forth the results of our operations expressed as a percentage of net revenue:
+
+Three Months Ended Nine Months Ended
+
+July 3, 2026 June 27, 2025 July 3, 2026 June 27, 2025
+
+Net revenue 100.0 % 100.0 % 100.0 % 100.0 %
+
+Cost of goods sold 59.9 58.4 59.2 58.7
+
+Gross profit 40.1 41.6 40.8 41.3
+
+Operating expenses:
+
+Research and development 22.2 20.7 21.4 18.8
+
+Selling, general, and administrative 10.6 9.2 11.2 8.7
+
+Amortization of intangibles — — — —
+
+Restructuring, impairment, and other charges 2.1 0.2 1.5 0.8
+
+Total operating expenses 34.9 30.1 34.1 28.3
+
+Operating income 5.2 11.5 6.7 13.0
+
+Interest expense (0.6) (0.7) (0.7) (0.7)
+
+Other income, net
+0.6 0.8 1.0 1.2
+
+Income before income taxes 5.2 11.6 7.0 13.5
+
+Provision for income taxes 1.6 0.7 1.9 2.3
+
+Net income 3.6 % 10.9 % 5.1 % 11.2 %
+
+OVERVIEW
+
+We, together with our consolidated subsidiaries, are a leading developer, manufacturer and provider of analog and mixed-signal semiconductor products and solutions for numerous applications, including aerospace, automotive, broadband, cellular infrastructure, connected home, defense, entertainment and gaming, industrial, medical, smartphone, tablet, and wearables.
+
+Pending Transaction With Qorvo
+
+On October 27, 2025, we entered into the Merger Agreement with Qorvo, a provider of connectivity and power solutions, to combine Qorvo and Skyworks in a cash-and-stock transaction that values the combined company at approximately $22.0 billion as of the market close on October 27, 2025.
+
+Under the terms of the Merger Agreement, at the effective time of the Mergers, each share of Qorvo common stock issued and outstanding immediately prior thereto (with certain exceptions set forth in the Merger Agreement) will be converted into the right to receive 0.960 (the “Exchange Ratio”) of a share of Skyworks common stock and $32.50 in cash, without interest, subject to applicable withholding taxes. The Exchange Ratio is expected to result in Qorvo equityholders and Skyworks equityholders owning approximately 37% and 63%, respectively, of the combined company on a pro forma basis following the closing. The Merger Agreement also provides for Skyworks’ assumption of certain Qorvo equity awards, subject to certain adjustments thereto in respect of, among other things, performance-based vesting conditions.
+
+Pursuant to the Merger Agreement, immediately following the closing, the Board of Directors will be comprised of 11 directors, consisting of (i) the Chief Executive Officer of Skyworks, who will be the Chief Executive Officer of Skyworks following the closing, (ii) seven directors designated by Skyworks and (iii) three directors designated by Qorvo who are reasonably acceptable to Skyworks, each of whom will hold office until the next annual meeting of stockholders of Skyworks. Promptly following the closing, the Board of Directors will also designate a Chairman. Robert Bruggeworth, Qorvo’s current President, Chief Executive Officer and director, will be one of Qorvo’s designees upon the closing.
+
+The Mergers, which we are increasingly hopeful will close within the calendar year, are subject to the satisfaction or waiver of customary closing conditions, including adoption of the Merger Agreement by Qorvo’s stockholders and the approval by Skyworks’ stockholders of the issuance of Skyworks common stock included in the consideration to be paid to Qorvo stockholders, the expiration or early termination of the waiting period under the HSR Act, and other regulatory approvals under
+
+19
+
+Table of Contents
+
+certain antitrust and foreign investment regimes, and the absence of any order, injunction or law of such jurisdictions prohibiting the Mergers. There can be no assurances that the closing will occur on this timeline.
+
+Each of Skyworks’ special meeting of stockholders and Qorvo’s special meeting of stockholders were held virtually on February 11, 2026 at 11:30 AM, Pacific Time, and the stockholders of each respective company approved the ballot measures at each of their respective special meetings.
+
+On February 5, 2026, Skyworks and Qorvo each received a Request for Additional Information and Documentary Material (the “Second Request”) from the U.S. Federal Trade Commission (“FTC”) in connection with the transaction. The Second Request was issued under notification requirements of the HSR Act. The effect of the Second Request is to extend the waiting period imposed by the HSR Act until 30 days after Skyworks and Qorvo have substantially complied with the Second Request, unless that period is voluntarily extended by the parties or terminated sooner by the FTC. Each party has certified substantial compliance with the Second Request, and the parties are working cooperatively with FTC staff to conclude the investigation.
+
+We and Qorvo each have termination rights under the Merger Agreement. Under specified circumstances, including termination by a party to accept a superior proposal or termination by the other party upon a change in such party’s board of directors’ recommendation to its stockholders, each of us and Qorvo will be required to pay the other party a termination fee of $298.7 million, as more fully described in the Merger Agreement. Alternatively, under certain specified circumstances, including termination following an injunction arising in connection with certain antitrust or foreign investment laws, or failure to receive certain required regulatory approvals of specified governmental authorities, we will be required to pay Qorvo a termination fee of $100.0 million, as more fully described in the Merger Agreement.
+
+In connection with the execution of the Merger Agreement, we entered into the Bridge Commitment Letter on October 27, 2025, with Goldman Sachs Bank USA, which committed to provide, subject to the satisfaction of customary closing conditions, up to $3,050.0 million of senior unsecured bridge term loans for the purpose of financing a portion of the cash portion of the consideration to be paid to Qorvo stockholders, paying related fees and expenses in connection with the Mergers and the other transactions contemplated by the Merger Agreement and, in certain circumstances, to refinance certain of Qorvo’s senior notes. Depending on market conditions, we anticipate raising financing for the transactions contemplated by the Merger Agreement in advance of any expected closing, including to partially pay the cash portion of the consideration to be paid to Qorvo stockholders and to pay fees and expenses. The receipt of financing by us is not a condition to our obligation to consummate the Mergers.
+
+Pursuant to the terms of the Bridge Commitment Letter, $1,550.0 million of the senior unsecured bridge term loans had been specifically designated to represent the principal amount of the Qorvo Notes Tranche, and if a ratings decline (as defined in the applicable Qorvo indenture as in effect on the date of the commitment letter) did not occur on or prior to December 27, 2025 (which date would be extended so long as the rating of any series of Qorvo’s outstanding senior notes was under publicly announced consideration for possible downgrade), then the aggregate commitments in respect of the Qorvo Notes Tranche under the Bridge Commitment Letter would be automatically permanently reduced dollar-for-dollar by the aggregate principal amount of Qorvo’s senior notes. On December 28, 2025, Goldman Sachs Bank USA notified the Company that there was no such ratings decline, no rating as to any series of Qorvo’s outstanding senior notes was under publicly announced consideration for possible downgrade, and therefore the Qorvo Notes Tranche had been permanently reduced to $0.00. As a result, as of July 3, 2026, Goldman Sachs Bank USA has committed to provide up to $1,500.0 million of senior unsecured bridge term loans.
+
+On May 20, 2026, we commenced exchange offers to exchange each series of the Qorvo Notes Tranche notes for new senior notes of the Company. In connection with the exchange offers, we also commenced the solicitation of consents for proposed amendments to the applicable indenture governing each series of the Qorvo Notes Tranche notes. Pursuant to the exchange offers, holders may exchange their Qorvo Notes Tranche notes for newly issued Skyworks senior notes having substantially similar terms. The exchange offers and related consent solicitations are conditioned upon, and expected to be settled following, the consummation of the Mergers. As of June 11, 2026, holders representing a majority of each series of the Qorvo Notes Tranche notes had validly tendered their notes and the requisite consents had been obtained to amend the related indentures. Upon completion of the Mergers, we would become obligated with respect to the outstanding amount of debt represented by the then outstanding Qorvo Notes Tranche notes, either through the issuance of new Skyworks notes pursuant to the exchange offers or the assumption of any then outstanding and unexchanged Qorvo Notes Tranche notes, in each case, subject to the final results of the exchange offers.
+
+Concurrently with the execution of the Merger Agreement, we and certain stockholders of Qorvo affiliated with Starboard Value (“SBV”), an affiliate of Peter Feld, a member of the board of directors of Qorvo so designated by SBV (each, a “SBV Stockholder”), entered into a Voting and Support Agreement (the “VSA”), pursuant to which each SBV Stockholder has agreed to vote its shares of Qorvo common stock in favor of the adoption of the Merger Agreement. As of October 24, 2025, the SBV Stockholders collectively held approximately 8% of Qorvo’s issued and outstanding shares. Each SBV Stockholder has also
+
+20
+
+Table of Contents
+
+agreed, for a limited period of time not exceeding nine months from the date of the VSA, not to sell or transfer its shares of Qorvo common stock, subject to certain exceptions as specified in the VSA, and has agreed not to solicit any competing acquisition proposal. The VSA will terminate, as to each SBV Stockholder, upon the earliest to occur of (a) the closing, (b) the termination of the Merger Agreement, (c) the date of any Qorvo Triggering Event or Skyworks Triggering Event (each, as defined in the Merger Agreement) and (d) the written consent of Skyworks, Qorvo and the applicable SBV Stockholder.
+
+For more information on risks related to the Mergers, see Part I, Item 1A, Risk Factors, “Risks Associated with the Proposed Transaction with Qorvo” in the 2025 10-K.
+
+General
+
+During the three months ended July 3, 2026, the following key factors contributed to our overall results of operations, financial position, and cash flows:
+
+•Net revenue decreased to $934.8 million for the three months ended July 3, 2026, as compared to $965.0 million for the corresponding period in fiscal 2025, driven primarily by a decrease in market share at a significant customer, partially offset by an increase in demand for our automotive and data center products.
+
+•Our ending cash, cash equivalents, and marketable securities balance decreased to $813.8 million. The decrease in cash, cash equivalents, and marketable securities during the three months ended July 3, 2026 was primarily due to repayments of debt of $500.0 million, dividend payments of $106.9 million and capital expenditures of $87.1 million, partially offset by cash generated from operations of $70.4 million.
+
+Net Revenue
+
+Three Months Ended Nine Months Ended
+
+(dollars in millions) July 3, 2026 Change June 27, 2025 July 3, 2026 Change June 27, 2025
+
+Net revenue $ 934.8 (3.1)% $ 965.0 $ 2,913.9 (2.4)% $ 2,986.7
+
+We market and sell our products indirectly through electronic components distributors and directly to OEMs of communications and electronics products, third-party original design manufacturers, and contract manufacturers. We generally experience seasonal peaks during our fourth and first fiscal quarters (which correspond to the second half of the calendar year), primarily as a result of increased worldwide production of consumer electronics in anticipation of holiday sales, whereas our second and third fiscal quarters are typically lower and in line with seasonal industry trends.
+
+The decrease in net revenue for the three months ended July 3, 2026, as compared with the corresponding period in fiscal 2025, was driven primarily by a decrease in market share at a significant customer, partially offset by an increase in demand for our automotive and data center products. During the nine months ended July 3, 2026, the decrease in net revenue was additionally offset by an increase in demand for our Wi-Fi products.
+
+Gross Profit
+
+Three Months Ended Nine Months Ended
+
+(dollars in millions) July 3, 2026 Change June 27, 2025 July 3, 2026 Change June 27, 2025
+
+Gross profit $ 375.0 (6.5)% $ 401.0 $ 1,187.6 (3.8)% $ 1,234.6
+
+% of net revenue 40.1 % 41.6 % 40.8 % 41.3 %
+
+Gross profit represents net revenue less cost of goods sold. Our cost of goods sold consists primarily of purchased materials, labor, and overhead (including depreciation, share-based compensation expense, and amortization of acquisition intangibles) associated with product manufacturing. Erosion of average selling prices of established products is typical of the semiconductor industry. Consistent with trends in the industry, we anticipate that average selling prices for our established products will continue to decline over time. As part of our normal course of business, we intend to improve gross profit with efforts to increase unit volumes, improve manufacturing efficiencies, lower manufacturing costs of existing products, and by introducing new and higher value-added products.
+
+The decrease in gross profit for the three and nine months ended July 3, 2026, as compared with the corresponding periods in fiscal 2025, was primarily the result of unfavorable product mix, partially offset by higher unit volumes.
+
+21
+
+Table of Contents
+
+Research and Development
+
+Three Months Ended Nine Months Ended
+
+(dollars in millions) July 3, 2026 Change June 27, 2025 July 3, 2026 Change June 27, 2025
+
+Research and development $ 207.8 4.2% $ 199.4 $ 623.5 10.9% $ 562.4
+
+% of net revenue 22.2 % 20.7 % 21.4 % 18.8 %
+
+Research and development expenses consist primarily of direct personnel costs including share-based compensation expense, costs for pre-production evaluation units and testing of new devices, non-production masks, engineering prototypes, and design tool costs.
+
+The increase in research and development expenses for the three and nine months ended July 3, 2026, as compared with the corresponding periods in fiscal 2025, was primarily related to increases in headcount-related expenses as a result of our increased investment in developing new technologies and products.
+
+Selling, General, and Administrative
+
+Three Months Ended Nine Months Ended
+
+(dollars in millions) July 3, 2026 Change June 27, 2025 July 3, 2026 Change June 27, 2025
+
+Selling, general, and administrative $ 98.7 10.5% $ 89.3 $ 326.8 25.7% $ 259.9
+
+% of net revenue 10.6 % 9.2 % 11.2 % 8.7 %
+
+Selling, general, and administrative expenses include legal and related costs, accounting, treasury, human resources, information systems, customer service, bad debt expense, sales commissions, share-based compensation expense, advertising, marketing, costs associated with business combinations completed or contemplated during the period, and other costs.
+
+The increase in selling, general, and administrative expenses for the three and nine months ended July 3, 2026, as compared with the corresponding periods in fiscal 2025, was primarily related to increases in professional services costs related to the ongoing Qorvo transaction, partially offset by decreases in headcount-related expenses, including share-based compensation.
+
+Restructuring, Impairment, and Other Charges
+
+Three Months Ended Nine Months Ended
+
+(dollars in millions) July 3, 2026 Change June 27, 2025 July 3, 2026 Change June 27, 2025
+
+Restructuring, impairment, and other charges $ 19.8 1,220.0% $ 1.5 $ 42.2 86.7% $ 22.6
+
+% of net revenue 2.1 % 0.2 % 1.5 % 0.8 %
+
+Restructuring, impairment, and other charges for the three and nine months ended July 3, 2026, was primarily due to costs associated with facility consolidation and closure.
+
+Restructuring, impairment, and other charges for the three and nine months ended June 27, 2025, was primarily due to charges incurred in connection with the transition of our chief executive officer.
+
+Interest Expense
+
+Three Months Ended Nine Months Ended
+
+(dollars in millions) July 3, 2026 Change June 27, 2025 July 3, 2026 Change June 27, 2025
+
+Interest expense $ 5.9 (10.6)% $ 6.6 $ 19.8 (2.0)% $ 20.2
+
+% of net revenue 0.6 % 0.7 % 0.7 % 0.7 %
+
+The decrease in interest expense for the three and nine months ended July 3, 2026, as compared with the corresponding periods in fiscal 2025, was due to debt repayments that reduced the amount of outstanding indebtedness.
+
+22
+
+Table of Contents
+
+Other Income, Net
+
+Three Months Ended Nine Months Ended
+
+(dollars in millions) July 3, 2026 Change June 27, 2025 July 3, 2026 Change June 27, 2025
+
+Other income, net $ 6.2 (22.5)% $ 8.0 $ 29.3 (18.4)% $ 35.9
+
+% of net revenue 0.6 % 0.8 % 1.0 % 1.2 %
+
+The decrease in other income, net for the three and nine months ended July 3, 2026, as compared with the corresponding periods in fiscal 2025, was primarily due to a decrease in interest income generated from cash, cash equivalents, and marketable securities.
+
+Provision for Income Taxes
+
+Three Months Ended Nine Months Ended
+
+(dollars in millions) July 3, 2026 Change June 27, 2025 July 3, 2026 Change June 27, 2025
+
+Provision for income taxes $ 14.9 112.9% $ 7.0 $ 55.2 (20.0)% $ 69.0
+
+% of net revenue 1.6 % 0.7 % 1.9 % 2.3 %
+
+We recorded a provision for income taxes of $14.9 million and $55.2 million for the three and nine months ended July 3, 2026, respectively.
+
+The increase in income tax expense for the three months ended July 3, 2026, as compared with the corresponding period in fiscal 2025, was primarily due to transaction costs related to the pending transaction with Qorvo and uncertain tax positions.
+
+The decrease in income tax expense for the nine months ended July 3, 2026, as compared with the corresponding period in fiscal 2025, was primarily due to lower foreign taxes, partially offset by an increase in share-based compensation shortfalls, uncertain tax positions, transaction costs related to the pending transaction with Qorvo, and a lower foreign-derived intangible income deduction benefit.
+
+In December 2021, the OECD Inclusive Framework on BEPS released GloBE rules under Pillar Two. Many countries have implemented laws based on Pillar Two, which became effective for us beginning in fiscal 2025. In January 2026, the OECD Inclusive Framework released significant administrative guidance including the side-by-side safe harbor package that will apply to U.S. multinational enterprise groups. The tax impact associated with Pillar Two was immaterial to the financial statements for the three and nine months ended July 3, 2026 and June 27, 2025. We continue to evaluate the impact of proposed and enacted legislative changes as new guidance becomes available.
+
+In July 2025, the U.S. government enacted the OBBBA. The OBBBA did not have a material impact to the financials for the three and nine months ended July 3, 2026. We continue to evaluate the impact of the OBBBA on our business for future periods.
+
+The Company may record additional impacts to its tax provision in the subsequent quarters as it continues to analyze the impact of various tax laws, other factors such as changes from its business operations, financial results and forecasts, and interrelated items.
+
+LIQUIDITY AND CAPITAL RESOURCES
+
+Nine Months Ended
+
+(in millions) July 3, 2026 June 27, 2025
+
+Cash and cash equivalents at beginning of period $ 1,161.3 $ 1,368.6
+
+Net cash provided by operating activities 516.2 1,100.8
+
+Net cash used in investing activities (38.4) (102.9)
+
+Net cash used in financing activities (849.1) (1,180.6)
+
+Cash and cash equivalents at end of period $ 790.0 $ 1,185.9
+
+Cash provided by operating activities:
+
+Cash provided by operating activities consists of net income for the period adjusted for certain non-cash items and changes in certain operating assets and liabilities. The $584.6 million decrease in cash provided by operating activities during the nine months
+
+23
+
+Table of Contents
+
+ended July 3, 2026, as compared with the corresponding period in fiscal 2025, was primarily related to a decrease in cash inflows as a result of changes to working capital (net of cash) of $386.9 million, due primarily to inventory and lower net income.
+
+Cash used in investing activities:
+
+Cash used in investing activities consists primarily of cash paid to make capital expenditures, purchase marketable securities, and acquire intangible assets, partially offset by cash received related to the sale or maturity of marketable securities. The $64.5 million decrease in cash used in investing activities during the nine months ended July 3, 2026, as compared with the corresponding period in fiscal 2025, was primarily related to a decrease of $387.3 million in purchases of marketable securities, partially offset by a decrease of $241.2 million in the sale or maturity of marketable securities and an increase of $87.0 million in capital expenditures.
+
+Cash used in financing activities:
+
+Cash used in financing activities consists primarily of cash transactions related to equity and proceeds and payments related to our long-term borrowings. The $331.5 million decrease in cash used in financing activities during the nine months ended July 3, 2026, as compared with the corresponding period in fiscal 2025, was primarily related to a decrease of $822.7 million in share repurchases, net of excise tax paid, and a decrease of $6.9 million in dividend payments, partially offset by an increase of $500.0 million for the repayment of debt.
+
+Liquidity:
+
+Cash, cash equivalents, and marketable securities totaled $813.8 million as of July 3, 2026, representing a decrease of $574.6 million from October 3, 2025.
+
+We have outstanding $500.0 million of 3.00% Senior Notes due 2031. During the three months ended July 3, 2026, we repaid $500.0 million of 1.80% Senior Notes due 2026. We have a Revolving Credit Agreement under which we may borrow up to $750.0 million for general corporate purposes and working capital. As of July 3, 2026, there were no borrowings outstanding under the Revolver. The Revolving Credit Agreement expires on November 18, 2030.
+
+In connection with the execution of the Merger Agreement, we entered into a commitment letter on October 27, 2025, with Goldman Sachs Bank USA, which committed to provide, subject to the satisfaction of customary closing conditions, senior unsecured bridge term loans for the purpose of financing a portion of the cash portion of the consideration to be paid to Qorvo stockholders, paying related fees and expenses in connection with the Mergers and the other transactions contemplated by the Merger Agreement and, in certain circumstances, to refinance certain of Qorvo’s senior notes. As of July 3, 2026, Goldman Sachs Bank USA has committed to provide up to $1,500.0 million of senior unsecured bridge term loans. Depending on market conditions, we may choose to opportunistically put in place the financing for the transactions contemplated by the Merger Agreement in advance of any expected closing, including to partially pay the cash portion of the consideration to be paid to Qorvo stockholders and to pay fees and expenses, as well as potential transactions to refinance and/or exchange Qorvo’s senior notes.
+
+Based on our historical results of operations, we expect that our cash, cash equivalents, and marketable securities on hand, the cash we expect to generate from operations, and funds from our Revolver, will be sufficient to fund our short-term and long-term liquidity requirements primarily arising from: research and development, capital expenditures, potential acquisitions, working capital, quarterly cash dividend payments (if such dividends are declared by the Board of Directors), stock repurchases, outstanding commitments, and other liquidity requirements associated with existing operations. However, we cannot be certain that our cash, cash equivalents, and marketable securities on hand, cash generated from operations, and funds from our Revolver will be available in the future to fund all of our capital and operating requirements. In addition, any future strategic investments and significant acquisitions may require additional cash and capital resources. If we are unable to obtain sufficient cash or capital to meet our needs on a timely basis and on favorable terms, our business and operations could be materially and adversely affected. For additional discussion regarding our stock repurchase program, refer to Note 10 of the Notes to Consolidated Financial Statements.
+
+Our invested cash balances primarily consist of highly liquid marketable securities that are available to meet near-term cash requirements including: money market funds, U.S. Treasury and government securities, corporate bonds and notes, and municipal bonds.
+
+Our contractual obligations disclosure in the 2025 10-K has not materially changed since we filed that report.
+
+24
+
+Table of Contents

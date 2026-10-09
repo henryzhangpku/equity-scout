@@ -1,0 +1,391 @@
+Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+Management’s discussion and analysis of financial condition and results of operations ("MD&A") should be read in conjunction with the financial statements and the related notes that appear elsewhere in this document. This section of this Form 10-K generally discusses fiscal 2026 and 2025 items and year-to-year comparisons between fiscal 2026 and 2025. Discussions of 2024 items and year-to-year comparisons between fiscal 2025 and 2024 that are not included in this Form 10-K can be found in "Management's Discussion and Analysis of Financial Condition and Results of Operations" in Part II, Item 7 of our Annual Report on Form 10-K for the fiscal year ended June 29, 2025 as filed with the SEC on August 26, 2025.
+
+Executive Summary
+
+The following discussion is designed to provide a better understanding of our audited consolidated financial statements and notes thereto, including a brief discussion of our business and products, key factors that impacted our performance and a summary of our operating results. The following discussion should be read in conjunction with our consolidated financial statements included in Part II, Item 8 of this Annual Report. Historical results and percentage relationships among any amounts in the financial statements are not necessarily indicative of trends in operating results for any future periods. Unless otherwise noted, the following information and discussion relates to our continuing operations.
+
+Recent Events
+
+Prepackaged Chapter 11 Cases
+
+On June 30, 2025 (the “Petition Date”), Wolfspeed, Inc. (the "Company," "we," "us," or "our") and its wholly owned subsidiary, Wolfspeed Texas LLC (together with the Company, the “Debtors”), voluntarily filed petitions (the "Chapter 11 Cases") for relief under Chapter 11 of the United States Bankruptcy Code (the “Bankruptcy Code”) in the United States Bankruptcy Court for the Southern District of Texas, Houston Division (the “Bankruptcy Court”) to implement a prepackaged Chapter 11 plan of reorganization (the "Plan"). The Chapter 11 Cases were administered jointly under the caption In re Wolfspeed, Inc., et al, case number 25-90163 (CML).
+
+The Chapter 11 filings, including the Plan and the Disclosure Statement filed on June 30, 2025, were intended to facilitate a comprehensive balance sheet restructuring pursuant to the Restructuring Support Agreement.
+
+On September 8, 2025, the Court entered the Order (i) Approving the Disclosure Statement, (ii) Confirming Joint Prepackaged Chapter 11 Plan of Reorganization of Wolfspeed, Inc. and Its Debtor Affiliate, and (iii) Approving Entry into the Backstop Agreement (Docket No. 285) (the “Confirmation Order”), which, among other things, confirmed the Plan.
+
+On the Effective Date, the Company emerged from the Chapter 11 Cases upon all the conditions to the effectiveness of the Plan being satisfied or waived and the Plan becoming effective. Refer to Note 2, "Basis of Presentation and Summary of Significant Accounting Policies" and Note 3, “Emergence from Voluntary Reorganization under Chapter 11,” to our consolidated financial statements in Part II, Item 8 of this Annual Report for additional information.
+
+Upon the Company’s emergence from the Chapter 11 Cases, the Company adopted fresh start accounting, which resulted in a new basis of accounting and the Company becoming a new entity for financial reporting purposes. As a result of the application of fresh start accounting and the effects of the implementation of the Plan, the Company's consolidated financial statements after the Effective Date are not comparable with the consolidated financial statements on or before that date. Refer to Note 4, “Fresh Start Accounting,” to our consolidated financial statements in Part II, Item 8 of this Annual Report for additional information.
+
+References to “Successor” relate to the financial position and results of operations of the Company after the Effective Date. References to “Predecessor” refer to the financial position and results of operations of the Company on or before the Effective Date.
+
+28
+
+Industry Dynamics and Trends
+
+There are a number of industry factors that affect our business which include, among others:
+
+•Overall Demand for Products and Applications Using Our Wolfspeed Materials and Devices. Our potential for growth depends significantly on the continued adoption of silicon carbide materials and device products in the power market, and our ability to adapt to evolving competitive dynamics to retain and grow market share for these applications. We have been experiencing softening demand for our products and continued price pressure in certain applications. We continue to expect increased mid- and long-term demand growth, however the timing and extent of these increases remains uncertain. We also continue to explore opportunities to expand adoption of our products in new and growing industries, such as AI data centers, grid modernization and renewable energy and storage.
+
+•Intense and Constantly Evolving Competitive Environment. Competition in the industries we serve is intense. Many companies have made significant investments in product development, production equipment and production facilities. To remain competitive, market participants must continuously increase product performance, reduce costs and develop improved ways to serve their customers. In addition, market participants often undertake pricing strategies to gain or protect market share, increase the utilization of their production capacity and develop new applications in the power markets we serve. Innovations and advancements in materials and power technologies continue to expand the potential commercial application for our products. However, new technologies or standards could emerge or improvements could be made in existing technologies that could reduce or limit the demand for our products in certain markets. To address these competitive pressures, we have invested in new production facilities, as well as research and development activities to support new product development, lower product costs and increase levels of product performance to differentiate our products in the market. In addition, we invest in systems, people and new processes to improve our ability to deliver a better overall experience for our customers.
+
+•Governmental Trade and Regulatory Conditions. Our potential for growth, as with most multi-national companies, depends on a balanced and stable trade, political, geopolitical, economic and regulatory environment in the countries where we do business. We continue to monitor the recent changes in global trade policy, including tariffs and related trade actions announced by the United States, China and other countries. The degree to which such tariffs and other related actions impact our business, financial condition and results of operations will depend on future developments, which are uncertain.
+
+•Intellectual Property Issues. Market participants rely on patented and non-patented proprietary information associated with product development, manufacturing capabilities and other core competencies of their business. Protection of intellectual property is critical. Therefore, steps such as additional patent applications, confidentiality and non-disclosure agreements, as well as other security measures are generally taken to enforce or protect intellectual property rights, litigation or threatened litigation is common.
+
+Business Outlook
+
+We believe we are uniquely positioned as a vertically integrated supplier of U.S.-made silicon carbide products in the global semiconductor industry. We are currently focused on four key priorities:
+
+•Advancing our technology leadership;
+
+•Diversifying revenue and customer base;
+
+•Driving operational excellence; and
+
+•Demonstrating strict financial discipline.
+
+We believe these efforts will support our goals of delivering long-term growth and profitability, while enabling us to continue to invest in our business to further develop the technologies and accelerate the growth opportunities of silicon carbide materials and silicon carbide power devices and modules.
+
+29
+
+Table of Contents
+
+Results of Operations
+
+Basis of Presentation
+
+Beginning on the Effective Date, we adopted fresh start accounting, which resulted in a new basis of accounting and we became a new entity for financial reporting purposes. As a result of the adoption of fresh start accounting and the effects of the implementation of the Plan, the consolidated financial statements after September 29, 2025 are not comparable with the consolidated financial statements on or prior to that date. Refer to Note 4, "Fresh Start Accounting," to our consolidated financial statements in Part II, Item 8 of this Annual Report for further details.
+
+Fiscal Quarters and Fiscal Years
+
+Our fiscal quarters end on the last Sunday of the month in September, December, March and June. Each fiscal quarter is generally 13 weeks as part of a 52-week fiscal year. Occasionally, we have a 53-week fiscal year, and in those instances, one quarter within the fiscal year is comprised of 14 weeks instead of 13 weeks. Our Predecessor period from June 30, 2025 to September 29, 2025 was a 13-week fiscal period. Our Successor period from September 30, 2025 to June 28, 2026 was a 39-week fiscal period. Our 2025 fiscal year was a 52-week fiscal year. Our 2024 fiscal year was a 53-week fiscal year. The next 53-week fiscal year will be the Company's 2030 fiscal year.
+
+Period from September 30, 2025 to June 28, 2026 ("Successor") and from June 30, 2025 to September 29, 2025 ("Predecessor") Compared to Twelve Months Ended June 29, 2025 (Predecessor)
+
+Selected consolidated statement of operations data for the period from September 30, 2025 to June 28, 2026 (Successor), June 30, 2025 to September 29, 2025 (Predecessor) and for the twelve months ended June 29, 2025 is as follows:
+
+Successor Predecessor
+
+Period from September 30, 2025 to June 28, 2026 Period from June 30, 2025 to September 29, 2025 Fiscal Year Ended June 29, 2025
+
+(in millions of U.S. Dollars, except share data) Amount % of Revenue Amount % of Revenue Amount % of Revenue
+
+Power Products $324.7 69.3 % $131.8 67.0 % $414.0 54.6 %
+
+Materials Products 143.6 30.7 % 65.0 33.0 % 343.6 45.4 %
+
+Revenue, net 468.3 100.0 % 196.8 100.0 % 757.6 100.0 %
+
+Cost of revenue, net 623.3 133.1 % 273.9 139.2 % 879.2 116.1 %
+
+Gross (loss) profit (155.0) (33.1) % (77.1) (39.2) % (121.6) (16.1) %
+
+Research and development 80.0 17.1 % 31.7 16.1 % 175.1 23.1 %
+
+Sales, general and administrative 103.7 22.1 % 37.9 19.3 % 190.5 25.1 %
+
+Factory start-up costs — — % — — % 85.2 11.2 %
+
+Gain on disposal of property and equipment (5.4) (1.2) % (5.7) (2.9) % (20.0) (2.6) %
+
+Goodwill impairment — — % — — % 359.2 47.4 %
+
+Restructuring and other expenses 54.7 11.7 % 20.4 10.4 % 417.6 55.1 %
+
+Operating loss (388.0) (82.9) % (161.4) (82.0) % (1,329.2) (175.4) %
+
+Reorganization items, net — — % (563.4) (286.3) % — — %
+
+Interest expense, net of capitalized interest 149.9 32.0 % 0.7 0.4 % 315.2 41.6 %
+
+Non-operating income, net (123.5) (26.4) % (22.4) (11.4) % (25.5) (3.4) %
+
+(Loss) income before income taxes (414.4) (88.5) % 423.7 215.3 % (1,618.9) (213.7) %
+
+Income tax (benefit) expense 1.4 0.3 % 3.5 1.8 % (9.7) (1.3) %
+
+Net (loss) income ($415.8) (88.8) % $420.2 213.5 % ($1,609.2) (212.4) %
+
+Basic (loss) earnings per share
+
+Net (loss) income ($10.64) $2.69 ($11.39)
+
+Diluted (loss) earnings per share
+
+Net (loss) income ($10.64) $2.22 ($11.39)
+
+30
+
+Table of Contents
+
+Revenue
+
+Net sales for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 as compared to fiscal 2025 were down 12% primarily driven by the following:
+
+•Net sales of our Power Product offerings increased due to stronger demand for our industrial applications products, partially attributable to the end-of-life buys associated with the closure of our Durham Fab, and growth in emerging applications for silicon carbide devices such as AI and data center applications, partially offset by a reduction in automotive demand and continued pricing pressure during the year.
+
+•Net sales of our Materials Product offerings decreased primarily due to lower volumes as our substrate customers continue to adjust the timing and size of their orders to rebalance supply to match weaker end market demand. Additionally, we have continued to experience pricing pressure attributable to increased substrate supply, particularly from suppliers in China.
+
+Gross Profit and Gross Margin
+
+The primary drivers of the decrease in gross profit and gross margin for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 compared to fiscal 2025 included:
+
+•Lower revenues as discussed above and unfavorable changes in overall product mix related to lower Materials Product revenue, partially offset by favorable changes in mix within Power Product offerings.
+
+•Higher underutilization costs during the Successor period ended June 28, 2026 and the Predecessor period ended September 29, 2025 , related to the achievement of production readiness at our Siler City facility, which expanded our materials capacity, and at our Durham materials facility related to lower factory loadings as we rebalance supply to match weaker end market demand. Prior to the substantial completion of the Siler City facility in late fiscal 2025, these costs were included in start-up costs. We expect to continue to incur significant underutilization costs until market demand for our products meets or exceeds our production capacity.
+
+•$23 million of additional product costs in the Successor period ended June 28, 2026 related to fair value step-ups on work-in-progress and finished goods recorded upon adoption of fresh start accounting, which was fully recognized as the products were sold in the Successor period.
+
+•$42 million of additional amortization expenses related to the recognition of developed technology and changes in the fair value of other intangibles upon the adoption of fresh start accounting, recognized in the Successor period ended June 28, 2026.
+
+•Specific reserves and inventory write-offs related to obsolete products as well as the planned shutdown of our 150mm Durham Fab completed in the Successor period ended June 28, 2026.
+
+•The items above were partially offset by lower restructuring and closure-related charges related to our headcount reduction and facility closure and consolidation plan initiated during the first quarter of fiscal 2025 (the "2025 Restructuring Plan"), a decrease in stock based compensation expense, and lower depreciation expense in the Successor period attributable to the fair value adjustments to property, plant, and equipment as part of our adoption of fresh start accounting. Refer to Note 4, "Fresh Start Accounting" and Note 18, "Restructuring," to our consolidated financial statements in Part II, Item 8 of this Annual Report for additional information.
+
+Research and Development
+
+Research and development expenses include costs associated with the development of new products, enhancements of existing products and general technology research. These costs consisted primarily of employee salaries and related compensation costs, occupancy costs, consulting costs and the cost of development equipment and supplies. Research and development costs also include developing supporting technologies for the expansion of the Mohawk Valley Fab.
+
+Our research and development expenses vary significantly from year to year based on a number of factors, including the timing of new product introductions and the number and nature of our ongoing research and development activities.
+
+31
+
+The decreases in research and development expenses for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 compared to fiscal 2025 were primarily due to costs that were attributable to expected decreases in wafer spend from product transfers and technology qualifications, related to the timing of the Mohawk Valley Fab ramp in the prior period, as well as lower personnel costs related to the headcount reduction and facility closure and consolidation in fiscal 2025 (the "2025 Restructuring Plan") and the headcount restructuring initiatives during the period from September 30, 2025 to June 28, 2026 (the "2026 Restructuring Plans") and the cancellation of unvested stock awards upon emergence from the Chapter 11 Cases. Additionally, the adoption of fresh start accounting reduced depreciation expense by $13 million compared to fiscal 2025.
+
+Sales, General & Administrative
+
+Sales, general and administrative ("SG&A") expenses are comprised of costs primarily associated with our sales and marketing personnel and our executive and administrative personnel (for example, finance, human resources, information technology and legal) and substantially consist of salaries and related compensation costs; consulting and other professional services (such as litigation and other outside legal counsel fees, pre-petition legal fees, audit and other compliance costs); marketing and advertising expenses; facilities and insurance costs; and travel costs.
+
+The decrease in SG&A expenses for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 compared to the prior fiscal year was primarily attributable to decreases in personnel costs related to lower headcount and the cancellation of unvested stock awards upon emergence from the Chapter 11 Cases and planned reductions in marketing and outside service spend related to cost optimization efforts.
+
+Factory Start-up Costs
+
+Factory start-up costs relate to facilities that have not yet started revenue generating production. When a new facility begins revenue generating production, the operating costs of that facility previously expensed as start-up costs will instead be primarily expensed as part of the cost of the production within the cost of revenue, net line item in our statement of operations.
+
+The decrease in start-up costs for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 related to the attainment of production readiness at the Siler City facility, described above. These costs are now included within Cost of Revenue, net for the Successor period ended June 28, 2026. There were no factory start-up costs during both the Successor period ended June 28, 2026 and the Predecessor period ended September 29, 2025.
+
+Gain on Disposal of Property and Equipment
+
+The Gain on disposal of property and equipment during the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 is primarily due to sales of certain equipment that we no longer intended to use and the sale of our idle property located in Durham, North Carolina. Gain on disposal of property and equipment is primarily due to the sale of our Farmers Branch and Research Triangle Park facilities during fiscal 2025.
+
+Goodwill Impairment
+
+The decrease in goodwill impairment for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 compared to fiscal 2025 is due to the determination that our goodwill was impaired due to a triggering event during the fourth quarter of fiscal 2025. Refer to Note 2, "Basis of Presentation and Summary of Significant Accounting Policies," in Part II, Item 8 of this Annual Report for more information on our goodwill impairment.
+
+32
+
+Restructuring and Other Expenses
+
+Restructuring and other expenses consisted of the following amounts:
+
+Successor Predecessor
+
+(in millions of U.S. Dollars) Period from September 30, 2025 to June 28, 2026 Period from June 30, 2025 to September 29, 2025 Fiscal Year Ended June 29, 2025
+
+Impairment losses on abandoned assets $2.6 $0.1 $176.5
+
+Restructuring and other exit costs 15.0 3.6 134.9
+
+Pre-petition charges — — 55.8
+
+Project, transformation and transaction costs 25.2 13.8 29.5
+
+Legal settlements — — 17.0
+
+Amortization of fresh start accounting and acquisition-related intangibles 11.9 — 1.1
+
+Executive severance costs — — 1.4
+
+Other — 2.9 1.4
+
+Restructuring and other expenses $54.7 $20.4 $417.6
+
+The decrease in Restructuring and other expenses for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 compared to fiscal 2025 was primarily driven by costs related to the 2025 Restructuring Plan, including associated losses on impairment of other assets, the pre-petition charges incurred prior to the filing of the Chapter 11 Cases, and the timing of our emergence from bankruptcy, partially offset by an increase in amortization expenses associated with the new intangible assets resulting from the adoption of fresh start accounting, and transformation and transaction costs. Additionally, during the third quarter of fiscal 2025, we agreed to settle several ongoing legal matters and recognized the associated financial statement impact of those settlements in other operating expense.
+
+Refer to Note 18, "Restructuring," in Part II, Item 8 of this Annual Report for more information on Restructuring and Other Exit Costs. Refer to Note 16, "Commitments and Contingencies," in Part II, Item 8 of this Annual Report for more information on our accounting for contingent losses.
+
+Interest Expense, net of Capitalized Interest
+
+Interest expense, net of capitalized interest. The decrease in interest expense for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 compared to fiscal 2025 was primarily related to the Chapter 11 Cases. Certain payments made prior to the Effective Date that would have otherwise been presented as Interest expense were considered adequate protection payments and presented in Reorganization items, net. Furthermore, after the Effective Date, interest expense was lower than the prior period as a result of a decrease in outstanding debt obligations upon emergence from the Chapter 11 Cases.
+
+33
+
+Non-Operating Income, net
+
+Non-operating income, net was comprised of the following:
+
+Successor Predecessor
+
+(in millions of U.S. Dollars) Period from September 30, 2025 to June 28, 2026 Period from June 30, 2025 to September 29, 2025 Fiscal Year Ended June 29, 2025
+
+Changes in fair value of liability classified derivative contracts ($87.8) $— $—
+
+Gain on RTP Fab Transfer — (25.4) —
+
+Gain on contingent cash (10.0) — —
+
+Interest income (30.3) (8.9) (67.6)
+
+Loss on debt extinguishment 3.3 — —
+
+Realized loss (gain) on equity investment — 10.9 (22.6)
+
+Loss on Wafer Supply Agreement — — 9.2
+
+Write-off of deferred financing costs — — 54.7
+
+Other expense, net 1.3 1.0 0.8
+
+Non-operating income, net ($123.5) ($22.4) ($25.5)
+
+Changes in fair value of liability classified derivative contracts. The increase in the remeasurement of certain liability-classified derivatives in the Successor period is further described in Note 4, "Fresh Start Accounting," and Note 9, "Fair Value of Financial Instruments," to our consolidated financial statements in Part II Item 8 of this Annual Report.
+
+Gain on RTP Fab Transfer. The gain on the RTP Fab Transfer was primarily related to the acceleration of the RTP Transfer Date and the early termination of the Master Supply Agreement.
+
+Gain on contingent cash. The Company received contingent cash back due to the CFIUS approval received in January 2026, as further described in Note 3, "Emergence from Voluntary Reorganization under Chapter 11," to our consolidated financial statements in Part II, Item 8 of this Annual Report.
+
+Interest income. The decrease in interest income during the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 compared to fiscal 2025 was primarily due to lower interest income attributable to lower average cash balances and less favorable yields.
+
+Realized loss (gain) on equity investment. The realized loss (gain) on equity investment during the Predecessor period ended September 29, 2025 and fiscal 2025, respectively, relates to changes in fair value of the shares of common stock of MACOM Technology Solutions Holdings, Inc. received as partial consideration for the sale of the RF product line (the "MACOM Shares").
+
+Loss on Wafer Supply Agreement. In connection with the completed sale of our former LED Business to SMART Global Holdings, Inc ("SGH") and its wholly owned subsidiary CreeLED, Inc. ("CreeLED" and collectively with SGH, "SMART") in fiscal 2021, we entered into a Wafer Supply and Fabrication Services Agreement (the "Wafer Supply Agreement"), pursuant to which we supplied CreeLED with certain silicon carbide materials and fabrication services for up to four years. We recognized a supply agreement liability in connection with this agreement, which reached full amortization in the second quarter of fiscal 2023. We terminated the Wafer Supply Agreement effective as of September 30, 2024.
+
+Write-off of Deferred Financing Costs. We recognized charges of $54.7 million related to commitment fee assets and liabilities on undrawn tranches of our Existing Senior Secured Notes and the portion of debt issuance costs allocated to those tranches. Due to the Restructuring Support Agreement and Chapter 11 Cases, the undrawn borrowing capacity under the Existing Senior Secured Notes is no longer available.
+
+34
+
+Income Tax Expense
+
+The change in the effective tax rate for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 compared to fiscal 2025 was primarily driven by the reversal of the deferred tax liability associated with our goodwill upon the impairment recognized during fiscal 2025 and our emergence from Chapter 11 bankruptcy.
+
+In general, the variation between our effective income tax rate and the current United States statutory rate of 21.0% is primarily due to: (i) changes in our valuation allowances against deferred tax assets, (ii) effects of emergence from Chapter 11 bankruptcy, and (iii) income derived from international locations with differing tax rates than the United States.
+
+Liquidity and Capital Resources
+
+The following sections discuss material changes in our financial condition from the end of fiscal 2025, including the effects of changes in our consolidated balance sheets, and the effects of the Chapter 11 Cases on our liquidity and capital resources. There continues to be uncertainty around the extent of market volatility, demand for our products, increased competition, the impact of tariffs, inflationary pressures, interest rate changes, recessionary concerns, uncertainty in the financial and banking industry, and geopolitical tension, which may impact our liquidity and working capital needs in future periods.
+
+On September 29, 2025, we emerged from the Chapter 11 Cases. On the Effective Date, we issued new secured financing in an aggregate amount of $2.1 billion, consisting of (i) new Senior Secured Notes due 2030 (the "New Senior Secured Notes") in an aggregate principal amount of $1.3 billion, (ii) 7%/12% second lien senior secured PIK toggle notes due 2031 (the "New 2L Non-Convertible Notes") in an aggregate principal amount of $296.4 million, (iii) new 2.5% Convertible Second-Lien Senior Secured Notes due 2031 in an aggregate principal amount of $203.6 million to Renesas (the "New 2L Renesas Convertible Notes") and (iv) new 2.5% Convertible Second-Lien Senior Secured Notes due 2031 (the "New 2L Non-Renesas Convertible Notes") in an aggregate principal amount of $331.4 million, including the payment of the $30.25 million under the Rights Offering Backstop Commitment Agreement, dated June 22, 2025, between the Company, the rights offering backstop parties and the rights offering backstop parties thereto.
+
+On March 19, 2026, the Company entered into a Securities Purchase Agreement (the “Securities Purchase Agreement”) with certain investors in connection with a private placement offering of shares of common stock and pre‑funded warrants to purchase shares of common stock, resulting in aggregate gross proceeds of approximately $96.9 million. On March 19, 2026, the Company also entered into a separate, privately negotiated issuance of 3.5% Convertible 1.5 Lien Senior Secured Notes due 2031 (the “1.5L Convertible Notes”) in an aggregate principal amount of $379.0 million. The aggregate gross proceeds from these transactions were used to repurchase $475.9 million aggregate principal amount of the New Senior Secured Notes, which the total payment of $524.3 million included a make‑whole premium funded by the Company and accrued and unpaid interest.
+
+During the Successor period ended June 28, 2026, holders of our New 2L Non-Renesas Convertible Notes elected to convert approximately $64.3 million of principal into shares of common stock. These conversions were non-cash financing transactions and reduced our outstanding indebtedness, future interest obligations, and cash requirements associated with repayment of the notes. As a result, management believes the conversions improved our overall liquidity position.
+
+Refer to Note 11, "Debt," for additional information on our debt obligations, Note 12, "Stockholders' Equity and Pre-Funded Warrants" for additional information on the Securities Purchase Agreement and Note 2, "Basis of Presentation and Summary of Significant Accounting Policies," Note 3 "Emergence from Voluntary Reorganization under Chapter 11," and Note 4, "Fresh Start Accounting," to our consolidated financial statements in Part II, Item 8 of this Annual Report for additional information on our Chapter 11 Cases and the adoption of fresh start accounting.
+
+35
+
+Table of Contents
+
+Overview
+
+The following table sets forth our cash, cash equivalents and short-term investments:
+
+Successor Predecessor
+
+(in millions of U.S. Dollars) June 28, 2026 June 29, 2025 Change
+
+Cash and cash equivalents $576.3 $467.2 $109.1
+
+Short-term investments 512.3 488.2 24.1
+
+Total cash, cash equivalents and short-term investments $1,088.6 $955.4 $133.2
+
+The following table summarizes our cash flows for the periods presented:
+
+Successor Predecessor
+
+(in millions of U.S. Dollars) Period from September 30, 2025 to June 28, 2026 Period from June 30, 2025 to September 29, 2025 Fiscal Year Ended June 29, 2025
+
+Cash used in operating activities of continuing operations ($180.8) ($22.4) ($711.7)
+
+Cash provided by (used in) investing activities of continuing operations 530.7 136.9 (268.1)
+
+Cash (used in) provided by financing activities of continuing operations (254.0) (101.5) 400.1
+
+Effect of foreign exchange changes (0.6) 0.8 1.0
+
+Net increase (decrease) in cash and cash equivalents $95.3 $13.8 ($578.7)
+
+Cash Flows
+
+The net increase in cash and cash equivalents and short-term investments of $133 million between June 28, 2026 and June 29, 2025 was primarily driven by cash flows from the following activities:
+
+•Operating activities — Cash used in operating activities results from net (loss) income adjusted for certain non-cash items and changes in assets and liabilities. Cash used in operating activities for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 compared to fiscal 2025, decreased by approximately $509 million. This decrease was primarily driven by lower interest payments due to the Chapter 11 Cases, a decrease in amortization of debt issuance costs, decrease in goodwill impairment, the timing of severance payments, decreases in payroll and other operating costs attributable to our restructuring initiatives, and mark-to-market adjustments on the liability-classified derivatives partially offset by higher professional service costs attributable to the Chapter 11 Cases, the realized loss on the MACOM shares, favorable changes in working capital and an increase of inventory write-offs.
+
+•Investing activities — Investing cash flows consist primarily of capital expenditures and short-term investment activity. Cash provided by investing activities for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 compared to fiscal 2025 increased by $936 million, primarily attributable to a planned decrease in gross capital expenditures and the receipt of approximately $733 million in Advanced Manufacturing Investment Credit refundable tax credits, New York State Grants related to the Mohawk Valley Fab and other government tax credits. Additional increases in cash proceeds received from the MACOM Shares were primarily offset by lower proceeds from the net sale and maturity of short-term investments and proceeds received from the disposal of non-core buildings and equipment.
+
+•Financing activities — Financing cash flows consist primarily of debt transactions and debt-related payments related to the Chapter 11 Cases, tax payments related to the net share settlement of restricted stock units, and proceeds from the exercise of options to acquire common stock. Net cash used in financing activities for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025, compared to fiscal 2025 increased by $756 million, primarily attributable to $1,025 million used in fiscal 2026 to repay our pre- and post-bankruptcy senior secured notes, per the terms of those agreements and the Chapter 11 claims settlements partially offset by a net increase of approximately $307 million in cash proceeds received from debt issuances and the proceeds from the Securities Purchase Agreement.
+
+36
+
+Table of Contents
+
+Our principal sources of liquidity in fiscal 2026 included:
+
+•the debt and equity issuance activities described above;
+
+•receipts from customers and other operating activities;
+
+•receipts under government incentive programs; and
+
+•proceeds from the sale of our non-core assets and other short-term investments.
+
+Cash on hand during fiscal 2026 was primarily used for the following:
+
+•normal recurring operating expenses;
+
+•professional service fees associated with our Chapter 11 Cases;
+
+•implementation of the restructuring plans described in Note 18, "Restructuring," to our consolidated financial statements in Part II, Item 8 of this Annual Report; and
+
+•repayments of the New Senior Secured Notes, including principal and related repayment premiums.
+
+Our currently anticipated cash flow needs, both in the short-term and long-term, may include the following:
+
+•normal recurring operating expenses;
+
+•planned and discretionary capital expenditures; and
+
+•repayments of debt and interest.
+
+Given our current cash and investments position, we believe we will be able to fund daily operating expenses, debt service, working capital and capital requirements for at least the next 12 months.
+
+The initial phases of our major expansion projects at the Mohawk Valley Fab and the Siler City facility were substantially completed as of late fiscal 2025. Consequently, our gross capital investment continued to decrease significantly during fiscal 2026, which decreased level of investment we expect to continue in fiscal 2027. We also believe our ability to modulate capital investment up or down in response to expected production capacity demand requirements will continue to increase. Further, we also continue to actively pursue opportunities for federal funding, including but not limited to awards that may be made available through the CHIPS and Science Act or other federal programs, including the United States Investment Accelerator Office or other similar programs ("federal funding opportunities").
+
+We will continue to have take-or-pay inventory supplier agreements that require a minimum of $164 million of purchases over the next four years, as outlined further in Note 16, "Commitments and Contingencies," to our consolidated financial statements in Part II, Item 8 of this Annual Report. We will also be required to purchase electricity for our facility in Siler City, North Carolina and Durham, North Carolina under a long-term electricity supply agreement with minimum volume and spend requirements of approximately $55 million over the next 4 years and approximately $23 million over the next 7 years, respectively.
+
+The Company has entered into an agreement with a supplier for equipment that has not yet been delivered or accepted by the Company. While the Company has not accepted delivery of the equipment and, therefore, the arrangement has not commenced as a lease under Accounting Standards Codification ("ASC") 842, the Company is contractually obligated to make monthly payments of $0.2 million for the next 181 months.
+
+From time to time, we evaluate strategic opportunities, including potential acquisitions, joint ventures, divestitures, spin-offs or investments in complementary businesses, and we have continued to make such evaluations. We may also access capital markets through the issuance of debt or equity, which we may use in connection with the acquisition of complementary businesses or other significant assets or for other strategic opportunities or general corporate purposes.
+
+Financial and Market Risks
+
+We are exposed to financial and market risks, including changes in interest rates, equity prices, currency exchange rates and commodities risk. We have entered, and may in the future enter, into foreign currency derivative financial instruments in an effort to manage or hedge some of our foreign exchange rate risk. We may not be able to engage in hedging transactions in the future, and even if we do, foreign currency fluctuations may still have a material adverse effect on our results of operations and financial performance. All of the potential changes noted below are based on sensitivity analysis performed on our financial positions at June 28, 2026 and June 29, 2025. Actual results may differ materially.
+
+37
+
+Table of Contents
+
+Interest Rate Risk
+
+We maintain an investment portfolio principally composed of money market funds, municipal bonds, corporate bonds, United States agency securities, United States treasury securities, commercial paper, certificates of deposit, and variable rate demand notes. In order to minimize risk, our cash management policy permits us to acquire investments rated “A” grade or better. As of June 28, 2026 and June 29, 2025, our cash equivalents and short-term investments had a fair value of $646.9 million and $595.7 million, respectively. If interest rates were to hypothetically increase by 100 basis points, the fair value of our short-term investments would decrease by $6.5 million at June 28, 2026 and $6.0 million at June 29, 2025.
+
+Currency Rate and Price Risk
+
+All of our operations have a functional currency of the United States Dollar. However, we operate internationally and have transactions denominated in foreign currencies, and therefore we are exposed to currency exchange rate risks. Fluctuations in exchange rates may adversely affect our expenses and results of operations as well as the value of our assets and liabilities.
+
+Commodities
+
+We utilize significant amounts of precious metals, gases and other commodities in our manufacturing processes. General economic conditions, market specific or trade policy changes or other factors outside of our control may affect the pricing of these commodities. We do not use financial instruments to hedge commodity prices.
+
+Off-Balance Sheet Arrangements
+
+We do not use off-balance sheet arrangements with unconsolidated entities or related parties, nor do we use any other forms of off-balance sheet arrangements. Accordingly, our liquidity and capital resources are not subject to off-balance sheet risks from unconsolidated entities. As of June 28, 2026, we did not have any off-balance sheet arrangements, as defined in Item 303(b) of SEC Regulation S-K.
+
+Critical Accounting Estimates
+
+Our consolidated financial statements are prepared in accordance with U.S. GAAP. In the application of U.S. GAAP, we are required to make estimates that af

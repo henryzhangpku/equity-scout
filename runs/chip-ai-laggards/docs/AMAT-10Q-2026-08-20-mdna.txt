@@ -1,0 +1,439 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+The following management’s discussion and analysis is provided in addition to the accompanying consolidated condensed financial statements and notes, and for a full understanding of our results of operations and financial condition should be read in conjunction with the consolidated condensed financial statements and notes included in this Form 10-Q and the financial statements and notes for the fiscal year ended October 26, 2025 contained in our Form 10-K filed on December 12, 2025.
+
+This report contains forward-looking statements that involve a number of risks and uncertainties. Examples of forward-looking statements include those regarding our future financial or operating results, customer demand and spending, end-user demand, trends and outlooks in our markets and industries, cash flows and cash deployment strategies, declaration of dividends, share repurchases, business strategies and priorities, costs and cost controls, products, competitive positions, management’s plans and objectives for future operations, research and development, acquisitions, investments and divestitures, growth opportunities, restructuring and severance activities, backlog, working capital, liquidity, investment portfolio and policies, taxes, supply chain, manufacturing, properties, legal matters, claims and proceedings, and other statements that are not historical facts, as well as their underlying assumptions. Forward-looking statements may contain words such as “may,” “will,” “should,” “could,” “would,” “expect,” “plan,” “anticipate,” “believe,” “estimate,” “intend,” “potential” and “continue,” the negative of these terms, or other comparable terminology. All forward-looking statements are subject to risks and uncertainties and other important factors, including those discussed in Part II, Item 1A, “Risk Factors,” below and elsewhere in this report. These and many other factors could affect our future financial condition and operating results and could cause actual results to differ materially from expectations based on forward-looking statements made in this document or elsewhere by us or on our behalf. Forward-looking statements are based on management’s estimates, projections and expectations as of the date hereof, and we undertake no obligation to revise or update any such statements.
+
+32
+
+Table of Contents
+
+Overview
+
+We provide equipment, services and software to the semiconductor and related industries. Our customers include manufacturers of semiconductor wafers and chips and other electronic devices. Our customers’ products are used in a wide variety of products such as personal computing devices, mobile phones, artificial intelligence (AI) and data center servers, automobiles, connected devices, industrial applications and consumer electronics. Each of our segments is subject to variable industry conditions, as demand for equipment and services can change depending on supply and demand for chips and other electronic devices, as well as other factors, such as global economic, political and market conditions, and the nature and timing of technological advances in fabrication processes.
+
+Our strategic priorities include developing products that help solve customers’ challenges at technology inflections, growing our service business, and expanding our served market opportunities in the semiconductor industry. Our long-term growth strategy requires continued development of new materials engineering capabilities, including products and platforms that enable expansion into new and adjacent markets. Our significant investments in research, development and engineering (RD&E) are intended to enable us to deliver new products and technologies before the emergence of strong demand, allowing customers to incorporate these products into their manufacturing plans during early-stage technology selection. We collaborate closely with our global customers to design systems and processes to meet their technical and production requirements.
+
+Our future operating results depend to a considerable extent on our ability to maintain a competitive advantage in the equipment and service products we provide. Development cycles depend on whether the product is an enhancement of an existing product, which typically has a shorter development cycle, or a new product, which typically has a longer development cycle. Most of our existing products resulted from internal development activities and innovations involving new technologies, materials and processes. In certain instances, we acquire technologies, either in existing or new product areas, to complement our existing technology capabilities and to reduce time to market. Product development and manufacturing activities occur primarily in the United States, Europe, Israel, and Asia. Our portfolio of equipment and service products is highly technical and is sold primarily through a direct sales force.
+
+We believe that it is critical to make substantial investments in RD&E to assure the availability of innovative technology that meets the current and projected requirements of our customers’ most advanced designs. We have invested and continue to invest in RD&E in order to continue to offer new products and technologies.
+
+We operate in two reportable segments: Semiconductor Systems and Applied Global Services® (AGS). A summary of financial information for each reportable segment is found in Note 14 of Notes to Consolidated Condensed Financial Statements. A discussion of factors that could affect our operations is set forth under “Risk Factors” in Part II, Item 1A, which is incorporated herein by reference.
+
+Our results are driven primarily by customer spending on capital equipment and services to support key technology transitions or changes in production volume in response to worldwide demand for semiconductors.
+
+The Semiconductor Systems segment is comprised primarily of capital equipment used to fabricate semiconductor chips. Spending by semiconductor customers, which include companies that operate in the foundry, logic, memory, and other semiconductor chip markets, is driven by demand for products such as smartphones, mobile devices, personal computers (PC), servers for AI and data centers, automobiles, clean energy, storage, and other products, and the nature and timing of technological advances in fabrication processes. The growth of data and emerging end-market drivers such as AI, the internet of things, robotics and smart vehicles are also creating the next wave of growth for the industry. As a result, products within the Semiconductor Systems segment are subject to significant changes in customer requirements, including transitions to smaller dimensions, increasingly complex chip architectures, new materials and an increasing number of applications. Spending can also depend on customer facility readiness and timeline for installation of capital equipment at customer sites. Development efforts are focused on solving customers’ key technical challenges in patterning, transistor, interconnect, process control, and packaging performance.
+
+33
+
+Table of Contents
+
+The AGS segment provides services, spares and factory automation software to customer fabrication plants globally to help customers optimize performance of our large, global installed base of semiconductor and other products. Demand for AGS’ service and spares is driven by our large and growing installed base of manufacturing systems, and customers’ needs to shorten ramp times, improve system performance, and optimize factory output and operating costs. Industry conditions that affect AGS’ sales of spares and services are primarily characterized by changes in semiconductor manufacturers’ wafer starts and utilization rates, growth of the installed base of equipment and growing service intensity of newer tools. Our strategy is to continue to shift the AGS’ service and spares business to a subscription agreement model, improving customer factory performance and optimizing operating costs, and providing us a more predictable revenue stream.
+
+Effective the first quarter of fiscal 2026, we have moved our 200 millimeter (200mm) equipment business from our AGS segment to our Semiconductor Systems segment. We made this change in order to increase our operational efficiency and consolidate the reporting of our 200mm equipment with the reporting of our other capital equipment used to fabricate semiconductor chips in our Semiconductor Systems segment. In addition, effective in the first quarter of fiscal 2026, we are fully allocating corporate support costs to our reportable segments. Prior-period segment balances have been recast to conform to the current-year presentation.
+
+The Other category includes revenues, costs of products and operating expenses from other operating segments that do not meet the requirements for a reportable segment. We do not allocate to our reportable segments charges associated with restructuring actions, such as employee severance costs and asset impairment charges, unless the restructuring actions pertain to a specific reportable segment. Segment operating income also excludes interest income/expense and other financial charges and income taxes.
+
+The United States government has implemented export regulations for U.S. semiconductor technology sold or provided to customers in China, which have limited our ability to provide certain products and services to customers in China, over the past several years. The U.S. government continues to issue new export licensing requirements, and additional updates and other requirements that have had the effect of further limiting our ability to provide certain products and services to customers outside the U.S., including in China. Also, the United States has announced changes to its trade policy, including increased tariffs on imports. These actions have caused substantial uncertainty and have resulted in retaliatory measures, including new tariffs on U.S. goods imposed by China and other countries. Some of these actions have been followed by announcements of limited exemptions and temporary pauses. For a description of these risks, see the risk factors entitled “Business and Industry Risks - Global trade issues and changes in and uncertainties with respect to trade policies and export regulations, including import and export license requirements, trade sanctions, tariffs and international trade disputes, have adversely impacted and could further adversely impact our business and operations, and reduce the competitiveness of our products and services relative to local and global competitors” and “Business and Industry Risks - We are exposed to risks and uncertainty related to changes in trade policies, and increased tariffs and trade disputes” in Part II, Item 1A, “Risk Factors.”
+
+34
+
+Table of Contents
+
+Results of Operations
+
+Fiscal 2026 and 2025 each contain 52 weeks and the first nine months of fiscal 2026 and 2025 each contained 39 weeks.
+
+The following table presents certain significant measurements for the periods presented:
+
+Three Months Ended Nine Months Ended
+
+July 26,
+
+2026 July 27,
+
+2025 Change July 26,
+
+2026 July 27,
+
+2025 Change
+
+(In millions, except per share amounts and percentages)
+
+Revenue $ 9,115 $ 7,302 $ 1,813 $ 24,037 $ 21,568 $ 2,469
+
+Gross margin 50.3 % 48.8 % 1.5 points 49.8 % 48.9 % 0.9 points
+
+Operating income $ 3,075 $ 2,233 $ 842 $ 7,429 $ 6,577 $ 852
+
+Operating margin 33.7 % 30.6 % 3.1 points 30.9 % 30.5 % 0.4 points
+
+Net income $ 2,538 $ 1,779 $ 759 $ 7,370 $ 5,101 $ 2,269
+
+Earnings per diluted share $ 3.17 $ 2.22 $ 0.95 $ 9.22 $ 6.29 $ 2.93
+
+Revenue
+
+Revenue by segment for the periods presented was as follows:
+
+Three Months Ended Nine Months Ended
+
+July 26,
+
+2026 July 27,
+
+2025 Change July 26,
+
+2026 July 27,
+
+2025 Change
+
+(In millions, except percentages)
+
+Semiconductor Systems $ 7,040 77 % $ 5,564 76 % 27 % $ 18,146 75 % $ 16,562 77 % 10 %
+
+Applied Global Services 1,781 20 % 1,463 20 % 22 % 5,005 21 % 4,236 20 % 18 %
+
+Other 294 3 % 275 4 % 7 % 886 4 % 770 3 % 15 %
+
+Total $ 9,115 100 % $ 7,302 100 % 25 % $ 24,037 100 % $ 21,568 100 % 11 %
+
+Revenue for Semiconductor Systems by market for the periods presented was as follows:
+
+Three Months Ended Nine Months Ended
+
+July 26,
+
+2026 July 27,
+
+2025 July 26,
+
+2026 July 27,
+
+2025
+
+Foundry, logic and other 67 % 69 % 65 % 68 %
+
+Dynamic random-access memory (DRAM) 26 % 22 % 29 % 25 %
+
+Flash memory (NAND) 7 % 9 % 6 % 7 %
+
+100 % 100 % 100 % 100 %
+
+Revenue in the three and nine months ended July 26, 2026 increased compared to the same periods in the prior year. Gross margin in the three and nine months ended July 26, 2026 increased compared to the same periods in the prior year primarily driven by higher revenue, increases in average selling prices, and lower material and manufacturing costs. The increase in gross margin in the three months ended July 26, 2026 was also driven by favorable changes in product mix.
+
+35
+
+Table of Contents
+
+The Semiconductor Systems segment remained our largest revenue contributor for which revenue increased for the three and nine months ended July 26, 2026, compared to the same periods in the prior year. The increase in foundry and logic customers’ spending for the three and nine months ended July 26, 2026 reflected stronger demand for leading-edge manufacturing technologies. For the nine months ended July 26, 2026, this increase was partially offset by lower customer demand for trailing-edge logic systems. Memory customers’ spending in the three and nine months ended July 26, 2026 was higher compared to the same periods in the prior year due to increased customer investments in DRAM technology transitions.
+
+Our AGS revenue increased in the three and nine months ended July 26, 2026 compared to the same periods in the prior year primarily due to higher long-term service agreement revenue and customer spending on spares.
+
+Revenue by geographic region, determined by the location of customers’ facilities to which products were shipped and services were performed, was as follows:
+
+Three Months Ended Nine Months Ended
+
+July 26,
+
+2026 July 27,
+
+2025 Change July 26,
+
+2026 July 27,
+
+2025 Change
+
+(In millions, except percentages)
+
+China $ 2,506 28 % $ 2,548 35 % (2) % $ 6,688 28 % $ 6,565 30 % 2 %
+
+Korea 1,521 17 % 1,160 16 % 31 % 4,551 19 % 4,389 20 % 4 %
+
+Taiwan 2,025 22 % 1,843 25 % 10 % 5,902 25 % 5,023 23 % 17 %
+
+Japan 839 9 % 713 10 % 18 % 1,987 8 % 1,825 9 % 9 %
+
+Southeast Asia 374 4 % 195 3 % 92 % 894 4 % 616 3 % 45 %
+
+Asia Pacific 7,265 80 % 6,459 89 % 12 % 20,022 84 % 18,418 85 % 9 %
+
+United States 1,367 15 % 683 9 % 100 % 2,964 12 % 2,408 11 % 23 %
+
+Europe 483 5 % 160 2 % 202 % 1,051 4 % 742 4 % 42 %
+
+Total $ 9,115 100 % $ 7,302 100 % 25 % $ 24,037 100 % $ 21,568 100 % 11 %
+
+Operating Expenses
+
+Operating expenses for the periods presented were as follows:
+
+Three Months Ended Nine Months Ended
+
+July 26,
+
+2026 July 27,
+
+2025 Change July 26,
+
+2026 July 27,
+
+2025 Change
+
+(In millions)
+
+Research, development and engineering (RD&E) $ 1,100 $ 901 $ 199 $ 3,055 $ 2,653 $ 402
+
+Marketing and selling $ 249 $ 224 $ 25 $ 704 $ 646 $ 58
+
+General and administrative (G&A) $ 162 $ 204 $ (42) $ 515 $ 667 $ (152)
+
+Legal settlement $ — $ — $ — $ 253 $ — $ 253
+
+Restructuring charges $ — $ — $ — $ 12 $ — $ 12
+
+RD&E expenses for the three and nine months ended July 26, 2026 increased compared to the same periods in the prior year, primarily due to additional headcount to support our ongoing investments in product development initiatives and higher depreciation expenses, consistent with our growth strategy. We continued to prioritize RD&E investments in technical capabilities and critical RD&E programs in current and new markets.
+
+Marketing and selling expenses for the three and nine months ended July 26, 2026 increased compared to the same periods in the prior year primarily due to higher employee related expenses and higher corporate support costs.
+
+G&A expenses for the three and nine months ended July 26, 2026 decreased compared to the same periods in the prior year primarily due to lower corporate support costs.
+
+36
+
+Table of Contents
+
+In the first nine months of fiscal 2026, we recorded a charge of $253 million related to a settlement agreement which resolved a previously disclosed export controls compliance matter. See the information under the heading “Legal Matters” in Note 13 of the Notes to Consolidated Condensed Financial Statements for information regarding this matter and the settlement agreement.
+
+In the first nine months of fiscal 2026, we recognized $12 million in restructuring charges, consisting primarily of severance and other employment termination benefits incurred in connection with the approved Fiscal 2025 Restructuring Plan.
+
+Interest Expense and Interest and Other Income (expense), net
+
+Interest expense and interest and other income (expense), net for the periods presented were as follows:
+
+Three Months Ended Nine Months Ended
+
+July 26,
+
+2026 July 27,
+
+2025 Change July 26,
+
+2026 July 27,
+
+2025 Change
+
+(In millions)
+
+Interest expense $ 68 $ 66 $ 2 $ 206 $ 198 $ 8
+
+Interest and other income (expense), net $ (100) $ 396 $ (496) $ 1,237 $ 625 $ 612
+
+Interest expense incurred was primarily associated with our senior unsecured notes. Interest expense in the nine months ended July 26, 2026 increased compared to the same period in the prior year, primarily due to our issuance of senior unsecured notes in September 2025.
+
+Interest and other income (expense), net in the three months ended July 26, 2026 decreased compared to the same period in the prior year, primarily driven by higher unrealized loss on equity investments. Interest and other income (expense), net in the nine months ended July 26, 2026 increased compared to the same period in the prior year, primarily driven by higher net unrealized gain on equity investments.
+
+Income Taxes
+
+Provision for income taxes and effective tax rates for the periods presented were as follows:
+
+Three Months Ended Nine Months Ended
+
+July 26,
+
+2026 July 27,
+
+2025 Change July 26,
+
+2026 July 27,
+
+2025 Change
+
+(In millions, except percentages)
+
+Provision for income taxes $ 369 $ 784 $ (415) $ 1,090 $ 1,903 $ (813)
+
+Effective income tax rate 12.7 % 30.6 % (17.9) points 12.9 % 27.2 % (14.3) points
+
+Our provision for income taxes and effective tax rate are affected by the geographical composition of pre-tax income, which includes jurisdictions with differing tax rates, conditional reduced tax rates and other income tax incentives. It is also affected by events that vary from period to period, such as changes in income tax laws and the resolution of prior years’ income tax filings.
+
+Our effective tax rates for the third quarter of fiscal 2026 and 2025 were 12.7 percent and 30.6 percent, respectively. The effective tax rate for the third quarter of fiscal 2026 was lower compared to the same period in the prior fiscal year, primarily due to the recognition of a valuation allowance against deferred tax assets related to corporate alternative minimum tax (CAMT) credits in fiscal 2025.
+
+Our effective tax rates for the first nine months of fiscal 2026 and 2025 were 12.9 percent and 27.2 percent, respectively. The effective tax rate for the first nine months of fiscal 2026 was lower than the same period in the prior fiscal year, primarily due to a remeasurement of deferred tax assets resulting from new tax incentive agreements in Singapore, and the recognition of a valuation allowance against deferred tax assets related to CAMT credits in fiscal 2025.
+
+37
+
+Table of Contents
+
+Segment Operating Income (Loss)
+
+Operating income (loss) by segment for the periods presented was as follows:
+
+Three Months Ended Nine Months Ended
+
+July 26,
+
+2026 July 27,
+
+2025 Change July 26,
+
+2026 July 27,
+
+2025 Change
+
+(In millions, except percentages and ratios)
+
+Operating income (loss)
+
+Semiconductor Systems $ 2,657 $ 1,837 $ 820 45 % $ 6,176 $ 5,479 $ 697 13 %
+
+Applied Global Services 536 400 136 34 % 1,461 1,114 347 31 %
+
+Other (118) (4) (114) NM* (208) (16) (192) NM*
+
+Total $ 3,075 $ 2,233 $ 842 $ 7,429 $ 6,577 $ 852
+
+Operating margin
+
+Semiconductor Systems 37.7 % 33.0 % 4.7 points 34.0 % 33.1 % 0.9 points
+
+Applied Global Services 30.1 % 27.3 % 2.8 points 29.2 % 26.3 % 2.9 points
+
+________________________
+
+*Not meaningful
+
+Semiconductor Systems’ operating margin for the three months ended July 26, 2026 increased compared to the same period in the prior year primarily driven by higher revenue, favorable changes in product mix, increases in average selling prices and lower material and manufacturing costs, partially offset by increased RD&E expenses. Semiconductor Systems’ operating margin for the nine months ended July 26, 2026 increased compared to the same period in the prior year primarily driven by higher revenue, increases in average selling prices and lower material and manufacturing costs, partially offset by increased RD&E expenses and a legal settlement charge related to a previously disclosed export controls compliance matter.
+
+AGS’ operating margin for the three and nine months ended July 26, 2026 increased compared to the same periods in the prior year primarily due to higher revenue from services and spares and favorable changes in customer and product mix.
+
+38
+
+Table of Contents
+
+Recent Accounting Pronouncements
+
+Accounting Standards Not Yet Adopted
+
+Environmental Credits and Environmental Credit Obligations. In May 2026, the Financial Accounting Standards Board (FASB) issued an accounting standard update establishing guidance for the accounting for environmental credits and environmental credit obligations. The standard provides recognition, measurement, presentation and disclosure requirements for environmental credits and related environmental credit obligations. This authoritative guidance will be effective for us beginning with our interim and annual reporting for fiscal year 2029, with early adoption permitted. We are evaluating the effect of this guidance on our consolidated financial statements and related disclosures.
+
+Accounting for Government Grants Received by Business Entities. In December 2025, the FASB issued an accounting standard update establishing authoritative guidance on the accounting for government grants received by business entities, including grants related to an asset and grants related to income. This authoritative guidance will be effective for us beginning with our interim and annual reporting for fiscal year 2030, with early adoption permitted. The standard allows for adoption on a modified prospective, modified retrospective, or full retrospective basis. We are evaluating the effect of this guidance on our consolidated financial statements and related disclosures.
+
+Targeted Improvements to the Accounting for Internal-Use Software. In September 2025, the FASB issued an accounting standard update to increase the operability of the recognition guidance considering different methods of software development by replacing the current stage-based capitalization model with a principles-based approach. Under the new guidance, costs are capitalized once management authorizes and commits to funding the software project, and it is probable that both the project will be completed and the software will be used to perform the function intended. This authoritative guidance will be effective for us beginning with our interim and annual reporting for fiscal year 2029, with early adoption permitted. We are evaluating the effect of this guidance on our consolidated financial statements and related disclosures.
+
+Disaggregation of Income Statement Expenses. In November 2024, the FASB issued an accounting standard update to improve income statement expenses disclosures (Subtopic 220-40). The standard requires more detailed information related to the types of expenses, including (among other items) the amounts of purchases of inventory, employee compensation, depreciation and intangible asset amortization included within each interim and annual income statement’s expense caption, as applicable. This authoritative guidance can be applied prospectively or retrospectively and will be effective for us in fiscal 2028 for annual periods and in the first quarter of fiscal 2029 for interim periods, with early adoption permitted. We are evaluating the effect of this guidance on our consolidated financial statements and related disclosures.
+
+Improvements to Income Tax Disclosures. In December 2023, the FASB issued an accounting standard update to improve income tax disclosures (Topic 740). The standard prescribes specific categories for the components of the effective tax rate reconciliation, requires disclosure of income taxes paid by jurisdiction, and modifies other income tax-related disclosures. This authoritative guidance will be effective for us beginning with our annual reporting for fiscal year 2026 and the adoption is expected to expand the disclosures in our notes to the consolidated financial statements.
+
+Accounting Standards Adopted
+
+For a description of recently adopted accounting standards, including the date of adoption and the effect, if any, on our consolidated financial statements, see Note 1 “Basis of Presentation and Recently Adopted Accounting Standards,” of the Notes to Consolidated Condensed Financial Statements.
+
+39
+
+Table of Contents
+
+Financial Condition, Liquidity and Capital Resources
+
+Our cash, cash equivalents and investments consisted of the following:
+
+July 26,
+
+2026 October 26,
+
+2025
+
+(In millions)
+
+Cash and cash equivalents $ 7,037 $ 7,241
+
+Short-term investments 2,196 1,332
+
+Long-term investments 5,268 4,327
+
+Total cash, cash equivalents and investments $ 14,501 $ 12,900
+
+Sources and Uses of Cash
+
+A summary of cash provided by (used in) operating, investing, and financing activities was as follows:
+
+Nine Months Ended
+
+July 26, 2026 July 27, 2025
+
+(In millions)
+
+Cash provided by operating activities $ 5,568 $ 5,130
+
+Cash used in investing activities $ (3,152) $ (2,643)
+
+Cash used in financing activities $ (2,634) $ (5,146)
+
+Operating Activities
+
+Cash from operating activities for the nine months ended July 26, 2026 was $5.6 billion, which reflects net income adjusted for the effect of non-cash charges and changes in working capital components. Significant non-cash charges included depreciation, amortization, gain or loss on investments or asset sales, share-based compensation, deferred income taxes and restructuring charges. Cash provided by operating activities increased in the first nine months of fiscal 2026 compared to the same period in the prior fiscal year primarily due to higher net income and lower payments for income taxes, partially offset by a higher accounts receivable balance and higher vendor payments.
+
+Our working capital was $14.7 billion as of July 26, 2026 and $12.9 billion as of October 26, 2025.
+
+Days sales outstanding of our accounts receivable at July 26, 2026 and July 27, 2025 were 77 days and 72 days, respectively. Days sales outstanding varies due to the timing of shipments and payment terms. The increase in days sales outstanding was primarily driven by higher down payment invoices for which revenue has not yet been recognized as of July 26, 2026 and lower accounts receivable factoring compared to the same period in the prior year.
+
+Investing Activities
+
+We used $3.2 billion of cash in investing activities during the nine months ended July 26, 2026. Capital expenditures totaled $2.0 billion and purchases of investments, net of proceeds from sales and maturities of investments, were $908 million and net cash paid for acquisitions was $262 million, partially offset by net proceeds from asset sale of $6 million, during the nine months ended July 26, 2026.
+
+Our investment portfolio consists principally of investment grade money market mutual funds, U.S. Treasury and agency securities, municipal bonds, corporate bonds and mortgage-backed and asset-backed securities, as well as equity securities. We regularly monitor the credit risk in our investment portfolio and take appropriate measures, which may include the sale of certain securities, to manage such risks prudently in accordance with our investment policies.
+
+Financing Activities
+
+We used $2.6 billion of cash in financing activities during the nine months ended July 26, 2026, consisting primarily of cash used for repurchases of common stock of $1.2 billion, cash dividends paid to stockholders totaling $1.2 billion, tax withholding payments for vested equity awards of $437 million and net payments on commercial paper notes of $1 million, partially offset by proceeds received from common stock issuances of $131 million under our employees’ stock purchase plan.
+
+40
+
+Table of Contents
+
+We currently anticipate that cash dividends will continue to be paid on a quarterly basis, although the declaration of any future cash dividend is at the discretion of the Board of Directors and will depend on our financial condition, results of operations, capital requirements, business conditions and other factors, as well as a determination by the Board of Directors that cash dividends are in the best interests of our stockholders.
+
+In March 2025, our Board of Directors approved a common stock repurchase program authorizing $10.0 billion in repurchases, which supplemented the previous $10.0 billion authorization approved in March 2023. As of July 26, 2026, approximately $12.8 billion remained available for future stock repurchases under the repurchase program.
+
+We have credit facilities for unsecured borrowings in various currencies of up to an aggregate amount of $4.0 billion. These credit facilities consist of a $2.0 billion five-year committed revolving credit agreement with a group of banks (Five-Year Credit Agreement), a $2.0 billion 364-day committed revolving credit agreement with a group of banks (364-Day Credit Agreement), and revolving credit facilities with Japanese banks pursuant to which we may borrow up to approximately $49 million in aggregate at any time. The Five-Year Credit Agreement is scheduled to expire in February 2030, unless extended as permitted under the terms of the agreement. The 364-Day Credit Agreement is scheduled to expire in September 2026, provided, however, if any loans are outstanding on the maturity date, we may convert all or part of such loans to term loans that will mature in September 2027, subject to payment of a fee by us and other customary conditions. The Five-Year Credit Agreement and the 364-Day Credit Agreement each include financial and other covenants with which we were in compliance as of July 26, 2026. No amounts were outstanding under any of these credit facilities as of July 26, 2026. See Note 9, Borrowing Facilities and Debt, of the Notes to the Consolidated Condensed Financial Statements for further discussion related to our Revolving Credit Agreement and other credit facilities.
+
+We have a short-term commercial paper program under which we may issue unsecured commercial paper notes up to a total of $4.0 billion. The proceeds from the issuances of commercial paper are used for general corporate purposes. As of July 26, 2026, we had commercial paper notes outstanding with an aggregate principal amount of $100 million.
+
+We had senior unsecured notes in the aggregate principal amount of $6.5 billion outstanding as of July 26, 2026. See Note 9 of the Notes to the Consolidated Condensed Financial Statements for additional discussion of existing debt.
+
+We may seek to refinance our existing debt and may incur additional indebtedness depending on our capital requirements, general corporate purposes and the availability of financing.
+
+In the ordinary course of business, we provide standby letters of credit or other guarantee instruments to third parties as required for certain transactions initiated by either us or our subsidiaries. We also have agreements with various banks to facilitate subsidiary banking operations worldwide, including overdraft arrangements, issuance of bank guarantees, and letters of credit. See Note 13 of the Notes to the Consolidated Condensed Financial Statements for additional discussion related to our guarantee agreements and arrangements.
+
+Other
+
+On December 22, 2017, the U.S. government enacted the Tax Cuts and Jobs Act (Tax Act). The Tax Act required a one-time transition tax on certain unrepatriated earnings of foreign subsidiaries to be paid in installments beginning in fiscal 2018. The transition tax expense has been fully paid in fiscal 2026.
+
+On August 9, 2022, the U.S. government enacted the U.S. CHIPS and Science Act (CHIPS Act). The CHIPS Act creates a 25% investment tax credit for certain investments in domestic semiconductor manufacturing. The credit is provided for qualifying property, which is placed in service after December 31, 2022, for which construction begins before January 1, 2027, and is treated as a government grant recognized against property, plant and equipment and a reduction of income taxes payable or an increase to taxes receivable for any credit expected to be refunded. We recognize this investment tax credit when there is reasonable assurance that we will qualify for the credit and the benefit will be received. As of July 26, 2026, we have recorded $1.2 billion of investment tax credits, of which $41 million was recorded in other current assets and will offset fiscal 2026 income tax liabilities, and $1.2 billion was recorded in deferred income taxes and other assets and is expected to be refunded.
+
+On July 4, 2025, the U.S. government enacted the One Big Beautiful Bill Act (OBBBA). The OBBBA includes a broad range of tax reform provisions including extending and modifying certain key Tax Act provisions and expanding certain CHIPS Act incentives. These changes include full expensing of domestic research costs, immediate expensing of qualifying property and increasing the investment tax credit for certain investments in domestic semiconductor manufacturing from 25% to 35%. Key tax provisions of the OBBBA are designed to accelerate tax deductions but that may have a detrimental impact on our ability to use certain tax credits. The use of certain tax credits may not be economically viable if it requires electing to forgo significant tax deductions. Most of the provisions are effective beginning in fiscal years 2026 or 2027. The most impactful provisions in fiscal year 2026 include immediate expensing of U.S. performed research costs and the increase in the investment tax credit from 25% to 35% for qualifying property placed in service after December 31, 2025.
+
+41
+
+Table of Contents
+
+Various countries where we do business have enacted or plan to enact new tax laws to implement the global minimum tax regimes based on the Organization for Economic Cooperation and Development Base Erosion and Profit Shifting Project, and where enacted, the rules began to be effective in fiscal 2025. The currently enacted legislation is expected to materially increase our foreign taxes beginning in the first quarter of fiscal 2026, primarily due to the implementation of the global minimum tax regime in Singapore. We continue to monitor developments and evaluate impacts, if any, of these rules on our results of operations and cash flows. Tax authorities and standard-setting bodies continue to issue new guidance, and the ultimate impact of these rules remains subject to ongoing interpretation and implementation. The adoption and effective dates of these rules vary by country and could increase tax complexity and uncertainty and may adversely affect our provision for income taxes in future years.
+
+We have been granted additional conditional reduced tax rates in Singapore that expire beginning in fiscal 2030.
+
+Although cash requirements will fluctuate based on the timing and extent of factors such as those discussed above, our management believes that cash generated from operations, together with the liquidity provided by existing cash balances and borrowing capability, will be sufficient to satisfy our liquidity requirements for the next 12 months. For further details regarding our operating, investing and financing activities, see the Consolidated Condensed Statements of Cash Flows in this report.
+
+42
+
+Table of Contents
+
+Critical Accounting Estimates
+
+The preparation of consolidated financial statements and related disclosures in conformity with accounting principles generally accepted in the United States of America requires management to make judgments, assumptions and estimates that affect the amounts reported.
+
+Estimates and assumptions about future events and their effects cannot be determined with certainty. We base our estimates on historical experience and on various other assumptions believed to be applicable and reasonable under the circumstances. These estimates may change as new events occur, as additional information is obtained and as our operating environment changes. These changes have historically been minor and have been included in the consolidated financial statements as soon as they became known. In addition, management is periodically faced with uncertainties, the outcomes of which are not within our control and will not be known for prolonged periods of time. These uncertainties include those discussed in Part II, Item 1A, “Risk Factors.”
+
+Consistent with what we disclosed in Item 7 of our fiscal 2025 Form 10-K that was filed on December 12, 2025, management believes that Income Taxes are a critical accounting estimate.
+
+43
+
+Table of Contents

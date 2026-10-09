@@ -1,0 +1,739 @@
+Item 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+
+RESULTS OF OPERATIONS
+
+Overview
+
+The Company is a global manufacturer and marketer of branded food products and remains focused on driving long-term growth through a balanced business model, a diverse portfolio, and a commitment to creating value for all stakeholders. The Company’s three reportable segments, Retail, Foodservice, and International, are described in Note O - Segment Reporting in the Notes to the Consolidated Financial Statements in this Quarterly Report on Form 10-Q.
+
+The Company discloses certain measures not defined by United States (U.S.) Generally Accepted Accounting Principles (GAAP), including organic volume, organic net sales, adjusted cost of products sold, adjusted selling, general and administrative (SG&A), adjusted SG&A as a percent of net sales, adjusted equity in earnings of affiliates, adjusted operating income, adjusted earnings before income taxes, adjusted provision for income taxes, adjusted net earnings attributable to Hormel Foods Corporation, adjusted diluted earnings per share, and adjusted segment profit. The Company utilizes these non-GAAP measures to understand and evaluate operating performance on a consistent basis. For additional information and reconciliations to the most closely comparable measures calculated in accordance with GAAP, see the "Non-GAAP Measures" section of this Item.
+
+Diluted earnings per share was $0.11 for the third quarter of fiscal 2026, down 67 percent compared to the same period last year. Adjusted diluted earnings per share for the third quarter of fiscal 2026 was $0.37, up 6 percent compared to the same period last year. Significant factors impacting the quarter are listed below. All comparisons are to the same period of the prior year unless otherwise noted.
+
+•Net sales for the third quarter of fiscal 2026 decreased 2 percent. Organic net sales decreased 2 percent with growth from the Foodservice segment offset by declines in the Retail and International segments.
+
+•Total segment profit for the third quarter of fiscal 2026 decreased 17 percent, while adjusted segment profit was flat to the prior year, as growth in the Foodservice segment was offset by declines in the Retail segment. Adjusted segment profit in the International segment was comparable to the prior year.
+
+◦The decrease in Retail segment profit was due to lower sales and higher logistics expenses, which were partially offset by lower SG&A.
+
+◦The increase in Foodservice segment profit was driven primarily by higher sales and improved margins, which were partially offset by higher logistics expenses and higher SG&A.
+
+◦The decrease in International segment profit was significantly impacted by the non-cash impairment of a minority investment in Indonesia.
+
+•Earnings before income taxes decreased 56 percent for the third quarter of fiscal 2026, primarily due to a $56 million loss related to the Brazil divestiture, a $48 million non-cash impairment charge, and a litigation settlement of $38 million. Adjusted earnings before income taxes increased 3 percent, as lower SG&A were partially offset by lower net sales and higher logistics expenses.
+
+•The pre-tax impact of nonrecurring expenses and discrete items in the third quarter of fiscal 2026 was $155 million, including a loss related to the Brazil divestiture, a non-cash impairment of a minority investment in Indonesia, a litigation settlement, and the Company’s Transform and Modernize (T&M) initiative.
+
+Cash flow from operations was $769 million for the first nine months of fiscal 2026, a 47 percent increase primarily reflecting improved inventory management and working capital performance.
+
+Entering the fourth quarter of fiscal 2026, the external environment remains dynamic, with continued volatility associated with macroeconomic and geopolitical conditions. The Company is actively working to mitigate the impact of these conditions. However, continued pressure from the external environment, at a level greater than expected, could have an adverse impact on results of operations.
+
+25
+
+Table of Contents
+
+Consolidated Results
+
+Volume, Net Sales, Earnings, and Diluted Earnings Per Share
+
+Quarter Ended Nine Months Ended
+
+In thousands, except per share amounts
+July 26, 2026 July 27, 2025 % Change July 26, 2026 July 27, 2025 % Change
+
+Volume (lbs.) 969,078 1,046,590 (7.4) 2,970,695 3,101,288 (4.2)
+
+Organic Volume (lbs.)
+969,078 1,042,637 (7.1) 2,970,695 3,091,842 (3.9)
+
+Net Sales $ 2,961,333 $ 3,032,876 (2.4) $ 8,961,250 $ 8,920,499 0.5
+
+Organic Net Sales
+2,961,333 3,011,449 (1.7) 8,961,250 8,869,684 1.0
+
+Net Earnings Attributable to Hormel Foods Corporation
+59,573 183,742 (67.6) 398,848 534,334 (25.4)
+
+Diluted Earnings Per Share 0.11 0.33 (66.7) 0.72 0.97 (25.8)
+
+Adjusted Diluted Earnings Per Share
+0.37 0.35 5.7 1.11 1.05 5.7
+
+Volume and Net Sales
+
+Volume and net sales decreased for the third quarter of fiscal 2026, while volume decreased and net sales increased for the first nine months of fiscal 2026.
+
+For the third quarter of fiscal 2026, net sales increased in the Foodservice segment, while net sales declined in the Retail and International segments. The enterprise organic net sales decline was driven by weaker performance in commodity turkey, the bacon portfolio, and the strategic exit from select non-core private label snack nuts items, which more than offset strong growth in premium prepared proteins, the Jennie-O® turkey portfolio, contract manufacturing, and pizza toppings.
+
+For the third quarter of fiscal 2026, volume decreased for all three segments, primarily driven by the commodity turkey portfolio.
+
+For the first nine months of fiscal 2026, net sales growth in the Foodservice and International segments offset declines in the Retail segment. Strong enterprise performance across the Jennie-O® turkey portfolio, premium prepared proteins, and the Foodservice customized solutions business were key drivers of organic net sales growth. For the first nine months of fiscal 2026, volume declined in all three segments, driven primarily by the commodity turkey portfolio and the strategic exit from select non-core private label snack nut items.
+
+In fiscal 2026, the Company expects net sales growth, which assumes growth across a broad range of categories, increased brand support, and market-based pricing actions. Risks to this outlook include slowing consumer demand and commodity price fluctuations.
+
+Cost of Products Sold
+
+Quarter Ended Nine Months Ended
+
+In thousands
+July 26, 2026 July 27, 2025 % Change July 26, 2026 July 27, 2025 % Change
+
+Cost of Products Sold $ 2,489,818 $ 2,545,567 (2.2) $ 7,501,653 $ 7,473,524 0.4
+
+Cost of products sold decreased for the third quarter of fiscal 2026. Lower volume and favorable pork input costs were partially offset by higher beef input costs and higher logistics expenses.
+
+Cost of products sold increased for the first nine months of fiscal 2026, as lower volume, higher beef input costs, and higher logistics expenses were partially offset by favorable pork input costs.
+
+On a per pound basis, cost of products sold increased for both the third quarter and first nine months of fiscal 2026 compared to the prior year.
+
+26
+
+Table of Contents
+
+Gross Profit
+
+Quarter Ended Nine Months Ended
+
+In thousands
+July 26, 2026 July 27, 2025 % Change July 26, 2026 July 27, 2025
+% Change
+
+Gross Profit $ 471,515 $ 487,309 (3.2) $ 1,459,597 $ 1,446,975 0.9
+
+Percent of Net Sales 15.9 % 16.1 % 16.3 % 16.2 %
+
+For the third quarter of fiscal 2026, gross profit as a percent of net sales decreased. For the first nine months of fiscal 2026, gross profit as a percent of net sales increased.
+
+Gross profit as a percent of net sales increased for the Foodservice segment and decreased for the Retail and International segments in the third quarter and first nine months of fiscal 2026 compared to the prior year.
+
+Selling, General, and Administrative (SG&A)
+
+Quarter Ended Nine Months Ended
+
+In thousands
+July 26, 2026 July 27, 2025
+% Change
+July 26, 2026 July 27, 2025
+% Change
+
+SG&A $ 323,501 $ 258,713 25.0 $ 883,822 $ 773,158 14.3
+
+Percent of Net Sales 10.9 % 8.5 % 9.9 % 8.7 %
+
+Adjusted SG&A
+$ 216,856 $ 245,228 (11.6) $ 698,684 $ 720,366 (3.0)
+
+Adjusted Percent of Net Sales
+7.3 % 8.1 % 7.8 % 8.1 %
+
+For the third quarter of fiscal 2026, SG&A and SG&A as a percent of net sales increased, driven primarily by a loss related to the Brazil divestiture and a litigation settlement. Adjusted SG&A and adjusted SG&A as a percent of net sales decreased, driven primarily by lower employee-related expenses and a reduction in marketing and advertising.
+
+For the first nine months of fiscal 2026, SG&A and SG&A as a percent of net sales increased, driven primarily by the loss on the sale of the whole-bird turkey business, a loss related to the Brazil divestiture, and a litigation settlement, which were partially offset by the gain on the sale of Justin's, LLC. Adjusted SG&A and adjusted SG&A as a percent of net sales decreased, driven primarily by a reduction in marketing and advertising.
+
+Advertising investments in the third quarter of fiscal 2026 were $34 million, a decrease of 18 percent compared to the prior year, partially due to the timing of advertising campaigns. Advertising investments in the first nine months of fiscal 2026 were $108 million, down 10 percent compared to the prior year. In fiscal 2026, the Company expects advertising investments to be comparable to the prior year, as it continues to support its priority brands.
+
+Equity in Earnings of Affiliates
+
+Quarter Ended Nine Months Ended
+
+In thousands July 26, 2026 July 27, 2025
+% Change
+July 26, 2026 July 27, 2025
+% Change
+
+Equity in Earnings of Affiliates $ (37,110) $ 11,153 (432.7) $ (4,061) $ 42,614 (109.5)
+
+Equity in earnings of affiliates for the third quarter and first nine months of fiscal 2026 decreased, primarily driven by a $48 million non-cash impairment charge related to a minority investment in Indonesia.
+
+Interest Income, Interest Expense, and Other Income (Expense), Net
+
+Quarter Ended Nine Months Ended
+
+In thousands July 26, 2026 July 27, 2025
+% Change
+July 26, 2026 July 27, 2025
+% Change
+
+Interest Income
+$ 6,661 $ 4,877 36.6 $ 19,667 $ 18,596 5.8
+
+Interest Expense 19,635 19,461 0.9 59,185 58,438 1.3
+
+Other Income (Expense), Net
+5,227 11,350 (53.9) 11,336 8,488 33.6
+
+Interest income increased in the third quarter and the first nine months of fiscal 2026, as higher cash balances more than offset the impact of declining interest rates. For the third quarter and the first nine months of fiscal 2026, interest expense was marginally higher compared to the prior year. Other income decreased in the third quarter of fiscal 2026, primarily due to the
+
+27
+
+Table of Contents
+
+performance of the rabbi trust. For the first nine months of fiscal 2026, other income increased primarily due to lower pension costs.
+
+Effective Tax Rate
+
+Quarter Ended Nine Months Ended
+
+July 26, 2026 July 27, 2025 July 26, 2026 July 27, 2025
+
+Effective Tax Rate 42.3 % 22.3 % 26.7 % 22.1 %
+
+The effective tax rate in the third quarter of fiscal 2026 was 42.3% compared to 22.3% for the same period in the prior year, primarily due to the impact of the Brazil divestiture and the non-cash impairment charge related to a minority investment in Indonesia. For additional information, refer to Note M - Income Taxes of the Notes to the Consolidated Financial Statements.
+
+Segment Results
+
+Net sales and segment profit for each of the Company’s reportable segments are set forth below. Intersegment sales are excluded from the reported results and are not considered in management's assessment of segment performance. Segment profit excludes unallocated general corporate expenses, deferred compensation, nonrecurring expenses associated with the Transform and Modernize initiative, corporate restructuring plan costs, gains and losses on divestitures, and interest and other income and expense. Equity in Earnings of Affiliates is included in segment profit; however, earnings attributable to the Company’s corporate venturing investments and noncontrolling interests are excluded. These excluded items are presented below as Net Unallocated Expense and Noncontrolling Interest in the reconciliation to Earnings Before Income Taxes.
+
+The Company is an integrated enterprise, characterized by substantial intersegment cooperation, cost allocations, and sharing of assets. Therefore, the Company does not represent that these segments, if operated independently, would report the profit and other financial information shown below.
+
+Quarter Ended Nine Months Ended
+
+In thousands
+July 26, 2026 July 27, 2025 % Change July 26, 2026 July 27, 2025 % Change
+
+Net Sales
+
+Retail $ 1,779,434 $ 1,858,434 (4.3) $ 5,416,905 $ 5,532,401 (2.1)
+
+Foodservice 1,003,158 986,976 1.6 2,998,096 2,853,603 5.1
+
+International 178,740 187,466 (4.7) 546,249 534,495 2.2
+
+Total Net Sales
+$ 2,961,333 $ 3,032,876 (2.4) $ 8,961,250 $ 8,920,499 0.5
+
+Segment Profit
+
+Retail $ 118,073 $ 122,566 (3.7) $ 369,902 $ 378,847 (2.4)
+
+Foodservice 144,475 140,711 2.7 456,800 420,170 8.7
+
+International (29,233) 18,941 (254.3) 15,812 58,193 (72.8)
+
+Total Segment Profit
+233,316 282,218 (17.3) 842,515 857,210 (1.7)
+
+Net Unallocated Expense
+130,104 45,658 185.0 298,802 171,769 74.0
+
+Noncontrolling Interest
+(55) (46) (20.4) (182) (366) 50.2
+
+Earnings Before Income Taxes
+$ 103,157 $ 236,514 (56.4) $ 543,531 $ 685,076 (20.7)
+
+Retail
+
+Quarter Ended Nine Months Ended
+
+In thousands
+July 26, 2026 July 27, 2025
+% Change
+July 26, 2026 July 27, 2025
+% Change
+
+Volume (lbs.) 648,340 712,912 (9.1) 2,005,233 2,127,075 (5.7)
+
+Organic Volume (lbs.)
+648,340 709,372 (8.6) 2,005,233 2,118,469 (5.3)
+
+Net Sales $ 1,779,434 $ 1,858,434 (4.3) $ 5,416,905 $ 5,532,401 (2.1)
+
+Organic Net Sales
+1,779,434 1,839,382 (3.3) 5,416,905 5,486,876 (1.3)
+
+Segment Profit 118,073 122,566 (3.7) 369,902 378,847 (2.4)
+
+Organic net sales decreased in the third quarter of fiscal 2026, as declines in commodity turkey and private label snack nuts were partially offset by strong performance in value-added turkey offerings, contract manufacturing, and Planters® snack nuts.
+
+28
+
+Table of Contents
+
+Additional priority brands that delivered solid growth during the quarter included the SPAM® family of products, Applegate® natural and organic meats, and Hormel® chili. For the first nine months of fiscal 2026, organic net sales declined, as strong performance in Jennie-O® ground turkey was primarily offset by the strategic exit from select non-core private label snack nut items.
+
+Retail segment profit decreased in the third quarter and first nine months of fiscal 2026, as lower net sales and higher logistics expenses were partially offset by lower SG&A.
+
+Foodservice
+
+Quarter Ended Nine Months Ended
+
+In thousands
+July 26, 2026 July 27, 2025
+% Change
+July 26, 2026 July 27, 2025
+% Change
+
+Volume (lbs.) 244,830 248,540 (1.5) 733,557 734,988 (0.2)
+
+Organic Volume (lbs.)
+244,830 248,194 (1.4) 733,557 734,264 (0.1)
+
+Net Sales $ 1,003,158 $ 986,976 1.6 $ 2,998,096 $ 2,853,603 5.1
+
+Organic Net Sales
+1,003,158 985,120 1.8 2,998,096 2,849,503 5.2
+
+Segment Profit 144,475 140,711 2.7 456,800 420,170 8.7
+
+Organic net sales growth in the Foodservice segment was broad-based in the third quarter and first nine months of fiscal 2026. Organic volume decreased in the third quarter and was comparable in the first nine months. Net sales growth for the third quarter was primarily driven by premium prepared proteins, branded pepperoni, and Jennie-O® turkey. Net sales growth for the first nine months of fiscal 2026 was primarily driven by premium prepared proteins, the customized solutions business, branded pepperoni, and Jennie-O® turkey. For the first nine months of fiscal 2026, notable branded products, including Austin Blues® smoked meats, Hormel® Natural Choice® meats, and Fontanini® Italian meats delivered strong net sales results.
+
+Segment profit increased for the third quarter and first nine months of fiscal 2026, as higher net sales and favorable pork input costs were partially offset by higher logistics and SG&A.
+
+The Foodservice segment continued to benefit from an extensive range of solutions-based products, its direct-selling organization, and a diverse channel presence during the third quarter and first nine months of fiscal 2026.
+
+International
+
+Quarter Ended Nine Months Ended
+
+In thousands
+July 26, 2026 July 27, 2025
+% Change
+July 26, 2026 July 27, 2025
+% Change
+
+Volume (lbs.) 75,908 85,138 (10.8) 231,905 239,225 (3.1)
+
+Organic Volume (lbs.) 75,908 85,071 (10.8) 231,905 239,109 (3.0)
+
+Net Sales $ 178,740 $ 187,466 (4.7) $ 546,249 $ 534,495 2.2
+
+Organic Net Sales 178,740 186,947 (4.4) 546,249 533,305 2.4
+
+Segment Profit (Loss) (29,233) 18,941 (254.3) 15,812 58,193 (72.8)
+
+Adjusted Segment Profit 18,985 18,941 0.2 64,031 58,193 10.0
+
+For the International segment, organic volume and organic net sales declined in the third quarter of fiscal 2026 as the recognition of certain SPAM® export sales was adversely impacted due to a legal-entity transition. In the first nine months of fiscal 2026, organic volume declined and organic net sales grew. Organic net sales growth was driven by strong performance in multinational businesses, partially offset by the recognition of certain SPAM® export sales which was adversely impacted due to a legal-entity transition.
+
+Segment profit for the third quarter and first nine months of fiscal 2026 was significantly impacted by the non-cash impairment of a minority investment in Indonesia. Adjusted segment profit in the third quarter of fiscal 2026 was comparable to the prior year, as minority investment results were offset by performance in Brazil. Adjusted segment profit grew in the first nine months of fiscal 2026, primarily due to growth in China and minority investment performance.
+
+29
+
+Table of Contents
+
+Unallocated Income and Expense
+
+Quarter Ended Nine Months Ended
+
+In thousands July 26, 2026 July 27, 2025 July 26, 2026 July 27, 2025
+
+Net Unallocated Expense $ 130,104 $ 45,658 $ 298,802 $ 171,769
+
+Noncontrolling Interest (55) (46) (182) (366)
+
+For the third quarter of fiscal 2026, net unallocated expense increased primarily due to a loss related to the Brazil divestiture and a litigation settlement.
+
+For the first nine months of fiscal 2026, net unallocated expense increased primarily due to the loss on the sale of the whole-bird turkey business, a loss related to the Brazil divestiture, a litigation settlement, expenses associated with the corporate restructuring plan, and expenses for a consulting agreement with a former executive (Consulting Agreement). These expenses were partially offset by the gain on the sale of the controlling equity interest in Justin’s, LLC and lapping the loss on the sale of a non-core sow operation in fiscal 2025.
+
+Related Party Transactions
+
+There has been no material change in the information regarding Related Party Transactions as disclosed in the Company’s Annual Report on Form 10-K for the fiscal year ended October 26, 2025.
+
+Non-GAAP Measures
+
+This report includes measures of financial performance that are not defined by GAAP. The Company utilizes these non-GAAP measures to understand and evaluate operating performance on a consistent basis. These measures may also be used when making decisions regarding resource allocation and in determining incentive compensation. The Company believes these non-GAAP measures provide useful information to investors because they aid analysis and understanding of the Company’s results and business trends relative to past performance and the Company’s competitors. Non-GAAP measures are not intended to be a substitute for GAAP measures in analyzing financial performance. These non-GAAP measures are not calculated in accordance with GAAP and may be different from non-GAAP measures used by other companies.
+
+Transform and Modernize (T&M) Initiative
+
+In the fourth quarter of fiscal 2023, the Company announced a multi-year T&M initiative. In presenting non-GAAP measures, the Company adjusts for (i.e., excludes) expenses for this initiative that are nonrecurring, which are primarily project-based external consulting fees and expenses related to supply chain and portfolio optimization (e.g., asset write-offs, severance, or relocation-related costs). The Company believes that nonrecurring costs associated with the T&M initiative are not reflective of the Company’s ongoing operating cost structure; therefore, the Company is excluding these discrete costs. The Company does not adjust for (i.e., does not exclude) certain costs related to the T&M initiative that are expected to continue after the project ends, such as software license fees and internal employee expenses, because those costs are considered ongoing in nature as a component of normal operating costs. The Company also does not adjust for savings realized through the T&M initiative as these are considered ongoing in nature and reflective of expected future operating performance.
+
+Gain or Loss on Divestitures
+
+As part of its ongoing portfolio management activities, the Company may periodically divest certain businesses to better align its portfolio with its strategic objectives and long-term growth strategy. The Company believes the one-time impacts from these transactions, including transaction costs, are not reflective of the Company’s ongoing operating cost structure, are not indicative of the Company’s core operating performance, and are not meaningful when comparing the Company’s operating performance against that of prior periods. Thus, the Company has adjusted for (i.e., excluded) these impacts. Transactions affecting comparability include the Brazil transaction, the whole-bird turkey transaction, the Justin's, LLC transaction, and the Mountain Prairie, LLC divestiture. See Note B - Acquisitions and Divestitures of the Notes to the Consolidated Financial Statements for additional information.
+
+Corporate Restructuring Plan
+
+In the fourth quarter of fiscal 2025, the Company commenced a corporate restructuring plan, the focus of which is to reduce administrative expenses, improve efficiencies, and align the workforce to the Company’s future needs, while enabling continued investment in the Company’s growth. The costs incurred to execute the corporate restructuring plan and the charges incurred under the program are primarily related to severance and employee benefit costs. Because the Company believes certain charges incurred under the corporate restructuring plan do not reflect future operating costs and are not meaningful when comparing the Company's operating performance against that of prior periods, the Company adjusts for
+
+30
+
+Table of Contents
+
+(i.e., excludes) these impacts. See Note P - Restructuring of the Notes to the Consolidated Financial Statements for additional information.
+
+Consulting Agreement
+
+On October 27, 2025, the Company entered into the Consulting Agreement with its former Chief Executive Officer (CEO), pursuant to which the former CEO is expected to provide consulting services to the Company until April 2027. Consulting costs related to the Consulting Agreement include cash and share-based compensation, which were primarily recognized in the first quarter of fiscal 2026. The Company believes nonrecurring costs associated with the Consulting Agreement are not reflective of the Company’s ongoing operating cost structure, are not indicative of the Company’s core operating performance, and are not meaningful when comparing the Company’s operating performance against that of prior periods; therefore, the Company is excluding these discrete costs.
+
+Legal Matters
+
+From time to time, the Company receives proceeds or incurs expenses related to discrete legal matters that the Company believes are not indicative of the Company’s core operating performance, do not reflect expected future operating income or costs, and are not meaningful when comparing the Company’s operating performance against that of prior periods. The Company adjusts for (i.e., excludes) these impacts.
+
+Litigation Settlements
+
+In the third quarter of fiscal 2026, the Company executed a settlement agreement with certain plaintiffs in an antitrust lawsuit. See Note K - Commitments and Contingencies of the Notes to the Consolidated Financial Statements included in this filing for additional information. In fiscal 2025, the Company entered into a settlement agreement with certain plaintiffs in an antitrust lawsuit. See Note K - Commitments and Contingencies of the Notes to the Consolidated Financial Statements included in the Company’s Annual Report on Form 10-K for the fiscal year ended October 26, 2025, for additional information.
+
+Impairments
+
+In the third quarter of fiscal 2026, the Company recorded a non-cash impairment charge related to a minority investment in Indonesia. See Note D - Investments in Affiliates of the Notes to the Consolidated Financial Statements for additional information. The Company believes these charges are not indicative of the Company’s core operating performance, do not reflect expected future operating income or costs, and are not meaningful when comparing the Company’s operating performance against that of prior periods. Thus, the Company has adjusted for (i.e., excluded) these impacts.
+
+The tables below show the calculations to reconcile from the GAAP measures to the non-GAAP measures presented in this Quarterly Report on Form 10-Q. The tax provision expense or benefit of each of the pre-tax items excluded from the Company's GAAP results was computed based on the facts and tax implications associated with each item.
+
+Quarter Ended Nine Months Ended
+
+In thousands, except per share amounts July 26, 2026 July 27, 2025 July 26, 2026 July 27, 2025
+
+Cost of Products Sold (GAAP) $ 2,489,818 $ 2,545,567 $ 7,501,653 $ 7,473,524
+
+Transform and Modernize Initiative(1)
+(447) (1,010) (2,222) (3,973)
+
+Adjusted Cost of Products Sold (Non-GAAP) $ 2,489,371 $ 2,544,557 $ 7,499,431 $ 7,469,551
+
+SG&A (GAAP) $ 323,501 $ 258,713 $ 883,822 $ 773,158
+
+Transform and Modernize Initiative(2)
+(11,792) (13,485) (36,448) (41,228)
+
+Gain (Loss) on Divestitures (57,379) — (94,911) (11,324)
+
+Corporate Restructuring Plan 26 — (8,505) —
+
+Consulting Agreement — — (7,775) —
+
+Litigation Settlements (37,500) — (37,500) (240)
+
+Adjusted SG&A (Non-GAAP) $ 216,856 $ 245,228 $ 698,684 $ 720,366
+
+Equity in Earnings of Affiliates (GAAP) $ (37,110) $ 11,153 $ (4,061) $ 42,614
+
+Impairments
+48,218 — 48,218 —
+
+Adjusted Equity in Earnings of Affiliates (Non-GAAP) $ 11,109 $ 11,153 $ 44,157 $ 42,614
+
+31
+
+Table of Contents
+
+Quarter Ended Nine Months Ended
+
+In thousands, except per share amounts July 26, 2026 July 27, 2025 July 26, 2026 July 27, 2025
+
+Operating Income (GAAP) $ 110,904 $ 239,748 $ 571,713 $ 716,430
+
+Transform and Modernize Initiative(1)(2)
+12,239 14,496 38,669 45,202
+
+(Gain) Loss on Divestitures 57,379 — 94,911 11,324
+
+Corporate Restructuring Plan (26) — 8,505 —
+
+Consulting Agreement — — 7,775 —
+
+Litigation Settlements 37,500 — 37,500 240
+
+Impairments
+48,218 — 48,218 —
+
+Adjusted Operating Income (Non-GAAP) $ 266,215 $ 254,244 $ 807,292 $ 773,196
+
+Earnings Before Income Taxes (GAAP) $ 103,157 $ 236,514 $ 543,531 $ 685,076
+
+Transform and Modernize Initiative(1)(2)
+12,239 14,496 38,669 45,202
+
+(Gain) Loss on Divestitures 57,379 — 94,911 11,324
+
+Corporate Restructuring Plan (26) — 8,505 —
+
+Consulting Agreement — — 7,775 —
+
+Litigation Settlements 37,500 — 37,500 240
+
+Impairments
+48,218 — 48,218 —
+
+Adjusted Earnings Before Income Taxes (Non-GAAP) $ 258,467 $ 251,010 $ 779,110 $ 741,842
+
+Provision for Income Taxes (GAAP) $ 43,638 $ 52,818 $ 144,865 $ 151,107
+
+Transform and Modernize Initiative(1)(2)
+2,999 3,233 9,474 9,960
+
+(Gain) Loss on Divestitures 303 — 4,525 2,469
+
+Corporate Restructuring Plan (6) — 2,084 —
+
+Consulting Agreement — — — —
+
+Litigation Settlements 9,188 — 9,188 52
+
+Impairments
+— — — —
+
+Adjusted Provision for Income Taxes (Non-GAAP) $ 56,120 $ 56,051 $ 170,136 $ 163,588
+
+Net Earnings Attributable to Hormel Foods Corporation (GAAP) $ 59,573 $ 183,742 $ 398,848 $ 534,334
+
+Transform and Modernize Initiative(1)(2)
+9,241 11,263 29,195 35,242
+
+(Gain) Loss on Divestitures 57,076 — 90,386 8,855
+
+Corporate Restructuring Plan (20) — 6,421 —
+
+Consulting Agreement — — 7,775 —
+
+Litigation Settlements 28,313 — 28,313 188
+
+Impairments
+48,218 — 48,218 —
+
+Adjusted Net Earnings Attributable to Hormel Foods Corporation (Non-GAAP) $ 202,402 $ 195,005 $ 609,156 $ 578,620
+
+Diluted Earnings Per Share (GAAP)
+$ 0.11 $ 0.33 $ 0.72 $ 0.97
+
+Transform and Modernize Initiative(1)(2)
+0.02 0.02 0.05 0.06
+
+(Gain) Loss on Divestitures 0.10 — 0.16 0.02
+
+Corporate Restructuring Plan — — 0.01 —
+
+Consulting Agreement — — 0.01 —
+
+Litigation Settlements 0.05 — 0.05 —
+
+Impairments
+0.09 — 0.09 —
+
+Adjusted Diluted Earnings Per Share (Non-GAAP)
+$ 0.37 $ 0.35 $ 1.11 $ 1.05
+
+32
+
+Table of Contents
+
+Quarter Ended Nine Months Ended
+
+July 26, 2026 July 27, 2025 July 26, 2026 July 27, 2025
+
+SG&A as a Percent of Net Sales (GAAP) 10.9 % 8.5 % 9.9 % 8.7 %
+
+Transform and Modernize Initiative(2)
+(0.4) (0.4) (0.4) (0.5)
+
+Gain (Loss) on Divestitures (1.9) — (1.1) (0.1)
+
+Corporate Restructuring Plan — — (0.1) —
+
+Consulting Agreement — — (0.1) —
+
+Litigation Settlements (1.3) — (0.4) —
+
+Adjusted SG&A as a Percent of Net Sales (Non-GAAP) 7.3 % 8.1 % 7.8 % 8.1 %
+
+(1) Comprised primarily of costs related to supply chain and portfolio optimization.
+
+(2) Comprised primarily of project-based external consulting fees.
+
+Adjusted Segment Profit (Non-GAAP)
+
+Quarter Ended
+
+July 26, 2026 July 27, 2025
+
+In thousands GAAP
+Non-GAAP Adjustments(1)
+Non-GAAP GAAP
+Non-GAAP Adjustments(2)
+Non-GAAP
+
+Segment Profit (Loss)
+
+Retail $ 118,073 $ — $ 118,073 $ 122,566 $ — $ 122,566
+
+Foodservice 144,475 — 144,475 140,711 — 140,711
+
+International (29,233) 48,218 18,985 18,941 — 18,941
+
+Total Segment Profit (Loss) 233,316 48,218 281,534 282,218 — 282,218
+
+Net Unallocated Expense 130,104 (107,092) 23,012 45,658 (14,496) 31,162
+
+Noncontrolling Interest (55) — (55) (46) — (46)
+
+Earnings Before Income Taxes $ 103,157 $ 155,310 $ 258,467 $ 236,514 $ 14,496 $ 251,010
+
+(1) International segment profit (loss) adjustments in the third quarter of fiscal 2026 were due to a non-cash impairment charge. Net Unallocated Expense adjustments were comprised of gain (loss) on divestitures, an unfavorable litigation settlement, nonrecurring T&M initiative costs, and corporate restructuring plan charges.
+
+(2) Net Unallocated Expense adjustments in the third quarter of fiscal 2025 were comprised of nonrecurring T&M initiative costs.
+
+Nine Months Ended
+
+July 26, 2026 July 27, 2025
+
+In thousands GAAP
+Non-GAAP Adjustments(1)
+Non-GAAP GAAP
+Non-GAAP Adjustments(2)
+Non-GAAP
+
+Segment Profit (Loss)
+
+Retail $ 369,902 $ — $ 369,902 $ 378,847 $ — $ 378,847
+
+Foodservice 456,800 — 456,800 420,170 — 420,170
+
+International 15,812 48,218 64,031 58,193 — 58,193
+
+Total Segment Profit (Loss) 842,515 48,218 890,734 857,210 — 857,210
+
+Net Unallocated Expense 298,802 (187,360) 111,442 171,769 (56,766) 115,003
+
+Noncontrolling Interest (182) — (182) (366) — (366)
+
+Earnings Before Income Taxes $ 543,531 $ 235,578 $ 779,110 $ 685,076 $ 56,766 $ 741,842
+
+(1) International segment profit (loss) adjustments in the first nine months of fiscal 2026 were due to a non-cash impairment charge. Net Unallocated Expense adjustments were comprised of gain (loss) on divestitures, nonrecurring T&M initiative costs, an unfavorable litigation settlement, corporate restructuring plan charges, and Consulting Agreement costs.
+
+(2) Net Unallocated Expense adjustments in the first nine months of fiscal 2025 were comprised of nonrecurring T&M initiative costs, the loss on the divestiture of Mountain Prairie, LLC, and an unfavorable litigation settlement.
+
+33
+
+Table of Contents
+
+ORGANIC VOLUME AND ORGANIC NET SALES (NON-GAAP)
+
+The non-GAAP measures of organic volume and organic net sales are presented to provide investors with additional information to facilitate the comparison of past and present operations. Organic volume and organic net sales exclude the impact of the sale of the Company's controlling equity interest in Justin's, LLC in the first quarter of fiscal 2026.
+
+Quarter Ended
+
+July 26, 2026 July 27, 2025
+
+In thousands GAAP GAAP
+Divestiture
+
+Non-GAAP Organic
+Non-GAAP
+
+% Change
+
+Volume (lbs.)
+
+Retail 648,340 712,912 (3,540) 709,372 (8.6)
+
+Foodservice 244,830 248,540 (346) 248,194 (1.4)
+
+International 75,908 85,138 (68) 85,071 (10.8)
+
+Total Volume (lbs.) 969,078 1,046,590 (3,953) 1,042,637 (7.1)
+
+Net Sales
+
+Retail $ 1,779,434 $ 1,858,434 $ (19,052) $ 1,839,382 (3.3)
+
+Foodservice 1,003,158 986,976 (1,856) 985,120 1.8
+
+International 178,740 187,466 (520) 186,947 (4.4)
+
+Total Net Sales $ 2,961,333 $ 3,032,876 $ (21,427) $ 3,011,449 (1.7)
+
+Nine Months Ended
+
+July 26, 2026 July 27, 2025
+
+In thousands GAAP GAAP
+Divestiture
+
+Non-GAAP Organic
+Non-GAAP
+
+% Change
+
+Volume (lbs.)
+
+Retail 2,005,233 2,127,075 (8,605) 2,118,469 (5.3)
+
+Foodservice 733,557 734,988 (724) 734,264 (0.1)
+
+International 231,905 239,225 (117) 239,109 (3.0)
+
+Total Volume (lbs.) 2,970,695 3,101,288 (9,446) 3,091,842 (3.9)
+
+Net Sales
+
+Retail $ 5,416,905 $ 5,532,401 $ (45,526) $ 5,486,876 (1.3)
+
+Foodservice 2,998,096 2,853,603 (4,100) 2,849,503 5.2
+
+International 546,249 534,495 (1,190) 533,305 2.4
+
+Total Net Sales $ 8,961,250 $ 8,920,499 $ (50,815) $ 8,869,684 1.0
+
+LIQUIDITY AND CAPITAL RESOURCES
+
+When assessing its liquidity and capital resources, the Company evaluates cash and cash equivalents, short-term and long-term investments, income from operations, and borrowing capacity.
+
+Cash Flow Highlights
+
+Nine Months Ended
+
+In thousands
+July 26, 2026 July 27, 2025
+
+Cash and Cash Equivalents at End of Period
+$ 839,639 $ 599,189
+
+Cash Provided by (Used in) Operating Activities 768,752 522,345
+
+Cash Provided by (Used in) Investing Activities (112,267) (204,991)
+
+Cash Provided by (Used in) Financing Activities (488,435) (455,884)
+
+Increase (Decrease) in Cash, Cash Equivalents, and Cash Held for Sale 173,417 (142,692)
+
+Cash, cash equivalents, and cash held for sale increased $173 million during the first nine months of fiscal 2026. Cash provided by operating activities was sufficient to cover dividend payments and capital expenditures. The Company also benefited from proceeds from the sale of businesses. During the first nine months of fiscal 2025, cash and cash equivalents decreased $143
+
+34
+
+Table of Contents
+
+million as the Company utilized cash on hand to make additional purchases of inventory and capital assets as well as fund regular dividend payments. Additional details related to significant drivers of cash flows are provided below.
+
+Cash Provided by (Used in) Operating Activities
+
+•Cash flows from operating activities were impacted by changes in operating assets and liabilities.
+
+–Inventory increased $81 million during the first nine months of fiscal 2026 compared to an increase of $247 million in the comparable period of the prior year. The increase in inventory during fiscal 2026 was driven by recovery in the turkey supply chain following the impacts of Highly Pathogenic Avian Influenza in the previous year, as well as higher input costs. The increase in inventory during fiscal 2025 was driven by intentional seasonal and promotional inventory build, recovery of snack nuts inventory levels following the production disruptions at the Suffolk, Virginia manufacturing facility, and increased raw material costs.
+
+–Accounts payable and accrued expenses decreased $37 million and $100 million during the first nine months of fiscal 2026 and fiscal 2025, respectively. These decreases were driven by general timing of invoice payments, livestock and feed deferral payments, and annual incentive payments. The decrease in fiscal 2026 was partially offset by higher legal and marketing accruals while the decrease in fiscal 2025 also included legal settlements.
+
+–Accounts receivable decreased $86 million and $52 million during the first nine months of fiscal 2026 and fiscal 2025, respectively, primarily due to lower sales compared to the fourth quarter of each respective prior year.
+
+Cash Provided by (Used in) Investing Activities
+
+•Capital expenditures were $219 million and $219 million during the first nine months of fiscal 2026 and fiscal 2025, respectively. The largest projects during fiscal 2026 were related to investment in wastewater infrastructure to support operations in Austin, Minnesota and investments in data and technology. Significant projects during fiscal 2025 included the transition from harvest to value-added capacity at the Company's facility in Barron, Wisconsin and investments in data and technology.
+
+•Proceeds from the sale of business were $97 million during the first nine months of fiscal 2026 resulting from the sale of the Company’s controlling equity interest in Justin's, LLC and whole-bird turkey business. During the first nine months of fiscal 2025 proceeds from the sale of business were $13 million primarily from the sale of the Company's equity interest in Mountain Prairie, LLC.
+
+Cash Provided by (Used in) Financing Activities
+
+•Cash dividends paid to the Company’s shareholders totaled $481 million during the first nine months of fiscal 2026, compared to $474 million in the comparable period of fiscal 2025.
+
+Sources and Uses of Cash
+
+The Company believes its business model, with diversification across raw material inputs, channels, and categories, provides stability in ever-changing economic environments. The Company maintains a disciplined capital allocation strategy and uses a waterfall approach, which focuses first on core uses of cash, such as capital expenditures to maintain facilities, dividend returns to investors, mandatory debt repayments, and fulfillment of pension obligations. Next, the Company looks to strategic items in support of growth initiatives, such as other capital projects, acquisitions, additional dividend increases, and working capital investments. Finally, the Company evaluates opportunistic uses, including incremental debt repayment and share repurchases.
+
+The Company believes its anticipated income from operations, cash on hand, borrowing capacity under the current unsecured revolving credit facility, and access to capital markets will be adequate to meet all short-term and long-term commitments. The Company expects to continue optimizing its portfolio through acquisitions and divestitures that align with its strategic priorities. The Company maintains multiple liquidity sources, including its ability to issue debt, which supports strategic investments and acquisitions.
+
+Dividend Payments
+
+The Company remains committed to providing returns to investors through cash dividends on its common stock. The Company has paid 392 consecutive quarterly dividends since becoming a public company in 1928. On May 18, 2026, the Board of Directors authorized a quarterly dividend for the third quarter of fiscal 2026, of $0.2925 per share, a 1% increase from the prior year.
+
+Capital Expenditures
+
+Capital expenditures are allocated to required maintenance and growth opportunities based on the needs of the business. Capital expenditures supporting growth opportunities in fiscal 2026 are expected to focus on projects related to infrastructure, new data and technology, and equipment upgrades. Capital expenditures for fiscal 2026 are estimated to be $260 million to $290 million.
+
+Debt
+
+As of July 26, 2026, the Company’s outstanding debt included an aggregate of $2.9 billion of fixed rate unsecured senior notes due in fiscal 2027, 2028, 2030, and 2051 with interest payable semi-annually. During the first nine months of fiscal 2026, the Company made $61 million of interest payments, and the Company expects to make an additional $12 million of interest
+
+35
+
+Table of Contents
+
+payments in fiscal 2026 on these notes. In the

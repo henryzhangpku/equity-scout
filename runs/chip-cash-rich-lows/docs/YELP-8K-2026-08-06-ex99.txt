@@ -1,0 +1,412 @@
+EXHIBIT 99.1
+
+Yelp Reports Second Quarter 2026 Results
+
+Net Revenue increased by 1% year over year to $376 million
+
+Net Income decreased from the prior year to $32 million, reflecting an 8% margin
+
+Adjusted EBITDA1 decreased 9% year over year to $91 million, reflecting a 24% margin
+
+Narrows outlook range of 2026 Net Revenue to $1.460 billion to $1.470 billion; and 2026 Adjusted
+
+EBITDA to $315 million to $325 million2
+
+SAN FRANCISCO--(BUSINESS WIRE)--August 6, 2026--Yelp Inc. (NYSE: YELP), the company that connects people with great local businesses, today posted its financial results for the second quarter ended June 30, 2026 in the Shareholder Letter available on its Investor Relations website at yelp-ir.com.
+
+“Yelp’s AI transformation continued to gain momentum in the second quarter, with encouraging signs across several key metrics and Other revenue nearly doubling year over year,” said Jeremy Stoppelman, Yelp’s co-founder and chief executive officer. “We are seeing the benefits of our strategic initiatives take shape. Yelp Assistant drove early positive signs in engagement, Yelp Host scaled rapidly, and Hatch accelerated their product roadmap. At the same time, our trusted content is powering local discovery for ChatGPT and other AI partners. While headwinds for local businesses persist, I’m confident we are building a stronger Yelp, transformed with AI, that is well-positioned to drive long-term profitable growth.”
+
+“In the second quarter, Yelp delivered net revenue of $376 million, $8 million above the high end of our outlook range,” said David Schwarzbach, Yelp's chief financial officer. “Other revenue accelerated from the first quarter, increasing 98% year over year to a record $33 million. We are continuing to invest in our strategic initiatives to create shareholder value over the long term, even as consumers and local businesses navigate a challenging economic environment.”
+
+Quarterly Conference Call
+
+Yelp will host a live webcast today at 2 p.m. Pacific Time to discuss the second quarter financial results and outlook for the third quarter and full year 2026. The webcast of the Q&A can be accessed on the Yelp Investor Relations website at yelp-ir.com. A replay of the webcast will be available at the same website.
+
+About Yelp
+
+Yelp Inc. (yelp.com) is a community-driven platform that connects people with great local businesses. Millions rely on Yelp to inform their spending decisions and get things done. By combining authentic human content with AI technologies, including Yelp Assistant, Yelp helps people move seamlessly from discovery to taking
+
+1 See “Non-GAAP Financial Measures” for the definitions of Adjusted EBITDA and Adjusted EBITDA margin, as well as reconciliations of Adjusted EBITDA to Net income (loss) and Adjusted EBITDA margin to Net income (loss) margin, in each case the most directly comparable financial measures calculated and presented in accordance with generally accepted accounting principles in the United States (“GAAP”).
+
+2 Yelp has not reconciled its Adjusted EBITDA outlook to GAAP Net income (loss) because it does not provide an outlook for GAAP Net income (loss) due to the uncertainty and potential variability of Other income (expense), net and Provision for (benefit from) income taxes, which are reconciling items between Adjusted EBITDA and GAAP Net income (loss). Because Yelp cannot reasonably predict such items, a reconciliation of the non-GAAP financial measure outlook to the corresponding GAAP measure is not available without unreasonable effort. We caution, however, that such items could have a significant impact on the calculation of GAAP Net income (loss). For more information regarding the non-GAAP financial measures discussed in this release, please see “Non-GAAP Financial Measures” below.
+
+action, whether it’s requesting quotes from service pros, making reservations, ordering food, scheduling appointments, or connecting with the right businesses for their needs. Yelp was founded in San Francisco in 2004.
+
+Yelp intends to make future announcements of material financial and other information through its Investor Relations website. Yelp will also, from time to time, disclose this information through press releases, filings with the Securities and Exchange Commission, conference calls, or webcasts, as required by applicable law.
+
+Forward-Looking Statements
+
+This press release contains forward-looking statements relating to, among other things, Yelp’s future performance, including its expected financial results for the full year 2026, its expectations regarding its AI transformation as well as its investments in and benefits from strategic initiatives, changes to its product offerings, the implications of trends in its key metrics and its ability to drive long-term profitable growth, that are based on its current expectations, forecasts and assumptions that involve risks and uncertainties.
+
+Yelp’s actual results could differ materially from those predicted or implied and reported results should not be considered as an indication of future performance. Factors that could cause or contribute to such differences include, but are not limited to:
+
+•Adverse macroeconomic conditions — particularly those affecting local economies — and their impact on consumer behavior and advertiser spending;
+
+•Yelp’s ability to maintain and expand its advertiser base;
+
+•Yelp’s ability to execute on its strategic initiatives, including its AI transformation, and the effectiveness thereof;
+
+•Yelp's ability to maintain and increase traffic to and user engagement on its platform, including its ability to generate, maintain and recommend sufficient content that consumers find relevant, helpful and reliable;
+
+•Yelp’s reliance on internet search engines and application marketplaces, certain providers of which offer products and services that compete directly with its products;
+
+•Yelp’s ability to successfully manage acquisitions of new businesses, solutions or technologies, to successfully integrate those businesses, solutions or technologies, including Hatch, and to monetize such acquired products, solutions or technologies;
+
+•Yelp’s ability to continue to effectively operate with a remote work force and attract and retain key talent;
+
+•Yelp’s reliance on third-party service providers and strategic partners;
+
+•Competition in, and the rapid evolution of, Yelp’s industry;
+
+•Yelp’s ability to maintain, protect and enhance its brand; and
+
+•Yelp’s ability to maintain the uninterrupted and proper operation of its technology and network infrastructure.
+
+Factors that could cause or contribute to such differences also include, but are not limited to, those factors that could affect Yelp’s business, operating results and stock price included under the captions “Risk Factors” and “Management’s Discussion and Analysis of Financial Condition and Results of Operations” in Yelp’s most recent Annual Report on Form 10-K and Quarterly Report on Form 10-Q at yelp-ir.com or the SEC’s website at sec.gov.
+
+Investor Relations Contact:
+
+Kate Krieger
+
+ir@yelp.com
+
+Press Contact:
+
+Amber Albrecht
+
+press@yelp.com
+
+YELP INC.
+
+CONDENSED CONSOLIDATED BALANCE SHEETS
+
+(In thousands)
+
+(Unaudited)
+
+June 30,
+2026 December 31,
+2025
+
+Assets
+
+Current assets:
+
+Cash and cash equivalents $ 94,142 $ 216,062
+
+Short-term marketable securities — 103,290
+
+Accounts receivable, net
+157,720 153,224
+
+Prepaid expenses and other current assets 41,639 42,359
+
+Total current assets 293,501 514,935
+
+Property, equipment and software, net 99,176 91,685
+
+Operating lease right-of-use assets 16,044 16,046
+
+Goodwill 354,708 135,847
+
+Intangibles, net 92,093 49,038
+
+Other non-current assets 135,043 150,927
+
+Total assets $ 990,565 $ 958,478
+
+Liabilities and Stockholders’ Equity
+
+Current liabilities:
+
+Accounts payable and accrued liabilities $ 151,922 $ 158,789
+
+Operating lease liabilities — current 7,352 7,426
+
+Deferred revenue 8,573 5,845
+
+Total current liabilities 167,847 172,060
+
+Revolving credit facility
+100,000 —
+
+Operating lease liabilities — long-term 15,951 17,451
+
+Other long-term liabilities 62,240 58,115
+
+Total liabilities 346,038 247,626
+
+Stockholders’ equity:
+
+Preferred stock
+— —
+
+Common stock
+— —
+
+Additional paid-in capital 2,073,762 2,010,948
+
+Treasury stock (2,868) (999)
+
+Accumulated other comprehensive loss (9,814) (7,677)
+
+Accumulated deficit (1,416,553) (1,291,420)
+
+Total stockholders’ equity
+644,527 710,852
+
+Total liabilities and stockholders’ equity
+$ 990,565 $ 958,478
+
+YELP INC.
+
+CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS
+
+(In thousands, except per share data)
+
+(Unaudited)
+
+Three Months Ended
+June 30, Six Months Ended
+June 30,
+
+2026 2025 2026 2025
+
+Net revenue $ 375,519 $ 370,394 $ 736,976 $ 728,928
+
+Costs and expenses:
+
+Cost of revenue(1)
+41,776 35,447 80,185 70,275
+
+Sales and marketing(1)
+153,562 144,612 306,572 290,896
+
+Product development(1)
+70,468 78,362 147,625 162,267
+
+General and administrative(1)
+47,865 46,318 97,215 98,025
+
+Depreciation and amortization 18,118 12,365 34,351 24,715
+
+Total costs and expenses 331,789 317,104 665,948 646,178
+
+Income from operations 43,730 53,290 71,028 82,750
+
+Other income, net 733 5,695 3,319 11,466
+
+Income before income taxes 44,463 58,985 74,347 94,216
+
+Provision for income taxes 12,811 14,896 24,960 25,736
+
+Net income attributable to common stockholders $ 31,652 $ 44,089 $ 49,387 $ 68,480
+
+Net income per share attributable to common stockholders
+
+Basic $ 0.57 $ 0.69 $ 0.87 $ 1.06
+
+Diluted $ 0.57 $ 0.67 $ 0.86 $ 1.03
+
+Weighted-average shares used to compute net income per share attributable to common stockholders
+
+Basic 55,305 64,145 57,051 64,700
+
+Diluted 55,726 65,683 57,630 66,610
+
+(1) Includes stock-based compensation expense as follows:
+
+Three Months Ended
+June 30, Six Months Ended
+June 30,
+
+2026 2025 2026 2025
+
+Cost of revenue $ 1,242 $ 1,070 $ 2,382 $ 2,241
+
+Sales and marketing
+6,082 7,295 12,536 14,934
+
+Product development 10,671 17,846 25,381 37,255
+
+General and administrative 7,754 8,564 15,957 17,814
+
+Total stock-based compensation $ 25,749 $ 34,775 $ 56,256 $ 72,244
+
+YELP INC.
+
+CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS
+
+(In thousands)
+
+(Unaudited)
+
+Six Months Ended
+June 30,
+
+2026 2025
+
+Operating Activities
+
+Net income $ 49,387 $ 68,480
+
+Adjustments to reconcile net income to net cash provided by operating activities:
+
+Depreciation and amortization 34,351 24,715
+
+Provision for credit losses 18,005 22,562
+
+Stock-based compensation 56,256 72,244
+
+Amortization of right-of-use assets 3,002 6,715
+
+Deferred income taxes 20,426 (2,968)
+
+Amortization of deferred contract cost 11,047 12,035
+
+Other adjustments, net 2,474 1,471
+
+Changes in operating assets and liabilities, net of acquisition:
+
+Accounts receivable (22,091) (23,935)
+
+Prepaid expenses and other assets (24,070) (14,540)
+
+Operating lease liabilities (4,355) (15,396)
+
+Accounts payable, accrued liabilities and other liabilities (10,794) 4,646
+
+Net cash provided by operating activities 133,638 156,029
+
+Investing Activities
+
+Purchases of marketable securities
+(5,975) (37,201)
+
+Sales and maturities of marketable securities 109,293 34,769
+
+Purchases of other investments
+(650) (700)
+
+Maturities of other investments
+5,000 —
+
+Acquisition, net of cash received
+(263,600) —
+
+Purchases of property, equipment and software (27,409) (23,555)
+
+Other investing activities 75 67
+
+Net cash used in investing activities (183,266) (26,620)
+
+Financing Activities
+
+Proceeds from issuance of common stock for employee stock-based plans 19,476 12,023
+
+Taxes paid related to the net share settlement of equity awards (17,571) (35,155)
+
+Repurchases of common stock (174,000) (128,450)
+
+Proceeds from revolving credit facility
+165,000 —
+
+Repayments on revolving credit facility
+(65,000) —
+
+Other financing activities
+(119) —
+
+Net cash used in financing activities (72,214) (151,582)
+
+Effect of exchange rate changes on cash, cash equivalents and restricted cash (149) 2,651
+
+Change in cash, cash equivalents and restricted cash (121,991) (19,522)
+
+Cash, cash equivalents and restricted cash — Beginning of period 216,289 217,682
+
+Cash, cash equivalents and restricted cash — End of period $ 94,298 $ 198,160
+
+Non-GAAP Financial Measures
+
+This press release and statements made during the above referenced webcast may include information relating to Adjusted EBITDA, Adjusted EBITDA margin and Free cash flow, each of which the Securities and Exchange Commission has defined as a “non-GAAP financial measure.”
+
+We define Adjusted EBITDA as net income (loss), adjusted to exclude: provision for (benefit from) income taxes; other income (expense), net; depreciation and amortization; stock-based compensation expense; and, in certain periods, certain other income and expense items, such as expenses for which we expect to be indemnified, acquisition and integration costs and other items that we deem not to be indicative of our ongoing operating performance. We define Adjusted EBITDA margin as Adjusted EBITDA divided by net revenue. We define Free cash flow as net cash provided by (used in) operating activities, less cash used for purchases of property, equipment and software.
+
+Adjusted EBITDA and Free cash flow, which are not prepared under any comprehensive set of accounting rules or principles, have limitations as analytical tools and you should not consider them in isolation or as substitutes for analysis of Yelp’s financial results as reported in accordance with generally accepted accounting principles in the United States (“GAAP”). In particular, Adjusted EBITDA and Free cash flow should not be viewed as substitutes for, or superior to, net income (loss) or net cash provided by (used in) operating activities prepared in accordance with GAAP as measures of profitability or liquidity. Some of these limitations are:
+
+•although depreciation and amortization are non-cash charges, the assets being depreciated and amortized may have to be replaced in the future, and Adjusted EBITDA does not reflect all cash capital expenditure requirements for such replacements or for new capital expenditure requirements;
+
+•Adjusted EBITDA does not reflect changes in, or cash requirements for, Yelp’s working capital needs;
+
+•Adjusted EBITDA does not reflect the impact of the recording or release of valuation allowances or tax payments that may represent a reduction in cash available to Yelp;
+
+•Adjusted EBITDA does not consider the potentially dilutive impact of equity-based compensation;
+
+•Adjusted EBITDA does not take into account certain income and expense items, such as indemnifiable expenses, acquisition and integration costs or other costs that management determines are not indicative of ongoing operating performance;
+
+•Free cash flow does not represent the total residual cash flow available for discretionary purposes because it does not reflect our contractual commitments or obligations; and
+
+•other companies, including those in Yelp’s industry, may calculate Adjusted EBITDA and Free cash flow differently, which reduces their usefulness as comparative measures.
+
+Because of these limitations, you should consider Adjusted EBITDA, Adjusted EBITDA margin and Free cash flow alongside other financial performance measures, including net income (loss), net cash provided by (used in) operating activities and Yelp’s other GAAP results.
+
+The following is a reconciliation of net income to Adjusted EBITDA, as well as the calculation of net income margin and Adjusted EBITDA margin, for each of the periods indicated (in thousands, except percentages; unaudited):
+
+Three Months Ended
+June 30, Six Months Ended
+June 30,
+
+2026 2025 2026 2025
+
+Reconciliation of Net Income to Adjusted EBITDA:
+
+Net income $ 31,652 $ 44,089 $ 49,387 $ 68,480
+
+Provision for income taxes 12,811 14,896 24,960 25,736
+
+Other income, net (733) (5,695) (3,319) (11,466)
+
+Depreciation and amortization 18,118 12,365 34,351 24,715
+
+Stock-based compensation 25,749 34,775 56,256 72,244
+
+Indemnifiable expenses(1)(2)
+352 55 1,248 5,181
+
+Acquisition and integration costs(1)(3)
+3,480 — 7,900 539
+
+Adjusted EBITDA $ 91,429 $ 100,485 $ 170,783 $ 185,429
+
+Net revenue $ 375,519 $ 370,394 $ 736,976 $ 728,928
+
+Net income margin 8 % 12 % 7 % 9 %
+
+Adjusted EBITDA margin 24 % 27 % 23 % 25 %
+
+(1) Recorded within general and administrative expenses on our condensed consolidated statements of operations.
+
+(2) Represents expenses for which we expect to be indemnified in connection with our acquisition of RepairPal. Indemnifiable expenses during the three and six months ended June 30, 2025 consist of expenses recorded in connection with an indemnification obligation assumed in the RepairPal acquisition, for which we were subsequently indemnified through the release of a portion of the RepairPal holdback.
+
+(3) Acquisition and integration costs during the three and six months ended June 30, 2026 represent costs related to the Hatch acquisition and include accrued acquisition- and integration-related compensation. Acquisition and integration costs during the three and six months ended June 30, 2025 represent costs related to the RepairPal acquisition.
+
+The following is a reconciliation of net cash provided by operating activities to Free cash flow for each of the periods indicated (in thousands; unaudited):
+
+Three Months Ended
+June 30, Six Months Ended
+June 30,
+
+2026 2025 2026 2025
+
+Reconciliation of Net Cash Provided by Operating Activities to Free Cash Flow:
+
+Net cash provided by operating activities $ 75,822 $ 58,034 $ 133,638 $ 156,029
+
+Purchases of property, equipment and software (14,749) (13,024) (27,409) (23,555)
+
+Free cash flow $ 61,073 $ 45,010 $ 106,229 $ 132,474
+
+Net cash used in investing activities $ (15,385) $ (14,617) $ (183,266) $ (26,620)
+
+Net cash used in financing activities $ (77,129) $ (69,869) $ (72,214) $ (151,582)

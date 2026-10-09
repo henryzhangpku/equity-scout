@@ -1,0 +1,778 @@
+{
+ "tool": "equity-scout 0.1.0",
+ "as_of": "2026-10-08",
+ "generated_at": "2026-10-09T00:12:52+00:00",
+ "data": {
+  "as_of": "2026-10-08",
+  "last_price_date": "2026-10-08",
+  "universe_rule": "tradable US-listed (NYSE/Nasdaq/AMEX/Arca/BATS) operating companies with an SEC CIK and a 10-K/10-Q/20-F/40-F in the last 18 months; close >= $1; 50-day avg dollar volume >= $1,000,000; one listing per CIK",
+  "n_companies": 3827,
+  "short_interest_settlement": "2026-09-15",
+  "benchmark_closes": {
+   "IWM": 277.57,
+   "QQQ": 747.58,
+   "SMH": 607.27,
+   "SOXX": 563.28,
+   "SPY": 773.93,
+   "XLB": 49.27,
+   "XLC": 112.07,
+   "XLE": 65.24,
+   "XLF": 54.23,
+   "XLI": 168.4,
+   "XLK": 197.78,
+   "XLP": 83.42,
+   "XLRE": 40.85,
+   "XLU": 41.07,
+   "XLV": 168.16,
+   "XLY": 111.71
+  },
+  "files": {
+   "prices.csv.gz": {
+    "sha256": "2fb70ee43a9d30a4174c2353a1eca23798fb267cd09557d74d1af3cc6146d0e1",
+    "bytes": 50692072
+   },
+   "features.csv.gz": {
+    "sha256": "cf63f29b2cc08badaf287c158d7e85c689a249e386a9f0f9c0b85029e0510c87",
+    "bytes": 3541921
+   }
+  }
+ },
+ "llm": {
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro"
+ },
+ "observation": "Oversold large caps on heavy volume",
+ "spec": {
+  "version": 1,
+  "observation": "Oversold large caps on heavy volume",
+  "universe": {
+   "market_cap_min": 10000000000
+  },
+  "conditions": [
+   {
+    "field": "rsi14",
+    "op": "<",
+    "value": 30,
+    "why": "oversold"
+   },
+   {
+    "field": "volume_ratio_50d",
+    "op": ">",
+    "value": 2.0,
+    "why": "heavy volume"
+   }
+  ],
+  "rank": [
+   {
+    "field": "rsi14",
+    "direction": "asc",
+    "weight": 1
+   }
+  ],
+  "top_n": 5,
+  "unmapped": [],
+  "notes": "Interpreted oversold as RSI(14) below 30, heavy volume as volume at least twice the 50-day average, and large cap as market cap above $10B. Thresholds are defaults since exact levels were not specified."
+ },
+ "translation_attempts": [
+  {
+   "response": "{\n  \"version\": 1,\n  \"observation\": \"Oversold large caps on heavy volume\",\n  \"universe\": {\n    \"market_cap_min\": 10000000000\n  },\n  \"conditions\": [\n    {\n      \"field\": \"rsi14\",\n      \"op\": \"<\",\n      \"value\": 30,\n      \"why\": \"oversold\"\n    },\n    {\n      \"field\": \"volume_ratio_50d\",\n      \"op\": \">\",\n      \"value\": 2.0,\n      \"why\": \"heavy volume\"\n    }\n  ],\n  \"rank\": [\n    {\n      \"field\": \"rsi14\",\n      \"direction\": \"asc\",\n      \"weight\": 1\n    }\n  ],\n  \"top_n\": 5,\n  \"unmapped\": [],\n  \"notes\": \"Interpreted oversold as RSI(14) below 30, heavy volume as volume at least twice the 50-day average, and large cap as market cap above $10B. Thresholds are defaults since exact levels were not specified.\"\n}",
+   "problems": []
+  }
+ ],
+ "funnel": [
+  {
+   "step": "universe (liquid US common stocks with SEC filings)",
+   "kind": "start",
+   "n_in": 3827,
+   "n_pass": 3827,
+   "n_fail": 0,
+   "n_missing": 0
+  },
+  {
+   "step": "market_cap >= $10.00B",
+   "kind": "universe",
+   "n_in": 3827,
+   "n_pass": 872,
+   "n_fail": 2742,
+   "n_missing": 213
+  },
+  {
+   "step": "rsi14 < 30",
+   "kind": "condition",
+   "n_in": 872,
+   "n_pass": 35,
+   "n_fail": 837,
+   "n_missing": 0
+  },
+  {
+   "step": "volume_ratio_50d > 2",
+   "kind": "condition",
+   "n_in": 35,
+   "n_pass": 7,
+   "n_fail": 28,
+   "n_missing": 0
+  }
+ ],
+ "ranked": [
+  {
+   "rank": 1,
+   "score": 1.0,
+   "symbol": "EMA",
+   "name": "EMERA INC",
+   "sic_desc": "Electric Services",
+   "market_cap": 13718320000.0,
+   "close": 45.85,
+   "drawdown_52w": -0.1610247026532478,
+   "pct_vs_sma50": -0.0799380337764078,
+   "mom_3m": -0.1334341334341333,
+   "rsi14": 22.796085900641387,
+   "volume_ratio_50d": 4.419136224775047,
+   "revenue_growth_yoy": null,
+   "revenue_growth_q_yoy": null,
+   "revenue_growth_accel": null,
+   "fcf_margin": null,
+   "operating_margin": null,
+   "short_pct_shares_out": 0.0192576036096256,
+   "days_to_cover": 14.77,
+   "prov_revenue_period_end": null,
+   "prov_revenue_filed": null,
+   "rank_pct_rsi14": 1.0,
+   "cik": 1127248
+  },
+  {
+   "rank": 2,
+   "score": 0.8571428571428571,
+   "symbol": "ARGX",
+   "name": "ARGENX SE",
+   "sic_desc": "Biological Products, (No Diagnostic Substances)",
+   "market_cap": 50659530790.78,
+   "close": 818.63,
+   "drawdown_52w": -0.2269052790631788,
+   "pct_vs_sma50": -0.1448463892864231,
+   "mom_3m": -0.0672158793099518,
+   "rsi14": 24.04941222464022,
+   "volume_ratio_50d": 8.862036481605294,
+   "revenue_growth_yoy": null,
+   "revenue_growth_q_yoy": null,
+   "revenue_growth_accel": null,
+   "fcf_margin": null,
+   "operating_margin": null,
+   "short_pct_shares_out": 0.0212201655806818,
+   "days_to_cover": 6.31,
+   "prov_revenue_period_end": null,
+   "prov_revenue_filed": null,
+   "rank_pct_rsi14": 0.8571428571428571,
+   "cik": 1697862
+  },
+  {
+   "rank": 3,
+   "score": 0.7142857142857143,
+   "symbol": "NLY",
+   "name": "ANNALY CAPITAL MANAGEMENT INC",
+   "sic_desc": "Real Estate Investment Trusts",
+   "market_cap": 13770362855.34,
+   "close": 18.27,
+   "drawdown_52w": -0.2007874015748031,
+   "pct_vs_sma50": -0.1356879961396903,
+   "mom_3m": -0.1702997275204359,
+   "rsi14": 24.4567842120387,
+   "volume_ratio_50d": 2.2473200705756207,
+   "revenue_growth_yoy": null,
+   "revenue_growth_q_yoy": null,
+   "revenue_growth_accel": null,
+   "fcf_margin": null,
+   "operating_margin": null,
+   "short_pct_shares_out": 0.0243902345180218,
+   "days_to_cover": 2.25,
+   "prov_revenue_period_end": null,
+   "prov_revenue_filed": null,
+   "rank_pct_rsi14": 0.7142857142857143,
+   "cik": 1043219
+  },
+  {
+   "rank": 4,
+   "score": 0.5714285714285714,
+   "symbol": "DOC",
+   "name": "HEALTHPEAK PROPERTIES, INC.",
+   "sic_desc": "Real Estate Investment Trusts",
+   "market_cap": 12770044855.2,
+   "close": 18.52,
+   "drawdown_52w": -0.1801682160247897,
+   "pct_vs_sma50": -0.0976417852270513,
+   "mom_3m": -0.1321462043111527,
+   "rsi14": 24.46062054058764,
+   "volume_ratio_50d": 2.112459951527998,
+   "revenue_growth_yoy": 0.2325610733220817,
+   "revenue_growth_q_yoy": 0.4541399348359141,
+   "revenue_growth_accel": 0.1088835340489513,
+   "fcf_margin": null,
+   "operating_margin": null,
+   "short_pct_shares_out": 0.0367936055203966,
+   "days_to_cover": 6.3,
+   "prov_revenue_period_end": "2026-06-30",
+   "prov_revenue_filed": "2026-08-05",
+   "rank_pct_rsi14": 0.5714285714285714,
+   "cik": 765880
+  },
+  {
+   "rank": 5,
+   "score": 0.42857142857142855,
+   "symbol": "HRL",
+   "name": "HORMEL FOODS CORP /DE/",
+   "sic_desc": "Meat Packing Plants",
+   "market_cap": 10694108500.0,
+   "close": 19.42,
+   "drawdown_52w": -0.2587786259541984,
+   "pct_vs_sma50": -0.1250675797440982,
+   "mom_3m": -0.2054009819967266,
+   "rsi14": 27.065230873381694,
+   "volume_ratio_50d": 2.043637033048909,
+   "revenue_growth_yoy": 0.0073243223295591,
+   "revenue_growth_q_yoy": -0.02358916091525,
+   "revenue_growth_accel": -0.0490444339410778,
+   "fcf_margin": 0.0642853973327045,
+   "operating_margin": 0.0472454272530687,
+   "short_pct_shares_out": 0.0378435138693421,
+   "days_to_cover": 4.69,
+   "prov_revenue_period_end": "2026-07-26",
+   "prov_revenue_filed": "2026-08-27",
+   "rank_pct_rsi14": 0.42857142857142855,
+   "cik": 48465
+  },
+  {
+   "rank": 6,
+   "score": 0.2857142857142857,
+   "symbol": "PUK",
+   "name": "PRUDENTIAL PLC",
+   "sic_desc": "Life Insurance",
+   "market_cap": 60851345042.52,
+   "close": 23.88,
+   "drawdown_52w": -0.2757051865332119,
+   "pct_vs_sma50": -0.1126107378559961,
+   "mom_3m": -0.1456171735241502,
+   "rsi14": 27.225938270345267,
+   "volume_ratio_50d": 3.22309263966952,
+   "revenue_growth_yoy": null,
+   "revenue_growth_q_yoy": null,
+   "revenue_growth_accel": null,
+   "fcf_margin": null,
+   "operating_margin": null,
+   "short_pct_shares_out": 0.0002811502731459,
+   "days_to_cover": 1.0,
+   "prov_revenue_period_end": null,
+   "prov_revenue_filed": null,
+   "rank_pct_rsi14": 0.2857142857142857,
+   "cik": 1116578
+  },
+  {
+   "rank": 7,
+   "score": 0.14285714285714285,
+   "symbol": "HSBC",
+   "name": "HSBC HOLDINGS PLC",
+   "sic_desc": "Savings Institution, Federally Chartered",
+   "market_cap": 1590598963619.82,
+   "close": 92.61,
+   "drawdown_52w": -0.1373078714485328,
+   "pct_vs_sma50": -0.095723801768128,
+   "mom_3m": -0.060940985601298,
+   "rsi14": 28.30686411126152,
+   "volume_ratio_50d": 2.5640351030503834,
+   "revenue_growth_yoy": null,
+   "revenue_growth_q_yoy": null,
+   "revenue_growth_accel": null,
+   "fcf_margin": null,
+   "operating_margin": null,
+   "short_pct_shares_out": 0.0003157894179981,
+   "days_to_cover": 4.03,
+   "prov_revenue_period_end": null,
+   "prov_revenue_filed": null,
+   "rank_pct_rsi14": 0.14285714285714285,
+   "cik": 1089113
+  }
+ ],
+ "top_n": 5,
+ "explanations": [
+  {
+   "symbol": "EMA",
+   "verdict": "not enough evidence",
+   "thesis": [],
+   "bear_case": [],
+   "stripped": [],
+   "documents": [],
+   "model_status": "no earnings documents found on EDGAR for this as-of date"
+  },
+  {
+   "symbol": "ARGX",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "A news report says argenx will discontinue its Phase 3 UNITY study of efgartigimod SC in Sjögren's disease after an independent data monitoring committee recommended stopping for futility.",
+     "quote": "Argenx Will Discontinue Phase 3 UNITY Study Of Efgartigimod SC In Sjögren's Disease After IDMC Recommends Stopping For Futility At Interim Analysis; No New Safety Signals Identified",
+     "doc_id": "ARGX-news-2026-10-08-62236825",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/quote/ARGX",
+     "source_kind": "news"
+    },
+    {
+     "claim": "A news report says argenx's FB102 met its primary endpoint in a Phase 2 celiac disease study and the company will advance the first-in-class CD122 inhibitor into Phase 3 development.",
+     "quote": "Argenx's FB102 Meets Primary Endpoint In Phase 2 Celiac Disease Study Versus Placebo With No New Safety Signals; Company Will Advance First-In-Class CD122 Inhibitor Into Phase 3 Development",
+     "doc_id": "ARGX-news-2026-10-08-62236814",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/10/62236814/argenx-s-fb102-meets-primary-endpoint-phase-2-celiac-disease-study-versus-placebo-no-new-safety-sign",
+     "source_kind": "news"
+    },
+    {
+     "claim": "A news report says Wedbush reiterated an Outperform rating and a $1150 price target on argenx.",
+     "quote": "Wedbush Reiterates Outperform on argenx, Maintains $1150 Price Target",
+     "doc_id": "ARGX-news-2026-09-08-61657831",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/09/61657831/wedbush-reiterates-outperform-argenx-maintains-1150-price-target",
+     "source_kind": "news"
+    },
+    {
+     "claim": "A news report says Halozyme Therapeutic expanded its collaboration and license deal with argenx over development and commercialization of ENHANCE with two additional targets.",
+     "quote": "Halozyme Therapeutic Expands Collaboration, License Deal With Argenx Over Development, Commercialization Of ENHANCE With Two Additional Targets",
+     "doc_id": "ARGX-news-2026-10-06-62204613",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/10/62204613/halozyme-therapeutic-expands-collaboration-license-deal-argenx-over-development-commercialization-en",
+     "source_kind": "news"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "A news report says the Phase 3 UNITY study was stopped for futility at an interim analysis, signaling that efgartigimod SC failed to show sufficient efficacy in Sjögren's disease.",
+     "quote": "Argenx Will Discontinue Phase 3 UNITY Study Of Efgartigimod SC In Sjögren's Disease After IDMC Recommends Stopping For Futility At Interim Analysis; No New Safety Signals Identified",
+     "doc_id": "ARGX-news-2026-10-08-62236825",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/quote/ARGX",
+     "source_kind": "news"
+    },
+    {
+     "claim": "A news report says the FB102 celiac disease program is still only advancing into Phase 3 development, so its clinical and commercial success is not yet established.",
+     "quote": "Argenx's FB102 Meets Primary Endpoint In Phase 2 Celiac Disease Study Versus Placebo With No New Safety Signals; Company Will Advance First-In-Class CD122 Inhibitor Into Phase 3 Development",
+     "doc_id": "ARGX-news-2026-10-08-62236814",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/10/62236814/argenx-s-fb102-meets-primary-endpoint-phase-2-celiac-disease-study-versus-placebo-no-new-safety-sign",
+     "source_kind": "news"
+    }
+   ],
+   "stripped": [],
+   "documents": [
+    {
+     "doc_id": "ARGX-news-2026-10-08-62243091",
+     "kind": "news",
+     "title": "Benzinga: Argenx Halts Phase 3 Study in Rare Disease Following Futility Analysis (2026-10-08)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62243091/argenx-halts-phase-3-study-in-rare-disease-following-futility-analysis",
+     "filed": "2026-10-08",
+     "chars_total": 204,
+     "chars_shown": 204
+    },
+    {
+     "doc_id": "ARGX-news-2026-10-08-62236825",
+     "kind": "news",
+     "title": "Benzinga: Argenx Will Discontinue Phase 3 UNITY Study Of Efgartigimod SC In Sjögren's Disease After IDMC Recommends Stopping For Futility At Interim Analysis; No New Safety Signals Identified (2026-10-08)",
+     "url": "https://www.benzinga.com/quote/ARGX",
+     "filed": "2026-10-08",
+     "chars_total": 181,
+     "chars_shown": 181
+    },
+    {
+     "doc_id": "ARGX-news-2026-10-08-62236814",
+     "kind": "news",
+     "title": "Benzinga: Argenx's FB102 Meets Primary Endpoint In Phase 2 Celiac Disease Study Versus Placebo With No New Safety Signals; Company Will Advance First-In-Class CD122 Inhibitor Into Phase 3 Development (2026-10-08)",
+     "url": "https://www.benzinga.com/news/26/10/62236814/argenx-s-fb102-meets-primary-endpoint-phase-2-celiac-disease-study-versus-placebo-no-new-safety-sign",
+     "filed": "2026-10-08",
+     "chars_total": 189,
+     "chars_shown": 189
+    },
+    {
+     "doc_id": "ARGX-news-2026-10-06-62204613",
+     "kind": "news",
+     "title": "Benzinga: Halozyme Therapeutic Expands Collaboration, License Deal With Argenx Over Development, Commercialization Of ENHANCE With Two Additional Targets (2026-10-06)",
+     "url": "https://www.benzinga.com/news/26/10/62204613/halozyme-therapeutic-expands-collaboration-license-deal-argenx-over-development-commercialization-en",
+     "filed": "2026-10-06",
+     "chars_total": 143,
+     "chars_shown": 143
+    },
+    {
+     "doc_id": "ARGX-news-2026-09-29-62045602",
+     "kind": "news",
+     "title": "Benzinga: Argenx Says VYVGART Showed Continued Improvement In Ocular Myasthenia Gravis, Sustained One-Year Efficacy In Antibody-Negative Generalized MG (2026-09-29)",
+     "url": "https://www.benzinga.com/quote/ARGX",
+     "filed": "2026-09-29",
+     "chars_total": 141,
+     "chars_shown": 141
+    },
+    {
+     "doc_id": "ARGX-news-2026-09-24-61976850",
+     "kind": "news",
+     "title": "Benzinga: Here's How Much $100 Invested In argenx 5 Years Ago Would Be Worth Today (2026-09-24)",
+     "url": "https://www.benzinga.com/news/26/09/61976850/here-s-how-much-100-invested-argenx-5-years-ago-would-be-worth-today",
+     "filed": "2026-09-24",
+     "chars_total": 287,
+     "chars_shown": 287
+    },
+    {
+     "doc_id": "ARGX-news-2026-09-08-61657831",
+     "kind": "news",
+     "title": "Benzinga: Wedbush Reiterates Outperform on argenx, Maintains $1150 Price Target (2026-09-08)",
+     "url": "https://www.benzinga.com/news/26/09/61657831/wedbush-reiterates-outperform-argenx-maintains-1150-price-target",
+     "filed": "2026-09-08",
+     "chars_total": 69,
+     "chars_shown": 69
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "NLY",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "The company reported GAAP net income of $1.06 per average common share for the quarter, reflecting strong profitability despite the stock's weakness.",
+     "quote": "GAAP net income of $1.06 per average common share for the quarter",
+     "doc_id": "NLY-8K-2026-07-21-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1043219/000104321926000052/a2026q2nlyex991.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Book value per common share of $20.15 suggests the stock is trading at a discount to reported book value.",
+     "quote": "Book value per common share of $20.15",
+     "doc_id": "NLY-8K-2026-07-21-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1043219/000104321926000052/a2026q2nlyex991.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Management increased the quarterly common stock dividend to $0.75 per share, citing durable earnings power.",
+     "quote": "supported our decision to increase the quarterly common stock dividend to $0.75 per share, reflecting the durable earnings power of our portfolio",
+     "doc_id": "NLY-8K-2026-07-21-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1043219/000104321926000052/a2026q2nlyex991.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "The Federal Reserve discussed potential interest rate hikes as rates rose over the quarter, creating headwinds for mortgage REITs.",
+     "quote": "Federal Reserve (the “Fed”) officials discussed the potential for interest rate hikes, and interest rates rose over the quarter, led by the front end of the yield curve, as market pricing shifted from an expectation of roughly two 25 basis point (“bps”) cuts this year to the possibility of at least one hike.",
+     "doc_id": "NLY-10Q-2026-07-29-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1043219/000104321926000058/nly-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "GAAP leverage increased to 7.4x, amplifying exposure to interest rate movements.",
+     "quote": "GAAP leverage of 7.4x, up from 7.3x in the prior quarter; economic leverage of 5.6x, down from 5.7x in the prior quarter",
+     "doc_id": "NLY-8K-2026-07-21-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1043219/000104321926000052/a2026q2nlyex991.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "stripped": [
+    {
+     "claim": "Inflation remained elevated from energy shocks, tariffs, and AI-related demand, which could pressure valuation multiples.",
+     "quote": "Inflation remained elevated, driven by energy shocks stemming from developments in the Middle East, residual effects from tariffs, and demand for computing equipment related to artificial intelligence.",
+     "doc_id": "NLY-10Q-2026-07-29-mdna",
+     "ok": false,
+     "reason": "quote not found verbatim in the cited document",
+     "url": "https://www.sec.gov/Archives/edgar/data/1043219/000104321926000058/nly-20260630.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "documents": [
+    {
+     "doc_id": "NLY-8K-2026-07-21-ex99",
+     "kind": "earnings_release",
+     "title": "NLY 8-K earnings release (Exhibit 99.1), filed 2026-07-21",
+     "url": "https://www.sec.gov/Archives/edgar/data/1043219/000104321926000052/a2026q2nlyex991.htm",
+     "filed": "2026-07-21",
+     "chars_total": 51757,
+     "chars_shown": 24000
+    },
+    {
+     "doc_id": "NLY-10Q-2026-07-29-mdna",
+     "kind": "mdna",
+     "title": "NLY 10-Q for period 2026-06-30, MD&A, filed 2026-07-29",
+     "url": "https://www.sec.gov/Archives/edgar/data/1043219/000104321926000058/nly-20260630.htm",
+     "filed": "2026-07-29",
+     "chars_total": 189030,
+     "chars_shown": 40000
+    },
+    {
+     "doc_id": "NLY-news-2026-10-07-62210625",
+     "kind": "news",
+     "title": "Benzinga: BTIG Maintains Buy on Annaly Capital Management, Lowers Price Target to $21 (2026-10-07)",
+     "url": "https://www.benzinga.com/news/26/10/62210625/btig-maintains-buy-annaly-capital-management-lowers-price-target-21",
+     "filed": "2026-10-07",
+     "chars_total": 75,
+     "chars_shown": 75
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "DOC",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "The company highlights that elevated interest rates could continue to adversely affect borrowing costs and real estate values, which may pressure the stock.",
+     "quote": "Elevated interest rates have and could continue to adversely impact our borrowing costs, the fair value of our fixed rate instruments, transaction volume, and real estate values generally, including our real estate.",
+     "doc_id": "DOC-10Q-2026-08-05-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/765880/000162828026053373/peak-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The company identifies uncertainty faced by its lab tenants from regulation and funding requirements as a risk, which could weigh on lab performance.",
+     "quote": "changes within the life science industry, and significant regulation, funding requirements, and uncertainty faced by our lab tenants;",
+     "doc_id": "DOC-10Q-2026-08-05-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/765880/000162828026053373/peak-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "A news report says Evercore ISI Group maintained an In-Line rating on Healthpeak Properties but lowered its price target to $22, reflecting analyst caution.",
+     "quote": "Evercore ISI Group Maintains In-Line on Healthpeak Properties, Lowers Price Target to $22",
+     "doc_id": "DOC-news-2026-09-21-61898566",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/09/61898566/evercore-isi-group-maintains-line-healthpeak-properties-lowers-price-target-22",
+     "source_kind": "news"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "The lab segment's occupancy was 78.5%, well below the outpatient medical segment's 90.7%, indicating weaker lab demand.",
+     "quote": "Total occupancy increased sequentially by +20 basis points (\"bps\") in Outpatient Medical to 90.7% and by +80 bps in Lab to 78.5%",
+     "doc_id": "DOC-8K-2026-08-04-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/765880/000162828026052608/ex99106302026.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Increased costs for tenant improvements and construction plus higher capital costs could reduce expected yields on development projects.",
+     "quote": "We have also been affected by increased costs relating to tenant improvements and construction, which, together with higher costs of capital and tariff actions (or potential tariff actions), have adversely affected, and in the future may adversely affect, construction starts and the expected yields on our capital projects, including our developments and redevelopments.",
+     "doc_id": "DOC-10Q-2026-08-05-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/765880/000162828026053373/peak-20260630.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "If tenants face liquidity constraints, they may be unable to pay rent, which could reduce occupancy.",
+     "quote": "To the extent our tenants and/or operators have experienced, or will experience, increased costs, liquidity constraints, and financing difficulties due to the foregoing macroeconomic and market conditions, they may be unable or unwilling to make payments or perform their obligations when due, and occupancy of our properties could be adversely affected.",
+     "doc_id": "DOC-10Q-2026-08-05-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/765880/000162828026053373/peak-20260630.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "stripped": [
+    {
+     "claim": "The company's lab segment reported a same-store Adjusted NOI decline of 3.2 %, indicating weakening lab fundamentals.",
+     "quote": "Lab (3.2 %) 34.0 %",
+     "doc_id": "DOC-8K-2026-08-04-ex99",
+     "ok": false,
+     "reason": "quote is 5 words (must be 6-80)",
+     "url": "https://www.sec.gov/Archives/edgar/data/765880/000162828026052608/ex99106302026.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "documents": [
+    {
+     "doc_id": "DOC-8K-2026-08-04-ex99",
+     "kind": "earnings_release",
+     "title": "DOC 8-K earnings release (Exhibit 99.1), filed 2026-08-04",
+     "url": "https://www.sec.gov/Archives/edgar/data/765880/000162828026052608/ex99106302026.htm",
+     "filed": "2026-08-04",
+     "chars_total": 30980,
+     "chars_shown": 24000
+    },
+    {
+     "doc_id": "DOC-10Q-2026-08-05-mdna",
+     "kind": "mdna",
+     "title": "DOC 10-Q for period 2026-06-30, MD&A, filed 2026-08-05",
+     "url": "https://www.sec.gov/Archives/edgar/data/765880/000162828026053373/peak-20260630.htm",
+     "filed": "2026-08-05",
+     "chars_total": 116962,
+     "chars_shown": 40000
+    },
+    {
+     "doc_id": "DOC-news-2026-09-21-61898566",
+     "kind": "news",
+     "title": "Benzinga: Evercore ISI Group Maintains In-Line on Healthpeak Properties, Lowers Price Target to $22 (2026-09-21)",
+     "url": "https://www.benzinga.com/news/26/09/61898566/evercore-isi-group-maintains-line-healthpeak-properties-lowers-price-target-22",
+     "filed": "2026-09-21",
+     "chars_total": 89,
+     "chars_shown": 89
+    },
+    {
+     "doc_id": "DOC-news-2026-09-15-61793714",
+     "kind": "news",
+     "title": "Benzinga: Jefferies Assumes Healthpeak Properties at Hold, Lowers Price Target of $21 (2026-09-15)",
+     "url": "https://www.benzinga.com/news/26/09/61793714/jefferies-assumes-healthpeak-properties-hold-lowers-price-target-21",
+     "filed": "2026-09-15",
+     "chars_total": 75,
+     "chars_shown": 75
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "HRL",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "The decline in GAAP earnings was driven by discrete one-time charges rather than the underlying operating trend.",
+     "quote": "Earnings before income taxes decreased 56 percent for the third quarter of fiscal 2026, primarily due to a $56 million loss related to the Brazil divestiture, a $48 million non-cash impairment charge, and a litigation settlement of $38 million.",
+     "doc_id": "HRL-10Q-2026-08-27-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/48465/000004846526000055/hrl-20260726.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "Adjusted diluted earnings per share rose 6% year over year despite the GAAP decline, indicating core profitability improved.",
+     "quote": "Adjusted diluted earnings per share for the third quarter of fiscal 2026 was $0.37, up 6 percent compared to the same period last year.",
+     "doc_id": "HRL-10Q-2026-08-27-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/48465/000004846526000055/hrl-20260726.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The Foodservice segment delivered its 12th consecutive quarter of organic net sales growth, showing demand strength in a key segment.",
+     "quote": "The third quarter of fiscal 2026 marked the 12th consecutive quarter of organic net sales1 growth for the Foodservice segment.",
+     "doc_id": "HRL-8K-2026-08-27-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/48465/000004846526000053/hormelearningsreleaseq32026.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "A news report says Hormel Foods is oversold with RSI near 30 and offers potential value, consistent with the mechanical screen.",
+     "quote": "Consumer staples stocks Tootsie Roll, Lamb Weston and Hormel Foods are oversold, with RSI readings near or below 30, offering potential value.",
+     "doc_id": "HRL-news-2026-09-16-61809782",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61809782/top-3-defensive-stocks-that-could-blast-off-in-q3",
+     "source_kind": "news"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "Volume decreased for all three segments in the third quarter, primarily due to the commodity turkey portfolio.",
+     "quote": "For the third quarter of fiscal 2026, volume decreased for all three segments, primarily driven by the commodity turkey portfolio.",
+     "doc_id": "HRL-10Q-2026-08-27-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/48465/000004846526000055/hrl-20260726.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The company warns that continued pressure from the external environment could have an adverse impact on results of operations.",
+     "quote": "However, continued pressure from the external environment, at a level greater than expected, could have an adverse impact on results of operations.",
+     "doc_id": "HRL-10Q-2026-08-27-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/48465/000004846526000055/hrl-20260726.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "GAAP operating margin was 3.7% compared to 7.9% a year earlier.",
+     "quote": "Operating margin and adjusted operating margin1 were 3.7% and 9.0%, respectively, compared to 7.9% and 8.4%, respectively, in the prior year.",
+     "doc_id": "HRL-8K-2026-08-27-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/48465/000004846526000053/hormelearningsreleaseq32026.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "stripped": [],
+   "documents": [
+    {
+     "doc_id": "HRL-8K-2026-08-27-ex99",
+     "kind": "earnings_release",
+     "title": "HRL 8-K earnings release (Exhibit 99.1), filed 2026-08-27",
+     "url": "https://www.sec.gov/Archives/edgar/data/48465/000004846526000053/hormelearningsreleaseq32026.htm",
+     "filed": "2026-08-27",
+     "chars_total": 35406,
+     "chars_shown": 24000
+    },
+    {
+     "doc_id": "HRL-10Q-2026-08-27-mdna",
+     "kind": "mdna",
+     "title": "HRL 10-Q for period 2026-07-26, MD&A, filed 2026-08-27",
+     "url": "https://www.sec.gov/Archives/edgar/data/48465/000004846526000055/hrl-20260726.htm",
+     "filed": "2026-08-27",
+     "chars_total": 48208,
+     "chars_shown": 40000
+    },
+    {
+     "doc_id": "HRL-news-2026-10-07-62228810",
+     "kind": "news",
+     "title": "Benzinga: BNP Paribas Maintains Neutral on Hormel Foods, Lowers Price Target to $23 (2026-10-07)",
+     "url": "https://www.benzinga.com/news/26/10/62228810/bnp-paribas-maintains-neutral-hormel-foods-lowers-price-target-23",
+     "filed": "2026-10-07",
+     "chars_total": 73,
+     "chars_shown": 73
+    },
+    {
+     "doc_id": "HRL-news-2026-09-30-62088644",
+     "kind": "news",
+     "title": "Benzinga: Hormel Strikes $1.06 Billion Deal to Expand Its Chicken Business (2026-09-30)",
+     "url": "https://www.benzinga.com/m-a/26/09/62088644/hormel-strikes-1-06-billion-deal-to-expand-its-chicken-business",
+     "filed": "2026-09-30",
+     "chars_total": 197,
+     "chars_shown": 197
+    },
+    {
+     "doc_id": "HRL-news-2026-09-30-62073125",
+     "kind": "news",
+     "title": "Benzinga: Hormel Foods To Acquire Brakebush Brothers For ~$1.055B (2026-09-30)",
+     "url": "https://www.benzinga.com/m/26/09/62073125/hormel-foods-acquire-brakebush-brothers-1-055b",
+     "filed": "2026-09-30",
+     "chars_total": 55,
+     "chars_shown": 55
+    },
+    {
+     "doc_id": "HRL-news-2026-09-16-61809782",
+     "kind": "news",
+     "title": "Benzinga: Top 3 Defensive Stocks That Could Blast Off In Q3 (2026-09-16)",
+     "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61809782/top-3-defensive-stocks-that-could-blast-off-in-q3",
+     "filed": "2026-09-16",
+     "chars_total": 192,
+     "chars_shown": 192
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  }
+ ],
+ "limits": [
+  "Prices: Alpaca SIP daily bars, split and dividend adjusted; no intraday data used.",
+  "Fundamentals: SEC XBRL companyfacts, US-GAAP filers only. Foreign private issuers (IFRS, 20-F/40-F) and companies without standard tags drop out as 'missing', they are not guessed.",
+  "Market cap uses the latest cover-page share count; for multi-class issuers it can understate.",
+  "Industry groups are SEC SIC codes, a coarse proxy for a theme (no GICS/BICS in free data).",
+  "Short interest: FINRA consolidated short interest (twice monthly, non-commercial use); % is of shares outstanding, not float.",
+  "Earnings-call transcripts are licensed content and were not used; explanations rely on the 8-K earnings release, 10-Q/10-K MD&A, and news headlines and summaries (Alpaca / Benzinga), never full articles.",
+  "No consensus estimates, revisions, ownership or borrow-cost data: those need a licensed source."
+ ]
+}

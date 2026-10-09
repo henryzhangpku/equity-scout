@@ -1,0 +1,538 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+The following discussion of our financial condition and results of operations should be read in conjunction with our condensed consolidated financial statements and the related notes included elsewhere in this Quarterly Report on Form 10-Q. In addition to historical financial information, the following discussion contains forward-looking statements that reflect our plans, estimates and beliefs. Our actual results may differ materially from those described in or implied by any forward-looking statements. Factors that could cause or contribute to these differences include those discussed below and elsewhere in this Quarterly Report on Form 10-Q, including in the section titled “Note Regarding Forward-Looking Statements,” and those factors discussed in Part I, Item 1A (Risk Factors) of our Annual Report on Form 10-K for the year ended December 31, 2025.
+
+Overview of our Business
+
+Zillow Group is reimagining real estate to make home a reality for more and more people. As the most visited real estate app and website in the United States, Zillow connects hundreds of millions of consumers with innovative technology, trusted agents and loan officers, and seamless digital solutions. With industry-leading tools and resources, Zillow supercharges real estate professionals so they can grow their businesses and deliver exceptional client experiences. For renters and housing providers, Zillow offers not only a robust marketplace but a set of end-to-end products and services to streamline applications, leases, payments and more. Zillow’s ecosystem spans the entire home journey — from dreaming and shopping to renting, buying, selling and financing.
+
+Our portfolio of affiliates, subsidiaries and brands includes Zillow, Zillow Premier Agent, Zillow Home Loans, our mortgage origination operations and affiliate lender, Zillow Rentals, Zillow New Construction, Trulia, StreetEasy, Out East, HotPads, Follow Up Boss, ShowingTime, dotloop and Zillow Closing.
+
+As of June 30, 2026, we had 7,232 employees, compared to 7,068 employees as of December 31, 2025.
+
+Health of Housing Market
+
+Our financial performance is impacted by changes in the health of the housing market, which is impacted, in turn, by general economic conditions. Current market factors have been driven by low housing inventory, elevated and volatile mortgage interest rates, changes in rental inventory and occupancy rates, as well as home price fluctuations and inflationary conditions. These factors may impact the number of transactions consumers complete using our products and services and demand for our advertising services. According to residential real estate data published by NAR, TTV increased 6% during the three months ended June 30, 2026 as compared to the three months ended June 30, 2025 and increased 4% during the six months ended June 30, 2026 as compared to the six months ended June 30, 2025. We continue to invest in the growth of our business, which we believe has resulted in year over year total revenue results, described below, for the three and six month periods ended June 30, 2026 as compared to the same periods in the prior year, that exceeded industry performance for the same periods. The extent to which market factors impact our results and financial position will depend on future developments, which are uncertain and difficult to predict.
+
+Revenue Overview
+
+Our revenue is classified into four categories: Residential, Mortgages, Rentals and Other. Our “For Sale revenue” subtotal includes our Residential and Mortgages revenue categories and represents our revenue from participation in residential real estate purchase and sale transactions.
+
+Residential. Residential revenue includes revenue generated from our agent and software offerings and revenue derived from our New Construction marketplace and StreetEasy for sale product offerings. Agent offerings include Zillow Preferred, Premier Agent market-based pricing, and Zillow Showcase. Software offerings primarily include Follow Up Boss, dotloop, and ShowingTime.
+
+Premier Agent advertising products, which include the delivery of validated customer connections, or leads, are offered on a pay for performance (“Zillow Preferred”) and share of voice (“market-based pricing”) basis. Connections are delivered when consumer contact information is provided to Premier Agent partners. We do not promise any minimum or maximum share of connections to customers for either market-based pricing or Zillow Preferred.
+
+With the Zillow Preferred model, Premier Agent partners are provided with leads and pay a performance advertising fee when a real estate transaction is closed with one of the leads, generally within two years.
+
+For Premier Agent market-based pricing, connections are distributed to Premier Agent partners in proportion to their share of voice, or a Premier Agent partner’s share of total advertising purchased in a particular zip code.
+
+24
+
+Table of Contents
+
+Zillow Showcase is an advertising and marketing solution which allows real estate agents to advertise an enhanced listing on our mobile apps and websites.
+
+Follow Up Boss revenue primarily consists of our software as a service (“SaaS”) customer relationship management system which provides real estate agents, teams and brokerages with a central hub to manage real estate transactions from connection to close.
+
+Dotloop is a real estate transaction management SaaS solution. ShowingTime primarily generates revenue through Appointment Center, which is a SaaS and call center solution allowing real estate agents, brokerages and MLSs to efficiently schedule real estate viewing appointments on behalf of their customers.
+
+Our new construction marketing solutions allow home builders to showcase their available inventory to home shoppers. New construction revenue primarily includes revenue generated by advertising sold to builders on a cost per residential community or cost per impression basis.
+
+StreetEasy for-sale revenue primarily consists of our StreetEasy Experts and StreetEasy subscription offerings. StreetEasy Experts is our pay for performance pricing model available in the New York City market for which agents and brokers are provided with leads at no initial cost and pay a performance referral fee only when a real estate purchase transaction is closed with one of the leads. Revenue generated through StreetEasy subscription offerings includes the sale of advertising and a suite of tools to developers, property managers, agents and other market professionals on a cost per property basis.
+
+Rentals. Rentals revenue includes advertising and a suite of tools sold to property managers on a cost per lead, lease, listing or impression basis or for a fixed fee for certain advertising packages through both the Zillow and StreetEasy brands. Rentals revenue also includes revenue generated from our rental applications product, through which potential renters can submit applications to multiple properties for a flat service fee.
+
+Mortgages. Mortgages revenue primarily includes revenue generated through mortgage originations and the related sale of mortgages on the secondary market through Zillow Home Loans and revenue from advertising sold to mortgage lenders and other mortgage professionals on a cost per lead basis, primarily through our Connect services.
+
+Other. Other revenue includes revenue generated primarily by display advertising.
+
+For additional information on our revenue categories, see Note 2 in our Notes to Consolidated Financial Statements in Part II, Item 8 in our Annual Report on Form 10-K for the fiscal year ended December 31, 2025.
+
+Financial Overview
+
+For the three months ended June 30, 2026 and 2025, we generated total revenue of $772 million and $655 million, respectively, an increase of 18%. The increase in total revenue was primarily attributable to the following:
+
+For Sale Revenue
+
+•Mortgages revenue increased by $36 million, or 75%, to $84 million, driven by an increase in mortgage originations revenue as a result of increased total loan origination volume.
+
+•Residential revenue increased by $31 million, or 7%, to $465 million, due to an increase in residential revenue per visit.
+
+Rentals Revenue
+
+Rentals revenue increased by $50 million, or 31%, to $209 million, due to increases in quarterly revenue per average monthly rentals unique visitor and average monthly rentals unique visitors.
+
+Gross Profit
+
+During the three months ended June 30, 2026 and 2025, we generated gross profit of $562 million and $489 million, respectively, an increase of 15%.
+
+August 2026 Cost Management Actions
+
+On August 4, 2026, Zillow Group announced a plan to reduce its headcount by approximately 7% of its employees. This headcount reduction is designed to allow the Company to move faster and operate more efficiently, including with a more
+
+25
+
+Table of Contents
+
+sustainable cost structure. As a result, the Company currently estimates that it will incur pre-tax restructuring costs totaling approximately $59 million to $64 million related to employee termination costs, of which an estimated $36 million to $38 million are expected to be future cash expenditures associated with severance payments, and the remaining amount is expected to be accelerated share-based compensation expense. For the three months ended June 30, 2026, Zillow Group recorded $36 million in restructuring costs related to employee termination costs and expects that the remainder of the restructuring costs will be recognized during the three months ending September 30, 2026. These employee termination costs have been recorded as restructuring costs within our condensed consolidated statements of operations. We plan to fund the cash expenditures through existing cash and investment balances. We expect total headcount-related expenses to decrease in absolute dollars during the three months ending September 30, 2026 as a result of these cost management actions.
+
+Key Metrics
+
+Management has identified visits, unique users, For Sale revenue per TTV, and the volume of loans originated through Zillow Home Loans as relevant to investors’ and others’ assessment of our financial condition and results of operations.
+
+Visits
+
+The number of visits is an important metric because it is an indicator of consumers’ level of engagement with our mobile apps, websites and other services. We believe highly engaged consumers are more likely to use our products and services, including Zillow Home Loans, or be transaction-ready real estate market participants and therefore more sought-after by our Premier Agent partners.
+
+We define a visit as a group of interactions by users with our Zillow, Trulia and StreetEasy mobile apps and websites. A single visit can contain multiple page views and actions, and a single user can open multiple visits across domains, web browsers, desktop or mobile devices. Visits can occur on the same day, or over several days, weeks or months.
+
+Zillow and StreetEasy measure visits using an internal measurement tool, and Trulia measures visits with Adobe Analytics. Visits to Trulia end after thirty minutes of user inactivity. Visits to Zillow and StreetEasy end after thirty minutes of user inactivity or at midnight.
+
+The following table presents the number of visits to our mobile apps and websites for the periods presented (in millions, except percentages):
+
+Three Months Ended June 30, 2025 to 2026 % Change Six Months Ended
+
+June 30, 2025 to 2026 % Change
+
+2026 2025 2026 2025
+
+Visits 2,529 2,590 (2) % 4,805 4,944 (3) %
+
+Unique Users
+
+Measuring unique users is important to us because much of our revenue depends in part on our ability to connect home buyers and sellers, renters and individuals with or looking for a mortgage to real estate, rental and mortgage professionals, products and services. Growth in consumer traffic to our mobile apps and websites increases the number of impressions, clicks, connections, leads and other events we can monetize to generate revenue. For example, our revenue depends in part, on users accessing our mobile apps and websites to engage in the sale, purchase, renting and financing of homes, including with Zillow Home Loans, and a significant portion of our Residential revenue, Rentals revenue and Other revenue depends on advertisements being served to users of our mobile apps and websites.
+
+We count a unique user the first time an individual accesses one of our mobile apps using a mobile device during a calendar month and the first time an individual accesses one of our websites using a web browser during a calendar month. If an individual accesses our mobile apps using different mobile devices within a given month, the first instance of access by each such mobile device is counted as a separate unique user. If an individual accesses more than one of our mobile apps within a given month, the first access to each mobile app is counted as a separate unique user. If an individual accesses our websites using different web browsers within a given month, the first access by each such web browser is counted as a separate unique user. If an individual accesses more than one of our websites in a single month, the first access to each website is counted as a separate unique user since unique users are tracked separately for each domain.
+
+Zillow, StreetEasy, and HotPads measure unique users using an internal measurement tool, and Trulia measures unique users with Adobe Analytics.
+
+26
+
+Table of Contents
+
+Due to technological limitations, user software settings, or user behavior, our internal measurement tool may assign a unique cookie to different instances of access by the same individual to our mobile apps and websites. In such instances, although this tool captures the number of unique users in accordance with the defined methodology, there are inherent limitations in measuring the number of unique individuals accessing our mobile apps and websites.
+
+The following table presents our average monthly unique users for the periods presented (in millions, except percentages):
+
+Three Months Ended June 30, 2025 to 2026 % Change Six Months Ended
+
+June 30, 2025 to 2026 % Change
+
+2026 2025 2026 2025
+
+Average monthly unique users 239 243 (2) % 229 235 (3) %
+
+For Sale Revenue Per Total Transaction Value
+
+For Sale revenue per TTV is an important metric because it is an indicator of our For Sale revenue performance relative to the residential real estate industry. To evaluate how our investments drive performance relative to industry growth, we use this metric to measure our ability to both connect and convert more buyers and sellers to transact with us and to grow revenue per customer transaction.
+
+We calculate For Sale revenue per TTV as total For Sale revenue for the relevant period divided by the aggregate TTV for the same period. TTV is calculated as the number of existing residential homes sold during the relevant period multiplied by the average sales price of existing residential homes sold during the same period.
+
+Prior to the three months ended December 31, 2025, TTV was calculated and reported using existing-home sales and average sales price data collected and estimated by Zillow Group as published monthly on our site. Beginning with the three months ended December 31, 2025, we calculate and report TTV using existing-home sales and average sales price data published by NAR, an industry-standard, publicly available source of residential real estate transaction data. We made this change to align the calculation of TTV with a widely used industry data source. We believe the use of the NAR data improves comparability of the metric over time.
+
+We have recast TTV and For Sale revenue per TTV for the twelve months ended June 30, 2025 to conform with the revised TTV methodology used for the twelve months ended June 30, 2026, described above. The change in methodology to calculate TTV resulted in an approximately 26% increase in TTV and 20% decrease in For Sale revenue per TTV reported for the twelve months ended June 30, 2025, primarily due to differences in existing residential homes sold and average sales price of existing residential homes sold for the period as collected and estimated by Zillow Group compared to as reported by NAR.
+
+Zillow Group’s presentation of TTV is derived from third-party data published by NAR, which may be subject to revisions, updates, or changes in methodology. While we believe NAR’s data provides a reliable measure of industry transaction data, changes to the underlying data or methodologies could affect TTV and, as a result, For Sale revenue per TTV in future periods.
+
+The following table presents our For Sale revenue per TTV for the periods presented:
+
+Twelve Months Ended
+
+June 30, 2025 to 2026 % Change
+
+2026 2025
+
+For Sale revenue (in millions)
+$ 2,026 $ 1,812 12 %
+
+Total Transaction Value (in trillions) (1)
+$ 2.3 $ 2.2 4 %
+
+For Sale revenue per Total Transaction Value (in basis points)
+8.8 8.2 7 %
+
+(1) Estimate for the twelve months ended June 30, 2026 is as of July 2026.
+
+27
+
+Table of Contents
+
+Loan Origination Volume
+
+Loan origination volume is an important metric as it is a measure of how successful we are at the origination of mortgage loan products through our Zillow Home Loans mortgage origination operations, which directly impacts our Mortgages revenue. Loan origination volume represents the total value of mortgage loan originations closed through Zillow Home Loans during the period.
+
+The following table presents loan origination volume by purpose and in total for Zillow Home Loans for the periods presented (in millions, except percentages):
+
+Three Months Ended June 30, 2025 to 2026 % Change Six Months Ended
+
+June 30, 2025 to 2026 % Change
+
+2026 2025 2026 2025
+
+Purchase loan origination volume $ 2,174 $ 1,116 95 % $ 3,722 $ 1,907 95 %
+
+Refinance loan origination volume 7 10 (30) % 29 15 93 %
+
+Total loan origination volume $ 2,181 $ 1,126 94 % $ 3,751 $ 1,922 95 %
+
+During the three and six months ended June 30, 2026, total loan origination volume increased 94% and 95%, respectively, compared to the three and six months ended June 30, 2025. This increase was primarily driven by the continued growth in Zillow Home Loans purchase loan originations in line with our strategic priorities.
+
+Results of Operations
+
+Given continued uncertainty surrounding the health of the housing market, interest rate environment and inflationary conditions, financial performance for current and prior periods may not be indicative of future performance.
+
+Revenue
+
+% of Total Revenue
+
+Three Months Ended June 30,
+2025 to 2026
+Three Months Ended June 30,
+
+2026 2025 $ Change % Change 2026 2025
+
+(in millions, except percentages, unaudited)
+
+Revenue:
+
+For Sale revenue:
+
+Residential $ 465 $ 434 $ 31 7 % 60 % 66 %
+
+Mortgages
+84 48 36 75 11 7
+
+Total For Sale revenue
+549 482 67 14 71 74
+
+Rentals 209 159 50 31 27 24
+
+Other 14 14 — — 2 2
+
+Total revenue $ 772 $ 655 $ 117 18 % 100 % 100 %
+
+28
+
+Table of Contents
+
+% of Total Revenue
+
+Six Months Ended
+
+June 30, 2025 to 2026 Six Months Ended
+
+June 30,
+
+2026 2025 $ Change % Change 2026 2025
+
+(in millions, except percentages, unaudited)
+
+Revenue:
+
+For Sale revenue:
+
+Residential $ 915 $ 851 $ 64 8 % 62 % 68 %
+
+Mortgages
+148 89 59 66 10 7
+
+Total For Sale revenue
+1,063 940 123 13 72 75
+
+Rentals 392 288 104 36 26 23
+
+Other 25 25 — — 2 2
+
+Total revenue $ 1,480 $ 1,253 $ 227 18 % 100 % 100 %
+
+Three Months Ended June 30, 2026 compared to Three Months Ended June 30, 2025
+
+Total revenue increased $117 million, or 18%, to $772 million:
+
+For Sale Revenue
+
+•Mortgages revenue increased $36 million, or 75%, primarily driven by a $38 million increase in mortgage originations revenue. The increase in mortgage originations revenue was primarily due to a 94% increase in total loan origination volume to $2.2 billion for the three months ended June 30, 2026 from $1.1 billion for the three months ended June 30, 2025. This increase was largely driven by continued growth in Zillow Home Loans purchase loan origination volume as we continued expanding the integrated transaction experience.
+
+•Residential revenue increased $31 million, or 7%. The increase in Residential revenue was primarily driven by a 10% increase in Residential revenue per visit to $0.184 for the three months ended June 30, 2026 from $0.168 for the three months ended June 30, 2025, primarily due to growth in our Premier Agent revenue driven by continued improvement in our ability to connect high-intent customers to agents, an increase in Zillow Showcase revenue driven by increasing adoption of our enhanced listing features by sellers and listing agents, and continued growth in new construction revenue. We calculate Residential revenue per visit by dividing the revenue generated by our Residential offerings by the number of visits in the period. We expect Residential revenue to decrease in absolute dollars during the three months ending September 30, 2026, due to housing market seasonality and as we continue to scale our Zillow Preferred model resulting in a continued shift in revenue from Residential to Mortgages as we bring the integrated transaction to more consumers.
+
+Rentals Revenue
+
+•Rentals revenue increased $50 million, or 31%. The increase in Rentals revenue was primarily due to a 28% increase in quarterly revenue per average monthly rentals unique visitor to $5.65 for the three months ended June 30, 2026 from $4.42 for the three months ended June 30, 2025, primarily driven by a 42% increase in multifamily rentals revenue due to growth in multifamily property listings and in revenue per property as property managers upgraded to more comprehensive advertising packages. We calculate quarterly revenue per average monthly rentals unique visitor by dividing total Rentals revenue for the period by the average monthly rentals unique visitors for the period and then dividing by the number of quarters in the period. The increase in Rentals revenue was also driven by growth in average monthly rentals unique visitors, which increased 3% to 37 million during the three months ended June 30, 2026 from 36 million during the three months ended June 30, 2025. We have estimated average monthly rentals unique visitors using Comscore data, which measures average monthly unique visitors on rental listings on Zillow’s, Trulia’s and HotPads’ mobile apps and websites, and on Realtor.com and beginning in February 2025, Redfin and its sites, including Rent.com and ApartmentGuide.com. We expect Rentals revenue to increase in absolute dollars during the three months ending September 30, 2026, primarily driven by continued growth in multifamily revenue from the addition of new rental properties.
+
+29
+
+Table of Contents
+
+Six Months Ended June 30, 2026 compared to Six Months Ended June 30, 2025
+
+Total revenue increased $227 million, or 18%, to $1.5 billion:
+
+For Sale Revenue
+
+•Residential revenue increased $64 million, or 8%. The increase in Residential revenue was primarily driven by an 11% increase in Residential revenue per visit to $0.190 for the six months ended June 30, 2026 from $0.172 for the six months ended June 30, 2025, primarily due to growth in our Premier Agent revenue driven by continued improvement in our ability to connect high-intent customers to agents, an increase in Zillow Showcase revenue driven by increasing adoption of our enhanced listing features by sellers and listing agents, continued growth in new construction revenue and Follow Up Boss revenue.
+
+•Mortgages revenue increased $59 million, or 66%, primarily driven by a $64 million increase in mortgage originations revenue. The increase in mortgage originations revenue was primarily due to a 95% increase in total loan origination volume to $3.8 billion for the six months ended June 30, 2026 from $1.9 billion for the six months ended June 30, 2025. This increase was largely driven by continued growth in Zillow Home Loans purchase loan origination volume as we continued expanding the integrated transaction experience.
+
+Rentals Revenue
+
+•Rentals revenue increased $104 million, or 36%. The increase in Rentals revenue was driven by a 25% increase in quarterly revenue per average monthly rentals unique visitor to $5.44 for the six months ended June 30, 2026 from $4.36 for the six months ended June 30, 2025, primarily driven by a 48% increase in multifamily rentals revenue due to growth in multifamily property listings and in revenue per property as property managers upgraded to more comprehensive advertising packages. The increase in Rentals revenue was also driven by growth in average monthly rentals unique visitors, which increased 9% to 36 million during the six months ended June 30, 2026 from 33 million during the six months ended June 30, 2025.
+
+Adjusted EBITDA
+
+The following table summarizes net income (loss) and Adjusted EBITDA (in millions, except percentages):
+
+% of Revenue
+
+Three Months Ended
+
+June 30,
+2025 to 2026
+Three Months Ended
+
+June 30,
+
+2026 2025 $ Change % Change 2026 2025
+
+Net income (loss) $ (4) $ 2 $ (6) (300) % (1) % — %
+
+Adjusted EBITDA $ 176 $ 155 $ 21 14 % 23 % 24 %
+
+% of Revenue
+
+Six Months Ended
+
+June 30,
+2025 to 2026
+Six Months Ended
+
+June 30,
+
+2026 2025 $ Change % Change 2026 2025
+
+Net income $ 42 $ 10 $ 32 320 % 3 % 1 %
+
+Adjusted EBITDA $ 374 $ 308 $ 66 21 % 25 % 25 %
+
+To provide investors with additional information regarding our financial results, we have disclosed Adjusted EBITDA, a non-GAAP financial measure, in this Quarterly Report on Form 10-Q. We have provided a reconciliation below of Adjusted EBITDA to net income (loss), the most directly comparable GAAP financial measure.
+
+We have included Adjusted EBITDA in this Quarterly Report on Form 10-Q as it is a key metric used by our management and Board to measure operating performance and trends and to prepare and approve our annual budget. In particular, we believe the exclusion of certain expenses in calculating Adjusted EBITDA facilitates operating performance comparisons on a period-to-period basis.
+
+Our use of Adjusted EBITDA has limitations as an analytical tool, and you should not consider this measure in isolation or as a substitute for analysis of our results as reported under GAAP. Some of these limitations are:
+
+30
+
+Table of Contents
+
+•Adjusted EBITDA does not reflect changes in, or cash requirements for, our working capital needs;
+
+•Adjusted EBITDA does not consider the potentially dilutive impact of share-based compensation;
+
+•Although depreciation and amortization are non-cash charges, the assets being depreciated and amortized may have to be replaced in the future, and Adjusted EBITDA does not reflect cash capital expenditure requirements for such replacements or for new capital expenditures or contractual commitments;
+
+•Adjusted EBITDA does not reflect restructuring costs;
+
+•Adjusted EBITDA does not reflect interest expense or other income, net;
+
+•Adjusted EBITDA does not reflect income taxes;
+
+•Adjusted EBITDA does not reflect certain litigation costs directly associated with our pending antitrust litigation brought by the FTC and state attorneys general (“FTC Matter”), consisting of legal fees and related expenses that we have determined arise outside the ordinary course of our business and are nonrecurring, infrequent, or unusual. In making this determination, we considered the following factors: (1) the FTC Matter is the first legal proceeding of this nature brought against us, and we do not currently expect similar proceedings to recur; (2) the nature of the remedies sought by the FTC, including, among other things, a permanent injunction and a divestiture of assets or reconstruction of businesses, differs from the relief typically sought in our ordinary course litigation; and (3) the counterparties are a federal regulatory agency and state attorneys generals, which are distinct from the type of counterparties involved in our ordinary course litigation; and
+
+•Other companies, including companies in our own industry, may calculate Adjusted EBITDA differently from the way we do, limiting its usefulness as a comparative measure.
+
+Because of these limitations, you should consider Adjusted EBITDA alongside other financial performance measures, including various cash-flow metrics, net income (loss) and our other GAAP results.
+
+The following table presents a reconciliation of Adjusted EBITDA to net income (loss) for each of the periods presented (in millions, unaudited):
+
+Three Months Ended
+
+June 30, Six Months Ended
+
+June 30,
+
+2026 2025 2026 2025
+
+Net income (loss) $ (4) $ 2 $ 42 $ 10
+
+Income taxes 1 — 3 —
+
+Other income, net
+(13) (18) (29) (40)
+
+Depreciation and amortization 65 67 130 132
+
+Share-based compensation 75 99 156 196
+
+Restructuring costs 36 — 36 —
+
+FTC Matter litigation costs(1)
+10 — 26 —
+
+Interest expense 6 5 10 10
+
+Adjusted EBITDA $ 176 $ 155 $ 374 $ 308
+
+(1) Beginning with the three months ended June 30, 2026, we calculate and report Adjusted EBITDA excluding litigation costs directly associated with the FTC Matter, which we have determined to be nonrecurring, infrequent, or unusual and outside the ordinary course of our business. We have revised Adjusted EBITDA for the three months ended March 31, 2026 to conform to the current period presentation. As a result of this revision, Adjusted EBITDA for the three months ended March 31, 2026 increased by $16 million, from $182 million as previously reported to $198 million.
+
+31
+
+Table of Contents
+
+Costs and Expenses, Gross Profit and Other Items
+
+% of Total Revenue
+
+Three Months Ended
+
+June 30,
+2025 to 2026
+Three Months Ended
+
+June 30,
+
+2026 2025 $ Change % Change 2026 2025
+
+(in millions, except percentages, unaudited)
+
+Cost of revenue $ 210 $ 166 $ 44 27 % 27 % 25 %
+
+Gross profit 562 489 73 15 73 75
+
+Operating expenses:
+
+Sales and marketing 249 226 23 10 32 35
+
+Technology and development 156 153 3 2 20 23
+
+General and administrative 131 121 10 8 17 18
+
+Restructuring costs 36 — 36 — 5 —
+
+Total operating expenses 572 500 72 14 74 76
+
+Other income, net 13 18 (5) (28) 2 3
+
+Interest expense 6 5 1 20 1 1
+
+Income tax expense 1 — 1 — — —
+
+% of Total Revenue
+
+Six Months Ended
+
+June 30, 2025 to 2026 Six Months Ended
+
+June 30,
+
+2026 2025 $ Change % Change 2026 2025
+
+(in millions, except percentages, unaudited)
+
+Cost of revenue $ 399 $ 305 $ 94 31 % 27 % 24 %
+
+Gross profit 1,081 948 133 14 73 76
+
+Operating expenses:
+
+Sales and marketing 459 424 35 8 31 34
+
+Technology and development 306 302 4 1 21 24
+
+General and administrative 254 242 12 5 17 19
+
+Restructuring costs 36 — 36 — 2 —
+
+Total operating expenses 1,055 968 87 9 71 77
+
+Other income, net 29 40 (11) (28) 2 3
+
+Interest expense 10 10 — — 1 1
+
+Income tax expense 3 — 3 — — —
+
+Cost of Revenue
+
+Cost of revenue consists of expenses related to operating our mobile apps and websites, including associated headcount-related expenses, such as salaries, benefits, bonuses and share-based compensation expense, as well as revenue-sharing costs, depreciation expense, and costs associated with hosting our mobile apps and websites. Cost of revenue also includes amortization costs related to capitalized website and development activities, amortization of software, amortization of certain intangible assets and other costs to obtain data used to populate our mobile apps and websites, and amortization of certain intangible assets recorded in connection with acquisitions, including developed technology. Cost of revenue also includes credit card fees and ad serving costs paid to third parties, direct costs to provide our rental applications product, and direct costs to originate mortgage loans, including underwriting and processing costs.
+
+32
+
+Table of Contents
+
+Three Months Ended June 30, 2026 compared to Three Months Ended June 30, 2025
+
+Cost of revenue increased $44 million, or 27%, primarily driven by increases of $29 million in lead acquisition costs, primarily associated with our Redfin rentals syndication agreement, $6 million in mortgage loan processing costs due to increased purchase loan origination volume, $4 million in software and hardware costs, $3 million in ad serving costs to support the growth of our rentals marketplace, and $3 million in headcount-related expenses to support loan fulfillment and processing costs driven by growth in Mortgages purchase loan origination volume.
+
+Six Months Ended June 30, 2026 compared to Six Months Ended June 30, 2025
+
+Cost of revenue increased $94 million, or 31%, primarily driven by increases of $67 million in lead acquisition costs, primarily associated with our Redfin rentals syndication agreement, $11 million in mortgage loan processing costs due to increased purchase loan origination volume, $7 million in software and hardware costs, $6 million in ad serving costs to support the growth of our rentals marketplace, and $5 million in headcount-related expenses to support loan fulfillment and processing costs driven by growth in Mortgages purchase loan origination volume.
+
+Gross Profit
+
+Gross profit is calculated as revenue less cost of revenue. Gross margin is gross profit expressed as a percentage of revenue. Our gross profit has and will continue to be affected by a number of factors, including the mix of revenue from our various product offerings.
+
+Three Months Ended June 30, 2026 compared to Three Months Ended June 30, 2025
+
+Gross profit increased by $73 million, or 15%, primarily due to an increase in revenue, discussed above. Total gross margin decreased from 75% to 73%, primarily due to increased lead acquisition costs associated with our Redfin rentals syndication agreement.
+
+Six Months Ended June 30, 2026 compared to Six Months Ended June 30, 2025
+
+Gross profit increased by $133 million, or 14%, primarily due to an increase in revenue, discussed above. Total gross margin decreased from 76% to 73%, primarily due to increased lead acquisition costs associated with our Redfin rentals syndication agreement.
+
+Sales and Marketing
+
+Sales and marketing expenses consist of advertising costs and other sales expenses related to promotional and marketing activities, headcount-related expenses, including salaries, commissions, benefits, bonuses and share-based compensation expense for sales, sales support, customer support, including the customer connections team and mortgage loan officers and specialists, marketing and public relations employees, depreciation expense and amortization of certain intangible assets recorded in connection with acquisitions and strategic partnerships, including trade names and trademarks and customer relationships.
+
+Three Months Ended June 30, 2026 compared to Three Months Ended June 30, 2025
+
+Sales and marketing expenses increased $23 million, or 10%, primarily driven by increases of $11 million in headcount-related expenses to support loan origination costs driven by growth in Mortgages purchase loan origination volume and $9 million in marketing and advertising costs as we continue to invest in the growth of our business. We expect sales and marketing expenses to decrease in absolute dollars during the three months ending September 30, 2026 as marketing and advertising spend normalizes following strategic increases in the first half of the year.
+
+Six Months Ended June 30, 2026 compared to Six Months Ended June 30, 2025
+
+Sales and marketing expenses increased $35 million, or 8%, primarily driven by increases of $20 million in headcount-related expenses to support loan origination costs driven by growth in Mortgages purchase loan origination volume and $10 million in marketing and advertising costs as we continue to invest in the growth of our business.
+
+33
+
+Table of Contents
+
+Technology and Development
+
+Technology and development expenses consist of headcount-related expenses, including salaries, benefits, bonuses and share-based compensation expense for individuals engaged in the design, development and testing of our products, mobile apps and websites and the tools and apps that support our products. Technology and development expenses also include equipment and software maintenance costs and depreciation expense.
+
+Three Months Ended June 30, 2026 compared to Three Months Ended June 30, 2025
+
+Technology and development expenses increased $3 million, or 2%, due to a $9 million increase in software and hardware costs which was partially offset by an $8 million decrease in headcount-related expenses driven primarily by a decrease in share-based compensation expense.
+
+Six Months Ended June 30, 2026 compared to Six Months Ended June 30, 2025
+
+Technology and development expenses increased $4 million, or 1%, due to a $14 million increase in software and hardware costs which was partially offset by a $12 million decrease in headcount-related expenses driven primarily by a decrease in share-based compensation expense.
+
+General and Administrative
+
+General and administrative expenses consist of headcount-related expenses, including salaries, benefits, bonuses and share-based compensation expense for executive, finance, accounting, legal, human resources, recruiting, corporate information technology costs and other administrative support. General and administrative expenses also include legal settlement costs and estimated legal liabilities, legal, accounting and other third-party professional service fees, rent expense, depreciation expense, and bad debt expense.
+
+Three Months Ended June 30, 2026 compared to Three Months Ended June 30, 2025
+
+General and administrative expenses increased $10 million, or 8%, primarily due to an increase of $18 million in legal expenses which was partially offset by a $12 million decrease in headcount-related expenses, driven primarily by a decrease in share-based compensation expense.
+
+Six Months Ended June 30, 2026 compared to Six Months Ended June 30, 2025
+
+General and administrative expenses increased $12 million, or 5%, primarily due to an increase of $29 million in legal expenses which was partially offset by a decrease of $21 million in headcount-related expenses, including share-based compensation expense.
+
+Restructuring Costs
+
+Restructuring costs of $36 million for the three and six months ended June 30, 2026 related to employee termination costs incurred as a result of the reduction in headcount announced on August 4, 2026. For additional information regarding our restructuring costs, see Note 14 to our Notes to Condensed Consolidated Financial Statements of this Quarterly Report on Form 10-Q.
+
+Other Income, net
+
+Other income, net consists primarily of interest income earned on our cash, cash equivalents and investments.
+
+Other income, net decreased $5 million and $11 million for the three and six months ended June 30, 2026, respectively, as compared to the three and six months ended June 30, 2025, primarily due to lower interest income driven by a decrease in our investment balances as a result of share repurchases and the settlement of the 2025 Notes.
+
+34
+
+Table of Contents
+
+Income Taxes
+
+We are subject to income taxes in the United States (federal and state) and certain foreign jurisdictions. As of June 30, 2026 and December 31, 2025, we have provided a valuation allowance against our net deferred tax assets that we believe, based on the weight of available evidence, are not more likely than not to be realized. There is a reasonable possibility that within the next several quarters, sufficient positive evidence will become available to demonstrate that a significant portion of the valuation allowance against our U.S. net deferred tax assets will no longer be required. We have accumulated federal tax losses of approximately $1.8 billion as of December 31, 2025, which are available to reduce future taxable income. We have accumulated state tax losses of approximately $70 million (tax effected) as of December 31, 2025.
+
+Income tax expense was not material for the three and six month periods ended 

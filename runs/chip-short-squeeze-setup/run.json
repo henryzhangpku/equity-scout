@@ -1,0 +1,954 @@
+{
+ "tool": "equity-scout 0.1.0",
+ "as_of": "2026-10-08",
+ "generated_at": "2026-10-09T00:21:22+00:00",
+ "data": {
+  "as_of": "2026-10-08",
+  "last_price_date": "2026-10-08",
+  "universe_rule": "tradable US-listed (NYSE/Nasdaq/AMEX/Arca/BATS) operating companies with an SEC CIK and a 10-K/10-Q/20-F/40-F in the last 18 months; close >= $1; 50-day avg dollar volume >= $1,000,000; one listing per CIK",
+  "n_companies": 3827,
+  "short_interest_settlement": "2026-09-15",
+  "benchmark_closes": {
+   "IWM": 277.57,
+   "QQQ": 747.58,
+   "SMH": 607.27,
+   "SOXX": 563.28,
+   "SPY": 773.93,
+   "XLB": 49.27,
+   "XLC": 112.07,
+   "XLE": 65.24,
+   "XLF": 54.23,
+   "XLI": 168.4,
+   "XLK": 197.78,
+   "XLP": 83.42,
+   "XLRE": 40.85,
+   "XLU": 41.07,
+   "XLV": 168.16,
+   "XLY": 111.71
+  },
+  "files": {
+   "prices.csv.gz": {
+    "sha256": "2fb70ee43a9d30a4174c2353a1eca23798fb267cd09557d74d1af3cc6146d0e1",
+    "bytes": 50692072
+   },
+   "features.csv.gz": {
+    "sha256": "cf63f29b2cc08badaf287c158d7e85c689a249e386a9f0f9c0b85029e0510c87",
+    "bytes": 3541921
+   }
+  }
+ },
+ "llm": {
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro"
+ },
+ "observation": "Profitable companies with heavy short interest that are moving back above their 50-day average",
+ "spec": {
+  "version": 1,
+  "observation": "Profitable companies with heavy short interest that are moving back above their 50-day average",
+  "universe": {},
+  "conditions": [
+   {
+    "field": "net_income_ttm",
+    "op": ">",
+    "value": 0,
+    "why": "Profitable companies"
+   },
+   {
+    "field": "short_pct_shares_out",
+    "op": ">",
+    "value": 0.2,
+    "why": "heavy short interest"
+   },
+   {
+    "field": "close",
+    "op": ">",
+    "ref": "sma50",
+    "why": "moving back above their 50-day average"
+   }
+  ],
+  "rank": [
+   {
+    "field": "short_pct_shares_out",
+    "direction": "desc",
+    "weight": 1
+   }
+  ],
+  "top_n": 5,
+  "unmapped": [
+   {
+    "text": "moving back above their 50-day average",
+    "reason": "Current close above SMA50 is used; the crossover from below is not directly observable with available fields."
+   },
+   {
+    "text": "heavy short interest",
+    "reason": "No objective threshold in the observation; used short interest > 20% of shares outstanding as a proxy, note float data is unavailable."
+   }
+  ],
+  "notes": "Interpreted profitable as positive TTM net income and moving back above 50-day average as close > SMA50. Heavy short interest is proxied by short interest > 20% of shares outstanding because float is not available."
+ },
+ "translation_attempts": [
+  {
+   "response": "{\n  \"version\": 1,\n  \"observation\": \"Profitable companies with heavy short interest that are moving back above their 50-day average\",\n  \"universe\": {},\n  \"conditions\": [\n    {\n      \"field\": \"net_income_ttm\",\n      \"op\": \">\",\n      \"value\": 0,\n      \"why\": \"Profitable companies\"\n    },\n    {\n      \"field\": \"short_pct_shares_out\",\n      \"op\": \">\",\n      \"value\": 0.20,\n      \"why\": \"heavy short interest\"\n    },\n    {\n      \"field\": \"close\",\n      \"op\": \">\",\n      \"ref\": \"sma50\",\n      \"why\": \"moving back above their 50-day average\"\n    }\n  ],\n  \"rank\": [\n    {\n      \"field\": \"short_pct_shares_out\",\n      \"direction\": \"desc\",\n      \"weight\": 1\n    }\n  ],\n  \"top_n\": 5,\n  \"unmapped\": [\n    {\n      \"text\": \"moving back above their 50-day average\",\n      \"reason\": \"Current close above SMA50 is used; the crossover from below is not directly observable with available fields.\"\n    },\n    {\n      \"text\": \"heavy short interest\",\n      \"reason\": \"No objective threshold in the observation; used short interest > 20% of shares outstanding as a proxy, note float data is unavailable.\"\n    }\n  ],\n  \"notes\": \"Interpreted profitable as positive TTM net income and moving back above 50-day average as close > SMA50. Heavy short interest is proxied by short interest > 20% of shares outstanding because float is not available.\"\n}",
+   "problems": []
+  }
+ ],
+ "funnel": [
+  {
+   "step": "universe (liquid US common stocks with SEC filings)",
+   "kind": "start",
+   "n_in": 3827,
+   "n_pass": 3827,
+   "n_fail": 0,
+   "n_missing": 0
+  },
+  {
+   "step": "net_income_ttm > 0",
+   "kind": "condition",
+   "n_in": 3827,
+   "n_pass": 1633,
+   "n_fail": 823,
+   "n_missing": 1371
+  },
+  {
+   "step": "short_pct_shares_out > +20.0%",
+   "kind": "condition",
+   "n_in": 1633,
+   "n_pass": 28,
+   "n_fail": 1573,
+   "n_missing": 32
+  },
+  {
+   "step": "close > sma50",
+   "kind": "condition",
+   "n_in": 28,
+   "n_pass": 6,
+   "n_fail": 22,
+   "n_missing": 0
+  }
+ ],
+ "ranked": [
+  {
+   "rank": 1,
+   "score": 1.0,
+   "symbol": "WOLF",
+   "name": "WOLFSPEED, INC.",
+   "sic_desc": "Semiconductors & Related Devices",
+   "market_cap": 1643917183.92,
+   "close": 31.02,
+   "drawdown_52w": -0.5779591836734694,
+   "pct_vs_sma50": 0.1119475212388427,
+   "mom_3m": -0.1209974497024652,
+   "rsi14": 56.092078538268616,
+   "volume_ratio_50d": 6.344034759645323,
+   "revenue_growth_yoy": -0.1220960929250264,
+   "revenue_growth_q_yoy": -0.2406091370558375,
+   "revenue_growth_accel": -0.0507493743805408,
+   "fcf_margin": -0.5714930085701398,
+   "operating_margin": -0.8260411968125094,
+   "short_pct_shares_out": 0.4925168971281958,
+   "days_to_cover": 10.25,
+   "prov_revenue_period_end": "2026-06-28",
+   "prov_revenue_filed": "2026-08-20",
+   "rank_pct_short_pct_shares_out": 1.0,
+   "net_income_ttm": 4400000.0,
+   "sma50": 27.897,
+   "cik": 895419
+  },
+  {
+   "rank": 2,
+   "score": 0.8333333333333334,
+   "symbol": "KSS",
+   "name": "KOHLS Corp",
+   "sic_desc": "Retail-Department Stores",
+   "market_cap": 2280000308.95,
+   "close": 20.11,
+   "drawdown_52w": -0.1613844870725604,
+   "pct_vs_sma50": 0.0969649363967621,
+   "mom_3m": 0.2049131216297182,
+   "rsi14": 65.79425367695033,
+   "volume_ratio_50d": 1.2183184558495506,
+   "revenue_growth_yoy": -0.028704519702883,
+   "revenue_growth_q_yoy": -0.0087422447828539,
+   "revenue_growth_accel": 0.0116722309362924,
+   "fcf_margin": 0.0670123136746597,
+   "operating_margin": 0.0383668178872326,
+   "short_pct_shares_out": 0.2941497856984315,
+   "days_to_cover": 8.64,
+   "prov_revenue_period_end": "2026-08-01",
+   "prov_revenue_filed": "2026-09-03",
+   "rank_pct_short_pct_shares_out": 0.8333333333333334,
+   "net_income_ttm": 270000000.0,
+   "sma50": 18.3324,
+   "cik": 885639
+  },
+  {
+   "rank": 3,
+   "score": 0.6666666666666666,
+   "symbol": "CBRL",
+   "name": "CRACKER BARREL OLD COUNTRY STORE, INC",
+   "sic_desc": "Retail-Eating  Places",
+   "market_cap": 1236983476.2,
+   "close": 55.34,
+   "drawdown_52w": -0.0626693766937668,
+   "pct_vs_sma50": 0.0256866484660109,
+   "mom_3m": 0.1030496312537372,
+   "rsi14": 58.49275797125301,
+   "volume_ratio_50d": 1.049250840677519,
+   "revenue_growth_yoy": -0.0473550413872211,
+   "revenue_growth_q_yoy": -0.021505537384981,
+   "revenue_growth_accel": 0.0074539546426339,
+   "fcf_margin": 0.0266434528555338,
+   "operating_margin": -0.0037574795538271,
+   "short_pct_shares_out": 0.2544744352180054,
+   "days_to_cover": 6.75,
+   "prov_revenue_period_end": "2026-07-31",
+   "prov_revenue_filed": "2026-09-25",
+   "rank_pct_short_pct_shares_out": 0.6666666666666666,
+   "net_income_ttm": 31700000.0,
+   "sma50": 53.9541,
+   "cik": 1067294
+  },
+  {
+   "rank": 4,
+   "score": 0.5,
+   "symbol": "MNRO",
+   "name": "MONRO, INC.",
+   "sic_desc": "Services-Automotive Repair, Services & Parking",
+   "market_cap": 412547154.84,
+   "close": 13.74,
+   "drawdown_52w": -0.3917662682602921,
+   "pct_vs_sma50": 0.079730303173181,
+   "mom_3m": -0.1642335766423358,
+   "rsi14": 54.48027959501163,
+   "volume_ratio_50d": 0.7420771249605181,
+   "revenue_growth_yoy": -0.0319232950790323,
+   "revenue_growth_q_yoy": -0.0717070293431686,
+   "revenue_growth_accel": -0.0312124075862213,
+   "fcf_margin": 0.0335135135135135,
+   "operating_margin": 0.0173085315531358,
+   "short_pct_shares_out": 0.2503980480972258,
+   "days_to_cover": 9.96,
+   "prov_revenue_period_end": "2026-03-28",
+   "prov_revenue_filed": "2026-05-27",
+   "rank_pct_short_pct_shares_out": 0.5,
+   "net_income_ttm": 2173000.0,
+   "sma50": 12.7254,
+   "cik": 876427
+  },
+  {
+   "rank": 5,
+   "score": 0.3333333333333333,
+   "symbol": "SWKS",
+   "name": "SKYWORKS SOLUTIONS, INC.",
+   "sic_desc": "Semiconductors & Related Devices",
+   "market_cap": 12150677146.5,
+   "close": 80.75,
+   "drawdown_52w": -0.1170038272279935,
+   "pct_vs_sma50": 0.0644990171015886,
+   "mom_3m": 0.3373633653527657,
+   "rsi14": 47.561680127364525,
+   "volume_ratio_50d": 1.0238901505203273,
+   "revenue_growth_yoy": 0.0005982501184036,
+   "revenue_growth_q_yoy": -0.0312953367875648,
+   "revenue_growth_accel": -0.0213289079163939,
+   "fcf_margin": 0.1081687053137689,
+   "operating_margin": 0.0760818116140604,
+   "short_pct_shares_out": 0.2174036896586387,
+   "days_to_cover": 4.17,
+   "prov_revenue_period_end": "2026-07-03",
+   "prov_revenue_filed": "2026-07-28",
+   "rank_pct_short_pct_shares_out": 0.3333333333333333,
+   "net_income_ttm": 290100000.0,
+   "sma50": 75.85728,
+   "cik": 4127
+  },
+  {
+   "rank": 6,
+   "score": 0.16666666666666666,
+   "symbol": "SG",
+   "name": "Sweetgreen, Inc.",
+   "sic_desc": "Retail-Eating  Places",
+   "market_cap": 1137858874.68,
+   "close": 9.57,
+   "drawdown_52w": -0.0626836434867776,
+   "pct_vs_sma50": 0.3550250615920483,
+   "mom_3m": 0.1447368421052632,
+   "rsi14": 78.10248278981817,
+   "volume_ratio_50d": 1.1332857427172025,
+   "revenue_growth_yoy": -0.006487696401456,
+   "revenue_growth_q_yoy": 0.0381446576464439,
+   "revenue_growth_accel": 0.0669052406751142,
+   "fcf_margin": -0.1706103231295011,
+   "operating_margin": -0.2143156783079337,
+   "short_pct_shares_out": 0.2133849701952566,
+   "days_to_cover": 4.99,
+   "prov_revenue_period_end": "2026-06-28",
+   "prov_revenue_filed": "2026-08-07",
+   "rank_pct_short_pct_shares_out": 0.16666666666666666,
+   "net_income_ttm": 13671000.0,
+   "sma50": 7.0626,
+   "cik": 1477815
+  }
+ ],
+ "top_n": 5,
+ "explanations": [
+  {
+   "symbol": "WOLF",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "The positive trailing net income is not from ongoing operations, as the successor period shows a net loss of $415.8 million while the predecessor period shows net income of $420.2 million.",
+     "quote": "Net (loss) income ($415.8) (88.8) % $420.2 213.5 % ($1,609.2) (212.4) %",
+     "doc_id": "WOLF-10K-2026-08-20-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "Revenue is down 12% year over year, according to the MD&A, indicating fundamental weakness behind the positive price action.",
+     "quote": "Net sales for the Successor period ended June 28, 2026 and Predecessor period ended September 29, 2025 as compared to fiscal 2025 were down 12% primarily driven by the following:",
+     "doc_id": "WOLF-10K-2026-08-20-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "The company reported a GAAP net loss of $145 million and negative adjusted EBITDA of $62 million for the most recent quarter.",
+     "quote": "GAAP net loss of $145 million and adjusted EBITDA (non-GAAP) of ($62) million.",
+     "doc_id": "WOLF-8K-2026-08-19-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000049/ex991q4-26.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "The company expects revenue to remain flat to down and non-GAAP gross margin to stay negative in the next quarter.",
+     "quote": "The Company expects to generate revenue between $140 million and $160 million for its first quarter of fiscal 2027 with non-GAAP gross margin expected to remain negative.",
+     "doc_id": "WOLF-8K-2026-08-19-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000049/ex991q4-26.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Operating cash flow was deeply negative, consuming $180.8 million in the successor period.",
+     "quote": "Cash used in operating activities of continuing operations ($180.8) ($22.4) ($711.7)",
+     "doc_id": "WOLF-10K-2026-08-20-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "stripped": [
+    {
+     "claim": "A news report says a conditional Pentagon loan commitment caused Wolfspeed shares to soar, potentially explaining the price rise above the 50-day moving average.",
+     "quote": "Wolfspeed shares soar after a conditional $1.5 billion, 30-year DoD loan commitment for defense tech.",
+     "doc_id": "WOLF-news-2026-10-07-62234223",
+     "ok": false,
+     "reason": "claim states numbers not in its quote: ['50']",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62234223/wolfspeed-stock-soars-on-massive-pentagon-loan-commitment",
+     "source_kind": "news"
+    }
+   ],
+   "documents": [
+    {
+     "doc_id": "WOLF-8K-2026-08-19-ex99",
+     "kind": "earnings_release",
+     "title": "WOLF 8-K earnings release (Exhibit 99.1), filed 2026-08-19",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000049/ex991q4-26.htm",
+     "filed": "2026-08-19",
+     "chars_total": 36322,
+     "chars_shown": 24000
+    },
+    {
+     "doc_id": "WOLF-10K-2026-08-20-mdna",
+     "kind": "mdna",
+     "title": "WOLF 10-K for period 2026-06-28, MD&A, filed 2026-08-20",
+     "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+     "filed": "2026-08-20",
+     "chars_total": 54022,
+     "chars_shown": 40000
+    },
+    {
+     "doc_id": "WOLF-news-2026-10-08-62246356",
+     "kind": "news",
+     "title": "Benzinga: What's Going On With Wolfspeed Stock Thursday? (2026-10-08)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62246356/whats-going-on-with-wolfspeed-stock-thursday-2",
+     "filed": "2026-10-08",
+     "chars_total": 320,
+     "chars_shown": 320
+    },
+    {
+     "doc_id": "WOLF-news-2026-10-07-62234223",
+     "kind": "news",
+     "title": "Benzinga: Wolfspeed Stock Soars on Massive Pentagon Loan Commitment (2026-10-07)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62234223/wolfspeed-stock-soars-on-massive-pentagon-loan-commitment",
+     "filed": "2026-10-07",
+     "chars_total": 159,
+     "chars_shown": 159
+    },
+    {
+     "doc_id": "WOLF-news-2026-10-07-62232932",
+     "kind": "news",
+     "title": "Benzinga: Wolfspeed Receives $1.5B Conditional Financing From U.S. Department Of War For Its Domestic Development, Production Of Silicon Carbide Materials, Wide Bandgap Power Devices (2026-10-07)",
+     "url": "https://www.benzinga.com/news/26/10/62232932/wolfspeed-receives-15b-conditional-financing-from-u-s-department-of-war-for-its-domestic-development-production-of-silicon-carbide-materials-wide-bandgap-power-devices",
+     "filed": "2026-10-07",
+     "chars_total": 172,
+     "chars_shown": 172
+    },
+    {
+     "doc_id": "WOLF-news-2026-10-02-62133978",
+     "kind": "news",
+     "title": "Benzinga: Wolfspeed's Busy Week: A New Substrate Launch, a Sector-Wide Rally (2026-10-02)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62133978/wolfspeeds-busy-week-a-new-substrate-launch-a-sector-wide-rally",
+     "filed": "2026-10-02",
+     "chars_total": 202,
+     "chars_shown": 202
+    },
+    {
+     "doc_id": "WOLF-news-2026-09-28-62014329",
+     "kind": "news",
+     "title": "Benzinga: Reported Sunday, Wolfspeed Launches Orderable Premium 200 mm SiC Substrate With Dedicated Capacity, Backed By 200 mm Production Running Continuously Since 2022 (2026-09-28)",
+     "url": "https://www.benzinga.com/quote/WOLF",
+     "filed": "2026-09-28",
+     "chars_total": 159,
+     "chars_shown": 159
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "KSS",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "Gross margin increased 305 basis points year-over-year, indicating stronger merchandise profitability.",
+     "quote": "Gross margin as a percentage of net sales was 43.0%, an increase of 305 basis points year-over-year.",
+     "doc_id": "KSS-8K-2026-08-26-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/885639/000119312526365860/d171200dex991.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Management is restarting share repurchases of up to $100 million in 2026, returning capital to shareholders.",
+     "quote": "Share Repurchase Program: Restarting share repurchases of up to $100 million in 2026 under existing $3 billion authorization",
+     "doc_id": "KSS-8K-2026-08-26-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/885639/000119312526365860/d171200dex991.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "Net sales decreased 0.9% year-over-year, with comparable sales also down 0.9%.",
+     "quote": "Net sales decreased 0.9% year-over-year, to $3.3 billion, with comparable sales also down 0.9%.",
+     "doc_id": "KSS-8K-2026-08-26-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/885639/000119312526365860/d171200dex991.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Operating income declined to $261 million from $279 million in the prior year, a decrease of 45 basis points as a percentage of total revenue.",
+     "quote": "Operating income was $261 million compared to $279 million in the prior year. As a percentage of total revenue, operating income was 7.4%, a decrease of 45 basis points year-over-year.",
+     "doc_id": "KSS-8K-2026-08-26-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/885639/000119312526365860/d171200dex991.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "stripped": [
+    {
+     "claim": "The Company raised its full year 2026 financial outlook, reflecting improved profitability expectations.",
+     "quote": "The Company raises its guidance and includes the benefit of IEEPA Tariff refunds received in the second quarter.",
+     "doc_id": "KSS-8K-2026-08-26-ex99",
+     "ok": false,
+     "reason": "claim states numbers not in its quote: ['2026']",
+     "url": "https://www.sec.gov/Archives/edgar/data/885639/000119312526365860/d171200dex991.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "The company's debt ratings are below investment grade, and its 3.375% notes due 2031 have incurred a 175 basis point interest rate step-up due to the downgrade.",
+     "quote": "In total, the interest rate on the notes due May 2031 has increased 175 basis points since their issuance due to the coupon adjustment provision within the notes.",
+     "doc_id": "KSS-10Q-2026-09-03-mdna",
+     "ok": false,
+     "reason": "claim states numbers not in its quote: ['3.375']",
+     "url": "https://www.sec.gov/Archives/edgar/data/885639/000119312526381893/kss-20260801.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "documents": [
+    {
+     "doc_id": "KSS-8K-2026-08-26-ex99",
+     "kind": "earnings_release",
+     "title": "KSS 8-K earnings release (Exhibit 99.1), filed 2026-08-26",
+     "url": "https://www.sec.gov/Archives/edgar/data/885639/000119312526365860/d171200dex991.htm",
+     "filed": "2026-08-26",
+     "chars_total": 14325,
+     "chars_shown": 14325
+    },
+    {
+     "doc_id": "KSS-10Q-2026-09-03-mdna",
+     "kind": "mdna",
+     "title": "KSS 10-Q for period 2026-08-01, MD&A, filed 2026-09-03",
+     "url": "https://www.sec.gov/Archives/edgar/data/885639/000119312526381893/kss-20260801.htm",
+     "filed": "2026-09-03",
+     "chars_total": 28101,
+     "chars_shown": 28101
+    },
+    {
+     "doc_id": "KSS-news-2026-09-18-61862330",
+     "kind": "news",
+     "title": "Benzinga: BTIG Reiterates Neutral on Kohl'sto Neutral (2026-09-18)",
+     "url": "https://www.benzinga.com/news/26/09/61862330/btig-reiterates-neutral-kohl-sto-neutral",
+     "filed": "2026-09-18",
+     "chars_total": 43,
+     "chars_shown": 43
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "CBRL",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "Cracker Barrel's positive net income is supported by non-recurring items, including a $47,422 litigation settlement that is not part of core operations.",
+     "quote": "In the third quarter of 2026, the Company received and recorded $47,422, net of legal fees, pursuant to a settlement agreement resolving interchange fee litigation.",
+     "doc_id": "CBRL-10K-2026-09-25-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067294/000110465926110772/cbrl-20260731x10k.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The company also recorded a $47,421 gain on a sale-leaseback transaction, further inflating reported GAAP profitability.",
+     "quote": "In the fourth quarter of 2026, we entered into a sale and leaseback transaction involving 26 of our owned Cracker Barrel properties and recorded a net gain of $47,421.",
+     "doc_id": "CBRL-10K-2026-09-25-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067294/000110465926110772/cbrl-20260731x10k.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "Full-year total revenue declined 4.7% in 2026, signaling weakness in the company's core sales trend.",
+     "quote": "Total revenue in 2026 decreased 4.7% as compared to 2025.",
+     "doc_id": "CBRL-10K-2026-09-25-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067294/000110465926110772/cbrl-20260731x10k.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The company's own MD&A attributes the traffic decline to negative publicity and customer backlash from brand changes, which could continue to pressure sales.",
+     "quote": "negative publicity and customer reactions to certain changes in brand initiatives, including the launch of a new logo and modern test store remodels in the first quarter of 2026",
+     "doc_id": "CBRL-10K-2026-09-25-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067294/000110465926110772/cbrl-20260731x10k.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "A news report says Citigroup maintained a Sell rating on Cracker Barrel and raised its price target to $44.",
+     "quote": "Citigroup Maintains Sell on Cracker Barrel Old, Raises Price Target to $44",
+     "doc_id": "CBRL-news-2026-09-25-62000293",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/09/62000293/citigroup-maintains-sell-cracker-barrel-old-raises-price-target-44",
+     "source_kind": "news"
+    },
+    {
+     "claim": "A news report says Cracker Barrel lowered its fiscal 2027 sales guidance to $3.325B-$3.400B from $3.800B-$3.900B.",
+     "quote": "Cracker Barrel Old Lowers FY2027 Sales Guidance from $3.800B-$3.900B to $3.325B-$3.400B vs $3.386B Est",
+     "doc_id": "CBRL-news-2026-09-23-61941606",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/news/26/09/61941606/cracker-barrel-old-lowers-fy2027-sales-guidance-3-800b-3-900b-3-325b-3-400b-vs-3-386b-est",
+     "source_kind": "news"
+    },
+    {
+     "claim": "Cracker Barrel's operating results declined in 2026 compared to 2025 due to lower revenue, MSBC divestiture losses, and impairment charges.",
+     "quote": "Our operating results declined in 2026 as compared to 2025 primarily due to the decrease in total revenue, the loss on sale of business assets associated with the divestiture of the MSBC business and the impairment and store closing costs discussed above partially offset by the gain recognized on the 2026 sale and leaseback transaction.",
+     "doc_id": "CBRL-10K-2026-09-25-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067294/000110465926110772/cbrl-20260731x10k.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "stripped": [],
+   "documents": [
+    {
+     "doc_id": "CBRL-8K-2026-09-23-ex99",
+     "kind": "earnings_release",
+     "title": "CBRL 8-K earnings release (Exhibit 99.1), filed 2026-09-23",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067294/000110465926109812/tm2625926d1_ex99-1.htm",
+     "filed": "2026-09-23",
+     "chars_total": 27993,
+     "chars_shown": 24000
+    },
+    {
+     "doc_id": "CBRL-10K-2026-09-25-mdna",
+     "kind": "mdna",
+     "title": "CBRL 10-K for period 2026-07-31, MD&A, filed 2026-09-25",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067294/000110465926110772/cbrl-20260731x10k.htm",
+     "filed": "2026-09-25",
+     "chars_total": 55659,
+     "chars_shown": 40000
+    },
+    {
+     "doc_id": "CBRL-news-2026-09-25-62000293",
+     "kind": "news",
+     "title": "Benzinga: Citigroup Maintains Sell on Cracker Barrel Old, Raises Price Target to $44 (2026-09-25)",
+     "url": "https://www.benzinga.com/news/26/09/62000293/citigroup-maintains-sell-cracker-barrel-old-raises-price-target-44",
+     "filed": "2026-09-25",
+     "chars_total": 74,
+     "chars_shown": 74
+    },
+    {
+     "doc_id": "CBRL-news-2026-09-23-61951771",
+     "kind": "news",
+     "title": "Benzinga: Cracker Barrel Battles Consumer Pressure With $7.99 Breakfast, $8.99 Early Dine Deals (2026-09-23)",
+     "url": "https://www.benzinga.com/markets/earnings/26/09/61951771/cracker-barrel-battles-consumer-pressure-with-7-99-breakfast-8-99-early-dine-deals",
+     "filed": "2026-09-23",
+     "chars_total": 219,
+     "chars_shown": 219
+    },
+    {
+     "doc_id": "CBRL-news-2026-09-23-61944522",
+     "kind": "news",
+     "title": "Benzinga: Full Transcript: Cracker Barrel Old Q4 2026 Earnings Call (2026-09-23)",
+     "url": "https://www.benzinga.com/news/26/09/61944522/full-transcript-cracker-barrel-old-q4-2026-earnings-call",
+     "filed": "2026-09-23",
+     "chars_total": 270,
+     "chars_shown": 270
+    },
+    {
+     "doc_id": "CBRL-news-2026-09-23-61941606",
+     "kind": "news",
+     "title": "Benzinga: Cracker Barrel Old Lowers FY2027 Sales Guidance from $3.800B-$3.900B to $3.325B-$3.400B vs $3.386B Est (2026-09-23)",
+     "url": "https://www.benzinga.com/news/26/09/61941606/cracker-barrel-old-lowers-fy2027-sales-guidance-3-800b-3-900b-3-325b-3-400b-vs-3-386b-est",
+     "filed": "2026-09-23",
+     "chars_total": 102,
+     "chars_shown": 102
+    },
+    {
+     "doc_id": "CBRL-news-2026-09-23-61941514",
+     "kind": "news",
+     "title": "Benzinga: Cracker Barrel Old Q4 Adj. EPS $0.99 Beats $0.15 Estimate, Sales $849.342M Beat $836.894M Estimate (2026-09-23)",
+     "url": "https://www.benzinga.com/news/earnings/26/09/61941514/cracker-barrel-old-q4-adj-eps-0-99-beats-0-15-estimate-sales-849-342m-beat-836-894m-estimate",
+     "filed": "2026-09-23",
+     "chars_total": 98,
+     "chars_shown": 98
+    },
+    {
+     "doc_id": "CBRL-news-2026-09-21-61894345",
+     "kind": "news",
+     "title": "Benzinga: UBS Maintains Neutral on Cracker Barrel Old, Raises Price Target to $46 (2026-09-21)",
+     "url": "https://www.benzinga.com/news/26/09/61894345/ubs-maintains-neutral-cracker-barrel-old-raises-price-target-46",
+     "filed": "2026-09-21",
+     "chars_total": 71,
+     "chars_shown": 71
+    },
+    {
+     "doc_id": "CBRL-news-2026-09-18-61866275",
+     "kind": "news",
+     "title": "Benzinga: How To Earn $500 A Month From Cracker Barrel Stock Ahead Of Q4 Earnings (2026-09-18)",
+     "url": "https://www.benzinga.com/trading-ideas/dividends/26/09/61866275/how-to-earn-500-a-month-from-cracker-barrel-stock-ahead-of-q4-earnings",
+     "filed": "2026-09-18",
+     "chars_total": 210,
+     "chars_shown": 210
+    },
+    {
+     "doc_id": "CBRL-news-2026-09-15-61785035",
+     "kind": "news",
+     "title": "Benzinga: Cracker Barrel Likely To Report Lower Q4 Earnings; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call (2026-09-15)",
+     "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/09/61785035/cracker-barrel-likely-to-report-lower-q4-earnings-these-most-accurate-analysts-revise-forecasts-ahead-of-earnings-call",
+     "filed": "2026-09-15",
+     "chars_total": 261,
+     "chars_shown": 261
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "MNRO",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "The screen's positive TTM net income conflicts with the most recent quarter's net loss of $2.1 million, which likely contributes to elevated short interest.",
+     "quote": "Net loss for the first quarter of fiscal 2027 was $2.1 million, as compared to a net loss of $8.1 million in the same period of the prior year.",
+     "doc_id": "MNRO-8K-2026-07-29-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/876427/000119312526322170/d66984dex991.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Adjusted operating income dropped to $2.2 million from $14.0 million in the prior-year quarter, showing that underlying profitability worsened despite the headline operating income improvement.",
+     "quote": "Adjusted operating income, a non-GAAP measure, for the first quarter of fiscal 2027 was $2.2 million, or 0.8% of sales, as compared to adjusted operating income of $14.0 million, or 4.7% of sales in the prior year period.",
+     "doc_id": "MNRO-8K-2026-07-29-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/876427/000119312526322170/d66984dex991.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Sales decreased 4.6% in the most recent quarter, driven by closed stores and lower comparable store sales, indicating weak demand fundamentals that shorts may be targeting.",
+     "quote": "Sales for the first quarter of the fiscal year ending March 27, 2027 (“fiscal 2027”) decreased 4.6% to $287.1 million, as compared to sales of $301.0 million for the first quarter of the fiscal year ended March 28, 2026 (“fiscal 2026”).",
+     "doc_id": "MNRO-8K-2026-07-29-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/876427/000119312526322170/d66984dex991.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "Adjusted diluted loss per share was $.09, meaning the company lost money on a core basis in the latest quarter after excluding one-time items.",
+     "quote": "Adjusted diluted loss per share, a non-GAAP measure, for the first quarter of fiscal 2027 was $.09.",
+     "doc_id": "MNRO-8K-2026-07-29-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/876427/000119312526322170/d66984dex991.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "Cash used for operating activities was $30.4 million in the quarter, reflecting a net loss and significant working capital outflows.",
+     "quote": "For the three months ended June 27, 2026, cash used for operating activities was $30.4 million, which consisted of a net loss of $2.1 million and a change in operating assets and liabilities of $44.6 million, partially offset by non-cash adjustments of $16.3 million.",
+     "doc_id": "MNRO-10Q-2026-07-29-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/876427/000087642726000010/mnro-20260627x10q.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "stripped": [
+    {
+     "claim": "Comparable store sales declined 1.7% due to lower store traffic and consumers deferring higher-ticket spending decisions, which may continue to pressure revenue.",
+     "quote": "This was driven by lower store traffic as well as consumers that continued to defer higher-ticket spending decisions in tires and brakes and traded-down to lower-cost alternatives in our tire category.",
+     "doc_id": "MNRO-8K-2026-07-29-ex99",
+     "ok": false,
+     "reason": "claim states numbers not in its quote: ['1.7']",
+     "url": "https://www.sec.gov/Archives/edgar/data/876427/000119312526322170/d66984dex991.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "documents": [
+    {
+     "doc_id": "MNRO-8K-2026-07-29-ex99",
+     "kind": "earnings_release",
+     "title": "MNRO 8-K earnings release (Exhibit 99.1), filed 2026-07-29",
+     "url": "https://www.sec.gov/Archives/edgar/data/876427/000119312526322170/d66984dex991.htm",
+     "filed": "2026-07-29",
+     "chars_total": 17181,
+     "chars_shown": 17181
+    },
+    {
+     "doc_id": "MNRO-10Q-2026-07-29-mdna",
+     "kind": "mdna",
+     "title": "MNRO 10-Q for period 2026-06-27, MD&A, filed 2026-07-29",
+     "url": "https://www.sec.gov/Archives/edgar/data/876427/000087642726000010/mnro-20260627x10q.htm",
+     "filed": "2026-07-29",
+     "chars_total": 28869,
+     "chars_shown": 28869
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  },
+  {
+   "symbol": "SWKS",
+   "verdict": "explained",
+   "thesis": [
+    {
+     "claim": "A news report says Skyworks shares rallied 22% in a week after the CEO said the $22 billion Qorvo merger has entered its final stages and should close by year-end, providing a bullish catalyst that may conflict with underlying fundamentals.",
+     "quote": "Skyworks shares have rallied 22% this week after CEO Phil Brace said the $22 billion Qorvo merger has entered its final stages and should close by year-end.",
+     "doc_id": "SWKS-news-2026-09-11-61748374",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.benzinga.com/markets/tech/26/09/61748374/skyworks-solutions-stock-best-week-since-2009-qorvo-merger-final-stages",
+     "source_kind": "news"
+    },
+    {
+     "claim": "The Qorvo combination still has closing uncertainty, as the company states there can be no assurances that the closing will occur on its hoped-for timeline, which may encourage short sellers.",
+     "quote": "There can be no assurances that the closing will occur on this timeline.",
+     "doc_id": "SWKS-10Q-2026-07-28-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000049/swks-20260703.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "bear_case": [
+    {
+     "claim": "GAAP diluted EPS of $0.22 and GAAP operating income of $49 million indicate slim GAAP profitability in the third fiscal quarter.",
+     "quote": "Revenue for the third fiscal quarter of 2026 was $935 million. On a GAAP basis, operating income for the third fiscal quarter was $49 million with diluted earnings per share of $0.22.",
+     "doc_id": "SWKS-8K-2026-07-28-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000047/q3268-kex991earningsrelease.htm",
+     "source_kind": "earnings_release"
+    },
+    {
+     "claim": "The company's gross profit declined due to unfavorable product mix, pressuring margins despite higher unit volumes.",
+     "quote": "The decrease in gross profit for the three and nine months ended July 3, 2026, as compared with the corresponding periods in fiscal 2025, was primarily the result of unfavorable product mix, partially offset by higher unit volumes.",
+     "doc_id": "SWKS-10Q-2026-07-28-mdna",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000049/swks-20260703.htm",
+     "source_kind": "mdna"
+    },
+    {
+     "claim": "The board has eliminated the quarterly dividend, which may remove a source of investor support for the stock.",
+     "quote": "the board has replaced the stock repurchase program expiring in February 2027 with a new $2 billion stock repurchase program, and the company has decided not to declare any quarterly dividends going forward, redirecting that capital toward these higher-return uses.",
+     "doc_id": "SWKS-8K-2026-07-28-ex99",
+     "ok": true,
+     "reason": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000047/q3268-kex991earningsrelease.htm",
+     "source_kind": "earnings_release"
+    }
+   ],
+   "stripped": [
+    {
+     "claim": "Skyworks' own 10-Q shows net revenue fell year over year, driven primarily by a decrease in market share at a significant customer, which conflicts with the stock's positive momentum.",
+     "quote": "Net revenue decreased to $934.8 million for the three months ended July 3, 2026, as compared to $965.0 million for the corresponding period in fiscal 2025, driven primarily by a decrease in market share at a significant customer, partially offset by an increase in demand for our automotive and data center products.",
+     "doc_id": "SWKS-10Q-2026-07-28-mdna",
+     "ok": false,
+     "reason": "claim states numbers not in its quote: ['10']",
+     "url": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000049/swks-20260703.htm",
+     "source_kind": "mdna"
+    }
+   ],
+   "documents": [
+    {
+     "doc_id": "SWKS-8K-2026-07-28-ex99",
+     "kind": "earnings_release",
+     "title": "SWKS 8-K earnings release (Exhibit 99.1), filed 2026-07-28",
+     "url": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000047/q3268-kex991earningsrelease.htm",
+     "filed": "2026-07-28",
+     "chars_total": 37536,
+     "chars_shown": 24000
+    },
+    {
+     "doc_id": "SWKS-10Q-2026-07-28-mdna",
+     "kind": "mdna",
+     "title": "SWKS 10-Q for period 2026-07-03, MD&A, filed 2026-07-28",
+     "url": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000049/swks-20260703.htm",
+     "filed": "2026-07-28",
+     "chars_total": 28420,
+     "chars_shown": 28420
+    },
+    {
+     "doc_id": "SWKS-news-2026-10-07-62224459",
+     "kind": "news",
+     "title": "Benzinga: Skyworks Solutions Form 13G Shows Abigail P. Johnson Reports 12.6% Stake In Co. As Of Sept. 30 (2026-10-07)",
+     "url": "https://www.benzinga.com/m/26/10/62224459/skyworks-solutions-form-13g-shows-abigail-p-johnson-reports-12-6-stake-co-sept-30",
+     "filed": "2026-10-07",
+     "chars_total": 94,
+     "chars_shown": 94
+    },
+    {
+     "doc_id": "SWKS-news-2026-10-06-62200823",
+     "kind": "news",
+     "title": "Benzinga: Citigroup Maintains Neutral on Skyworks Solutions, Raises Price Target to $90 (2026-10-06)",
+     "url": "https://www.benzinga.com/news/26/10/62200823/citigroup-maintains-neutral-skyworks-solutions-raises-price-target-90",
+     "filed": "2026-10-06",
+     "chars_total": 77,
+     "chars_shown": 77
+    },
+    {
+     "doc_id": "SWKS-news-2026-10-06-62198308",
+     "kind": "news",
+     "title": "Benzinga: B. Riley Securities Upgrades Skyworks Solutions to Buy, Raises Price Target to $107 (2026-10-06)",
+     "url": "https://www.benzinga.com/news/26/10/62198308/b-riley-securities-upgrades-skyworks-solutions-buy-raises-price-target-107",
+     "filed": "2026-10-06",
+     "chars_total": 83,
+     "chars_shown": 83
+    },
+    {
+     "doc_id": "SWKS-news-2026-10-01-62105621",
+     "kind": "news",
+     "title": "Benzinga: RBC Capital Maintains Sector Perform on Skyworks Solutions, Raises Price Target to $95 (2026-10-01)",
+     "url": "https://www.benzinga.com/news/26/10/62105621/rbc-capital-maintains-sector-perform-skyworks-solutions-raises-price-target-95",
+     "filed": "2026-10-01",
+     "chars_total": 86,
+     "chars_shown": 86
+    },
+    {
+     "doc_id": "SWKS-news-2026-09-25-61991547",
+     "kind": "news",
+     "title": "Benzinga: Wall Street's Most Accurate Analysts Spotlight On 3 Tech Stocks Delivering High-Dividend Yields (2026-09-25)",
+     "url": "https://www.benzinga.com/trading-ideas/dividends/26/09/61991547/wall-streets-most-accurate-analysts-spotlight-on-3-tech-stocks-delivering-high-dividend-yields-14",
+     "filed": "2026-09-25",
+     "chars_total": 224,
+     "chars_shown": 224
+    },
+    {
+     "doc_id": "SWKS-news-2026-09-14-61762552",
+     "kind": "news",
+     "title": "Benzinga: Top 3 Tech Stocks That May Fall Off A Cliff This month (2026-09-14)",
+     "url": "https://www.benzinga.com/trading-ideas/short-ideas/26/09/61762552/top-3-tech-stocks-that-may-fall-off-a-cliff-this-month-3",
+     "filed": "2026-09-14",
+     "chars_total": 179,
+     "chars_shown": 179
+    },
+    {
+     "doc_id": "SWKS-news-2026-09-14-61756737",
+     "kind": "news",
+     "title": "Benzinga: Reported Friday, Skyworks Extends Withdrawal Deadline For Qorvo Note Exchange Offers To September 18, With Settlement Expected After Mergers Close (2026-09-14)",
+     "url": "https://www.benzinga.com/quote/QRVO",
+     "filed": "2026-09-14",
+     "chars_total": 146,
+     "chars_shown": 146
+    },
+    {
+     "doc_id": "SWKS-news-2026-09-11-61749456",
+     "kind": "news",
+     "title": "Benzinga: Stock of the Day: Is This the Top for Skyworks? (2026-09-11)",
+     "url": "https://www.benzinga.com/trading-ideas/technicals/26/09/61749456/stock-of-the-day-is-this-the-top-for-skyworks",
+     "filed": "2026-09-11",
+     "chars_total": 193,
+     "chars_shown": 193
+    },
+    {
+     "doc_id": "SWKS-news-2026-09-11-61748374",
+     "kind": "news",
+     "title": "Benzinga: QUICK SPARK: Skyworks Solution Stock Eyes Best Weekly Rally Since 2009 (2026-09-11)",
+     "url": "https://www.benzinga.com/markets/tech/26/09/61748374/skyworks-solutions-stock-best-week-since-2009-qorvo-merger-final-stages",
+     "filed": "2026-09-11",
+     "chars_total": 227,
+     "chars_shown": 227
+    },
+    {
+     "doc_id": "SWKS-news-2026-09-11-61744663",
+     "kind": "news",
+     "title": "Benzinga: QUICK SPARK: Skyworks Stock Poised to Be S&P 500’s Best Stock This Week (2026-09-11)",
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61744663/skyworks-stock-sp-500-best-weekly-performer",
+     "filed": "2026-09-11",
+     "chars_total": 185,
+     "chars_shown": 185
+    }
+   ],
+   "model_status": "model said evidence: sufficient"
+  }
+ ],
+ "limits": [
+  "Prices: Alpaca SIP daily bars, split and dividend adjusted; no intraday data used.",
+  "Fundamentals: SEC XBRL companyfacts, US-GAAP filers only. Foreign private issuers (IFRS, 20-F/40-F) and companies without standard tags drop out as 'missing', they are not guessed.",
+  "Market cap uses the latest cover-page share count; for multi-class issuers it can understate.",
+  "Industry groups are SEC SIC codes, a coarse proxy for a theme (no GICS/BICS in free data).",
+  "Short interest: FINRA consolidated short interest (twice monthly, non-commercial use); % is of shares outstanding, not float.",
+  "Earnings-call transcripts are licensed content and were not used; explanations rely on the 8-K earnings release, 10-Q/10-K MD&A, and news headlines and summaries (Alpaca / Benzinga), never full articles.",
+  "No consensus estimates, revisions, ownership or borrow-cost data: those need a licensed source."
+ ]
+}

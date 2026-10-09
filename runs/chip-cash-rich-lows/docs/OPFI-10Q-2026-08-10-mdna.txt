@@ -1,0 +1,526 @@
+ITEM 2. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+
+The following discussion and analysis of our financial condition and results of operations should be read in conjunction with the unaudited consolidated financial statements and related notes thereto included elsewhere in this Quarterly Report on Form 10-Q. This discussion contains forward-looking statements that involve risks and uncertainties. You should review the sections titled “Cautionary Note Concerning Factors That May Affect Future Results” and “Risk Factors” of this Form 10-Q and our Annual Report on Form 10-K, filed with the U.S. Securities and Exchange Commission on March 12, 2026 (“2025 Annual Report”), for a discussion of forward-looking statements and important factors that could cause actual results to differ materially from the results described or implied by the forward-looking statements contained in the following discussion and analysis.
+
+OVERVIEW
+
+We are a tech-enabled digital finance platform that partners with banks to offer financial products and services to everyday Americans. Through this transparent and responsible platform, which emphasizes financial inclusion and exceptional customer experience, we assist consumers who are underserved by traditional financing options in building improved financial health. OppLoans by OppFi maintains a 4.4/5.0 star rating on Trustpilot based on over 5,600 reviews, positioning us among the top consumer-rated financial platforms online. We also hold a 35% equity interest in Bitty Holdings, LLC (“Bitty”), a credit access company that provides revenue-based financing and other working capital solutions to small businesses.
+
+Our primary mission is to facilitate financial inclusion and credit access to the 48 million everyday Americans who face credit insecurity through unwavering commitment to our customers, who benefit from a highly automated, transparent, efficient, and fully digital experience. The banks that work with us benefit from our turn-key, outsourced marketing, data science, and proprietary technology to digitally acquire, underwrite, and service these consumers.
+
+Our primary products are offered by our OppLoans platform. Customers on this platform are U.S. consumers who are employed, have bank accounts, and generally earn median wages. The average installment loan for a new borrower facilitated by us is approximately $2,000, payable in installments and with an average contractual term of 12 months.
+
+HIGHLIGHTS
+
+Our financial results as of and for the three months ended June 30, 2026 are summarized below:
+
+•Net income increased 36.0% to $15.6 million from $11.5 million for the three months ended June 30, 2026 and 2025, respectively;
+
+•Diluted earnings per common share increased $0.96 to $0.18 from diluted loss per share of $0.78 for the three months ended June 30, 2026 and 2025, respectively;
+
+•Adjusted net income (“Adjusted Net Income”)(1) decreased 27.0% to $28.8 million from $39.4 million for the three months ended June 30, 2026 and 2025, respectively;
+
+•Adjusted earnings per share (“Adjusted EPS”)(1) decreased $0.12 to $0.33 from $0.45 for the three months ended June 30, 2026 and 2025, respectively;
+
+•Total revenue increased 1.9% to $145.2 million from $142.4 million for the three months ended June 30, 2026 and 2025, respectively;
+
+•Net originations decreased 9.3% to $212.0 million from $233.9 million for the three months ended June 30, 2026 and 2025, respectively; and
+
+•Ending receivables increased 0.5% to $440.1 million from $437.8 million as of June 30, 2026 and 2025, respectively.
+
+(1) Adjusted EPS and Adjusted Net Income are non-GAAP financial measures. For information regarding our uses and definitions of these measures and for reconciliations to the most directly comparable United States GAAP measures, see the section titled “Non-GAAP Financial Measures” below.
+
+RECENT EVENTS
+
+In April 2026, we entered into an Agreement and Plan of Merger (the “Merger Agreement”) with BNCCORP, Inc., a Delaware corporation (“BNCC”), and Birch Merger Sub, LLC, a Delaware limited liability company and our wholly owned subsidiary (“Merger Sub”), pursuant to which BNCC will merge with and into Merger Sub, with Merger Sub surviving as a wholly owned subsidiary (the “Merger”). Immediately following the Merger, an interim bank and our wholly owned subsidiary to be formed following the date thereof will merge with and into BNC National Bank, a wholly owned subsidiary of BNCC (“BNC”), with
+
+25
+
+Table of Contents
+
+BNC (which is expected to be renamed OppFi Bank, N.A.) surviving as our wholly owned subsidiary (together with the Merger, the “Transaction”). The Transaction is subject to customary closing conditions, including regulatory approvals from the Office of the Comptroller of the Currency and the Federal Reserve and BNCC stockholder approvals, and is expected to close in the fourth quarter of 2026, although there can be no assurance that such conditions will be satisfied. The Transaction is expected to enable us to operate as a bank holding company and, over time, provide access to a more stable and lower-cost source of funding through deposits, although it will also subject us to increased regulatory capital and compliance requirements. We believe the Transaction will further align our technology-enabled platform with a regulated banking infrastructure, supporting our long-term strategy to vertically integrate our operations and enhance risk management and funding flexibility.
+
+In addition, in April 2026, we completed a series of transactions pursuant to a Corporate Simplification Agreement (the “Corporate Simplification”), which resulted in us becoming the sole owner of OppFi-LLC and the termination of our Tax Receivable Agreement (the “TRA”). The Corporate Simplification simplified our organizational structure, eliminated noncontrolling interests, and resulted in future tax benefits from the tax basis “step-up” triggered by the Corporate Simplification and previous exchanges of Class A common units of OppFi-LLC (“OppFi Units”), partially offset by aggregate TRA termination payments of approximately $40.8 million. We expect the simplified structure to improve the transparency and comparability of our financial results and better position us to execute on our strategic and capital allocation priorities.
+
+KEY PERFORMANCE METRICS
+
+We regularly review the following key metrics to evaluate our business, measure our performance, identify trends affecting our business, formulate financial projections, and make strategic decisions, which may also be useful to an investor. The following tables and related discussion set forth key financial and operating metrics for our operations as of and for the three and six months ended June 30, 2026 and 2025. Percentages presented are calculated from the underlying whole-dollar amounts.
+
+Total Net Originations
+
+We measure originations to assess the growth trajectory and overall size of our loan portfolio. There is a direct correlation between origination growth and revenue growth. Loans are considered to be originated when the contract is signed with the prospective borrower. The vast majority of originations ultimately disburse to a borrower, but disbursement timing lags that of originations.
+
+The following tables present total net originations (defined as gross originations net of transferred balance on refinanced loans), total retained net originations (defined as the portion of total net originations with respect to which we ultimately purchased a receivable from our bank partners), and percentage of net originations by new loans for the three and six months ended June 30, 2026 and 2025 (in thousands):
+
+Three Months Ended June 30, Change
+
+2026 2025 $ %
+
+Total net originations $ 212,038 $ 233,873 $ (21,835) (9.3) %
+
+Total retained net originations $ 176,761 $ 205,706 $ (28,945) (14.1) %
+
+Percentage of net originations by new loans 41.6 % 38.7 % N/A 7.6 %
+
+Six Months Ended June 30, Change
+
+2026 2025 $ %
+
+Total net originations $ 388,012 $ 423,041 $ (35,029) (8.3) %
+
+Total retained net originations $ 328,211 $ 374,669 $ (46,458) (12.4) %
+
+Percentage of net originations by new loans 42.0 % 37.8 % N/A 11.1 %
+
+Total net originations decreased to $212.0 million and $388.0 million for the three and six months ended June 30, 2026, respectively, from $233.9 million and $423.0 million for the three and six months ended June 30, 2025, respectively. The 9.3% and 8.3% decreases were mainly a result of lower net originations from refinance customers, as the prior year periods benefited from changes to our credit model that increased the maximum loan amount those customers could refinance. Total retained net originations decreased to $176.8 million and $328.2 million for the three and six months ended June 30, 2026, respectively, from $205.7 million and $374.7 million for the three and six months ended June 30, 2025, respectively. The 14.1% and 12.4%
+
+26
+
+Table of Contents
+
+decreases were a result of the decrease in total net originations, furthered by the growth in the percentage of loans retained by our bank partners.
+
+Total net originations of new loans as a percentage of total loans increased to 41.6% and 42.0% for the three and six months ended June 30, 2026, respectively, from 38.7% and 37.8% for the three and six months ended June 30, 2025, respectively. The increases were a result of returning and refinance originations decreasing year over year.
+
+Ending Receivables
+
+Ending receivables are defined as the unpaid principal balances of loans at the end of the reporting period. The following table presents ending receivables as of June 30, 2026 and 2025 (in thousands):
+
+As of June 30, Change
+
+2026 2025 $ %
+
+Ending receivables $ 440,065 $ 437,750 $ 2,315 0.5 %
+
+Ending receivables increased to $440.1 million as of June 30, 2026 from $437.8 million as of June 30, 2025. The 0.5% increase was primarily driven by a higher balance to start the year, partially offset by lower retained net originations and higher gross charge-offs for the period.
+
+Average Yield
+
+Average yield represents total revenue from the period as a percent of average receivables and is presented as an annualized metric. Receivables are defined as the unpaid principal balances of loans. The following tables present average yield for the three and six months ended June 30, 2026 and 2025:
+
+Three Months Ended June 30, Change
+
+2026 2025 %
+
+Average yield, annualized 132.4 % 136.1 % (2.7) %
+
+Six Months Ended June 30, Change
+
+2026 2025 %
+
+Average yield, annualized 131.1 % 135.3 % (3.2) %
+
+Average yield decreased to 132.4% and 131.1% for the three and six months ended June 30, 2026, respectively, from 136.1% and 135.3% for the three and six months ended June 30, 2025, respectively. The 2.7% and 3.2% decreases were mainly driven by an increase in delinquent loans in the portfolio that were not accruing interest throughout the periods, partially offset by an increase in the average statutory rate during the periods.
+
+Net Charge-Offs as a Percentage of Total Revenue and Net Charge-Offs as a Percentage of Average Receivables
+
+Net charge-offs as a percentage of total revenue and net charge-offs as a percentage of average receivables represent total charge-offs from the period less recoveries as a percentage of total revenue and as a percentage of average receivables. Net charge-offs as a percentage of average receivables is presented as an annualized metric. Receivables are defined as the unpaid principal balances of loans. Our charge-off policy is based on a review of delinquent finance receivables on a loan-by-loan basis. Finance receivables are charged off at the earlier of the time when accounts reach 90 days past due on a recency basis, when we receive notification of a customer bankruptcy, or when finance receivables are otherwise deemed uncollectible.
+
+27
+
+Table of Contents
+
+The following tables present net charge-offs as a percentage of total revenue and as an annualized percentage of average receivables for the three and six months ended June 30, 2026 and 2025:
+
+Three Months Ended June 30, Change
+
+2026 2025 %
+
+Net charge-offs as % of total revenue 39.5 % 31.9 % 23.7 %
+
+Net charge-offs as % of average receivables, annualized 52.3 % 43.5 % 20.4 %
+
+Six Months Ended June 30, Change
+
+2026 2025 %
+
+Net charge-offs as % of total revenue 41.0 % 33.3 % 23.3 %
+
+Net charge-offs as % of average receivables, annualized 53.8 % 45.0 % 19.5 %
+
+Net charge-offs as a percentage of total revenue increased to 39.5% and 41.0% for the three and six months ended June 30, 2026, respectively, from 31.9% and 33.3% for the three and six months ended June 30, 2025, respectively. The increases were mainly a result of a lower yielding portfolio for the reasons discussed above in “Average Yield” combined with elevated gross charge-offs offsetting higher recoveries of previously charged off loans. Net charge-offs as a percentage of average receivables increased to 52.3% and 53.8% for the three and six months ended June 30, 2026, respectively, from 43.5% and 45.0% for the three and six months ended June 30, 2025, respectively. The increases were again mainly a result of elevated gross charge-offs offsetting higher recoveries of previously charged off loans.
+
+Auto-Approval Rate
+
+Auto-approval rate is calculated by taking the number of approved loans that are not decisioned by a loan processor or underwriter (auto-approval) divided by the total number of loans approved. The following tables present auto-approval rates for the three and six months ended June 30, 2026 and 2025:
+
+Three Months Ended June 30, Change
+
+2026 2025 %
+
+Auto-approval rate 81.2 % 79.7 % 1.8 %
+
+Six Months Ended June 30, Change
+
+2026 2025 %
+
+Auto-approval rate 80.2 % 76.5 % 5.0 %
+
+Auto-approval rate increased to 81.2% and 80.2% for the three and six months ended June 30, 2026, respectively, from 79.7% and 76.5% for the three and six months ended June 30, 2025, respectively. The increases were driven by the continued application of algorithmic automation projects that streamline frictional steps of the origination process.
+
+28
+
+Table of Contents
+
+RESULTS OF OPERATIONS
+
+Comparison of the three months ended June 30, 2026 and 2025
+
+The following table presents our consolidated results of operations for the three months ended June 30, 2026 and 2025 (in thousands, except share and per share data). Certain columns and rows may not sum due to the use of rounded numbers for disclosure purposes. Percentages presented are calculated from the underlying whole-dollar amounts.
+
+(Unaudited) 2026 2025 $ Change % Change
+
+Revenue:
+
+Interest on finance receivables $ 143,726 $ 141,144 $ 2,582 1.8 %
+
+Other revenue 1,444 1,299 145 11.2
+
+145,170 142,443 2,727 1.9
+
+Change in fair value of finance receivables (58,999) (42,197) (16,802) 39.8
+
+Net revenue 86,171 100,246 (14,075) (14.0)
+
+Expenses:(a)
+
+Salaries and employee benefits 16,294 17,754 (1,460) (8.2)
+
+Professional fees 13,613 4,792 8,821 184.1
+
+Direct marketing costs 11,403 11,890 (487) (4.1)
+
+Interest expense and amortized debt issuance costs 8,125 9,639 (1,514) (15.7)
+
+Technology costs 3,525 3,382 143 4.2
+
+Payment processing fees 1,634 1,527 107 7.0
+
+Depreciation and amortization 1,509 1,502 7 0.5
+
+Occupancy 987 1,030 (43) (4.2)
+
+General, administrative and other 4,726 3,922 804 20.5
+
+Total expenses 61,816 55,438 6,378 11.5
+
+Income from operations 24,355 44,808 (20,453) (45.6)
+
+Other income (expense):
+
+Change in fair value of warrant liabilities 201 (33,304) 33,505 100.6
+
+Income from equity method investment 813 1,121 (308) (27.5)
+
+Other income 87 79 8 10.1
+
+Income before income taxes 25,456 12,704 12,752 100.4
+
+Income tax expense 9,844 1,224 8,620 704.0
+
+Net income 15,612 11,480 4,132 36.0
+
+Less: net income attributable to noncontrolling interest 770 32,260 (31,490) (97.6)
+
+Net income (loss) attributable to OppFi Inc. $ 14,842 $ (20,780) $ 35,622 171.4 %
+
+Earnings (loss) per common share attributable to OppFi Inc.:
+
+Earnings (loss) per common share:
+
+Basic $ 0.22 $ (0.78)
+
+Diluted $ 0.18 $ (0.78)
+
+Weighted average common shares outstanding:
+
+Basic 67,512,878 26,610,330
+
+Diluted 86,037,151 26,610,330
+
+(a) Beginning with the quarter ended September 30, 2025, for all periods presented, we aligned our expense classifications as presented in the Consolidated Statements of Operations.
+
+29
+
+Table of Contents
+
+Total Revenue
+
+Total revenue is calculated as the sum of interest on finance receivables and other revenue. The majority of our revenue is earned from interest on finance receivables from outstanding loans. We also earn revenue from interest earned on interest bearing deposits, servicing fees charged to our bank partners, and referral fees related primarily to our “Turn-Up” and “Turn-Down” programs.
+
+Total revenue increased by $2.7 million, or 1.9%, to $145.2 million for the three months ended June 30, 2026 from $142.4 million for the three months ended June 30, 2025. The increase was due to higher average receivables balances throughout the period.
+
+Change in Fair Value of Finance Receivables
+
+Change in fair value of finance receivables consists of gross charge-offs incurred in the period on the installment finance receivables, net of recoveries, plus the change in the fair value on the installment loans portfolio. Change in fair value totaled $59.0 million for the three months ended June 30, 2026, which was comprised of $72.1 million of gross charge-offs and a negative fair value adjustment of $1.7 million, partially offset by $14.8 million of recoveries, up from $42.2 million for the three months ended June 30, 2025, which was comprised of $56.2 million of gross charge-offs, partially offset by $10.7 million of recoveries and a positive fair value adjustment of $3.3 million. The fair value adjustment for the three months ended June 30, 2026 had a negative impact due to the decrease in the fair value premium combined with the decrease in receivables over the period.
+
+Net Revenue
+
+Net revenue is equal to total revenue less the change in fair value of finance receivables. Net revenue decreased by $14.1 million, or 14.0%, to $86.2 million for the three months ended June 30, 2026 from $100.2 million for the three months ended June 30, 2025. This decrease was due to the increase in change in fair value of finance receivables outweighing the increase in total revenue.
+
+Expenses
+
+Expenses include costs related to salaries and employee benefits, direct marketing costs, professional fees, interest expense and amortized debt issuance costs, technology costs, payment processing fees, depreciation and amortization, occupancy, and general, administrative and other expenses.-
+
+Expenses increased by $6.4 million, or 11.5%, to $61.8 million for the three months ended June 30, 2026 from $55.4 million for the three months ended June 30, 2025. The increase in expenses was primarily driven by an increase in professional fees related to the Transaction and the Corporate Simplification. The increase was partially offset by lower interest expense resulting from paying down debt and rate decreases and lower salaries and employee benefits, largely related to lower stock compensation expense. Expenses as a percent of total revenue increased from 38.9% to 42.6% for the three months ended June 30, 2026 compared to the three months ended June 30, 2025.
+
+Income from Operations
+
+Income from operations is the difference between net revenue and expenses. Income from operations decreased by $20.5 million to $24.4 million for the three months ended June 30, 2026 from income from operations of $44.8 million for the three months ended June 30, 2025. This decrease was driven by higher change in fair value of finance receivables and expenses related to the Transaction and the Corporate Simplification outweighing higher total revenue as a result of the reasons stated above.
+
+Change in Fair Value of Warrant Liabilities
+
+The change in fair value of warrant liabilities resulted in a gain of $0.2 million and a loss of $33.3 million for the three months ended June 30, 2026 and 2025, respectively. The changes are largely attributed to changes in the price of our public warrants and value of our private warrants, driven by changes in our stock price and the remaining time until maturity.
+
+30
+
+Table of Contents
+
+Income from Equity Method Investment
+
+On July 31, 2024, we acquired 35% of the outstanding equity securities of Bitty. We determined that we do not have a controlling financial interest in Bitty, but do exercise significant influence, and therefore the investment was accounted for under the equity method. Our proportionate share of Bitty’s earnings was $0.8 million for the three months ended June 30, 2026, a decrease of $0.3 million from $1.1 million for the three months ended June 30, 2025.
+
+Other Income
+
+Other income totaled $0.1 million for the three months ended June 30, 2026 and $0.1 million for the three months ended June 30, 2025. Other income for both periods was comprised of $0.1 million in income attributed to the sublease of one of our office facilities.
+
+Income Before Income Taxes
+
+Income before income taxes is the sum of income from operations, the change in fair value of warrant liabilities, income from equity method investment, and other income. Income before income taxes increased by $12.8 million, or 100.4%, to $25.5 million for the three months ended June 30, 2026 from $12.7 million for the three months ended June 30, 2025 driven by the prior year period’s loss from change in fair value of warrant liabilities outweighing the difference in income from operations.
+
+Income Tax Expense
+
+Income tax expense of $9.8 million for the three months ended June 30, 2026 increased by $8.6 million from $1.2 million for the three months ended June 30, 2025. The increase in income tax expense was largely driven by the Corporate Simplification, increasing our effective tax rate with OppFi-LLC becoming a wholly-owned subsidiary.
+
+Net Income
+
+Net income is the difference between income before income taxes and income tax expense. Net income increased by $4.1 million to $15.6 million for the three months ended June 30, 2026 from net income of $11.5 million for the three months ended June 30, 2025 for the reasons stated above.
+
+Net Income (Loss) Attributable to OppFi Inc.
+
+Net income attributable to OppFi Inc. was $14.8 million for the three months ended June 30, 2026, up from net loss attributable to OppFi Inc. of $20.8 million for the three months ended June 30, 2025. As a result of our former Up-C structure, the underlying income or expense components are generally the economic interest in OppFi-LLC’s income or loss, expenses related to our status as a public company, and the change in fair value of warrant liabilities. For the three months ended June 30, 2026, income from economic interest was $25.6 million and the gain from change in fair value of warrant liabilities was $0.2 million, partially offset by income tax expense of $9.9 million and general and administrative expenses of $1.1 million, for net income attributable to OppFi Inc. of $14.8 million. For the three months ended June 30, 2025, income from economic interest was $14.7 million, offset by the loss on change in fair value of warrant liabilities of $33.3 million, income tax expense of $1.3 million, and general and administrative expenses of $0.9 million, for net loss attributable to OppFi Inc. of $20.8 million.
+
+Diluted Earnings (Loss) per Share
+
+For the three months ended June 30, 2026, the weighted average of our previously outstanding shares of Class V Voting Stock were included in computing the diluted earnings per share as the inclusion of these shares had a dilutive effect under the if-converted method. Under the if-converted method, shares of our previously outstanding Class V Voting Stock are assumed to be exchanged, together with OppFi Units, into shares of our Class A Common Stock as of the beginning of the period. For the three months ended June 30, 2025, diluted loss per share available to common stockholders was the same as basic loss per share available to common stockholders as dilutive common shares are assumed to have not been issued if their effect is anti-dilutive.
+
+31
+
+Table of Contents
+
+Comparison of the six months ended June 30, 2026 and 2025
+
+The following table presents our consolidated results of operations for the six months ended June 30, 2026 and 2025 (in thousands, except share and per share data). Certain columns and rows may not sum due to the use of rounded numbers for disclosure purposes. Percentages presented are calculated from the underlying whole-dollar amounts.
+
+(Unaudited) 2026 2025 $ Change % Change
+
+Revenue:
+
+Interest on finance receivables $ 294,252 $ 280,262 $ 13,990 5.0 %
+
+Other revenue 2,799 2,449 350 14.3
+
+297,051 282,711 14,340 5.1
+
+Change in fair value of finance receivables (123,582) (91,655) (31,927) 34.8
+
+Net revenue 173,469 191,056 (17,587) (9.2)
+
+Expenses:(a)
+
+Salaries and employee benefits 30,548 31,532 (984) (3.1)
+
+Direct marketing costs 21,788 22,178 (390) (1.8)
+
+Professional fees 20,877 8,991 11,886 132.2
+
+Interest expense and amortized debt issuance costs 16,635 19,886 (3,251) (16.3)
+
+Technology costs 6,854 6,343 511 8.1
+
+Payment processing fees 3,292 3,157 135 4.3
+
+Depreciation and amortization 2,100 3,262 (1,162) (35.6)
+
+Occupancy 1,858 2,069 (211) (10.2)
+
+General, administrative and other 9,800 6,338 3,462 54.6
+
+Total expenses 113,752 103,756 9,996 9.6
+
+Income from operations 59,717 87,300 (27,583) (31.6)
+
+Other income (expense):
+
+Change in fair value of warrant liabilities 21,496 (54,911) 76,407 139.1
+
+Income from equity method investment 1,933 2,197 (264) (12.0)
+
+Other income 319 159 160 100.6
+
+Income before income taxes 83,465 34,745 48,720 140.2
+
+Income tax expense 13,815 2,875 10,940 380.5
+
+Net income 69,650 31,870 37,780 118.5
+
+Less: net income attributable to noncontrolling interest 26,407 64,022 (37,615) (58.8)
+
+Net income (loss) attributable to OppFi Inc. $ 43,243 $ (32,152) $ 75,395 234.5 %
+
+Earnings (loss) per common share attributable to OppFi Inc.:
+
+Earnings (loss) per common share:
+
+Basic $ 0.91 $ (1.28)
+
+Diluted $ 0.74 $ (1.28)
+
+Weighted average common shares outstanding:
+
+Basic 47,371,349 25,158,196
+
+Diluted 86,117,558 25,158,196
+
+(a) Beginning with the quarter ended September 30, 2025, for all periods presented, we aligned our expense classifications as presented in the Consolidated Statements of Operations.
+
+32
+
+Table of Contents
+
+Total Revenue
+
+Total revenue is calculated as the sum of interest on finance receivables and other revenue. The majority of our revenue is earned from interest on finance receivables from outstanding loans. We also earn revenue from interest earned on interest bearing deposits, servicing fees charged to our bank partners, and referral fees related primarily to our “Turn-Up” and “Turn-Down” programs.
+
+Total revenue increased by $14.3 million, or 5.1%, to $297.1 million for the six months ended June 30, 2026 from $282.7 million for the six months ended June 30, 2025. The increase was due to higher average receivables balances throughout the period.
+
+Change in Fair Value of Finance Receivables
+
+Change in fair value of finance receivables consists of gross charge-offs incurred in the period on the installment finance receivables, net of recoveries, plus the change in the fair value on the installment loans portfolio. Change in fair value totaled $123.6 million for the six months ended June 30, 2026, which was comprised of $151.3 million of gross charge-offs and a negative fair value adjustment of $1.8 million, partially offset by $29.5 million of recoveries, up from $91.7 million for the six months ended June 30, 2025, which was comprised of $115.4 million of gross charge-offs, partially offset by $21.3 million of recoveries and a positive fair value adjustment of $2.4 million. The fair value adjustment for the six months ended June 30, 2026 had a negative impact due to the decrease in receivables over the period outweighing the increase in the fair value premium.
+
+Net Revenue
+
+Net revenue is equal to total revenue less the change in fair value of finance receivables. Net revenue decreased by $17.6 million, or 9.2%, to $173.5 million for the six months ended June 30, 2026 from $191.1 million for the six months ended June 30, 2025. This decrease was due to the increase in change in fair value of finance receivables outweighing the increase in total revenue.
+
+Expenses
+
+Expenses include costs related to salaries and employee benefits, direct marketing costs, professional fees, interest expense and amortized debt issuance costs, technology costs, payment processing fees, depreciation and amortization, occupancy, and general, administrative and other expenses.
+
+Expenses increased by $10.0 million, or 9.6%, to $113.8 million for the six months ended June 30, 2026 from $103.8 million for the six months ended June 30, 2025. The increase in expenses was primarily driven by higher professional fees related to the Transaction and the Corporate Simplification. The increase was partially offset by lower interest expense resulting from paying down debt and rate decreases as well as lower capitalized technology amortization expense. Expenses as a percentage of total revenue increased from 36.7% to 38.3% for the six months ended June 30, 2026 compared to the six months ended June 30, 2025.
+
+Income from Operations
+
+Income from operations is the difference between net revenue and expenses. Income from operations decreased by $27.6 million to $59.7 million for the six months ended June 30, 2026 from income from operations of $87.3 million for the six months ended June 30, 2025. This decrease was driven by higher change in fair value of finance receivables and expenses related to the Transaction and the Corporate Simplification outweighing higher total revenue as a result of the reasons stated above.
+
+Change in Fair Value of Warrant Liabilities
+
+The change in fair value of warrant liabilities resulted in a gain of $21.5 million and a loss of $54.9 million for the six months ended June 30, 2026 and 2025, respectively. The changes are largely attributed to changes in the price of our public warrants and value of our private warrants, driven by changes in our stock price and the remaining time until maturity.
+
+33
+
+Table of Contents
+
+Income from Equity Method Investment
+
+On July 31, 2024, we acquired 35% of the outstanding equity securities of Bitty. We determined that we do not have a controlling financial interest in Bitty, but do exercise significant influence, and therefore the investment was accounted for under the equity method. Our proportionate share of Bitty’s earnings was $1.9 million for the six months ended June 30, 2026, a decrease of $0.3 million from $2.2 million for the six months ended June 30, 2025.
+
+Other Income
+
+Other income totaled $0.3 million for the six months ended June 30, 2026 and $0.2 million for the six months ended June 30, 2025. Other income for the six months ended June 30, 2026 was comprised of $0.2 million in income attributed to the sublease of one of our office facilities and a $0.1 million gain related to our TRA liability. Other income for the six months ended June 30, 2025 was comprised of $0.2 million in income attributed to the sublease of one of our office facilities.
+
+Income Before Income Taxes
+
+Income before income taxes is the sum of income from operations, the change in fair value of warrant liabilities, income from equity method investment, and other income. Income before income taxes increased by $48.7 million, or 140.2%, to $83.5 million for the six months ended June 30, 2026 from $34.7 million for the six months ended June 30, 2025 driven by the prior year period’s loss from change in fair value of warrant liabilities outweighing the difference in income from operations.
+
+Income Tax Expense
+
+Income tax expense of $13.8 million for the six months ended June 30, 2026 increased by $10.9 million from $2.9 million for the six months ended June 30, 2025. The increase in income tax expense was largely driven by the Corporate Simplification, increasing our effective tax rate with OppFi-LLC becoming a wholly-owned subsidiary.
+
+Net Income
+
+Net income is the difference between income before income taxes and income tax expense. Net income increased by $37.8 million to $69.6 million for the six months ended June 30, 2026 from net income of $31.9 million for the six months ended June 30, 2025 for the reasons stated above.
+
+Net Income (Loss) Attributable to OppFi Inc.
+
+Net income attributable to OppFi Inc. was $43.2 million for the six months ended June 30, 2026, up from net loss attributable to OppFi Inc. of $32.2 million for the six months ended June 30, 2025. As a result of our former Up-C structure, the underlying income or expense components are generally the economic interest in OppFi-LLC’s income or loss, expenses related to our status as a public company, and the change in fair value of warrant liabilities. For the six months ended June 30, 2026, income from economic interest was $37.1 million and the gain from change in fair value of warrant liabilities was $21.5 million, partially offset by income tax expense of $13.8 million and general and administrative expense of $1.6 million, for net income attributable to OppFi Inc. of $43.2 million. For the six months ended June 30, 2025, income from economic interest was $27.1 million, offset by the loss from change in fair value of warrant liabilities of $54.9 million, income tax expense of $3.0 million, and general and administrative expense of $1.4 million, for net loss attributable to OppFi Inc. of $32.2 million.
+
+Diluted Earnings (Loss) per Share
+
+For the six months ended June 30, 2026, the weighted average of our previously outstanding shares of Class V Voting Stock were included in computing the diluted earnings per share as the inclusion of these shares had a dilutive effect under the if-converted method. Under the if-converted method, shares of our previously outstanding Class V Voting Stock are assumed to be exchanged, together with OppFi Units, into shares of our Class A Common Stock as of the beginning of the period. For the six months ended June 30, 2025, diluted loss per share available to common stockholders was the same as basic loss per share available to common stockholders as dilutive common shares are assumed to have not been issued if their effect is anti-dilutive.
+
+34
+
+Table of Contents
+
+CONDENSED BALANCE SHEETS
+
+Comparison as of June 30, 2026 and December 31, 2025
+
+The following table presents our condensed balance sheet as of June 30, 2026 and December 31, 2025 (in thousands). Certain columns and rows may not sum due to the use of rounded numbers for disclosure purposes. Percentages presented are calculated from the underlying whole-dollar amounts.
+
+(Unaudited) Change
+
+June 30, 2026 December 31, 2025 $ %
+
+Assets
+
+Cash and restricted cash $ 91,846 $ 93,263 $ (1,417) (1.5) %
+
+Finance receivables at fair value 496,306 546,236 (49,930) (9.1)
+
+Equity method investment 19,958 19,076 882 4.6
+
+Other assets 162,619 95,515 67,104 70.3
+
+Total assets $ 770,729 $ 754,090 $ 16,639 2.2 %
+
+Liabilities and stockholders’ equity
+
+Accounts payable and accrued expenses $ 44,231 $ 46,171 $ (1,940) (4.2) %
+
+Total debt 276,453 321,353 (44,900) (14.0)
+
+Warrant liabilities 4,959 26,455 (21,496) (81.3)
+
+Other liabilities 30,831 51,235 (20,404) (39.8)
+
+Total liabilities 356,474 445,214 (88,740) (19.9)
+
+Total stockholders’ equity 414,255 308,876 105,379 34.1
+
+Total liabilities and stockholders’ equity $ 770,729 $ 754,090 $ 16,639 2.2 %
+
+Total cash and restricted cash decreased by $1.4 million as of June 30, 2026 primarily driven by the seasonal timing of finance receivables originated and acquired relative to finance receivables repaid, partially offset by the paydown of a portion of our revolving lines of credit, the first installment of the Early Termination Payment, and repurchases of common stock. Finance receivables at fair value decreased by $49.9 million as of June 30, 2026 driven by seasonality and depressed retained net originations. Other assets increased by $67.1 million as of June 30, 2026 mainly due to an increase in the deferred tax asset of $69.8 million resulting from the Corporate Simplification and an increase in property, equipment, and software of $7.7 million.
+
+Accounts payable and accrued expenses decreased by $1.9 million as of June 30, 2026 driven by a decrease in accounts payable of $1.6 million and a decrease in accrued expenses of $0.3 million. Total debt decreased by $44.9 million as of June 30, 2026 driven primarily by a decrease in the utilization of revolving lines of credit. Warrant liabilities decreased by $21.5 million as of June 30, 2026 largely due to the decrease in time to maturity of the public warrants, which expired on July 20, 2026. Other liabilities decreased by $20.4 million as of June 30, 2026 driven by a decrease in the TRA liability of $19.4 million related to the Corporate Simplification and a decrease in the operating lease liability of $1.0 million. Total stockholders’ equity increased by $105.4 million as of June 30, 2026 mainly driven by net income, settlement of the TRA, and stock-based compensation, partially offset by distributions to the former members of OppFi-LLC and common stock repurchases.
+
+35
+
+Table of Contents
+
+NON-GAAP FINANCIAL MEASURES
+
+We believe that the provision of non-GAAP financial measures in this report, including Adjusted EBT, Adjusted Net Income, and Adjusted EPS can provide useful measures for period-to-period comparisons of our business and useful information to investors and others in understanding and evaluating our operating results. However, non-GAAP financial measures are not calculated in accordance with GAAP measures, should not be considered an alternative to any measure of financial performance calculated and presented in accordance with GAAP, and may not be comparable to the non-GAAP financial measures of other companies.
+
+Adjusted EBT and Adjusted Net Income
+
+Adjusted EBT is a non-GAAP financial measure defined as our GAAP net income adjusted to eliminate the effect of certain items as shown below, including income tax expense, other income, change in fair value of warrant liabilities, and other adjustments, net. Adjusted Net Income is a non-GAAP financial measure defined as our Adjusted EBT less pro forma taxes for comparison purposes. We believe that Adjusted EBT and Adjusted Net Income are important measures because they allow management, investors, and our Board to evaluate and compare our operating results from period-to-period by making the adjustments described below.
+
+Adjusted EBT and Adjusted Net Income exclude certain expenses that are required in accordance with GAAP because they are non-recurring items (such as severance), non-cash expenditures (such as changes in the fair value of warrant liabilities and expenses related to stock compensation), or are not related to our underlying business performance. We believe these adjustments provide investors with a comparative view of expenses that we expect to incur on an ongoing basis.
+
+The following tables present reconciliations of non-GAAP financial measures for the three and six months ended June 30, 2026 and 2025 (in thousands, except share and per share data). Certain columns and rows may not sum due to the use of rounded numbers for disclosure purposes. Percentages presented are calculated from the underlying whole-dollar amounts.
+
+Comparison of the three months ended June 30, 2026 and 2025
+
+(In thousands, except share and per share data) Three Months Ended June 30, Change
+
+(Unaudited) 2026 2025 $ %
+
+Net income $ 15,612 $ 11,480 $ 4,132 36.0 %
+
+Income tax expense 9,844 1,224 8,620 704.0
+
+Other income (87) (79) (8) 10.1
+
+Change in fair value of warrant liabilities (201) 33,304 (33,505) (100.6)
+

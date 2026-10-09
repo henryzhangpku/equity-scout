@@ -1,0 +1,744 @@
+Item 2. Management's Discussion and Analysis of Financial Condition and Results of Operations" in Part I and "Item 1A. Risk Factors" in Part II of this report, and "Item 1A. Risk Factors" in Part I and "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations" in Part II of our annual report on Form 10-K for the year ended December 31, 2025, which is available on the U.S. Securities and Exchange Commission website at www.sec.gov. Each forward-looking statement speaks only as of the date of the particular statement, and we undertake no obligation to publicly update or revise any forward-looking statements, except as required by law.
+
+4
+
+PART I - FINANCIAL INFORMATION
+
+Item 1.Financial Statements
+
+5
+
+VALARIS LIMITED AND SUBSIDIARIES
+
+CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS
+
+(In millions, except per share amounts)
+
+(Unaudited)
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+OPERATING REVENUES
+
+Revenues (exclusive of reimbursable revenues)
+$ 502.3 $ 572.3 $ 932.4 $ 1,150.1
+
+Reimbursable revenues 36.9 42.9 72.2 85.8
+
+Total operating revenues
+539.2 615.2 1,004.6 1,235.9
+
+OPERATING EXPENSES
+
+Contract drilling expenses (exclusive of depreciation and reimbursable expenses) 380.4 355.2 720.8 729.2
+
+Reimbursable expenses 35.1 40.5 68.1 81.5
+
+Total contract drilling expenses (exclusive of depreciation)
+415.5 395.7 788.9 810.7
+
+Depreciation 44.6 35.5 87.3 68.6
+
+General and administrative 27.2 18.8 52.5 43.2
+
+Merger and integration expenses 11.4 — 25.0 —
+
+Other operating (income) loss — — (2.8) 7.8
+
+Total operating expenses 498.7 450.0 950.9 930.3
+
+EQUITY IN EARNINGS (LOSSES) OF ARO 10.6 (1.1) 17.4 1.5
+
+OPERATING INCOME 51.1 164.1 71.1 307.1
+
+OTHER INCOME (EXPENSE)
+
+Interest income 16.3 15.1 33.3 29.5
+
+Interest expense, net (24.0) (24.8) (48.3) (49.1)
+
+Other, net 37.2 (8.7) 34.9 12.5
+
+Total other income (expense)
+29.5 (18.4) 19.9 (7.1)
+
+INCOME BEFORE INCOME TAXES 80.6 145.7 91.0 300.0
+
+PROVISION FOR INCOME TAXES
+
+Current income tax expense 22.4 28.0 41.3 51.7
+
+Deferred income tax expense 11.2 3.5 20.7 173.3
+
+Total provision for income taxes 33.6 31.5 62.0 225.0
+
+NET INCOME 47.0 114.2 29.0 75.0
+
+NET LOSS ATTRIBUTABLE TO NONCONTROLLING INTERESTS 3.4 0.9 5.0 2.2
+
+NET INCOME ATTRIBUTABLE TO VALARIS $ 50.4 $ 115.1 $ 34.0 $ 77.2
+
+EARNINGS PER SHARE
+
+Basic $ 0.73 $ 1.62 $ 0.49 $ 1.09
+
+Diluted $ 0.72 $ 1.61 $ 0.48 $ 1.08
+
+WEIGHTED-AVERAGE SHARES OUTSTANDING
+
+Basic 69.3 71.1 69.2 71.1
+
+Diluted 70.4 71.3 70.3 71.3
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+6
+
+VALARIS LIMITED AND SUBSIDIARIES
+
+CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME
+
+(In millions)
+
+(Unaudited)
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+NET INCOME $ 47.0 $ 114.2 $ 29.0 $ 75.0
+
+OTHER COMPREHENSIVE INCOME, NET
+
+Net reclassification adjustment for amounts recognized in net income as a component of net periodic pension benefit (0.2) (0.2) (0.4) (0.4)
+
+Foreign currency translation adjustments 0.2 1.8 3.4 3.1
+
+NET OTHER COMPREHENSIVE INCOME — 1.6 3.0 2.7
+
+COMPREHENSIVE INCOME 47.0 115.8 32.0 77.7
+
+COMPREHENSIVE LOSS ATTRIBUTABLE TO NONCONTROLLING INTERESTS 3.4 0.9 5.0 2.2
+
+COMPREHENSIVE INCOME ATTRIBUTABLE TO VALARIS $ 50.4 $ 116.7 $ 37.0 $ 79.9
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+7
+
+VALARIS LIMITED AND SUBSIDIARIES
+
+CONDENSED CONSOLIDATED BALANCE SHEETS
+
+(In millions, except par value amounts)
+
+June 30,
+
+2026 December 31,
+
+2025
+
+(Unaudited)
+
+ASSETS
+
+CURRENT ASSETS
+
+Cash and cash equivalents $ 541.2 $ 599.4
+
+Accounts receivable, net 458.1 474.8
+
+Assets held for sale 2.0 6.4
+
+Other current assets 197.4 144.7
+
+Total current assets 1,198.7 1,225.3
+
+PROPERTY AND EQUIPMENT, AT COST 2,826.8 2,598.3
+
+Less accumulated depreciation 593.0 509.5
+
+Property and equipment, net 2,233.8 2,088.8
+
+LONG-TERM NOTES RECEIVABLE FROM ARO 357.2 345.0
+
+INVESTMENT IN ARO 139.2 121.8
+
+DEFERRED TAX ASSETS
+1,345.3 1,364.2
+
+OTHER ASSETS 174.2 159.7
+
+Total assets $ 5,448.4 $ 5,304.8
+
+LIABILITIES AND SHAREHOLDERS' EQUITY
+
+CURRENT LIABILITIES
+
+Accounts payable - trade $ 416.0 $ 348.2
+
+Accrued liabilities and other 358.8 343.4
+
+Total current liabilities 774.8 691.6
+
+LONG-TERM DEBT 1,087.6 1,086.0
+
+DEFERRED TAX LIABILITIES
+31.5 29.7
+
+OTHER LIABILITIES 336.7 325.8
+
+Total liabilities 2,230.6 2,133.1
+
+COMMITMENTS AND CONTINGENCIES (Note 11)
+
+VALARIS SHAREHOLDERS' EQUITY
+
+Common Shares, $0.01 par value, 700.0 shares authorized, 76.5 and 76.4 shares issued, 69.3 and 69.2 shares outstanding as of June 30, 2026 and December 31, 2025, respectively
+0.8 0.8
+
+Preference shares, $0.01 par value, 150.0 shares authorized, no shares issued as of June 30, 2026 and December 31, 2025
+— —
+
+Stock warrants 16.4 16.4
+
+Additional paid-in capital 1,149.0 1,134.9
+
+Retained earnings 2,415.7 2,381.7
+
+Accumulated other comprehensive income 63.9 60.9
+
+Treasury shares, at cost, 7.2 shares as of June 30, 2026 and December 31, 2025
+(425.1) (425.1)
+
+Total Valaris shareholders' equity 3,220.7 3,169.6
+
+NONCONTROLLING INTERESTS (2.9) 2.1
+
+Total shareholders' equity
+3,217.8 3,171.7
+
+Total liabilities and shareholders' equity
+$ 5,448.4 $ 5,304.8
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+8
+
+VALARIS LIMITED AND SUBSIDIARIES
+
+CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS
+
+(In millions)
+
+(Unaudited)
+
+Six Months Ended June 30,
+
+2026 2025
+
+OPERATING ACTIVITIES
+
+Net income $ 29.0 $ 75.0
+
+Adjustments to reconcile net income to net cash provided by operating activities:
+
+Depreciation expense 87.3 68.6
+
+Net gain on sale of property (36.1) (27.9)
+
+Deferred income tax expense 20.7 173.3
+
+Equity in earnings of ARO (17.4) (1.5)
+
+Share-based compensation expense 15.6 11.6
+
+Accretion of discount on Notes Receivable from ARO (12.2) (12.3)
+
+Recovery of bad debt expense (11.4) (0.1)
+
+Other operating (income) loss (2.8) 7.8
+
+Changes in deferred costs (30.2) 4.3
+
+Changes in contract assets
+(7.5) (0.3)
+
+Changes in contract liabilities 6.9 (33.4)
+
+Other 1.9 4.5
+
+Changes in operating assets and liabilities
+51.7 14.6
+
+Contributions to pension plans and other post-retirement benefits (7.4) (8.3)
+
+Net cash provided by operating activities 88.1 275.9
+
+INVESTING ACTIVITIES
+
+Additions to property and equipment (206.4) (167.4)
+
+Proceeds from disposition of assets
+60.3 27.6
+
+Net cash used in investing activities (146.1) (139.8)
+
+FINANCING ACTIVITIES
+
+Other (1.5) (0.4)
+
+Net cash used in financing activities (1.5) (0.4)
+
+INCREASE (DECREASE) IN CASH AND CASH EQUIVALENTS AND RESTRICTED CASH (59.5) 135.7
+
+CASH AND CASH EQUIVALENTS AND RESTRICTED CASH, BEGINNING OF PERIOD 617.5 380.5
+
+CASH AND CASH EQUIVALENTS AND RESTRICTED CASH,
+
+END OF PERIOD
+$ 558.0 $ 516.2
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+9
+
+VALARIS LIMITED AND SUBSIDIARIES
+
+NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS
+
+(Unaudited)
+
+Note 1 - Unaudited Condensed Consolidated Financial Statements
+
+We prepared the accompanying condensed consolidated financial statements of Valaris Limited and its subsidiaries (the "Company," "Valaris," "our," "we" or "us") in accordance with accounting principles generally accepted in the United States of America ("GAAP"), pursuant to the rules and regulations of the Securities and Exchange Commission (the "SEC") included in the instructions to Form 10-Q and Article 10 of Regulation S-X. The financial information included in this report is unaudited but, in our opinion, includes all adjustments (consisting of normal recurring adjustments) that are necessary for a fair presentation of our financial position, results of operations and cash flows for the interim periods presented. The December 31, 2025 Condensed Consolidated Balance Sheet data was derived from our 2025 audited consolidated financial statements but does not include all disclosures required by GAAP. The preparation of our condensed consolidated financial statements requires us to make certain estimates, judgments and assumptions that affect the reported amounts of assets and liabilities, the related revenues and expenses and disclosures of gain and loss contingencies as of the date of the financial statements. Actual results could differ from those estimates.
+
+Results of operations for the three and six months ended June 30, 2026 are not necessarily indicative of the results of operations that will be realized for the year ending December 31, 2026, or for any future period. We recommend these condensed consolidated financial statements be read in conjunction with our annual report on Form 10-K for the year ended December 31, 2025, filed with the SEC on February 20, 2026 (our "Annual Report").
+
+Pending Business Combination with Transocean
+
+On February 9, 2026, we entered into a business combination agreement (the "Business Combination Agreement") with Transocean Ltd., a Swiss corporation ("Transocean"), under which Transocean will acquire all of the issued and outstanding common shares of Valaris in exchange for shares of Transocean at an exchange ratio of 15.235 Transocean shares for each common share of Valaris (the "Business Combination"). In addition, Warrants that are outstanding as of immediately prior to the transaction closing date will be assumed by Transocean and remain outstanding and be exercisable for the Fundamental Transaction Consideration (as defined in the Warrant Agreement, dated as of April 30, 2021, by and between Valaris and the warrant agent named therein) multiplied by the number of Valaris common shares for which each warrant is exercisable immediately prior to the transaction closing date. The Business Combination will be effected by way of a court-approved scheme of arrangement between Valaris and the holders of the Valaris common shares pursuant to section 99 of the Companies Act 1981 of Bermuda, as amended. Upon completion and on a fully diluted basis assuming conversion to shares of Transocean’s exchangeable bonds due 2029, Transocean shareholders would own approximately 53% of the combined company, with Valaris shareholders owning the remaining 47%.
+
+Completion of the Business Combination is subject to customary closing conditions, including (i) the receipt of the requisite approvals of the Valaris shareholders and the Transocean shareholders, (ii) the granting of the sanction order on terms consistent with the Business Combination Agreement, (iii) the Transocean shares issued pursuant to the Business Combination Agreement having been approved for listing on the NYSE, subject to official notice of issuance, (iv) certain regulatory approvals having been obtained or any applicable waiting period having expired or been terminated, (v) no governmental authority within applicable jurisdictions having enacted or issued any law or order preventing or prohibiting the consummation of the Business Combination and (vi) the absence of a Transocean Material Adverse Effect or a Valaris Material Adverse Effect (each as defined within the Business Combination Agreement). Under certain specified circumstances in which the Business Combination Agreement is terminated, we would be required to pay to Transocean a termination fee equal to $173.0 million.
+
+10
+
+In connection with the Business Combination, we incurred professional fees and other costs of $11.4 million and $25.0 million for the three and six months ended June 30, 2026, respectively, which are included within Merger and integration expenses in the Condensed Consolidated Statements of Operations.
+
+Summary of Significant Accounting Policies
+
+Please refer to "Note 1. Description of the Business and Summary of Significant Accounting Policies" of our Consolidated Financial Statements from our Annual Report for the discussion of our significant accounting policies. Certain previously reported amounts have been reclassified to conform to the current year presentation.
+
+New Accounting Pronouncements
+
+Accounting Pronouncements to be Adopted
+
+Income Statement—Reporting Comprehensive Income—Expense Disaggregation Disclosures - In November 2024, the FASB issued ASU No. 2024-03, Income Statement—Reporting Comprehensive Income—Expense Disaggregation Disclosures (Subtopic 220-40): Disaggregation of Income Statement Expenses ("Update 2024-03"), which requires companies to disclose additional information for certain relevant expense categories in the Statements of Operations and within the notes to the financial statements. Update 2024-03 is effective for annual periods beginning after December 15, 2026, and interim periods beginning after December 15, 2027, with early adoption permitted and can be applied either prospectively to financial statements issued for reporting periods after the effective date, or retrospectively to prior periods which are presented in the financial statements. We are currently assessing the impact of the requirements on our condensed consolidated financial statements and disclosures, but do not expect the adoption of Update 2024-03 to result in a change in recognition or measurement of expenses within our consolidated financial statements.
+
+With the exception of the updated standard discussed above, there have been no accounting pronouncements issued and not yet effective that have significance, or potential significance, to our condensed consolidated financial statements.
+
+Note 2 -Revenue from Contracts with Customers
+
+Under our drilling contracts with customers, we provide a drilling rig and drilling services, including rig crews, on a day rate contract basis. We receive a daily rate that may vary between the full rate and zero rate throughout the duration of the contractual term, depending on the operations of the rig. We also may receive lump-sum fees or similar compensation generally for the mobilization, demobilization, and capital upgrades of our rigs. Our customers bear substantially all of the costs of constructing the well and supporting drilling operations, as well as the economic risk relative to the success of the well.
+
+Our drilling service provided under each drilling contract is a single performance obligation satisfied over time and comprised of a series of distinct time increments, or service periods. Total revenue is determined for each individual drilling contract by estimating both fixed and variable consideration expected to be earned over the contract term. Fixed consideration generally relates to activities such as mobilization, demobilization and capital upgrades of our rigs that are not distinct performance obligations within the context of our contracts and is recognized on a straight-line basis over the contract term. Variable consideration generally relates to distinct service periods during the contract term and is recognized in the period when the services are performed.
+
+The remaining duration of our drilling contracts based on those in place as of June 30, 2026 was between approximately 1 month and 4 years.
+
+11
+
+Contract Assets and Liabilities
+
+Contract assets represent amounts recognized as revenue but for which the right to invoice the customer is dependent upon our future performance. Once the previously recognized revenue is invoiced, the corresponding contract asset, or a portion thereof, is transferred to accounts receivable.
+
+Contract liabilities generally represent fees received for mobilization, capital upgrades or in the case of our 50/50 unconsolidated joint venture with Saudi Aramco, represent the difference between the amounts billed under the bareboat charter arrangements and lease revenues earned. See “Note 3 – Equity Method Investment in ARO" for additional details regarding our balances with ARO.
+
+Contract assets and liabilities are presented net on our Condensed Consolidated Balance Sheets on a contract-by-contract basis. Current contract assets and liabilities are included in Other current assets and Accrued liabilities and other, respectively, and noncurrent contract assets and liabilities are included in Other assets and Other liabilities, respectively, on our Condensed Consolidated Balance Sheets.
+
+The following table summarizes our contract assets and contract liabilities (in millions):
+
+June 30, 2026 December 31, 2025
+
+Current contract assets $ 9.5 $ 4.3
+
+Noncurrent contract assets $ 15.1 $ 12.8
+
+Current contract liabilities (deferred revenues) $ 117.5 $ 87.7
+
+Noncurrent contract liabilities (deferred revenues) $ 74.0 $ 63.2
+
+Changes in contract assets and liabilities during the period are as follows (in millions):
+
+Contract Assets Contract Liabilities
+
+Balance as of December 31, 2025 $ 17.1 $ 150.9
+
+Revenue recognized in advance of right to bill customer 10.6 —
+
+Increase due to revenue deferred during the period — 101.6
+
+Decrease due to amortization of deferred revenue that was included in the beginning contract liability balance — (47.2)
+
+Decrease due to amortization of deferred revenue added during the period — (13.8)
+
+Decrease due to transfer to receivables and payables during the period (3.1) —
+
+Balance as of June 30, 2026 $ 24.6 $ 191.5
+
+Deferred Contract Costs
+
+Costs incurred for upfront rig mobilizations and certain contract preparations are attributable to our future performance obligation under each respective drilling contract. These costs are deferred and amortized on a straight-line basis over the contract term. Deferred contract costs are included in Other current assets and Other assets on our Condensed Consolidated Balance Sheets and totaled $68.0 million and $36.6 million as of June 30, 2026 and December 31, 2025, respectively. During the three and six months ended June 30, 2026, amortization of such costs totaled $18.9 million and $32.5 million, respectively. During the three and six months ended June 30, 2025, amortization of such costs totaled $8.8 million and $21.6 million, respectively.
+
+12
+
+Deferred Certification Costs
+
+We must obtain certifications from various regulatory bodies in order to operate our drilling rigs and must maintain such certifications through periodic inspections and surveys. The costs incurred in connection with maintaining such certifications, including inspections, tests, surveys and drydock, and other compliance costs, are deferred and amortized on a straight-line basis over the corresponding certification periods. Deferred regulatory certification and compliance costs were included in Other current assets and Other assets on our Condensed Consolidated Balance Sheets and totaled $6.4 million and $7.6 million as of June 30, 2026 and December 31, 2025, respectively. During the three and six months ended June 30, 2026, amortization of such costs totaled $1.8 million and $3.7 million, respectively. During the three and six months ended June 30, 2025, amortization of such costs totaled $2.2 million and $4.4 million, respectively.
+
+Future Amortization of Contract Liabilities and Deferred Costs
+
+The table below reflects the expected future amortization of our contract liabilities and deferred costs recorded as of June 30, 2026. In the case of our contract liabilities related to our bareboat charter arrangements with ARO, the contract liability is not amortized and as such, the amount is reflected in the table below at the end of the current lease term. See "Note 3 - Equity Method Investment in ARO" for additional information on ARO and related arrangements.
+
+(In millions)
+
+Remaining 2026 2027 2028 2029 and Thereafter Total
+
+Amortization of contract liabilities $ 61.7 $ 76.1 $ 17.1 $ 36.6 $ 191.5
+
+Amortization of deferred costs $ 34.4 $ 32.3 $ 7.3 $ 0.4 $ 74.4
+
+Note 3 -Equity Method Investment in ARO
+
+Background
+
+ARO is a 50/50 unconsolidated joint venture between the Company and Saudi Aramco that owns and operates jackup drilling rigs in Saudi Arabia. As of June 30, 2026, ARO owned nine jackup rigs, had ordered two newbuild jackup rigs and leased seven rigs from us through bareboat charter arrangements (the "Lease Agreements") whereby substantially all operating costs are incurred by ARO.
+
+The shareholder agreement governing the joint venture (the "Shareholder Agreement") specifies that ARO shall purchase 20 newbuild jackup rigs. Under this program, two newbuild jackups have been built and are in service and two additional newbuild jackups, Kingdom 3 and Kingdom 4, were ordered in October 2024 and November 2025, respectively. In connection with these plans, we have a potential obligation to fund ARO for newbuild jackup rigs. See "Note 11 - Contingencies" for additional information.
+
+Equity in earnings (losses) of ARO
+
+We account for our interest in ARO using the equity method of accounting and only recognize our portion of ARO's net income, adjusted for basis differences as discussed below, which is included in Equity in earnings (losses) of ARO in our Condensed Consolidated Statements of Operations.
+
+Our equity method investment in ARO was recorded at its estimated fair value in fresh start accounting upon emergence from bankruptcy in 2021. We computed the difference between the fair value of ARO's net assets and the carrying value of those net assets in ARO's U.S. GAAP financial statements ("basis differences") at that date. These basis differences primarily related to ARO's long-lived assets and the recognition of intangible assets associated with certain of ARO's drilling contracts that were determined to have favorable terms relative to market terms as of the measurement date.
+
+13
+
+Basis differences are amortized over the remaining life of the assets or liabilities to which they relate and are recognized as an adjustment to the Equity in earnings (losses) of ARO in our Condensed Consolidated Statements of Operations. The amortization of those basis differences is combined with our 50% interest in ARO's net income. A reconciliation of those components is presented below (in millions):
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+50% interest in ARO net income (loss) (1)
+$ 7.4 $ (4.3) $ 11.1 $ (4.8)
+
+Amortization of basis differences 3.2 3.2 6.3 6.3
+
+Equity in earnings (losses) of ARO $ 10.6 $ (1.1) $ 17.4 $ 1.5
+
+(1) The 50% interest in ARO net income for the three and six months ended June 30, 2026 includes the recognition of $14.3 million in additional income, which represents our proportionate share of adjustments recorded by ARO during the completion of its 2025 financial statements subsequent to the issuance of our Annual Report.
+
+Related-Party Transactions
+
+Revenues recognized by us related to the Lease Agreements are included within Revenues (exclusive of reimbursable revenues) and revenues related to certain reimbursable expenses in accordance with the Lease Agreements are recognized within Reimbursable revenues in our Condensed Consolidated Statements of Operations and were as follows (in millions):
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+Revenues (exclusive of reimbursable revenues) from Lease Agreements
+$ 14.8 $ 16.9 $ 33.3 $ 30.4
+
+Reimbursable revenues from Lease Agreements
+3.1 — 10.2 —
+
+Total operating revenues from Lease Agreements
+$ 17.9 $ 16.9 $ 43.5 $ 30.4
+
+Our balances related to the ARO lease agreements were as follows (in millions):
+
+June 30, 2026 December 31, 2025
+
+Accounts receivable
+$ 34.1 $ 47.8
+
+Contract assets (1)
+$ 0.6 $ 2.0
+
+Contract liabilities (1)
+$ 26.2 $ 16.3
+
+Accounts payable (1)
+$ 64.1 $ 61.8
+
+(1)The per day bareboat charter amount in the Lease Agreements is subject to adjustment based on actual performance of the respective rig and therefore, the corresponding contract assets and contract liabilities are subject to adjustment during the lease term. Upon completion of the lease term, such amounts become a payable to or a receivable from ARO. In addition, the accounts payable balance includes amounts owed to ARO for certain reimbursable costs.
+
+14
+
+During 2017 and 2018, the Company contributed assets to ARO in exchange for a 10-year shareholder notes receivable due from ARO (the "Notes Receivable from ARO"), which bear interest based on a one-year term Secured Overnight Financing Rate ("SOFR"), set as of the end of the year prior to the applicable year, plus 2.10%. The Notes Receivable from ARO were adjusted to their estimated fair value in fresh start accounting in 2021 and the resulting discount to the principal amount is being amortized using the effective interest method to interest income over the remaining terms of the notes.
+
+The principal amount and discount of the Notes Receivable from ARO were as follows (in millions):
+
+June 30, 2026 December 31, 2025
+
+Principal amount $ 400.7 $ 400.7
+
+Discount (43.5) (55.7)
+
+Carrying value $ 357.2 $ 345.0
+
+Interest receivable (1) (2)
+$ 11.1 $ —
+
+(1)Our interest receivable from ARO is included in Accounts receivable, net in our Condensed Consolidated Balance Sheets.
+
+(2)The 2025 interest on the Notes Receivable from ARO of approximately $24.1 million was paid in kind in December 2025 by increasing the principal balance of the Notes Receivable from ARO.
+
+Interest income earned on the Notes Receivable from ARO was as follows (in millions):
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+Interest income $ 5.6 $ 4.0 $ 11.1 $ 8.0
+
+Non-cash amortization (1)
+6.1 6.2 12.2 12.3
+
+Total interest income on the Notes Receivable from ARO $ 11.7 $ 10.2 $ 23.3 $ 20.3
+
+(1)Represents the amortization of the discount on the Notes Receivable from ARO using the effective interest method to interest income over the term of the notes.
+
+Note 4 -Fair Value Measurements
+
+The carrying values and estimated fair values of certain of our financial instruments were as follows (in millions):
+
+June 30, 2026 December 31, 2025
+
+Carrying Value Estimated Fair Value Carrying Value Estimated Fair Value
+
+2030 Second Lien Notes (1)
+$ 1,087.6 $ 1,142.9 $ 1,086.0 $ 1,144.9
+
+Notes Receivable from ARO (2)
+$ 357.2 $ 409.5 $ 345.0 $ 403.8
+
+(1)The estimated fair value of the 2030 Second Lien Notes (as defined in "Note 8 - Debt") was determined using quoted market prices, which are level 1 inputs.
+
+(2)The estimated fair value of the Notes Receivable from ARO was estimated using an income approach to value the forecasted cash flows attributed to the Notes Receivable from ARO using a discount rate based on a comparable yield with a country-specific risk premium, which are considered to be level 2 inputs.
+
+15
+
+The estimated fair values of our cash and cash equivalents, restricted cash, accounts receivable and trade payables approximated their carrying values as of June 30, 2026 and December 31, 2025.
+
+Note 5 -Property and Equipment
+
+Property and equipment consisted of the following (in millions):
+
+June 30, 2026 December 31, 2025
+
+Drilling rigs and equipment $ 2,082.0 $ 1,958.8
+
+Work-in-progress 695.4 590.3
+
+Other 49.4 49.2
+
+Total property and equipment, at cost
+$ 2,826.8 $ 2,598.3
+
+While taking into account certain restrictions on the sales of assets under our Indenture dated as of April 19, 2023 and within the Business Combination Agreement, as part of our strategy, we may act opportunistically from time to time to sell assets to enhance shareholder value. Gains and losses recognized on sale of assets are recognized in Other, net on the Condensed Consolidated Statements of Operations. Additionally, we may consider retiring assets that no longer meet our standards for economic returns. Non-cash losses on impairment and any gains on remeasurement of assets held for sale are recognized within Other operating (income) loss on the Condensed Consolidated Statements of Operations.
+
+Assets Held for Sale
+
+In May 2026, we entered into an agreement to sell VALARIS 109, a rig within our Jackups segment, for cash proceeds of $34.0 million, subject to certain customary closing conditions. In accordance with this agreement, we received a cash deposit of $3.4 million in June 2026. In July 2026, we completed the sale of VALARIS 109, received the remaining cash proceeds and recognized a pre-tax gain of approximately $31.0 million during the third quarter of 2026.
+
+In connection with the sale, we reclassified the $2.0 million carrying value of VALARIS 109 as of June 30, 2026 from Property and equipment, net to Assets held for sale on our Condensed Consolidated Balance Sheets during the second quarter of 2026.
+
+Assets Sold
+
+Sale of VALARIS 104
+
+In April 2026, we entered into an agreement to sell VALARIS 104, a rig within our Jackups segment, for alternative use. The rig was sold for cash proceeds of $40.0 million, resulting in the recognition of a pre-tax gain of $36.6 million during the three months ended June 30, 2026.
+
+Sale of VALARIS DPS-1
+
+In the fourth quarter of 2025, we approved a plan to retire VALARIS DPS-1, a semisubmersible rig within our Floaters segment. VALARIS DPS-1 was reclassified from Property and equipment, net to Assets held for sale on our Consolidated Balance Sheets during the fourth quarter of 2025.
+
+In connection with the held-for-sale classification of VALARIS DPS-1, we recognized a non-cash loss on impairment of $15.8 million during 2025, resulting in a $6.4 million carrying value as of December 31, 2025, which was determined using a probability-weighted market approach based on transactions involving comparable assets, non-binding independent broker quotes and management assumptions, all of which were considered Level 3 inputs due to the level of estimation involved.
+
+16
+
+Assets held for sale are remeasured at each reporting period for changes in estimated fair value less costs to sell, however, any related gains recognized cannot exceed the previous impairment losses taken for the specified disposal group. As such, we reassessed the fair value of VALARIS DPS-1 during the first quarter of 2026 utilizing a market approach based on a preliminary sale agreement, which was considered a Level 3 input due to the level of estimation involved since the sale had not yet been completed at the time of our analysis. In connection with this, we recognized a $2.8 million gain on remeasurement of our asset held for sale during the first quarter of 2026.
+
+In the second quarter of 2026, VALARIS DPS-1 was sold for recycling and removed from service for total cash proceeds of $10.1 million. No additional gain or loss was recognized upon completion of this sale.
+
+Sale of Other Retired Semis
+
+In the first quarter of 2025, we approved a plan to retire three semisubmersible rigs within our Floaters segment, VALARIS DPS-3, VALARIS DPS-5, and VALARIS DPS-6 (collectively, the “Retired Semis”). In April 2025, the Retired Semis were sold for recycling and permanently removed from service for total cash proceeds of $10.0 million.
+
+In connection with the retirement of the Retired Semis, during the first quarter of 2025, we recognized a non-cash loss on impairment of $7.8 million, which represented the amount of carrying value that exceeded the disposal group's aggregate fair value less costs to sell. We estimated the fair value using a market approach based on the preliminary sale agreement for the Retired Semis, which is considered a Level 3 input due to the level of estimation involved since the sale had not yet been completed at the time of our analysis.
+
+Sale of VALARIS 75
+
+In the first quarter of 2025, VALARIS 75, a rig within our Jackups segment which had an immaterial net book value, was sold resulting in a pre-tax gain on sale of $23.0 million. Of the proceeds, $14.0 million was collected upon closing, $5.0 million was collected in January 2026 and the remaining $5.0 million is expected to be received on the second anniversary of the closing.
+
+Sale of Angola Office Building
+
+In the first quarter of 2025, we sold an office building in Angola for cash proceeds of $5.2 million, resulting in a pre-tax gain on sale of $4.0 million. Of the proceeds, approximately $2.5 million was collected during the fourth quarter of 2024 and $2.7 million was collected during the first quarter of 2025.
+
+17
+
+Note 6 -Pension and Other Post-retirement Benefits
+
+We have defined-benefit pension plans and retiree medical plans that provide post-retirement health and life insurance benefits.
+
+The components of net periodic pension and retiree medical (income) loss were as follows (in millions):
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+Interest cost $ 7.4 $ 7.8 $ 14.8 $ 15.4
+
+Expected return on plan assets (8.1) (7.3) (16.2) (14.5)
+
+Amortization of net gain (0.2) (0.2) (0.4) (0.4)
+
+Net periodic pension and retiree medical (income) loss (1)
+$ (0.9) $ 0.3 $ (1.8) $ 0.5
+
+(1)Included in Other, net in our Condensed Consolidated Statements of Operations.
+
+Note 7 -Earnings Per Share
+
+Basic earnings (loss) per share is computed by dividing net income (loss) available to common shareholders by the weighted-average number of common shares outstanding during the period. Weighted-average shares outstanding used in our computation of diluted EPS is calculated using the treasury stock method and includes the effect of all potentially dilutive stock equivalents, including warrants, restricted stock unit awards and performance stock unit awards.
+
+The following table is a reconciliation of the weighted-average shares used in our basic and diluted EPS computations for the three and six months ended June 30, 2026 and 2025 (in millions), except per share amounts:
+
+Three Months Ended June 30, Six Months Ended June 30,
+
+2026 2025 2026 2025
+
+Income attributable to our shares $ 50.4 $ 115.1 $ 34.0 $ 77.2
+
+Weighted average shares outstanding:
+
+Basic 69.3 71.1 69.2 71.1
+
+Effect of stock equivalents 1.1 0.2 1.1 0.2
+
+Diluted 70.4 71.3 70.3 71.3
+
+EARNINGS PER SHARE:
+
+Basic $ 0.73 $ 1.62 $ 0.49 $ 1.09
+
+Diluted $ 0.72 $ 1.61 $ 0.48 $ 1.08
+
+Anti-dilutive share awards totaling 60,000 and 80,000 were excluded from the computation of diluted EPS for the three and six months ended June 30, 2026, respectively.
+
+Anti-dilutive shares totaling 255,000 and 274,000 were excluded from the computation of diluted EPS for the three and six months ended June 30, 2025, respectively.
+
+We had 5,470,758 warrants outstanding (the "Warrants") as of June 30, 2026 to purchase common shares of Valaris Limited (the "Common Shares"), which are exercisable for one Common Share per Warrant at an initial exercise price of $131.88 per Warrant and expire on April 29, 2028. The exercise of these Warrants into Common Shares would have a dilutive effect to the holdings of Valaris Limited's existing shareholders. These Warrants are anti-dilutive for all periods presented.
+
+18
+
+Note 8 -Debt
+
+2030 Second Lien Notes
+
+In April 2023, the Company and Valaris Finance Company LLC (“Valaris Finance”), a wholly-owned subsidiary, issued and sold, at par, $700.0 million aggregate principal amount of Second Lien Notes (the "Initial Second Lien Notes"). In August 2023, the Company and Valaris Finance issued, at 100.75% of par, an additional $400.0 million aggregate principal amount of Second Lien Notes (the "Additional Notes"). The Initial Second Lien Notes and the Additional Notes form a single series and are collectively referred to as the "2030 Second Lien Notes."
+
+The 2030 Second Lien Notes were issued under the Indenture, dated as of April 19, 2023 (the "Indenture"), and will mature on April 30, 2030. The 2030 Second Lien Notes bear an interest rate of 8.375% per annum and interest is payable semi-annually in arrears on April 30 and October 30 of each year. The 2030 Second Lien Notes are fully and unconditionally guaranteed, jointly and severally, on a senior secured basis by certain subsidiaries of the Company.
+
+As of June 30, 2026, we were in compliance in all material respects with our covenants under the Indenture.
+
+2028 Credit Agreement
+
+In April 2023, the Company entered into a senior secured revolving credit agreement (the “2028 Credit Agreement”) which provides for commitments permitting borrowings of up to $375.0 million. Permitted borrowings under the 2028 Credit Agreement may be increased, subject to the agreement of lenders to provide such additional commitments and the satisfaction of certain conditions, by an additional $200.0 million pursuant to the terms of the 2028 Credit Agreement, and includes a $150.0 million sublimit for the issuance of letters of credit. Valaris Finance and certain other subsidiaries of the Company guarantee the Company's obligations under the 2028 Credit Agreement, and the lenders have a first priority lien on the assets securing the 2028 Credit Agreement. The 2028 Credit Agreement is scheduled to mature on April 3, 2028.
+
+Amounts borrowed under the 2028 Credit Agreement are subject to an interest rate per annum equal to, at our option, either (a) a base rate determined as the greatest of (i) a prime rate, (ii) the federal funds rate plus 0.5% and (iii) Term SOFR (as defined in the 2028 Credit Agreement) for a one month interest period plus 1.1% (such base rate to be subject to a 1% floor) or (b) Term SOFR plus 0.10% (subject to a 0% floor), plus, in each case of clauses (a) and (b) above, an applicable margin ranging from 1.50% to 3.00% and 2.50% to 4.00%, respectively, based on the credit ratings that are one notch higher than the corporate family ratings provided by Standard & Poor’s Financial Services LLC (“S&P”) and Moody’s Investors Service, Inc. (“Moody’s”) with respect to Valaris Limited.
+
+Additionally, we are required to pay a quarterly commitment fee to the lenders under the 2028 Credit Agreement with respect to the average daily unutilized commitments thereunder at a rate ranging from 0.375% to 0.75% depending on the credit ratings that are one notch higher than the corporate family ratings provided by S&P and Moody’s with respect to Valaris Limited. With respect to each letter of credit issued pursuant to the 2028 Credit Agreement, we are required to pay a letter of credit fee equal to the applicable margin in effect for Term SOFR loans and a fronting fee in an amount to be mutually agreed between us and the issuer of such letter of credit.
+
+As of June 30, 2026, we were in compliance in all material respects with our covenants under the 2028 Credit Agreement. We had no amounts outstanding under the 2028 Credit Agreement as of June 30, 2026.
+
+19
+
+Note 9 -Shareholders' Equity
+
+Activity in our various shareholders' equity accounts for the three and six months ended June 30, 2026 and 2025 were as follows (in millions):
+
+Shares
+
+Issued Par Value Additional
+
+Paid-in
+
+Capital Warrants Retained Earnings AOCI Treasury
+
+Shares Non-controlling
+
+Interest
+
+BALANCE, December 31, 2025 76.4 $ 0.8 $ 1,134.9 $ 16.4 $ 2,381.7 $ 60.9 $ (425.1) $ 2.1
+
+Net loss — — — — (16.4) — — (1.6)
+
+Share-based compensation cost — — 6.4 — — — — —
+
+Shares issued under share-based compensation plans, net
+0.1 — — — — — — —
+
+Net changes in pension and other postretirement benefits
+— — — — — (0.2) — —
+
+Shares withheld for taxes on vesting of share-based awards
+— — (1.4) — — — — —
+
+Foreign currency translation adjustments
+— — — — — 3.2 — —
+
+BALANCE, March 31, 2026 76.5 $ 0.8 $ 1,139.9 $ 16.4 $ 2,365.3 $ 63.9 $ (425.1) $ 0.5
+
+Net income (loss) — — — — 50.4 — — (3.4)
+
+Share-based compensation cost
+— — 9.2 — — — — —
+
+Net changes in pension and other postretirement benefits
+— — — — — (0.2) — —
+
+Shares withheld for taxes on vesting of share-based awards — — (0.1) — — — — —
+
+Foreign currency translation adjustments
+— — — — — 0.2 — —
+
+BALANCE, June 30, 2026 76.5 $ 0.8 $ 1,149.0 $ 16.4 $ 2,415.7 $ 63.9 $ (425.1) $ (2.9)
+
+Shares
+
+Issued Par Value Additional
+
+Paid-in
+
+Capital Warrants Retained Earnings AOCI Treasury
+
+Shares Non-controlling
+
+Interest
+
+BALANCE, December 31, 2024
+76.2 $ 0.8 $ 1,113.3 $ 16.4 $ 1,398.9 $ 34.2 $ (325.1) $ 5.8
+
+Net loss — — — — (37.9) — — (1.3)
+
+Share-based compensation cost — — 5.6 — — — — —
+
+Shares issued under share-based compensation plans, net
+0.1 — — — — — — —
+
+Net changes in pension and other postretirement benefits
+— —

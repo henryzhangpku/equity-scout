@@ -1,0 +1,1005 @@
+Item 7 Management’s Discussion and Analysis of Financial Condition, Liquidity and Capital Resources for further information regarding our dividends.
+
+See the table labeled “Equity Compensation Plan Information” to be contained in the 2026 Proxy Statement, incorporated by reference in Part III, Item 12 of this Annual Report on Form 10-K.
+
+Part III, Item 12 of this Annual Report on Form 10-K is incorporated herein by this reference.
+
+Unregistered Sales of Equity Securities
+
+There were no equity securities sold by the Company during the period covered by this Annual Report on Form 10-K that were not registered under the Securities Act of 1933, as amended.
+
+Issuer Purchases of Equity Securities
+
+We did not repurchase any shares of our common stock in the fourth quarter ended July 31, 2026. In August 2025, our Board of Directors approved an authorization to repurchase up to $100,000 of our common stock with such authorization to expire on September 30, 2027. We may in the future make repurchases of our common stock pursuant to this authorization from time to time in the open market, through privately negotiated transactions or otherwise, in accordance with applicable SEC and other legal requirements. The timing, prices, and sizes of purchases depend upon prevailing trading prices, general economic and market conditions, and other factors, including the requirements of applicable securities laws.
+
+ITEM 6. RESERVED
+
+ITEM 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+
+The following Management’s Discussion and Analysis of Financial Condition and Results of Operations (“MD&A”) provides information which management believes is relevant to an assessment and understanding of our consolidated results of operations and financial condition. MD&A should be read in conjunction with the Consolidated Financial Statements and notes thereto. Readers should also carefully review the information presented under the section entitled “Risk Factors” and other cautionary statements in this report. All dollar amounts (other than per share amounts) reported or discussed in this MD&A are shown in thousands. References in MD&A to a year or quarter are to our fiscal year or quarter unless expressly noted or the context clearly indicates otherwise.
+
+36
+
+Table of Contents
+
+This overview summarizes the MD&A, which includes the following sections:
+
+● Executive Overview – a general description of our business, the restaurant and retail industries, our strategic priorities and our key performance indicators.
+
+● Results of Operations – an analysis of our consolidated statements of income presented in our Consolidated Financial Statements.
+
+● Liquidity and Capital Resources – an analysis of our primary sources of liquidity, capital expenditures and material commitments.
+
+● Critical Accounting Estimates – a discussion of accounting policies that require critical judgments and estimates.
+
+The following MD&A includes a discussion of 2026 and 2025 items and year-to-year comparisons between the years ended July 31, 2026 and August 01, 2025. Discussion of 2024 items and year-to-year comparisons between the years ended August 01, 2025 and August 02, 2024 that are not included in this MD&A can be found in “Part II, Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations” of our annual report on Form 10-K for the year ended August 01, 2025, filed with the SEC on September 26, 2025.
+
+EXECUTIVE OVERVIEW
+
+Cracker Barrel Old Country Store, Inc. (the “Company,” “our” or “we”) is a publicly traded (Nasdaq: CBRL) company that, through its operations and those of certain subsidiaries, is principally engaged in the operation and development of the Cracker Barrel Old Country Store® (“Cracker Barrel”) concept. Each Cracker Barrel store consists of a restaurant with a gift shop. The restaurants serve breakfast, lunch and dinner. The gift shop offers a variety of decorative and functional items specializing in rocking chairs, holiday gifts, toys, apparel and foods. As of September 11, 2026, the Company operated 655 Cracker Barrel stores located in 43 states. During 2026, the Company completed the divestiture of its Maple Street Biscuit Company (“MSBC”) business, including the MSBC tradename and the assets used in 35 MSBC locations. Simultaneously with the completion of this transaction, the Company closed the remaining 16 MSBC locations. During 2026 and the first quarter of 2027, the Company undertook a number of strategic, leadership and financing actions intended to support its long-term business objectives, which are discussed further below in MD&A.
+
+Strategic Priorities
+
+Management believes that the Cracker Barrel brand remains one of the strongest and most differentiated brands in the restaurant industry, and we plan to continue to leverage and build on that strength as a core competitive component of our business strategy. Our long-term strategy is anchored on the following priorities: food, experience, people, and profitability.
+
+We believe there are significant challenges in the macroeconomic outlook for the coming quarters, including continued inflation volatility, higher consumer debt levels and lower savings rates, as well as the potential uncertainty associated with the geopolitical environment and global trade among other factors. Additionally, during 2026, we faced challenges related to negative publicity from brand initiatives related to our previously-announced strategic plan, including the launch of a new logo and modern test store remodels, to which we responded by returning to our former logo and discontinuing the modern test store remodels during the first quarter of 2026.
+
+37
+
+Table of Contents
+
+Key Performance Indicators
+
+Management uses a number of key performance indicators to evaluate our operational and financial performance, including the following:
+
+● Comparable store restaurant sales increase/(decrease): To calculate comparable store restaurant sales increase/(decrease), we determine total restaurant sales of stores open at least six full quarters before the beginning of the applicable period, measured on comparable calendar weeks. We then subtract total comparable store restaurant sales for the current year period from total comparable store restaurant sales for the applicable historical period to calculate the absolute dollar change. To calculate comparable store restaurant sales increase/(decrease), which we express as a percentage, we divide the absolute dollar change by the comparable store restaurant sales for the historical period.
+
+● Comparable store retail sales increase/(decrease): To calculate comparable store retail sales increase/(decrease), we determine total retail sales of stores open at least six full quarters before the beginning of the applicable period, measured on comparable calendar weeks. We then subtract total comparable store retail sales for the current year period from total comparable store retail sales for the applicable historical period to calculate the absolute dollar change. To calculate comparable store retail sales increase/(decrease), which we express as a percentage, we divide the absolute dollar change by the comparable store retail sales for the historical period.
+
+● Comparable store restaurant and retail sales increase/(decrease): To calculate comparable store restaurant and retail sales increase/(decrease), we determine total restaurant and retail sales of stores open at least six full quarters before the beginning of the applicable period, measured on comparable calendar weeks. We then subtract total comparable store restaurant and retail sales for the current year period from total comparable store retail sales for the applicable historical period to calculate the absolute dollar change. To calculate comparable store restaurant and retail sales increase/(decrease), which we express as a percentage, we divide the absolute dollar change by the comparable store restaurant and retail sales for the historical period.
+
+● Average check increase per guest: To calculate average check per guest, we determine comparable store restaurant sales, as described above, and divide by comparable restaurant guest traffic, as described below. We then subtract average check per guest for the current year period from average check per guest for the applicable historical period to calculate the absolute dollar change. The absolute dollar change is divided by the prior year average check number to calculate average check increase per guest, which we express as a percentage.
+
+● Comparable restaurant guest traffic increase/(decrease): To calculate comparable restaurant guest traffic increase/(decrease), we determine the number of entrees sold in our dine-in and off-premise business from stores open at least six full quarters at the beginning of the applicable period, measured on comparable calendar weeks. We then subtract total entrees sold for the current year period from total entrees sold for the applicable historical period to calculate the absolute numerical change. To calculate comparable restaurant guest traffic increase/(decrease), which we express as a percentage, we divide the absolute numerical change by the total entrees sold for the historical period.
+
+These performance indicators exclude the impact of new store openings and sales related to MSBC.
+
+We use comparable store sales metrics as indicators of sales growth to evaluate how our established stores have performed over time. We use comparable restaurant guest traffic increase/(decrease) to evaluate how established stores have performed over time, excluding growth achieved through menu price and sales mix change. Finally, we use average check per guest to identify trends in guest preferences, as well as the effectiveness of menu changes. We believe these key performance indicators are useful for investors to provide a consistent comparison of sales results and trends across comparable periods within our core, established store base, unaffected by results of store openings, closings, and other transitional changes.
+
+38
+
+Table of Contents
+
+Restaurant and Retail Industries
+
+Our stores operate in both the restaurant and retail industries in the United States. The restaurant and retail industries are highly competitive with respect to quality, variety and price of food and retail merchandise, service, availability of carryout and home delivery, internet and mobile ordering capabilities, effectiveness of marketing and advertising, and overall guest experience. We compete with a significant number of national and regional restaurant and retail chains, as well as locally owned restaurants and retailers. Competition also comes from family dining, casual dining, full-service, fast casual and quick-service restaurants, as well as supermarkets and other food providers that offer convenient meal alternatives. Cracker Barrel primarily operates in the full-service segment of the restaurant industry. Competition also exists in securing prime real estate locations for new stores, in hiring qualified employees, in advertising, in the attractiveness of facilities and with competitors having similar menu offerings or convenience features. The restaurant and retail industries are often affected by changes in consumer taste and preference; national, regional or local economic conditions; demographic trends; traffic patterns; the type, number and location of competing restaurants and retailers; and consumers’ discretionary purchasing power.
+
+Additionally, economic, seasonal and weather conditions affect the restaurant and retail industries. Adverse economic conditions, such as elevated and/or volatile rates of inflation and unemployment adversely affect consumer discretionary income and dining and shopping habits. Historically, interstate tourist traffic and the propensity to dine out have been much higher during the summer months, thereby contributing to higher profits in our fourth quarter. Retail sales, which are made substantially to our restaurant guests, are historically strongest in the second quarter, which includes the holiday shopping season.
+
+Severe weather events such as hurricanes, floods, tornadoes, and winter storms may prevent or dissuade guests from visiting our stores, impair our ability to staff our stores or force us to temporarily close affected stores, adversely impacting our restaurant and retail sales. Additionally, severe drought conditions and associated restrictions on water use may impair restaurant operations or increase costs in locations affected by such conditions. Climate change, changing weather patterns or unpredictable weather patterns may increase the incidence of any of these events and otherwise also impact guest visitation patterns on a macro scale. In addition to its impact on store operations, severe weather may also disrupt our supply chain, both in distribution to ports and central warehouses and in distribution to local stores. In general, we believe that the geographic dispersion of our stores and multiple sources of distribution adequately mitigate the potential impact of severe weather and changing weather patterns on our stores, but the Board of Directors and management team continually monitor and reexamine these considerations in light of ongoing trends.
+
+We are currently experiencing, and have in the past experienced, inflationary pressures with respect to a variety of costs, including food, ingredients, retail merchandise, transportation, distribution, labor and utilities. While inflationary trends have fluctuated over time, cost increases in these areas may continue to affect our operating expenses. While we have partially offset the impact of these inflationary pressures with menu price increases and operational improvements, there can be no assurance that such conditions will not adversely affect consumer demand or our cost structure in ways that we may be unable to manage without diminishing our profitability.
+
+39
+
+Table of Contents
+
+RESULTS OF OPERATIONS
+
+The following table highlights operating results over the past two years:
+
+Relationship to Total Revenue
+
+2026
+
+2025
+
+Total revenue
+
+100.0
+
+%
+
+100.0
+
+%
+
+Cost of goods sold (exclusive of depreciation and rent)
+
+30.9
+
+31.0
+
+Labor and other related expenses
+
+37.3
+
+36.0
+
+Other store operating expenses
+
+25.5
+
+24.6
+
+General and administrative expenses
+
+6.4
+
+6.2
+
+Gain on sale and leaseback transaction, net
+
+(1.4)
+
+—
+
+Impairment and store closing costs
+
+0.9
+
+0.6
+
+Loss on sale of business assets
+
+0.8
+
+—
+
+Operating income (loss)
+
+(0.4)
+
+1.6
+
+Other income:
+
+Gain on extinguishment of debt
+
+—
+
+(0.1)
+
+Litigation settlement income
+
+(1.4)
+
+—
+
+Interest expense, net
+
+0.4
+
+0.6
+
+Income before income taxes
+
+0.6
+
+1.1
+
+Income tax benefit
+
+(0.4)
+
+(0.2)
+
+Net income
+
+1.0
+
+%
+
+1.3
+
+%
+
+The following table sets forth the change in the number of stores in operation for the past two years:
+
+2026
+
+2025
+
+Opened during the period:
+
+Cracker Barrel
+
+2
+
+1
+
+MSBC
+
+—
+
+4
+
+Closed during the period:
+
+Cracker Barrel
+
+(4)
+
+(2)
+
+MSBC
+
+(33)
+
+(2)
+
+Sold during the period:
+
+MSBC
+
+(35)
+
+—
+
+Stores in operation at end of the period:
+
+Cracker Barrel
+
+655
+
+657
+
+MSBC
+
+—
+
+68
+
+Total stores at end of period
+
+655
+
+725
+
+40
+
+Table of Contents
+
+Total Revenue
+
+The following table highlights the key components of revenue for the past two years:
+
+2026
+
+2025
+
+Revenue in dollars:
+
+Restaurant
+
+$
+
+2,701,820
+
+$
+
+2,831,289
+
+Retail
+
+616,894
+
+652,395
+
+Total revenue
+
+$
+
+3,318,714
+
+$
+
+3,483,684
+
+Total revenue percentage increase (decrease)
+
+(4.7)
+
+%
+
+0.4
+
+%
+
+Total revenue by percentage relationships:
+
+Restaurant
+
+81.4
+
+%
+
+81.3
+
+%
+
+Retail
+
+18.6
+
+%
+
+18.7
+
+%
+
+Average store volumes(1):
+
+Restaurant
+
+$
+
+4,029.4
+
+$
+
+4,199.1
+
+Retail
+
+939.2
+
+991.1
+
+Total revenue
+
+$
+
+4,968.6
+
+$
+
+5,190.2
+
+Comparable store sales increase (decrease) (2):
+
+Restaurant
+
+(4.2)
+
+%
+
+3.5
+
+%
+
+Retail
+
+(5.2)
+
+%
+
+(1.3)
+
+%
+
+Restaurant and retail
+
+(4.4)
+
+%
+
+2.6
+
+%
+
+Average check increase
+
+3.7
+
+%
+
+6.5
+
+%
+
+Comparable restaurant guest traffic decrease(2):
+
+(7.6)
+
+%
+
+(3.0)
+
+%
+
+(1) Average store volumes include sales of all stores except for MSBC.
+
+(2) Comparable store sales and traffic consist of sales of stores open at least six full quarters at the beginning of the period and are measured on comparable calendar weeks. Comparable store sales and traffic exclude MSBC.
+
+Total revenue in 2026 decreased 4.7% as compared to 2025. Our comparable store restaurant sales decrease in 2026 as compared to 2025 resulted primarily from the guest traffic decrease partially offset by the average check increase. The average check increase included an average menu price increase of 4.3%. Off-premise sales represented approximately 20% of restaurant sales volumes in both 2026 and 2025.
+
+Our retail sales are made primarily to our restaurant guests. The decrease in our comparable store retail sales in 2026 as compared to 2025 resulted primarily from the guest traffic decrease.
+
+The decrease in guest traffic in 2026 as compared to 2025 is primarily the result of negative publicity and customer reactions to certain changes in brand initiatives, including the launch of a new logo and modern test store remodels in the first quarter of 2026, and lower consumer demand arising from multiple macroeconomic factors, including inflationary pressures, higher consumer debt levels and lower savings rates as well as the potential uncertainty associated with the geopolitical environment and global trade.
+
+41
+
+Table of Contents
+
+Cost of Goods Sold (Exclusive of Depreciation and Rent)
+
+The following table highlights the components of cost of goods sold in dollar amounts for the past two years:
+
+2026
+
+2025
+
+Cost of Goods Sold in dollars:
+
+Restaurant
+
+$
+
+716,580
+
+$
+
+748,455
+
+Retail
+
+309,670
+
+332,574
+
+Total Cost of Goods Sold
+
+$
+
+1,026,250
+
+$
+
+1,081,029
+
+The following table highlights restaurant cost of goods sold as a percentage of restaurant revenue for the past two years:
+
+2026
+
+2025
+
+Restaurant Cost of Goods Sold
+
+26.5
+
+%
+
+26.4
+
+%
+
+The increase in restaurant cost of goods sold as a percentage of restaurant revenue in 2026 as compared to 2025 was primarily driven by higher food waste, commodity inflation, increased discounts and a shift to higher cost menu items partially offset by the menu pricing increase. Commodity inflation was 2.3% in 2026. We presently expect the rate of commodity inflation to be approximately 3.0% in 2027.
+
+The following table highlights retail cost of goods sold as a percentage of retail revenue for the past two years:
+
+2026
+
+2025
+
+Retail Cost of Goods Sold
+
+50.2
+
+%
+
+51.0
+
+%
+
+The year-to-year percentage change in 2026 as compared to 2025 resulted primarily from the following:
+
+2026 Compared to 2025
+
+(Decrease) Increase as a
+
+Percentage of Total
+
+Tariff refunds
+
+(2.2)
+
+%
+
+Markdowns
+
+0.7
+
+%
+
+Discounts
+
+0.3
+
+%
+
+Lower initial margin
+
+0.3
+
+%
+
+The decrease in retail cost of goods sold as a percentage of retail revenue in 2026 as compared to 2025 resulted primarily from tariff refunds of $15,033 partially offset by higher markdowns, higher discounts and lower initial margin.
+
+Additional changes in tariff rates or trade policy could materially affect our operating results and financial condition, and this ongoing uncertainty introduces additional volatility and risk and may affect consumer demand in ways that are difficult to predict.
+
+Labor and Other Related Expenses
+
+Labor and other related expenses include all direct and indirect labor and related costs incurred in store operations. The following table highlights labor and other related expenses as a percentage of total revenue for the past two years:
+
+2026
+
+2025
+
+Labor and related expenses
+
+37.3
+
+%
+
+36.0
+
+%
+
+42
+
+Table of Contents
+
+The year-to-year percentage change in 2026 as compared to 2025 resulted primarily from the following:
+
+2026 Compared to 2025
+
+Increase as a Percentage
+
+of Total Revenue
+
+Store hourly labor
+
+0.6
+
+%
+
+Store management compensation
+
+0.4
+
+%
+
+Store bonus expense
+
+0.1
+
+%
+
+Employee health care expense
+
+0.1
+
+%
+
+The increases in store hourly labor and store management compensation as a percentage of total revenue in 2026 as compared to 2025 resulted primarily from lower productivity and the deleverage associated with the decrease in total revenue in 2026 as compared to 2025. We presently expect the rate of wage inflation to be approximately 2.5% to 3.0% in 2027.
+
+The increase in store bonus expense as a percentage of total revenue in 2026 as compared to 2025 resulted primarily from the deleverage associated with the decrease in total revenue in 2026 as compared to 2025.
+
+The increase in employee health care expense as a percentage of total revenue in 2026 as compared to 2025 resulted primarily from unfavorable claim experience.
+
+Other Store Operating Expenses
+
+Other store operating expenses include all store-level operating costs, the major components of which are occupancy costs, operating supplies, advertising, credit card and gift card fees, third-party delivery fees, real and personal property taxes, general insurance and manager conference expenses. Occupancy costs include maintenance, utilities, depreciation and rent.
+
+The following table highlights other store operating expenses as a percentage of total revenue for the past two years:
+
+2026
+
+2025
+
+Other store operating expenses
+
+25.5
+
+%
+
+24.6
+
+%
+
+The year-to-year percentage change in 2026 as compared to 2025 resulted primarily from the following:
+
+2026 Compared to 2025
+
+Increase (Decrease) as a
+
+Percentage of Total Revenue
+
+Store occupancy costs
+
+1.4
+
+%
+
+Other store expense, net
+
+(0.2)
+
+%
+
+Supplies
+
+(0.1)
+
+%
+
+General insurance
+
+(0.1)
+
+%
+
+The increase in store occupancy costs as a percentage of total revenue in 2026 as compared to 2025 resulted primarily from higher maintenance expense and the deleverage associated with the decrease in total revenue.
+
+43
+
+Table of Contents
+
+The decrease in other store expense, net as a percentage of total revenue in 2026 as compared to 2025 resulted primarily from the receipt of $12,596 in settlement proceeds related to litigation matters involving our poultry and pork suppliers. This favorable impact was partially offset by costs associated with our biennial general manager conference, which was not held in 2025.
+
+The decrease in supplies expense as a percentage of total revenue in 2026 as compared to 2025 resulted primarily from the Company’s cost savings programs.
+
+The decrease in general insurance as a percentage of total revenue in 2026 as compared to 2025 resulted primarily from lower expense in 2026 due to unfavorable claims in 2025 that did not recur in 2026.
+
+General and Administrative Expenses
+
+The following table highlights general and administrative expenses as a percentage of total revenue for the past two years:
+
+2026
+
+2025
+
+General and administrative expenses
+
+6.4
+
+%
+
+6.2
+
+%
+
+The year-to-year percentage change in 2026 as compared to 2025 resulted primarily from the following:
+
+2026 Compared to 2025
+
+Increase (Decrease) as a
+
+Percentage of Total Revenue
+
+Payroll and related expense
+
+0.2
+
+%
+
+Professional fees
+
+0.1
+
+%
+
+Incentive compensation expense
+
+(0.2)
+
+%
+
+The increase in payroll and related expense as a percentage of total revenue in 2026 as compared to 2025 resulted primarily from severance costs from a corporate restructuring and Chief Executive Officer (“CEO”) transition costs incurred in 2026 partially offset by lower headcount.
+
+The increase in professional fees as a percentage of total revenue in 2026 as compared to 2025 primarily resulted from higher legal fees partially offset by lower proxy contest expenses and lower costs associated with the Company’s strategic initiatives. In 2026, we incurred $4,072 in costs related to a proxy contest in connection with the Company’s 2025 annual shareholders meeting held on November 20, 2025. In 2025, we incurred expenses of $8,220 related to a proxy contest in connection with the Company’s 2024 annual shareholders meeting held on November 21, 2024. Costs associated with the Company’s strategic initiatives decreased by approximately $7,300 in 2026 as compared to 2025.
+
+The decrease in incentive compensation expense as a percentage of total revenue in 2026 as compared to 2025 resulted primarily from lower performance against financial objectives in 2026 as compared to 2025 partially offset by CEO transition costs incurred in 2026.
+
+Gain on Sale and Leaseback Transaction, Net
+
+In the fourth quarter of 2026, we entered into a sale and leaseback transaction involving 26 of our owned Cracker Barrel properties and recorded a net gain of $47,421. This amount is recorded in the gain on sale and leaseback transaction, net line on the Consolidated Statements of Income. See Note 8 to the Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K for additional information regarding this sale and leaseback transaction.
+
+44
+
+Table of Contents
+
+Impairment and Store Closing Costs
+
+During 2026 and 2025, we recorded impairment charges of $21,968 and $19,772, respectively. The increase in impairment and store closing costs in 2026 as compared to 2025 was primarily driven by costs associated with the Company’s divestiture of the MSBC business and the impairment of underperforming locations. The 2026 charges consisted of impairments related to nine Cracker Barrel locations and sixteen MSBC locations, compared with seven Cracker Barrel locations and twenty-five MSBC locations in 2025. In addition, during 2026 and 2025, we incurred store closing costs of $9,266 and $287, respectively. The 2026 store closing costs primarily related to the closure of four Cracker Barrel and thirty-three MSBC locations, compared with two Cracker Barrel and two MSBC locations in 2025. For additional information regarding the divestiture of the MSBC business, see MSBC Divestiture section below and Note 13 to the Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.
+
+Impairment and store closing costs consisted of the following for the past two years:
+
+2026
+
+2025
+
+Impairment
+
+$
+
+21,968
+
+$
+
+19,772
+
+Store closing costs
+
+9,266
+
+287
+
+Total
+
+$
+
+31,234
+
+$
+
+20,059
+
+MSBC Divestiture
+
+On July 20, 2026, the Company completed the sale of certain assets used in its MSBC business to a third party, including the MSBC tradename and other intellectual property and the assets used in thirty-five MSBC restaurant locations. As a result of the transaction, the Company recognized a loss of $27,039 which is recorded in the loss on sale of business assets line on the Consolidated Statements of Income in 2026.
+
+Simultaneously with the asset sale, the Company closed its remaining sixteen MSBC restaurant locations on July 20, 2026 as part of its focus on its core Cracker Barrel brand and improve profitability. In connection with exiting the MSBC business, the Company recognized an impairment charge of $8,523 and store closing and other exit-related costs of $5,430, consisting primarily of severance, contract termination and other closure-related costs. Impairment, store closing costs and other exit-related charges were recorded in the impairment and store closing costs line on the Consolidated Statements of Income.
+
+For additional information regarding the exit of the MSBC business, see Note 13 to the Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.
+
+Operating Income (Loss)
+
+Operating income (loss) consisted of the following for the past two years:
+
+2026
+
+2025
+
+Operating income (loss)
+
+$
+
+(12,470)
+
+$
+
+55,029
+
+Our operating results declined in 2026 as compared to 2025 primarily due to the decrease in total revenue, the loss on sale of business assets associated with the divestiture of the MSBC business and the impairment and store closing costs discussed above partially offset by the gain recognized on the 2026 sale and leaseback transaction.
+
+45
+
+Table of Contents
+
+Gain on Extinguishment of Debt
+
+In 2025, contemporaneously with the issuance of $345,000 aggregate principal amount of 1.75% Convertible Senior Notes due 2030 (the “2030 Notes”), we used approximately $145,900 of the net proceeds from the 2030 Notes for the repurchase of $150,000 aggregate principal amount of $300,000 aggregate principal amount of 0.625% Convertible Senior Notes (the “2026 Notes”) in separate and privately negotiated transactions and recorded a gain on extinguishment of debt of $3,186. This amount is recorded in the gain on extinguishment of debt line on the Consolidated Statements of Income. For additional information regarding our debt, see Note 4 to the Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.
+
+Litigation Settlement Income
+
+In the third quarter of 2026, the Company received and recorded $47,422, net of legal fees, pursuant to a settlement agreement resolving interchange fee litigation. This amount is recorded in the litigation settlement income line on the Consolidated Statements of Income.
+
+Interest Expense, Net
+
+The following table highlights interest expense for the past two years:
+
+2026
+
+2025
+
+Interest expense, net
+
+$
+
+14,379
+
+$
+
+20,489
+
+The year-to-year decrease in 2026 as compared to 2025 resulted primarily from lower weighted average debt levels under the revolving credit facility partially offset by the interest related to the 2030 Notes. See “Borrowing Capacity, Debt Covenants and Notes” section below for further information related to the 2025 Revolving Credit Facility and the 2030 Notes.
+
+Income Tax Benefit
+
+The following table highlights the income tax benefit as a percentage of income before income taxes (“effective tax rate”) for the past two years:
+
+2026
+
+2025
+
+Effective tax rate
+
+(54.0)
+
+%
+
+(22.9)
+
+%
+
+Our effective tax rate is lower than statutory rates primarily due to the benefit of tax credits. The decrease in our effective tax rate in 2026 is primarily due to lower income before income taxes as compared to 2025.
+
+We presently expect an income tax benefit of approximately $4,000 to $8,000 for 2027.
+
+H.R.1., also known as the One Big Beautiful Bill Act (OBBBA), was enacted on July 4, 2025, with effective dates in 2025 and through 2027. The legislation includes provisions that impact the timing and magnitude of certain tax deductions. Key provisions include the permanent extension of several business tax benefits originally introduced under the 2017 Tax Cuts and Jobs Act. The Company has evaluated the impacts of OBBBA, and the effects of these provisions have been incorporated into the accompanying financial statements.
+
+46
+
+Table of Contents
+
+Net Income
+
+Net income consisted of the following for the past two years:
+
+2026
+
+2025
+
+Net income
+
+$
+
+31,675
+
+$
+
+46,379
+
+Our net income in 2026 decreased as compared to 2025 primarily due to our decrease in our operating income (loss) discussed above partially offset by the litigation settlement income related to the credit card interchange fee litigation recognized in 2026 and lower interest expense, net as discussed above.
+
+LIQUIDITY AND CAPITAL RESOURCES
+
+The following table presents a summary of our cash flows for the past two years:
+
+2026
+
+2025
+
+Net cash provided by operating activities
+
+$
+
+206,204
+
+$
+
+218,899
+
+Net cash used in investing activities
+
+(34,220)
+
+(156,702)
+
+Net cash used in financing activities
+
+(175,092)
+
+(34,589)
+
+Net increase (decrease) in cash and cash equivalents
+
+$
+
+(3,108)
+
+$
+
+27,608
+
+Our primary sources of liquidity are cash generated from our operations and our borrowing capacity under our revolving credit facility. Our cash generated from our operations, together with our borrowing capacity under our revolving credit facility, were sufficient to finance all of our capital expenditures, dividend payments, working capital needs, interest payments on long-term debt obligations and other cash payment obligations in 2026.
+
+We believe that cash at July 31, 2026, along with cash expected to be generated from our operating activities and the borrowing capacity under our revolving credit facility, will be sufficient to finance our continuing operations, debt service, dividend payments, capital expenditures and working capital needs for the next twelve months and thereafter for the foreseeable future. Our ability to draw on our $550,000 revolving credit facility (the “2025 Revolving Credit Facility”) is subject to the satisfaction of the provisions of the credit facility, as amended, and we believe we will be able to refinance our credit facility and other debt instruments prior their maturity.
+
+Cash Generated from Operations
+
+The decrease in net cash flow provided by operating activities in 2026 as compared to 2025 was primarily driven by lower earnings as well as the timing of certain payments partially offset by the receipt of income tax refunds.
+
+47
+
+Table of Contents
+
+Purchase Obligations
+
+We enter into purchase orders for food and retail merchandise; purchase orders for capital expenditures, supplies, other operating needs and other services; and commitments under contracts for maintenance needs and other services in the normal course of business. Our estimate as of July 31, 2026, for these purchase obligations is $151,527, of which $125,681 is short-term. This estimate of our purchase obligations (i) includes long-term agreements and certain retail purchase orders for services and operating needs that can be cancelled (A) with more than 60 days’ notice without penalty only through the term of the notice period and (B) only in the event of an uncured material breach or with a penalty through the entire term of the contract, (ii) excludes contracts that do not contain minimum purchase obligations and long-term agreements for services and operating needs that can be cancelled within 60 days without penalty. Because of the uncertainties of seasonal demands and promotional calendar changes, our estimated usage for food, supplies and other operating needs and services is calculated ratably over either the termination notice period or the remaining life of the contract, as applicable, unless we had better information available at the time related to each contract.
+
+Leases
+
+As of July 31, 2026, the total present value of our lease expenses (including variable lease costs) under operating leases was $698,826, which had a weighted-average remaining lease term of 15.22 years. In addition, as of July 31, 2026, total short-term future minimum lease payments were $86,141. We have not entered into any leases that have not yet commenced as of July 31, 2026. For additional information regarding our operating leases, see Note 8 to the Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.
+
+Other Long-Term Obligations
+
+At July 31, 2026, other long-term obligations include our Non-Qualified Savings Plan ($25,193, with a corresponding long-term asset to fund the liability; see Note 11 to the Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K) and Deferred Compensation Plan ($1,127).
+
+Taxes
+
+At July 31, 2026, the entire liability of $16,301, for uncertain tax positions (including penalties and interest) is classified as a long-term liability. At this time, we are unable to make a reasonably reliable estimate of the amounts and timing of payments in individual years because of uncertainties in the timing of the effective settlement of tax positions. See Note 14 to the Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K for additional information on our uncertain tax positions.
+
+Capital Expenditures and Proceeds from Sale of Property and Equipment
+
+The following table presents our capital expenditures (purchase of property and equipment), net of proceeds from insurance recoveries, for the past two years:
+
+2026
+
+2025
+
+Capital expenditures, net of proceeds from insurance recoveries
+
+$
+
+115,321
+
+$
+
+158,647
+
+Our capital expenditures consisted primarily of capital investments for existing stores, strategic initiatives and new store locations. The decrease in capital expenditures in 2026 from 2025 resulted primarily from lower capital investments in existing stores, reduced spending on strategic initiatives and fewer store openings.
+
+We currently expect capital expenditures to be approximately $110,000 to $125,000 in 2027. This estimate includes our maintenance and technology initiatives. We intend to fund our capital expenditures with cash generated by operations, cash on hand and borrowings under our 2025 Revolving Credit Facility, as necessary.
+
+48
+
+Table of Contents
+
+The following table presents our proceeds from sale of property and equipment for the past two years:
+
+2026
+
+2025
+
+Proceeds from sale of property and equipment
+
+$
+
+78,656
+
+$
+
+1,945
+
+The increase in proceeds from sale of property and equipment in 2026 from 2025 resulted primarily from the sale and leaseback transaction in 2026. See Note 8 to the Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K for additional information regarding this sale and leaseback transaction.
+
+Borrowing Capacity, Debt Covenants and Notes
+
+On May 16, 2025, the Company entered into the 2025 Credit Facility, which replaced our previous revolving credit facility that we entered into in 2022 (the “2022 Revolving Credit Facility”). The 2025 Credit Facility consisted of a $550,000 revolving credit facility (the “2025 Revolving Credit Facility”), which includes a $25,000 swingline subfacility and a $75,000 letter of credit subfacility, and a $250,000 delayed draw term loan facility (the “Delayed Draw Term Facility”). The Delayed Draw Term Facility was terminated on June 13, 2025 in connection with the Company’s issuance and sale of the 2030 Notes. The 2025 Credit Facility also contains an option for the Company to increase the 2025 Credit Facility by $200,000. At July 31, 2026 and August 01, 2025, we did not have any borrowings outstanding under the 2025 Revolving Credit Facility.
+
+The following table highlights our borrowing capacity and outstanding borrowings under the 2025 Revolving Credit Facility, our standby letters of credit and our borrowing availability under the 2025 Revolving Credit Facility as of the year ended July 31, 2026:
+
+2026
+
+Borrowing capacity under the 2025 Revolving Credit Facility
+
+$
+
+550,000
+
+Less: Outstanding borrowings under the 2025 Revolving Credit Facility
+
+—
+
+Less: Standby letters of credit*
+
+8,703
+
+Borrowing availability under the 2025 Revolving Credit Facility
+
+$
+
+541,297
+
+*Our standby letters of credit relate to securing reserved claims under workers’ compensation insurance. Our standby letters of credit reduce our borrowing availability under the 2025 Revolving Credit Facility.
+
+During 2026, we borrowed $407,000 and repaid $407,000 under the 2025 Revolving Credit Facility. During 2025, we borrowed $548,500 and repaid $728,500 under the 2022 Revolving Credit Facility and 2025 Revolving Credit Facility.
+
+Our 2025 Revolving Credit Facility contains customary financial covenants, which include maintenance of a maximum consolidated senior secured leverage ratio and a minimum consolidated interest coverage ratio. We were in compliance with the 2025 Revolving Credit Facility’s financial covenants at July 31, 2026, and we expect to be in compliance with the 2025 Revolving Credit Facility’s financial covenants for the remaining term of the facility.
+
+On June 13, 2025, we issued the 2030 Notes. The 2030 Notes are senior, unsecured obligations of the Company and bear cash interest at a rate of 1.75% per annum, payable semi-annually in arrears on March 15 and September 15 of each year, beginning on March 15, 2026. The 2030 Notes mature on September 15, 2030, unless earlier converted, repurchased or redeemed. Net proceeds from the 2030 Notes were approximately $335,000, after deducting the initial purchasers’ discounts and commissions and the Company’s offering fees and expenses.
+
+Additionally, on June 13, 2025, we used ap

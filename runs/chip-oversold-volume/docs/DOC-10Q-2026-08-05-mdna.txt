@@ -1,0 +1,349 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+All references in this report to “Healthpeak,” the “Company,” “we,” “us,” or “our” mean Healthpeak Properties, Inc., together with its consolidated subsidiaries. Unless the context suggests otherwise, references to “Healthpeak Properties, Inc.” mean the parent company without its subsidiaries.
+
+Cautionary Language Regarding Forward-Looking Statements
+
+Statements in this Quarterly Report on Form 10-Q that are not historical factual statements are “forward-looking statements” within the meaning of Section 27A of the Securities Act of 1933, as amended (the “Securities Act”), and Section 21E of the Securities Exchange Act of 1934, as amended (the “Exchange Act”). Forward-looking statements include, among other things, statements regarding our and our officers’ intent, belief or expectation as identified by the use of words such as “may,” “will,” “project,” “expect,” “believe,” “intend,” “anticipate,” “seek,” “target,” “forecast,” “plan,” “potential,” “estimate,” “could,” “would,” “should” and other comparable and derivative terms or the negatives thereof. Forward-looking statements reflect our current expectations and views about future events and are subject to risks and uncertainties that could cause actual results, including our future financial condition and results of operations, to differ materially from those expressed or implied by any forward-looking statements. You are urged to carefully review the disclosures we make concerning risks and uncertainties that may affect our business and future financial performance.
+
+Forward-looking statements are based on certain assumptions and analysis made in light of our experience and perception of historical trends, current conditions and expected future developments as well as other factors that we believe are appropriate under the circumstances. While forward-looking statements reflect our good faith belief and assumptions we believe to be reasonable based upon current information, we can give no assurance that our expectations or forecasts will be attained. Further, we cannot guarantee the accuracy of any such forward-looking statement contained in this Quarterly Report on Form 10-Q, and you should not place undue reliance on these forward-looking statements, which speak only as of the date of this report. Except as required by law, we do not undertake, and hereby disclaim, any obligation to update any forward-looking statements, which speak only as of the date on which they are made.
+
+As more fully set forth under Part I, Item 1A. “Risk Factors” in our Annual Report on Form 10-K for the fiscal year ended December 31, 2025, principal risks and uncertainties that may cause our actual results to differ materially from the expectations contained in the forward-looking statements include, among other things:
+
+•changes to regulatory, funding, staffing, trade, and other policies and actions by the U.S. political administration;
+
+•macroeconomic trends that may increase borrowing, construction, labor, and other operating costs;
+
+•changes within the life science industry, and significant regulation, funding requirements, and uncertainty faced by our lab tenants;
+
+•factors adversely affecting our tenants’ or borrowers’ ability to meet their financial and other contractual obligations to us;
+
+•the insolvency or bankruptcy of one or more of our major tenants or borrowers;
+
+•our concentration of real estate investments in the healthcare property sector, which makes us more vulnerable to a downturn in that specific sector than if we invested across multiple sectors;
+
+•the illiquidity of real estate investments;
+
+•our ability to identify and secure new or replacement tenants;
+
+•our property development, redevelopment, and tenant improvement risks, which can render a project less profitable or unprofitable and delay or prevent its undertaking or completion;
+
+•the ability of the hospitals on whose campuses our outpatient medical buildings are located and their affiliated healthcare systems to remain competitive or financially viable;
+
+•the failure of our tenants and borrowers to comply with federal, state, and local laws and regulations, including resident health and safety requirements, as well as licensure, certification, and inspection requirements;
+
+•compliance with the Americans with Disabilities Act and fire, safety, and other regulations;
+
+•the requirements of, or changes to, governmental reimbursement programs such as Medicare or Medicaid;
+
+•economic conditions, natural disasters, weather, and other conditions that negatively affect geographic areas where we have concentrated investments;
+
+•uninsured or underinsured losses, which could result in a significant loss of capital invested in a property, lower than expected future revenues, and unanticipated expenses;
+
+•our use of joint ventures may limit our returns on and our flexibility with jointly owned investments;
+
+•our use of rent escalators or contingent rent provisions in our leases;
+
+45
+
+Table of Contents
+
+•competition for suitable healthcare properties to grow our investment portfolio;
+
+•our ability to exercise rights on collateral securing our real estate-related loans;
+
+•any requirement that we recognize reserves, allowances, credit losses, or impairment charges;
+
+•investment of substantial resources and time in transactions that are not consummated;
+
+•our ability to successfully integrate or operate acquisitions and/or internalize property management;
+
+•the potential impact of unfavorable resolution of litigation or disputes and resulting rising liability and insurance costs;
+
+•environmental compliance costs and liabilities associated with our real estate investments;
+
+•environmental, social, and governance (“corporate impact”) and sustainability commitments and changing requirements, as well as stakeholder expectations;
+
+•epidemics, pandemics, or other infectious diseases, and health and safety measures intended to reduce their spread;
+
+•our past participation in the Coronavirus Aid, Relief, and Economic Security Act (“CARES Act”) Provider Relief Fund and other Covid-related stimulus and relief programs;
+
+•laws or regulations prohibiting eviction of our tenants;
+
+•human capital risks, including the loss or limited availability of our key personnel;
+
+•our reliance on information technology and any material failure, inadequacy, interruption, or security failure of that technology;
+
+•the use of, or inability to use, artificial intelligence by us, our tenants, our vendors, and our investors;
+
+•volatility, disruption, or uncertainty in the financial markets;
+
+•increased interest rates and borrowing costs, which could impact our ability to refinance existing debt, sell properties, and conduct investment activities;
+
+•cash available for distribution to stockholders and our ability to make dividend distributions at expected levels;
+
+•the availability of external capital on acceptable terms or at all;
+
+•an increase in our level of indebtedness;
+
+•covenants in our debt instruments, which may limit our operational flexibility, and breaches of these covenants;
+
+•volatility in the market price and trading volume of our common stock;
+
+•adverse changes in our credit ratings;
+
+•the Janus Living IPO (as defined below) may not achieve the intended benefits;
+
+•our economic exposure to shifts in the price of Janus Living common stock and our ability to control the assets and activities of Janus Living;
+
+•potential conflicts of interest in our relationship with Janus Living;
+
+•our ability to maintain our qualification as a real estate investment trust (“REIT”);
+
+•our taxable REIT subsidiaries being subject to corporate level tax;
+
+•tax imposed on any net income from “prohibited transactions”;
+
+•changes to U.S. federal income tax laws, and potential deferred and contingent tax liabilities from corporate acquisitions;
+
+•calculating non-REIT tax earnings and profits distributions;
+
+•tax protection agreements that may limit our ability to dispose of certain properties and may require us to maintain certain debt levels;
+
+•ownership limits in our charter that restrict ownership in our stock, and provisions of Maryland law and our charter that could prevent a transaction that may otherwise be in the interest of our stockholders;
+
+•conflicts of interest between the interests of our stockholders and the interests of holders of Healthpeak OP, LLC (“Healthpeak OP”) common units;
+
+•provisions in the operating agreement of Healthpeak OP and other agreements that may delay or prevent unsolicited acquisitions and other transactions; and
+
+•our status as a holding company of Healthpeak OP.
+
+46
+
+Table of Contents
+
+Important Information Regarding Our Disclosure to Investors
+
+We may use our website (www.healthpeak.com) and our LinkedIn account (https://www.linkedin.com/company/healthpeak) to communicate with our investors and disclose company information. The information disclosed through those channels may be considered to be material, so investors should monitor them in addition to our press releases, Securities and Exchange Commission (“SEC”) filings, and public conference calls and webcasts. The contents of our website or social media channels referenced herein are not incorporated by reference into this Quarterly Report on Form 10-Q.
+
+Overview
+
+The information set forth in this Item 2 is intended to provide readers with an understanding of our financial condition, changes in financial condition and results of operations and should be read in conjunction with the Consolidated Financial Statements and accompanying Notes. We will discuss and provide our analysis in the following order:
+
+•Executive Summary
+
+•Market Trends and Uncertainties
+
+•Company Highlights
+
+•Dividends
+
+•Results of Operations
+
+•Liquidity and Capital Resources
+
+•Non-GAAP Financial Measures Reconciliations
+
+•Critical Accounting Estimates
+
+Executive Summary
+
+Healthpeak Properties, Inc. is a Standard & Poor’s (“S&P”) 500 company that owns, operates, and develops high-quality real estate focused on healthcare discovery and delivery in the United States (“U.S.”). Our company was originally founded in 1985. We are organized as an umbrella partnership REIT (“UPREIT”). We hold substantially all of our assets and conduct our operations through our operating subsidiary, Healthpeak OP, a consolidated subsidiary of which we are the managing member. We are a Maryland corporation and qualify as a self-administered REIT. We are headquartered in Denver, Colorado, with additional corporate offices in California, Tennessee, Wisconsin, and Massachusetts and property management offices in several locations throughout the U.S.
+
+We have a diversified portfolio of high-quality healthcare properties across three core asset classes of outpatient medical, lab, and senior housing real estate. Under the outpatient medical and lab segments, we own, operate, and develop outpatient medical buildings, hospitals, and lab buildings. Under the senior housing segment, our properties are operated through RIDEA or similar structures. We have other non-reportable segments that are comprised primarily of: (i) loans receivable, (ii) a preferred equity investment, and (iii) three other properties. These non-reportable segments have been presented on a combined basis herein.
+
+On March 23, 2026, Janus Living, Inc. (“Janus Living”) completed its initial public offering (the “Janus Living IPO”) to become a public company. In connection with the Janus Living IPO, 48,300,000 shares of Janus Living’s Class A-1 common stock were issued to public investors, generating total gross proceeds of $966 million, less $65 million of fees paid to the underwriters.
+
+In connection with the Janus Living IPO, through a series of formation transactions, we transferred, directly or indirectly, cash plus senior housing real estate communities and certain parcels of land for future development to Janus Living. As a result of these transactions, we received 138,816,246 shares of Janus Living’s Class A-1 common stock and 75,917,780 common units in the Janus Living OP, LLC (“Janus Living OP”), Janus Living’s operating subsidiary. In connection with these formation transactions, we also purchased shares of Janus Living’s Class A-2 common stock in an amount equivalent to the common units of Janus Living OP that we hold following completion of the formation transactions described above, for aggregate consideration of approximately $760 thousand. Janus Living’s Class A-2 common stock are not entitled to receive any dividends or distributions, but were issued to provide us with voting rights that correspond to our common units.
+
+On June 4, 2026, an additional 25,000,000 shares of Janus Living’s Class A-1 common stock were issued to public investors following the completion of a public offering (the “Janus Living June Follow-On Offering”). As part of the Janus Living June Follow-On Offering, Janus Living granted the underwriters a 30-day option to purchase up to an additional 3,750,000 shares of Janus Living’s Class A-1 common stock, which was exercised in full on June 22, 2026. The Janus Living June Follow-On Offering generated total gross proceeds of $719 million, less $28 million of fees paid to the underwriters.
+
+As of June 30, 2026, our ownership of the Janus Living Class A-1 and Class A-2 common shares, together with our ownership of common units of Janus Living OP, provides us with voting and economic rights of 73.6% of Janus Living. Janus Living is externally managed by Healthpeak Investment Management, LLC, one of our indirect subsidiaries, and is consolidated by us.
+
+47
+
+Table of Contents
+
+At June 30, 2026, our portfolio of investments, including properties in certain of our unconsolidated joint ventures, consisted of interests in 686 properties: (i) Outpatient medical – 501 properties; (ii) Lab – 141 properties; (iii) Senior housing – 41 properties; and (iv) Other non-reportable – 3 properties. The following table summarizes information for our reportable segments for the three months ended June 30, 2026 (dollars in thousands):
+
+Segment
+NOI by
+
+Reportable Segment(1)
+
+Adjusted NOI by Reportable Segment(1)
+
+Outpatient medical $ 206,587 $ 198,005
+
+Lab 154,601 142,614
+
+Senior housing 45,851 45,851
+
+_______________________________________
+
+(1)For outpatient medical and lab, see Note 13 to the Consolidated Financial Statements for a reconciliation of NOI and Adjusted NOI by reportable segment to income (loss) before income taxes and equity income (loss) from unconsolidated joint ventures. For senior housing, see “Non-GAAP Financial Measures Reconciliations” below for a reconciliation of NOI and Adjusted NOI to net income (loss). See our Segment Analysis below for additional information.
+
+For a description of our significant activities during the three and six months ended June 30, 2026, see “Item 2, Management’s Discussion and Analysis of Financial Condition and Results of Operations—Company Highlights” in this report.
+
+Business Strategy
+
+Our strategy is to own, operate, and develop high-quality real estate focused on healthcare discovery and delivery. We manage our real estate portfolio for the long-term to maximize risk-adjusted returns and support the growth of our dividends. Our strategy consists of four core elements:
+
+(i)Our real estate: Our portfolio consists of high-quality properties in desirable locations. Our portfolio is primarily focused on outpatient medical and lab buildings, favorable sectors that benefit from the universal desire for improved health, as well as life plan community and senior housing facilities, which benefit from favorable demographic trends. We have built scale and fostered deep industry relationships, two unique factors that provide us with a competitive advantage.
+
+(ii)Our financials: We maintain a strong investment-grade balance sheet with ample liquidity as well as long-term fixed-rate debt financing with staggered maturities to reduce our exposure to interest rate volatility and refinancing risk.
+
+(iii)Our partnerships: We work with leading pharmaceutical, biotechnology, and medical device companies, as well as healthcare delivery systems, specialty physician groups, and other healthcare service providers and senior housing operators and managers, to meet their real estate needs. We provide high-quality property management services to encourage tenants to renew, expand, and relocate into our properties, which drives increased occupancy, rental rates, and property values.
+
+(iv)Our platform: We have a people-first culture that we believe attracts, develops, and retains top talent. We continually strive to create and maintain an industry-leading platform, with systems and tools that allow us to effectively and efficiently manage our assets and investment activity.
+
+Market Trends and Uncertainties
+
+Our operating results have been and will continue to be impacted by global and national economic and market conditions generally and by the local economic conditions where our properties are located.
+
+We continuously monitor the effects of domestic and global events on our operations and financial position, and on the operations and financial position of our tenants, operators, and borrowers, to enable us to remain responsive and adaptable to the dynamic changes in our operating environment. These events include, but are not limited to, the following, any of which could negatively impact our business: inflation; recession; interest rates; challenges in the financial markets; availability of private capital and funding in the life science industry; and actions by the U.S. political administration and regulatory agencies that affect healthcare policy, life science research and innovation, labor supply, procurement and construction costs, and general economic conditions (such as budget reconciliation actions, tariff actions, changes in healthcare regulation, decreases in government funding and staffing, and immigration reform).
+
+To the extent our tenants and/or operators have experienced, or will experience, increased costs, liquidity constraints, and financing difficulties due to the foregoing macroeconomic and market conditions, they may be unable or unwilling to make payments or perform their obligations when due, and occupancy of our properties could be adversely affected.
+
+48
+
+Table of Contents
+
+In addition, uncertainty in public and private equity and fixed income markets and elevated interest rates have directly led to increased costs and limitations on the availability of capital to us. Elevated interest rates have and could continue to adversely impact our borrowing costs, the fair value of our fixed rate instruments, transaction volume, and real estate values generally, including our real estate.
+
+We have also been affected by increased costs relating to tenant improvements and construction, which, together with higher costs of capital and tariff actions (or potential tariff actions), have adversely affected, and in the future may adversely affect, construction starts and the expected yields on our capital projects, including our developments and redevelopments.
+
+See Part I, Item 1A. “Risk Factors” in our Annual Report on Form 10-K for the fiscal year ended December 31, 2025 for additional discussion of the risks posed by macroeconomic conditions, as well as the uncertainties we and our tenants, operators, and borrowers may face as a result.
+
+Company Highlights
+
+Janus Living IPO
+
+•In March 2026, the Janus Living IPO was completed, including the sale of 48,300,000 shares of its Class A-1 common stock at a price of $20.00 per share. The Janus Living IPO generated total gross proceeds of $966 million, less $65 million of fees paid to the underwriters. See Note 1 to the Consolidated Financial Statements for additional information.
+
+•We received 138,816,246 shares of Janus Living’s Class A-1 common stock and 75,917,780 common units in the Janus Living OP, Janus Living’s operating subsidiary. We also purchased shares of Janus Living’s Class A-2 common stock in an amount equivalent to the common units of Janus Living OP.
+
+Janus Living June Follow-On Offering
+
+•On June 4, 2026, an additional 25,000,000 shares of Janus Living’s Class A-1 common stock were issued to public investors following the completion of the Janus Living June Follow-On Offering. As part of the Janus Living June Follow-On Offering, Janus Living granted the underwriters a 30-day option to purchase up to an additional 3,750,000 shares of Janus Living’s Class A-1 common stock, which was exercised in full on June 22, 2026. The Janus Living June Follow-On Offering generated total gross proceeds of $719 million, less $28 million of fees paid to the underwriters.
+
+Real Estate Transactions
+
+•In January 2026, we acquired our joint venture partner’s 46.5% interest in the SWF SH JV for $312 million (the “SWF JV Buyout”).
+
+•During the three months ended March 31, 2026, we acquired (i) a portfolio of two senior housing communities in Atlanta, Georgia for $240 million, (ii) a portfolio of three senior housing communities in Orlando, Florida for $121 million, and (iii) one senior housing community in Seattle, Washington for $41 million.
+
+•During the three months ended March 31, 2026, we also acquired two lab land parcels in Cambridge, Massachusetts for $28 million.
+
+•During the three months ended March 31, 2026, we sold an 80% interest in six outpatient medical buildings to a third party for net proceeds of $163 million (“BX JV I and II”).
+
+•During the three months ended March 31, 2026, we also sold (i) four lab buildings for $68 million, (ii) two outpatient medical buildings for $15 million, and (iii) nine suites within an outpatient medical building in Atlanta, Georgia for $7 million.
+
+•During the three months ended June 30, 2026, we sold (i) two outpatient medical buildings for $34 million and (ii) one senior housing community for $23 million.
+
+•In July 2026, we formed a JV with affiliates of Brookfield Asset Management (“Brookfield”). We contributed 86 outpatient medical buildings which are diversified across 11 states. Brookfield purchased a non-controlling 49% equity interest in the JV at a gross valuation of approximately $2.1 billion, generating proceeds of approximately $1.025 billion. Under the terms of the agreement, we will maintain day-to-day control and management of the assets and will retain a call right for a finite period beginning after year seven to repurchase Brookfield’s interest at a price sufficient to provide Brookfield with a 6.5% net annual rate of return excluding initial transaction expenses.
+
+•During the three months ended June 30, 2026, we acquired (i) one senior housing community in Seattle, Washington for $52 million and (ii) one senior housing community in Tucson, Arizona for $52 million.
+
+49
+
+Table of Contents
+
+•Subsequent to June 30, 2026, we acquired the following, in each case for a gross purchase price as noted: (i) eight senior housing communities in Texas and New Mexico for $150 million, (ii) one senior housing community in Naples, Florida for $149 million, (iii) one senior housing community in Lexington, Kentucky for $50 million, (iv) three senior housing communities in Atlanta, Georgia for $425 million, (v) four senior housing communities in Florida for $190 million, and (vi) one senior housing community in Denver, Colorado for $47 million.
+
+Development and Redevelopment Activities
+
+•During the six months ended June 30, 2026, the following projects were placed in service: (i) one lab redevelopment project with total project costs of $86 million, (ii) a portion of four lab redevelopment projects with total project costs of $65 million, and (iii) a portion of one lab development project with total project costs of $8 million.
+
+Financing Activities
+
+•In January 2026, we made a $102 million early full principal repayment of mortgage debt secured by two senior housing communities with original maturities in December 2026.
+
+•In March 2026, concurrent with the closing of Janus Living IPO, we entered into a $400 million five-year unsecured term loan (the “2031 Term Loan”) as an incremental facility under our existing term loan agreement. As of June 30, 2026, no principal was outstanding on the 2031 Term Loan.
+
+•In March 2026, concurrent with the closing of Janus Living IPO, Janus Living entered into a credit agreement consisting of a $500 million revolving credit facility maturing in March 2030 and a $100 million term loan maturing in March 2031, bearing interest at SOFR plus 105 and 110 basis points, respectively. As of June 30, 2026, there were no outstanding borrowings under the credit agreement.
+
+•In April 2026, we repurchased 5.95 million shares of our common stock under the 2024 Share Repurchase Program at a weighted average price of $16.81 per share for a total of $100 million.
+
+•In June 2026, we repaid $142 million of mortgage debt secured by a portfolio of 13 outpatient medical buildings upon maturity.
+
+•In July 2026, we repaid $650 million aggregate principal amount of 3.25% senior unsecured notes with an effective interest rate of 3.40% at maturity.
+
+Other Activities
+
+•In June 2026, we received a $399 million partial principal repayment of a seller financing loan receivable secured by outpatient medical buildings.
+
+Dividends
+
+The following table summarizes our common stock cash dividends declared in 2026:
+
+Declaration Date Record Date Amount Per Share
+Dividend Payment Date
+
+January 4 January 16 $0.10167 January 30
+
+January 4 February 13 0.10167 February 27
+
+January 4 March 17 0.10167 March 31
+
+April 6 April 17 0.10167 April 30
+
+April 6 May 18 0.10167 May 29
+
+April 6 June 15 0.10167 June 26
+
+July 9 July 20 0.10167 July 31
+
+July 9 August 17 0.10167 August 28
+
+July 9 September 14 0.10167 September 25
+
+50
+
+Table of Contents
+
+Results of Operations
+
+We evaluate our business and allocate resources among our operating segments: (i) outpatient medical, (ii) lab, (iii) senior housing, (iv) loans receivable, (v) a preferred equity investment, and (vi) three other properties. Our reportable segments, as determined in accordance with ASC 280, Segment Reporting, are as follows: (i) outpatient medical, (ii) lab, and (iii) senior housing. Under the outpatient medical and lab segments, we own, operate, and develop outpatient medical buildings, hospitals, and lab buildings. Our senior housing properties are operated through RIDEA or similar structures. The loans receivable, preferred equity investment, and the three other properties are non-reportable segments that have been presented on a combined basis herein. Our CODM, the President and CEO, evaluates performance for our outpatient medical and lab segments based upon property adjusted net operating income (“Adjusted NOI”). For our senior housing segment, our CODM evaluates performance based on net income and Adjusted NOI. The accounting policies of the segments are the same as those described in the summary of significant accounting policies in Note 2 to the Consolidated Financial Statements in our Annual Report on Form 10-K for the fiscal year ended December 31, 2025 filed with the SEC, as updated by Note 2 to the Consolidated Financial Statements herein.
+
+Non-GAAP Financial Measures
+
+NOI and Adjusted NOI
+
+NOI and Adjusted NOI are non-U.S. generally accepted accounting principles (“GAAP”) supplemental financial measures used to evaluate the operating performance of real estate. NOI is defined as real estate revenues (inclusive of rental and related revenues and resident fees and services, and exclusive of interest income), less property level operating expenses. Adjusted NOI is calculated as NOI after eliminating the effects of straight-line rents, amortization of market lease intangibles, termination fees, operator transition costs, and actuarial reserves for insurance claims that have been incurred but not reported. NOI and Adjusted NOI exclude all other financial statement amounts included in net income (loss) as presented in Note 13 to the Consolidated Financial Statements. NOI and Adjusted NOI are calculated as NOI and Adjusted NOI, respectively, from consolidated properties, plus our share of NOI and Adjusted NOI from unconsolidated joint ventures (calculated by applying our actual ownership percentage for the period), less noncontrolling interests’ share of NOI and Adjusted NOI from consolidated joint ventures (calculated by applying our actual ownership percentage for the period). We utilize our share of NOI and Adjusted NOI in assessing our performance as we have various joint ventures that contribute to our performance. Our share of NOI and Adjusted NOI should not be considered a substitute for, and should only be considered together with and as a supplement to, our financial information presented in accordance with GAAP. Our pro rata share information is prepared on a basis consistent with the comparable consolidated amounts, is intended to reflect our proportionate economic interest in the operating results of properties in our portfolio and is calculated by applying our actual ownership percentage for the period. We do not control the unconsolidated joint ventures, and the pro rata presentations of reconciling items included in NOI and Adjusted NOI do not represent our legal claim to such items. The joint venture members or partners are entitled to profit or loss allocations and distributions of cash flows according to the joint venture agreements, which provide for such allocations generally according to their invested capital.
+
+The presentation of pro rata information has limitations, which include, but are not limited to, the following: (i) the amounts shown on the individual line items were derived by applying our overall economic ownership interest percentage determined when applying the equity method of accounting and do not necessarily represent our legal claim to the assets and liabilities, or the revenues and expenses and (ii) other companies in our industry may calculate their pro rata interest differently, limiting the usefulness as a comparative measure. Because of these limitations, the pro rata financial information should not be considered independently or as a substitute for our financial statements as reported under GAAP. We compensate for these limitations by relying primarily on our GAAP financial statements, using the pro rata financial information as a supplement.
+
+Adjusted NOI is oftentimes referred to as “Cash NOI.” Management believes NOI and Adjusted NOI are important supplemental measures because they provide relevant and useful information by reflecting only income and operating expense items that are incurred at the property level and present them on an unlevered basis. We use Adjusted NOI to make decisions about resource allocations, to assess and compare property level performance, and to evaluate our Same-Store (“SS”) performance, as described below. We believe that net income (loss) is the most directly comparable GAAP measure to NOI and Adjusted NOI. NOI and Adjusted NOI should not be viewed as alternative measures of operating performance to net income (loss) as defined by GAAP since they do not reflect various excluded items. Further, our definitions of NOI and Adjusted NOI may not be comparable to the definitions used by other REITs or real estate companies, as they may use different methodologies for calculating NOI and Adjusted NOI.
+
+Certain of our operating segments are reportable segments for which we disclose Adjusted NOI by reportable segment. For further information, including information reconciling our NOI and Adjusted NOI for our outpatient medical and lab reportable segments to our income (loss) before income taxes and equity income (loss) from unconsolidated joint ventures, refer to Note 13 to the Consolidated Financial Statements. For information reconciling our NOI and Adjusted NOI for our senior housing segment to our net income (loss), refer to “Non-GAAP Financial Measures Reconciliations” below.
+
+51
+
+Table of Contents
+
+Operating expenses generally relate to leased outpatient medical and lab buildings, as well as senior housing facilities. We generally recover all or a portion of our leased outpatient medical and lab property expenses through tenant recoveries, which are recognized within rental and related revenues.
+
+Same-Store NOI and Same-Store Adjusted NOI
+
+Same-Store NOI and Same-Store Adjusted NOI information allows our investors, analysts, and us to evaluate the performance of our property portfolio under a consistent population by eliminating changes in the composition of our portfolio of properties, excluding properties within the other non-reportable segments. We include properties from our consolidated portfolio, as well as properties owned by our unconsolidated joint ventures, in NOI and Adjusted NOI (see NOI and Adjusted NOI definitions above for further discussion regarding our use of pro-rata share information and its limitations). Same-Store Adjusted NOI excludes amortization of deferred revenue from tenant-funded improvements and certain non-property specific operating expenses that are allocated to each operating segment on a consolidated basis.
+
+Properties are included in Same-Store once they are fully operating for the entirety of the comparative periods presented. A property is removed from Same-Store when it is classified as held for sale, sold, placed into redevelopment, experiences a casualty event or has a planned operator transition that significantly impacts operations, or a significant tenant relocates from a Same-Store property to a non Same-Store property and that change results in a corresponding increase in revenue. We do not report Same-Store metrics for our other non-reportable segments.
+
+For a reconciliation of Same-Store to total portfolio NOI and Adjusted NOI and other relevant disclosures by segment, refer to our Segment Analysis below.
+
+Nareit FFO. Funds from Operations (“FFO”) applicable to common shares, as defined by the National Association of Real Estate Investment Trusts (“Nareit”), is net income (loss) applicable to common shares (computed in accordance with GAAP), excluding gains or losses from sales of depreciable property, including any current and deferred taxes directly associated with sales of depreciable property, impairments of, or related to, depreciable real estate or land held for development, plus real estate-related depreciation and amortization, and adjustments to compute our share of Nareit FFO from joint ventures. Adjustments for joint ventures are calculated to reflect our pro rata share of both our consolidated and unconsolidated joint ventures. We reflect our share of Nareit FFO for unconsolidated joint ventures by applying our actual ownership percentage for the period to the applicable reconciling items on an entity by entity basis. For consolidated joint ventures in which we do not own 100%, we reflect our share of the equity by adjusting our Nareit FFO to remove the third-party ownership share of the applicable reconciling items based on actual ownership percentage for the applicable periods. Our pro rata share information is prepared on a basis consistent with the comparable consolidated amounts, is intended to reflect our proportionate economic interest in the operating results of properties in our portfolio and is calculated by applying our actual ownership percentage for the period. We do not control the unconsolidated joint ventures, and the pro rata presentations of reconciling items included in Nareit FFO do not represent our legal claim to such items. The joint venture members or partners are entitled to profit or loss allocations and distributions of cash flows according to the joint venture agreements, which provide for such allocations generally according to their invested capital.
+
+The presentation of pro rata information has limitations, which include, but are not limited to, the following: (i) the amounts shown on the individual line items were derived by applying our overall economic ownership interest percentage determined when applying the equity method of accounting and do not necessarily represent our legal claim to the assets and liabilities, or the revenues and expenses and (ii) other companies in our industry may calculate their pro rata interest differently, limiting the usefulness as a comparative measure. Because of these limitations, the pro rata financial information should not be considered independently or as a substitute for our financial statements as reported under GAAP. We compensate for these limitations by relying primarily on our GAAP financial statements, using the pro rata financial information as a supplement.
+
+We believe Nareit FFO applicable to common shares and diluted Nareit FFO applicable to common shares are important supplemental non-GAAP measures of operating performance for a REIT. Because the historical cost accounting convention used for real estate assets utilizes straight-line depreciation (except on land), such accounting presentation implies that the value of real estate assets diminishes predictably over time. Since real estate values instead have historically risen and fallen with market conditions, presentations of operating results for a REIT that use historical cost accounting for depreciation could be less informative. The term Nareit FFO was designed by the REIT industry to address this issue.
+
+Nareit FFO does not represent cash generated from operating activities in accordance with GAAP, is not necessarily indicative of cash available to fund cash needs and should not be considered an alternative to net income (loss). We compute Nareit FFO in accordance with the current Nareit definition; however, other REITs may report Nareit FFO differently or have a different interpretation of the current Nareit definition from ours. For a reconciliation of net income (loss) applicable to common shares to Nareit FFO applicable to common shares and other relevant disclosures, refer to “Non-GAAP Financial Measures Reconciliations” below.
+
+52
+
+Table of Contents
+
+FFO as Adjusted. In addition, we present Nareit FFO applicable to common shares on an adjusted basis before the impact of non-comparable items including, but not limited to, transaction, merger, and restructuring-related costs, other impairments (recoveries) and other losses (gains), prepayment costs (benefits) associated with early retirement or payment of debt, litigation costs (recoveries), casualty-related charges (recoveries), deferred tax asset valuation allowances, and changes in tax legislation (“FFO as Adjusted”). These adjustments are net of tax, when applicable, and are reflective of our share of our joint ventures. Adjustments for joint ventures are calculated to reflect our pro rata share of both our consolidated and unconsolidated joint ventures. We reflect our share of FFO as Adjusted for unconsolidated joint ventures by applying our actual ownership percentage for the period to the applicable reconciling items on an entity by entity basis. We reflect our share for consolidated joint ventures in which we do not own 100% of the equity by adjusting our FFO as Adjusted to remove the third-party ownership share of the applicable reconciling items based on actual ownership percentage for the applicable periods. We do not control the unconsolidated joint ventures, and the pro rata presentations of reconciling items included in FFO as Adjusted do not represent our legal claim to such items. The joint venture members or partners are entitled to profit or loss allocations and distributions of cash flows according to the joint venture agreements, which provide for such allocations generally according to their invested capital.
+
+The presentation of pro rata information has limitations, which include, but are not limited to, the following: (i) the amounts shown were der

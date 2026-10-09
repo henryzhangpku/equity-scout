@@ -1,0 +1,687 @@
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations.
+
+You should read the following discussion and analysis of our financial condition and results of operations together with our condensed consolidated financial statements and related notes appearing in this Quarterly Report on Form 10-Q. This discussion and other parts of this Quarterly Report on Form 10-Q contain forward-looking statements that involve risks and uncertainties, such as statements of our plans, objectives, expectations and intentions. As a result of many factors, including those factors set forth in the “Risk Factors” section of this Quarterly Report on Form 10-Q, our actual results could differ materially from the results described in, or implied by, the forward-looking statements contained in the following discussion and analysis.
+
+Objective
+
+The following Management’s Discussion and Analysis of Financial Condition and Results of Operations is intended to provide information necessary to understand our condensed consolidated financial statements and highlight certain other information which, in the opinion of management, will enhance a reader’s understanding of our financial condition, changes in financial condition, results of operations, and cash flows. In particular, the discussion is intended to provide an analysis of significant trends and material changes in our financial position and the operating results of our business during the three and six months ended June 30, 2026 as compared to the three and six months ended June 30, 2025. This discussion should be read in conjunction with our condensed consolidated financial statements and related notes included elsewhere in this Quarterly Report on Form 10-Q as well as our Annual Report on Form 10-K for the fiscal year ended December 31, 2025, which includes detailed discussions of various items impacting our business, results of operations and financial condition.
+
+Overview
+
+We are a biopharmaceutical company driven by science and compassion to revolutionize care for patients with challenging respiratory and vascular diseases such as pulmonary arterial hypertension (“PAH”) and pulmonary hypertension associated with interstitial lung disease (“PH-ILD”). We operate through our wholly owned operating subsidiaries, Liquidia Technologies, Inc. and Liquidia PAH, LLC, formerly known as RareGen.
+
+We currently generate revenue through the sale of YUTREPIA (treprostinil) inhalation powder (“YUTREPIA”) and pursuant to a promotion agreement with Sandoz Inc. (“Sandoz”), dated as of August 1, 2018, as amended (the “Promotion Agreement”), under which we share profit derived from the sale of Sandoz’s generic treprostinil injection (“Treprostinil Injection”) in the United States.
+
+We employ a targeted commercial field force calling on healthcare providers involved in the treatment of PAH and PH-ILD in the United States, as well as key stakeholders involved in the distribution and reimbursement of medicines to treat these patients.
+
+YUTREPIA is an inhaled dry powder formulation of treprostinil designed with our proprietary PRINT technology, a particle engineering platform that enables precise production of uniform drug particles, to improve the therapeutic profile of treprostinil by enhancing deep lung delivery while using a convenient, low effort dry-powder inhaler (“DPI”) and by achieving higher dose levels than the labeled doses of other marketed inhaled treprostinil therapies. YUTREPIA was approved by the U.S. Food and Drug Administration (“FDA”) in May 2025 for the treatment of both PAH and PH-ILD, and began commercialization in June 2025.
+
+Treprostinil Injection is a fully-substitutable generic treprostinil for parenteral administration in the United States. We have the exclusive rights to conduct commercial activities for Treprostinil Injection and work jointly with Sandoz on commercial strategy for the product. Sandoz retains all rights in and to Treprostinil Injection and holds the Abbreviated New Drug Application (“ANDA”) for Treprostinil Injection.
+
+We also conduct research, development and manufacturing of novel products by applying our subject matter expertise in respiratory and vascular diseases. For example, we are currently developing L606, an investigational, liposomal formulation of treprostinil, which we licensed from Pharmosa Biopharm Inc. (“Pharmosa”), that is administered twice-
+
+36
+
+Table of Contents
+
+daily with a short-duration next-generation nebulizer. L606 is currently being evaluated in an open-label study in the United States for treatment of PAH and PH-ILD and in a worldwide, placebo-controlled pivotal study for the treatment of PH-ILD. We are also planning to conduct clinical studies to evaluate YUTREPIA for the treatment of pulmonary hypertension associated with chronic obstructive pulmonary disease (“PH-COPD”), idiopathic pulmonary fibrosis (“IPF”), progressive pulmonary fibrosis (“PPF”) and Raynaud’s phenomenon associated with systemic sclerosis (“SSc-RP”).
+
+We have historically incurred significant annual operating losses. Our net losses were $68.9 million and $128.3 million for the years ended December 31, 2025 and 2024, respectively. As of June 30, 2026, we had an accumulated deficit of $498.7 million. We expect to incur significant expenses for the foreseeable future as we continue commercialization of YUTREPIA and advance our product candidates through clinical trials, seek regulatory approval of such product candidates and pursue commercialization of any such approved product candidates. These efforts require significant amounts of capital, adequate personnel and infrastructure, and extensive compliance-reporting capabilities. It is uncertain whether and when, if ever, we will realize sustained revenue from sales of such additional product candidates. Additionally, our HCR Agreement contains fixed quarterly payments and minimum cash covenants that require us to maintain cash and cash equivalents in an amount at least equal to $15.0 million for the remainder of the payment term, which based on amounts funded as of June 30, 2026, is expected to conclude in 2033.
+
+Our future funding requirements will be heavily determined by whether we are able to successfully maintain FDA approval for and commercialize YUTREPIA and the resources needed to support further development of our products and product candidates. Based on current operating plans and excluding any additional external financing, we will have sufficient cash and cash equivalents to fund operating expenses and capital requirements and meet our minimum cash covenants beyond one year from the issuance of these condensed consolidated financial statements. We have based this estimate on assumptions that may prove to be wrong, and we could be limited in our ability to continue to commercialize YUTREPIA and/or we could utilize our available capital resources sooner than we currently expect, which would have a material impact on our operations.
+
+Components of Statements of Operations
+
+Product Sales, Net
+
+We began generating revenue from the sales of YUTREPIA in June 2025, following the FDA approval on May 23, 2025, for the treatment of PAH and PH-ILD. Revenues from product sales are recognized net of variable consideration due to rebates, chargebacks, trade discounts and allowances, sales returns, and other incentives. Provisions for estimated reductions to revenue are provided for in the same period the related sales are recorded and are based on contractual terms, actual utilization data, forecasted payor mix, total prescriptions and industry data. We expect product sales to increase if we are able to maintain FDA approval for YUTREPIA and gain market share.
+
+Service Revenue, Net
+
+We primarily generate service revenue pursuant to the Promotion Agreement, under which we receive a 50% share in the profit derived from the sale of Treprostinil Injection in the United States. Liquidia PAH has the exclusive rights to conduct commercial activities to encourage the appropriate use of Treprostinil Injection. To administer Treprostinil Injection through subcutaneous injection, patients currently must use the CADD-MS 3 infusion pump manufactured by ICU Medical. ICU Medical no longer manufactures or supports the CADD-MS 3 infusion pump. Although we believe that the number of available CADD-MS 3 infusion pumps will be sufficient to serve patients through at least the end of 2026, it is possible that the availability of CADD-MS 3 infusion pumps could end earlier. Due to this limitation in the availability of pumps, specialty pharmacies will limit the number of patients that they place on subcutaneous Treprostinil Injection therapy in order to ensure that patients placed on subcutaneous administration of Treprostinil Injection will not have to discontinue such treatment due to the unavailability of CADD-MS infusion pumps. Until we and/or Sandoz are able to obtain a pump to replace the CADD-MS 3 infusion pump, if ever, the number of patients that can receive subcutaneous administration of Treprostinil Injection will continue to be constrained. Revenue will continue to be impacted unless and until alternative pumps are available.
+
+37
+
+Table of Contents
+
+Cost of Product Sales
+
+Cost of product sales includes direct and indirect costs related to the manufacturing of inventory products sold, including third-party manufacturing costs, packaging services, freight, storage costs, allocation of overhead costs of employees involved with manufacturing and net sales-based royalty expense. As of June 30, 2026, we have sold through all inventory previously expensed to research and development and accordingly, our future cost of product sales of will reflect the full cost of manufacturing YUTREPIA.
+
+Cost of Service Revenue
+
+Cost of service revenue consists of (i) an allocation of the cost of our commercial field force associated with calling on healthcare providers involved in the treatment of PAH with Treprostinil Injection, as well as key stakeholders involved in the distribution and reimbursement of Treprostinil Injection and (ii) amortization of the intangible asset associated with the Promotion Agreement. We amortize the intangible asset associated with the Promotion Agreement in a manner consistent with our recognition of the related revenue.
+
+Research and Development Expenses
+
+Research and development expenses are incurred in connection with the development of our products and product candidates. We expense research and development costs as incurred. These expenses include employee-related expenses and stock-based compensation for personnel in research and development functions as well as regulatory costs, third-party costs related to conducting clinical trials, such as expenses incurred under agreements with CROs, and the cost of clinical trial materials. Research and development expenses also include costs of acquired product licenses and related technology rights where there is no alternative future use.
+
+We expect our research and development expenses to increase related to planned clinical trials and development of L606, however, levels of research and development spending are inherently uncertain and highly dependent upon the progression of projects and may vary. This uncertainty is due to the numerous risks and uncertainties associated with the duration and cost of clinical trials and the terms and timing of regulatory approvals.
+
+Selling, General and Administrative Expenses
+
+Selling, general and administrative expenses primarily consist of salaries and related costs, including stock-based compensation, for personnel in executive, administrative, finance, legal, commercial and technical operations functions. Selling, general and administrative expenses also include corporate infrastructure and software costs, patent filing and prosecution costs and professional fees for marketing, litigation, auditing and tax services and insurance. Commercial costs include bona fide service fees related to distribution of YUTREPIA and the cost of certain patient support programs.
+
+Other Income (Expense)
+
+Other income (expense) is comprised of interest income and expense. Interest income consists of interest earned on our cash equivalents. Interest expense consists of non-cash interest charges on long-term debt.
+
+38
+
+Table of Contents
+
+Comparison of the Three and Six Months Ended June 30, 2026 and 2025
+
+The following table summarizes our results of operations (in thousands, except for percentages):
+
+Three Months Ended
+
+Six Months Ended
+
+June 30,
+
+$
+
+%
+
+June 30,
+
+$
+
+%
+
+2026
+
+2025
+
+Change
+
+Change
+
+2026
+
+2025
+
+Change
+
+Change
+
+Revenues:
+
+Product sales, net
+
+$
+
+170,382
+
+$
+
+6,517
+
+$
+
+163,865
+
+2,514.4
+
+%
+
+$
+
+300,263
+
+$
+
+6,517
+
+$
+
+293,746
+
+4,507.4
+
+%
+
+Service revenue, net
+
+1,297
+
+2,320
+
+(1,023)
+
+(44)
+
+%
+
+4,281
+
+5,440
+
+(1,159)
+
+(21)
+
+%
+
+Total revenue
+
+171,679
+
+8,837
+
+162,842
+
+1,843
+
+%
+
+304,544
+
+11,957
+
+292,587
+
+2,447
+
+%
+
+Costs and expenses:
+
+Cost of product sales
+
+10,759
+
+205
+
+10,554
+
+5,148
+
+%
+
+21,838
+
+205
+
+21,633
+
+10,553
+
+%
+
+Cost of service revenue
+
+791
+
+1,292
+
+(501)
+
+(39)
+
+%
+
+1,564
+
+2,809
+
+(1,245)
+
+(44)
+
+%
+
+Research and development
+
+17,184
+
+6,021
+
+11,163
+
+185
+
+%
+
+29,755
+
+12,987
+
+16,768
+
+129
+
+%
+
+Selling, general and administrative
+
+57,428
+
+38,824
+
+18,604
+
+48
+
+%
+
+104,366
+
+68,886
+
+35,480
+
+52
+
+%
+
+Total costs and expenses
+
+86,162
+
+46,342
+
+39,820
+
+86
+
+%
+
+157,523
+
+84,887
+
+72,636
+
+86
+
+%
+
+Income (loss) from operations
+
+85,517
+
+(37,505)
+
+123,022
+
+(328)
+
+%
+
+147,021
+
+(72,930)
+
+219,951
+
+(302)
+
+%
+
+Other income (expense):
+
+Interest income
+
+2,476
+
+1,584
+
+892
+
+56
+
+%
+
+4,248
+
+3,312
+
+936
+
+28
+
+%
+
+Interest expense
+
+(6,296)
+
+(5,658)
+
+(638)
+
+11
+
+%
+
+(12,790)
+
+(10,328)
+
+(2,462)
+
+24
+
+%
+
+Total other expense, net
+
+(3,820)
+
+(4,074)
+
+254
+
+(6)
+
+%
+
+(8,542)
+
+(7,016)
+
+(1,526)
+
+22
+
+%
+
+Income (loss) before income taxes
+
+81,697
+
+(41,579)
+
+123,276
+
+(296)
+
+%
+
+138,479
+
+(79,946)
+
+218,425
+
+(273)
+
+%
+
+Income tax expense
+
+6,975
+
+—
+
+6,975
+
+*
+
+%
+
+10,895
+
+—
+
+10,895
+
+*
+
+%
+
+Net income (loss) and comprehensive income (loss)
+
+$
+
+74,722
+
+$
+
+(41,579)
+
+$
+
+116,301
+
+(280)
+
+%
+
+$
+
+127,584
+
+$
+
+(79,946)
+
+$
+
+207,530
+
+(260)
+
+%
+
+Product Sales, Net
+
+Product sales, net, were $170.4 million for the three months ended June 30, 2026, compared to $6.5 million for the three months ended June 30, 2025. We began shipping YUTREPIA to our customers in the United States in June 2025, following receipt of full FDA approval for YUTREPIA on May 23, 2025. The increase of $163.9 million was due to higher volume of YUTREPIA sales.
+
+Product sales, net, were $300.3 million for the six months ended June 30, 2026, compared to $6.5 million for the six months ended June 30, 2025. We began shipping YUTREPIA to our customers in the United States in June 2025, following receipt of full FDA approval for YUTREPIA on May 23, 2025. The increase of $293.8 million was due to higher volume of YUTREPIA sales.
+
+39
+
+Table of Contents
+
+Service Revenue, Net
+
+Service revenue, net, was $1.3 million for the three months ended June 30, 2026, compared to $2.3 million for the three months ended June 30, 2025. Service revenue, net was related primarily to the Promotion Agreement. The decrease of $1.0 million was primarily due to the impact of unfavorable gross-to-net adjustments.
+
+Service revenue, net, was $4.3 million for the six months ended June 30, 2026, compared to $5.4 million for the six months ended June 30, 2025. Service revenue, net was related primarily to the Promotion Agreement. The decrease of $1.1 million was primarily due to the impact of unfavorable gross-to-net adjustments.
+
+Cost of Product Sales
+
+Cost of product sales was $10.8 million for the three months ended June 30, 2026, compared to $0.2 million for the three months ended June 30, 2025. Cost of products sales is related to sales of YUTREPIA. The increase of $10.6 million was primarily due to higher volume of YUTREPIA sales.
+
+Cost of product sales was $21.8 million for the six months ended June 30, 2026, compared to $0.2 million for the six months ended June 30, 2025. Cost of products sales is related to sales of YUTREPIA. The increase of $21.6 million was primarily due to higher volume of YUTREPIA sales.
+
+Cost of Service Revenue
+
+Cost of service revenue was $0.8 million for the three months ended June 30, 2026, compared to $1.3 million for the three months ended June 30, 2025. The decrease from 2025 to 2026 reflects a lower allocation of the cost of our commercial field force to Treprostinil Injection resulting from the commercial launch of YUTREPIA in the second quarter of 2025.
+
+Cost of service revenue was $1.6 million for the six months ended June 30, 2026, compared to $2.8 million for the six months ended June 30, 2025. The decrease from 2025 to 2026 reflects a lower allocation of the cost of our commercial field force to Treprostinil Injection resulting from the commercial launch of YUTREPIA in the second quarter of 2025.
+
+Research and Development Expenses
+
+Research and development expenses were $17.2 million for the three months ended June 30, 2026, compared to $6.0 million for the three months ended June 30, 2025. The increase of $11.2 million or 185% was primarily due to a $7.0 million increase in expenses for our L606 program, a $2.0 million increase in expenses related to our YUTREPIA research and development activities, $0.9 million increase in personnel expenses driven by higher headcount, and a $1.0 million L606 development milestone recognized during the second quarter of 2026.
+
+Research and development expenses were $29.8 million for the six months ended June 30, 2026, compared to $13.0 million for the six months ended June 30, 2025. The increase of $16.8 million or 129% was primarily due to a $9.6 million increase in clinical expenses for our L606 program, a $3.8 million increase in expenses related to our YUTREPIA research and development activities, a $2.0 million increase in personnel expenses driven by higher headcount, and a $1.0 million L606 development milestone recognized during the second quarter of 2026.
+
+Selling, General, and Administrative Expenses
+
+Selling, general and administrative expenses were $57.4 million for the three months ended June 30, 2026, compared to $38.8 million for the three months ended June 30, 2025. The increase of $18.6 million or 48% was primarily due to a $10.0 million increase in personnel expenses and a $3.1 million increase in stock-based compensation driven by higher headcount, and an $8.6 million increase in commercial and consulting expenses to support the commercialization of YUTREPIA. These increases were partially offset by a $5.5 million decrease in legal fees related to our ongoing YUTREPIA-related litigation.
+
+40
+
+Table of Contents
+
+Selling, general and administrative expenses were $104.4 million for the six months ended June 30, 2026, compared to $68.9 million for the six months ended June 30, 2025. The increase of $35.5 million or 52% was primarily due to a $18.6 million increase in personnel expenses and a $4.8 million increase in stock-based compensation driven by higher headcount, a $16.5 million increase in commercial and consulting expenses to support the commercialization of YUTREPIA, and a $1.2 million increase in facilities and infrastructure expenses. These increases were partially offset by a $9.1 million decrease in legal fees related to our ongoing YUTREPIA-related litigation.
+
+Other Income (Expense)
+
+Total other expense, net was $3.8 million for the three months ended June 30, 2026, compared to $4.1 million for the three months ended June 30, 2025. The decrease of $0.3 million was primarily attributable to higher money market balances offset by higher borrowings under the HCR Agreement.
+
+Total other expense, net was $8.5 million for the six months ended June 30, 2026, compared to $7.0 million for the six months ended June 30, 2025. The increase of $1.5 million was primarily attributable to higher borrowings under the HCR Agreement offset by higher money market balances.
+
+Income Tax Expense
+
+Income tax expense was $7.0 million for the three months ended June 30, 2026. We did not recognize any income tax expense during the three months ended June 30, 2025.
+
+Income tax expense was $10.9 million for the six months ended June 30, 2026. We did not recognize any income tax expense during the six months ended June 30, 2025.
+
+Liquidity and Capital Resources
+
+Sources of Liquidity
+
+We have financed our growth and operations through a combination of funds generated from revenues, the issuance of convertible preferred stock and common stock, bank borrowings, the issuance of convertible notes, and other long-term debt. Our principal uses of cash have been for working capital requirements and capital expenditures. As of June 30, 2026, we had cash and cash equivalents of $284.2 million, stockholders’ equity of $195.1 million, and an accumulated deficit of $498.7 million.
+
+In January 2023, we entered into the HCR Agreement, as amended, pursuant to which HCR has paid us an aggregate investment amount of $175.0 million. $25.0 million remains available for funding upon mutual agreement of HCR and us. See Note 11 Long-term Debt to the condensed consolidated financial statements appearing elsewhere in this Quarterly Report on Form 10-Q for further information.
+
+Future Funding Requirements
+
+We believe we will have sufficient cash and cash equivalents to meet our financial obligations and minimum cash covenants for at least the next twelve months. While we have included anticipated cash inflows from YUTREPIA product sales in our projections, we may not be able to generate sustained revenue from YUTREPIA and the resources needed to support development of L606 may not be accurate. We have based our estimates on assumptions that may prove to be wrong, and we could be limited in our ability to continue to commercialize YUTREPIA and/or use our available capital resources sooner than we currently expect. In the event revenues from YUTREPIA are insufficient to support our business operations and future capital needs, we expect that we would need further financing or we could be forced to delay, limit, reduce or terminate clinical studies or other ongoing activities, which could have a material adverse effect on our business, results of operations, and financial condition.
+
+41
+
+Table of Contents
+
+There are numerous risks and uncertainties associated with research, development and commercialization of pharmaceuticals and our future funding requirements will depend on many factors, including:
+
+● our ability to successfully commercialize YUTREPIA;
+
+● whether we are able to maintain FDA approval for YUTREPIA for one or both of PAH and PH-ILD and avoid injunctive relief that would limit our ability to sell YUTREPIA for one or both indications;
+
+● the number and characteristics of the product candidates or new indications for approved products we pursue;
+
+● the scope, progress, results and costs of researching and developing our products and product candidates, and conducting preclinical studies and clinical trials, including clinical trials to support new indications for our approved products;
+
+● the timing of, and the costs involved in, obtaining regulatory approvals for our product candidates or new indications for our approved products and our ability to maintain any such approvals;
+
+● our ability to manufacture sufficient volumes of products to meet market demand;
+
+● the cost of manufacturing our product candidates and any product we successfully commercialize, including costs necessary to increase our manufacturing capacity to meet demand;
+
+● our ability to establish and maintain strategic collaborations, licensing or other arrangements and the financial terms of such agreements;
+
+● the costs involved in preparing, filing, prosecuting, maintaining, defending and enforcing patent claims, including litigation costs and the outcome of such litigation; and
+
+● the timing, receipt and amount of sales of, or milestone payments related to or royalties on, our current or future products and product candidates, if any.
+
+See “Risk Factors” for additional risks associated with our substantial capital requirements.
+
+Cash Flows
+
+The following table summarizes our sources and uses of cash, cash equivalents, and restricted cash:
+
+Six Months Ended
+
+June 30,
+
+2026
+
+2025
+
+Net cash provided by (used in):
+
+Operating activities
+
+$
+
+133,234
+
+$
+
+(70,160)
+
+Investing activities
+
+(15,065)
+
+(1,387)
+
+Financing activities
+
+(24,668)
+
+71,994
+
+Net increase in cash, cash equivalents, and restricted cash
+
+$
+
+93,501
+
+$
+
+447
+
+Operating Activities
+
+Net cash provided by operating activities increased $203.4 million to $133.2 million for the six months ended June 30, 2026, compared to net cash used in operating activities of $70.2 million for the six months ended June 30, 2025. The increase was primarily due to $216.1 million higher net income adjusted for non-cash items offset by unfavorable working capital changes of $12.8 million.
+
+Investing Activities
+
+Net cash used in investing activities was $15.1 million for the six months ended June 30, 2026, compared to $1.4 million for the six months ended June 30, 2025. During the six months ended June 30, 2026, we used $14.1 million to purchase property, plant and equipment and paid a $1.0 million L606 development milestone payment. During the six months ended June 30, 2025, net cash used in investing activities related to property, plant, and equipment purchases.
+
+42
+
+Table of Contents
+
+Financing activities
+
+Net cash used in financing activities was $24.7 million during the six months ended June 30, 2026, compared to $72.0 million provided by financing activities during the six months ended June 30, 2025. During the six months ended June 30, 2026, we made $28.0 million in payments under the HCR Agreement. These outflows were offset by $3.2 million received from the issuance of common stock under stock incentive plans. During the six months ended June 30, 2025, we received $75.0 million net proceeds from the HCR Agreement and $1.4 million from the issuance of common stock under stock incentive plans. These inflows were offset by $5.0 million in payments under the HCR Agreement.
+
+Contractual Obligations and Commitments
+
+Milestone and Royalty Obligations
+
+Under the UNC License Agreement, we are obligated to pay UNC royalties equal to a low single digit percentage of all net sales, as defined in the UNC License Agreement, of drug products whose manufacture, use or sale includes any use of the technology or patent rights covered by the UNC License Agreement, including YUTREPIA.
+
+Under the Pharmosa License Agreement, we were granted an exclusive license in North America to develop and commercialize L606, an inhaled, sustained-release liposomal formulation of treprostinil currently being evaluated in a clinical trial for the treatment of PAH and PH-ILD. Under the First Amendment, we expanded our licensed territory to include key markets in Europe, Japan and elsewhere, in addition to licensing proprietary nebulizers controlled by Pharmosa and being evaluated for use in a global pivotal study for the treatment of PH-ILD. In consideration for these exclusive rights, we will pay Pharmosa potential development milestone payments tied to clinical development and approvals in PAH and/or PH-ILD of up to $37.75 million, potential sales milestones of up to $185 million in North America and $150 million outside North American and two tiers of low, double-digit royalties on net sales of L606. Pharmosa will also receive a $10 million milestone payment for each additional indication approved by the FDA after PAH and PH-ILD and each additional product approved by the FDA under the license, a $2 million milestone payment for each additional indication approved by the EMA after PAH and PH-ILD, and a $0.5 million milestone payment for each additional indication approved by the PMDA after PAH and PH-ILD. As of June 30, 2026, no development milestones have been achieved under the Pharmosa License Agreement.
+
+The Vectura License Agreement provides for, among other things, (i) the exclusive right for us to develop, manufacture and commercialize for use in the Vectura Territory products containing treprostinil, including L606, administered via the Vectura Device for treatment in the field of hypertension and interstitial lung diseases, including PAH and PH-ILD, and (ii) that Vectura shall be responsible for manufacturing and supplying us with clinical and commercial supplies of the Vectura Device. Under the Vectura License Agreement, we paid Vectura an upfront payment of $2.0 million and will pay (i) certain development milestone payments of up to $12.0 million; (ii) certain sales milestone payments of up to $92.5 million tied to commercial sales in the Vectura Territory and (iii) royalty payments with royalty rates ranging in the middle single digits tied to commercial sales in the Vectura Territory. As of June 30, 2026, development milestones of $1.0 million has been achieved and paid under the Vectura License Agreement. The Vectura License Agreement also provides us with rights of first negotiation to add additional territories and indications during the term thereof.
+
+Purchase Obligations
+
+We enter into contracts in the normal course of business with contract third-party service providers to assist in the performance of research and development and manufacturing activities. Subject to required notice periods and obligations under binding purchase orders, we can elect to discontinue the work under these agreements at any time.
+
+Under the CSA, we deliver bulk treprostinil powder, manufactured using our proprietary PRINT technology, and Lonza encapsulates and packages it. The CSA was effective upon signing and will be in effect until December 31, 2028 and may thereafter be extended upon the mutual written agreement of the parties in accordance with the terms of the CSA. We are required to provide Lonza with quarterly forecasts of our expected production requirements for the following 24-month period, the first twelve months of which is considered a binding, firm order. We are required to purchase certain
+
+43
+
+Table of Contents
+
+minimum annual order quantities, which may be adjusted by us after the thirteenth month after receipt of regulatory approval of YUTREPIA. The CSA provides for tiered pricing depending upon the batch size ordered.
+
+In addition, on January 10, 2020, we entered into a multi-year supply agreement with LGM to supply APIs for YUTREPIA. Under the supply agreement with LGM, we are required to provide rolling forecasts, a portion of which will be considered a binding, firm order, subject to an annual minimum purchase commitment of $2.7 million for the term of the agreement. The agreement expires five years from the first marketing authorization approval of YUTREPIA.
+
+As of June 30, 2026, we have non-cancelable commitments for product manufacturing and supply costs of approximately $69.1 million.
+
+Lease Obligations
+
+We are party to three operating leases for laboratory, manufacturing, and office space. These leases expire on January 31, 2028, with an option to extend for an additional year with appropriate notice; December 31, 2031, with an option to extend for an additional period of five years with appropriate notice; and on November 1, 2036, with the option to extend for two additional periods of five years each with appropriate notice. Minimum operating lease payments under these leases are $1.4 million in the remaining six months of 2026, $5.1 million in 2027, $5.0 million in 2028, $5.1 million in 2029, $5.3 million in 2030, and $24.3 million thereafter.
+
+Other Obligations and Contingencies
+
+We from time-to-time are subject to claims and litigation in the normal course of business. See Note 14 Legal Proceedings to the condensed consolidated financial statements appearing elsewhere in this Quarterly Report on Form 10-Q for further discussion of pending legal proceedings.
+
+We have an Executive Severance and Change in Control Plan which covers certain employees and requires payments if certain events, such as a change in control or termination without cause, occur.
+
+Critical Accounting Estimates
+
+We prepare our consolidated financial statements in conformity with U.S. GAAP. The preparation of these financial statements requires the use of estimates, judgments and assumptions that affect the reported amounts of assets and liabilities at the date of the financial statements and reported amounts of revenues and expenses during the periods presented. Actual results could differ from those estimates and assumptions.
+
+While we describe our significant accounting policies in Note 2 Basis of Presentation, Significant Accounting Policies and Fair Value Measurements to the condensed consolidated financial statements appearing elsewhere in this Quarterly Report on Form 10-Q, we have identified the following critical accounting estimates:
+
+Revenue Recognition
+
+Net product revenues from the sale of YUTREPIA are recorded at the transaction price, which reflects gross product sales reduced by corresponding gross-to-net (“GTN”) adjustments, including estimated discounts, government chargebacks, government rebates, specialty distributor fees, copay assistance, and returns. These GTN adjustments represent variable consideration under ASC 606 and are estimated using the expected value method or most likely amount method and are recorded when revenue is recognized on the sale of the product. GTN adjustments are based on available information including the contractual terms with customers, historical trends, industry analogs, communications with customers, and the levels of inventory remaining in the distribution channel, as well as expectations about the market for the product and anticipated introduction of competitive products, in combination with management’s informed judgments. Overall, these reserves reflect our best estimates of the amount of net cash proceeds we expect to realize from collection of current period gross sales less fees, discounts, and allowances and future estimated cash disbursements for the various GTN categories. These estimates are determined using a complex process which requires significant judgment and variances between actual and estimated amounts could have a material impact on our condensed consolidated financial statements.
+
+44
+
+Table of Contents
+
+Research and Development Expenses
+
+As part of the process of preparing our condensed consolidated financial statements, we are required to estimate our incurred expenses. This process involves reviewing quotations and contracts, identifying services that have been performed on our behalf and estimating the level of service performed and the associated cost incurred for the service when we have not yet been invoiced or otherwise notified of the actual cost. The majority of our service providers invoice us monthly in arrears for services performed or when contractual milestones are met. We make estimates of our accrued expenses as of each balance sheet date in our condensed consolidated financial statements based on facts and circumstances known to us at that time. We periodically confirm the accuracy of our estimates with the service providers and make adjustments if necessary. The significant estimates in our accrued research and development expenses are related to expenses incurred with respect to CROs, CMOs and other vendors in connection with research and development and manufacturing activities.
+
+We base our expenses related to CROs and CMOs on our estimates of the services received and efforts expended pursuant to quotations and contracts with such vendors that conduct research and development and manufacturing activities on our behalf. The financial terms of these agreements are subject to negotiation, vary from contract to contract and may result in uneven payment flows. There may be instances in which payments made to our vendors will exceed the level of services provided and result in a prepayment of the applicable research and development or manufacturing expense. In accruing service fees, we estimate the time period over which services will be performed and the level of effort to be expended in each period. If the actual timing of the performance of services or the level of effort varies from our estimate, we adjust the accrual or prepaid expense accordingly. Although we do not expect our estimates to be materially different from amounts actually incurred, our understanding of the status and timing of services performed relative to the actual status and timing of services performed may vary and could result in us reporting amounts that are too high or too low in any particular period.
+
+There have been no material changes in estimates for the periods presented within this Quarterly Report on Form 10-Q.
+
+Off-Balance Sheet Arrangements
+
+We did not have during the periods presented, and we do not currently have, any off-balance sheet arrangements, as defined in the rules and regulations of the SEC.

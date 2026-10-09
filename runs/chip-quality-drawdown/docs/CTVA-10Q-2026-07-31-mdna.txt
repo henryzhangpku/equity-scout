@@ -1,0 +1,453 @@
+Item 2.MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+
+Cautionary Statements About Forward-Looking Statements
+
+This report contains certain estimates and forward-looking statements within the meaning of Section 21E of the Securities Exchange Act of 1934, as amended, and Section 27A of the Securities Act of 1933, as amended, which are intended to be covered by the safe harbor provisions for forward-looking statements contained in the Private Securities Litigation Reform Act of 1995, and may be identified by their use of words like “plans,” “expects,” “will,” “anticipates,” “believes,” “intends,” “projects,” “estimates,” “outlook,” or other words of similar meaning. All statements that address expectations or projections about the future, including statements about Corteva’s financial results or outlook; strategy for growth; product development; regulatory approvals; market position; capital allocation strategy; liquidity; sustainability targets and initiatives; the anticipated benefits of acquisitions, restructuring actions, or cost savings initiatives; the anticipated benefits, impacts, and timing of the Proposed Separation; and the outcome of contingencies, such as litigation and environmental matters, are forward-looking statements.
+
+Forward-looking statements and other estimates are based on certain assumptions and expectations of future events which may not be accurate or realized. Forward-looking statements and other estimates also involve risks and uncertainties, many of which are beyond the company's control. While the list of factors presented below is considered representative, no such list should be considered to be a complete statement of all potential risks and uncertainties. Unlisted factors may present significant additional obstacles to the realization of forward-looking statements. Consequences of material differences in results as compared with those anticipated in the forward-looking statements could include, among other things, business disruption, operational problems, financial loss, legal liability to third parties and similar risks, any of which could have a material adverse effect on the company's business, results of operations and financial condition. Some of the important factors that could cause the company's actual results to differ materially from those projected in any such forward-looking statements include: (i) failure to obtain or maintain the necessary regulatory approvals for some of the company's products; (ii) failure to successfully develop and commercialize the company's pipeline; (iii) effect of the degree of public understanding and acceptance or perceived public acceptance of the company's biotechnology and other agricultural products; (iv) failure to comply with competition and antitrust laws; (v) effect of changes in agricultural and related policies of governments and international organizations; (vi) costs of complying with evolving regulatory requirements and the effect of actual or alleged violations of environmental laws or permit requirements; (vii) effect of climate change and unpredictable seasonal and weather factors; (viii) effect of competition in the company's industry; (ix) competitor’s establishment of an intermediary platform for distribution of the company's products; (x) risks related to recent funding and staff reductions at U.S. government agencies; (xi) risk related to geopolitical and military conflict; (xii) effect of volatility in the company's input costs; (xiii) risks related to the company's global operations; (xiv) effect of industrial espionage and other disruptions to the company's supply chain, information technology or network systems; (xv) risks related to environmental litigation and the indemnification obligations of legacy EIDP liabilities in connection with the Corteva Separation; (xvi) impact of the company's dependence on third parties with respect to certain of its raw materials or licenses and commercialization; (xvii) failure of the company's customers to pay their debts to the company, including customer financing programs; (xviii) failure to effectively manage acquisitions, divestitures, alliances, restructurings, cost savings initiatives, and other portfolio actions; (xix) failure to raise capital through the capital markets or short-term borrowings on terms acceptable to the company; (xx) increases in pension and other post-employment benefit plan funding obligations; (xxi) risks related to pandemics or epidemics; (xxii) capital markets sentiment towards sustainability matters; (xxiii) the company's intellectual property rights or defense against intellectual property claims asserted by others; (xxiv) effect of counterfeit products; (xxv) the company's dependence on intellectual property cross-license agreements; and (xxvi) risks related to Corteva’s Separation from DowDuPont; and (xxvii) risks related to Corteva’s Proposed Separation, including, but not limited to, whether the objectives of the proposed separation will be achieved; the terms, structure, benefits and costs of any action or transaction resulting from the proposed separation; the timing of any such separation or related action and whether any such separation will be consummated at all; the risk that the proposed separation could divert the attention and time of the company’s management; the risk of any unexpected costs or expenses resulting from the proposed separation process or separation itself; and the risk of any litigation as a result of, or relating to, the Proposed Separation.
+
+Additionally, there may be other risks and uncertainties that Corteva is unable to currently identify or that Corteva does not currently expect to have a material impact on its business. Where, in any forward-looking statement or other estimate, an expectation or belief as to future results or events is expressed, such expectation or belief is based on the current plans and expectations of Corteva’s management and expressed in good faith and believed to have a reasonable basis, but there can be no assurance that the expectation or belief will result or be achieved or accomplished. Corteva disclaims and does not undertake any obligation to update or revise any forward-looking statement, except as required by applicable law. A detailed discussion of some of the significant risks and uncertainties which may cause results and events to differ materially from such forward-
+
+42
+
+Table of Contents
+
+looking statements is included in the “Risk Factors” section of Corteva’s 2025 Annual Report, as modified by subsequent Quarterly Reports on Form 10-Q and Current Reports on Form 8-K.
+
+Recent Developments
+
+Proposed Separation
+
+On October 1, 2025, the company announced its intent to pursue, subject to the approval of the Board of Directors and any required regulatory approvals, its separation into two independent publicly traded companies - one for each of its Seed and Crop Protection businesses. The transaction is intended to be a tax-free spin-off for U.S. federal income tax purposes.
+
+2026 Restructuring Actions
+
+On March 15, 2026, management of the company approved a restructuring program designed to align the company’s organizational structure and geographic footprint with the operational needs of each function as the company prepares for the intended separation of its businesses (the “2026 Restructuring Actions”). The restructuring actions primarily consist of workforce reductions across commercial and functional support areas and are intended to right‑size the organization and support the future standalone operating models. The restructuring actions are expected to be substantially complete by December 2026.
+
+The 2026 Restructuring Actions are expected to contribute to the company's ongoing cost and productivity improvement efforts through achieving an estimated $115 million to $125 million of savings on a run rate basis by 2027. See Note 4 - Restructuring and Asset Related Charges - Net, to the interim Consolidated Financial Statements, for further details.
+
+Crop Protection Operations Strategy Restructuring Program
+
+On November 5, 2023, management of the company approved a plan to further optimize its Crop Protection network of manufacturing and external partners (the "Crop Protection Operations Strategy Restructuring Program"). On June 12, 2026, the company disclosed that its management recently committed to the next phase of the plan to include the intended cessation of the company's production activities at its site in Asturias, Spain. The intended cessation is subject to a consultation process with the applicable works council and union representatives at the facility. Management revisions were also made to previous estimates associated with the company's exit of its Pittsburg, California production activities. See Note 4 - Restructuring and Asset Related Charges - Net, to the interim Consolidated Financial Statements, for further details.
+
+Overview
+
+The following is a summary of results from continuing operations for the three months ended June 30, 2026:
+
+•The company reported net sales of $6,379 million, down 1 percent versus the same quarter last year, reflecting a 3 percent decrease in volume, partially offset by a 1 percent increase in price and a 1 percent favorable impact from currency.
+
+•Cost of goods sold totaled $2,718 million in the second quarter of 2026, down from $2,932 million in the second quarter of 2025, which was driven by ongoing cost and productivity actions, a reduction in net royalty expense and lower volumes.
+
+•Restructuring and asset related charges - net were $49 million in the second quarter of 2026, a decrease from $79 million in the second quarter of 2025. The charges for the three months ended June 30, 2026 were primarily comprised of severance and related benefit costs, asset related charges, decommissioning and demolition costs and contract terminations under the Crop Protection Operations Strategy Restructuring Program.
+
+•Income (loss) from continuing operations after income taxes was $1,217 million, as compared to $1,382 million in the same quarter last year.
+
+•Operating EBITDA was $2,261 million for the three months ended June 30, 2026, up from $2,164 million for the three months ended June 30, 2025, primarily driven by more favorable pricing and mix, reductions in net royalty expense, ongoing cost and productivity actions and favorable impact of currency, partially offset by lower volumes and higher research and development expenses. Refer to the company's non-GAAP financial measures for further discussion.
+
+The following is a summary of results from continuing operations for the six months ended June 30, 2026:
+
+•The company reported net sales of $11,284 million, up 4 percent versus the same period last year, reflecting a 1 percent increase in volume, a 1 percent increase in price and a 2 percent favorable impact from currency.
+
+•Cost of goods sold totaled $5,090 million in the six months ended June 30, 2026, down from $5,274 million for the six months ended June 30, 2025, which was driven by reductions in net royalty expense and ongoing cost and productivity actions, partially offset by higher volumes.
+
+43
+
+Table of Contents
+
+•Restructuring and asset related charges - net were $141 million for the six months ended June 30, 2026, an increase from $101 million for the six months ended June 30, 2025. The charges for the six months ended June 30, 2026 were primarily comprised of severance and related benefit costs under the 2026 Restructuring Actions, along with severance and related benefit costs, asset related charges, decommissioning and demolition costs and contract terminations under the Crop Protection Operations Strategy Restructuring Program.
+
+•Income (loss) from continuing operations after income taxes was $1,942 million, as compared to $2,049 million in the same period last year.
+
+•Operating EBITDA was $3,699 million for the six months ended June 30, 2026, up from $3,353 million for the six months ended June 30, 2025, primarily driven by more favorable pricing and mix, volume growth, reductions in net royalty expense, ongoing cost and productivity actions and favorable impact of currency, partially offset by higher selling, administrative and research and development expenses, including higher bad debt. Refer to the company's non-GAAP financial measures for further discussion.
+
+In addition to the financial highlights above, the following event occurred during the six months ended June 30, 2026:
+
+•The company returned approximately $740 million to shareholders during the six months ended June 30, 2026 under its previously announced share repurchase programs and through common stock dividends.
+
+Results of Operations
+
+Net Sales
+
+Net sales were $6,379 million and $6,456 million for the three months ended June 30, 2026 and 2025, respectively. The decrease was primarily driven by a 3 percent decrease in volume, partially offset by a 1 percent increase in price and a 1 percent favorable impact from currency. The decrease in volume was driven by timing shifts in North America and Brazil, partially offset by broad-based Crop Protection growth in Asia Pacific. North America volumes were impacted by the acreage shift from corn to soy as well as channel purchase timing from Crop Protection customers, while EMEA Crop Protection volumes were impacted by dry weather. The Seed pricing and mix improvement was driven by demand for top technology and increased out-licensing income, partially offset by the competitive Crop Protection pricing environment in Latin America. The favorable currency impacts were driven by the Brazilian Real and the Euro, partially offset by the Indian Rupee.
+
+Three Months Ended June 30,
+
+2026 2025
+
+Net Sales
+
+($ Millions)
+%
+Net Sales
+
+($ Millions)
+%
+
+Worldwide $ 6,379 100 % $ 6,456 100 %
+
+North America 1
+4,548 71 % 4,629 72 %
+
+EMEA 2
+730 11 % 747 12 %
+
+Latin America 679 11 % 672 10 %
+
+Asia Pacific 422 7 % 408 6 %
+
+Q2 2026 vs. Q2 2025 Percent Change Due To:
+
+Net Sales Change Price & Portfolio /
+
+($ In millions) $ % Product Mix Volume Currency Other
+
+North America 1
+$ (81) (2) % 2 % (4) % — % — %
+
+EMEA 2
+(17) (2) % 1 % (5) % 2 % — %
+
+Latin America 7 1 % (7) % — % 8 % — %
+
+Asia Pacific 14 3 % — % 8 % (5) % — %
+
+Total $ (77) (1) % 1 % (3) % 1 % — %
+
+1.Represents U.S. and Canada.
+
+2.Europe, Middle East and Africa (“EMEA”).
+
+Net sales were $11,284 million and $10,873 million for the six months ended June 30, 2026 and 2025, respectively. The increase was primarily driven by a 2 percent favorable impact from currency, a 1 percent increase in volume and a 1 percent increase in price. The favorable currency impacts were driven by the Euro and Brazilian Real, partially offset by the Turkish Lira. Volume increases were driven by demand for Crop Protection new products, partially offset by timing impacts in Latin
+
+44
+
+Table of Contents
+
+America Seed and channel purchase timing in North America Crop Protection. Favorable Seed pricing and mix was driven by demand for top technology and the strength of the portfolio, coupled with increased out-licensing income, which was partially offset by the competitive pricing environment impacting Latin America Crop Protection.
+
+Six Months Ended June 30,
+
+2026 2025
+
+Net Sales
+
+($ Millions)
+%
+Net Sales
+
+($ Millions)
+%
+
+Worldwide $ 11,284 100 % $ 10,873 100 %
+
+North America 1
+6,987 62 % 6,839 63 %
+
+EMEA 2
+2,385 21 % 2,224 21 %
+
+Latin America 1,185 11 % 1,114 10 %
+
+Asia Pacific 727 6 % 696 6 %
+
+First Half 2026 vs. First Half 2025 Percent Change Due To:
+
+Net Sales Change Price & Portfolio /
+
+($ In millions) $ % Product Mix Volume Currency Other
+
+North America 1
+$ 148 2 % 2 % — % — % — %
+
+EMEA 2
+161 7 % 2 % (1) % 6 % — %
+
+Latin America 71 6 % (5) % 2 % 9 % — %
+
+Asia Pacific 31 4 % 1 % 6 % (3) % — %
+
+Total $ 411 4 % 1 % 1 % 2 % — %
+
+1.Represents U.S. and Canada.
+
+2.Europe, Middle East and Africa (“EMEA”).
+
+Cost of Goods Sold (“COGS”)
+
+COGS was $2,718 million (43 percent of net sales) and $2,932 million (45 percent of net sales) for the three months ended June 30, 2026 and 2025, respectively, and $5,090 million (45 percent of net sales) and $5,274 million (49 percent of net sales) for the six months ended June 30, 2026 and 2025, respectively. The change in the three months ended June 30, 2026 was driven by ongoing cost and productivity actions, a reduction in net royalty expense and lower volumes. The change in the six months ended June 30, 2026 was driven by reductions in net royalty expense and ongoing cost and productivity actions, partially offset by higher volumes.
+
+Research and Development Expense (“R&D”)
+
+R&D expense was $388 million (6 percent of net sales) and $375 million (6 percent of net sales) for the three months ended June 30, 2026 and 2025, respectively, and $729 million (6 percent of net sales) and $710 million (7 percent of net sales) for the six months ended June 30, 2026 and 2025, respectively. The increase in R&D expense is in support of the company’s long-term investment plans and was primarily driven by unfavorable currency impacts and increases in salaries, contract labor and field, lab and facilities costs, partially offset by cost recoveries received from third parties.
+
+Selling, General and Administrative Expenses (“SG&A”)
+
+SG&A expenses were $1,164 million (18 percent of net sales) and $1,156 million (18 percent of net sales) for the three months ended June 30, 2026 and 2025, respectively. The change was primarily driven by unfavorable currency impacts and an increase in stock-based compensation and personnel and information technology costs, partially offset by lower bad debt expense, legal support fees, commissions and variable compensation.
+
+SG&A expenses were $2,041 million (18 percent of net sales) and $1,907 million (18 percent of net sales) for the six months ended June 30, 2026 and 2025, respectively. The change was primarily driven by unfavorable currency impacts and an increase in bad debt expense, consulting fees and personnel and information technology costs, partially offset by lower legal support fees.
+
+Amortization of Intangibles
+
+Intangible asset amortization was $194 million and $161 million for the three months ended June 30, 2026 and 2025, respectively, and $354 million and $323 million for the six months ended June 30, 2026 and 2025, respectively. The change was driven primarily by the acceleration of amortization expense related to certain trade names that were retired during the
+
+45
+
+Table of Contents
+
+second quarter of 2026. See Note 10 - Other Intangible Assets, to the interim Consolidated Financial Statements, for additional information.
+
+Restructuring and Asset Related Charges - Net
+
+Restructuring and asset related charges - net were $49 million and $79 million for the three months ended June 30, 2026 and 2025, respectively, and $141 million and $101 million for the six months ended June 30, 2026 and 2025, respectively. The charges in the second quarter of 2026, as well as the second quarter and first half of 2025, primarily consisted of severance and related benefit costs, asset related charges, decommissioning and demolition costs and contract terminations under the Crop Protection Operations Strategy Restructuring Program. The charges in the first half of 2026 also included severance and related benefit costs under the 2026 Restructuring Actions.
+
+See Note 4 - Restructuring and Asset Related Charges - Net, to the interim Consolidated Financial Statements, for additional information.
+
+Other Income (Expense) - Net
+
+Other income (expense) - net was $(115) million and $103 million for the three months ended June 30, 2026 and 2025, respectively. Higher other expense was driven by litigation settlements and higher net exchange losses, as well as the absence of the receipt of insurance proceeds related to prior significant items during the second quarter of 2025.
+
+Other income (expense) - net was $(232) million and $118 million for the six months ended June 30, 2026 and 2025, respectively. Higher other expense was driven by litigation settlements and higher net exchange losses, as well as the absence of the receipt of insurance proceeds related to prior significant items during the first half of 2025.
+
+See Note 5 - Supplementary Information, to the interim Consolidated Financial Statements, for additional information.
+
+Interest Expense
+
+Interest expense was $47 million and $52 million for the three months ended June 30, 2026 and 2025, respectively, and $83 million and $88 million for the six months ended June 30, 2026 and 2025, respectively. The decreases were driven by lower short-term borrowing rates.
+
+Provision for (Benefit from) Income Taxes on Continuing Operations
+
+The company’s provision for income taxes on continuing operations was $408 million for the three months ended June 30, 2026 on pre-tax income from continuing operations of $1,625 million, resulting in an effective tax rate of 25.1 percent. The effective tax rate was unfavorably impacted by a $50 million charge associated with the Discretionary Pension Contribution, valuation allowances on certain foreign tax credits, as well as withholding taxes on repatriation of cash held outside of the U.S. primarily from current year earnings. Those unfavorable impacts were partially offset by $9 million of net tax benefits associated with changes in deferred taxes and accruals for certain prior year tax positions.
+
+The company's provision for income taxes on continuing operations was $422 million for the three months ended June 30, 2025 on pre-tax income from continuing operations of $1,804 million, resulting in an effective tax rate of 23.4 percent. The effective tax rate was unfavorably impacted by tax impacts of certain net exchange losses recognized on the remeasurement of the net monetary asset positions which were not tax-deductible in their local jurisdictions, as well as withholding taxes on repatriation of cash held outside of the U.S. primarily from current year earnings.
+
+The company’s provision for income taxes on continuing operations was $541 million for the six months ended June 30, 2026 on pre-tax income from continuing operations of $2,483 million, resulting in an effective tax rate of 21.8 percent. The effective tax rate was unfavorably impacted by a $50 million charge associated with the Discretionary Pension Contribution, valuation allowances on certain foreign tax credits, as well as withholding taxes on repatriation of cash held outside of the U.S. primarily from current year earnings. Those unfavorable impacts were partially offset by $56 million of net tax benefits associated with changes in deferred taxes and accruals for certain prior year tax positions, as well as $31 million of net tax benefits related to intellectual property realignment.
+
+The company's provision for income taxes on continuing operations was $539 million for the six months ended June 30, 2025 on pre-tax income from continuing operations of $2,588 million, resulting in an effective tax rate of 20.8 percent. The effective tax rate was favorably impacted by a $55 million deferred tax benefit associated with a change in a legal entity’s U.S. tax characterization, as well as net tax benefits associated with changes in accruals for certain prior year tax positions. Those favorable impacts were partially offset by tax impacts of certain net exchange losses recognized on the remeasurement of the net monetary asset positions which were not tax-deductible in their local jurisdictions, as well as withholding taxes on repatriation of cash held outside of the U.S. primarily from current year earnings.
+
+46
+
+Table of Contents
+
+Income (Loss) from Discontinued Operations After Tax
+
+Income (loss) from discontinued operations after tax was $(52) million and $(54) million for the three and six months ended June 30, 2026, respectively. The result for the three and six months ended June 30, 2026 was driven by charges recognized relating to the MOU with Chemours and DuPont, comprised of litigation charges as well as PFAS environmental remediation activities, along with other environmental matters.
+
+Income (loss) from discontinued operations after tax was $(66) million and $(77) million for the three and six months ended June 30, 2025, respectively. The result for the three and six months ended June 30, 2025 was driven by charges recognized relating to the MOU with Chemours and DuPont, comprised of a litigation charge associated with the NJ Statewide Settlement as well as PFAS environmental remediation activities primarily at Chemours' Fayetteville Works facility, along with other environmental matters. These charges were partially offset by the prior year derecognition of an indemnification liability associated with the Water District Settlement Fund contribution.
+
+Refer to Note 12 - Commitments and Contingent Liabilities, to the interim Consolidated Financial Statements, for additional information.
+
+EIDP Analysis of Operations
+
+As discussed in EIDP Note 1 - Basis of Presentation, to the EIDP interim Consolidated Financial Statements, EIDP is a subsidiary of Corteva, Inc. and continues to be a reporting company, subject to the requirements of the Exchange Act. There were no differences in the components of net income on the respective Corteva and EIDP interim Consolidated Statements of Operations.
+
+47
+
+Table of Contents
+
+Recent Accounting Pronouncements
+
+See Note 2 - Recent Accounting Guidance, to the interim Consolidated Financial Statements, for a description of recent accounting pronouncements.
+
+Segment Reviews
+
+The company operates in two reportable segments: Seed and Crop Protection.
+
+Seed
+
+The company’s Seed segment is a global leader in developing and supplying commercial seed combining superior germplasm with advanced traits to produce high yield potential for farmers around the world. The segment offers seed and trait technologies that improve resistance to weather, diseases, pests and herbicides used to manage weeds. Its digital solutions provide data driven insights that assist farmer decision-making with a view to optimize product selection and, ultimately, help maximize yield and profitability. The segment competes in a wide variety of agricultural markets.
+
+Crop Protection
+
+The Crop Protection segment serves the global agricultural input industry with products that protect against weeds, insects and other pests, and disease, and that improve overall crop health both above and below ground via nitrogen management and seed-applied technologies. The segment offers crop protection solutions and digital solutions that provide farmers the tools they need to improve productivity and profitability, and help keep fields free of weeds, insects and diseases. The segment is a leader in global herbicides, insecticides, nitrogen stabilizers, pasture and range management herbicides and biologicals.
+
+Summarized below are comments on individual segment net sales and segment operating EBITDA for the three and six months ended June 30, 2026, compared with the same period in 2025. The company defines segment operating EBITDA as earnings (loss) (i.e., income (loss) from continuing operations before income taxes) before interest, depreciation, amortization, corporate expenses, non-operating benefits (costs), foreign exchange gains (losses), and net unrealized gain or loss from mark-to-market activity for certain foreign currency derivative instruments that do not qualify for hedge accounting, excluding the impact of significant items and separation costs. Non-operating benefits (costs) consists of non-operating pension and OPEB credits (costs), tax indemnification adjustments and environmental remediation and legal costs associated with legacy businesses and sites. Tax indemnification adjustments relate to changes in indemnification balances, as a result of the application of the terms of the Tax Matters Agreement, between Corteva and Dow and/or DuPont that are recorded by the company as pre-tax income or expense. See Note 17 - Segment Information, to the interim Consolidated Financial Statements, for details related to significant pre-tax benefits (charges) excluded from segment operating EBITDA. All references to prices are based on local price unless otherwise specified.
+
+A reconciliation of segment operating EBITDA to income (loss) from continuing operations after income taxes for the three and six months ended June 30, 2026 and 2025 is included in Note 17 - Segment Information, to the interim Consolidated Financial Statements.
+
+Seed Three Months Ended June 30, Six Months Ended June 30,
+
+(In millions) 2026 2025 2026 2025
+
+Net sales $ 4,532 $ 4,537 $ 7,555 $ 7,244
+
+Segment operating EBITDA
+$ 1,966 $ 1,863 $ 3,000 $ 2,705
+
+Seed Q2 2026 vs. Q2 2025 Percent Change Due To:
+
+Net Sales Change Price & Portfolio /
+
+($ In millions) $ % Product Mix Volume Currency Other
+
+North America $ 1 — % 2 % (2) % — % — %
+
+EMEA (10) (4) % 3 % (7) % — % — %
+
+Latin America 6 4 % 7 % (12) % 9 % — %
+
+Asia Pacific (2) (1) % 8 % (1) % (8) % — %
+
+Total $ (5) — % 3 % (3) % — % — %
+
+48
+
+Table of Contents
+
+Seed Q2 2026 vs. Q2 2025 Percent Change Due To:
+
+Net Sales Change Price & Portfolio /
+
+($ In millions) $ % Product Mix Volume Currency Other
+
+Corn $ (93) (3) % 4 % (7) % — % — %
+
+Soybean 61 5 % (1) % 6 % — % — %
+
+Other oilseeds 42 23 % 11 % 11 % 1 % — %
+
+Other (15) (11) % 2 % (9) % (4) % — %
+
+Total $ (5) — % 3 % (3) % — % — %
+
+Seed First Half 2026 vs. First Half 2025 Percent Change Due To:
+
+Net Sales Change Price & Portfolio /
+
+($ In millions) $ % Product Mix Volume Currency Other
+
+North America $ 174 3 % 2 % 1 % — % — %
+
+EMEA 92 8 % 4 % (1) % 5 % — %
+
+Latin America 45 13 % 8 % (6) % 11 % — %
+
+Asia Pacific — — % 8 % (2) % (6) % — %
+
+Total $ 311 4 % 3 % — % 1 % — %
+
+Seed First Half 2026 vs. First Half 2025 Percent Change Due To:
+
+Net Sales Change Price & Portfolio /
+
+($ In millions) $ % Product Mix Volume Currency Other
+
+Corn $ 211 4 % 4 % (1) % 1 % — %
+
+Soybean 62 4 % — % 4 % — % — %
+
+Other oilseeds 64 16 % 8 % 5 % 3 % — %
+
+Other (26) (11) % (3) % (6) % (2) % — %
+
+Total $ 311 4 % 3 % — % 1 % — %
+
+Seed
+
+Seed net sales were $4,532 million in the second quarter of 2026, flat with $4,537 million in the second quarter of 2025. The flat sales over the prior period was driven by a 3 percent increase in price, partially offset by a 3 percent decrease in volume. The increase in pricing and mix was driven by demand for top technology and increased out-licensing income, while the decline in volume was driven by timing shifts in North America and Brazil, coupled with the acreage shift from corn to soybean in North America and corn to sunflower in EMEA.
+
+Segment operating EBITDA was $1,966 million in the second quarter of 2026, up 6 percent from $1,863 million in second quarter of 2025. The improvement was driven by more favorable pricing and mix, reductions in net royalty expense, and ongoing cost and productivity actions, which more than offset lower volumes, increased research and development expense and functional cost. Segment operating EBITDA margin improved by approximately 230 basis points versus the prior-year period.
+
+Seed net sales were $7,555 million in the first half of 2026, up 4 percent from $7,244 million in the first half of quarter of 2025. The sales increase over the prior period was driven by a 3 percent increase in price and a 1 percent favorable impact from currency. Pricing and mix gains in all regions, led by North America, demonstrate demand for top technology and the strength of the portfolio, coupled with increased out-licensing income. Volumes were flat, as higher soybean area in North America was offset by lower corn area in North America and timing shifts in Latin America. Favorable currency impacts were led by the Euro and the Brazilian Real, partially offset by the Turkish Lira.
+
+Segment operating EBITDA was $3,000 million in the first half of 2026, up 11 percent from $2,705 million in first half of 2025. The improvement was driven by more favorable pricing and mix, reductions in net royalty expense and ongoing cost and productivity actions, all of which more than offset increased selling, administrative and research and development expenses, including higher bad debt. Segment operating EBITDA margin improved by approximately 235 basis points versus the prior-year period.
+
+49
+
+Table of Contents
+
+Crop Protection Three Months Ended June 30, Six Months Ended June 30,
+
+(In millions) 2026 2025 2026 2025
+
+Net sales $ 1,847 $ 1,919 $ 3,729 $ 3,629
+
+Segment Operating EBITDA
+$ 342 $ 334 $ 776 $ 711
+
+Crop Protection Q2 2026 vs. Q2 2025 Percent Change Due To:
+
+Net Sales Change Price & Portfolio /
+
+($ In millions) $ % Product Mix Volume Currency Other
+
+North America $ (82) (12) % — % (12) % — % — %
+
+EMEA (7) (2) % (1) % (3) % 2 % — %
+
+Latin America 1 — % (10) % 3 % 7 % — %
+
+Asia Pacific 16 6 % (5) % 13 % (2) % — %
+
+Total $ (72) (4) % (4) % (2) % 2 % — %
+
+Crop Protection Q2 2026 vs. Q2 2025 Percent Change Due To:
+
+Net Sales Change Price & Portfolio /
+
+($ In millions) $ % Product Mix Volume Currency Other
+
+Herbicides $ (63) (6) % (2) % (7) % 3 % — %
+
+Insecticides (37) (8) % (6) % (3) % 1 % — %
+
+Fungicides (79) (23) % (4) % (21) % 2 % — %
+
+Biologicals (11) (11) % (8) % (10) % 7 % — %
+
+Other 118 241 % (18) % 238 % 21 % — %
+
+Total $ (72) (4) % (4) % (2) % 2 % — %
+
+Crop Protection First Half 2026 vs. First Half 2025 Percent Change Due To:
+
+Net Sales Change Price & Portfolio /
+
+($ In millions) $ % Product Mix Volume Currency Other
+
+North America $ (26) (2) % — % (3) % 1 % — %
+
+EMEA 69 6 % (1) % — % 7 % — %
+
+Latin America 26 3 % (10) % 5 % 8 % — %
+
+Asia Pacific 31 7 % (4) % 11 % — % — %
+
+Total $ 100 3 % (3) % 2 % 4 % — %
+
+Crop Protection First Half 2026 vs. First Half 2025 Percent Change Due To:
+
+Net Sales Change Price & Portfolio /
+
+($ In millions) $ % Product Mix Volume Currency Other
+
+Herbicides $ 104 6 % (2) % 3 % 5 % — %
+
+Insecticides 4 1 % (5) % 3 % 3 % — %
+
+Fungicides (49) (8) % (3) % (10) % 5 % — %
+
+Biologicals (25) (14) % (6) % (13) % 5 % — %
+
+Other 66 38 % (7) % 41 % 4 % — %
+
+Total $ 100 3 % (3) % 2 % 4 % — %
+
+Crop Protection
+
+Crop Protection net sales were $1,847 million in the second quarter of 2026, down 4 percent from $1,919 million in the second quarter of 2025. The sales decrease over the prior period was driven by a 4 percent decrease in price and a 2 percent decrease in volume, partially offset by a 2 percent favorable impact from currency. The price decline was primarily due to the competitive pricing environment in Latin America. The decrease in volume was driven primarily by channel purchase timing in North America, coupled with dry weather in EMEA, partially offset by broad-based volume growth in Asia Pacific. Favorable currency impacts were led by the Brazilian Real and the Euro.
+
+50
+
+Table of Contents
+
+Segment operating EBITDA was $342 million in the second quarter of 2026, up 2 percent from $334 million in the second quarter of 2025. Ongoing cost and productivity actions and favorable currency impacts more than offset the unfavorable impact of volume and Latin America price pressure. Segment operating EBITDA margin improved by approximately 110 basis points versus the prior-year period.
+
+Crop Protection net sales were $3,729 million in the first half of 2026, up 3 percent from $3,629 million in the first half of 2025. The sales increase over the prior period was driven by a 4 percent favorable impact from currency and a 2 percent increase in volume, partially offset by a 3 percent decrease in price. Favorable currency impacts were led by the Euro and Brazilian Real. The increase in volume was driven by demand for new products, partially offset by channel purchase timing in North America. The price decline was primarily due to market dynamics in Latin America.
+
+Segment operating EBITDA was $776 million in the first half of 2026, up 9 percent from $711 million in the first half of 2025. Ongoing cost and productivity actions, favorable currency impacts and volume growth more than offset the unfavorable impact of Latin America price pressure and higher selling and administrative expenses. Segment operating EBITDA margin improved by approximately 120 basis points versus the prior-year period.
+
+Non-GAAP Financial Measures
+
+The company presents certain financial measures that do not conform to U.S. GAAP and are considered non-GAAP measures. These measures include Operating EBITDA and operating earnings (loss) per share. Management uses these measures internally for planning and forecasting, including allocating resources and evaluating incentive compensation. Management believes that these non-GAAP measures best reflect the ongoing performance of the company during the periods presented and provide more relevant and meaningful information to investors as they provide insight with respect to ongoing operating results of the company and a more useful comparison of year over year results. These non-GAAP measures supplement the company’s U.S. GAAP disclosures and should not be viewed as an alternative to U.S. GAAP measures of performance. Furthermore, such non-GAAP measures may not be consistent with similar measures provided or used by other companies. Reconciliations for these non-GAAP measures to U.S. GAAP are provided below.
+
+Operating EBITDA is defined as earnings (loss) (i.e., income (loss) from continuing operations before income taxes) before interest, depreciation, amortization, non-operating benefits (costs), foreign exchange gains (losses), and net unrealized gain or loss from mark-to-market activity for certain foreign currency derivative instruments that do not qualify for hedge accounting, excluding the impact of significant items and separation costs. Non-operating benefits (costs) consists of non-operating pension and OPEB credits (costs), tax indemnification adjustments and environmental remediation and legal costs associated with legacy businesses and sites. Tax indemnification adjustments relate to changes in indemnification balances, as a result of the application of the terms of the Tax Matters Agreement, between Corteva and Dow and/or DuPont that are recorded by the company as pre-tax income or expense. Operating earnings (loss) per share is defined as “earnings (loss) per common share from continuing operations - diluted” excluding the after-tax impact of significant items, the after-tax impact of separation costs, the after-tax impact of non-operating benefits (costs), the after-tax impact of amortization expense associated with intangible assets existing as of the Corteva Separation from DowDuPont, and the after-tax impact of net unrealized gain or loss from mark-to-market activity for certain foreign currency derivative instruments that do not qualify for hedge accounting. Although amortization of the company's intangible assets is excluded from these non-GAAP measures, management believes it is important for investors to understand that such intangible assets contribute to revenue generation. Amortization of intangible assets that relate to past acquisitions will recur in future periods until such intangible assets have been fully amortized. Any future acquisitions may result in amortization of additional intangible assets. Net unrealized gain or loss from mark-to-market activity for certain foreign currency derivative instruments that do not qualify for hedge accounting represents the non-cash net gain (loss) from changes in fair value of certain undesignated foreign currency derivative contracts. Upon settlement, which is within the same calendar year of execution of the contract, the realized gain (loss) from the changes in fair value of the non-qualified foreign currency derivative contracts will be reported in the relevant non-GAAP financial measures, allowing quarterly results to reflect the economic effects of the foreign currency derivative contracts without the resulting unrealized mark to fair 
