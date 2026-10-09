@@ -1,0 +1,7 @@
+.venv
+.cache
+.git
+.pytest_cache
+**/__pycache__
+runs/live
+docs/screenshot*.png
