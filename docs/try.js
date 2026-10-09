@@ -1,8 +1,7 @@
-/* "Try it": ask the hosted API in plain English, click an example, or (Advanced) build a spec / bring your own key.
+/* "Try it": ask the hosted API in plain English, click an example, or (Advanced) build a spec.
  *
  * Examples and Advanced run entirely in the page on the shipped snapshot, which loads only when first needed.
- * Bring-your-own-key: the key lives in a JS variable for this page only, is never stored, and is sent only to
- * api.deepseek.com (which allows browser CORS). The hosted API base URL comes from config.js.
+ * The hosted API base URL comes from config.js; keys live only on the server.
  */
 (function () {
   "use strict";
@@ -10,7 +9,6 @@
   var SNAP_FILE = "data/snapshot-2026-10-08.js";
   var API = (window.SCOUT_API_BASE || "").replace(/\/+$/, "");
   var S = null, SNAP = null, loading = null, apiLive = false, health = null;
-  var apiKey = "";                // memory only
   var root = document.getElementById("try-body");
   var adv = document.getElementById("advanced");
   var CHIPS = window.SCOUT_CHIPS || [];
@@ -65,8 +63,7 @@
   }
   function askMsg(html) { byId("ask-msg").innerHTML = html; }
   function offlineNote() {
-    return "Live analysis is offline right now, so plain-English questions cannot be answered. Pick an example above, or open " +
-      "<em>Advanced</em> to build a screen or use your own DeepSeek key.";
+    return "Live analysis is offline right now. Pick an example above, or open <em>Advanced</em> to build a screen yourself.";
   }
   function checkApi() {
     if (!API) { pill(false, "Snapshot (offline)"); askMsg(offlineNote()); return; }
@@ -189,7 +186,7 @@
       ((window.SCOUT_CHIP_EX || {})[id] || []).forEach(function (ex) { exs[ex.symbol] = ex; });
       renderResults({ spec: v.spec, funnel: res.funnel, rows: res.rows, nRanked: res.n, topN: v.spec.top_n, cols: res.cols,
         note: "<strong>Example:</strong> “" + esc(c.observation) + "”<br>Snapshot as of " + esc(S.data.last_price_date) +
-          " close, screened in your browser. Explanations were generated on " + esc(c.generated) + " (UTC) by the local app (live SEC filings, news and DeepSeek).",
+          " close, screened in your browser. Explanations were generated on " + esc(c.generated) + " (UTC) from live SEC filings and news.",
         explanations: exs });
       byId("t-out").scrollIntoView({ behavior: "smooth", block: "start" });
     });
@@ -227,16 +224,8 @@
     var opts = runs.map(function (r) { return '<option value="run:' + esc(r.id) + '">Recorded run: ' + esc(r.observation.slice(0, 60)) + "…</option>"; }).join("") +
       CHIPS.map(function (c) { return '<option value="chip:' + esc(c.id) + '">Example: ' + esc(c.label) + "</option>"; }).join("");
     root.innerHTML =
-      '<p class="label-note"><strong>Snapshot as of ' + esc(S.data.last_price_date) + ' close; explanations need the local app (SEC documents can’t be fetched from a browser).</strong> ' +
-      esc(S.data.n_companies) + " companies.</p>" +
-      '<div class="subpanel"><h3>Translate with your own DeepSeek key</h3>' +
-      '<textarea id="t-obs" class="prose" rows="2" placeholder="e.g. Small caps under $2B with revenue growth above 25%, positive free cash flow, and RSI below 40"></textarea>' +
-      '<div class="row"><input id="t-key" type="password" autocomplete="off" spellcheck="false" placeholder="DeepSeek API key (kept in memory only)" style="flex:1 1 220px">' +
-      '<button id="t-translate">Translate</button><button id="t-forget" class="ghost">Forget key</button></div>' +
-      '<p class="meta">The key stays in this page’s memory and is sent only to api.deepseek.com; it is never stored or sent anywhere else. ' +
-      "The model (" + esc(S.model) + ") only fills the screen below; nothing runs until you press Run.</p>" +
-      '<div id="t-status" class="meta"></div></div>' +
-      '<div class="subpanel"><h3>Build the screen (allowed fields only)</h3>' +
+      '<p class="label-note">Data as of the ' + esc(S.data.last_price_date) + ' close, ' + esc(S.data.n_companies) + ' companies. The screen runs in your browser.</p>' +
+      '<div class="subpanel"><h3>Build the screen (allowed fields only)</h3><div id="t-status" class="meta"></div>' +
       '<div class="row"><select id="t-template"><option value="">Start from…</option>' + opts + '<option value="__blank">Blank example</option></select></div>' +
       '<div id="t-form"></div>' +
       '<details><summary>Edit as JSON</summary><textarea id="t-json" rows="14" spellcheck="false"></textarea>' +
@@ -254,8 +243,6 @@
       catch (e) { showOut('<div class="panel refusal"><strong>Not valid JSON:</strong> ' + esc(e.message) + "</div>"); }
     };
     byId("t-run").onclick = runAdvanced;
-    byId("t-translate").onclick = translate;
-    byId("t-forget").onclick = function () { apiKey = ""; byId("t-key").value = ""; status("Key forgotten."); };
     setSpec(CHIPS.length ? clone(CHIPS[0].spec) : runs.length ? clone(runs[0].spec) : blankSpec());
   }
 
@@ -416,67 +403,10 @@
     var res = screen(v.spec), exs = {};
     res.rows.slice(0, v.spec.top_n).forEach(function (r) { if (cached[r.symbol]) exs[r.symbol] = cached[r.symbol].ex; });
     renderResults({ spec: v.spec, funnel: res.funnel, rows: res.rows, nRanked: res.n, topN: v.spec.top_n, cols: res.cols,
-      note: "<strong>Snapshot as of " + esc(S.data.last_price_date) + " close; explanations need the local app (SEC documents can’t be fetched from a browser).</strong> Screened in your browser.",
-      exNote: "Where a name already has an explanation from a recorded run it is shown; it was written for that run’s screen, not this one. Run this screen in the local app (<code>uv run scout serve</code>) for fresh, cited explanations.",
+      note: "<strong>Data as of the " + esc(S.data.last_price_date) + " close.</strong> Screened in your browser.",
+      exNote: "Where a name already has an explanation from a recorded run it is shown; it was written for that run’s screen, not this one. For fresh, cited explanations, describe this screen in <em>Ask your own question</em>.",
       explanations: exs, missingNote: "No recorded explanation for this name." });
     byId("t-out").scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-
-  // ---------- bring-your-own-key translation ----------
-  function callModel(messages, signal) {
-    return fetch("https://api.deepseek.com/chat/completions", {
-      method: "POST", signal: signal,
-      headers: { "Authorization": "Bearer " + apiKey, "Content-Type": "application/json" },
-      body: JSON.stringify({ model: S.model, messages: messages, temperature: 0, max_tokens: 8000,
-                             response_format: { type: "json_object" } })
-    }).then(function (r) {
-      if (!r.ok) return r.text().then(function (t) { throw new Error("DeepSeek HTTP " + r.status + ": " + t.slice(0, 200)); });
-      return r.json();
-    }).then(function (j) { return (j.choices[0].message.content || ""); });
-  }
-  function parseModelJson(t) {
-    t = t.trim();
-    if (t.indexOf("```") === 0) t = t.split("\n").slice(1).join("\n").replace(/```\s*$/, "");
-    return JSON.parse(t);
-  }
-
-  function translate() {
-    var obs = byId("t-obs").value.trim();
-    var k = byId("t-key").value.trim();
-    if (k) { apiKey = k; byId("t-key").value = ""; byId("t-key").placeholder = "key held in memory (Forget key to clear)"; }
-    if (!obs) { status("Write an observation first."); return; }
-    if (!apiKey) { status("Paste a DeepSeek API key, or skip this and edit the screen directly."); return; }
-    var ctrl = new AbortController(), t0 = Date.now();
-    var timer = setInterval(function () { status("Asking " + esc(S.model) + "… " + Math.round((Date.now() - t0) / 1000) + " s (reasoning models take 10-60 s)"); }, 500);
-    var timeout = setTimeout(function () { ctrl.abort(); }, 150000);
-    var btn = byId("t-translate"); btn.disabled = true;
-    var messages = [{ role: "system", content: S.translate_system_prompt }, { role: "user", content: obs }];
-    var attempt = function (n) {
-      return callModel(messages, ctrl.signal).then(function (raw) {
-        var d, problems;
-        try { d = parseModelJson(raw); } catch (e) { problems = ["not valid JSON: " + e.message]; }
-        if (d && typeof d === "object" && !Array.isArray(d)) d.observation = obs;
-        if (!problems) { var v = ScoutCore.validate(d, S.short_interest_available); if (v.ok) return { spec: v.spec, rounds: n }; problems = v.problems; }
-        if (n >= 1) { var err = new Error("the model did not produce a valid spec after a correction round"); err.problems = problems; err.raw = d; throw err; }
-        messages = messages.concat([{ role: "assistant", content: raw }, { role: "user", content:
-          "The screener refused that spec:\n- " + problems.join("\n- ") + "\nReturn a corrected JSON spec. Move anything you cannot express into 'unmapped'." }]);
-        return attempt(n + 1);
-      });
-    };
-    attempt(0).then(function (r) {
-      setSpec(r.spec);
-      status("Proposed by the model" + (r.rounds ? " after one correction round" : "") + " and accepted by the checks. Review it below, then press <strong>Check and run</strong>." +
-        (r.spec.unmapped.length ? " Not screened: " + r.spec.unmapped.map(function (u) { return "“" + esc(u.text) + "”"; }).join(", ") + "." : ""));
-      byId("t-form").scrollIntoView({ behavior: "smooth", block: "start" });
-    }).catch(function (e) {
-      var msg = e.name === "AbortError" ? "Timed out after 150 s." : esc(e.message);
-      if (e.problems) {
-        msg += "<ul>" + e.problems.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul>";
-        if (e.raw) setSpec(e.raw);
-        msg += "The refused spec is loaded below so you can fix it by hand.";
-      }
-      status('<span class="err">' + msg + "</span>");
-    }).then(function () { clearInterval(timer); clearTimeout(timeout); btn.disabled = false; });
   }
 
   // ---------- boot ----------
