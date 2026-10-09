@@ -108,6 +108,28 @@ def export() -> None:
                    encoding="utf-8", newline="\n")
     print(f"wrote {dst} ({len(out)} runs)")
     export_try()
+    export_backtests()
+
+
+def export_backtests() -> None:
+    """Saved backtests for every recorded run and example, so the static site can show them instantly."""
+    from .backtest import load_panels, run
+    from .panels import PANEL_DIR, PANEL_FILE
+    from .spec import validate
+    if not (PANEL_DIR / PANEL_FILE).exists():
+        print("skip backtests: no panels (run scout build-panels)")
+        return
+    P = load_panels()
+    out = {}
+    for name in SITE_RUNS + [c for c, _ in SITE_CHIPS]:
+        p = RUNS / name / "run.json"
+        if p.exists():
+            out[name] = run(validate(json.loads(p.read_text(encoding="utf-8"))["spec"]), P)
+    dst = ROOT / "docs" / "data" / "backtests.js"
+    dst.write_text("window.SCOUT_BACKTESTS = " + json.dumps(out, separators=(",", ":"), allow_nan=False) + ";\n",
+                   encoding="utf-8", newline="\n")
+    for k, v in out.items():
+        print(f"  backtest {k}: {v['verdict']}")
 
 
 # ---------- "Try your own": schema and snapshot for the browser ----------

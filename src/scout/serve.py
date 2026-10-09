@@ -71,6 +71,8 @@ class HostedConfig:
     allowed_origins: tuple = DEFAULT_ORIGINS
     max_observation: int = 500
     max_explain: int = 5
+    backtest_per_ip_per_hour: int = 20
+    backtest_daily_cap: int = 400
 
     @classmethod
     def from_env(cls) -> "HostedConfig":
@@ -80,6 +82,8 @@ class HostedConfig:
             daily_run_cap=_env_int("SCOUT_DAILY_RUN_CAP", 40),
             per_ip_per_hour=_env_int("SCOUT_PER_IP_PER_HOUR", 5),
             kill=os.environ.get("SCOUT_KILL") == "1",
+            backtest_per_ip_per_hour=_env_int("SCOUT_BACKTEST_PER_IP_PER_HOUR", 20),
+            backtest_daily_cap=_env_int("SCOUT_BACKTEST_DAILY_CAP", 400),
             allowed_origins=tuple(o.strip().rstrip("/") for o in origins.split(",") if o.strip()) if origins
             else DEFAULT_ORIGINS,
         )
@@ -106,12 +110,14 @@ class Guard:
         self.translations_today = 0
         self.ip_runs: dict[str, deque] = defaultdict(deque)
         self.ip_tr: dict[str, deque] = defaultdict(deque)
+        self.ip_bt: dict[str, deque] = defaultdict(deque)
+        self.backtests_today = 0
         self.active: dict[str, str] = {}   # ip_hash -> job id
 
     def _roll(self) -> None:
         today = datetime.now(timezone.utc).date()
         if today != self.day:
-            self.day, self.runs_today, self.translations_today = today, 0, 0
+            self.day, self.runs_today, self.translations_today, self.backtests_today = today, 0, 0, 0
 
     @staticmethod
     def _recent(q: deque, now: float) -> int:
@@ -128,7 +134,14 @@ class Guard:
         now = time.time()
         with self.lock:
             self._roll()
-            if kind == "run":
+            if kind == "backtest":
+                if self.backtests_today >= self.cfg.backtest_daily_cap:
+                    return "Today's live backtests are used up. The examples still show their saved backtests."
+                if self._recent(self.ip_bt[ip], now) >= self.cfg.backtest_per_ip_per_hour:
+                    return f"You have run {self.cfg.backtest_per_ip_per_hour} backtests in the last hour. Please try again later."
+                self.backtests_today += 1
+                self.ip_bt[ip].append(now)
+            elif kind == "run":
                 if self.runs_today >= self.cfg.daily_run_cap:
                     return "Today's live analyses are used up. The one-click examples still work; live runs reset at midnight UTC."
                 if self._recent(self.ip_runs[ip], now) >= self.cfg.per_ip_per_hour:
@@ -223,6 +236,7 @@ class App:
         if self.live_dir is None:
             self.live_dir = Path(tempfile.mkdtemp(prefix="scout-runs-")) if self.cfg.hosted else RUNS / "live"
         self.guard = Guard(self.cfg)
+        self.bt_lock = threading.Lock()
         self.salt = os.environ.get("SCOUT_LOG_SALT") or pysecrets.token_hex(16)
         self.log_stream = self.log_stream or sys.stdout
 
@@ -263,7 +277,16 @@ class App:
                 "last_price_date": self.manifest.get("last_price_date"), "n_companies": self.manifest.get("n_companies"),
                 "live": self.live_available() and not self.cfg.kill, "killed": self.cfg.kill,
                 "model": PROVIDERS["deepseek"]["model"], "max_explain": self.cfg.max_explain,
-                "max_observation": self.cfg.max_observation, "remaining": self.guard.remaining(ip)}
+                "max_observation": self.cfg.max_observation, "remaining": self.guard.remaining(ip),
+                "backtest": self.backtest_info()}
+
+    def backtest_info(self) -> dict:
+        from .panels import PANEL_DIR
+        meta = PANEL_DIR / "panels.json"
+        if not (PANEL_DIR / "panels.npz").exists() or not meta.exists():
+            return {"available": False}
+        m = json.loads(meta.read_text())
+        return {"available": True, "first": m["dates"][0], "last": m["dates"][-1], "n_rebalances": m["n_rebalances"]}
 
     def status(self) -> dict:
         return {"as_of": self.as_of, "data": {k: self.manifest.get(k) for k in
@@ -529,6 +552,20 @@ def make_handler(app: App):
                         msg = (first or {}).get("data", {}).get("message", GENERIC_ERROR)
                         return self._json(502, {"ok": False, "error": msg, "job": job.id})
                     return self._json(200, _screen_payload(first["data"], job, cfg.hosted))
+                if path == "/api/backtest":
+                    spec = validate(body.get("spec"), short_interest_available=app.si_ok())
+                    if not app.backtest_info()["available"]:
+                        return self._json(503, {"ok": False, "error": "Backtest data is not available on this server."})
+                    why = app.guard.check(ip, "backtest")
+                    if why:
+                        app.log("backtest_limited", ip=ip)
+                        return self._json(429 if not cfg.kill else 503, {"ok": False, "limited": True, "error": why})
+                    from .backtest import run as run_backtest
+                    t0 = time.time()
+                    with app.bt_lock:  # one backtest at a time keeps CPU predictable on a small instance
+                        res = run_backtest(spec)
+                    app.log("backtest", ip=ip, seconds=round(time.time() - t0, 1), verdict=res["verdict"])
+                    return self._json(200, {"ok": True, **res})
                 if path == "/api/replay":
                     if cfg.hosted:
                         return self._json(404, {"ok": False, "error": "not available on the hosted service"})

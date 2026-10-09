@@ -180,6 +180,36 @@ def cmd_track(a) -> None:
             print(f"    #{p['rank']} {p['symbol']:<6} entry {p['entry_close']:.2f}  {f(p['return'])}")
 
 
+def cmd_build_panels(a) -> None:
+    from .panels import build
+    build(start=a.start, as_of=a.as_of or _latest_snapshot())
+
+
+def cmd_backtest(a) -> None:
+    from .backtest import run
+    if a.target.endswith(".json") and Path(a.target).is_file() and "run.json" not in a.target:
+        d = json.loads(Path(a.target).read_text(encoding="utf-8"))
+    else:
+        d = json.loads((Path(a.target) / "run.json").read_text(encoding="utf-8"))["spec"]
+    spec = validate(d)
+    r = run(spec, cost_bps=a.cost_bps, top_n=a.top)
+    p, st = r["params"], r["stats"]
+    f = lambda v: "n/a" if v is None else f"{v * 100:+.1f}%"
+    print(spec.observation)
+    print(f"{p['first']} .. {p['last']},{p['n_months']} monthly periods, top {p['top_n']}, "
+          f"{p['cost_bps_per_side']:g} bps per side")
+    for k in ("strategy", "universe", "spy"):
+        x = st[k]
+        sharpe = "n/a" if x["sharpe"] is None else f"{x['sharpe']:.2f}"
+        print(f"  {k:<9} total {f(x['total'])}  CAGR {f(x['cagr'])}  vol {f(x['vol'])}  "
+              f"Sharpe {sharpe}  maxDD {f(x['max_drawdown'])}")
+    print(f"  hit rate vs SPY {f(st['hit_rate_vs_spy'])}, avg names {st['avg_names']:.1f}, "
+          f"months with too few names {st['months_too_few']}")
+    print(f"VERDICT: {r['verdict']}")
+    for g in r["gates"]:
+        print(f"  [{'pass' if g['pass'] else 'FAIL'}] {g['label']}")
+
+
 def cmd_serve(a) -> None:
     from .serve import serve
     serve(port=a.port, host=a.host, offline=a.offline, as_of=a.as_of, open_browser=not a.no_browser)
@@ -212,6 +242,13 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--as-of", required=True, help="YYYY-MM-DD, or 'today' for the latest closed session (cron-friendly)")
     sub.add_parser("site")
     sub.add_parser("track")
+    p = sub.add_parser("build-panels", help="point-in-time monthly panels for backtests")
+    p.add_argument("--start", default="2023-01-01")
+    p.add_argument("--as-of")
+    p = sub.add_parser("backtest", help="backtest a recorded run's spec (runs/<run>) or a spec JSON file")
+    p.add_argument("target")
+    p.add_argument("--cost-bps", type=float, default=10.0)
+    p.add_argument("--top", type=int)
     p = sub.add_parser("serve", help="local web app for live demos")
     p.add_argument("--port", type=int, help="default: $PORT, else 8765")
     p.add_argument("--host", help="default: $HOST, else 0.0.0.0 when SCOUT_HOSTED=1, else 127.0.0.1")
@@ -220,7 +257,7 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--no-browser", action="store_true")
     a = ap.parse_args(argv)
     {"run": cmd_run, "spec": cmd_spec, "replay": cmd_replay, "build": cmd_build, "site": cmd_site,
-     "track": cmd_track, "serve": cmd_serve}[a.cmd](a)
+     "track": cmd_track, "serve": cmd_serve, "build-panels": cmd_build_panels, "backtest": cmd_backtest}[a.cmd](a)
 
 
 if __name__ == "__main__":

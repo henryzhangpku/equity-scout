@@ -145,6 +145,10 @@
       es.close(); es = null; stages("done");
       status("Done in " + lastT + " s. Saved to " + esc(d.run_dir) + ".");
       $("record-box").hidden = !d.recordable;
+      if (spec) {
+        var bp = document.createElement("div"); bp.className = "panel"; $("out").appendChild(bp);
+        U.mountBacktest(bp, { key: null, spec: spec, api: "" });
+      }
     });
     on("error", function (d) { es.close(); es = null; fail(d.message, d.hint); });
     es.onerror = function () { if (es) { es.close(); es = null; fail("Lost the connection to the local server."); } };
