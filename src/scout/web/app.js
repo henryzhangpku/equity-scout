@@ -120,7 +120,8 @@
       $("o-funnel").innerHTML = U.funnelHtml(d.funnel, "How the list narrowed (computed by code, snapshot as of " + d.as_of + ")", spec);
       var sp = spec || { conditions: [], rank: [] };
       var cols = d.ranked.length ? U.tableColumns(sp).filter(function (c) { return c in d.ranked[0] || c === "rank"; }) : [];
-      $("o-table").innerHTML = U.tableHtml(cols, d.ranked.slice(0, 25), d.top_n, d.ranked.length);
+      $("o-table").innerHTML = U.tableHtml(cols, d.ranked.slice(0, 25), d.top_n, d.ranked.length) +
+        (d.sector_breakdown && d.sector_breakdown.length ? '<div style="margin-top:20px">' + U.sectorHtml(d.sector_breakdown, "Survivors by sector") + "</div>" : "");
       if (d.top_n && d.ranked.length) {
         $("o-ex").hidden = false;
         $("cards").innerHTML = d.ranked.slice(0, d.top_n).map(function (r) {

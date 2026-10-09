@@ -102,18 +102,29 @@ def replay(run_dir: Path) -> tuple[dict, dict]:
     the run folder, features from the committed snapshot. Returns (old, new)."""
     old = json.loads((run_dir / "run.json").read_text(encoding="utf-8"))
     llm = LLM(provider=old["llm"]["provider"], model=old["llm"]["model"], offline=True)
-    spec, attempts = translate(old["observation"], llm)
+    pv = old.get("prompt_version", 1)  # runs recorded before prompt versioning used version 1
+    spec, attempts = translate(old["observation"], llm, prompt_version=pv)
     tmp = run_dir.parent / f".replay-{run_dir.name}"
     try:
         new = execute(spec, attempts, old["as_of"], llm, docs_source=RecordedDocuments(run_dir),
-                      news_source=None, run_dir=tmp, top_n=old["top_n"], log=lambda *_: None).record
+                      news_source=None, run_dir=tmp, top_n=old["top_n"], log=lambda *_: None,
+                      prompt_version=pv).record
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     return old, new
 
 
+DERIVED_TOP = ("generated_at", "sector_breakdown", "sector_mapping_version")
+DERIVED_ROW = ("sector", "industry_group")
+
+
 def comparable(rec: dict) -> dict:
-    return {k: v for k, v in rec.items() if k not in ("generated_at",)}
+    """A run record minus timestamps and display-only fields derived from the versioned sector
+    mapping (added after some runs were recorded); everything the model saw or code computed stays."""
+    out = {k: v for k, v in rec.items() if k not in DERIVED_TOP}
+    out["prompt_version"] = rec.get("prompt_version", 1)
+    out["ranked"] = [{k: v for k, v in r.items() if k not in DERIVED_ROW} for r in rec.get("ranked", [])]
+    return out
 
 
 def cmd_replay(a) -> None:

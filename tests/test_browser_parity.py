@@ -125,3 +125,46 @@ def test_number_formatting_parity():
              ("mom_3m", 0.125), ("mom_3m", -0.0049), ("fcf_ttm", 0), ("close", 5)]
     js = node({"format": [list(c) for c in cases]})["formats"]
     assert js == [_fmt_value(f, v) for f, v in cases]
+
+
+def test_sector_classification_parity(browser_frame):
+    from scout.sectors import classify
+    pairs = [[None if s != s else float(s), y] for s, y in zip(browser_frame["sic"], browser_frame["symbol"])]
+    pairs += [[3674.0, "XYZ"], [None, "GOOGL"], [7372.0, "EA"], [9995.0, "ZZZ"], [6324.0, None]]
+    js = node({"classify": pairs})["classes"]
+    py = [list(classify(s, y)) for s, y in pairs]
+    assert js == py
+
+
+SECTOR_SPECS = [
+    {"observation": "consumer brands", "universe": {"industry_groups": ["Food & Beverage", "Household & Personal Products",
+                                                                         "Apparel & Luxury"], "market_cap_min": 2e9},
+     "conditions": [{"field": "drawdown_52w", "op": "<=", "value": -0.2}],
+     "rank": [{"field": "fcf_margin", "direction": "desc"}]},
+    {"observation": "banks and utilities", "universe": {"sectors": ["Utilities"], "industry_groups": ["Banks"]},
+     "conditions": [{"field": "rsi14", "op": "<", "value": 45}], "rank": [{"field": "market_cap", "direction": "desc"}]},
+]
+
+
+def test_sector_screen_parity(browser_frame):
+    from scout.screen import sector_breakdown
+    js = node({"specs": SECTOR_SPECS, "snapshot": SNAP_JS.name})["screens"]
+    for d, j in zip(SECTOR_SPECS, js):
+        spec = validate(d)
+        funnel, surv = run_screen(browser_frame, spec)
+        assert funnel == j["funnel"]
+        assert list(rank(surv, spec)["symbol"]) == [r["symbol"] for r in j["ranked"]]
+        assert sector_breakdown(surv) == j["breakdown"]
+        assert funnel[1]["step"].startswith(("industry group in", "sector in"))
+
+
+def test_sector_validator_parity():
+    bad = [{"observation": "x", "universe": {"sectors": ["Tech"], "industry_groups": ["Chips", "Banks"]},
+            "conditions": [{"field": "rsi14", "op": "<", "value": 30}], "rank": [{"field": "rsi14", "direction": "asc"}]},
+           {"observation": "x", "universe": {"sectors": "Energy"},
+            "conditions": [{"field": "rsi14", "op": "<", "value": 30}], "rank": [{"field": "rsi14", "direction": "asc"}]}]
+    js = node({"validate": [{"spec": d} for d in bad]})["validations"]
+    for d, j in zip(bad, js):
+        with pytest.raises(SpecError) as e:
+            validate(d)
+        assert not j["ok"] and j["problems"] == e.value.problems

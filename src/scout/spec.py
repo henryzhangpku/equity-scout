@@ -16,6 +16,11 @@ from dataclasses import dataclass, field
 
 SPEC_VERSION = 1
 
+from .sectors import GROUPS as _GROUPS, SECTORS as _SECTORS  # noqa: E402
+
+SECTOR_LIST = list(_SECTORS)
+GROUP_NAMES = sorted(_GROUPS)
+
 
 @dataclass(frozen=True)
 class Field:
@@ -159,7 +164,7 @@ THEMES: dict[str, tuple[str, set[str]]] = {
 }
 
 OPS = {"<", "<=", ">", ">=", "between", "=="}
-UNIVERSE_KEYS = {"market_cap_min", "market_cap_max", "min_price", "min_avg_dollar_volume",
+UNIVERSE_KEYS = {"market_cap_min", "market_cap_max", "min_price", "min_avg_dollar_volume", "sectors", "industry_groups",
                  "industries", "exclude_industries", "themes"}
 TOP_KEYS = {"version", "observation", "universe", "conditions", "rank", "top_n", "unmapped", "notes"}
 COND_KEYS = {"field", "op", "value", "ref", "why"}
@@ -216,6 +221,15 @@ def validate(d: dict, short_interest_available: bool = True) -> Spec:
     for k, v in u.items():
         if k not in UNIVERSE_KEYS:
             p.append(f"unknown universe key '{k}' (allowed: {sorted(UNIVERSE_KEYS)})")
+        elif k in ("sectors", "industry_groups"):
+            allowed = SECTOR_LIST if k == "sectors" else GROUP_NAMES
+            label = "sector" if k == "sectors" else "industry group name"
+            if not isinstance(v, list) or not all(isinstance(x, str) for x in v):
+                p.append(f"universe.{k} must be a list of {label}s")
+            else:
+                for x in v:
+                    if x not in allowed:
+                        p.append(f"unknown {label} '{x}' (allowed: {sorted(allowed)})")
         elif k in ("industries", "exclude_industries", "themes"):
             allowed = THEMES if k == "themes" else INDUSTRIES
             label = "theme basket" if k == "themes" else "industry group"
@@ -329,8 +343,9 @@ def validate(d: dict, short_interest_available: bool = True) -> Spec:
                 top_n=top_n, unmapped=unm, notes=str(d.get("notes", "")))
 
 
-def schema_for_prompt() -> str:
-    """Compact human-readable schema handed to the model."""
+def schema_for_prompt(version: int = 2) -> str:
+    """Compact human-readable schema handed to the model. Version 1 is frozen (it is the exact
+    text the earlier recordings were made with); version 2 adds sectors and industry groups."""
     lines = ["FIELDS (name | kind | meaning):"]
     for f in FIELDS.values():
         if f.name.startswith("rs_") and not f.name.endswith(("_spy", "_smh")) and not f.name.startswith("rs_3m"):
@@ -341,7 +356,23 @@ def schema_for_prompt() -> str:
     lines.append("INDUSTRY GROUPS (universe.industries / universe.exclude_industries):")
     for k, (desc, _) in INDUSTRIES.items():
         lines.append(f"  {k}: {desc}")
+    if version >= 2:
+        lines += _sector_prompt_lines()
     lines.append("THEME BASKETS (universe.themes; a name qualifies if it is in ANY listed industry group OR theme):")
     for k, (desc, syms) in THEMES.items():
         lines.append(f"  {k}: {desc} ({', '.join(sorted(syms))})")
     return "\n".join(lines)
+
+
+def _sector_prompt_lines() -> list[str]:
+    lines = []
+    lines.append("SECTORS (universe.sectors) and INDUSTRY GROUPS (universe.industry_groups), mapped from SEC SIC codes. "
+                 "Prefer these for sector words; a name qualifies if it is in ANY listed sector OR industry group:")
+    for sec in SECTOR_LIST:
+        lines.append(f"  sector '{sec}': groups " + ", ".join(f"'{g}'" for g in GROUP_NAMES if _GROUPS[g] == sec))
+    lines.append("  Examples: 'consumer brands' -> industry_groups Food & Beverage, Household & Personal Products, "
+                 "Apparel & Luxury, Restaurants, Tobacco (say in notes that 'brand' itself is not measured); "
+                 "'banks' -> Banks; 'defense names' -> Aerospace & Defense; 'chip companies' -> Semiconductors; "
+                 "'pharma' -> Pharma; 'tech' -> sector Information Technology; 'utilities' -> sector Utilities.")
+    lines.append("OLDER SIC GROUPS (universe.industries) still work but prefer sectors/industry_groups.")
+    return lines

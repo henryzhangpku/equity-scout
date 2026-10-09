@@ -17,12 +17,14 @@ from .config import DATA_DIR, ROOT, RUNS
 from .data.base import Document, NoTranscripts
 from .llm import LLM
 from .narrative import explain, shown_text
-from .screen import check_funnel, describe, rank, run_screen
+from .screen import check_funnel, describe, rank, run_screen, sector_breakdown
+from .sectors import MAPPING_VERSION
+from .translate import PROMPT_VERSION
 from .spec import FIELDS, Spec
 
 SNAPSHOTS = DATA_DIR / "snapshots"
 
-TABLE_FIELDS = ["symbol", "name", "sic_desc", "market_cap", "close", "drawdown_52w", "pct_vs_sma50",
+TABLE_FIELDS = ["symbol", "name", "sector", "industry_group", "sic_desc", "market_cap", "close", "drawdown_52w", "pct_vs_sma50",
                 "mom_3m", "rsi14", "volume_ratio_50d", "revenue_growth_yoy", "revenue_growth_q_yoy",
                 "revenue_growth_accel", "fcf_margin", "operating_margin", "short_pct_shares_out",
                 "days_to_cover", "prov_revenue_period_end", "prov_revenue_filed"]
@@ -108,7 +110,7 @@ def _table(ranked: pd.DataFrame, spec: Spec) -> list[dict]:
 def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_source=None,
             run_dir: Path | None = None, top_n: int | None = None, log=print,
             news_source=DEFAULT, record_picks: bool = False, on_event=None,
-            tolerate_errors: bool = False) -> RunResult:
+            tolerate_errors: bool = False, prompt_version: int | None = None) -> RunResult:
     """Run the screen and the narrative engine and write the run folder.
 
     on_event(kind, payload), if given, is called as results become available:
@@ -134,7 +136,9 @@ def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_sour
         news_source = AlpacaNews()
     transcripts = NoTranscripts()
     table = _table(ranked, spec)
-    emit("screen", {"funnel": funnel, "ranked": table, "top_n": n, "as_of": as_of, "data": manifest})
+    breakdown = sector_breakdown(survivors)
+    emit("screen", {"funnel": funnel, "ranked": table, "top_n": n, "as_of": as_of, "data": manifest,
+                    "sector_breakdown": breakdown})
     explanations = []
     shown: dict[str, str] = {}
     for i, (_, row) in enumerate(top.iterrows()):
@@ -145,7 +149,8 @@ def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_sour
             if news_source is not None:
                 docs += news_source.news(row["symbol"], date.fromisoformat(as_of))
             docs += transcripts.transcripts(row["symbol"], date.fromisoformat(as_of))
-            metrics = {k: _clean(row.get(k)) for k in TABLE_FIELDS if k not in ("symbol", "name")}
+            # the prompt sees the same metrics as when the runs were recorded (sector columns are display-only)
+            metrics = {k: _clean(row.get(k)) for k in TABLE_FIELDS if k not in ("symbol", "name", "sector", "industry_group")}
             ex = explain(row["symbol"], row["name"], metrics, why_flagged(row, spec), docs, llm,
                          transcripts_note=f"no earnings-call transcript was consulted ({transcripts.reason})").to_dict()
             for d in docs:
@@ -168,9 +173,12 @@ def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_sour
         "observation": spec.observation,
         "spec": spec.to_dict(),
         "translation_attempts": translation,
+        "prompt_version": prompt_version if prompt_version is not None else PROMPT_VERSION,
         "funnel": funnel,
         "ranked": table,
         "top_n": n,
+        "sector_breakdown": breakdown,
+        "sector_mapping_version": MAPPING_VERSION,
         "explanations": explanations,
         "limits": LIMITS,
     }

@@ -14,6 +14,7 @@ from .spec import BENCH_PLAIN, FIELDS, LABELS
 SITE_RUNS = ["a-midcap-pullback", "b-ai-infra-laggards", "c-oversold-volume"]
 # one-click examples: (run folder, chip label); each folder is a full recorded run (spec, funnel, explanations)
 SITE_CHIPS = [
+    ("chip-consumer-brands", "Quality consumer brands down 30%+ with strong free cash flow"),
     ("chip-quality-drawdown", "Profitable names over $2B, down 30%+ and still growing"),
     ("chip-ai-laggards", "AI suppliers lagging the chip index while revenue accelerates"),
     ("chip-oversold-volume", "Oversold large caps on heavy volume"),
@@ -37,7 +38,30 @@ def export_chips() -> tuple[list, dict]:
     return meta, ex
 
 
+def _sector_lookup():
+    from .pipeline import SNAPSHOTS, load_features
+    from .sectors import classify
+    as_of = sorted(p.name for p in SNAPSHOTS.glob("*") if (p / "features.csv.gz").exists())[-1]
+    f, _ = load_features(as_of)
+    return {sym: classify(sic, sym) for sym, sic in zip(f["symbol"], f["sic"])}
+
+
+def _with_sector(rows: list[dict], look: dict) -> list[dict]:
+    out = []
+    for r in rows:
+        sec, grp = look.get(r.get("symbol"), (None, None))
+        out.append({**r, "sector": r.get("sector", sec), "industry_group": r.get("industry_group", grp)})
+    return out
+
+
+def _breakdown(rows: list[dict]) -> list[dict]:
+    from collections import Counter
+    c = Counter((r.get("sector") or "No sector") for r in rows)
+    return [{"sector": k, "n": v} for k, v in sorted(c.items(), key=lambda kv: (-kv[1], kv[0]))]
+
+
 def export() -> None:
+    look = _sector_lookup()
     out = []
     for name in SITE_RUNS:
         p = RUNS / name / "run.json"
@@ -46,6 +70,8 @@ def export() -> None:
             continue
         rec = json.loads(p.read_text(encoding="utf-8"))
         cols = table_columns(rec)
+        cols = cols[:3] + ["sector"] + cols[3:]
+        rows = _with_sector(rec["ranked"], look)
         out.append({
             "id": name,
             "as_of": rec["as_of"],
@@ -57,7 +83,8 @@ def export() -> None:
             "attempts": len(rec["translation_attempts"]),
             "funnel": rec["funnel"],
             "columns": cols,
-            "ranked": [{c: r.get(c) for c in cols} for r in rec["ranked"][:15]],
+            "ranked": [{c: r.get(c) for c in cols} for r in rows[:15]],
+            "sector_breakdown": rec.get("sector_breakdown") or _breakdown(rows),
             "n_ranked": len(rec["ranked"]),
             "top_n": rec["top_n"],
             "explanations": rec["explanations"],
@@ -93,6 +120,7 @@ SNAPSHOT_EXTRA_NUM = ["sic", "cik"]
 def schema_payload(as_of: str, manifest: dict) -> dict:
     from .llm import PROVIDERS
     from .spec import (COND_KEYS, INDUSTRIES, MAX_TOP_N, OPS, RANK_KEYS, THEMES, TOP_KEYS, UNIVERSE_KEYS)
+    from .sectors import table as sector_table
     from .translate import SYSTEM
     return {
         "fields": {f.name: {"group": f.group, "kind": f.kind, "desc": f.desc, "label": LABELS[f.name]}
@@ -103,6 +131,7 @@ def schema_payload(as_of: str, manifest: dict) -> dict:
         "industries": {k: [d, sorted(c)] for k, (d, c) in INDUSTRIES.items()},
         "themes": {k: [d, sorted(s)] for k, (d, s) in THEMES.items()},
         "translate_system_prompt": SYSTEM,
+        "sector_map": sector_table(),
         "model": PROVIDERS["deepseek"]["model"],
         "as_of": as_of,
         "short_interest_available": manifest.get("short_interest_settlement") is not None,
@@ -163,3 +192,73 @@ def export_try(as_of: str | None = None) -> None:
     p.write_text("window.SCOUT_SNAPSHOT = " + json.dumps(snap, separators=(",", ":"), ensure_ascii=False) + ";\n",
                  encoding="utf-8", newline="\n")
     print(f"wrote {p} ({p.stat().st_size / 1e6:.2f} MB, {snap['n']} companies) and schema.js")
+    write_sectors_page(features)
+
+
+def sector_coverage(features) -> dict:
+    from collections import Counter
+    from .sectors import classify
+    pairs = [classify(sic, sym) for sic, sym in zip(features["sic"], features["symbol"])]
+    secs = Counter(p[0] for p in pairs if p[0])
+    grps = Counter(p[1] for p in pairs if p[1])
+    return {"n": len(pairs), "with_sector": sum(secs.values()), "sectors": dict(secs.most_common()),
+            "groups": dict(grps.most_common())}
+
+
+def write_sectors_page(features) -> None:
+    """docs/sectors.html: the published, versioned SIC -> sector mapping with coverage."""
+    import html as H
+    from .sectors import GROUPS, KNOWN_MISFITS, MAPPING_VERSION, OVERRIDES, RULES, SECTORS
+    cov = sector_coverage(features)
+    e = H.escape
+    rows_by_group: dict[str, list[str]] = {}
+    for lo, hi, sec, grp in RULES:
+        rows_by_group.setdefault(grp, []).append(str(lo) if lo == hi else f"{lo}-{hi}")
+    body = []
+    body.append(f"<p class='lede'>Mapping version <strong>{e(MAPPING_VERSION)}</strong>. Each company's sector comes from "
+                "the SIC code it reports to the SEC. Rules are applied in order, specific codes before broad ranges, so the "
+                "first match wins; a short list of ticker overrides fixes large, well-known misfits. The sector names follow "
+                "the familiar 11-sector convention, but this is not the licensed GICS classification.</p>")
+    pct = 100 * cov["with_sector"] / cov["n"]
+    body.append(f"<div class='panel'><h2>Coverage</h2><p>{cov['with_sector']:,} of {cov['n']:,} companies "
+                f"({pct:.1f}%) in the 2026-10-08 universe have a sector.</p><table><thead><tr><th class='l'>Sector</th>"
+                "<th>Companies</th></tr></thead><tbody>")
+    for sec in SECTORS:
+        body.append(f"<tr><td class='l'>{e(sec)}</td><td>{cov['sectors'].get(sec, 0):,}</td></tr>")
+    body.append("</tbody></table></div>")
+    body.append("<div class='panel'><h2>Sectors, industry groups and SIC codes</h2><div class='tablewrap'><table><thead><tr>"
+                "<th class='l'>Sector</th><th class='l'>Industry group</th><th class='l'>SIC codes (in rule order)</th>"
+                "<th>Companies</th></tr></thead><tbody>")
+    for sec in SECTORS:
+        for grp in [g for g in GROUPS if GROUPS[g] == sec]:
+            body.append(f"<tr><td class='l'>{e(sec)}</td><td class='l'>{e(grp)}</td><td class='l wrapcell'>"
+                        f"{e(', '.join(rows_by_group.get(grp, [])) or 'overrides only')}</td>"
+                        f"<td>{cov['groups'].get(grp, 0):,}</td></tr>")
+    body.append("</tbody></table></div></div>")
+    body.append("<div class='panel'><h2>Ticker overrides</h2><p class='muted'>Only for large, well-known misfits.</p>"
+                "<div class='tablewrap'><table><thead><tr><th class='l'>Ticker</th><th class='l'>Sector</th>"
+                "<th class='l'>Industry group</th><th class='l'>Why</th></tr></thead><tbody>")
+    for t, (sec, grp, why) in sorted(OVERRIDES.items()):
+        body.append(f"<tr><td class='l'>{e(t)}</td><td class='l'>{e(sec)}</td><td class='l'>{e(grp)}</td>"
+                    f"<td class='l wrapcell'>{e(why)}</td></tr>")
+    body.append("</tbody></table></div></div>")
+    body.append("<div class='panel'><h2>Known misfits</h2><ul>" + "".join(f"<li>{e(m)}</li>" for m in KNOWN_MISFITS) +
+                "</ul><p class='muted'>Machine-readable: <code>window.SCOUT_SCHEMA.sector_map</code> in "
+                "<a href='data/schema.js'>data/schema.js</a>; source: <code>src/scout/sectors.py</code>.</p></div>")
+    page = f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sector Mapping</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="style.css"><script src="theme.js"></script>
+<style>.wrapcell {{ white-space: normal; min-width: 220px; }} .tablewrap {{ max-height: none; }}</style>
+</head><body>
+<nav class="topnav" aria-label="Site"><div class="navin">
+<a class="brand" href="index.html"><img src="favicon.svg" alt="" width="28" height="28"><span>Equity Scout</span></a>
+<div class="navlinks"><a href="index.html">Home</a><a href="index.html#try">Try it</a>
+<button id="theme-toggle" class="iconbtn" type="button" aria-label="Switch theme"></button></div></div></nav>
+<main class="wrap" style="padding-top:40px"><h1 style="font-size:clamp(28px,4vw,42px)">Sector mapping</h1>
+{''.join(body)}</main></body></html>
+"""
+    (ROOT / "docs" / "sectors.html").write_text(page, encoding="utf-8", newline="\n")
+    print(f"wrote docs/sectors.html (coverage {cov['with_sector']}/{cov['n']})")

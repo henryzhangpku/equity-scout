@@ -343,7 +343,8 @@ class App:
             job.emit("spec", rec["spec"])
             time.sleep(self.replay_delay)
             job.emit("screen", {"funnel": rec["funnel"], "ranked": rec["ranked"], "top_n": rec["top_n"],
-                                "as_of": rec["as_of"], "data": rec["data"]})
+                                "as_of": rec["as_of"], "data": rec["data"],
+                                "sector_breakdown": rec.get("sector_breakdown")})
             for i, ex in enumerate(rec["explanations"]):
                 job.emit("explaining", {"symbol": ex["symbol"], "i": i + 1, "n": len(rec["explanations"])})
                 time.sleep(self.replay_delay)
@@ -388,7 +389,7 @@ def _screen_payload(screen: dict, job: Job, hosted: bool) -> dict:
     ranked = screen["ranked"]
     keep = ranked[:25] if hosted else ranked
     return {"ok": True, "job": job.id, "funnel": screen["funnel"], "ranked": keep, "n_ranked": len(ranked),
-            "top_n": screen["top_n"], "as_of": screen["as_of"],
+            "top_n": screen["top_n"], "as_of": screen["as_of"], "sector_breakdown": screen.get("sector_breakdown"),
             "last_price_date": (screen.get("data") or {}).get("last_price_date")}
 
 

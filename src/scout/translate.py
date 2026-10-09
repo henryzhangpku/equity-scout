@@ -7,7 +7,7 @@ import json
 from .llm import LLM, parse_json
 from .spec import MAX_TOP_N, Spec, SpecError, schema_for_prompt, validate
 
-SYSTEM = f"""You translate an investment observation written in plain English into a JSON screen
+_TEMPLATE = """You translate an investment observation written in plain English into a JSON screen
 specification for a deterministic stock screener. You do not pick stocks and you do not
 compute anything: code will run the screen exactly as you specify it.
 
@@ -36,13 +36,28 @@ Rules:
   imperfect proxy, say so in "notes" and still list the original idea in "unmapped".
 - Prefer few, faithful conditions over many. Rank by what the observation emphasises.
 
-{schema_for_prompt()}
+{schema}
 """
 
+PROMPT_VERSION = 2  # 1 = recordings before sectors existed (frozen); 2 = adds sectors / industry groups
 
-def translate(observation: str, llm: LLM, short_interest_available: bool = True) -> tuple[Spec, list[dict]]:
+
+def system_prompt(version: int = PROMPT_VERSION) -> str:
+    text = _TEMPLATE.replace("{{", "{").replace("}}", "}").replace("{MAX_TOP_N}", str(MAX_TOP_N))
+    if version >= 2:
+        text = text.replace("min_avg_dollar_volume (USD), industries (list), exclude_industries (list),",
+                            "min_avg_dollar_volume (USD), sectors (list), industry_groups (list),\n"
+                            "              industries (list), exclude_industries (list), themes (list),")
+    return text.replace("{schema}", schema_for_prompt(version))
+
+
+SYSTEM = system_prompt()
+
+
+def translate(observation: str, llm: LLM, short_interest_available: bool = True,
+              prompt_version: int = PROMPT_VERSION) -> tuple[Spec, list[dict]]:
     """Return (validated spec, transcript of attempts)."""
-    messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": observation}]
+    messages = [{"role": "system", "content": system_prompt(prompt_version)}, {"role": "user", "content": observation}]
     attempts = []
     for attempt in range(2):
         raw = llm.complete(messages, tag=f"translate#{attempt}")

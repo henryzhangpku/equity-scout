@@ -15,6 +15,8 @@ from scout.serve import App, make_handler
 
 ROOT = Path(__file__).resolve().parents[1]
 REC_C = json.loads((ROOT / "runs" / "c-oversold-volume" / "run.json").read_text(encoding="utf-8"))
+# translations use the current prompt (version 2); this example was recorded with it
+REC_CB = json.loads((ROOT / "runs" / "chip-consumer-brands" / "run.json").read_text(encoding="utf-8"))
 
 
 @pytest.fixture()
@@ -83,9 +85,9 @@ def test_status(server):
 
 def test_translate_from_recorded_cache(server):
     base, _ = server
-    code, r = post(base + "/api/translate", {"observation": REC_C["observation"]})
+    code, r = post(base + "/api/translate", {"observation": REC_CB["observation"]})
     assert code == 200 and r["ok"]
-    assert r["spec"] == REC_C["spec"]
+    assert r["spec"] == REC_CB["spec"]
 
 
 def test_translate_cache_miss_is_a_clean_error(server):

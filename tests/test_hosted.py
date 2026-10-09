@@ -16,6 +16,7 @@ from scout.serve import App, Guard, HostedConfig, make_handler
 
 ROOT = Path(__file__).resolve().parents[1]
 REC_C = json.loads((ROOT / "runs" / "c-oversold-volume" / "run.json").read_text(encoding="utf-8"))
+REC_CB = json.loads((ROOT / "runs" / "chip-consumer-brands" / "run.json").read_text(encoding="utf-8"))
 PAGES = "https://henryzhangpku.github.io"
 SENTINELS = ["sk-SENTINEL-deepseek-0001", "PKSENTINELALPACA", "SENTINELSECRETalpaca99"]
 
@@ -127,13 +128,14 @@ def test_origin_config_from_env(monkeypatch):
 
 def test_translate_and_run_with_poll(hosted):
     base, app, logs = hosted
-    code, t, _ = call("POST", base + "/api/translate", {"observation": REC_C["observation"]})
-    assert code == 200 and t["ok"] and t["spec"] == REC_C["spec"] and isinstance(t["attempts"], int)
+    code, t, _ = call("POST", base + "/api/translate", {"observation": REC_CB["observation"]})
+    assert code == 200 and t["ok"] and t["spec"] == REC_CB["spec"] and isinstance(t["attempts"], int)
     code, r, _ = call("POST", base + "/api/run", {"spec": t["spec"]})
     assert code == 200 and r["ok"]
-    assert r["funnel"] == REC_C["funnel"] and r["n_ranked"] == 2 and r["top_n"] == 5
+    assert r["funnel"] == REC_CB["funnel"] and r["n_ranked"] == 9 and r["top_n"] == 5
+    assert r["sector_breakdown"] == REC_CB["sector_breakdown"] and r["ranked"][0]["sector"] == "Consumer Discretionary"
     p = poll_until_done(base, r["job"])
-    assert p["error"] is None and p["explanations"] == REC_C["explanations"] and p["pending"] == []
+    assert p["error"] is None and p["explanations"] == REC_CB["explanations"] and p["pending"] == []
     log = logs.getvalue()
     assert "203.0.113.7" not in log and app.ip_hash("203.0.113.7") in log
     assert all(json.loads(line)["event"] for line in log.strip().splitlines())

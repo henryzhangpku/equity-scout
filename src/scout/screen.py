@@ -13,6 +13,7 @@ import operator
 import numpy as np
 import pandas as pd
 
+from .sectors import classify
 from .spec import FIELDS, INDUSTRIES, THEMES, Spec
 
 _CMP = {"<": operator.lt, "<=": operator.le, ">": operator.gt, ">=": operator.ge}
@@ -59,6 +60,24 @@ def _mask(df: pd.DataFrame, c: dict) -> tuple[pd.Series, pd.Series]:
     return (~missing) & _CMP[op](x, c["value"]), missing
 
 
+def with_sectors(features: pd.DataFrame) -> pd.DataFrame:
+    """Copy of the features with `sector` and `industry_group` from the published SIC mapping."""
+    df = features.copy()
+    sic = df["sic"] if "sic" in df else [None] * len(df)
+    sym = df["symbol"] if "symbol" in df else [None] * len(df)
+    pairs = [classify(s, y) for s, y in zip(sic, sym)]
+    df["sector"] = [p[0] for p in pairs]
+    df["industry_group"] = [p[1] for p in pairs]
+    return df
+
+
+def sector_breakdown(survivors: pd.DataFrame) -> list[dict]:
+    """Survivors per sector, largest first (ties by name); names without a sector are 'No sector'."""
+    s = survivors["sector"].fillna("No sector") if "sector" in survivors else pd.Series(dtype=object)
+    counts = s.value_counts()
+    return [{"sector": k, "n": int(v)} for k, v in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))]
+
+
 def universe_steps(spec: Spec) -> list[tuple[str, callable]]:
     u = spec.universe
     steps = []
@@ -70,6 +89,11 @@ def universe_steps(spec: Spec) -> list[tuple[str, callable]]:
         # a missing SIC only matters when SIC groups are part of the test
         steps.append((label, lambda d: (d["sic"].isin(codes) | d["symbol"].isin(syms),
                                         d["sic"].isna() & ~d["symbol"].isin(syms) & bool(codes))))
+    if u.get("sectors") or u.get("industry_groups"):
+        secs, grps = set(u.get("sectors", [])), set(u.get("industry_groups", []))
+        label = " or ".join(x for x in [f"sector in {u['sectors']}" if u.get("sectors") else "",
+                                         f"industry group in {u['industry_groups']}" if u.get("industry_groups") else ""] if x)
+        steps.append((label, lambda d: (d["sector"].isin(secs) | d["industry_group"].isin(grps), d["sector"].isna())))
     if "exclude_industries" in u:
         codes_x = set().union(*(INDUSTRIES[g][1] for g in u["exclude_industries"]))
         steps.append((f"industry not in {u['exclude_industries']}",
@@ -84,7 +108,7 @@ def universe_steps(spec: Spec) -> list[tuple[str, callable]]:
 
 def run_screen(features: pd.DataFrame, spec: Spec) -> tuple[list[dict], pd.DataFrame]:
     """Return (funnel, survivors)."""
-    df = features.copy()
+    df = with_sectors(features)
     funnel = [{"step": "universe (liquid US common stocks with SEC filings)", "kind": "start",
                "n_in": len(df), "n_pass": len(df), "n_fail": 0, "n_missing": 0}]
     steps = [(name, fn, "universe") for name, fn in universe_steps(spec)]
