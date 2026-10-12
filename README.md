@@ -96,6 +96,50 @@ free one without touching the screen, the ranking or the validator.
 * The SEC frames API was evaluated and not used for values. A frame returns the *latest-filed* number for each
   period and has no `filed` date, so a restatement would leak into the past (`data/sec.py` explains this).
 
+## Data sources: swap one class
+
+The screen, the ranking and the citation check never call a data vendor. They read a feature snapshot, and the
+snapshot is built from classes that implement the small Protocols in `src/scout/data/base.py` (`PriceSource`,
+`FundamentalSource` and the others). Changing vendor means writing one class with the same methods and the same
+point-in-time rule; nothing downstream changes.
+
+| Source | In this repo | Key needed | What it provides |
+|---|---|---|---|
+| Alpaca + SEC (default, free) | `data/alpaca.py`, `data/sec.py` | free Alpaca keys for prices; none for SEC | universe, split- and dividend-adjusted daily bars; point-in-time fundamentals |
+| OpenBB (open source, many providers, some keyless) | `data/openbb_source.py`, optional extra | none: `yfinance` for bars, `sec` for the ticker list | universe and adjusted daily bars behind `PriceSource`; fundamentals stay on SEC |
+| Licensed terminal or feed (Bloomberg BQL / BQuant, LSEG, S&P Capital IQ) | not included | a license | any layer, written as one class behind the same Protocol |
+
+Terminal data is generally licensed for use on the terminal itself, so an automated loop like this one may need a
+separate data feed or license.
+
+The OpenBB class returns the same frame as the Alpaca one (date, symbol, open, high, low, close, volume, split- and
+dividend-adjusted, sorted by symbol and date) and drops any bar dated after the as-of date, whatever the provider
+sends. Fundamentals stay on SEC companyfacts either way: the OpenBB providers that serve financial statements
+(fmp, intrinio, polygon, tiingo) need a key and do not gate values by filing date. yfinance reads Yahoo Finance's
+public endpoints; check their terms before any commercial use.
+
+```bash
+uv sync --extra openbb                                    # OpenBB Platform v4 (openbb>=4.4,<5)
+uv run scout build --as-of 2026-10-08 --prices openbb    # or set SCOUT_PRICES=openbb
+```
+
+Without the extra installed, `--prices openbb` stops with a one-line install hint. The first `import openbb` builds
+its extension index, which takes a few minutes once.
+
+### Multi-timeframe technicals
+
+Snapshots built from now on also carry weekly and short-window fields: `rsi14_w` (RSI of weekly closes),
+`macd_hist_w` and `macd_cross_up_w` (weekly MACD and a cross above its signal in the latest week), `macd_cross_up`
+(the same on daily bars) and `volume_ratio_20d`. Weeks end on Friday, and the current week ends at the as-of close,
+so a mid-week snapshot uses a partial week and nothing later. A sentence such as *"RSI under 30 on the daily, MACD
+crossing above its signal on the weekly, and volume above its 20-day average"* maps to `rsi14 < 30`,
+`macd_cross_up_w == true`, `volume_ratio_20d > 1`.
+
+* The translation prompt that knows these fields is version 3: `scout spec "..." --prompt-version 3`. The default
+  stays version 2, so every recorded run and example replays unchanged.
+* The committed 2026-10-08 snapshot and the backtest panels predate these fields. A screen that uses them on
+  either is refused with a message saying so; rebuild the snapshot with `scout build` first.
+
 ## Recorded runs (real data as of 2026-10-08 close)
 
 | Run | Funnel (names left after each step) | Top names |
@@ -240,6 +284,7 @@ uv run scout site                # export runs, schema and the browser snapshot 
 
 # rebuild the feature snapshot for a new date (Alpaca + SEC + FINRA, about 30 min cold, cached afterwards)
 uv run scout build --as-of 2026-10-08
+uv run scout build --as-of 2026-10-08 --prices openbb   # same, prices from OpenBB (uv sync --extra openbb)
 ```
 
 `scout run` prints the spec and asks for confirmation before it screens (`--yes` skips the prompt). Keys are read
@@ -248,7 +293,7 @@ written to disk. Choose the model provider with `--provider deepseek|kimi`. The 
 the key used here belongs to a plan that the Kimi coding endpoint rejected (HTTP 403).
 
 Dependencies: `numpy`, `pandas`, `requests`, plus `pytest` for development. HTML is parsed with the standard
-library.
+library. `openbb` is an optional extra, imported only when `--prices openbb` is chosen.
 
 
 ## Deploy (hosted API)
@@ -310,10 +355,14 @@ Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`)
 
 ## Tests
 
-`uv run pytest`: 126 tests, none skipped. The browser parity tests need Node.js on the PATH.
+`uv run pytest`: 151 tests, none skipped, none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
 
 * indicators against hand-computed values (SMA, Wilder RSI step by step, EMA/MACD, momentum, volume ratio,
   drawdown, relative strength)
+* multi-timeframe fields by hand: weekly resampling (holiday Fridays, a partial last week, truncation at a date),
+  weekly RSI and MACD, MACD crosses, 20-day volume, and the funnel for the daily/weekly/volume sentence above
+* the OpenBB price class against a fake `obb` object, with no network: frame shape and column names, adjusted
+  prices, symbol mapping and filtering, no bar after the end date, and a clear message when `openbb` is not installed
 * point-in-time visibility, hidden restatements, YTD-derived quarters, TTM consecutiveness, staleness, share-count
   sanity rules
 * schema validation and refusals: unknown fields, operators, industries and themes, percent-vs-decimal mistakes,
