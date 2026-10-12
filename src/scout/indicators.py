@@ -13,6 +13,16 @@ Conventions, stated so the hand-computed tests can check them:
   (percentage points of return).
 * Volume ratio: today's volume / mean volume of the previous 50 sessions.
 * Drawdown from 52-week high: close / max(close over last 252 sessions) - 1.
+* Volume ratio (20-day): today's volume / mean volume of the previous 20 sessions.
+* MACD cross up: the MACD histogram (MACD - signal) is > 0 on the last bar and
+  <= 0 on the bar before it, i.e. MACD crossed above its signal on the last bar.
+* Weekly bars: the last close of each calendar week, weeks ending Friday
+  (pandas period W-FRI). The final week ends at the last bar given, so on a
+  mid-week as-of date it is a partial week built only from sessions up to that
+  date; nothing after the as-of date is used. Weekly fields end in _w and apply
+  the daily formulas above to the weekly closes: rsi14_w is RSI(14) of weekly
+  closes; macd_hist_w and macd_cross_up_w use MACD(12, 26, 9) of weekly closes
+  and need at least MIN_WEEKLY_MACD weeks of history.
 """
 
 from __future__ import annotations
@@ -21,6 +31,7 @@ import numpy as np
 import pandas as pd
 
 MONTH_DAYS = {1: 21, 3: 63, 6: 126, 12: 252}
+MIN_WEEKLY_MACD = 35  # slow EMA (26) + signal EMA (9) weeks before a weekly MACD value is used
 
 
 def sma(close: pd.Series, n: int) -> pd.Series:
@@ -68,6 +79,40 @@ def volume_ratio(volume: pd.Series, n: int = 50) -> pd.Series:
     return volume / prior
 
 
+def weekly_close(dates, close: pd.Series) -> pd.Series:
+    """Last close of each week (weeks end Friday), indexed by that session's date (YYYY-MM-DD).
+
+    The last week may be partial: it ends at the final bar passed in, so the result
+    never contains information from after that bar.
+    """
+    d = pd.to_datetime(pd.Series(list(dates)))
+    c = pd.Series(close.to_numpy(dtype=float))
+    last = c.groupby(d.dt.to_period("W-FRI").to_numpy()).tail(1).index
+    return pd.Series(c.loc[last].to_numpy(), index=d.loc[last].dt.strftime("%Y-%m-%d").to_numpy())
+
+
+def crossed_above(hist: pd.Series) -> bool | None:
+    """True when hist goes from <= 0 on the previous bar to > 0 on the last bar; None if unknown."""
+    if len(hist) < 2:
+        return None
+    a, b = float(hist.iloc[-2]), float(hist.iloc[-1])
+    if not (np.isfinite(a) and np.isfinite(b)):
+        return None
+    return bool(a <= 0 < b)
+
+
+def weekly_fields(dates, close: pd.Series) -> dict:
+    """rsi14_w, macd_hist_w and macd_cross_up_w from weekly closes (see the module docstring)."""
+    w = weekly_close(dates, close)
+    out = {"rsi14_w": float(rsi(w, 14).iloc[-1]) if len(w) > 14 else np.nan,
+           "macd_hist_w": np.nan, "macd_cross_up_w": None}
+    if len(w) >= MIN_WEEKLY_MACD:
+        h = macd(w)["hist"]
+        out["macd_hist_w"] = float(h.iloc[-1])
+        out["macd_cross_up_w"] = crossed_above(h)
+    return out
+
+
 def drawdown_from_high(close: pd.Series, n: int = 252) -> pd.Series:
     return close / close.rolling(n, min_periods=n).max() - 1.0
 
@@ -95,6 +140,10 @@ def snapshot(df: pd.DataFrame, bench: dict[str, pd.Series] | None = None) -> dic
         out[f"mom_{mth}m"] = float(momentum(c, k).iloc[last]) if len(c) > k else np.nan
     out["volume_ratio_50d"] = float(volume_ratio(v).iloc[last])
     out["drawdown_52w"] = float(drawdown_from_high(c).iloc[last]) if len(c) >= 252 else np.nan
+    out["volume_ratio_20d"] = float(volume_ratio(v, 20).iloc[last])
+    out["macd_cross_up"] = crossed_above(m["hist"])
+    if "date" in df:
+        out.update(weekly_fields(df["date"], c))
     dv = (c * v).iloc[-50:]
     out["avg_dollar_volume_50d"] = float(dv.mean()) if len(dv) == 50 else np.nan
     if bench:

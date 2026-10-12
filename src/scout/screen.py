@@ -14,7 +14,7 @@ import numpy as np
 import pandas as pd
 
 from .sectors import classify
-from .spec import FIELDS, INDUSTRIES, THEMES, Spec
+from .spec import FIELDS, INDUSTRIES, THEMES, Spec, SpecError
 
 _CMP = {"<": operator.lt, "<=": operator.le, ">": operator.gt, ">=": operator.ge}
 
@@ -106,8 +106,18 @@ def universe_steps(spec: Spec) -> list[tuple[str, callable]]:
     return steps
 
 
+def spec_fields(spec: Spec) -> set[str]:
+    """Every whitelisted field a spec's conditions and ranking read."""
+    return ({c["field"] for c in spec.conditions} | {c["ref"] for c in spec.conditions if "ref" in c}
+            | {r["field"] for r in spec.rank})
+
+
 def run_screen(features: pd.DataFrame, spec: Spec) -> tuple[list[dict], pd.DataFrame]:
     """Return (funnel, survivors)."""
+    absent = sorted(spec_fields(spec) - set(features.columns))
+    if absent:
+        raise SpecError([f"'{f}' is not in this feature snapshot (it was built before the field existed); "
+                         "rebuild the snapshot with `scout build` to screen on it" for f in absent])
     df = with_sectors(features)
     funnel = [{"step": "universe (liquid US common stocks with SEC filings)", "kind": "start",
                "n_in": len(df), "n_pass": len(df), "n_fail": 0, "n_missing": 0}]

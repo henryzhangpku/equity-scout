@@ -50,6 +50,15 @@ def _fields() -> dict[str, Field]:
         Field("volume_ratio_50d", "technical", "number", "today's volume / mean volume of the prior 50 sessions"),
         Field("drawdown_52w", "technical", "ratio", "close / 52-week (252-session) high close - 1; -0.20 = 20% below the high"),
     ]
+    fs += [
+        Field("volume_ratio_20d", "technical", "number", "today's volume / mean volume of the prior 20 sessions"),
+        Field("macd_cross_up", "technical", "bool",
+              "true when the daily MACD crossed above its signal on the last session (hist <= 0 the day before, > 0 now)"),
+        Field("rsi14_w", "technical", "number", "Wilder RSI(14) of weekly closes (weeks end Friday), 0-100"),
+        Field("macd_hist_w", "technical", "number", "weekly MACD minus its signal, MACD(12, 26, 9) of weekly closes"),
+        Field("macd_cross_up_w", "technical", "bool",
+              "true when the weekly MACD crossed above its signal in the latest week (hist <= 0 the week before, > 0 now)"),
+    ]
     for m in (1, 3, 6, 12):
         fs.append(Field(f"mom_{m}m", "technical", "ratio", f"{m}-month price return ({ {1: 21, 3: 63, 6: 126, 12: 252}[m] } sessions)"))
     for b, label in BENCHMARK_LABELS.items():
@@ -88,6 +97,10 @@ BENCHMARK_LABELS = {
     "xlc": "XLC (communication services)",
 }
 FIELDS = _fields()
+# Multi-timeframe fields added after the snapshots, panels and prompt versions 1-2 were recorded.
+# They are left out of those prompt texts (so recorded requests keep their hashes) and out of the
+# backtest panels; a snapshot built before they existed has no column for them.
+MTF_FIELDS = ("volume_ratio_20d", "macd_cross_up", "rsi14_w", "macd_hist_w", "macd_cross_up_w")
 
 # Plain-English names for visitors. Raw field names stay in the spec JSON only.
 BENCH_PLAIN = {"spy": "the S&P 500 (SPY)", "qqq": "the Nasdaq-100 (QQQ)", "iwm": "the Russell 2000 (IWM)",
@@ -106,6 +119,9 @@ def _labels() -> dict[str, str]:
         "pct_vs_sma200": "Price vs 200-day average", "sma50_above_sma200": "50-day above 200-day average",
         "rsi14": "RSI (14-day)", "macd": "MACD", "macd_signal": "MACD signal", "macd_hist": "MACD minus signal",
         "volume_ratio_50d": "Volume vs 50-day average", "drawdown_52w": "From 52-week high",
+        "volume_ratio_20d": "Volume vs 20-day average", "macd_cross_up": "MACD crossed above signal (daily)",
+        "rsi14_w": "RSI (14-week)", "macd_hist_w": "Weekly MACD minus signal",
+        "macd_cross_up_w": "MACD crossed above signal (weekly)",
         "revenue_ttm": "Revenue, last 12 months", "revenue_growth_yoy": "Revenue growth (year over year)",
         "revenue_growth_q_yoy": "Revenue growth, latest quarter (year over year)",
         "revenue_growth_accel": "Revenue growth acceleration", "gross_margin": "Gross margin",
@@ -302,8 +318,8 @@ def validate(d: dict, short_interest_available: bool = True) -> Spec:
         for x in vals:
             if fd.kind == "ratio" and abs(x) > 20:
                 p.append(f"{where}: {f} is a decimal ratio (0.10 = 10%); {x} looks like a percent")
-            if f == "rsi14" and not 0 <= x <= 100:
-                p.append(f"{where}: rsi14 thresholds must be within 0-100")
+            if f in ("rsi14", "rsi14_w") and not 0 <= x <= 100:
+                p.append(f"{where}: {f} thresholds must be within 0-100")
 
     rank = d.get("rank")
     if not isinstance(rank, list) or not rank:
@@ -345,14 +361,22 @@ def validate(d: dict, short_interest_available: bool = True) -> Spec:
 
 def schema_for_prompt(version: int = 2) -> str:
     """Compact human-readable schema handed to the model. Version 1 is frozen (it is the exact
-    text the earlier recordings were made with); version 2 adds sectors and industry groups."""
+    text the earlier recordings were made with); version 2 adds sectors and industry groups (also
+    frozen); version 3 adds the multi-timeframe fields (weekly RSI and MACD, MACD crosses, 20-day volume)."""
     lines = ["FIELDS (name | kind | meaning):"]
     for f in FIELDS.values():
+        if f.name in MTF_FIELDS and version < 3:
+            continue
         if f.name.startswith("rs_") and not f.name.endswith(("_spy", "_smh")) and not f.name.startswith("rs_3m"):
             continue  # keep the prompt short; the pattern is stated below
         lines.append(f"  {f.name} | {f.kind} | {f.desc}")
     lines.append("  rs_{1,3,6,12}m_vs_{" + ",".join(BENCHMARK_LABELS) + "} | ratio | "
                  "relative return vs that benchmark ETF (" + "; ".join(f"{k}={v}" for k, v in BENCHMARK_LABELS.items()) + ")")
+    if version >= 3:
+        lines.append("TIMEFRAMES: fields ending in _w use weekly closes (weeks end Friday; the current week runs to the "
+                     "as-of close); every other technical field uses daily bars. 'MACD crossing above its signal' -> "
+                     "macd_cross_up == true (daily) or macd_cross_up_w == true (weekly); 'MACD above its signal' -> "
+                     "macd_hist > 0 or macd_hist_w > 0; 'volume above its 20-day average' -> volume_ratio_20d > 1.")
     lines.append("INDUSTRY GROUPS (universe.industries / universe.exclude_industries):")
     for k, (desc, _) in INDUSTRIES.items():
         lines.append(f"  {k}: {desc}")

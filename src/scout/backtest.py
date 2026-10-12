@@ -26,7 +26,7 @@ import pandas as pd
 
 from .panels import PANEL_DIR, PANEL_FILE
 from .screen import rank, run_screen, universe_steps, with_sectors
-from .spec import FIELDS, Spec, SpecError
+from .spec import FIELDS, MTF_FIELDS, Spec, SpecError
 
 COST_BPS = 10.0
 DEFAULT_TOP_N = 10
@@ -156,8 +156,10 @@ def run(spec: Spec, P: Panels | None = None, cost_bps: float = COST_BPS, top_n: 
                          | {r["field"] for r in spec.rank})
     missing = [f for f in used_fields if f not in P.fields]
     if missing:
-        raise SpecError([f"'{f}' is not stored in the historical panels (relative strength vs sector ETFs is "
-                         "left out to keep them small), so this screen cannot be backtested" for f in missing])
+        raise SpecError([f"'{f}' is not stored in the historical panels ("
+                         + ("multi-timeframe fields were added after the panels were built"
+                            if f in MTF_FIELDS else "relative strength vs sector ETFs is left out to keep them small")
+                         + "), so this screen cannot be backtested" for f in missing])
     for di in range(D - 1):
         df = P.frame(di)
         _, surv = run_screen(df, spec)

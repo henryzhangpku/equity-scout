@@ -40,6 +40,10 @@ Rules:
 """
 
 PROMPT_VERSION = 2  # 1 = recordings before sectors existed (frozen); 2 = adds sectors / industry groups
+# 3 = adds the multi-timeframe fields (weekly RSI/MACD, MACD crosses, 20-day volume). Opt-in with
+# `--prompt-version 3` and a snapshot built after those fields existed; the default stays 2 so the
+# recorded examples and the hosted translator keep their cached requests.
+LATEST_PROMPT_VERSION = 3
 
 
 def system_prompt(version: int = PROMPT_VERSION) -> str:

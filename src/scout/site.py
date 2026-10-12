@@ -184,6 +184,8 @@ def snapshot_payload(features) -> dict:
     for c in SNAPSHOT_EXTRA_NUM:
         cols[c] = [_num_or_none(v, 12) for v in features[c]]
     for name, f in FIELDS.items():
+        if name not in features:
+            continue  # a field added after this snapshot was built
         if f.kind == "bool":
             cols[name] = [None if pd.isna(v) else str(v).lower() == "true" for v in features[name]]
         else:
@@ -196,7 +198,7 @@ def snapshot_frame(payload: dict):
     import pandas as pd
     df = pd.DataFrame(payload["columns"])
     for name, f in FIELDS.items():
-        if f.kind != "bool":
+        if f.kind != "bool" and name in df:
             df[name] = pd.to_numeric(df[name], errors="coerce").astype(float)
     df["sic"] = pd.to_numeric(df["sic"], errors="coerce")
     return df

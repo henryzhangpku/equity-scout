@@ -36,17 +36,18 @@ from .config import CACHE, DATA_DIR
 from .data.finra import FinraShortInterest, visible_from
 from .data.sec import SecData, extract_facts
 from .snapshot import BENCHMARKS, MIN_ADV, MIN_PRICE
-from .spec import FIELDS
+from .spec import FIELDS, MTF_FIELDS
 
 PANEL_DIR = DATA_DIR / "panels"
 PANEL_FILE = "panels.npz"
-TECH_FIELDS = [f for f in FIELDS if FIELDS[f].group == "technical" or f == "avg_dollar_volume_50d"]
+TECH_FIELDS = [f for f in FIELDS if (FIELDS[f].group == "technical" or f == "avg_dollar_volume_50d") and f not in MTF_FIELDS]
 FUND_FIELDS = ["revenue_ttm", "revenue_growth_yoy", "revenue_growth_q_yoy", "revenue_growth_accel", "gross_margin",
                "operating_margin", "net_margin", "net_income_ttm", "fcf_ttm", "fcf_margin", "fcf_yield", "net_debt",
                "ev_to_sales", "market_cap", "ev"]
 # every whitelisted field except relative strength vs the sector ETFs (XL*), which would add 44 columns
-# and ~25 MB; a backtest that needs one of those is refused with a clear message
-PANEL_FIELDS = [f for f in FIELDS if not (f.startswith("rs_") and "_vs_xl" in f)]
+# and ~25 MB, and the multi-timeframe fields added after the panels were built; a backtest that needs
+# one of those is refused with a clear message
+PANEL_FIELDS = [f for f in FIELDS if not (f.startswith("rs_") and "_vs_xl" in f) and f not in MTF_FIELDS]
 
 
 def _log(m: str) -> None:
