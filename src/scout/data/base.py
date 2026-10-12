@@ -4,6 +4,7 @@ Each layer is a small Protocol so a licensed source can replace the free one
 without touching the screen, ranking or narrative code:
 
     PriceSource         Alpaca daily bars        -> Bloomberg BQL / LSEG / Capital IQ pricing
+                        (or OpenBB, keyless, in openbb_source.py: scout build --prices openbb)
     FundamentalSource   SEC XBRL companyfacts    -> BQL fundamentals / Capital IQ financials
     ShortInterestSource FINRA consolidated SI    -> licensed SI / securities-lending data
     DocumentSource      EDGAR 8-K ex.99.1, MD&A  -> same filings via a document store

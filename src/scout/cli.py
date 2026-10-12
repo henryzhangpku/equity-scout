@@ -5,7 +5,7 @@
     scout replay runs/<run>               rerun a recorded run offline and check it reproduces
     scout serve [--offline] [--port 8765] local web app: observation -> spec -> confirm -> live run
     scout track                           mark every recorded pick sheet to market vs SPY and SMH
-    scout build --as-of YYYY-MM-DD        fetch data and build the feature snapshot
+    scout build --as-of YYYY-MM-DD [--prices alpaca|openbb]   fetch data and build the feature snapshot
     scout site                            export recorded runs for the static site in docs/
 """
 
@@ -18,11 +18,12 @@ import sys
 from datetime import date
 from pathlib import Path
 
+from .config import PRICE_SOURCES
 from .llm import LLM
 from .pipeline import SNAPSHOTS, RecordedDocuments, execute, load_features
 from .report import fmt, table_columns
 from .spec import SpecError, validate
-from .translate import translate
+from .translate import LATEST_PROMPT_VERSION, PROMPT_VERSION, translate
 
 
 def _latest_snapshot() -> str:
@@ -69,7 +70,8 @@ def cmd_run(a) -> None:
     si_ok = manifest.get("short_interest_settlement") is not None
     print(f"as of {as_of}; translating with {llm.provider}/{llm.model} ...")
     try:
-        spec, attempts = translate(a.observation, llm, short_interest_available=si_ok)
+        spec, attempts = translate(a.observation, llm, short_interest_available=si_ok,
+                                   prompt_version=a.prompt_version)
     except SpecError as e:
         print("Refused: the spec did not validate.")
         for p in e.problems:
@@ -79,8 +81,12 @@ def cmd_run(a) -> None:
     if not a.yes and sys.stdin.isatty():
         if input("\nRun this screen? [Y/n] ").strip().lower() in ("n", "no"):
             sys.exit(0)
-    res = execute(spec, attempts, as_of, llm, top_n=a.top,
-                  run_dir=Path(a.out) if a.out else None, record_picks=not a.no_ledger)
+    try:
+        res = execute(spec, attempts, as_of, llm, top_n=a.top, run_dir=Path(a.out) if a.out else None,
+                      record_picks=not a.no_ledger, prompt_version=a.prompt_version)
+    except SpecError as e:
+        print("Refused:\n  - " + "\n  - ".join(e.problems))
+        sys.exit(2)
     _print_result(res.record)
     print(f"\nSaved: {res.run_dir / 'run.json'} and report.md")
 
@@ -90,7 +96,8 @@ def cmd_spec(a) -> None:
     _, manifest = load_features(as_of)
     try:
         spec, _ = translate(a.observation, LLM(provider=a.provider, offline=a.offline),
-                            short_interest_available=manifest.get("short_interest_settlement") is not None)
+                            short_interest_available=manifest.get("short_interest_settlement") is not None,
+                            prompt_version=a.prompt_version)
     except SpecError as e:
         print("Refused:\n  - " + "\n  - ".join(e.problems))
         sys.exit(2)
@@ -151,8 +158,12 @@ def resolve_as_of(text: str) -> str:
 
 def cmd_build(a) -> None:
     from . import snapshot
+    from .data.openbb_source import SourceUnavailable
     a.as_of = resolve_as_of(a.as_of)
-    p = snapshot.build(date.fromisoformat(a.as_of))
+    try:
+        p = snapshot.build(date.fromisoformat(a.as_of), prices=getattr(a, "prices", None))
+    except SourceUnavailable as e:
+        sys.exit(f"scout build: {e}")
     dst = SNAPSHOTS / a.as_of
     dst.mkdir(parents=True, exist_ok=True)
     shutil.copy(p, dst / "features.csv.gz")
@@ -231,6 +242,9 @@ def main(argv: list[str] | None = None) -> None:
         p.add_argument("--as-of")
         p.add_argument("--provider", default="deepseek", choices=["deepseek", "kimi"])
         p.add_argument("--offline", action="store_true", help="never call the LLM; use recorded responses only")
+        p.add_argument("--prompt-version", type=int, choices=[1, 2, LATEST_PROMPT_VERSION], default=PROMPT_VERSION,
+                       help=f"translation prompt version (default {PROMPT_VERSION}; {LATEST_PROMPT_VERSION} adds weekly "
+                            "RSI/MACD, MACD crosses and 20-day volume, and needs a snapshot built with those fields)")
         if name == "run":
             p.add_argument("--top", type=int)
             p.add_argument("--yes", action="store_true", help="do not ask before running the spec")
@@ -240,6 +254,9 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("run_dir")
     p = sub.add_parser("build")
     p.add_argument("--as-of", required=True, help="YYYY-MM-DD, or 'today' for the latest closed session (cron-friendly)")
+    p.add_argument("--prices", choices=PRICE_SOURCES, default=None,
+                   help="price source: alpaca (default, needs keys) or openbb (optional extra, keyless yfinance); "
+                        "default: $SCOUT_PRICES, else alpaca")
     sub.add_parser("site")
     sub.add_parser("track")
     p = sub.add_parser("build-panels", help="point-in-time monthly panels for backtests")

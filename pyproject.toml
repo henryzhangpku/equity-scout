@@ -11,6 +11,10 @@ dependencies = [
     "requests>=2.32",
 ]
 
+[project.optional-dependencies]
+# OpenBB Platform as an alternative price source (scout build --prices openbb); keyless via yfinance
+openbb = ["openbb>=4.4,<5"]
+
 [project.scripts]
 scout = "scout.cli:main"
 

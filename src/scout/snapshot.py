@@ -2,6 +2,7 @@
 
     universe (Alpaca, major exchanges) x SEC ticker map  ->  common stocks with a CIK
     daily bars (Alpaca SIP, adjusted)                     ->  technical fields
+      (or OpenBB with a keyless provider: build(..., prices="openbb"), data/openbb_source.py)
     liquidity floor (price >= $1, 50d ADV >= $1M)          ->  investable universe
     SEC companyfacts + submissions                         ->  PIT fundamentals, SIC
     FINRA short interest                                   ->  short % of shares, days to cover
@@ -26,7 +27,7 @@ import pandas as pd
 
 from . import fundamentals as F
 from . import indicators as I
-from .config import CACHE
+from .config import CACHE, PRICE_SOURCE
 from .data.alpaca import AlpacaPrices
 from .data.finra import FinraShortInterest
 from .data.sec import SecData, extract_facts, periodic_filer, sic_of
@@ -36,6 +37,16 @@ BENCHMARKS = ["SPY", "QQQ", "IWM", "SMH", "SOXX", "XLK", "XLF", "XLE", "XLV", "X
 MIN_PRICE = 1.0
 MIN_ADV = 1_000_000.0
 HISTORY_DAYS = 800
+
+
+def price_source(name: str, snapshot: str):
+    """The PriceSource selected by name: 'alpaca' (default) or 'openbb' (optional extra)."""
+    if name == "alpaca":
+        return AlpacaPrices(snapshot)
+    if name == "openbb":
+        from .data.openbb_source import OpenBBPrices
+        return OpenBBPrices(snapshot)
+    raise ValueError(f"unknown price source {name!r} (choose alpaca or openbb)")
 
 
 def snapshot_dir(as_of: date | str) -> Path:
@@ -50,11 +61,13 @@ def _log(msg: str) -> None:
     print(msg, file=sys.stderr, flush=True)
 
 
-def build(as_of: date, workers: int = 6) -> Path:
+def build(as_of: date, workers: int = 6, prices: str | None = None) -> Path:
+    prices = prices or PRICE_SOURCE
+    tag = as_of.isoformat()
+    alp = price_source(prices, tag)  # first, so a missing optional package fails before any download
     out = snapshot_dir(as_of)
     out.mkdir(parents=True, exist_ok=True)
-    tag = as_of.isoformat()
-    alp, sec = AlpacaPrices(tag), SecData()
+    sec = SecData()
 
     # 1. universe
     secs = alp.universe()
@@ -71,7 +84,7 @@ def build(as_of: date, workers: int = 6) -> Path:
     _log(f"universe: {len(secs)} tradable on major exchanges, {len(uni)} with an SEC CIK")
 
     # 2. prices
-    prices_p = out / "prices.csv.gz"
+    prices_p = out / ("prices.csv.gz" if prices == "alpaca" else f"prices-{prices}.csv.gz")
     if not prices_p.exists():
         syms = sorted(set(uni["symbol"]) | set(BENCHMARKS))
         bars = alp.daily_bars(syms, as_of - timedelta(days=HISTORY_DAYS), as_of)
@@ -128,6 +141,7 @@ def build(as_of: date, workers: int = 6) -> Path:
     df.to_csv(feat_p, index=False, compression="gzip")
     manifest = {
         "as_of": tag, "last_price_date": str(bars["date"].max()),
+        **({} if prices == "alpaca" else {"price_source": prices}),
         "universe_rule": f"tradable US-listed (NYSE/Nasdaq/AMEX/Arca/BATS) operating companies with an SEC CIK "
                          f"and a 10-K/10-Q/20-F/40-F in the last 18 months; close >= ${MIN_PRICE:g}; "
                          f"50-day avg dollar volume >= ${MIN_ADV:,.0f}; one listing per CIK",
