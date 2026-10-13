@@ -242,6 +242,70 @@ model plays no part; this is pure code (`src/scout/backtest.py`).
 | Heavily shorted, profitable, above the 50-day | No edge (✓✗✓✗✗✗) | 0% / +58% / +97% |
 | Fast growers over $2B beating the S&P 500 | No edge (✓✗✗✗✗✗) | -15% / +38% / +97% |
 
+## A learning loop that cannot fool itself
+
+A loop where each test result shapes the next test: try RSI overbought, find it weak, try divergence, add MACD,
+learn which combination fits. The risk in such a loop is that it keeps trying until something looks good by chance.
+So the agents only propose; a fixed evaluator decides (`scout loop`, code in `src/scout/loop.py` and
+`src/scout/propose.py`).
+
+```
+propose a signal spec ──▶ validate ──▶ evaluate on discovery ──▶ correct for the number of tries ──▶ record ──▶ decide
+        ▲                                     │ passes?                                              (hash-chained ledger)
+        └──── discovery results only ◀────────┘ then, and only then, open the sealed out-of-sample period once
+```
+
+* **Propose.** A proposer writes a typed, whitelisted JSON spec: entry conditions on daily or weekly RSI(14), MACD
+  histogram sign, MACD crosses and RSI divergence, for a long side and/or a short side, and a holding period of 5, 10
+  or 20 days. `--proposer scripted` is deterministic: RSI overbought, RSI oversold, RSI divergence, each again with a
+  MACD cross and with the MACD histogram sign, then the best branch so far refined once. `--proposer llm` lets the
+  model read the ledger and propose the next spec; code validates it, an invalid one is recorded and counts as a try,
+  and prompts and responses are cached in `llm_cache/`.
+* **Evaluate on a fixed split.** The split was set in code before any hypothesis ran: discovery is every signal whose
+  holding period ends by 2024-12-31; out-of-sample is every signal from 2025-01-01. A signal on a close enters at the
+  next close. Each event earns its forward return minus the universe's mean forward return over the same window,
+  minus 20 bps round trip. The evaluator reports hit rate, signal return against the universe baseline, a t-stat
+  (block means, Newey-West) and a Sharpe-like ratio.
+* **Correct for the number of tries.** Bonferroni: the step budget K is declared before the run and every step counts,
+  so each test needs one-sided p < 0.05 / K, in discovery and again out-of-sample.
+* **Record and decide.** Promote only if discovery passes and then out-of-sample passes. Out-of-sample is opened only
+  for an idea that already passed discovery, and the proposer never sees it, not even whether it was opened (a test
+  changes the out-of-sample prices and checks that every proposal and prompt stays identical). Every step, with the
+  spec, the numbers, the decision and the reason, goes into a hash-chained `ledger.jsonl`. A repeat of a tested spec
+  is rejected without touching the data, so dead ideas stay dead.
+
+**Where it runs.** On your own compute, against a stored snapshot: `data/loop/daily_closes.npz` (1.8 MB, daily
+adjusted closes for the 500 most liquid companies as of 2022-02-28, built from the cached Alpaca bars with
+`scout loop-data`, SHA-256 recorded in each ledger). A run of ten hypotheses takes a few seconds on a laptop; the
+model calls are the only network traffic, and only in llm mode. Every recorded run can be re-run from the ledger
+and gives the same numbers (a test does this, offline). The history is under five years: 2021-12-01 to 2026-10-08.
+
+```bash
+uv run scout loop --proposer scripted --max-steps 10     # writes runs/loop-<date>/: ledger.jsonl, report.md, summary.json
+uv run scout loop --proposer llm --max-steps 5           # needs DEEPSEEK_API_KEY, or --offline to replay recordings
+```
+
+**The recorded scripted run** (`runs/loop-2026-10-12/`, K = 10, bar p < 0.005): nothing survived. All ten
+hypotheses lost money against the universe after costs in discovery, so the out-of-sample period was never opened.
+
+| Hypothesis (10-day hold) | Discovery events | Excess after costs | t |
+|---|---|---|---|
+| Short RSI > 70 | 26,084 | -0.48% | -0.33 |
+| Long RSI < 30 | 15,017 | -0.23% | -1.20 |
+| RSI divergence, both sides | 5,749 | -0.12% | -0.79 |
+| Overbought + MACD cross down / + histogram below zero | 2,360 / 1,710 | -0.41% / -0.23% | -0.16 / -1.04 |
+| Oversold + MACD cross up / + histogram above zero | 1,452 / 1,504 | -0.19% / -0.10% | -1.36 / -0.30 |
+| Divergence + MACD cross / + histogram sign | 2,389 / 3,637 | -0.18% / -0.21% | -1.08 / -0.55 |
+| Best branch refined (overbought + cross, RSI > 75) | 919 | -0.47% | -1.26 |
+
+In plain words: on 2022 to 2024 data, overbought names kept rising and oversold names did no better than the
+market, net of costs. Adding a MACD filter made overbought and oversold less negative and divergence more negative,
+which is the shape of the story above, but every variant still lost money and no variant has |t| above 1.4, so the
+differences between them are noise. A loop without the correction and the sealed period would be free to keep slicing until one of
+these crossed p < 0.05. This one recorded ten rejections, and the out-of-sample years are still unused for the next
+idea. The recorded llm run (`runs/loop-2026-10-12-llm/`, K = 5) tried five of the model's own ideas, including a
+weekly divergence variant; none had a positive excess in discovery.
+
 ## Forward tracking
 
 Every live run appends its top names and entry closes to `runs/picks.jsonl`. The file is append-only and
@@ -355,7 +419,7 @@ Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`)
 
 ## Tests
 
-`uv run pytest`: 151 tests, none skipped, none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
+`uv run pytest`: 177 tests, none skipped, none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
 
 * indicators against hand-computed values (SMA, Wilder RSI step by step, EMA/MACD, momentum, volume ratio,
   drawdown, relative strength)
@@ -370,6 +434,12 @@ Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`)
 * the citation validator rejects paraphrased, invented, case-changed and too-short quotes, and numbers that are not in the quote
 * funnel arithmetic on a hand-built universe, including missing data counts
 * the pick ledger detects edits and deletions; mark-to-market arithmetic
+* RSI divergence and pivots on hand-built series, including that a divergence is dated on its confirmation bar and
+  uses nothing after it
+* the learning loop: forward returns, baseline and block statistics by hand; a planted edge is promoted; pure noise
+  tried 24 ways is rejected even though some variants pass p < 0.05 uncorrected; out-of-sample prices never change a
+  discovery number, a proposal or an LLM prompt; invalid and repeated proposals are recorded and count; the loop
+  ledger is append-only; CLI smoke test; each recorded loop run reproduces offline from the committed data and cache
 * news cut at the as-of close, with full article text never used
 * browser parity: the JS validator, screen and ranker under Node give the same funnels, rankings and
   refusal messages as Python, on the shipped browser snapshot and against the recorded runs

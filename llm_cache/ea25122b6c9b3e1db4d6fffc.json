@@ -1,0 +1,37 @@
+{
+ "hash": "ea25122b6c9b3e1db4d6fffc",
+ "tag": "loop step 1",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 8000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You propose trading-signal hypotheses for a fixed evaluator. You never see out-of-sample results;\nyou see only discovery-period results of earlier attempts. Every attempt counts against a fixed budget and\nraises the bar for all of them (Bonferroni), so propose ideas that are distinct and well motivated.\n\nReturn ONE JSON object and nothing else:\n{\"id\": \"snake_case_name\", \"rationale\": \"one sentence\", \"timeframe\": \"D\" or \"W\", \"hold_days\": one of [5, 10, 20],\n  \"long\": [conditions], \"short\": [conditions]}\nA condition is {\"feature\": name, \"op\": op, \"value\": value, \"within\": 1-10} (\"within\" = true on any of the\nlast N bars of that timeframe). At most 3 conditions per side; at least one side non-empty.\nFeatures (computed on daily or weekly closes):\n  rsi14: RSI(14); op '<' or '>' with 0-100\n  macd_hist: MACD histogram; op '<' or '>' with 0 only\n  macd_cross_up: MACD crosses above its signal; op '==' with true/false\n  macd_cross_down: MACD crosses below its signal; op '==' with true/false\n  rsi_bear_div: bearish RSI divergence (price higher high, RSI lower high); op '==' with true/false\n  rsi_bull_div: bullish RSI divergence (price lower low, RSI higher low); op '==' with true/false\nA signal on bar t's close enters at the next close and is held hold_days sessions. Long earns the forward\nreturn minus the universe mean; short earns the negative. Costs are charged. Do not repeat a tested spec."
+  },
+  {
+   "role": "user",
+   "content": "{\"budget_K\": 5, \"history\": [], \"step\": 1, \"steps_left_including_this\": 5}"
+  }
+ ],
+ "response": "{\n  \"id\": \"rsi_macd_cross_mean_reversion\",\n  \"rationale\": \"Classic mean reversion: oversold RSI with recent bullish MACD cross signals long, overbought RSI with recent bearish cross signals short.\",\n  \"timeframe\": \"D\",\n  \"hold_days\": 10,\n  \"long\": [\n    {\"feature\": \"rsi14\", \"op\": \"<\", \"value\": 30, \"within\": 1},\n    {\"feature\": \"macd_cross_up\", \"op\": \"==\", \"value\": true, \"within\": 3}\n  ],\n  \"short\": [\n    {\"feature\": \"rsi14\", \"op\": \">\", \"value\": 70, \"within\": 1},\n    {\"feature\": \"macd_cross_down\", \"op\": \"==\", \"value\": true, \"within\": 3}\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 520,
+  "completion_tokens": 2698,
+  "total_tokens": 3218,
+  "prompt_tokens_details": {
+   "cached_tokens": 512
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2501
+  },
+  "prompt_cache_hit_tokens": 512,
+  "prompt_cache_miss_tokens": 8
+ },
+ "latency_s": 23.13,
+ "recorded_at": "2026-10-13T00:28:02+00:00"
+}

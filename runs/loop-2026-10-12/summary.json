@@ -1,0 +1,135 @@
+{
+ "label": "loop-2026-10-12",
+ "proposer": "scripted",
+ "budget_K": 10,
+ "corrected_p": 0.005,
+ "split": {
+  "discovery_end": "2024-12-31",
+  "oos_start": "2025-01-01"
+ },
+ "data": {
+  "source": "daily_closes.npz",
+  "sha256": "2f9f3237eb38bbe880433bf9fb0f4546db10ab65170c14ef7f042d150f1fafeb",
+  "first": "2021-12-01",
+  "last": "2026-10-08",
+  "sessions": 1218,
+  "n_symbols": 500
+ },
+ "stop_reason": "step budget of 10 used",
+ "tried": 10,
+ "promoted": [],
+ "oos_opened": [],
+ "steps": [
+  {
+   "step": 1,
+   "id": "rsi_overbought",
+   "status": "tested",
+   "discovery_t": -0.3298648857210017,
+   "discovery_excess": -0.004767039984445189,
+   "discovery_events": 26084,
+   "oos_t": null,
+   "decision": "reject",
+   "reason": "discovery: mean excess after costs is not positive (-0.48%); out-of-sample not opened"
+  },
+  {
+   "step": 2,
+   "id": "rsi_oversold",
+   "status": "tested",
+   "discovery_t": -1.2033640609280876,
+   "discovery_excess": -0.0023443089601173916,
+   "discovery_events": 15017,
+   "oos_t": null,
+   "decision": "reject",
+   "reason": "discovery: mean excess after costs is not positive (-0.23%); out-of-sample not opened"
+  },
+  {
+   "step": 3,
+   "id": "rsi_divergence",
+   "status": "tested",
+   "discovery_t": -0.786693886707384,
+   "discovery_excess": -0.0012476404736513579,
+   "discovery_events": 5749,
+   "oos_t": null,
+   "decision": "reject",
+   "reason": "discovery: mean excess after costs is not positive (-0.12%); out-of-sample not opened"
+  },
+  {
+   "step": 4,
+   "id": "overbought_macd_cross",
+   "status": "tested",
+   "discovery_t": -0.15747544351676854,
+   "discovery_excess": -0.004063844956775469,
+   "discovery_events": 2360,
+   "oos_t": null,
+   "decision": "reject",
+   "reason": "discovery: mean excess after costs is not positive (-0.41%); out-of-sample not opened"
+  },
+  {
+   "step": 5,
+   "id": "oversold_macd_cross",
+   "status": "tested",
+   "discovery_t": -1.355095819397437,
+   "discovery_excess": -0.0018681549059547057,
+   "discovery_events": 1452,
+   "oos_t": null,
+   "decision": "reject",
+   "reason": "discovery: mean excess after costs is not positive (-0.19%); out-of-sample not opened"
+  },
+  {
+   "step": 6,
+   "id": "divergence_macd_cross",
+   "status": "tested",
+   "discovery_t": -1.0782752818449228,
+   "discovery_excess": -0.0018160295840705756,
+   "discovery_events": 2389,
+   "oos_t": null,
+   "decision": "reject",
+   "reason": "discovery: mean excess after costs is not positive (-0.18%); out-of-sample not opened"
+  },
+  {
+   "step": 7,
+   "id": "overbought_macd_state",
+   "status": "tested",
+   "discovery_t": -1.0387932156388515,
+   "discovery_excess": -0.002261623790848064,
+   "discovery_events": 1710,
+   "oos_t": null,
+   "decision": "reject",
+   "reason": "discovery: mean excess after costs is not positive (-0.23%); out-of-sample not opened"
+  },
+  {
+   "step": 8,
+   "id": "oversold_macd_state",
+   "status": "tested",
+   "discovery_t": -0.2958192356945814,
+   "discovery_excess": -0.000958315367594793,
+   "discovery_events": 1504,
+   "oos_t": null,
+   "decision": "reject",
+   "reason": "discovery: mean excess after costs is not positive (-0.10%); out-of-sample not opened"
+  },
+  {
+   "step": 9,
+   "id": "divergence_macd_state",
+   "status": "tested",
+   "discovery_t": -0.5506701287236503,
+   "discovery_excess": -0.0021199471977607545,
+   "discovery_events": 3637,
+   "oos_t": null,
+   "decision": "reject",
+   "reason": "discovery: mean excess after costs is not positive (-0.21%); out-of-sample not opened"
+  },
+  {
+   "step": 10,
+   "id": "overbought_macd_cross_refined",
+   "status": "tested",
+   "discovery_t": -1.256139666381416,
+   "discovery_excess": -0.004688973463727233,
+   "discovery_events": 919,
+   "oos_t": null,
+   "decision": "reject",
+   "reason": "discovery: mean excess after costs is not positive (-0.47%); out-of-sample not opened"
+  }
+ ],
+ "ledger_chain_ok": true
+}
