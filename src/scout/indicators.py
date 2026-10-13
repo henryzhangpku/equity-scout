@@ -23,6 +23,15 @@ Conventions, stated so the hand-computed tests can check them:
   the daily formulas above to the weekly closes: rsi14_w is RSI(14) of weekly
   closes; macd_hist_w and macd_cross_up_w use MACD(12, 26, 9) of weekly closes
   and need at least MIN_WEEKLY_MACD weeks of history.
+* Pivots: bar j is a pivot high when close[j] is strictly greater than every
+  other close in [j - k, j + k] (a pivot low: strictly less). A pivot is only
+  known at bar j + k, once the k bars after it exist; ties are not pivots.
+* RSI divergence (k = 3, gap 5..60 bars between the two pivots): bearish on bar
+  t when a pivot high j2 is confirmed at t (t = j2 + k), the previous pivot high
+  j1 lies 5..60 bars before j2, price made a higher high (close[j2] > close[j1])
+  and the oscillator a lower high (osc[j2] < osc[j1]). Bullish is the mirror on
+  pivot lows: lower low in price, higher low in the oscillator. The signal is
+  dated on the confirmation bar, so it never uses a bar after t.
 """
 
 from __future__ import annotations
@@ -157,3 +166,37 @@ def snapshot(df: pd.DataFrame, bench: dict[str, pd.Series] | None = None) -> dic
                 else:
                     out[f"rs_{mth}m_vs_{name}"] = np.nan
     return out
+
+
+def pivots(x, k: int = 3) -> tuple[np.ndarray, np.ndarray]:
+    """(is_pivot_high, is_pivot_low) per bar, dated at the pivot itself (known only at j + k)."""
+    a = np.asarray(x, dtype=float)
+    n = len(a)
+    hi, lo = np.zeros(n, dtype=bool), np.zeros(n, dtype=bool)
+    if n < 2 * k + 1:
+        return hi, lo
+    w = np.lib.stride_tricks.sliding_window_view(a, 2 * k + 1)     # row r covers bars r .. r + 2k
+    mid = w[:, k]
+    rest = np.delete(w, k, axis=1)
+    ok = np.isfinite(w).all(axis=1)
+    hi[k:n - k] = ok & (mid > rest.max(axis=1))
+    lo[k:n - k] = ok & (mid < rest.min(axis=1))
+    return hi, lo
+
+
+def divergence(price, osc, k: int = 3, min_gap: int = 5, max_gap: int = 60) -> tuple[np.ndarray, np.ndarray]:
+    """(bearish, bullish) per bar, each True on the bar a divergence is confirmed (see module docstring)."""
+    p = np.asarray(price, dtype=float)
+    o = np.asarray(osc, dtype=float)
+    n = len(p)
+    bear, bull = np.zeros(n, dtype=bool), np.zeros(n, dtype=bool)
+    hi, lo = pivots(p, k)
+    for piv, out, sign in ((hi, bear, 1.0), (lo, bull, -1.0)):
+        idx = np.nonzero(piv)[0]
+        for a, b in zip(idx[:-1], idx[1:]):
+            if not (min_gap <= b - a <= max_gap) or not (np.isfinite(o[a]) and np.isfinite(o[b])):
+                continue
+            # bearish: price higher high, oscillator lower high; bullish: lower low, higher low
+            if sign * (p[b] - p[a]) > 0 and sign * (o[b] - o[a]) < 0:
+                out[b + k] = True
+    return bear, bull
