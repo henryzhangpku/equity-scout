@@ -61,21 +61,27 @@ def verify_chain(entries: list[dict]) -> list[str]:
     return problems
 
 
-def append_picks(run_id: str, as_of: str, observation: str, picks: list[dict], benchmarks: dict,
-                 path: Path = LEDGER) -> dict:
+def append_entry(path: Path, body: dict, what: str = "ledger") -> dict:
+    """Append one entry (body plus seq, recorded_at, prev_hash, hash) to a hash-chained JSONL file.
+    Refuses if the existing chain does not verify."""
     entries = read_ledger(path)
     bad = verify_chain(entries)
     if bad:
-        raise RuntimeError("pick ledger is corrupt, refusing to append: " + "; ".join(bad))
-    e = {"seq": len(entries), "run_id": run_id, "as_of": as_of, "observation": observation,
+        raise RuntimeError(f"{what} is corrupt, refusing to append: " + "; ".join(bad))
+    e = {"seq": len(entries), **body,
          "recorded_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-         "picks": picks, "benchmarks": benchmarks,
          "prev_hash": entries[-1]["hash"] if entries else GENESIS}
     e["hash"] = entry_hash(e)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8", newline="\n") as f:
         f.write(_canon(e) + "\n")
     return e
+
+
+def append_picks(run_id: str, as_of: str, observation: str, picks: list[dict], benchmarks: dict,
+                 path: Path = LEDGER) -> dict:
+    return append_entry(path, {"run_id": run_id, "as_of": as_of, "observation": observation,
+                               "picks": picks, "benchmarks": benchmarks}, what="pick ledger")
 
 
 def mark(entries: list[dict], closes: pd.DataFrame, today: str) -> list[dict]:

@@ -7,6 +7,8 @@
     scout track                           mark every recorded pick sheet to market vs SPY and SMH
     scout build --as-of YYYY-MM-DD [--prices alpaca|openbb]   fetch data and build the feature snapshot
     scout site                            export recorded runs for the static site in docs/
+    scout loop --proposer scripted|llm --max-steps N   propose, evaluate on a fixed split, correct, record, decide
+    scout loop-data                       build data/loop/daily_closes.npz from the cached daily bars
 """
 
 from __future__ import annotations
@@ -221,6 +223,33 @@ def cmd_backtest(a) -> None:
         print(f"  [{'pass' if g['pass'] else 'FAIL'}] {g['label']}")
 
 
+def cmd_loop(a) -> None:
+    from .loop import Lab, default_out, load_data, run_loop, write_run
+    from .propose import LLMProposer, Scripted
+    if a.max_steps < 1:
+        sys.exit("--max-steps must be at least 1")
+    lab = Lab(load_data(a.data))
+    if a.proposer == "scripted":
+        proposer = Scripted()
+    else:
+        proposer = LLMProposer(LLM(provider=a.provider, offline=a.offline))
+    out = Path(a.out) if a.out else default_out(a.proposer)
+    out.mkdir(parents=True, exist_ok=True)
+    res = run_loop(lab, proposer, a.max_steps, out / "ledger.jsonl", label=out.name)
+    s = write_run(res, out)
+    for x in s["steps"]:
+        t = "n/a" if x["discovery_t"] is None else f"{x['discovery_t']:+.2f}"
+        print(f"  {x['step']:>2}. {str(x['id']):<34} discovery t {t:>6}  {x['decision'].upper():<7} {x['reason']}")
+    print(f"stopped: {s['stop_reason']}; tried {s['tried']}, promoted {len(s['promoted'])}"
+          f"{': ' + ', '.join(s['promoted']) if s['promoted'] else ''}")
+    print(f"saved: {out / 'ledger.jsonl'}, report.md, summary.json (chain {'intact' if s['ledger_chain_ok'] else 'BROKEN'})")
+
+
+def cmd_loop_data(a) -> None:
+    from .loop import build_data
+    print(f"loop data -> {build_data(Path(a.prices) if a.prices else None)}")
+
+
 def cmd_serve(a) -> None:
     from .serve import serve
     serve(port=a.port, host=a.host, offline=a.offline, as_of=a.as_of, open_browser=not a.no_browser)
@@ -272,9 +301,19 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--offline", action="store_true", help="recorded material only: LLM cache and saved documents")
     p.add_argument("--as-of")
     p.add_argument("--no-browser", action="store_true")
+    p = sub.add_parser("loop", help="learning loop: agents propose signals, a fixed evaluator decides")
+    p.add_argument("--proposer", choices=["scripted", "llm"], default="scripted")
+    p.add_argument("--max-steps", type=int, default=10, help="step budget K, also the Bonferroni divisor")
+    p.add_argument("--data", help="daily closes archive (default data/loop/daily_closes.npz)")
+    p.add_argument("--out", help="output folder (default runs/loop-<date>[-llm])")
+    p.add_argument("--provider", default="deepseek", choices=["deepseek", "kimi"])
+    p.add_argument("--offline", action="store_true", help="llm mode: recorded responses only")
+    p = sub.add_parser("loop-data", help="build the learning-loop daily closes from the cached bars")
+    p.add_argument("--prices", help="long CSV of daily bars (default .cache/panels/prices_long.csv.gz)")
     a = ap.parse_args(argv)
     {"run": cmd_run, "spec": cmd_spec, "replay": cmd_replay, "build": cmd_build, "site": cmd_site,
-     "track": cmd_track, "serve": cmd_serve, "build-panels": cmd_build_panels, "backtest": cmd_backtest}[a.cmd](a)
+     "track": cmd_track, "serve": cmd_serve, "build-panels": cmd_build_panels, "backtest": cmd_backtest,
+     "loop": cmd_loop, "loop-data": cmd_loop_data}[a.cmd](a)
 
 
 if __name__ == "__main__":

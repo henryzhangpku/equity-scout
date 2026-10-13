@@ -1,0 +1,11 @@
+{
+ "source": "Alpaca daily bars, split and dividend adjusted (cached long frame)",
+ "first": "2021-12-01",
+ "last": "2026-10-08",
+ "sessions": 1218,
+ "n_symbols": 500,
+ "universe_rule": "top 500 US operating companies by 50-day average dollar volume on 2022-02-28 (the last session before 2022-03-01), close >= $5; candidates are companies listed on 2026-10-08 (survivorship)",
+ "source_sha256": "959386d00e471efcca18d0d24d0512e81f044dd3634b7a23663496fcf76ae258",
+ "sha256": "2f9f3237eb38bbe880433bf9fb0f4546db10ab65170c14ef7f042d150f1fafeb",
+ "bytes": 1788687
+}
