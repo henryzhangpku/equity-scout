@@ -314,6 +314,61 @@ deleting a past entry is detected. `scout track` checks the chain and marks ever
 SMH using fresh Alpaca closes. The site shows the result under the label **"since run date; days of history, not
 evidence"**. As of the recording date every entry has 0 trading days of history.
 
+## Use it from any model (MCP)
+
+MCP (Model Context Protocol) is an open standard that lets a model call tools served by another program.
+`scout mcp` serves equity-scout's deterministic parts as MCP tools over stdio, so Claude Code, Claude Desktop or
+any other MCP client can drive the screen. The model on top can be swapped, and so can the data vendor underneath
+(see *Data sources* above); the validator, screen, ranker and citation checks in the middle stay the same.
+
+| Tool | What it returns |
+|---|---|
+| `list_fields()` | every whitelisted field with kind, units and description, and whether the latest snapshot has it; operators, sectors, industry groups, themes and the spec shape |
+| `validate_spec(spec)` | ok, or every problem with its reason (the same validator the CLI uses) |
+| `run_screen(spec, as_of=None)` | the funnel (entered, passed, failed, no data per step), the survivor count and the top N ranked names with the computed values, on a committed snapshot (default the latest); invalid specs and fields the snapshot lacks are refused with reasons |
+| `explain(symbol, run_id=None)` | the recorded cited explanation for a name: claims with their verified quotes and source URLs; if none is recorded it says so |
+| `loop_report(run_id="loop-2026-10-12")` | the recorded learning-loop summary: each hypothesis, its discovery metrics, decision and reason, whether out-of-sample was opened, and whether the ledger chain is intact |
+
+There is no translate tool. Writing the spec is the client model's job: it reads `list_fields` and fills the
+structure, and `validate_spec` holds it to the same whitelist the built-in translator is held to. The built-in
+translator needs a provider key or a recorded response, so it stays in `scout run` and `scout serve`.
+
+Connect it (the SDK is an optional extra, `uv sync --extra mcp`):
+
+```bash
+# Claude Code, from the repo folder
+claude mcp add equity-scout -- uv run --extra mcp scout mcp
+```
+
+```json
+{
+  "mcpServers": {
+    "equity-scout": {
+      "command": "uv",
+      "args": ["run", "--directory", "/path/to/equity-scout", "--extra", "mcp", "scout", "mcp"]
+    }
+  }
+}
+```
+
+The JSON goes in Claude Desktop's `claude_desktop_config.json`. `python -m scout.mcp_server` also starts the server.
+
+An example exchange, in words. You ask for "AI suppliers lagging the chip index while revenue accelerates". The
+model calls `list_fields`, sees the `ai_semis`, `ai_networking` and `ai_power` themes and the fields
+`rs_3m_vs_smh` and `revenue_growth_accel`, and writes a spec with two conditions ranked by acceleration. It calls
+`validate_spec`; had it written a percent such as `25` where a ratio field takes the decimal `0.25`, the validator
+would say the value looks like a percent and the model would fix it. `run_screen` returns the funnel (3,827 → 32 → 18 → 12 on the 2026-10-08 snapshot) and the
+top five, AVGO first. The model then calls `explain("AVGO")` and relays the recorded claims with their quotes and
+links instead of writing its own.
+
+Limits:
+
+* Screens run on the committed snapshot (2026-10-08 close). Nothing is fetched live, and fields added after that
+  snapshot was built (the weekly and 20-day volume fields) are refused until it is rebuilt.
+* Explanations come only from recorded runs. The server never asks a model to write one, so most names have none.
+* The model never computes a number: every value comes from the screen code or a recorded file.
+* Research only. It places no orders and makes no recommendations.
+
 ## Data limits
 
 * Only US-GAAP quarterly filers have fundamentals. Foreign private issuers (IFRS, 20-F) and banks with
@@ -357,7 +412,8 @@ written to disk. Choose the model provider with `--provider deepseek|kimi`. The 
 the key used here belongs to a plan that the Kimi coding endpoint rejected (HTTP 403).
 
 Dependencies: `numpy`, `pandas`, `requests`, plus `pytest` for development. HTML is parsed with the standard
-library. `openbb` is an optional extra, imported only when `--prices openbb` is chosen.
+library. `openbb` is an optional extra, imported only when `--prices openbb` is chosen. `mcp` (the official MCP
+Python SDK) is an optional extra, imported only by `scout mcp`.
 
 
 ## Deploy (hosted API)
@@ -419,7 +475,7 @@ Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`)
 
 ## Tests
 
-`uv run pytest`: 177 tests, none skipped, none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
+`uv run pytest`: 186 tests, none skipped when the `mcp` extra is installed (the one server-registration test skips without it), none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
 
 * indicators against hand-computed values (SMA, Wilder RSI step by step, EMA/MACD, momentum, volume ratio,
   drawdown, relative strength)
@@ -447,6 +503,9 @@ Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`)
   reproduces run C, record-on-click (one ledger entry, chain intact), replay, path and job guards
 * hosted mode: CORS allowlist, per-IP and daily caps, one run per IP, kill switch, input limits, disabled record/replay,
   generic upstream errors, hashed IPs in logs, and no key ever appearing in any response
+* the MCP tools, called directly with no client: a valid spec reproduces a recorded funnel and ranking, invalid
+  specs and missing snapshot fields are refused with reasons, explanations come only from recorded runs, the loop
+  report matches the recorded summary; with the extra installed, the server registers exactly the five tools
 * offline replay of every recorded run, including the six examples, with the network disabled, reproduces spec, funnel, ranking and
   explanations exactly
 
