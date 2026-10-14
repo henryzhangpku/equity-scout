@@ -223,7 +223,7 @@ def add_technicals(as_of: date | str, dest: Path, fields: tuple[str, ...] | None
         "source": {"prices.csv.gz": manifest["files"]["prices.csv.gz"],
                    "features.csv.gz": manifest["files"]["features.csv.gz"]},
         "files": {added_p.name: {"sha256": sha256_file(added_p), "bytes": added_p.stat().st_size}},
-    }, indent=2) + "\n")
+    }, indent=2) + "\n", newline="\n")
     _log(f"added {list(fields)} for {len(rows)} companies -> {added_p} ({len(checked)} existing fields reproduced)")
     return added_p
 
