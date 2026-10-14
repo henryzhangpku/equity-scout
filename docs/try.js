@@ -6,7 +6,7 @@
 (function () {
   "use strict";
   var U = window.ScoutUI, esc = U.esc;
-  var SNAP_FILE = "data/snapshot-2026-10-08.js";
+  var SNAP_FILE = "data/snapshot-2026-10-08.js?v=20261013";
   var API = (window.SCOUT_API_BASE || "").replace(/\/+$/, "");
   var S = null, SNAP = null, loading = null, apiLive = false, health = null;
   var root = document.getElementById("try-body");
@@ -26,7 +26,7 @@
   function ensureLoaded() {
     if (loading) return loading;
     showOut('<div class="panel"><p class="muted" style="margin:0">Loading the 2026-10-08 snapshot of about 3,800 companies (about 2 MB)…</p></div>');
-    loading = loadScript("data/schema.js?v=20261009b").then(function () {
+    loading = loadScript("data/schema.js?v=20261013").then(function () {
       S = window.SCOUT_SCHEMA; ScoutCore.setSchema(S);
       return Promise.all([loadScript(SNAP_FILE), loadScript("data/chips-ex.js?v=20261009b")]);
     }).then(function () { SNAP = window.SCOUT_SNAPSHOT; buildAdvanced(); showOut(""); })
@@ -140,10 +140,11 @@
   function renderResults(o) {
     var h = [];
     h.push('<div class="panel"><p class="label-note">' + o.note + "</p>" + U.specHtml(o.spec, "What was screened") + "</div>");
+    if (o.lead) h.push('<div class="panel">' + o.lead + "</div>");
     h.push('<div class="panel">' + U.funnelHtml(o.funnel, "How the list narrowed", o.spec) + "</div>");
     h.push('<div class="panel">' + U.tableHtml(o.cols, o.rows, o.topN, o.nRanked, "Ranked results") + "</div>");
     if (o.breakdown && o.breakdown.length) h.push('<div class="panel">' + U.sectorHtml(o.breakdown, "Survivors by sector (all " + o.nRanked + ")") + "</div>");
-    var top = o.rows.slice(0, o.topN);
+    var top = o.noCards ? [] : o.rows.slice(0, o.topN);
     if (top.length) {
       h.push('<div class="panel"><div class="step">Why the price and the business may disagree — top ' + top.length + "</div>");
       h.push('<p class="muted" style="margin-top:0">' + (o.exNote || "Each quote was checked by code to appear word for word in its linked source.") +
@@ -158,6 +159,7 @@
       });
       h.push("</div></div>");
     }
+    if (o.btNote) { h.push('<div class="panel"><p class="meta" style="margin:0">' + o.btNote + "</p></div>"); showOut(h.join("")); return; }
     h.push('<div class="panel" id="bt-panel"></div>');
     showOut(h.join(""));
     U.mountBacktest(byId("bt-panel"), { key: o.btKey || null, spec: o.spec, api: API || null,
@@ -171,7 +173,7 @@
     box.innerHTML = CHIPS.map(function (c) { return '<button class="chipbtn" data-chip="' + esc(c.id) + '">' + esc(c.label) + "</button>"; }).join("");
     box.querySelectorAll("[data-chip]").forEach(function (b) {
       b.onclick = function () {
-        box.querySelectorAll(".chipbtn").forEach(function (x) { x.classList.remove("on"); });
+        document.querySelectorAll(".chipbtn").forEach(function (x) { x.classList.remove("on"); });
         b.classList.add("on");
         runChip(b.getAttribute("data-chip"));
       };
@@ -207,6 +209,52 @@
       return o;
     });
     return { funnel: res.funnel, rows: rows, n: ranked.length, cols: cols, breakdown: ScoutCore.sectorBreakdown(SNAP, res.survivors) };
+  }
+
+  // ---------- multi-timeframe example: runs in the page, no model, no saved explanations ----------
+  var MTF = window.SCOUT_MTF || { examples: [], universe_gaps: {} };
+  function mtfById(id) { return MTF.examples.filter(function (x) { return x.id === id; })[0]; }
+  function renderMtfChip() {
+    var box = byId("mtf-chips"), first = MTF.examples[0];
+    if (!box || !first) return;
+    box.innerHTML = '<button class="chipbtn" data-mtf="' + esc(first.id) + '">' + esc(first.label) + "</button>";
+    box.querySelector("button").onclick = function () {
+      document.querySelectorAll(".chipbtn").forEach(function (x) { x.classList.remove("on"); });
+      this.classList.add("on");
+      runMtf(first.id);
+    };
+  }
+  function rsiLimit(spec) { return spec.conditions.filter(function (c) { return c.field === "rsi14"; })[0].value; }
+  function runMtf(id) {
+    var ex = mtfById(id);
+    ensureLoaded().then(function () {
+      var v = ScoutCore.validate(ex.spec, S.short_interest_available);
+      if (!v.ok) { showOut('<div class="panel refusal">' + esc(v.problems.join("; ")) + "</div>"); return; }
+      var res = screen(v.spec), f = res.funnel, lim = rsiLimit(v.spec), lead = [];
+      var other = MTF.examples.filter(function (x) { return x.id !== id; })[0];
+      if (res.n === 0) {
+        lead.push("<h3>0 names pass all three on the " + esc(S.data.last_price_date) + " snapshot.</h3><p>" + f[1].n_pass.toLocaleString("en-US") +
+          " companies have daily RSI under " + lim + "; none of them also crossed above its signal on the weekly MACD" +
+          (f[2].n_missing ? " (" + f[2].n_missing + " have too little weekly history to tell)" : "") +
+          ". An empty list is an answer, not an error: a deeply oversold name rarely sees its weekly MACD turn up in the same week.</p>");
+      } else {
+        lead.push("<h3>" + res.n + " name" + (res.n === 1 ? "" : "s") + " pass with daily RSI under " + lim + ": " +
+          res.rows.map(function (r) { return esc(r.symbol); }).join(", ") + ".</h3>");
+        res.rows.forEach(function (r) {
+          var gap = MTF.universe_gaps[r.symbol];
+          if (gap) lead.push('<p class="unmapped"><strong>Universe gap: ' + esc(r.symbol) + ".</strong> " + esc(gap) + "</p>");
+        });
+      }
+      if (other) lead.push('<div class="row"><button class="primary" id="mtf-other">' +
+        (rsiLimit(other.spec) > lim ? "Loosen RSI to " + rsiLimit(other.spec) : "Back to RSI under " + rsiLimit(other.spec)) + "</button></div>");
+      renderResults({ spec: v.spec, funnel: f, rows: res.rows, nRanked: res.n, topN: v.spec.top_n, cols: res.cols,
+        breakdown: res.breakdown, lead: lead.join(""), noCards: true,
+        note: "<strong>Example:</strong> “" + esc(ex.spec.observation) + "”<br>Snapshot as of " + esc(S.data.last_price_date) +
+          " close, screened in your browser with no model. The weekly RSI, weekly and daily MACD crosses and 20-day volume fields were added to this snapshot afterwards from its own cached daily bars; weeks end on Friday.",
+        btNote: "No backtest for this one: the saved monthly panels were built before the weekly and 20-day fields existed, so a backtest is refused rather than run on missing data." });
+      if (other) byId("mtf-other").onclick = function () { runMtf(other.id); };
+      byId("t-out").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   }
 
   // cached explanations from the recorded runs, by symbol (shown for Advanced runs)
@@ -418,6 +466,7 @@
   // ---------- boot ----------
   renderAsk();
   renderChips();
+  renderMtfChip();
   checkApi();
   if (adv) adv.addEventListener("toggle", function () { if (adv.open) ensureLoaded(); });
   var q = new URLSearchParams(location.search);

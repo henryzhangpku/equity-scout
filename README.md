@@ -19,6 +19,13 @@ might disagree. Code deletes any claim whose quote does not appear verbatim in i
   translated by the model once and checked by code. Its spec, prompt and response are in `llm_cache/` and the full
   run is in `runs/chip-*`. Clicking an example re-runs the screen in the page on the 2026-10-08 snapshot and shows
   the cited explanations the local pipeline wrote for its top names, labelled with the run date. No key is needed.
+* **Daily and weekly together:** one more example, *"RSI under 30 on the daily, MACD crossing above its signal on
+  the weekly, volume above its 20-day average"*, runs in the page with no model. It shows the honest result (0
+  names on 2026-10-08) and a one-click "Loosen RSI to 45" variant that returns its names, with a note on VXX, an
+  exchange-traded note that slips into the universe.
+* **Learning loop:** a section built from the recorded loop ledgers (`docs/data/loop.js`, written by `scout site`,
+  checked by a test against the ledgers): the five steps, the fixed split and costs, every hypothesis with its
+  excess after costs, t, p, the corrected bar and the decision, and the model-proposed ideas.
 * **Ask your own question.** When the hosted API is reachable (its URL is set in `docs/config.js`), the box sends
   the question to it. The model proposes a screen, you see it in plain English and confirm, code runs it, and
   explanations arrive name by name. The status pill reads *Live* or *Snapshot (offline)*. If the API is down,
@@ -29,7 +36,7 @@ might disagree. Code deletes any claim whose quote does not appear verbatim in i
   months > $0". Raw field names appear only under *Show spec*.
 * The screen, funnel and ranking in the page come from `docs/scout-core.js`, a line-by-line port of the Python code.
   A parity test runs every recorded spec, including each example, through both implementations and requires
-  identical funnels and rankings. The snapshot is 5.2 MB raw and about 2.1 MB gzipped, and loads on first use.
+  identical funnels and rankings. The snapshot is 5.4 MB raw and about 2.2 MB gzipped, and loads on first use.
 * Light and dark themes follow the system setting. A toggle in the nav overrides it, and the choice is remembered
   when browser storage works.
 
@@ -147,7 +154,8 @@ crossing above its signal on the weekly, and volume above its 20-day average"* m
   weekly MACD (10 lack enough weekly history). With RSI under 45 instead, 3 pass (VXX, ERII, SOC).
   `uv run scout screen spec.json` runs a spec file with no model and no network.
 * The backtest panels predate these fields; a backtest that uses them is refused with a message saying so. The
-  browser snapshot in `docs/data/` does not carry them yet either.
+  browser snapshot in `docs/data/` carries them (about +70 KB gzipped), and the parity test runs the strict and
+  loosened specs above through both the Python and the browser screen.
 
 ## Recorded runs (real data as of 2026-10-08 close)
 
@@ -485,7 +493,7 @@ Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`)
 
 ## Tests
 
-`uv run pytest`: 189 tests, none skipped when the `mcp` extra is installed (the one server-registration test skips without it), none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
+`uv run pytest`: 193 tests, none skipped when the `mcp` extra is installed (the one server-registration test skips without it), none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
 
 * indicators against hand-computed values (SMA, Wilder RSI step by step, EMA/MACD, momentum, volume ratio,
   drawdown, relative strength)

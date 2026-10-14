@@ -157,7 +157,7 @@
       } else vals = [v];
       vals.forEach(function (x) {
         if (fd.kind === "ratio" && Math.abs(x) > 20) p.push(where + ": " + f + " is a decimal ratio (0.10 = 10%); " + pyNum(x) + " looks like a percent");
-        if (f === "rsi14" && !(x >= 0 && x <= 100)) p.push(where + ": rsi14 thresholds must be within 0-100");
+        if ((f === "rsi14" || f === "rsi14_w") && !(x >= 0 && x <= 100)) p.push(where + ": " + f + " thresholds must be within 0-100");
       });
     });
 

@@ -168,3 +168,57 @@ def test_sector_validator_parity():
         with pytest.raises(SpecError) as e:
             validate(d)
         assert not j["ok"] and j["problems"] == e.value.problems
+
+
+# ---------- multi-timeframe example (fields added to the 2026-10-08 snapshot from its own bars) ----------
+
+def test_mtf_example_parity(browser_frame):
+    from scout.mcp_tools import run_screen_tool
+    from scout.site import MTF_EXAMPLES
+    from scout.spec import MTF_FIELDS
+    assert all(f in browser_frame.columns for f in MTF_FIELDS)
+    specs = [e["spec"] for e in MTF_EXAMPLES]
+    js = node({"specs": specs, "snapshot": SNAP_JS.name})["screens"]
+    for d, j in zip(specs, js):
+        spec = validate(d)
+        funnel, surv = run_screen(browser_frame, spec)
+        assert funnel == j["funnel"]
+        assert list(rank(surv, spec)["symbol"]) == [r["symbol"] for r in j["ranked"]]
+        full = run_screen_tool(d, as_of="2026-10-08")             # the full Python snapshot, not the browser copy
+        assert [f["passed"] for f in full["funnel"]] == [s["n_pass"] for s in j["funnel"]]
+    strict, loose = js
+    assert [(s["n_in"], s["n_pass"], s["n_fail"], s["n_missing"]) for s in strict["funnel"]] == \
+        [(3827, 3827, 0, 0), (3827, 333, 3494, 0), (333, 0, 323, 10), (0, 0, 0, 0)]
+    assert [r["symbol"] for r in loose["ranked"]] == ["VXX", "ERII", "SOC"]
+
+
+def test_mtf_validator_parity():
+    bad = [{"observation": "x", "conditions": [{"field": "rsi14_w", "op": "<", "value": 130},
+                                               {"field": "macd_cross_up_w", "op": ">", "value": 0}],
+            "rank": [{"field": "macd_cross_up", "direction": "desc"}]}]
+    js = node({"validate": [{"spec": d} for d in bad]})["validations"]
+    for d, j in zip(bad, js):
+        with pytest.raises(SpecError) as e:
+            validate(d)
+        assert not j["ok"] and j["problems"] == e.value.problems
+        assert any("rsi14_w thresholds must be within 0-100" in p for p in j["problems"])
+
+
+def _js_payload(name: str):
+    text = (ROOT / "docs" / "data" / name).read_text(encoding="utf-8")
+    return json.loads(text[text.index("=") + 1:].rstrip().rstrip(";"))
+
+
+def test_site_loop_data_is_generated_from_the_ledgers():
+    from scout.site import loop_payload
+    assert _js_payload("loop.js") == loop_payload()        # rerun `scout site` if this fails
+    runs = {r["label"]: r for r in loop_payload()["runs"]}
+    s = runs["loop-2026-10-12"]
+    assert s["K"] == 10 and s["corrected_p"] == 0.005 and len(s["steps"]) == 10 and s["chain_ok"]
+    assert s["oos_opened"] == [] and all(x["decision"] == "reject" for x in s["steps"])
+    assert len(runs["loop-2026-10-12-llm"]["steps"]) == 5
+
+
+def test_site_mtf_data_is_generated():
+    from scout.site import mtf_payload
+    assert _js_payload("mtf.js") == json.loads(json.dumps(mtf_payload()))

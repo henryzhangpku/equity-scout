@@ -36,7 +36,9 @@
   var HSHORT = { revenue_growth_yoy: "Revenue growth (YoY)", revenue_growth_q_yoy: "Qtr revenue growth (YoY)",
     revenue_growth_accel: "Growth acceleration", fcf_ttm: "Free cash flow (12m)", net_income_ttm: "Net income (12m)",
     revenue_ttm: "Revenue (12m)", avg_dollar_volume_50d: "Avg $ volume (50d)", volume_ratio_50d: "Volume vs 50d avg",
-    short_pct_shares_out: "Short interest", sma50_above_sma200: "50d > 200d", drawdown_52w: "From 52w high" };
+    short_pct_shares_out: "Short interest", sma50_above_sma200: "50d > 200d", drawdown_52w: "From 52w high",
+    volume_ratio_20d: "Volume vs 20d avg", rsi14_w: "RSI (14-week)", macd_cross_up: "Daily MACD cross up",
+    macd_cross_up_w: "Weekly MACD cross up", macd_hist_w: "Weekly MACD minus signal" };
   function headLabel(f) {
     var m = /^rs_(\d+)m_vs_(\w+)$/.exec(f);
     if (m) return "vs " + (BSHORT[m[2]] || m[2].toUpperCase()) + ", " + m[1] + "m";
@@ -90,6 +92,12 @@
       return (op[0] === "<" ? "Lagging " : "Beating ") + benchName(m[2]) + " over " + months(m[1]);
     if ((m = /^mom_(\d+)m$/.exec(f)) && v === 0) return "Price " + (op[0] === ">" ? "up" : "down") + " over " + months(m[1]);
     if (f === "volume_ratio_50d" && op[0] === ">") return "Volume at least " + trim0(v) + "\u00d7 its 50-day average";
+    if (f === "volume_ratio_20d" && op[0] === ">")
+      return v === 1 ? "Volume above its 20-day average" : "Volume at least " + trim0(v) + "\u00d7 its 20-day average";
+    if (f === "macd_cross_up_w") return v ? "Weekly MACD crossed above its signal this week" : "Weekly MACD did not cross above its signal this week";
+    if (f === "macd_cross_up") return v ? "Daily MACD crossed above its signal on the last session" : "Daily MACD did not cross above its signal on the last session";
+    if (f === "rsi14" && op[0] === "<") return "Daily RSI (14) under " + trim0(v);
+    if (f === "rsi14_w" && op[0] === "<") return "Weekly RSI (14) under " + trim0(v);
     var sym = { ">": ">", ">=": "\u2265", "<": "<", "<=": "\u2264" }[op] || op;
     return label(f) + " " + sym + " " + plainVal(f, v);
   }

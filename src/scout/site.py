@@ -108,6 +108,8 @@ def export() -> None:
                    encoding="utf-8", newline="\n")
     print(f"wrote {dst} ({len(out)} runs)")
     export_try()
+    export_loop()
+    export_mtf()
     export_backtests()
 
 
@@ -286,3 +288,90 @@ def write_sectors_page(features) -> None:
 """
     (ROOT / "docs" / "sectors.html").write_text(page, encoding="utf-8", newline="\n")
     print(f"wrote docs/sectors.html (coverage {cov['with_sector']}/{cov['n']})")
+
+
+# ---------- learning loop: the recorded runs, read from their ledgers ----------
+
+SITE_LOOP_RUNS = ["loop-2026-10-12", "loop-2026-10-12-llm"]
+
+
+def _loop_run(name: str) -> dict:
+    from .track import read_ledger, verify_chain
+    d = RUNS / name
+    entries = read_ledger(d / "ledger.jsonl")
+    summary = json.loads((d / "summary.json").read_text(encoding="utf-8"))
+    cfg = entries[0]
+    assert cfg["kind"] == "config", f"{name}: first ledger entry is not the config"
+    steps = []
+    for e in entries[1:]:
+        if e.get("kind") != "attempt":
+            continue
+        m = e.get("discovery") or {}
+        steps.append({"step": e["step"], "id": (e.get("spec") or e.get("proposed") or {}).get("id"),
+                      "description": e.get("description"),
+                      "rationale": (e.get("proposed") or {}).get("rationale"),
+                      "status": e["status"], "events": m.get("n_events"), "hit_rate": m.get("hit_rate"),
+                      "excess": m.get("mean_excess"), "t": m.get("t_stat"), "p": m.get("p_value"),
+                      "decision": e["decision"], "reason": e["reason"], "oos_opened": bool(e.get("oos_opened"))})
+    return {"label": cfg["label"], "proposer": cfg["proposer"], "K": cfg["budget_K"], "alpha": cfg["alpha"],
+            "corrected_p": cfg["corrected_p"], "correction": cfg["correction"],
+            "cost_bps_per_side": cfg["cost_bps_per_side"], "holds": cfg["holds"],
+            "discovery_end": cfg["discovery_end"], "oos_start": cfg["oos_start"],
+            "data": {k: cfg["data"][k] for k in ("first", "last", "sessions", "n_symbols", "sha256")},
+            "stop_reason": summary["stop_reason"], "promoted": summary["promoted"],
+            "oos_opened": summary["oos_opened"], "chain_ok": not verify_chain(entries), "steps": steps}
+
+
+def loop_payload() -> dict:
+    return {"runs": [_loop_run(n) for n in SITE_LOOP_RUNS if (RUNS / n / "ledger.jsonl").exists()]}
+
+
+def export_loop() -> None:
+    """docs/data/loop.js: every number on the site's learning-loop section, straight from the ledgers."""
+    dst = ROOT / "docs" / "data" / "loop.js"
+    dst.write_text("window.SCOUT_LOOP = " + json.dumps(loop_payload(), indent=1, allow_nan=False) + ";\n",
+                   encoding="utf-8", newline="\n")
+    print(f"wrote {dst}")
+
+
+# ---------- multi-timeframe one-click example (needs the fields added to the 2026-10-08 snapshot) ----------
+
+MTF_SENTENCE = ("RSI under 30 on the daily, MACD crossing above its signal on the weekly, "
+                "and volume above its 20-day average")
+
+
+def _mtf_spec(rsi_below: float) -> dict:
+    return {
+        "observation": MTF_SENTENCE if rsi_below == 30 else MTF_SENTENCE.replace("under 30", f"under {rsi_below:g}"),
+        "conditions": [
+            {"field": "rsi14", "op": "<", "value": rsi_below, "why": f"RSI under {rsi_below:g} on the daily"},
+            {"field": "macd_cross_up_w", "op": "==", "value": True, "why": "MACD crossing above its signal on the weekly"},
+            {"field": "volume_ratio_20d", "op": ">", "value": 1, "why": "volume above its 20-day average"},
+        ],
+        "rank": [{"field": "rsi14", "direction": "asc", "weight": 1}],
+        "top_n": 5,
+    }
+
+
+MTF_EXAMPLES = [
+    {"id": "mtf-strict", "label": "RSI under 30 daily, weekly MACD crossing up, volume above its 20-day average",
+     "spec": _mtf_spec(30)},
+    {"id": "mtf-loose", "label": "Same, with RSI loosened to under 45", "spec": _mtf_spec(45)},
+]
+# names that pass the universe rule but are not operating companies; stated on the site, not hidden
+UNIVERSE_GAPS = {
+    "VXX": "VXX is an exchange-traded note (a Barclays debt security that tracks VIX futures), not a company. "
+           "It is registered with the SEC under Barclays Bank PLC, so it carries the bank's name and SIC code, and "
+           "the universe rule lets it in. A known gap in the free universe, stated rather than hidden.",
+}
+
+
+def mtf_payload() -> dict:
+    return {"examples": MTF_EXAMPLES, "universe_gaps": UNIVERSE_GAPS}
+
+
+def export_mtf() -> None:
+    dst = ROOT / "docs" / "data" / "mtf.js"
+    dst.write_text("window.SCOUT_MTF = " + json.dumps(mtf_payload(), ensure_ascii=False) + ";\n",
+                   encoding="utf-8", newline="\n")
+    print(f"wrote {dst}")
