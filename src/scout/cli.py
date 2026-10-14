@@ -9,6 +9,7 @@
     scout site                            export recorded runs for the static site in docs/
     scout loop --proposer scripted|llm --max-steps N   propose, evaluate on a fixed split, correct, record, decide
     scout loop-data                       build data/loop/daily_closes.npz from the cached daily bars
+    scout mcp                             MCP server over stdio: the screen as tools for any model (extra: mcp)
 """
 
 from __future__ import annotations
@@ -255,6 +256,11 @@ def cmd_serve(a) -> None:
     serve(port=a.port, host=a.host, offline=a.offline, as_of=a.as_of, open_browser=not a.no_browser)
 
 
+def cmd_mcp(a) -> None:
+    from .mcp_server import main as serve_mcp
+    serve_mcp()
+
+
 def cmd_site(a) -> None:
     from .site import export
     export()
@@ -310,10 +316,11 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--offline", action="store_true", help="llm mode: recorded responses only")
     p = sub.add_parser("loop-data", help="build the learning-loop daily closes from the cached bars")
     p.add_argument("--prices", help="long CSV of daily bars (default .cache/panels/prices_long.csv.gz)")
+    sub.add_parser("mcp", help="MCP server over stdio (needs the optional 'mcp' extra)")
     a = ap.parse_args(argv)
     {"run": cmd_run, "spec": cmd_spec, "replay": cmd_replay, "build": cmd_build, "site": cmd_site,
      "track": cmd_track, "serve": cmd_serve, "build-panels": cmd_build_panels, "backtest": cmd_backtest,
-     "loop": cmd_loop, "loop-data": cmd_loop_data}[a.cmd](a)
+     "loop": cmd_loop, "loop-data": cmd_loop_data, "mcp": cmd_mcp}[a.cmd](a)
 
 
 if __name__ == "__main__":
