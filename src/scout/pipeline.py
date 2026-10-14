@@ -30,12 +30,30 @@ TABLE_FIELDS = ["symbol", "name", "sector", "industry_group", "sic_desc", "marke
                 "days_to_cover", "prov_revenue_period_end", "prov_revenue_filed"]
 
 
+# Technical fields added to an existing snapshot after it was built (snapshot.add_technicals), kept in a
+# sidecar so features.csv.gz and manifest.json, whose hashes the recorded runs cite, stay byte-identical.
+ADDED_FEATURES = "features-added.csv.gz"
+ADDED_MANIFEST = "features-added.json"
+
+
 def load_features(as_of: str) -> tuple[pd.DataFrame, dict]:
     d = SNAPSHOTS / as_of
     if not (d / "features.csv.gz").exists():
         raise FileNotFoundError(f"no feature snapshot for {as_of}; build it with `scout build --as-of {as_of}`")
-    return (pd.read_csv(d / "features.csv.gz", compression="gzip", low_memory=False),
-            json.loads((d / "manifest.json").read_text()))
+    features = pd.read_csv(d / "features.csv.gz", compression="gzip", low_memory=False)
+    return merge_added(features, d), json.loads((d / "manifest.json").read_text())
+
+
+def merge_added(features: pd.DataFrame, d: Path) -> pd.DataFrame:
+    """The features plus the sidecar's columns (if the folder has one), joined on symbol, row order kept."""
+    p = d / ADDED_FEATURES
+    if not p.exists():
+        return features
+    added = pd.read_csv(p, compression="gzip", low_memory=False)
+    added = added[["symbol"] + [c for c in added.columns if c != "symbol" and c not in features.columns]]
+    out = features.merge(added, on="symbol", how="left", validate="one_to_one")
+    assert list(out["symbol"]) == list(features["symbol"])
+    return out
 
 
 def slug(text: str, n: int = 6) -> str:

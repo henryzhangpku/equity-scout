@@ -175,6 +175,59 @@ def benchmark_closes(bars: pd.DataFrame, as_of: str) -> dict:
     return {r.symbol: float(r.close) for r in b.itertuples()}
 
 
+def add_technicals(as_of: date | str, dest: Path, fields: tuple[str, ...] | None = None) -> Path:
+    """Add technical fields that did not exist when a snapshot was built, from the same cached bars, no network.
+
+    The bars are the snapshot's own prices.csv.gz (its SHA-256 must equal the one in dest/manifest.json),
+    the per-symbol computation is the one `build` runs, and every technical field the snapshot already has
+    must be reproduced exactly before anything is written. The new columns go to a sidecar
+    (pipeline.ADDED_FEATURES, with ADDED_MANIFEST) that load_features joins on symbol; features.csv.gz and
+    manifest.json are not touched, so the hashes cited by recorded runs stay valid.
+    """
+    from .pipeline import ADDED_FEATURES, ADDED_MANIFEST
+    from .spec import MTF_FIELDS
+    fields = tuple(fields or MTF_FIELDS)
+    tag = str(as_of)
+    manifest = json.loads((dest / "manifest.json").read_text())
+    prices_p = snapshot_dir(tag) / "prices.csv.gz"
+    want = manifest["files"]["prices.csv.gz"]["sha256"]
+    if not prices_p.exists() or sha256_file(prices_p) != want:
+        raise RuntimeError(f"{prices_p} is missing or is not the file the snapshot was built from (sha256 {want})")
+    feat = pd.read_csv(dest / "features.csv.gz", compression="gzip", low_memory=False, float_precision="round_trip")
+    present = [f for f in fields if f in feat.columns]
+    if present:
+        raise RuntimeError(f"already in the snapshot: {present}")
+    bars = pd.read_csv(prices_p, compression="gzip")  # read exactly as build() reads it
+    bench = {b.lower(): bars[bars["symbol"] == b].set_index("date")["close"] for b in BENCHMARKS}
+    groups = dict(tuple(bars.groupby("symbol", sort=False)))
+    rows, checked, mismatches = [], None, []
+    for r in feat.to_dict("records"):
+        t = I.snapshot(groups[r["symbol"]], bench)
+        checked = checked or [k for k in t if k in feat.columns]
+        for k in checked:
+            a, b = r[k], t[k]
+            same = (pd.isna(a) and pd.isna(b)) if (pd.isna(a) or pd.isna(b)) else (
+                str(a).lower() == str(b).lower() if isinstance(b, bool) else float(a) == float(b))
+            if not same:
+                mismatches.append((r["symbol"], k, a, b))
+        rows.append({"symbol": r["symbol"], **{f: t[f] for f in fields}})
+    if mismatches:
+        raise RuntimeError(f"{len(mismatches)} existing values not reproduced from the cached bars, e.g. {mismatches[:3]}")
+    added_p = dest / ADDED_FEATURES
+    pd.DataFrame(rows, columns=["symbol", *fields]).to_csv(added_p, index=False, compression="gzip")
+    (dest / ADDED_MANIFEST).write_text(json.dumps({
+        "as_of": tag, "fields": list(fields), "n_companies": len(rows),
+        "method": "snapshot.add_technicals: indicators.snapshot on the snapshot's own cached daily bars, no network; "
+                  f"all {len(checked)} technical fields already in features.csv.gz reproduced exactly first",
+        "verified_fields": checked,
+        "source": {"prices.csv.gz": manifest["files"]["prices.csv.gz"],
+                   "features.csv.gz": manifest["files"]["features.csv.gz"]},
+        "files": {added_p.name: {"sha256": sha256_file(added_p), "bytes": added_p.stat().st_size}},
+    }, indent=2) + "\n")
+    _log(f"added {list(fields)} for {len(rows)} companies -> {added_p} ({len(checked)} existing fields reproduced)")
+    return added_p
+
+
 def load(as_of: date | str) -> tuple[pd.DataFrame, dict]:
     d = snapshot_dir(as_of)
     return (pd.read_csv(d / "features.csv.gz", compression="gzip"),

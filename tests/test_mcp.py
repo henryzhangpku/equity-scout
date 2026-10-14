@@ -21,8 +21,8 @@ def test_list_fields_covers_whitelist_and_flags_snapshot_gaps():
     by = {f["name"]: f for f in out["fields"]}
     assert by["drawdown_52w"]["units"].startswith("decimal ratio")
     assert by["drawdown_52w"]["in_latest_snapshot"] is True
-    if out["latest_snapshot"] == "2026-10-08":  # built before the multi-timeframe fields existed
-        assert all(by[f]["in_latest_snapshot"] is False for f in MTF_FIELDS)
+    # the 2026-10-08 snapshot predates them; they were added from its own cached bars (features-added.csv.gz)
+    assert all(by[f]["in_latest_snapshot"] is True for f in MTF_FIELDS)
 
 
 def test_valid_spec_reproduces_the_recorded_screen():
@@ -49,18 +49,19 @@ def test_invalid_spec_is_refused_with_reasons():
     assert r["ok"] is False and r["refused"] == "invalid spec" and r["problems"] == v["problems"]
 
 
-def test_field_missing_from_snapshot_is_refused():
-    from scout.spec import MTF_FIELDS
-    as_of = t.snapshots()[-1]
-    cols = t._snapshot_columns(as_of)
-    absent = [f for f in MTF_FIELDS if f not in cols and f in ("rsi14_w", "macd_hist_w")]
-    if not absent:
-        pytest.skip("latest snapshot already has the multi-timeframe fields")
-    spec = {"observation": "weekly oversold", "conditions": [{"field": absent[0], "op": "<", "value": 30}],
+def test_field_missing_from_snapshot_is_refused(monkeypatch):
+    real = t.load_features
+
+    def without_weekly(as_of):  # a snapshot built before the weekly fields existed
+        f, m = real(as_of)
+        return f.drop(columns=["rsi14_w", "macd_hist_w"]), m
+
+    monkeypatch.setattr(t, "load_features", without_weekly)
+    spec = {"observation": "weekly oversold", "conditions": [{"field": "rsi14_w", "op": "<", "value": 30}],
             "rank": [{"field": "rsi14", "direction": "asc"}]}
     r = t.run_screen_tool(spec)
     assert r["ok"] is False and r["refused"] == "field not in snapshot"
-    assert absent[0] in r["problems"][0]
+    assert "rsi14_w" in r["problems"][0]
 
 
 def test_unknown_snapshot_date_is_refused():

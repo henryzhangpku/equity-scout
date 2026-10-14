@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 from .config import RUNS
-from .pipeline import SNAPSHOTS, _table, load_features
+from .pipeline import ADDED_FEATURES, SNAPSHOTS, _table, load_features
 from .screen import check_funnel, rank, run_screen, sector_breakdown
 from .spec import FIELDS, INDUSTRIES, MAX_TOP_N, SECTOR_LIST, THEMES, GROUP_NAMES, SpecError, validate
 from .track import read_ledger, verify_chain
@@ -44,7 +44,11 @@ def _resolve_as_of(as_of: str | None) -> tuple[str | None, str | None]:
 
 def _snapshot_columns(as_of: str) -> set[str]:
     import pandas as pd
-    return set(pd.read_csv(SNAPSHOTS / as_of / "features.csv.gz", nrows=0).columns)
+    d = SNAPSHOTS / as_of
+    cols = set(pd.read_csv(d / "features.csv.gz", nrows=0).columns)
+    if (d / ADDED_FEATURES).exists():
+        cols |= set(pd.read_csv(d / ADDED_FEATURES, nrows=0).columns)
+    return cols
 
 
 def list_fields() -> dict:

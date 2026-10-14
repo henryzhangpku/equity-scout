@@ -191,3 +191,49 @@ def test_recorded_prompt_versions_do_not_mention_new_fields():
         assert not any(f in text for f in MTF_FIELDS) and "TIMEFRAMES" not in text
     v3 = schema_for_prompt(3)
     assert all(f in v3 for f in MTF_FIELDS) and "TIMEFRAMES" in v3
+
+
+# ---------- the committed 2026-10-08 snapshot, with the fields added from its own cached bars ----------
+
+def _with_rsi_below(level):
+    spec = {**MTF_SPEC, "conditions": [dict(c) for c in MTF_SPEC["conditions"]]}
+    spec["conditions"][0]["value"] = level
+    return spec
+
+
+def test_added_fields_leave_the_cited_snapshot_files_untouched():
+    import hashlib
+    import json
+    from scout.pipeline import ADDED_FEATURES, ADDED_MANIFEST, SNAPSHOTS
+    d = SNAPSHOTS / "2026-10-08"
+    sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()  # noqa: E731
+    added, manifest = json.loads((d / ADDED_MANIFEST).read_text()), json.loads((d / "manifest.json").read_text())
+    assert added["source"]["features.csv.gz"] == manifest["files"]["features.csv.gz"]
+    assert sha(d / "features.csv.gz") == manifest["files"]["features.csv.gz"]["sha256"]  # what the recorded runs cite
+    assert sha(d / ADDED_FEATURES) == added["files"][ADDED_FEATURES]["sha256"]
+    assert added["fields"] == list(MTF_FIELDS)
+
+
+def test_mtf_spec_runs_on_the_snapshot():
+    from scout import mcp_tools as t
+    from scout.pipeline import load_features
+    features, _ = load_features("2026-10-08")
+    assert all(f in features.columns for f in MTF_FIELDS) and len(features) == 3827
+    out = t.run_screen_tool(MTF_SPEC, as_of="2026-10-08")
+    assert out["ok"] is True
+    assert [(f["entered"], f["passed"], f["failed"], f["no_data"]) for f in out["funnel"]] == \
+        [(3827, 3827, 0, 0), (3827, 333, 3494, 0), (333, 0, 323, 10), (0, 0, 0, 0)]
+    loose = t.run_screen_tool(_with_rsi_below(45), as_of="2026-10-08")
+    assert [f["passed"] for f in loose["funnel"]] == [3827, 1986, 5, 3]
+    assert [r["symbol"] for r in loose["top"]] == ["VXX", "ERII", "SOC"]
+
+
+def test_cli_screen_prints_the_same_funnel(tmp_path, capsys):
+    import json
+    from scout.cli import main
+    p = tmp_path / "spec.json"
+    p.write_text(json.dumps(_with_rsi_below(45)))
+    main(["screen", str(p), "--as-of", "2026-10-08"])
+    out = capsys.readouterr().out
+    assert "rsi14 < 45" in out and "Ranked survivors (3)" in out
+    assert [line.split()[1] for line in out.splitlines() if line.strip()[:1].isdigit()] == ["VXX", "ERII", "SOC"]

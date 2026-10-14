@@ -2,6 +2,7 @@
 
     scout run "<observation>" [--as-of YYYY-MM-DD] [--top 5] [--yes] [--offline] [--provider deepseek|kimi]
     scout spec "<observation>"            translate only, print the validated spec
+    scout screen spec.json [--as-of D]    run a spec JSON on a committed snapshot: funnel + ranked names, no model
     scout replay runs/<run>               rerun a recorded run offline and check it reproduces
     scout serve [--offline] [--port 8765] local web app: observation -> spec -> confirm -> live run
     scout track                           mark every recorded pick sheet to market vs SPY and SMH
@@ -256,6 +257,25 @@ def cmd_serve(a) -> None:
     serve(port=a.port, host=a.host, offline=a.offline, as_of=a.as_of, open_browser=not a.no_browser)
 
 
+def cmd_screen(a) -> None:
+    from .mcp_tools import run_screen_tool
+    spec = json.loads(Path(a.spec).read_text(encoding="utf-8"))
+    if a.top:
+        spec["top_n"] = a.top
+    out = run_screen_tool(spec, as_of=a.as_of)
+    if not out["ok"]:
+        print(f"Refused ({out['refused']}):" + "".join("\n  - " + p for p in out["problems"]))
+        sys.exit(2)
+    print(f"as of {out['as_of']}")
+    w = max(len(s["step"]) for s in out["funnel"])
+    print(f"  {'step'.ljust(w)}  {'in':>6} {'pass':>6} {'fail':>6} {'miss':>6}")
+    for s in out["funnel"]:
+        print(f"  {s['step'].ljust(w)}  {s['entered']:>6} {s['passed']:>6} {s['failed']:>6} {s['no_data']:>6}")
+    print(f"\nRanked survivors ({out['survivors']}), top {len(out['top'])}:")
+    for r in out["top"]:
+        print(f"  {r['rank']:>3}  {r['symbol']:<6} {str(r.get('name', ''))[:40]:<40} score {r['score']:.3f}")
+
+
 def cmd_mcp(a) -> None:
     from .mcp_server import main as serve_mcp
     serve_mcp()
@@ -285,6 +305,10 @@ def main(argv: list[str] | None = None) -> None:
             p.add_argument("--yes", action="store_true", help="do not ask before running the spec")
             p.add_argument("--out")
             p.add_argument("--no-ledger", action="store_true", help="do not append the picks to runs/picks.jsonl")
+    p = sub.add_parser("screen", help="run a spec JSON file on a committed snapshot (no model, no network)")
+    p.add_argument("spec")
+    p.add_argument("--as-of")
+    p.add_argument("--top", type=int)
     p = sub.add_parser("replay")
     p.add_argument("run_dir")
     p = sub.add_parser("build")
@@ -320,7 +344,8 @@ def main(argv: list[str] | None = None) -> None:
     a = ap.parse_args(argv)
     {"run": cmd_run, "spec": cmd_spec, "replay": cmd_replay, "build": cmd_build, "site": cmd_site,
      "track": cmd_track, "serve": cmd_serve, "build-panels": cmd_build_panels, "backtest": cmd_backtest,
-     "loop": cmd_loop, "loop-data": cmd_loop_data, "mcp": cmd_mcp}[a.cmd](a)
+     "loop": cmd_loop, "loop-data": cmd_loop_data, "mcp": cmd_mcp,
+     "screen": cmd_screen}[a.cmd](a)
 
 
 if __name__ == "__main__":
