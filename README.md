@@ -137,8 +137,17 @@ crossing above its signal on the weekly, and volume above its 20-day average"* m
 
 * The translation prompt that knows these fields is version 3: `scout spec "..." --prompt-version 3`. The default
   stays version 2, so every recorded run and example replays unchanged.
-* The committed 2026-10-08 snapshot and the backtest panels predate these fields. A screen that uses them on
-  either is refused with a message saying so; rebuild the snapshot with `scout build` first.
+* The committed 2026-10-08 snapshot was built before these fields existed. They were added afterwards from the
+  snapshot's own cached daily bars (SHA-256 checked against its manifest), with no network, by
+  `snapshot.add_technicals`, which first reproduces all 84 technical fields already in the snapshot exactly. They
+  live in a sidecar, `data/snapshots/2026-10-08/features-added.csv.gz` (provenance in `features-added.json`),
+  joined on symbol at load time, so `features.csv.gz` and `manifest.json`, whose hashes the recorded runs cite,
+  are byte-identical and every recorded run replays unchanged.
+* On that snapshot the sentence above passes 0 names: 333 have daily RSI under 30, none of them crossed up on the
+  weekly MACD (10 lack enough weekly history). With RSI under 45 instead, 3 pass (VXX, ERII, SOC).
+  `uv run scout screen spec.json` runs a spec file with no model and no network.
+* The backtest panels predate these fields; a backtest that uses them is refused with a message saying so. The
+  browser snapshot in `docs/data/` does not carry them yet either.
 
 ## Recorded runs (real data as of 2026-10-08 close)
 
@@ -363,8 +372,8 @@ links instead of writing its own.
 
 Limits:
 
-* Screens run on the committed snapshot (2026-10-08 close). Nothing is fetched live, and fields added after that
-  snapshot was built (the weekly and 20-day volume fields) are refused until it is rebuilt.
+* Screens run on the committed snapshot (2026-10-08 close). Nothing is fetched live. The weekly and 20-day
+  volume fields are available on it (added from its cached bars, see Multi-timeframe technicals).
 * Explanations come only from recorded runs. The server never asks a model to write one, so most names have none.
 * The model never computes a number: every value comes from the screen code or a recorded file.
 * Research only. It places no orders and makes no recommendations.
@@ -397,6 +406,7 @@ uv run scout replay runs/b-ai-infra-laggards
 # live: needs DEEPSEEK_API_KEY, plus ALPACA_API_KEY / ALPACA_API_SECRET for news
 uv run scout run "Profitable mid-caps ... back above the 50-day average." --top 5
 uv run scout spec "..."          # translate only; prints the validated spec
+uv run scout screen spec.json    # run a spec JSON on the committed snapshot: funnel + ranked names, no model
 uv run scout serve               # local web app (add --offline for recorded material only)
 uv run scout track               # mark the pick ledger to market vs SPY and SMH
 uv run scout site                # export runs, schema and the browser snapshot to docs/data/
@@ -475,7 +485,7 @@ Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`)
 
 ## Tests
 
-`uv run pytest`: 186 tests, none skipped when the `mcp` extra is installed (the one server-registration test skips without it), none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
+`uv run pytest`: 189 tests, none skipped when the `mcp` extra is installed (the one server-registration test skips without it), none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
 
 * indicators against hand-computed values (SMA, Wilder RSI step by step, EMA/MACD, momentum, volume ratio,
   drawdown, relative strength)
