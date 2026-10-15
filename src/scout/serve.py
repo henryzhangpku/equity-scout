@@ -45,7 +45,7 @@ from .data.base import Document
 from .llm import LLM, PROVIDERS
 from .pipeline import SNAPSHOTS, execute, load_features, slug
 from .spec import FIELDS, LABELS, SpecError, validate
-from .translate import translate
+from .translate import LATEST_PROMPT_VERSION, PROMPT_VERSION, translate
 
 WEB = Path(__file__).resolve().parent / "web"
 STATIC_OK = {"style.css", "ui.js", "favicon.svg", "theme.js"}
@@ -265,6 +265,11 @@ class App:
     def live_available(self) -> bool:
         return self.offline or bool(secret("DEEPSEEK_API_KEY"))
 
+    def prompt_version(self) -> int:
+        """Live translation uses the latest prompt (multi-timeframe fields); --offline replays recordings
+        keyed to the default prompt, so it keeps that one."""
+        return PROMPT_VERSION if self.offline else LATEST_PROMPT_VERSION
+
     def recorded_runs(self) -> list[dict]:
         out = []
         for rj in sorted(self.runs_dir.glob("*/run.json")):
@@ -333,7 +338,8 @@ class App:
                     kw = {"docs_source": RecordedLibrary(self.runs_dir), "news_source": None}
                 res = execute(spec, attempts or [], self.as_of, self.llm(), log=lambda *_: None,
                               run_dir=self.live_dir / f"{stamp}-{uuid.uuid4().hex[:6]}-{slug(spec.observation)}",
-                              on_event=lambda k, p: job.emit(k, p), tolerate_errors=True, **kw)
+                              on_event=lambda k, p: job.emit(k, p), tolerate_errors=True,
+                              prompt_version=self.prompt_version(), **kw)
                 job.record = res.record
                 rd = res.run_dir
                 job.emit("done", {"run_dir": None if self.cfg.hosted else
@@ -528,7 +534,8 @@ def make_handler(app: App):
                         app.log("translate_limited", ip=ip)
                         return self._json(429 if not cfg.kill else 503, {"ok": False, "limited": True, "error": why})
                     t0 = time.time()
-                    spec, attempts = translate(obs, app.llm(), short_interest_available=app.si_ok())
+                    spec, attempts = translate(obs, app.llm(), short_interest_available=app.si_ok(),
+                                                prompt_version=app.prompt_version())
                     app.log("translate", ip=ip, chars=len(obs), seconds=round(time.time() - t0, 1),
                             conditions=len(spec.conditions), unmapped=len(spec.unmapped))
                     return self._json(200, {"ok": True, "spec": spec.to_dict(),
