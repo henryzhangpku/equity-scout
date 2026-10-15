@@ -218,7 +218,10 @@ model plays no part; this is pure code (`src/scout/backtest.py`).
     applied as of that date.
   * Price history runs from Alpaca back to 2021-12, so the 12-month indicators exist from the first rebalance.
   * Storage is one compressed NumPy archive, `data/panels/panels.npz`, 32.6 MB, float32, shipped in the image.
-  * The build takes about 34 minutes cold (prices about 1 minute, fundamentals about 25, FINRA the rest).
+  * The build takes about 34 minutes cold, almost all of it fundamentals (about 25) and FINRA. The price fields take
+    5 seconds with the `fast` extra (`uv sync --extra fast`, Numba: one compiled pass over all 3,827 symbols that
+    evaluates only the kept rows) and about 6 minutes without it (pandas, one symbol at a time). The two agree on
+    all 6.3 million price values (`tests/test_fastpanel.py` checks every session of a synthetic panel).
   * Relative strength against the sector ETFs is left out to keep the file small. Screens that use it are refused
     with a message.
   * A check slice built on the snapshot date gives the same screens as the live snapshot (parity test).
@@ -431,7 +434,8 @@ the key used here belongs to a plan that the Kimi coding endpoint rejected (HTTP
 
 Dependencies: `numpy`, `pandas`, `requests`, plus `pytest` for development. HTML is parsed with the standard
 library. `openbb` is an optional extra, imported only when `--prices openbb` is chosen. `mcp` (the official MCP
-Python SDK) is an optional extra, imported only by `scout mcp`.
+Python SDK) is an optional extra, imported only by `scout mcp`. `numba` is an optional extra (`fast`), imported only
+by `scout build-panels`; the hosted image does not install it.
 
 
 ## Deploy (hosted API)
@@ -493,7 +497,7 @@ Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`)
 
 ## Tests
 
-`uv run pytest`: 193 tests, none skipped when the `mcp` extra is installed (the one server-registration test skips without it), none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
+`uv run pytest`: 195 tests, none skipped when the `mcp` extra is installed (the one server-registration test skips without it), none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
 
 * indicators against hand-computed values (SMA, Wilder RSI step by step, EMA/MACD, momentum, volume ratio,
   drawdown, relative strength)

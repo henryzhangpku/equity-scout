@@ -47,6 +47,14 @@ def sma(close: pd.Series, n: int) -> pd.Series:
     return close.rolling(n, min_periods=n).mean()
 
 
+def above(a, b, rel: float = 1e-9):
+    """a > b, with a gap inside rounding (|a - b| <= rel * |b|) counted as a tie, not above.
+
+    A flat-priced name (a halted or acquired stock) has SMA50 == SMA200 exactly; how the two means
+    round depends on the summation order, so a plain > would flip between implementations."""
+    return (a - b) > rel * np.abs(b)
+
+
 def ema(x: pd.Series, span: int) -> pd.Series:
     return x.ewm(span=span, adjust=False).mean()
 
@@ -140,7 +148,7 @@ def snapshot(df: pd.DataFrame, bench: dict[str, pd.Series] | None = None) -> dic
         s = sma(c, n).iloc[last]
         out[f"sma{n}"] = float(s)
         out[f"pct_vs_sma{n}"] = float(c.iloc[last] / s - 1.0) if np.isfinite(s) else np.nan
-    out["sma50_above_sma200"] = (bool(out["sma50"] > out["sma200"])
+    out["sma50_above_sma200"] = (bool(above(out["sma50"], out["sma200"]))
                                  if np.isfinite(out["sma50"]) and np.isfinite(out["sma200"]) else None)
     out["rsi14"] = float(rsi(c, 14).iloc[last])
     m = macd(c)

@@ -80,7 +80,7 @@ def series_features(g: pd.DataFrame, bench: dict[str, pd.Series]) -> pd.DataFram
         out[f"sma{n}"] = s
         out[f"pct_vs_sma{n}"] = c / s - 1.0
     a, b = out["sma50"], out["sma200"]
-    out["sma50_above_sma200"] = np.where(a.notna() & b.notna(), (a > b).astype(float), np.nan)
+    out["sma50_above_sma200"] = np.where(a.notna() & b.notna(), I.above(a, b).astype(float), np.nan)
     out["rsi14"] = I.rsi(c, 14)
     m = I.macd(c)
     out["macd"], out["macd_signal"], out["macd_hist"] = m["macd"], m["signal"], m["hist"]
@@ -99,6 +99,125 @@ def series_features(g: pd.DataFrame, bench: dict[str, pd.Series]) -> pd.DataFram
             out[f"rs_{mth}m_vs_{name}"] = out[f"mom_{mth}m"] - br
     out["date"] = dates
     return out.set_index("date")
+
+
+def _price_arrays(D: int, N: int, F: int) -> tuple:
+    return (np.full((D, N, F), np.nan, dtype=np.float32),   # values[date, company, field]
+            np.full((D, N), np.nan),                       # close on the rebalance date
+            np.full((D, N), np.nan),                       # last close on or before the rebalance date
+            np.full((D, N), "", dtype=object),             # date of that last close
+            np.zeros((D, N), dtype=bool))                  # in the universe on the date
+
+
+def price_fields(bars: pd.DataFrame, syms: list[str], dates: list[str], bench: dict[str, pd.Series],
+                 fields: list[str]) -> tuple:
+    """(values, close_at, last_close, last_date, in_universe) for the price fields, one symbol at a
+    time through series_features. The reference for price_fields_fast; minutes on the full universe.
+
+    Symbols with fewer than 60 bars are skipped; the fields are filled only where the symbol has a bar
+    on the date and at least 60 bars up to it, and only for names in `fields`."""
+    D, N = len(dates), len(syms)
+    fidx = {f: j for j, f in enumerate(fields)}
+    vals, close_at, last_close, last_date, in_universe = _price_arrays(D, N, len(fields))
+    by_sym = {s: g for s, g in bars.groupby("symbol", sort=False)}
+    for n, s in enumerate(syms):
+        g = by_sym.get(s)
+        if g is None or len(g) < 60:
+            continue
+        sf = series_features(g, bench)
+        idx = sf.index
+        # only fields the panel stores: sector-ETF relative strength is computed but not kept
+        cols = [f for f in sf.columns if f in fidx and (f in TECH_FIELDS or f.startswith("rs_"))]
+        for di, d in enumerate(dates):
+            pos = idx.searchsorted(d, side="right") - 1
+            if pos < 0:
+                continue
+            last_close[di, n] = sf["close"].iloc[pos]
+            last_date[di, n] = idx[pos]
+            if idx[pos] != d:
+                continue  # no bar on the rebalance date: not tradable that day
+            close_at[di, n] = sf["close"].iloc[pos]
+            row = sf.iloc[pos]
+            if pos + 1 < 60:
+                continue
+            for f in cols:
+                vals[di, n, fidx[f]] = row[f]
+            in_universe[di, n] = (row["close"] >= MIN_PRICE) and (row["avg_dollar_volume_50d"] >= MIN_ADV)
+        if n % 500 == 0:
+            _log(f"  prices {n}/{N}")
+    return vals, close_at, last_close, last_date, in_universe
+
+
+def price_fields_fast(bars: pd.DataFrame, syms: list[str], dates: list[str], bench: dict[str, pd.Series],
+                      fields: list[str]) -> tuple:
+    """price_fields computed with the compiled kernel in fastpanel (needs numba): the whole universe
+    in one pass, evaluated only on the rows the panel keeps. Same output, seconds instead of minutes."""
+    from .fastpanel import KERNEL_FIELDS, kernel_rows  # numba: optional, and kept out of the hosted server
+
+    D, N = len(dates), len(syms)
+    fidx = {f: j for j, f in enumerate(fields)}
+    vals, close_at, last_close, last_date, in_universe = _price_arrays(D, N, len(fields))
+    if D == 0 or N == 0:
+        return vals, close_at, last_close, last_date, in_universe
+
+    # every bar of the wanted symbols, grouped by symbol (in syms order) and sorted by date
+    sidx = pd.Series(np.arange(N), index=pd.Index(syms)).groupby(level=0).first()
+    code = bars["symbol"].map(sidx)
+    b = bars.loc[code.notna(), ["date", "close", "volume"]]
+    code = code[code.notna()].to_numpy(np.int64)
+    datestr = b["date"].astype(str).to_numpy()
+    day = datestr.astype("datetime64[D]").astype(np.int64)
+    order = np.lexsort((day, code))
+    code, day, datestr = code[order], day[order], datestr[order]
+    close = b["close"].to_numpy(np.float64)[order]
+    vol = b["volume"].to_numpy(np.float64)[order]
+    counts = np.bincount(code, minlength=N)
+    offs = np.concatenate([[0], np.cumsum(counts)]).astype(np.int64)
+    first = offs[:-1]
+
+    # pos[d, s]: the symbol's last bar on or before each date, via one sorted key (symbol, day)
+    dmin = int(day.min()) if len(day) else 0
+    span = (int(day.max()) - dmin + 2) if len(day) else 2
+    key = code * span + (day - dmin)
+    dday = np.array(dates, dtype="datetime64[D]").astype(np.int64)
+    rel = np.clip(dday - dmin, -1, span - 1)
+    pos = np.searchsorted(key, np.arange(N)[None, :] * span + rel[:, None], side="right") - 1
+    seen = (pos >= first[None, :]) & (counts >= 60)[None, :]
+    pos = np.where(seen, pos, 0)
+    last_close[seen] = close[pos[seen]]
+    last_date[seen] = datestr[pos[seen]]
+    exact = seen & (day[pos] == dday[:, None])         # a bar on the rebalance date
+    close_at[exact] = close[pos[exact]]
+    keep = exact & (pos - first[None, :] + 1 >= 60)    # and at least 60 bars of history
+
+    di, ni = np.nonzero(keep)
+    rows = pos[di, ni]
+    want = np.unique(rows)
+    k = kernel_rows(close, vol, offs, want)[np.searchsorted(want, rows)]
+    col = {f: k[:, j] for j, f in enumerate(KERNEL_FIELDS)}
+    c = close[rows]
+    col["close"] = c
+    for n in (20, 50, 200):
+        col[f"pct_vs_sma{n}"] = c / col[f"sma{n}"] - 1.0
+    a, s200 = col["sma50"], col["sma200"]
+    col["sma50_above_sma200"] = np.where(np.isfinite(a) & np.isfinite(s200), I.above(a, s200).astype(float), np.nan)
+    t = rows - first[ni]                                # bar index within the symbol
+    for name, bs in bench.items():
+        bv = bs.reindex(datestr[rows]).to_numpy(dtype=float)
+        for mth in (1, 3, 6, 12):
+            f = f"rs_{mth}m_vs_{name}"
+            if f not in fidx:
+                continue
+            kd = I.MONTH_DAYS[mth]
+            back = np.full(len(rows), np.nan)
+            ok = t >= kd
+            back[ok] = bs.reindex(datestr[rows[ok] - kd]).to_numpy(dtype=float)
+            col[f] = col[f"mom_{mth}m"] - (bv / back - 1.0)
+    for f, x in col.items():
+        if f in fidx:
+            vals[di, ni, fidx[f]] = x
+    in_universe[di, ni] = (c >= MIN_PRICE) & (col["avg_dollar_volume_50d"] >= MIN_ADV)
+    return vals, close_at, last_close, last_date, in_universe
 
 
 def _fund_job(job: tuple) -> tuple[int, dict]:
@@ -134,41 +253,15 @@ def build(start: str = "2023-01-01", end: str | None = None, as_of: str = "2026-
 
     bench = {b.lower(): bars[bars["symbol"] == b].set_index("date")["close"] for b in BENCHMARKS}
     syms = list(base["symbol"])
-    N, D = len(syms), len(dates)
+    N = len(syms)
     fidx = {f: j for j, f in enumerate(PANEL_FIELDS)}
-    vals = np.full((D, N, len(PANEL_FIELDS)), np.nan, dtype=np.float32)
-    close_at = np.full((D, N), np.nan)          # close on the rebalance date
-    last_close = np.full((D, N), np.nan)        # last close on or before the rebalance date
-    last_date = np.full((D, N), "", dtype=object)
-    in_universe = np.zeros((D, N), dtype=bool)
-
-    by_sym = {s: g for s, g in bars.groupby("symbol", sort=False)}
-    for n, s in enumerate(syms):
-        g = by_sym.get(s)
-        if g is None or len(g) < 60:
-            continue
-        sf = series_features(g, bench)
-        idx = sf.index
-        for di, d in enumerate(dates):
-            pos = idx.searchsorted(d, side="right") - 1
-            if pos < 0:
-                continue
-            last_close[di, n] = sf["close"].iloc[pos]
-            last_date[di, n] = idx[pos]
-            if idx[pos] != d:
-                continue  # no bar on the rebalance date: not tradable that day
-            close_at[di, n] = sf["close"].iloc[pos]
-            row = sf.iloc[pos]
-            if pos + 1 < 60:
-                continue
-            for f in TECH_FIELDS:
-                if f in row.index:
-                    vals[di, n, fidx[f]] = row[f]
-            for f in [c for c in sf.columns if c.startswith("rs_")]:
-                vals[di, n, fidx[f]] = row[f]
-            in_universe[di, n] = (row["close"] >= MIN_PRICE) and (row["avg_dollar_volume_50d"] >= MIN_ADV)
-        if n % 500 == 0:
-            _log(f"  prices {n}/{N}")
+    tp = time.time()
+    try:
+        vals, close_at, last_close, last_date, in_universe = price_fields_fast(bars, syms, dates, bench, PANEL_FIELDS)
+    except ImportError:
+        _log("  numba not installed (pip install equity-scout[fast]): pandas loop, minutes instead of seconds")
+        vals, close_at, last_close, last_date, in_universe = price_fields(bars, syms, dates, bench, PANEL_FIELDS)
+    _log(f"  prices {N} symbols in {time.time() - tp:.1f} s")
 
     jobs = [(n, int(base["cik"].iloc[n]), {d: float(close_at[di, n]) for di, d in enumerate(dates)
                                             if np.isfinite(close_at[di, n])}) for n in range(N)]

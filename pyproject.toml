@@ -16,12 +16,17 @@ dependencies = [
 openbb = ["openbb>=4.4,<5"]
 # MCP server (scout mcp): expose the screen as tools to any MCP-capable model
 mcp = ["mcp>=1.2"]
+# compiled price features for scout build-panels (seconds instead of minutes); not needed to serve
+fast = ["numba>=0.61"]
 
 [project.scripts]
 scout = "scout.cli:main"
 
 [dependency-groups]
-dev = ["pytest>=8"]
+dev = [
+    "numba>=0.61",
+    "pytest>=8",
+]
 
 [build-system]
 requires = ["uv_build>=0.9.3,<0.10.0"]
