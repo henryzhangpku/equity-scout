@@ -9,7 +9,7 @@
     h.push('<div class="meta">As of <strong>' + esc(r.as_of) + "</strong> (prices to " + esc(r.data.last_price_date) +
       ", FINRA short interest settlement " + esc(r.data.short_interest_settlement || "n/a") + "). Universe: " +
       esc(r.data.universe_rule) + ". " + esc(r.data.n_companies) + " companies.</div></div>");
-    h.push('<div class="panel">' + U.specHtml(r.spec, "2 · The screen — proposed by " + r.llm.model + ", checked by code" + (r.attempts > 1 ? " after " + (r.attempts - 1) + " correction round" : "")) + "</div>");
+    h.push('<div class="panel">' + U.specHtml(r.spec, "2 · The screen — proposed by the model, checked by code" + (r.attempts > 1 ? " after " + (r.attempts - 1) + " correction round" : "")) + "</div>");
     h.push('<div class="panel">' + U.funnelHtml(r.funnel, "3 · How the list narrowed (computed by code)", r.spec) + "</div>");
     h.push('<div class="panel">' + U.tableHtml(r.columns, r.ranked, r.top_n, r.n_ranked, "4 · Ranked results") + "</div>");
     if (r.sector_breakdown && r.sector_breakdown.length) h.push('<div class="panel">' + U.sectorHtml(r.sector_breakdown, "Survivors by sector (all " + r.n_ranked + ")") + "</div>");
