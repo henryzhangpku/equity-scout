@@ -36,7 +36,13 @@
     if (sec) sec.scrollIntoView({ behavior: "smooth", block: "start" });
     if (!q || !box || !go) { if (box) box.focus(); return; }
     box.value = q;
-    if (!go.disabled) go.click();
+    // The live check (try.js) can still be running on a fresh page: wait up to 6 s for "Live", then press anyway.
+    var pill = document.getElementById("api-status"), t0 = Date.now();
+    (function press() {
+      var live = pill && /live/i.test(pill.textContent);
+      if (!live && Date.now() - t0 < 6000) { setTimeout(press, 250); return; }
+      if (!go.disabled) go.click();
+    })();
   });
   document.getElementById("askbar-close").addEventListener("click", function () { setHidden(true); render(); });
   tab.addEventListener("click", function () { setHidden(false); render(); document.getElementById("askbar-text").focus(); });
