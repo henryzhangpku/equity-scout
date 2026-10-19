@@ -31,7 +31,7 @@ might disagree. Code deletes any claim whose quote does not appear verbatim in i
   explanations arrive name by name. The status pill reads *Live* or *Snapshot (offline)*. If the API is down,
   capped or not configured, the page says so and the examples keep working.
 * **Advanced** (collapsed): a spec editor limited to whitelisted fields, plus bring-your-own-key translation.
-  DeepSeek allows browser CORS; the key stays in memory and goes only to api.deepseek.com.
+  The key stays in memory and goes only to the configured LLM provider's endpoint.
 * Everything a visitor reads is in plain English: "Down at least 20% from 52-week high", "Free cash flow, last 12
   months > $0". Raw field names appear only under *Show spec*.
 * The screen, funnel and ranking in the page come from `docs/scout-core.js`, a line-by-line port of the Python code.
@@ -88,7 +88,7 @@ free one without touching the screen, the ranking or the validator.
 | Short interest | FINRA consolidated short interest, twice monthly (`data/finra.py`) | securities-lending feeds | float-based %, daily data, borrow cost |
 | Documents | EDGAR 8-K Exhibit 99.1 and 10-Q / 10-K MD&A (`data/edgar_docs.py`) | document search on the same terminals | earnings-call transcripts (interface kept, `NoTranscripts`) |
 | News | Alpaca news API (Benzinga): headline and summary only, cut at the as-of close (`data/news.py`) | Bloomberg / LSEG / Dow Jones news | full articles, broad sources |
-| LLM | DeepSeek `deepseek-v4-pro` (Kimi as an alternative) through one OpenAI-compatible client (`llm.py`) | a frontier model inside the firm's controls | nothing structural |
+| LLM | an LLM (configurable; a default provider and one alternative) through one OpenAI-compatible client (`llm.py`) | a frontier model inside the firm's controls | nothing structural |
 
 ### Point-in-time rules
 
@@ -302,7 +302,7 @@ and gives the same numbers (a test does this, offline). The history is under fiv
 
 ```bash
 uv run scout loop --proposer scripted --max-steps 10     # writes runs/loop-<date>/: ledger.jsonl, report.md, summary.json
-uv run scout loop --proposer llm --max-steps 5           # needs DEEPSEEK_API_KEY, or --offline to replay recordings
+uv run scout loop --proposer llm --max-steps 5           # needs the LLM key, or --offline to replay recordings
 ```
 
 **The recorded scripted run** (`runs/loop-2026-10-12/`, K = 10, bar p < 0.005): nothing survived. All ten
@@ -414,7 +414,7 @@ uv sync
 # offline: replay a recorded run (no keys, no network)
 uv run scout replay runs/b-ai-infra-laggards
 
-# live: needs DEEPSEEK_API_KEY, plus ALPACA_API_KEY / ALPACA_API_SECRET for news
+# live: needs the LLM key, plus ALPACA_API_KEY / ALPACA_API_SECRET for news
 uv run scout run "Profitable mid-caps ... back above the 50-day average." --top 5
 uv run scout spec "..."          # translate only; prints the validated spec
 uv run scout screen spec.json    # run a spec JSON on the committed snapshot: funnel + ranked names, no model
@@ -429,8 +429,9 @@ uv run scout build --as-of 2026-10-08 --prices openbb   # same, prices from Open
 
 `scout run` prints the spec and asks for confirmation before it screens (`--yes` skips the prompt). Keys are read
 from the environment, and on Windows also from the per-user environment in the registry. They are never printed or
-written to disk. Choose the model provider with `--provider deepseek|kimi`. The Kimi client is wired up but untested end to end:
-the key used here belongs to a plan that the Kimi coding endpoint rejected (HTTP 403).
+written to disk. Choose the model provider with `--provider` (the default provider or the alternative; see `PROVIDERS` in `llm.py`),
+or point any OpenAI-compatible endpoint with `SCOUT_LLM_BASE_URL`, `SCOUT_LLM_MODEL` and `SCOUT_LLM_API_KEY`.
+The alternative provider's client is wired up but untested end to end.
 
 Dependencies: `numpy`, `pandas`, `requests`, plus `pytest` for development. HTML is parsed with the standard
 library. `openbb` is an optional extra, imported only when `--prices openbb` is chosen. `mcp` (the official MCP
@@ -452,9 +453,10 @@ by `scout build-panels`; the hosted image does not install it.
 
 | Variable | Default | Meaning |
 |---|---|---|
-| `PORT` | 8765 locally, 8080 in the image | port to bind (Railway sets it) |
+| `PORT` | 8765 locally, 8080 in the image | port to bind (the hosting platform sets it) |
 | `SCOUT_HOSTED` | unset (`1` in the image) | hosted mode |
-| `DEEPSEEK_API_KEY` | none | model for translation and explanations; without it the API reports `live: false` |
+| `SCOUT_LLM_API_KEY` (or the provider's own key variable, see `PROVIDERS` in `llm.py`) | none | key for the LLM provider, used for translation and explanations; without it the API reports `live: false` |
+| `SCOUT_LLM_BASE_URL`, `SCOUT_LLM_MODEL` | the provider's own | override the LLM endpoint and model (any OpenAI-compatible API) |
 | `ALPACA_API_KEY`, `ALPACA_API_SECRET` | none | news headlines for explanations (optional; filings-only without them) |
 | `SCOUT_SEC_CONTACT` | the author's address | contact in the SEC User-Agent (fair-access rule) |
 | `SCOUT_ALLOWED_ORIGINS` | `https://henryzhangpku.github.io`, localhost, `null` | comma-separated CORS allowlist |
@@ -478,12 +480,12 @@ API (JSON; CORS for allowed origins only):
 * `POST /api/run {spec}`: returns the funnel, the ranked table and a job id.
 * `GET /api/run/<job>`: explanations so far plus the names still pending.
 
-**Build and start.** The repo has a `Dockerfile`, `railway.json` (Dockerfile builder, healthcheck on `/api/health`)
+**Build and start.** The repo has a `Dockerfile`, a hosting-platform config (`railway.json`: Dockerfile builder, healthcheck on `/api/health`)
 and a `Procfile`.
 
 ```bash
 docker build -t equity-scout .
-docker run -p 8080:8080 -e DEEPSEEK_API_KEY=... -e ALPACA_API_KEY=... -e ALPACA_API_SECRET=... equity-scout
+docker run -p 8080:8080 -e SCOUT_LLM_API_KEY=... -e ALPACA_API_KEY=... -e ALPACA_API_SECRET=... equity-scout
 # start command inside the image: scout serve --no-browser --port $PORT   (SCOUT_HOSTED=1 is set in the image)
 ```
 

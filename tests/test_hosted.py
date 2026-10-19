@@ -223,7 +223,7 @@ def test_upstream_errors_are_generic(hosted, monkeypatch):
     base, app, logs = hosted
 
     def fail(*a, **k):
-        raise RuntimeError(f"upstream 401: invalid key {SENTINELS[0]} at https://api.deepseek.com")
+        raise RuntimeError(f"upstream 401: invalid key {SENTINELS[0]} at https://llm.example.invalid")
     monkeypatch.setattr("scout.serve.translate", fail)
     code, r, _ = call("POST", base + "/api/translate", {"observation": "anything new"})
     assert code == 502 and r["error"].startswith("The live analysis hit a problem")

@@ -42,7 +42,7 @@ from pathlib import Path
 
 from .config import ROOT, RUNS, secret
 from .data.base import Document
-from .llm import LLM, PROVIDERS
+from .llm import LLM, PROVIDERS, api_key as llm_api_key
 from .pipeline import SNAPSHOTS, execute, load_features, slug
 from .spec import FIELDS, LABELS, SpecError, validate
 from .translate import LATEST_PROMPT_VERSION, PROMPT_VERSION, translate
@@ -263,7 +263,7 @@ class App:
         return LLM(provider="deepseek", offline=self.offline, timeout=LLM_TIMEOUT_S)
 
     def live_available(self) -> bool:
-        return self.offline or bool(secret("DEEPSEEK_API_KEY"))
+        return self.offline or bool(llm_api_key("deepseek"))
 
     def prompt_version(self) -> int:
         """Live translation uses the latest prompt (multi-timeframe fields); --offline replays recordings
@@ -298,7 +298,7 @@ class App:
                                                ("last_price_date", "universe_rule", "n_companies",
                                                 "short_interest_settlement")},
                 "offline": self.offline, "hosted": self.cfg.hosted, "model": PROVIDERS["deepseek"]["model"],
-                "keys": {"deepseek": bool(secret("DEEPSEEK_API_KEY")),
+                "keys": {"deepseek": bool(llm_api_key("deepseek")),
                          "alpaca": bool(secret("ALPACA_API_KEY") and secret("ALPACA_API_SECRET"))},
                 "runs": [] if self.cfg.hosted else self.recorded_runs(),
                 "fields": {f.name: {"kind": f.kind, "desc": f.desc, "label": LABELS[f.name]} for f in FIELDS.values()}}
@@ -642,7 +642,7 @@ def serve(port: int | None = None, host: str | None = None, offline: bool = Fals
     st = app.status()
     print(f"equity-scout on http://{host}:{httpd.server_address[1]}/  (snapshot {app.as_of}; "
           f"{'hosted' if cfg.hosted else 'local'}; {'OFFLINE: recorded material only' if offline else 'live'}; "
-          f"DeepSeek key {'found' if st['keys']['deepseek'] else 'MISSING'}, "
+          f"LLM key {'found' if st['keys']['deepseek'] else 'MISSING'}, "
           f"Alpaca keys {'found' if st['keys']['alpaca'] else 'MISSING'}"
           f"{'; KILL switch on' if cfg.kill else ''})", flush=True)
     if open_browser and not cfg.hosted:
