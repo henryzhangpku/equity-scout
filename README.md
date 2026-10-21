@@ -67,15 +67,27 @@ as **not screened**. It is never silently dropped or approximated. Every prompt 
 
 ## Architecture
 
+```mermaid
+flowchart LR
+  OBS["Observation<br/>(plain English)"] --> T["LLM: translate"]:::llm --> SPEC["Spec (JSON)"]
+  SPEC --> V["Validate<br/>(whitelist)"]:::code --> SCR["Screen"]:::code --> R["Funnel +<br/>ranked table"]:::code --> TOP["Top N"]
+
+  subgraph SNAP["Feature snapshot (point-in-time)"]
+    direction TB
+    A["Alpaca bars → indicators"]
+    C["SEC companyfacts → TTM / growth / FCF / EV"]
+    S["SEC submissions → SIC, filing list"]
+    F["FINRA short interest"]
+  end
+  SNAP --> SCR
+
+  TOP --> DOCS["EDGAR 8-K ex.99.1,<br/>MD&A, news headlines"] --> W["LLM: write claims"]:::llm --> CV["Citation validator<br/>(verbatim quote + numbers)"]:::code --> REP["Report"]
+
+  classDef llm fill:#fde68a,stroke:#b45309,color:#000
+  classDef code fill:#bbf7d0,stroke:#15803d,color:#000
 ```
-observation ──LLM──▶ spec (JSON) ──validate──▶ screen ──▶ funnel + ranked table ──▶ top N
-                                                  ▲                                    │
-             feature snapshot (point-in-time) ────┘          EDGAR 8-K ex.99.1, MD&A, news headlines
-   Alpaca bars ─ indicators                                              │
-   SEC companyfacts ─ TTM / growth / FCF / EV                       LLM writes claims
-   SEC submissions ─ SIC, filing list                                    │
-   FINRA short interest                                       citation validator ──▶ report
-```
+
+Amber steps are the model; green steps are deterministic code.
 
 Every data layer sits behind a small interface in `src/scout/data/base.py`, so a licensed source can replace the
 free one without touching the screen, the ranking or the validator.
