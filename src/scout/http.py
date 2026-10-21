@@ -30,6 +30,7 @@ _MIN_INTERVAL = {
     "api.finra.org": 0.1,
     "data.alpaca.markets": 0.31,  # 200 req/min on the free data plan
     "api.alpaca.markets": 0.31,
+    "paper-api.alpaca.markets": 0.31,  # the asset list's default host (paper key)
 }
 
 
