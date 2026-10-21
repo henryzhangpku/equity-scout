@@ -78,7 +78,9 @@ class AlpacaPrices:
                 }
                 if token:
                     params["page_token"] = token
-                key = f"bars {self.snapshot} {start} {end} {json.dumps(batch)} p{page}"
+                # The SENT end, so an intraday (clamped) call never caches a
+                # partial day under the key a later full-day call would hit.
+                key = f"bars {self.snapshot} {start} {end_param} {json.dumps(batch)} p{page}"
                 j = fetch_json(BARS_URL, source="alpaca", params=params, headers=_headers(), cache_key=key)
                 for sym, bars in (j.get("bars") or {}).items():
                     if bars:
