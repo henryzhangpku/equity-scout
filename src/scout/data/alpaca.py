@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import json
 import os
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 
 import pandas as pd
 
@@ -23,6 +23,19 @@ MAJOR_EXCHANGES = {"NYSE", "NASDAQ", "AMEX", "ARCA", "BATS"}
 # keys. ALPACA_ASSETS_URL overrides it.
 ASSETS_URL = os.environ.get("ALPACA_ASSETS_URL", "https://paper-api.alpaca.markets/v2/assets")
 BARS_URL = "https://data.alpaca.markets/v2/stocks/bars"
+
+
+def _sip_safe_end(end: date, now: datetime | None = None) -> str:
+    """The bars request's end: the requested day, but never inside the last
+    16 minutes. Plans without real-time SIP refuse the newest 15 minutes, and a
+    paper key may not carry the live account's data plan; daily bars do not need
+    today's last quarter hour."""
+    now = now or datetime.now(timezone.utc)
+    limit = now - timedelta(minutes=16)
+    day_end = datetime.combine(end, datetime.max.time(), tzinfo=timezone.utc)
+    if day_end <= limit:
+        return end.isoformat()
+    return limit.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def _headers() -> dict:
@@ -52,6 +65,7 @@ class AlpacaPrices:
 
     def daily_bars(self, symbols: list[str], start: date, end: date, chunk: int = 100) -> pd.DataFrame:
         frames = []
+        end_param = _sip_safe_end(end)
         for i in range(0, len(symbols), chunk):
             batch = symbols[i:i + chunk]
             token = None
@@ -59,7 +73,7 @@ class AlpacaPrices:
             while True:
                 params = {
                     "symbols": ",".join(batch), "timeframe": "1Day",
-                    "start": start.isoformat(), "end": end.isoformat(),
+                    "start": start.isoformat(), "end": end_param,
                     "adjustment": "all", "feed": "sip", "limit": 10000,
                 }
                 if token:
