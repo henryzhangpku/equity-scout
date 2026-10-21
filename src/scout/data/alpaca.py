@@ -7,6 +7,7 @@ endpoints. Keys come from ALPACA_API_KEY / ALPACA_API_SECRET.
 from __future__ import annotations
 
 import json
+import os
 from datetime import date
 
 import pandas as pd
@@ -16,7 +17,11 @@ from ..http import fetch_json
 from .base import Security
 
 MAJOR_EXCHANGES = {"NYSE", "NASDAQ", "AMEX", "ARCA", "BATS"}
-ASSETS_URL = "https://api.alpaca.markets/v2/assets"
+# The asset list comes from the PAPER trading host by default, so the service
+# runs on a paper key and never holds a live-account key (a live key could
+# trade if it leaked). Bars come from the market-data host, which accepts paper
+# keys. ALPACA_ASSETS_URL overrides it.
+ASSETS_URL = os.environ.get("ALPACA_ASSETS_URL", "https://paper-api.alpaca.markets/v2/assets")
 BARS_URL = "https://data.alpaca.markets/v2/stocks/bars"
 
 
