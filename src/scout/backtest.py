@@ -210,6 +210,44 @@ def run(spec: Spec, P: Panels | None = None, cost_bps: float = COST_BPS, top_n: 
     })
 
 
+def for_run(spec: Spec, P: Panels | None = None, top_n: int | None = None) -> dict:
+    """The backtest every screen gets, for a run record: never raises.
+
+    {"ok": True, ...run() without the per-month rows} on success; {"ok": False, "refused": True,
+    "problems": [...]} when the screen uses fields the panels lack; {"ok": False, "error": ...} when the
+    panels are not built here.
+    """
+    try:
+        r = run(spec, P, top_n=top_n)
+    except SpecError as e:
+        return {"ok": False, "refused": True, "problems": e.problems}
+    except FileNotFoundError:
+        return {"ok": False, "error": "the historical panels are not built here (scout build-panels)"}
+    return {"ok": True, **{k: v for k, v in r.items() if k != "months"}}
+
+
+def summary_lines(r: dict) -> list[str]:
+    """A backtest result as plain-text lines (the CLI and report.md)."""
+    if not r.get("ok", True):
+        if r.get("refused"):
+            return ["Not backtested: " + "; ".join(r["problems"])]
+        return [f"Not backtested: {r.get('error', 'the backtest failed')}"]
+    p, st = r["params"], r["stats"]
+    f = lambda v: "n/a" if v is None else f"{v * 100:+.1f}%"
+    lines = [f"{p['first']} .. {p['last']},{p['n_months']} monthly periods, top {p['top_n']}, "
+             f"{p['cost_bps_per_side']:g} bps per side"]
+    for k in ("strategy", "universe", "spy"):
+        x = st[k]
+        sharpe = "n/a" if x["sharpe"] is None else f"{x['sharpe']:.2f}"
+        lines.append(f"  {k:<9} total {f(x['total'])}  CAGR {f(x['cagr'])}  vol {f(x['vol'])}  "
+                     f"Sharpe {sharpe}  maxDD {f(x['max_drawdown'])}")
+    lines.append(f"  hit rate vs SPY {f(st['hit_rate_vs_spy'])}, avg names {st['avg_names']:.1f}, "
+                 f"months with too few names {st['months_too_few']}")
+    lines.append(f"VERDICT: {r['verdict']}")
+    lines += [f"  [{'pass' if g['pass'] else 'FAIL'}] {g['label']}" for g in r["gates"]]
+    return lines
+
+
 def finite(x):
     """NaN/inf -> None everywhere, so the result is valid JSON for browsers."""
     if isinstance(x, dict):

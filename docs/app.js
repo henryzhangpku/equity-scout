@@ -13,13 +13,14 @@
     h.push('<div class="panel">' + U.funnelHtml(r.funnel, "3 · How the list narrowed (computed by code)", r.spec) + "</div>");
     h.push('<div class="panel">' + U.tableHtml(r.columns, r.ranked, r.top_n, r.n_ranked, "4 · Ranked results") + "</div>");
     if (r.sector_breakdown && r.sector_breakdown.length) h.push('<div class="panel">' + U.sectorHtml(r.sector_breakdown, "Survivors by sector (all " + r.n_ranked + ")") + "</div>");
-    h.push('<div class="panel"><div class="step">5 · Why the price and the business may disagree — top ' + r.explanations.length +
+    h.push('<div class="panel" id="bt-run"></div>');
+    h.push('<div class="panel"><div class="step">6 · Why the price and the business may disagree — top ' + r.explanations.length +
       '</div><p class="muted" style="margin-top:0">Each quote was checked by code to appear verbatim in its linked source; claims that failed were removed and are listed under each card. No earnings-call transcripts were used (licensed content).</p><div class="cards">');
     r.explanations.forEach(function (ex) { h.push(U.cardHtml(ex)); });
     h.push("</div></div>");
-    h.push('<div class="panel" id="bt-run"></div>');
     document.getElementById("run").innerHTML = h.join("");
-    U.mountBacktest(document.getElementById("bt-run"), { key: r.id, spec: r.spec, api: null, precomputedSrc: "data/backtests.js?v=20261009b" });
+    U.mountBacktest(document.getElementById("bt-run"), { key: r.id, spec: r.spec, api: null, precomputedSrc: "data/backtests.js?v=20261009b",
+      title: "5 · Backtest: did this screen work historically? (computed by code)" });
   }
 
   var tabs = document.getElementById("tabs");

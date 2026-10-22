@@ -144,6 +144,9 @@
     h.push('<div class="panel">' + U.funnelHtml(o.funnel, "How the list narrowed", o.spec) + "</div>");
     h.push('<div class="panel">' + U.tableHtml(o.cols, o.rows, o.topN, o.nRanked, "Ranked results") + "</div>");
     if (o.breakdown && o.breakdown.length) h.push('<div class="panel">' + U.sectorHtml(o.breakdown, "Survivors by sector (all " + o.nRanked + ")") + "</div>");
+    // The backtest comes straight after the screen, before any explanation, and runs on its own.
+    if (o.btNote) h.push('<div class="panel"><div class="step">Backtest</div><p class="meta" style="margin:0">' + o.btNote + "</p></div>");
+    else h.push('<div class="panel" id="bt-panel"></div>');
     var top = o.noCards ? [] : o.rows.slice(0, o.topN);
     if (top.length) {
       h.push('<div class="panel"><div class="step">Why the price and the business may disagree — top ' + top.length + "</div>");
@@ -159,9 +162,8 @@
       });
       h.push("</div></div>");
     }
-    if (o.btNote) { h.push('<div class="panel"><p class="meta" style="margin:0">' + o.btNote + "</p></div>"); showOut(h.join("")); return; }
-    h.push('<div class="panel" id="bt-panel"></div>');
     showOut(h.join(""));
+    if (o.btNote) return;
     U.mountBacktest(byId("bt-panel"), { key: o.btKey || null, spec: o.spec, api: API || null,
       live: function () { return apiLive; }, precomputedSrc: "data/backtests.js?v=20261009b" });
   }

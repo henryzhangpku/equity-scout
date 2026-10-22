@@ -158,3 +158,29 @@ def test_fact_filed_after_rebalance_is_invisible(monkeypatch):
 def test_month_end_dates():
     days = pd.bdate_range("2024-01-01", "2024-03-15").strftime("%Y-%m-%d").tolist()
     assert PN.month_end_dates(days, "2024-01-01", "2024-03-15") == ["2024-01-31", "2024-02-29"]
+
+
+def test_every_run_gets_its_backtest_and_report_shows_it_before_explanations():
+    """A screen is never shown without its history: for_run never raises, and report.md puts the
+    backtest (step 4) before the explanations (step 5)."""
+    from scout.report import markdown
+    closes = [[10, 20, 30], [11, 18, 33], [11, 18, 36.3]]
+    rsi = [[30, 40, 60], [45, 70, 20], [10, 10, 10]]
+    bt = B.for_run(SPEC, mini_panels(closes, rsi))
+    assert bt["ok"] and "months" not in bt and bt["verdict"] and bt["curve"]
+    assert any(line.startswith("VERDICT: ") for line in B.summary_lines(bt))
+    rec = {"observation": "low rsi", "as_of": "2024-03-28", "data": {"last_price_date": "2024-03-28",
+           "universe_rule": "test"}, "llm": {"provider": "p", "model": "m"}, "spec": SPEC.to_dict(),
+           "funnel": [], "ranked": [], "top_n": 2, "explanations": [], "limits": [], "backtest": bt}
+    md = markdown(rec)
+    assert md.index("## 4. Backtest") < md.index("## 5. Why the dislocation")
+
+
+def test_a_screen_the_panels_cannot_replay_says_why_instead_of_failing():
+    spec = validate({"observation": "weekly rsi", "conditions": [{"field": "rsi14_w", "op": "<", "value": 30}],
+                     "rank": [{"field": "rsi14_w", "direction": "asc"}], "top_n": 2})
+    P = mini_panels([[10, 20, 30], [11, 18, 33]], [[30, 40, 60], [45, 70, 20]])
+    P.fields = [f for f in P.fields if f != "rsi14_w"]  # panels built before the weekly fields existed
+    bt = B.for_run(spec, P)
+    assert bt["ok"] is False and bt["refused"] and "cannot be backtested" in bt["problems"][0]
+    assert B.summary_lines(bt)[0].startswith("Not backtested: ")

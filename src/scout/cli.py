@@ -57,6 +57,10 @@ def _print_result(rec: dict) -> None:
     print("  " + " | ".join(cols))
     for r in rec["ranked"][:15]:
         print("  " + " | ".join(fmt(c, r.get(c)) for c in cols))
+    if rec.get("backtest"):
+        from .backtest import summary_lines
+        print("\nBacktest (monthly, point-in-time, pure code):")
+        print("\n".join("  " + x for x in summary_lines(rec["backtest"])))
     print("\nExplanations:")
     for ex in rec["explanations"]:
         print(f"\n  {ex['symbol']}: {ex['verdict']}  ({len(ex['thesis'])} thesis, {len(ex['bear_case'])} bear, "
@@ -87,7 +91,7 @@ def cmd_run(a) -> None:
             sys.exit(0)
     try:
         res = execute(spec, attempts, as_of, llm, top_n=a.top, run_dir=Path(a.out) if a.out else None,
-                      record_picks=not a.no_ledger, prompt_version=a.prompt_version)
+                      record_picks=not a.no_ledger, prompt_version=a.prompt_version, backtest=True)
     except SpecError as e:
         print("Refused:\n  - " + "\n  - ".join(e.problems))
         sys.exit(2)
@@ -201,28 +205,15 @@ def cmd_build_panels(a) -> None:
 
 
 def cmd_backtest(a) -> None:
-    from .backtest import run
+    from .backtest import run, summary_lines
     if a.target.endswith(".json") and Path(a.target).is_file() and "run.json" not in a.target:
         d = json.loads(Path(a.target).read_text(encoding="utf-8"))
     else:
         d = json.loads((Path(a.target) / "run.json").read_text(encoding="utf-8"))["spec"]
     spec = validate(d)
     r = run(spec, cost_bps=a.cost_bps, top_n=a.top)
-    p, st = r["params"], r["stats"]
-    f = lambda v: "n/a" if v is None else f"{v * 100:+.1f}%"
     print(spec.observation)
-    print(f"{p['first']} .. {p['last']},{p['n_months']} monthly periods, top {p['top_n']}, "
-          f"{p['cost_bps_per_side']:g} bps per side")
-    for k in ("strategy", "universe", "spy"):
-        x = st[k]
-        sharpe = "n/a" if x["sharpe"] is None else f"{x['sharpe']:.2f}"
-        print(f"  {k:<9} total {f(x['total'])}  CAGR {f(x['cagr'])}  vol {f(x['vol'])}  "
-              f"Sharpe {sharpe}  maxDD {f(x['max_drawdown'])}")
-    print(f"  hit rate vs SPY {f(st['hit_rate_vs_spy'])}, avg names {st['avg_names']:.1f}, "
-          f"months with too few names {st['months_too_few']}")
-    print(f"VERDICT: {r['verdict']}")
-    for g in r["gates"]:
-        print(f"  [{'pass' if g['pass'] else 'FAIL'}] {g['label']}")
+    print("\n".join(summary_lines(r)))
 
 
 def cmd_loop(a) -> None:

@@ -3,7 +3,8 @@
 Write an investment observation in plain English, for example *"profitable mid-caps that have pulled back 20%
 from their highs but are still growing revenue over 10%"*. A language model translates it into a typed,
 whitelisted screen spec. Code validates the spec, screens about 3,800 US-listed operating companies on
-point-in-time data, ranks the survivors and computes every number. For the top names, the model reads the latest
+point-in-time data, ranks the survivors and computes every number. **Every screen is then backtested
+automatically**, monthly since 2023 on point-in-time panels, before anything else is shown. For the top names, the model reads the latest
 earnings release, the 10-Q/10-K MD&A and recent news headlines, then explains why the stock and the fundamentals
 might disagree. Code deletes any claim whose quote does not appear verbatim in its source.
 
@@ -70,7 +71,8 @@ as **not screened**. It is never silently dropped or approximated. Every prompt 
 ```mermaid
 flowchart LR
   OBS["Observation<br/>(plain English)"] --> T["LLM: translate"]:::llm --> SPEC["Spec (JSON)"]
-  SPEC --> V["Validate<br/>(whitelist)"]:::code --> SCR["Screen"]:::code --> R["Funnel +<br/>ranked table"]:::code --> TOP["Top N"]
+  SPEC --> V["Validate<br/>(whitelist)"]:::code --> SCR["Screen"]:::code --> R["Funnel +<br/>ranked table"]:::code --> BT["Backtest<br/>(always, monthly since 2023)"]:::code --> TOP["Top N"]
+  PAN[("Point-in-time<br/>monthly panels")] --> BT
 
   subgraph SNAP["Feature snapshot (point-in-time)"]
     direction TB
@@ -220,8 +222,11 @@ SIC `industries` filter still works. Results show a Sector column and a survivor
 
 ## Backtest this screen
 
-Any screen can be backtested: an example, a recorded run, a live-translated one, or one built under Advanced. The
-model plays no part; this is pure code (`src/scout/backtest.py`).
+Every screen is backtested, automatically, as the step right after the screen: an example, a recorded run, a
+live-translated one, or one built under Advanced. There is no button to press. A screen without its history says
+little, so the backtest appears directly under the ranked results and before any explanation, and `scout run` writes
+it into `run.json` and `report.md`. The model plays no part; this is pure code (`src/scout/backtest.py`). When a
+screen uses fields the panels do not hold, the page says *Not backtested* and why, instead of guessing.
 
 * **Point-in-time monthly panels** (`scout build-panels`, `src/scout/panels.py`): 45 month-end rebalances, from
   2023-01-31 to 2026-09-30 (44 holding months).
@@ -258,9 +263,10 @@ model plays no part; this is pure code (`src/scout/backtest.py`).
   * fields that are mostly missing historically;
   * for theme baskets, a look-ahead warning: they were picked in 2026, knowing the AI winners.
 * **Where it runs:**
-  * `POST /api/backtest {spec}` on the hosted API, rate-limited separately (20 per IP per hour, 400 per day);
-  * the local app;
-  * `scout backtest runs/<run>` from the CLI;
+  * `POST /api/backtest {spec}` on the hosted API, rate-limited separately (20 per IP per hour, 400 per day), called
+    by the page as soon as a live screen returns;
+  * the local app, as soon as the screen event arrives;
+  * `scout run` (step 4 of `report.md`, before the explanations) and `scout backtest runs/<run>` from the CLI;
   * on the static site, saved backtests for every example and recorded run (`docs/data/backtests.js`), plus live
     backtests for new screens when the API is up.
 

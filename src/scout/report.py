@@ -69,7 +69,14 @@ def markdown(rec: dict) -> str:
         L.append("| " + " | ".join(fmt(c, r.get(c)) for c in cols) + " |")
     if len(rec["ranked"]) > 25:
         L.append(f"\n({len(rec['ranked']) - 25} more in run.json)")
-    L += ["", f"## 4. Why the dislocation might exist (top {rec['top_n']})", "",
+    step = 4
+    if rec.get("backtest"):
+        from .backtest import summary_lines
+        L += ["", "## 4. Backtest (monthly rebalances, point-in-time panels, pure code)", "", "```"]
+        L += summary_lines(rec["backtest"]) + ["```"]
+        L += [f"- {c}" for c in rec["backtest"].get("caveats", [])]
+        step = 5
+    L += ["", f"## {step}. Why the dislocation might exist (top {rec['top_n']})", "",
           "Every quote below was checked by code to appear verbatim in the linked SEC document. "
           "Claims whose quotes failed the check were removed and are listed.", ""]
     for ex in rec["explanations"]:

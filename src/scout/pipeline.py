@@ -128,12 +128,15 @@ def _table(ranked: pd.DataFrame, spec: Spec) -> list[dict]:
 def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_source=None,
             run_dir: Path | None = None, top_n: int | None = None, log=print,
             news_source=DEFAULT, record_picks: bool = False, on_event=None,
-            tolerate_errors: bool = False, prompt_version: int | None = None) -> RunResult:
+            tolerate_errors: bool = False, prompt_version: int | None = None,
+            backtest: bool = False) -> RunResult:
     """Run the screen and the narrative engine and write the run folder.
 
     on_event(kind, payload), if given, is called as results become available:
-    "screen" (funnel + ranked table), "explaining" (symbol), "explanation" (one
-    name's validated explanation). With tolerate_errors, a failure while reading
+    "screen" (funnel + ranked table), "backtest" (the screen's backtest, with
+    backtest=True), "explaining" (symbol), "explanation" (one name's validated
+    explanation). The backtest runs right after the screen and before any
+    explanation: a screen is not shown without its history. With tolerate_errors, a failure while reading
     one name's documents or calling the model becomes that name's
     "not enough evidence" card instead of aborting the run (used by scout serve).
     """
@@ -157,6 +160,11 @@ def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_sour
     breakdown = sector_breakdown(survivors)
     emit("screen", {"funnel": funnel, "ranked": table, "top_n": n, "as_of": as_of, "data": manifest,
                     "sector_breakdown": breakdown})
+    bt = None
+    if backtest:
+        from .backtest import for_run
+        bt = for_run(spec, top_n=n)
+        emit("backtest", bt)
     explanations = []
     shown: dict[str, str] = {}
     for i, (_, row) in enumerate(top.iterrows()):
@@ -200,6 +208,8 @@ def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_sour
         "explanations": explanations,
         "limits": LIMITS,
     }
+    if bt is not None:
+        record["backtest"] = bt
     if run_dir.exists():
         shutil.rmtree(run_dir / "docs", ignore_errors=True)
     (run_dir / "docs").mkdir(parents=True, exist_ok=True)

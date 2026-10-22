@@ -270,32 +270,40 @@
     return h.join("");
   }
 
-  // Backtest button + result. opts: {key: precomputed id or null, spec, api: base URL ("" = same origin) or null,
-  // live: function () -> bool, precomputedSrc: script URL holding window.SCOUT_BACKTESTS}
+  // The backtest panel. It runs on its own as soon as it is mounted: a screen is never shown without its
+  // history. opts: {key: precomputed id or null, spec, api: base URL ("" = same origin) or null,
+  // live: function () -> bool, precomputedSrc: script URL holding window.SCOUT_BACKTESTS, title: step heading}
   function mountBacktest(el, opts) {
-    el.innerHTML = '<div class="btbar"><button class="primary" type="button">Backtest this screen</button>' +
-      '<span class="meta" style="margin:0">Did this kind of idea work historically? Monthly, point-in-time, pure code.</span></div><div class="btout"></div>';
-    var btn = el.querySelector("button"), out = el.querySelector(".btout");
-    function show(r) { out.innerHTML = '<div style="margin-top:18px">' + backtestHtml(r) + "</div>"; }
+    el.innerHTML = '<div class="step">' + esc(opts.title || "Backtest: did this screen work historically?") + "</div>" +
+      '<p class="meta" style="margin-top:0">Every screen is backtested automatically: monthly rebalances since 2023 on point-in-time data, pure code, no model.</p><div class="btout"></div>';
+    var out = el.querySelector(".btout");
+    function show(r) { out.innerHTML = backtestHtml(r); }
+    function retry(msg) {
+      out.innerHTML = '<p class="err">' + msg + '</p><div class="btbar"><button type="button">Try the backtest again</button></div>';
+      out.querySelector("button").onclick = start;
+    }
     function fromApi() {
       if (opts.api === null || opts.api === undefined || !(opts.live ? opts.live() : true)) {
         out.innerHTML = '<p class="meta">Backtests for new screens run on the live service, which is offline right now. The examples and recorded runs have saved backtests.</p>';
         return;
       }
-      var t0 = Date.now(), tick = setInterval(function () {
-        out.innerHTML = '<p class="meta"><span class="spinner"></span>Running the screen on every month-end since 2023\u2026 ' + Math.round((Date.now() - t0) / 1000) + " s</p>"; }, 400);
+      var t0 = Date.now(), paint = function () {
+        out.innerHTML = '<p class="meta"><span class="spinner"></span>Running the screen on every month-end since 2023\u2026 ' + Math.round((Date.now() - t0) / 1000) + " s</p>"; };
+      paint();
+      var tick = setInterval(paint, 400);
       var ctrl = new AbortController(), to = setTimeout(function () { ctrl.abort(); }, 120000);
-      btn.disabled = true;
       fetch(opts.api + "/api/backtest", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ spec: opts.spec }), signal: ctrl.signal })
         .then(function (r) { return r.json(); })
         .then(function (r) {
+          clearInterval(tick);
           if (r.ok) show(r);
-          else out.innerHTML = '<p class="err">' + esc(r.refused ? "Refused: " + r.problems.join("; ") : (r.error || "The backtest failed.")) + "</p>";
+          else if (r.refused) out.innerHTML = '<p class="err">' + esc("Not backtested: " + r.problems.join("; ")) + "</p>";
+          else retry(esc(r.error || "The backtest failed."));
         })
-        .catch(function (e) { out.innerHTML = '<p class="err">' + (e.name === "AbortError" ? "The backtest took too long." : "The live service is unreachable.") + "</p>"; })
-        .then(function () { clearInterval(tick); clearTimeout(to); btn.disabled = false; });
+        .catch(function (e) { clearInterval(tick); retry(e.name === "AbortError" ? "The backtest took too long." : "The live service is unreachable."); })
+        .then(function () { clearTimeout(to); });
     }
-    btn.onclick = function () {
+    function start() {
       var table = window.SCOUT_BACKTESTS;
       if (opts.key && table && table[opts.key]) return show(table[opts.key]);
       if (opts.key && !table && opts.precomputedSrc) {
@@ -308,7 +316,8 @@
         return;
       }
       fromApi();
-    };
+    }
+    start();
   }
 
   function cardHtml(ex, note) {

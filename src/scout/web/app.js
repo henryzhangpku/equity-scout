@@ -106,7 +106,7 @@
   function listen(jobId, spec) {
     currentJob = jobId;
     var specShown = !!spec, lastT = 0, explaining = "";
-    $("out").innerHTML = '<div class="panel" id="o-spec"></div><div class="panel" id="o-funnel" hidden></div><div class="panel" id="o-table" hidden></div>' +
+    $("out").innerHTML = '<div class="panel" id="o-spec"></div><div class="panel" id="o-funnel" hidden></div><div class="panel" id="o-table" hidden></div><div class="panel" id="o-bt" hidden></div>' +
       '<div class="panel" id="o-ex" hidden><div class="step">Why the dislocation might exist</div><p class="muted" style="margin-top:0">Each quote is checked by code to appear verbatim in its linked source (8-K earnings release, 10-Q/10-K MD&amp;A, or a news headline/summary). Claims that fail are removed and listed.</p><div class="cards" id="cards"></div></div>';
     if (spec) $("o-spec").innerHTML = U.specHtml(spec, "Spec being run");
     stages("screening");
@@ -122,6 +122,8 @@
       var cols = d.ranked.length ? U.tableColumns(sp).filter(function (c) { return c in d.ranked[0] || c === "rank"; }) : [];
       $("o-table").innerHTML = U.tableHtml(cols, d.ranked.slice(0, 25), d.top_n, d.ranked.length) +
         (d.sector_breakdown && d.sector_breakdown.length ? '<div style="margin-top:20px">' + U.sectorHtml(d.sector_breakdown, "Survivors by sector") + "</div>" : "");
+      // The backtest runs on its own right after the screen, before any explanation.
+      if (spec) { $("o-bt").hidden = false; U.mountBacktest($("o-bt"), { key: null, spec: spec, api: "" }); }
       if (d.top_n && d.ranked.length) {
         $("o-ex").hidden = false;
         $("cards").innerHTML = d.ranked.slice(0, d.top_n).map(function (r) {
@@ -145,10 +147,6 @@
       es.close(); es = null; stages("done");
       status("Done in " + lastT + " s. Saved to " + esc(d.run_dir) + ".");
       $("record-box").hidden = !d.recordable;
-      if (spec) {
-        var bp = document.createElement("div"); bp.className = "panel"; $("out").appendChild(bp);
-        U.mountBacktest(bp, { key: null, spec: spec, api: "" });
-      }
     });
     on("error", function (d) { es.close(); es = null; fail(d.message, d.hint); });
     es.onerror = function () { if (es) { es.close(); es = null; fail("Lost the connection to the local server."); } };
