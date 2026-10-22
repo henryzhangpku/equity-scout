@@ -129,14 +129,15 @@ def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_sour
             run_dir: Path | None = None, top_n: int | None = None, log=print,
             news_source=DEFAULT, record_picks: bool = False, on_event=None,
             tolerate_errors: bool = False, prompt_version: int | None = None,
-            backtest: bool = False) -> RunResult:
+            backtest: bool = False, team: bool = False) -> RunResult:
     """Run the screen and the narrative engine and write the run folder.
 
     on_event(kind, payload), if given, is called as results become available:
     "screen" (funnel + ranked table), "backtest" (the screen's backtest, with
     backtest=True), "explaining" (symbol), "explanation" (one name's validated
     explanation). The backtest runs right after the screen and before any
-    explanation: a screen is not shown without its history. With tolerate_errors, a failure while reading
+    explanation: a screen is not shown without its history. With team=True the
+    investor team (team.py) then votes on the top names ("team" event). With tolerate_errors, a failure while reading
     one name's documents or calling the model becomes that name's
     "not enough evidence" card instead of aborting the run (used by scout serve).
     """
@@ -165,6 +166,12 @@ def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_sour
         from .backtest import for_run
         bt = for_run(spec, top_n=n)
         emit("backtest", bt)
+    team_result = None
+    top_rows = [{k: _clean(v) for k, v in r.items()} for r in top.to_dict(orient="records")]
+    if team:
+        from .team import vote_and_tally
+        team_result = vote_and_tally(top_rows, features, llm)
+        emit("team", team_result)
     explanations = []
     shown: dict[str, str] = {}
     for i, (_, row) in enumerate(top.iterrows()):
@@ -210,6 +217,8 @@ def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_sour
     }
     if bt is not None:
         record["backtest"] = bt
+    if team_result is not None:
+        record["team"] = team_result
     if run_dir.exists():
         shutil.rmtree(run_dir / "docs", ignore_errors=True)
     (run_dir / "docs").mkdir(parents=True, exist_ok=True)
@@ -223,6 +232,10 @@ def execute(spec: Spec, translation: list[dict], as_of: str, llm: LLM, docs_sour
         picks = [{"symbol": r["symbol"], "rank": r["rank"], "entry_close": r["close"]} for r in table[:n]]
         bench = {k: v for k, v in (manifest.get("benchmark_closes") or {}).items() if k in ("SPY", "SMH")}
         append_picks(run_dir.name, as_of, spec.observation, picks, bench)
+        if team_result is not None:
+            from .team import record_votes
+            record_votes(run_dir.name, as_of, "idea", spec.observation, team_result, top_rows,
+                         (manifest.get("benchmark_closes") or {}).get("SPY"))
     return RunResult(run_dir=run_dir, record=record)
 
 

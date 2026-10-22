@@ -1,0 +1,172 @@
+{
+ "generated_at": "2026-10-22T00:29:09+00:00",
+ "roster_version": "99a83eb2c9df",
+ "chain_ok": true,
+ "chain_problems": [],
+ "n_vote_rounds": 0,
+ "n_matured_votes": 0,
+ "min_scored": 10,
+ "copycat_corr": 0.8,
+ "investors": [
+  {
+   "id": "deep_value",
+   "name": "Deep value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "record": null,
+   "history": null,
+   "weight": 1.0,
+   "weight_source": "no record yet",
+   "cluster": "deep_value"
+  },
+  {
+   "id": "quality_compounder",
+   "name": "Quality compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "record": null,
+   "history": null,
+   "weight": 1.0,
+   "weight_source": "no record yet",
+   "cluster": "quality_compounder"
+  },
+  {
+   "id": "growth_at_reasonable_price",
+   "name": "Growth at a reasonable price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "record": null,
+   "history": null,
+   "weight": 1.0,
+   "weight_source": "no record yet",
+   "cluster": "growth_at_reasonable_price"
+  },
+  {
+   "id": "trend_follower",
+   "name": "Trend follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "record": null,
+   "history": null,
+   "weight": 1.0,
+   "weight_source": "no record yet",
+   "cluster": "trend_follower"
+  },
+  {
+   "id": "contrarian_rebound",
+   "name": "Contrarian (oversold rebounds)",
+   "kind": "llm",
+   "horizon_days": 21,
+   "record": null,
+   "history": null,
+   "weight": 1.0,
+   "weight_source": "no record yet",
+   "cluster": "contrarian_rebound"
+  },
+  {
+   "id": "forensic_skeptic",
+   "name": "Forensic skeptic (short bias)",
+   "kind": "llm",
+   "horizon_days": 126,
+   "record": null,
+   "history": null,
+   "weight": 1.0,
+   "weight_source": "no record yet",
+   "cluster": "forensic_skeptic"
+  },
+  {
+   "id": "squeeze_hunter",
+   "name": "Short-squeeze hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "record": null,
+   "history": null,
+   "weight": 1.0,
+   "weight_source": "no record yet",
+   "cluster": "squeeze_hunter"
+  },
+  {
+   "id": "small_cap_specialist",
+   "name": "Small-cap specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "record": null,
+   "history": null,
+   "weight": 1.0,
+   "weight_source": "no record yet",
+   "cluster": "small_cap_specialist"
+  },
+  {
+   "id": "rule_momentum",
+   "name": "Momentum rule (code)",
+   "kind": "code",
+   "horizon_days": 21,
+   "record": null,
+   "history": {
+    "verdict": "No edge",
+    "months": 44,
+    "mean_monthly_excess": -0.006193137418426409,
+    "t_stat": -0.37206571528594057,
+    "first": "2023-01-31",
+    "last": "2026-09-30"
+   },
+   "weight": 0.814,
+   "weight_source": "rule backtest (44 months)",
+   "cluster": "rule_momentum"
+  },
+  {
+   "id": "rule_value",
+   "name": "Value rule (code)",
+   "kind": "code",
+   "horizon_days": 21,
+   "record": null,
+   "history": {
+    "verdict": "Edge on this history",
+    "months": 44,
+    "mean_monthly_excess": 0.00946445040595599,
+    "t_stat": 1.3464507017614722,
+    "first": "2023-01-31",
+    "last": "2026-09-30"
+   },
+   "weight": 1.673,
+   "weight_source": "rule backtest (44 months)",
+   "cluster": "rule_value"
+  },
+  {
+   "id": "rule_quality",
+   "name": "Quality rule (code)",
+   "kind": "code",
+   "horizon_days": 21,
+   "record": null,
+   "history": {
+    "verdict": "No edge",
+    "months": 44,
+    "mean_monthly_excess": -0.011965847280520907,
+    "t_stat": -1.6201123694967954,
+    "first": "2023-01-31",
+    "last": "2026-09-30"
+   },
+   "weight": 0.25,
+   "weight_source": "rule backtest (44 months)",
+   "cluster": "rule_quality"
+  },
+  {
+   "id": "rule_reversal",
+   "name": "Reversal rule (code)",
+   "kind": "code",
+   "horizon_days": 21,
+   "record": null,
+   "history": {
+    "verdict": "No edge",
+    "months": 44,
+    "mean_monthly_excess": -0.012314026355474043,
+    "t_stat": -1.5765333797283763,
+    "first": "2023-01-31",
+    "last": "2026-09-30"
+   },
+   "weight": 0.25,
+   "weight_source": "rule backtest (44 months)",
+   "cluster": "rule_reversal"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "16ce8bb26c8ead16bfc43c6a",
+ "tag": "vote squeeze_hunter",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou look for crowded shorts that are starting to go wrong for the shorts: high short interest, many days to cover, rising volume and price turning up through its averages.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"COUR\", \"name\": \"Coursera, Inc.\", \"data\": {\"short_pct_shares_out\": \"+9.1%\", \"days_to_cover\": \"5.5d\", \"volume_ratio_50d\": \"1.53\", \"mom_1m\": \"-0.6%\", \"pct_vs_sma50\": \"-4.9%\"}}, {\"symbol\": \"QNST\", \"name\": \"QUINSTREET, INC\", \"data\": {\"short_pct_shares_out\": \"+10.4%\", \"days_to_cover\": \"7.7d\", \"volume_ratio_50d\": \"1.03\", \"mom_1m\": \"-10.1%\", \"pct_vs_sma50\": \"-10.0%\"}}, {\"symbol\": \"TPC\", \"name\": \"TUTOR PERINI CORP\", \"data\": {\"short_pct_shares_out\": \"+3.7%\", \"days_to_cover\": \"5.1d\", \"volume_ratio_50d\": \"0.85\", \"mom_1m\": \"-4.4%\", \"pct_vs_sma50\": \"-4.6%\"}}, {\"symbol\": \"EVER\", \"name\": \"EverQuote, Inc.\", \"data\": {\"short_pct_shares_out\": \"+18.9%\", \"days_to_cover\": \"12.8d\", \"volume_ratio_50d\": \"0.86\", \"mom_1m\": \"-11.2%\", \"pct_vs_sma50\": \"-10.7%\"}}, {\"symbol\": \"ASTE\", \"name\": \"ASTEC INDUSTRIES INC\", \"data\": {\"short_pct_shares_out\": \"+2.7%\", \"days_to_cover\": \"3.2d\", \"volume_ratio_50d\": \"0.82\", \"mom_1m\": \"-8.4%\", \"pct_vs_sma50\": \"-9.6%\"}}, {\"symbol\": \"DNOW\", \"name\": \"DNOW Inc.\", \"data\": {\"short_pct_shares_out\": \"+5.3%\", \"days_to_cover\": \"4.2d\", \"volume_ratio_50d\": \"1.16\", \"mom_1m\": \"-3.0%\", \"pct_vs_sma50\": \"-0.4%\"}}, {\"symbol\": \"KALU\", \"name\": \"KAISER ALUMINUM CORP\", \"data\": {\"short_pct_shares_out\": \"+5.8%\", \"days_to_cover\": \"5.1d\", \"volume_ratio_50d\": \"0.96\", \"mom_1m\": \"-10.6%\", \"pct_vs_sma50\": \"-7.0%\"}}, {\"symbol\": \"CVI\", \"name\": \"CVR ENERGY INC\", \"data\": {\"short_pct_shares_out\": \"+5.8%\", \"days_to_cover\": \"4.7d\", \"volume_ratio_50d\": \"0.70\", \"mom_1m\": \"+24.7%\", \"pct_vs_sma50\": \"+34.7%\"}}, {\"symbol\": \"COMP\", \"name\": \"Compass, Inc.\", \"data\": {\"short_pct_shares_out\": \"+6.0%\", \"days_to_cover\": \"3.6d\", \"volume_ratio_50d\": \"1.18\", \"mom_1m\": \"-10.9%\", \"pct_vs_sma50\": \"-12.6%\"}}, {\"symbol\": \"LMB\", \"name\": \"Limbach Holdings, Inc.\", \"data\": {\"short_pct_shares_out\": \"+8.1%\", \"days_to_cover\": \"1.9d\", \"volume_ratio_50d\": \"0.64\", \"mom_1m\": \"+4.4%\", \"pct_vs_sma50\": \"+2.5%\"}}]}"
+  }
+ ],
+ "response": "{\"votes\":[{\"symbol\":\"COUR\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"QNST\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"TPC\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"EVER\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"ASTE\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"DNOW\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"KALU\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"CVI\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"COMP\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"LMB\",\"conviction\":0,\"reasons\":[]}]}",
+ "usage": {
+  "prompt_tokens": 1270,
+  "completion_tokens": 3914,
+  "total_tokens": 5184,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3758
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 886
+ },
+ "latency_s": 33.59,
+ "recorded_at": "2026-10-22T00:38:32+00:00"
+}

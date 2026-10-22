@@ -1,0 +1,37 @@
+{
+ "hash": "7c19c0ff28b76e48114c43be",
+ "tag": "vote small_cap_specialist",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou fish where large funds cannot: smaller, less liquid companies that are growing and self-funding, after the market has marked them down. You avoid names too illiquid to exit.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"PACB\", \"name\": \"PACIFIC BIOSCIENCES OF CALIFORNIA, INC.\", \"data\": {\"market_cap\": \"$715M\", \"avg_dollar_volume_50d\": \"$22M\", \"revenue_growth_yoy\": \"+2.0%\", \"fcf_margin\": \"-77.5%\", \"drawdown_52w\": \"-19.9%\", \"mom_3m\": \"+47.4%\"}}, {\"symbol\": \"DNA\", \"name\": \"Ginkgo Bioworks Holdings, Inc.\", \"data\": {\"market_cap\": \"$722M\", \"avg_dollar_volume_50d\": \"$21M\", \"revenue_growth_yoy\": \"-46.8%\", \"fcf_margin\": \"-156.3%\", \"drawdown_52w\": \"-29.5%\", \"mom_3m\": \"+24.8%\"}}, {\"symbol\": \"PCRX\", \"name\": \"Pacira BioSciences, Inc.\", \"data\": {\"market_cap\": \"$1.5B\", \"avg_dollar_volume_50d\": \"$36M\", \"revenue_growth_yoy\": \"+5.7%\", \"fcf_margin\": \"+24.1%\", \"drawdown_52w\": \"+0.0%\", \"mom_3m\": \"+42.8%\"}}, {\"symbol\": \"PENG\", \"name\": \"Penguin Solutions, Inc.\", \"data\": {\"market_cap\": \"$3.7B\", \"avg_dollar_volume_50d\": \"$140M\", \"revenue_growth_yoy\": \"+12.0%\", \"fcf_margin\": \"-4.6%\", \"drawdown_52w\": \"-12.1%\", \"mom_3m\": \"-8.7%\"}}, {\"symbol\": \"SDGR\", \"name\": \"Schrodinger, Inc.\", \"data\": {\"market_cap\": \"$2.0B\", \"avg_dollar_volume_50d\": \"$52M\", \"revenue_growth_yoy\": \"+8.9%\", \"fcf_margin\": \"-50.3%\", \"drawdown_52w\": \"-19.0%\", \"mom_3m\": \"+60.0%\"}}, {\"symbol\": \"RXRX\", \"name\": \"RECURSION PHARMACEUTICALS, INC.\", \"data\": {\"market_cap\": \"$2.1B\", \"avg_dollar_volume_50d\": \"$76M\", \"revenue_growth_yoy\": \"-15.1%\", \"fcf_margin\": \"-642.2%\", \"drawdown_52w\": \"-41.8%\", \"mom_3m\": \"+11.0%\"}}, {\"symbol\": \"TWST\", \"name\": \"Twist Bioscience Corp\", \"data\": {\"market_cap\": \"$9.5B\", \"avg_dollar_volume_50d\": \"$338M\", \"revenue_growth_yoy\": \"+19.2%\", \"fcf_margin\": \"-21.6%\", \"drawdown_52w\": \"-25.8%\", \"mom_3m\": \"+67.8%\"}}, {\"symbol\": \"TXG\", \"name\": \"10x Genomics, Inc.\", \"data\": {\"market_cap\": \"$9.9B\", \"avg_dollar_volume_50d\": \"$233M\", \"revenue_growth_yoy\": \"-4.3%\", \"fcf_margin\": \"+19.7%\", \"drawdown_52w\": \"-20.9%\", \"mom_3m\": \"+80.9%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"PACB\",\n      \"conviction\": -0.3,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"-77.5%\",\n          \"point\": \"Free cash flow margin of -77.5% means the company is burning cash and is not self-funding.\"\n        },\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+2.0%\",\n          \"point\": \"Revenue growth of +2.0% is too weak for my growing-company requirement.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"DNA\",\n      \"conviction\": -0.7,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"-46.8%\",\n          \"point\": \"Revenue is contracting at -46.8%, so it fails the growth requirement.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"-156.3%\",\n          \"point\": \"Free cash flow margin of -156.3% indicates heavy cash burn, not self-funding.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"PCRX\",\n      \"conviction\": 0.2,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+24.1%\",\n          \"point\": \"Free cash flow margin of +24.1% indicates the company is self-funding.\"\n        },\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+5.7%\",\n          \"point\": \"Revenue growth of +5.7% is positive, though modest.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"+0.0%\",\n          \"point\": \"A drawdown of +0.0% shows it has not been marked down, reducing conviction.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"PENG\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"SDGR\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"RXRX\",\n      \"conviction\": -0.8,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"-15.1%\",\n          \"point\": \"Revenue is shrinking at -15.1%, failing the growth requirement.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"-642.2%\",\n          \"point\": \"Free cash flow margin of -642.2% signals severe cash burn and no self-funding.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TWST\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"TXG\",\n      \"conviction\": 0,\n      \"reasons\": []\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 1191,
+  "completion_tokens": 7526,
+  "total_tokens": 8717,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6859
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 807
+ },
+ "latency_s": 56.05,
+ "recorded_at": "2026-10-22T00:40:12+00:00"
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "790b9c3f1875682b12ae7dbd",
+ "tag": "vote contrarian_rebound",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy fear in businesses that still make cash: deeply oversold, far below recent highs, on heavy volume. You stay away when the business itself is broken.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"GOLD\", \"name\": \"Gold.com, Inc.\", \"data\": {\"rsi14\": \"43.07\", \"drawdown_52w\": \"-32.8%\", \"volume_ratio_50d\": \"0.69\", \"pct_vs_sma20\": \"-4.9%\", \"mom_1m\": \"-13.4%\", \"fcf_ttm\": \"$1.2B\"}}, {\"symbol\": \"DXC\", \"name\": \"DXC Technology Co\", \"data\": {\"rsi14\": \"64.22\", \"drawdown_52w\": \"-19.8%\", \"volume_ratio_50d\": \"2.56\", \"pct_vs_sma20\": \"+9.6%\", \"mom_1m\": \"+13.0%\", \"fcf_ttm\": \"$1.3B\"}}, {\"symbol\": \"SNEX\", \"name\": \"StoneX Group Inc.\", \"data\": {\"rsi14\": \"32.29\", \"drawdown_52w\": \"-35.1%\", \"volume_ratio_50d\": \"1.51\", \"pct_vs_sma20\": \"-9.6%\", \"mom_1m\": \"-13.3%\", \"fcf_ttm\": \"$3.8B\"}}, {\"symbol\": \"CASH\", \"name\": \"PATHWARD FINANCIAL, INC.\", \"data\": {\"rsi14\": \"34.07\", \"drawdown_52w\": \"-27.8%\", \"volume_ratio_50d\": \"1.30\", \"pct_vs_sma20\": \"-3.4%\", \"mom_1m\": \"-8.8%\", \"fcf_ttm\": \"$684M\"}}, {\"symbol\": \"KSS\", \"name\": \"KOHLS Corp\", \"data\": {\"rsi14\": \"65.79\", \"drawdown_52w\": \"-16.1%\", \"volume_ratio_50d\": \"1.22\", \"pct_vs_sma20\": \"+11.6%\", \"mom_1m\": \"+14.8%\", \"fcf_ttm\": \"$1.0B\"}}, {\"symbol\": \"PAGP\", \"name\": \"PLAINS GP HOLDINGS LP\", \"data\": {\"rsi14\": \"47.19\", \"drawdown_52w\": \"-6.7%\", \"volume_ratio_50d\": \"1.08\", \"pct_vs_sma20\": \"-1.0%\", \"mom_1m\": \"-5.0%\", \"fcf_ttm\": \"$2.4B\"}}, {\"symbol\": \"OSCR\", \"name\": \"Oscar Health, Inc.\", \"data\": {\"rsi14\": \"60.15\", \"drawdown_52w\": \"-2.1%\", \"volume_ratio_50d\": \"0.75\", \"pct_vs_sma20\": \"+5.4%\", \"mom_1m\": \"+4.2%\", \"fcf_ttm\": \"$4.4B\"}}, {\"symbol\": \"ENVA\", \"name\": \"Enova International, Inc.\", \"data\": {\"rsi14\": \"42.41\", \"drawdown_52w\": \"-31.2%\", \"volume_ratio_50d\": \"1.09\", \"pct_vs_sma20\": \"+2.0%\", \"mom_1m\": \"-18.5%\", \"fcf_ttm\": \"$2.0B\"}}, {\"symbol\": \"NMRK\", \"name\": \"NEWMARK GROUP, INC.\", \"data\": {\"rsi14\": \"34.86\", \"drawdown_52w\": \"-35.0%\", \"volume_ratio_50d\": \"1.03\", \"pct_vs_sma20\": \"-5.3%\", \"mom_1m\": \"-14.5%\", \"fcf_ttm\": \"$798M\"}}, {\"symbol\": \"SLDE\", \"name\": \"Slide Insurance Holdings, Inc.\", \"data\": {\"rsi14\": \"61.95\", \"drawdown_52w\": \"-4.5%\", \"volume_ratio_50d\": \"0.82\", \"pct_vs_sma20\": \"+4.6%\", \"mom_1m\": \"+2.4%\", \"fcf_ttm\": \"$1.0B\"}}]}"
+  }
+ ],
+ "response": "{\"votes\":[{\"symbol\":\"GOLD\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"DXC\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"SNEX\",\"conviction\":0.8,\"reasons\":[{\"field\":\"rsi14\",\"value\":\"32.29\",\"point\":\"RSI of 32.29 signals oversold conditions that this style buys.\"},{\"field\":\"volume_ratio_50d\",\"value\":\"1.51\",\"point\":\"Volume ratio of 1.51 confirms heavy volume on the decline.\"},{\"field\":\"fcf_ttm\",\"value\":\"$3.8B\",\"point\":\"Free cash flow of $3.8B shows the business still generates cash and is not broken.\"}]},{\"symbol\":\"CASH\",\"conviction\":0.5,\"reasons\":[{\"field\":\"rsi14\",\"value\":\"34.07\",\"point\":\"RSI of 34.07 indicates oversold conditions that fit the fear-buying style.\"},{\"field\":\"volume_ratio_50d\",\"value\":\"1.30\",\"point\":\"Volume ratio of 1.30 shows turnover is above average, supporting fear-driven selling.\"},{\"field\":\"fcf_ttm\",\"value\":\"$684M\",\"point\":\"Free cash flow of $684M confirms the business still makes cash and is not broken.\"}]},{\"symbol\":\"KSS\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"PAGP\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"OSCR\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"ENVA\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"NMRK\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"SLDE\",\"conviction\":0,\"reasons\":[]}]}",
+ "usage": {
+  "prompt_tokens": 1372,
+  "completion_tokens": 6480,
+  "total_tokens": 7852,
+  "prompt_tokens_details": {
+   "cached_tokens": 1280
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6110
+  },
+  "prompt_cache_hit_tokens": 1280,
+  "prompt_cache_miss_tokens": 92
+ },
+ "latency_s": 50.82,
+ "recorded_at": "2026-10-22T00:42:47+00:00"
+}

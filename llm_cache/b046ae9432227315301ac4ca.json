@@ -1,0 +1,37 @@
+{
+ "hash": "b046ae9432227315301ac4ca",
+ "tag": "vote contrarian_rebound",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy fear in businesses that still make cash: deeply oversold, far below recent highs, on heavy volume. You stay away when the business itself is broken.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"CRMD\", \"name\": \"CorMedix Inc.\", \"data\": {\"rsi14\": \"36.68\", \"drawdown_52w\": \"-42.5%\", \"volume_ratio_50d\": \"0.92\", \"pct_vs_sma20\": \"-4.3%\", \"mom_1m\": \"-10.0%\", \"fcf_ttm\": \"$250M\"}}, {\"symbol\": \"MAGN\", \"name\": \"Magnera Corp\", \"data\": {\"rsi14\": \"45.60\", \"drawdown_52w\": \"-23.7%\", \"volume_ratio_50d\": \"1.10\", \"pct_vs_sma20\": \"-0.4%\", \"mom_1m\": \"+0.3%\", \"fcf_ttm\": \"$113M\"}}, {\"symbol\": \"WLFC\", \"name\": \"WILLIS LEASE FINANCE CORP\", \"data\": {\"rsi14\": \"16.72\", \"drawdown_52w\": \"-49.8%\", \"volume_ratio_50d\": \"1.27\", \"pct_vs_sma20\": \"-21.0%\", \"mom_1m\": \"-29.5%\", \"fcf_ttm\": \"$252M\"}}, {\"symbol\": \"COLL\", \"name\": \"COLLEGIUM PHARMACEUTICAL, INC\", \"data\": {\"rsi14\": \"34.01\", \"drawdown_52w\": \"-55.6%\", \"volume_ratio_50d\": \"0.62\", \"pct_vs_sma20\": \"-1.0%\", \"mom_1m\": \"-5.4%\", \"fcf_ttm\": \"$328M\"}}, {\"symbol\": \"CRNC\", \"name\": \"Cerence Inc.\", \"data\": {\"rsi14\": \"54.15\", \"drawdown_52w\": \"-36.3%\", \"volume_ratio_50d\": \"1.42\", \"pct_vs_sma20\": \"+3.5%\", \"mom_1m\": \"+0.7%\", \"fcf_ttm\": \"$79M\"}}, {\"symbol\": \"TREE\", \"name\": \"LendingTree, Inc.\", \"data\": {\"rsi14\": \"43.25\", \"drawdown_52w\": \"-62.7%\", \"volume_ratio_50d\": \"0.68\", \"pct_vs_sma20\": \"+0.1%\", \"mom_1m\": \"-4.6%\", \"fcf_ttm\": \"$74M\"}}, {\"symbol\": \"PRG\", \"name\": \"PROG Holdings, Inc.\", \"data\": {\"rsi14\": \"28.63\", \"drawdown_52w\": \"-34.8%\", \"volume_ratio_50d\": \"1.79\", \"pct_vs_sma20\": \"-6.9%\", \"mom_1m\": \"-17.4%\", \"fcf_ttm\": \"$319M\"}}, {\"symbol\": \"RM\", \"name\": \"Regional Management Corp.\", \"data\": {\"rsi14\": \"63.04\", \"drawdown_52w\": \"-21.3%\", \"volume_ratio_50d\": \"1.32\", \"pct_vs_sma20\": \"+6.8%\", \"mom_1m\": \"+3.3%\", \"fcf_ttm\": \"$323M\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\"symbol\": \"CRMD\", \"conviction\": 0, \"reasons\": []},\n    {\"symbol\": \"MAGN\", \"conviction\": 0, \"reasons\": []},\n    {\"symbol\": \"WLFC\", \"conviction\": 0.9, \"reasons\": [\n      {\"field\": \"rsi14\", \"value\": \"16.72\", \"point\": \"RSI of 16.72 is deeply oversold, indicating extreme fear.\"},\n      {\"field\": \"drawdown_52w\", \"value\": \"-49.8%\", \"point\": \"The stock is -49.8% below its recent high, far below recent highs.\"},\n      {\"field\": \"volume_ratio_50d\", \"value\": \"1.27\", \"point\": \"Volume ratio of 1.27 shows heavy volume relative to its average.\"}\n    ]},\n    {\"symbol\": \"COLL\", \"conviction\": 0, \"reasons\": []},\n    {\"symbol\": \"CRNC\", \"conviction\": 0, \"reasons\": []},\n    {\"symbol\": \"TREE\", \"conviction\": 0, \"reasons\": []},\n    {\"symbol\": \"PRG\", \"conviction\": 0.8, \"reasons\": [\n      {\"field\": \"rsi14\", \"value\": \"28.63\", \"point\": \"RSI of 28.63 indicates deeply oversold conditions.\"},\n      {\"field\": \"drawdown_52w\", \"value\": \"-34.8%\", \"point\": \"The stock is -34.8% below its recent high, far below recent highs.\"},\n      {\"field\": \"volume_ratio_50d\", \"value\": \"1.79\", \"point\": \"Volume ratio of 1.79 shows heavy volume relative to its average.\"}\n    ]},\n    {\"symbol\": \"RM\", \"conviction\": 0, \"reasons\": []}\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 1167,
+  "completion_tokens": 7629,
+  "total_tokens": 8796,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7204
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 783
+ },
+ "latency_s": 59.36,
+ "recorded_at": "2026-10-22T00:41:20+00:00"
+}

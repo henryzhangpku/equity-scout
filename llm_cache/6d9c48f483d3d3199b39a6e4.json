@@ -1,0 +1,37 @@
+{
+ "hash": "6d9c48f483d3d3199b39a6e4",
+ "tag": "vote forensic_skeptic",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou hunt for what can go wrong: profits that do not show up as cash, thin margins, leverage, rich valuations, and a crowd already short. You are comfortable saying a name should be sold or shorted, and you need evidence before you are bullish.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"COUR\", \"name\": \"Coursera, Inc.\", \"data\": {\"net_income_ttm\": \"$-136M\", \"fcf_ttm\": \"$33M\", \"net_margin\": \"-15.4%\", \"net_debt\": \"$-982M\", \"ev_to_sales\": \"0.46\", \"short_pct_shares_out\": \"+9.1%\", \"days_to_cover\": \"5.5d\"}}, {\"symbol\": \"QNST\", \"name\": \"QUINSTREET, INC\", \"data\": {\"net_income_ttm\": \"$81M\", \"fcf_ttm\": \"$128M\", \"net_margin\": \"+6.3%\", \"net_debt\": \"$-71M\", \"ev_to_sales\": \"0.65\", \"short_pct_shares_out\": \"+10.4%\", \"days_to_cover\": \"7.7d\"}}, {\"symbol\": \"TPC\", \"name\": \"TUTOR PERINI CORP\", \"data\": {\"net_income_ttm\": \"$124M\", \"fcf_ttm\": \"$621M\", \"net_margin\": \"+2.1%\", \"net_debt\": \"$-542M\", \"ev_to_sales\": \"0.65\", \"short_pct_shares_out\": \"+3.7%\", \"days_to_cover\": \"5.1d\"}}, {\"symbol\": \"EVER\", \"name\": \"EverQuote, Inc.\", \"data\": {\"net_income_ttm\": \"$114M\", \"fcf_ttm\": \"$95M\", \"net_margin\": \"+15.2%\", \"net_debt\": \"$-185M\", \"ev_to_sales\": \"0.72\", \"short_pct_shares_out\": \"+18.9%\", \"days_to_cover\": \"12.8d\"}}, {\"symbol\": \"ASTE\", \"name\": \"ASTEC INDUSTRIES INC\", \"data\": {\"net_income_ttm\": \"$20M\", \"fcf_ttm\": \"$32M\", \"net_margin\": \"+1.3%\", \"net_debt\": \"$315M\", \"ev_to_sales\": \"0.78\", \"short_pct_shares_out\": \"+2.7%\", \"days_to_cover\": \"3.2d\"}}, {\"symbol\": \"DNOW\", \"name\": \"DNOW Inc.\", \"data\": {\"net_income_ttm\": \"$-112M\", \"fcf_ttm\": \"$136M\", \"net_margin\": \"-2.7%\", \"net_debt\": \"$395M\", \"ev_to_sales\": \"0.79\", \"short_pct_shares_out\": \"+5.3%\", \"days_to_cover\": \"4.2d\"}}, {\"symbol\": \"KALU\", \"name\": \"KAISER ALUMINUM CORP\", \"data\": {\"net_income_ttm\": \"$228M\", \"fcf_ttm\": \"$87M\", \"net_margin\": \"+5.5%\", \"net_debt\": \"$901M\", \"ev_to_sales\": \"0.81\", \"short_pct_shares_out\": \"+5.8%\", \"days_to_cover\": \"5.1d\"}}, {\"symbol\": \"CVI\", \"name\": \"CVR ENERGY INC\", \"data\": {\"net_income_ttm\": \"$69M\", \"fcf_ttm\": \"$351M\", \"net_margin\": \"+0.8%\", \"net_debt\": \"$963M\", \"ev_to_sales\": \"0.82\", \"short_pct_shares_out\": \"+5.8%\", \"days_to_cover\": \"4.7d\"}}, {\"symbol\": \"COMP\", \"name\": \"Compass, Inc.\", \"data\": {\"net_income_ttm\": \"$67M\", \"fcf_ttm\": \"$128M\", \"net_margin\": \"+0.6%\", \"net_debt\": \"$2.4B\", \"ev_to_sales\": \"0.91\", \"short_pct_shares_out\": \"+6.0%\", \"days_to_cover\": \"3.6d\"}}, {\"symbol\": \"LMB\", \"name\": \"Limbach Holdings, Inc.\", \"data\": {\"net_income_ttm\": \"$30M\", \"fcf_ttm\": \"$51M\", \"net_margin\": \"+4.4%\", \"net_debt\": \"$23M\", \"ev_to_sales\": \"0.92\", \"short_pct_shares_out\": \"+8.1%\", \"days_to_cover\": \"1.9d\"}}]}"
+  }
+ ],
+ "response": "{\"votes\": [{\"symbol\": \"COUR\", \"conviction\": -0.3, \"reasons\": [{\"field\": \"net_income_ttm\", \"value\": \"$-136M\", \"point\": \"Negative net income of $-136M means the business is not profitable, a core short signal.\"}, {\"field\": \"net_margin\", \"value\": \"-15.4%\", \"point\": \"Net margin of -15.4% is deeply negative, leaving no cushion for error.\"}]}, {\"symbol\": \"QNST\", \"conviction\": 0, \"reasons\": []}, {\"symbol\": \"TPC\", \"conviction\": 0, \"reasons\": []}, {\"symbol\": \"EVER\", \"conviction\": 0, \"reasons\": []}, {\"symbol\": \"ASTE\", \"conviction\": -0.4, \"reasons\": [{\"field\": \"net_margin\", \"value\": \"+1.3%\", \"point\": \"Net margin of +1.3% is razor-thin, leaving little room for any operational shock.\"}, {\"field\": \"net_debt\", \"value\": \"$315M\", \"point\": \"Net debt of $315M adds leverage risk on top of thin profitability.\"}]}, {\"symbol\": \"DNOW\", \"conviction\": -0.5, \"reasons\": [{\"field\": \"net_income_ttm\", \"value\": \"$-112M\", \"point\": \"Net income of $-112M signals losses.\"}, {\"field\": \"net_margin\", \"value\": \"-2.7%\", \"point\": \"Negative net margin of -2.7% means the company is not profitable.\"}, {\"field\": \"net_debt\", \"value\": \"$395M\", \"point\": \"Net debt of $395M adds leverage pressure while the business is losing money.\"}]}, {\"symbol\": \"KALU\", \"conviction\": -0.4, \"reasons\": [{\"field\": \"net_income_ttm\", \"value\": \"$228M\", \"point\": \"Net income of $228M is not translating into cash, as FCF is only $87M.\"}, {\"field\": \"net_debt\", \"value\": \"$901M\", \"point\": \"Net debt of $901M is a heavy leverage load.\"}]}, {\"symbol\": \"CVI\", \"conviction\": -0.4, \"reasons\": [{\"field\": \"net_margin\", \"value\": \"+0.8%\", \"point\": \"Net margin of +0.8% is extremely thin, leaving almost no downside cushion.\"}, {\"field\": \"net_debt\", \"value\": \"$963M\", \"point\": \"Net debt of $963M is a very large leverage burden relative to thin profitability.\"}]}, {\"symbol\": \"COMP\", \"conviction\": -0.5, \"reasons\": [{\"field\": \"net_margin\", \"value\": \"+0.6%\", \"point\": \"Net margin of +0.6% is extremely thin, leaving almost no room for error.\"}, {\"field\": \"net_debt\", \"value\": \"$2.4B\", \"point\": \"Net debt of $2.4B is a massive leverage load.\"}]}, {\"symbol\": \"LMB\", \"conviction\": 0, \"reasons\": []}]}",
+ "usage": {
+  "prompt_tokens": 1447,
+  "completion_tokens": 5404,
+  "total_tokens": 6851,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4688
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 1063
+ },
+ "latency_s": 42.4,
+ "recorded_at": "2026-10-22T00:38:41+00:00"
+}

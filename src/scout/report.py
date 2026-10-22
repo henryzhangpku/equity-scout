@@ -76,6 +76,11 @@ def markdown(rec: dict) -> str:
         L += summary_lines(rec["backtest"]) + ["```"]
         L += [f"- {c}" for c in rec["backtest"].get("caveats", [])]
         step = 5
+    if rec.get("team"):
+        from .team import team_lines
+        L += ["", f"## {step}. The investor team's vote (each investor separately, reasons checked by code)", ""]
+        L += team_lines(rec["team"])
+        step += 1
     L += ["", f"## {step}. Why the dislocation might exist (top {rec['top_n']})", "",
           "Every quote below was checked by code to appear verbatim in the linked SEC document. "
           "Claims whose quotes failed the check were removed and are listed.", ""]

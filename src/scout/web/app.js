@@ -106,7 +106,7 @@
   function listen(jobId, spec) {
     currentJob = jobId;
     var specShown = !!spec, lastT = 0, explaining = "";
-    $("out").innerHTML = '<div class="panel" id="o-spec"></div><div class="panel" id="o-funnel" hidden></div><div class="panel" id="o-table" hidden></div><div class="panel" id="o-bt" hidden></div>' +
+    $("out").innerHTML = '<div class="panel" id="o-spec"></div><div class="panel" id="o-funnel" hidden></div><div class="panel" id="o-table" hidden></div><div class="panel" id="o-bt" hidden></div><div class="panel" id="o-team" hidden></div>' +
       '<div class="panel" id="o-ex" hidden><div class="step">Why the dislocation might exist</div><p class="muted" style="margin-top:0">Each quote is checked by code to appear verbatim in its linked source (8-K earnings release, 10-Q/10-K MD&amp;A, or a news headline/summary). Claims that fail are removed and listed.</p><div class="cards" id="cards"></div></div>';
     if (spec) $("o-spec").innerHTML = U.specHtml(spec, "Spec being run");
     stages("screening");
@@ -132,6 +132,7 @@
       }
       stages("explain");
     });
+    on("team", function (t) { $("o-team").hidden = false; $("o-team").innerHTML = U.teamHtml(t); });
     on("explaining", function (d) {
       explaining = d.symbol;
       status("Reading " + esc(d.symbol) + "’s 8-K, MD&amp;A and news, then asking the model (" + d.i + " of " + d.n + ")…", true);

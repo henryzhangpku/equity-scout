@@ -1,0 +1,37 @@
+{
+ "hash": "2677b7341bea673ac380304b",
+ "tag": "vote contrarian_rebound",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy fear in businesses that still make cash: deeply oversold, far below recent highs, on heavy volume. You stay away when the business itself is broken.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"PACB\", \"name\": \"PACIFIC BIOSCIENCES OF CALIFORNIA, INC.\", \"data\": {\"rsi14\": \"61.79\", \"drawdown_52w\": \"-19.9%\", \"volume_ratio_50d\": \"2.18\", \"pct_vs_sma20\": \"+24.1%\", \"mom_1m\": \"+78.3%\", \"fcf_ttm\": \"$-123M\"}}, {\"symbol\": \"DNA\", \"name\": \"Ginkgo Bioworks Holdings, Inc.\", \"data\": {\"rsi14\": \"56.64\", \"drawdown_52w\": \"-29.5%\", \"volume_ratio_50d\": \"1.59\", \"pct_vs_sma20\": \"+13.0%\", \"mom_1m\": \"+67.0%\", \"fcf_ttm\": \"$-175M\"}}, {\"symbol\": \"PCRX\", \"name\": \"Pacira BioSciences, Inc.\", \"data\": {\"rsi14\": \"85.08\", \"drawdown_52w\": \"+0.0%\", \"volume_ratio_50d\": \"48.07\", \"pct_vs_sma20\": \"+42.7%\", \"mom_1m\": \"+40.6%\", \"fcf_ttm\": \"$180M\"}}, {\"symbol\": \"PENG\", \"name\": \"Penguin Solutions, Inc.\", \"data\": {\"rsi14\": \"72.40\", \"drawdown_52w\": \"-12.1%\", \"volume_ratio_50d\": \"2.57\", \"pct_vs_sma20\": \"+27.2%\", \"mom_1m\": \"+40.2%\", \"fcf_ttm\": \"$-69M\"}}, {\"symbol\": \"SDGR\", \"name\": \"Schrodinger, Inc.\", \"data\": {\"rsi14\": \"49.67\", \"drawdown_52w\": \"-19.0%\", \"volume_ratio_50d\": \"1.55\", \"pct_vs_sma20\": \"-6.0%\", \"mom_1m\": \"+37.4%\", \"fcf_ttm\": \"$-130M\"}}, {\"symbol\": \"RXRX\", \"name\": \"RECURSION PHARMACEUTICALS, INC.\", \"data\": {\"rsi14\": \"51.81\", \"drawdown_52w\": \"-41.8%\", \"volume_ratio_50d\": \"1.53\", \"pct_vs_sma20\": \"+2.0%\", \"mom_1m\": \"+22.9%\", \"fcf_ttm\": \"$-352M\"}}, {\"symbol\": \"TWST\", \"name\": \"Twist Bioscience Corp\", \"data\": {\"rsi14\": \"46.01\", \"drawdown_52w\": \"-25.8%\", \"volume_ratio_50d\": \"1.98\", \"pct_vs_sma20\": \"-8.9%\", \"mom_1m\": \"+21.1%\", \"fcf_ttm\": \"$-93M\"}}, {\"symbol\": \"TXG\", \"name\": \"10x Genomics, Inc.\", \"data\": {\"rsi14\": \"49.50\", \"drawdown_52w\": \"-20.9%\", \"volume_ratio_50d\": \"1.73\", \"pct_vs_sma20\": \"-5.0%\", \"mom_1m\": \"+14.8%\", \"fcf_ttm\": \"$121M\"}}]}"
+  }
+ ],
+ "response": "{\"votes\": [\n  {\n    \"symbol\": \"PACB\",\n    \"conviction\": 0,\n    \"reasons\": [\n      {\"field\": \"fcf_ttm\", \"value\": \"$-123M\", \"point\": \"Free cash flow is negative, so the business is not making cash and is outside my style.\"},\n      {\"field\": \"rsi14\", \"value\": \"61.79\", \"point\": \"RSI of 61.79 is not deeply oversold, so this is not a fear buy.\"}\n    ]\n  },\n  {\n    \"symbol\": \"DNA\",\n    \"conviction\": 0,\n    \"reasons\": [\n      {\"field\": \"fcf_ttm\", \"value\": \"$-175M\", \"point\": \"Free cash flow is negative, so the business is not making cash and is outside my style.\"},\n      {\"field\": \"rsi14\", \"value\": \"56.64\", \"point\": \"RSI of 56.64 is not deeply oversold, so this is not a fear buy.\"}\n    ]\n  },\n  {\n    \"symbol\": \"PCRX\",\n    \"conviction\": 0,\n    \"reasons\": [\n      {\"field\": \"rsi14\", \"value\": \"85.08\", \"point\": \"RSI of 85.08 is overbought, not deeply oversold, so there is no fear to buy.\"},\n      {\"field\": \"drawdown_52w\", \"value\": \"+0.0%\", \"point\": \"Drawdown of +0.0% means it is not below recent highs, so there is no discount to buy.\"}\n    ]\n  },\n  {\n    \"symbol\": \"PENG\",\n    \"conviction\": 0,\n    \"reasons\": [\n      {\"field\": \"fcf_ttm\", \"value\": \"$-69M\", \"point\": \"Free cash flow is negative, so the business is not making cash and is outside my style.\"},\n      {\"field\": \"rsi14\", \"value\": \"72.40\", \"point\": \"RSI of 72.40 is not deeply oversold, so this is not a fear buy.\"}\n    ]\n  },\n  {\n    \"symbol\": \"SDGR\",\n    \"conviction\": 0,\n    \"reasons\": [\n      {\"field\": \"fcf_ttm\", \"value\": \"$-130M\", \"point\": \"Free cash flow is negative, so the business is not making cash and is outside my style.\"},\n      {\"field\": \"rsi14\", \"value\": \"49.67\", \"point\": \"RSI of 49.67 is not deeply oversold, so this is not a fear buy.\"},\n      {\"field\": \"volume_ratio_50d\", \"value\": \"1.55\", \"point\": \"Volume ratio of 1.55 is not heavy enough to confirm fear buying.\"}\n    ]\n  },\n  {\n    \"symbol\": \"RXRX\",\n    \"conviction\": 0,\n    \"reasons\": [\n      {\"field\": \"fcf_ttm\", \"value\": \"$-352M\", \"point\": \"Free cash flow is negative, so the business is not making cash and is outside my style.\"},\n      {\"field\": \"rsi14\", \"value\": \"51.81\", \"point\": \"RSI of 51.81 is not deeply oversold, so this is not a fear buy.\"},\n      {\"field\": \"volume_ratio_50d\", \"value\": \"1.53\", \"point\": \"Volume ratio of 1.53 is not heavy enough to confirm fear buying.\"}\n    ]\n  },\n  {\n    \"symbol\": \"TWST\",\n    \"conviction\": 0,\n    \"reasons\": [\n      {\"field\": \"fcf_ttm\", \"value\": \"$-93M\", \"point\": \"Free cash flow is negative, so the business is not making cash and is outside my style.\"},\n      {\"field\": \"rsi14\", \"value\": \"46.01\", \"point\": \"RSI of 46.01 is not deeply oversold, so this is not a fear buy.\"},\n      {\"field\": \"volume_ratio_50d\", \"value\": \"1.98\", \"point\": \"Volume ratio of 1.98 is not heavy enough to confirm fear buying.\"}\n    ]\n  },\n  {\n    \"symbol\": \"TXG\",\n    \"conviction\": 0,\n    \"reasons\": [\n      {\"field\": \"rsi14\", \"value\": \"49.50\", \"point\": \"RSI of 49.50 is not deeply oversold, so this is not a fear buy.\"},\n      {\"field\": \"drawdown_52w\", \"value\": \"-20.9%\", \"point\": \"Drawdown of -20.9% is not far enough below recent highs to signal the fear I buy.\"},\n      {\"field\": \"volume_ratio_50d\", \"value\": \"1.73\", \"point\": \"Volume ratio of 1.73 is not heavy enough to confirm fear buying.\"}\n    ]\n  }\n]}",
+ "usage": {
+  "prompt_tokens": 1189,
+  "completion_tokens": 5410,
+  "total_tokens": 6599,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4314
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 805
+ },
+ "latency_s": 38.85,
+ "recorded_at": "2026-10-22T00:39:55+00:00"
+}

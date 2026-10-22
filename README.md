@@ -4,7 +4,8 @@ Write an investment observation in plain English, for example *"profitable mid-c
 from their highs but are still growing revenue over 10%"*. A language model translates it into a typed,
 whitelisted screen spec. Code validates the spec, screens about 3,800 US-listed operating companies on
 point-in-time data, ranks the survivors and computes every number. **Every screen is then backtested
-automatically**, monthly since 2023 on point-in-time panels, before anything else is shown. For the top names, the model reads the latest
+automatically**, monthly since 2023 on point-in-time panels, before anything else is shown, and a team of
+independent AI and rule-based investors votes on the names (see *The investor team*). For the top names, the model reads the latest
 earnings release, the 10-Q/10-K MD&A and recent news headlines, then explains why the stock and the fundamentals
 might disagree. Code deletes any claim whose quote does not appear verbatim in its source.
 
@@ -71,7 +72,7 @@ as **not screened**. It is never silently dropped or approximated. Every prompt 
 ```mermaid
 flowchart LR
   OBS["Observation<br/>(plain English)"] --> T["LLM: translate"]:::llm --> SPEC["Spec (JSON)"]
-  SPEC --> V["Validate<br/>(whitelist)"]:::code --> SCR["Screen"]:::code --> R["Funnel +<br/>ranked table"]:::code --> BT["Backtest<br/>(always, monthly since 2023)"]:::code --> TOP["Top N"]
+  SPEC --> V["Validate<br/>(whitelist)"]:::code --> SCR["Screen"]:::code --> R["Funnel +<br/>ranked table"]:::code --> BT["Backtest<br/>(always, monthly since 2023)"]:::code --> TEAM["Investor team votes<br/>(each separately; reasons checked by code)"]:::llm --> TOP["Top N"]
   PAN[("Point-in-time<br/>monthly panels")] --> BT
 
   subgraph SNAP["Feature snapshot (point-in-time)"]
@@ -280,6 +281,47 @@ screen uses fields the panels do not hold, the page says *Not backtested* and wh
 | Heavily shorted, profitable, above the 50-day | No edge (✓✗✓✗✗✗) | 0% / +58% / +97% |
 | Fast growers over $2B beating the S&P 500 | No edge (✓✗✗✗✗✗) | -15% / +38% / +97% |
 
+## The investor team
+
+One chat can play "a value investor, then a momentum trader", but it is one model in one conversation, so the
+views stay correlated. Here a team of independent investors (`src/scout/roster.json`, code in `src/scout/team.py`)
+votes on every screen and brings ideas of its own. The model proposes; code decides.
+
+* **Each investor is a config row:** a style, a data diet (the only fields it is shown, so investors see different
+  information) and either a model prompt (`llm`, one separate call per investor) or a fixed rule (`code`, no model).
+  The shipped roster has 8 model investors (deep value, quality compounder, growth at a reasonable price, trend
+  follower, contrarian, forensic skeptic, short-squeeze hunter, small-cap specialist) and 4 rule investors
+  (momentum, value, quality, reversal). Investors are styles, not people. Adding one is one row.
+* **A vote is checked like a citation.** Conviction runs from -1 to +1 (0 = abstain). Every reason must name a
+  field from that investor's diet and repeat its value exactly as shown, and every number in it must be one of the
+  values shown; code deletes any reason that fails, and a vote with no surviving reason counts as an abstention.
+  A rule investor votes by its rule: a name that passes gets 1.0 (best ranked) down to 0.5.
+* **Votes are counted, not averaged by mood.** Each investor is weighted by its record, and investors whose past
+  votes correlate at 0.8 or more count as one voice. The team leans *for* or *against* only with at least two
+  independent voices and a weighted conviction of 0.25 or more; a real disagreement (the minority is at least a
+  third) is shown as *split*.
+* **Every investor has a record.** All votes go into `runs/votes.jsonl` (hash-chained like the pick ledger).
+  `scout team` marks each vote to market once its horizon has passed: hit rate on excess return over SPY, mean
+  conviction-weighted excess, t-stat and rank IC, and writes `runs/scorecards.json`, whose weights the next vote
+  uses. The forward record sets an investor's weight after 10 matured votes; before that a rule investor starts
+  from its rule's 44-month backtest and a model investor at 1.0 ("no record yet"). A vote recorded more than 3
+  days after its as-of date is never scored.
+* **Mode 1, an idea is tested.** `scout run` now goes screen → backtest → the team's vote → explanations, and the
+  local app shows the vote under the backtest. `scout vote runs/<run>` votes on a recorded run. The hosted API does
+  not run the team (cost); the local app and the CLI do.
+* **Mode 2, the team brings ideas (`scout brief`).** Each proposing investor writes one screen in its style (a
+  rule investor proposes its rule). Code validates it, screens today's snapshot and backtests it with the same
+  gates as every screen. Only an idea with *Edge on this history* and names to hold today is accepted; the team
+  then votes on its names. `runs/brief-<date>/brief.md` lists the accepted ideas and every rejected one with its
+  reason. Every proposal goes into `runs/proposals.jsonl`; a model investor's rejected idea is dead and is not
+  tested again. For a 7am brief, schedule it: `0 7 * * 1-5 cd equity-scout && uv run scout build --as-of today && uv run scout brief`.
+
+```bash
+uv run scout team                       # each investor's record, rule backtest and weight
+uv run scout vote runs/a-midcap-pullback # the team votes on a recorded run (add --code-only for no model calls)
+uv run scout brief                      # the team proposes; code screens, backtests, votes; morning brief
+```
+
 ## A learning loop that cannot fool itself
 
 A loop where each test result shapes the next test: try RSI overbought, find it weak, try divergence, add MACD,
@@ -438,6 +480,7 @@ uv run scout spec "..."          # translate only; prints the validated spec
 uv run scout screen spec.json    # run a spec JSON on the committed snapshot: funnel + ranked names, no model
 uv run scout serve               # local web app (add --offline for recorded material only)
 uv run scout track               # mark the pick ledger to market vs SPY and SMH
+uv run scout team                # the investor team's records and weights; scout vote / scout brief: see above
 uv run scout site                # export runs, schema and the browser snapshot to docs/data/
 
 # rebuild the feature snapshot for a new date (Alpaca + SEC + FINRA, about 30 min cold, cached afterwards)
@@ -517,7 +560,7 @@ Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`)
 
 ## Tests
 
-`uv run pytest`: 195 tests, none skipped when the `mcp` extra is installed (the one server-registration test skips without it), none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
+`uv run pytest`: 207 tests, none skipped when the `mcp` extra is installed (the one server-registration test skips without it), none needing `openbb` or the network for the OpenBB class. The browser parity tests need Node.js on the PATH.
 
 * indicators against hand-computed values (SMA, Wilder RSI step by step, EMA/MACD, momentum, volume ratio,
   drawdown, relative strength)
@@ -541,6 +584,13 @@ Once deployed, put the service URL in `docs/config.js` (`window.SCOUT_API_BASE`)
 * news cut at the as-of close, with full article text never used
 * browser parity: the JS validator, screen and ranker under Node give the same funnels, rankings and
   refusal messages as Python, on the shipped browser snapshot and against the recorded runs
+* the investor team: each model investor is shown only its own fields; reasons outside the diet, with a wrong value
+  or an invented number are deleted, and a vote with none left is an abstention; rule investors vote by rank;
+  copycats count as one voice; weights come from the record only once it is long enough; votes are hash-chained and
+  scored after their horizon, and a late vote is never scored; the brief accepts only ideas with an edge, lists every
+  rejection, does not retest a dead idea, and gives a refused proposal one correction round
+* the backtest runs for every screen and appears in `report.md` before the explanations; a screen the panels cannot
+  replay says why
 * `scout serve` endpoints, offline: status, translate from the recorded cache, refusals, a streamed run that
   reproduces run C, record-on-click (one ledger entry, chain intact), replay, path and job guards
 * hosted mode: CORS allowlist, per-IP and daily caps, one run per IP, kill switch, input limits, disabled record/replay,

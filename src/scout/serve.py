@@ -339,7 +339,8 @@ class App:
                 res = execute(spec, attempts or [], self.as_of, self.llm(), log=lambda *_: None,
                               run_dir=self.live_dir / f"{stamp}-{uuid.uuid4().hex[:6]}-{slug(spec.observation)}",
                               on_event=lambda k, p: job.emit(k, p), tolerate_errors=True,
-                              prompt_version=self.prompt_version(), **kw)
+                              prompt_version=self.prompt_version(),
+                              team=not self.cfg.hosted, **kw)  # the investor team votes locally; not on the hosted API
                 job.record = res.record
                 rd = res.run_dir
                 job.emit("done", {"run_dir": None if self.cfg.hosted else

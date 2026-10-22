@@ -320,6 +320,32 @@
     start();
   }
 
+  // The investor team's vote: the tally, then the strongest reason on each side, then every vote.
+  function teamHtml(t, title) {
+    var names = {}; (t.investors || []).forEach(function (i) { names[i.id] = i.name; });
+    var h = ['<div class="step">' + esc(title || "The investor team's vote") + "</div>",
+      '<p class="meta" style="margin-top:0">Each investor votes separately on only its own data. Every reason must repeat a value it was shown; code deletes any that do not. ' +
+      "Weights: " + esc(t.weights_source) + ". Investors whose past votes move together count as one voice.</p>",
+      '<div class="tablewrap"><table><thead><tr><th>Name</th><th>Team</th><th class="num">Weighted conviction</th><th class="num">For</th><th class="num">Against</th><th class="num">Abstain</th><th class="num">Independent voices</th></tr></thead><tbody>'];
+    t.tally.forEach(function (r) {
+      h.push("<tr><td><strong>" + esc(r.symbol) + "</strong></td><td>" + esc(r.verdict) + '</td><td class="num">' + (r.weighted_conviction >= 0 ? "+" : "") +
+        r.weighted_conviction.toFixed(2) + '</td><td class="num">' + r["for"] + '</td><td class="num">' + r.against + '</td><td class="num">' + r.abstain +
+        '</td><td class="num">' + r.independent_voices + "</td></tr>");
+    });
+    h.push("</tbody></table></div>");
+    t.tally.forEach(function (r) {
+      var vs = t.votes.filter(function (v) { return v.symbol === r.symbol && v.conviction && v.reasons && v.reasons.length; });
+      if (!vs.length) return;
+      h.push('<details class="teamvotes"><summary><strong>' + esc(r.symbol) + "</strong>: " + vs.length + " vote" + (vs.length === 1 ? "" : "s") + " with checked reasons</summary><ul>");
+      vs.sort(function (a, b) { return b.conviction - a.conviction; }).forEach(function (v) {
+        h.push("<li><strong>" + esc(names[v.investor] || v.investor) + "</strong> " + (v.conviction > 0 ? "+" : "") + v.conviction.toFixed(2) + ": " +
+          v.reasons.map(function (x) { return esc(x.point) + ' <span class="meta">(' + esc(x.field) + " = " + esc(x.value) + ")</span>"; }).join("; ") + "</li>");
+      });
+      h.push("</ul></details>");
+    });
+    return h.join("");
+  }
+
   function cardHtml(ex, note) {
     var h = [], ok = ex.verdict === "explained";
     h.push('<div class="card"><div class="hd"><h3>' + esc(ex.symbol) + '</h3><span class="verdict ' + (ok ? "ok" : "thin") + '">' + esc(ex.verdict) + "</span></div>");
@@ -354,7 +380,7 @@
   }
 
   window.ScoutUI = { esc: esc, fmt: fmt, cond: cond, label: label, plainCond: plainCond, plainSteps: plainSteps,
-                     tableColumns: tableColumns, specHtml: specHtml, sectorHtml: sectorHtml, backtestHtml: backtestHtml,
+                     tableColumns: tableColumns, specHtml: specHtml, sectorHtml: sectorHtml, backtestHtml: backtestHtml, teamHtml: teamHtml,
                      mountBacktest: mountBacktest,
                      funnelHtml: funnelHtml, tableHtml: tableHtml, cardHtml: cardHtml };
 })();

@@ -11,6 +11,9 @@
     scout loop --proposer scripted|llm --max-steps N   propose, evaluate on a fixed split, correct, record, decide
     scout loop-data                       build data/loop/daily_closes.npz from the cached daily bars
     scout mcp                             MCP server over stdio: the screen as tools for any model (extra: mcp)
+    scout team [--no-history]             the investor team: each investor's record and weight (marks votes to market)
+    scout vote runs/<run>                 the investor team votes on a recorded run's top names (mode 1)
+    scout brief [--as-of D]               the team brings ideas: propose, screen, backtest, vote, morning brief (mode 2)
 """
 
 from __future__ import annotations
@@ -61,6 +64,10 @@ def _print_result(rec: dict) -> None:
         from .backtest import summary_lines
         print("\nBacktest (monthly, point-in-time, pure code):")
         print("\n".join("  " + x for x in summary_lines(rec["backtest"])))
+    if rec.get("team"):
+        from .team import team_lines
+        print("\nThe investor team's vote:")
+        print("\n".join("  " + x for x in team_lines(rec["team"])))
     print("\nExplanations:")
     for ex in rec["explanations"]:
         print(f"\n  {ex['symbol']}: {ex['verdict']}  ({len(ex['thesis'])} thesis, {len(ex['bear_case'])} bear, "
@@ -91,7 +98,8 @@ def cmd_run(a) -> None:
             sys.exit(0)
     try:
         res = execute(spec, attempts, as_of, llm, top_n=a.top, run_dir=Path(a.out) if a.out else None,
-                      record_picks=not a.no_ledger, prompt_version=a.prompt_version, backtest=True)
+                      record_picks=not a.no_ledger, prompt_version=a.prompt_version, backtest=True,
+                      team=not a.no_team)
     except SpecError as e:
         print("Refused:\n  - " + "\n  - ".join(e.problems))
         sys.exit(2)
@@ -216,6 +224,42 @@ def cmd_backtest(a) -> None:
     print("\n".join(summary_lines(r)))
 
 
+def cmd_team(a) -> None:
+    from .team import scorecard_lines, scorecards
+    sc = scorecards(with_history=not a.no_history)
+    print("\n".join(scorecard_lines(sc)))
+    print("\nSaved: runs/scorecards.json (the weights the next vote uses)")
+
+
+def cmd_vote(a) -> None:
+    from .team import record_votes, team_lines, vote_and_tally
+    run_dir = Path(a.run_dir)
+    rec = json.loads((run_dir / "run.json").read_text(encoding="utf-8"))
+    features, manifest = load_features(rec["as_of"])
+    syms = [r["symbol"] for r in rec["ranked"][: rec["top_n"]]]
+    rows = [{k: v for k, v in r.items()} for r in features[features["symbol"].isin(syms)].to_dict(orient="records")]
+    rows.sort(key=lambda r: syms.index(r["symbol"]))
+    llm = None if a.code_only else LLM(provider=a.provider, offline=a.offline)
+    team = vote_and_tally(rows, features, llm)
+    print(rec["observation"])
+    print("\n".join(team_lines(team)))
+    (run_dir / "team.json").write_text(json.dumps(team, indent=1, ensure_ascii=False, default=str), encoding="utf-8")
+    if not a.no_ledger:
+        e = record_votes(run_dir.name, rec["as_of"], "idea", rec["observation"], team, rows,
+                         (manifest.get("benchmark_closes") or {}).get("SPY"))
+        print(f"\nRecorded vote round {e['seq']} in runs/votes.jsonl")
+    print(f"Saved: {run_dir / 'team.json'}")
+
+
+def cmd_brief(a) -> None:
+    from .team import brief
+    as_of = a.as_of or _latest_snapshot()
+    llm = None if a.code_only else LLM(provider=a.provider, offline=a.offline)
+    b = brief(as_of, llm, record=not a.no_ledger)
+    print(Path(b["out_dir"], "brief.md").read_text(encoding="utf-8"))
+    print(f"Saved: {b['out_dir']}/brief.md and brief.json")
+
+
 def cmd_loop(a) -> None:
     from .loop import Lab, default_out, load_data, run_loop, write_run
     from .propose import LLMProposer, Scripted
@@ -295,7 +339,9 @@ def main(argv: list[str] | None = None) -> None:
             p.add_argument("--top", type=int)
             p.add_argument("--yes", action="store_true", help="do not ask before running the spec")
             p.add_argument("--out")
-            p.add_argument("--no-ledger", action="store_true", help="do not append the picks to runs/picks.jsonl")
+            p.add_argument("--no-ledger", action="store_true",
+                           help="do not append the picks to runs/picks.jsonl or the votes to runs/votes.jsonl")
+            p.add_argument("--no-team", action="store_true", help="skip the investor team's vote")
     p = sub.add_parser("screen", help="run a spec JSON file on a committed snapshot (no model, no network)")
     p.add_argument("spec")
     p.add_argument("--as-of")
@@ -332,10 +378,24 @@ def main(argv: list[str] | None = None) -> None:
     p = sub.add_parser("loop-data", help="build the learning-loop daily closes from the cached bars")
     p.add_argument("--prices", help="long CSV of daily bars (default .cache/panels/prices_long.csv.gz)")
     sub.add_parser("mcp", help="MCP server over stdio (needs the optional 'mcp' extra)")
+    p = sub.add_parser("team", help="the investor team: records, rule backtests, weights (writes runs/scorecards.json)")
+    p.add_argument("--no-history", action="store_true", help="skip the code investors' rule backtests")
+    for name, helptext in (("vote", "the investor team votes on a recorded run's top names (mode 1)"),
+                           ("brief", "the team proposes ideas; code screens and backtests them; morning brief (mode 2)")):
+        p = sub.add_parser(name, help=helptext)
+        if name == "vote":
+            p.add_argument("run_dir")
+        else:
+            p.add_argument("--as-of")
+        p.add_argument("--provider", default="deepseek", choices=["deepseek", "kimi"])
+        p.add_argument("--offline", action="store_true", help="recorded model responses only")
+        p.add_argument("--code-only", action="store_true", help="only the rule investors (no model calls)")
+        p.add_argument("--no-ledger", action="store_true", help="do not record to runs/votes.jsonl / proposals.jsonl")
     a = ap.parse_args(argv)
     {"run": cmd_run, "spec": cmd_spec, "replay": cmd_replay, "build": cmd_build, "site": cmd_site,
      "track": cmd_track, "serve": cmd_serve, "build-panels": cmd_build_panels, "backtest": cmd_backtest,
-     "loop": cmd_loop, "loop-data": cmd_loop_data, "mcp": cmd_mcp,
+     "loop": cmd_loop, "loop-data": cmd_loop_data, "mcp": cmd_mcp, "team": cmd_team, "vote": cmd_vote,
+     "brief": cmd_brief,
      "screen": cmd_screen}[a.cmd](a)
 
 

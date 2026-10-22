@@ -1,0 +1,37 @@
+{
+ "hash": "923f9ec5de7bad94e0aa2e9e",
+ "tag": "vote contrarian_rebound",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy fear in businesses that still make cash: deeply oversold, far below recent highs, on heavy volume. You stay away when the business itself is broken.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"COUR\", \"name\": \"Coursera, Inc.\", \"data\": {\"rsi14\": \"50.60\", \"drawdown_52w\": \"-50.9%\", \"volume_ratio_50d\": \"1.53\", \"pct_vs_sma20\": \"+3.4%\", \"mom_1m\": \"-0.6%\", \"fcf_ttm\": \"$33M\"}}, {\"symbol\": \"QNST\", \"name\": \"QUINSTREET, INC\", \"data\": {\"rsi14\": \"46.92\", \"drawdown_52w\": \"-27.4%\", \"volume_ratio_50d\": \"1.03\", \"pct_vs_sma20\": \"+0.1%\", \"mom_1m\": \"-10.1%\", \"fcf_ttm\": \"$128M\"}}, {\"symbol\": \"TPC\", \"name\": \"TUTOR PERINI CORP\", \"data\": {\"rsi14\": \"45.67\", \"drawdown_52w\": \"-14.9%\", \"volume_ratio_50d\": \"0.85\", \"pct_vs_sma20\": \"-1.2%\", \"mom_1m\": \"-4.4%\", \"fcf_ttm\": \"$621M\"}}, {\"symbol\": \"EVER\", \"name\": \"EverQuote, Inc.\", \"data\": {\"rsi14\": \"46.72\", \"drawdown_52w\": \"-25.6%\", \"volume_ratio_50d\": \"0.86\", \"pct_vs_sma20\": \"+0.1%\", \"mom_1m\": \"-11.2%\", \"fcf_ttm\": \"$95M\"}}, {\"symbol\": \"ASTE\", \"name\": \"ASTEC INDUSTRIES INC\", \"data\": {\"rsi14\": \"33.81\", \"drawdown_52w\": \"-40.0%\", \"volume_ratio_50d\": \"0.82\", \"pct_vs_sma20\": \"-5.4%\", \"mom_1m\": \"-8.4%\", \"fcf_ttm\": \"$32M\"}}, {\"symbol\": \"DNOW\", \"name\": \"DNOW Inc.\", \"data\": {\"rsi14\": \"49.47\", \"drawdown_52w\": \"-7.2%\", \"volume_ratio_50d\": \"1.16\", \"pct_vs_sma20\": \"-0.4%\", \"mom_1m\": \"-3.0%\", \"fcf_ttm\": \"$136M\"}}, {\"symbol\": \"KALU\", \"name\": \"KAISER ALUMINUM CORP\", \"data\": {\"rsi14\": \"43.86\", \"drawdown_52w\": \"-23.1%\", \"volume_ratio_50d\": \"0.96\", \"pct_vs_sma20\": \"-1.4%\", \"mom_1m\": \"-10.6%\", \"fcf_ttm\": \"$87M\"}}, {\"symbol\": \"CVI\", \"name\": \"CVR ENERGY INC\", \"data\": {\"rsi14\": \"81.93\", \"drawdown_52w\": \"+0.0%\", \"volume_ratio_50d\": \"0.70\", \"pct_vs_sma20\": \"+11.9%\", \"mom_1m\": \"+24.7%\", \"fcf_ttm\": \"$351M\"}}, {\"symbol\": \"COMP\", \"name\": \"Compass, Inc.\", \"data\": {\"rsi14\": \"43.50\", \"drawdown_52w\": \"-29.9%\", \"volume_ratio_50d\": \"1.18\", \"pct_vs_sma20\": \"-1.2%\", \"mom_1m\": \"-10.9%\", \"fcf_ttm\": \"$128M\"}}, {\"symbol\": \"LMB\", \"name\": \"Limbach Holdings, Inc.\", \"data\": {\"rsi14\": \"52.17\", \"drawdown_52w\": \"-55.4%\", \"volume_ratio_50d\": \"0.64\", \"pct_vs_sma20\": \"+0.7%\", \"mom_1m\": \"+4.4%\", \"fcf_ttm\": \"$51M\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"COUR\",\n      \"conviction\": 0.5,\n      \"reasons\": [\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-50.9%\",\n          \"point\": \"The stock is far below its 52-week high, which fits buying fear in a business that still produces cash.\"\n        },\n        {\n          \"field\": \"volume_ratio_50d\",\n          \"value\": \"1.53\",\n          \"point\": \"Volume is heavier than average, suggesting capitulation or strong selling interest.\"\n        },\n        {\n          \"field\": \"fcf_ttm\",\n          \"value\": \"$33M\",\n          \"point\": \"The company still generates positive free cash flow, so the business is not broken.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"QNST\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"TPC\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"EVER\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"ASTE\",\n      \"conviction\": 0.3,\n      \"reasons\": [\n        {\n          \"field\": \"rsi14\",\n          \"value\": \"33.81\",\n          \"point\": \"RSI is near oversold territory, reflecting deep fear.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-40.0%\",\n          \"point\": \"The stock is far below its 52-week high.\"\n        },\n        {\n          \"field\": \"fcf_ttm\",\n          \"value\": \"$32M\",\n          \"point\": \"Positive free cash flow indicates the business still makes cash despite the sell-off.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"DNOW\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"KALU\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"CVI\",\n      \"conviction\": -0.5,\n      \"reasons\": [\n        {\n          \"field\": \"rsi14\",\n          \"value\": \"81.93\",\n          \"point\": \"The stock is overbought, which is the opposite of the deep fear this style buys.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"+0.0%\",\n          \"point\": \"The stock is at its high, so there is no fear premium.\"\n        },\n        {\n          \"field\": \"volume_ratio_50d\",\n          \"value\": \"0.70\",\n          \"point\": \"Volume is light, not the heavy selling volume that marks capitulation.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"COMP\",\n      \"conviction\": 0.2,\n      \"reasons\": [\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-29.9%\",\n          \"point\": \"The stock is well below recent highs, showing fear.\"\n        },\n        {\n          \"field\": \"volume_ratio_50d\",\n          \"value\": \"1.18\",\n          \"point\": \"Volume is above average, adding conviction to the fear trade.\"\n        },\n        {\n          \"field\": \"fcf_ttm\",\n          \"value\": \"$128M\",\n          \"point\": \"The business still generates positive free cash flow.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"LMB\",\n      \"conviction\": 0,\n      \"reasons\": []\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 1359,
+  "completion_tokens": 6717,
+  "total_tokens": 8076,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5913
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 975
+ },
+ "latency_s": 49.77,
+ "recorded_at": "2026-10-22T00:38:48+00:00"
+}
