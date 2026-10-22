@@ -1,0 +1,37 @@
+{
+ "hash": "81c04e04c205b2f14bbf8cac",
+ "tag": "vote squeeze_hunter",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou look for crowded shorts that are starting to go wrong for the shorts: high short interest, many days to cover, rising volume and price turning up through its averages.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"BX\", \"name\": \"Blackstone Inc.\", \"data\": {\"short_pct_shares_out\": \"+2.6%\", \"days_to_cover\": \"5.6d\", \"volume_ratio_50d\": \"1.53\", \"mom_1m\": \"-12.7%\", \"pct_vs_sma50\": \"-13.9%\"}}, {\"symbol\": \"SBUX\", \"name\": \"STARBUCKS CORP\", \"data\": {\"short_pct_shares_out\": \"+3.5%\", \"days_to_cover\": \"7.2d\", \"volume_ratio_50d\": \"4.24\", \"mom_1m\": \"-6.8%\", \"pct_vs_sma50\": \"-8.1%\"}}]}"
+  }
+ ],
+ "response": "{\"votes\":[{\"symbol\":\"BX\",\"conviction\":0,\"reasons\":[{\"field\":\"mom_1m\",\"value\":\"-12.7%\",\"point\":\"Momentum of -12.7% over one month means price is falling, not turning up through its averages.\"},{\"field\":\"pct_vs_sma50\",\"value\":\"-13.9%\",\"point\":\"Price is -13.9% below its 50-day average, so it has not turned up through the average.\"},{\"field\":\"short_pct_shares_out\",\"value\":\"+2.6%\",\"point\":\"Short interest of +2.6% is not high enough to indicate a crowded short that could go wrong.\"}]},{\"symbol\":\"SBUX\",\"conviction\":0,\"reasons\":[{\"field\":\"mom_1m\",\"value\":\"-6.8%\",\"point\":\"Momentum of -6.8% over one month shows price is still declining, not turning up.\"},{\"field\":\"pct_vs_sma50\",\"value\":\"-8.1%\",\"point\":\"Price is -8.1% below its 50-day average, so it has not broken up through the average.\"},{\"field\":\"volume_ratio_50d\",\"value\":\"4.24\",\"point\":\"Volume ratio of 4.24 is elevated but without price turning up, it does not confirm shorts are wrong.\"}]}]}",
+ "usage": {
+  "prompt_tokens": 575,
+  "completion_tokens": 2260,
+  "total_tokens": 2835,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1970
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 191
+ },
+ "latency_s": 23.91,
+ "recorded_at": "2026-10-22T01:54:57+00:00"
+}

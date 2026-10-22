@@ -1,0 +1,37 @@
+{
+ "hash": "cd5056b815b63f62368738f5",
+ "tag": "vote forensic_skeptic",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou hunt for what can go wrong: profits that do not show up as cash, thin margins, leverage, rich valuations, and a crowd already short. You are comfortable saying a name should be sold or shorted, and you need evidence before you are bullish.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"EMA\", \"name\": \"EMERA INC\", \"data\": {\"net_income_ttm\": \"n/a\", \"fcf_ttm\": \"n/a\", \"net_margin\": \"n/a\", \"net_debt\": \"n/a\", \"ev_to_sales\": \"n/a\", \"short_pct_shares_out\": \"+1.9%\", \"days_to_cover\": \"14.8d\"}}, {\"symbol\": \"ARGX\", \"name\": \"ARGENX SE\", \"data\": {\"net_income_ttm\": \"n/a\", \"fcf_ttm\": \"n/a\", \"net_margin\": \"n/a\", \"net_debt\": \"n/a\", \"ev_to_sales\": \"n/a\", \"short_pct_shares_out\": \"+2.1%\", \"days_to_cover\": \"6.3d\"}}, {\"symbol\": \"NLY\", \"name\": \"ANNALY CAPITAL MANAGEMENT INC\", \"data\": {\"net_income_ttm\": \"n/a\", \"fcf_ttm\": \"n/a\", \"net_margin\": \"n/a\", \"net_debt\": \"n/a\", \"ev_to_sales\": \"n/a\", \"short_pct_shares_out\": \"+2.4%\", \"days_to_cover\": \"2.2d\"}}, {\"symbol\": \"DOC\", \"name\": \"HEALTHPEAK PROPERTIES, INC.\", \"data\": {\"net_income_ttm\": \"$243M\", \"fcf_ttm\": \"n/a\", \"net_margin\": \"+33.7%\", \"net_debt\": \"$8.4B\", \"ev_to_sales\": \"29.29\", \"short_pct_shares_out\": \"+3.7%\", \"days_to_cover\": \"6.3d\"}}, {\"symbol\": \"HRL\", \"name\": \"HORMEL FOODS CORP /DE/\", \"data\": {\"net_income_ttm\": \"$343M\", \"fcf_ttm\": \"$781M\", \"net_margin\": \"+2.8%\", \"net_debt\": \"$2.1B\", \"ev_to_sales\": \"1.05\", \"short_pct_shares_out\": \"+3.8%\", \"days_to_cover\": \"4.7d\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"EMA\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"ARGX\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"NLY\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"DOC\",\n      \"conviction\": -0.6,\n      \"reasons\": [\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"29.29\",\n          \"point\": \"Enterprise value of 29.29 times sales is a rich valuation that leaves little room for error.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$8.4B\",\n          \"point\": \"Net debt of $8.4B is substantial and increases financial risk.\"\n        },\n        {\n          \"field\": \"net_income_ttm\",\n          \"value\": \"$243M\",\n          \"point\": \"Net income of $243M is positive but free cash flow is n/a, so profits may not show up as cash.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"HRL\",\n      \"conviction\": -0.2,\n      \"reasons\": [\n        {\n          \"field\": \"net_margin\",\n          \"value\": \"+2.8%\",\n          \"point\": \"Net margin of +2.8% is thin, leaving little buffer against cost increases or price competition.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$2.1B\",\n          \"point\": \"Net debt of $2.1B adds financial risk and could pressure cash flows if earnings weaken.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 929,
+  "completion_tokens": 5309,
+  "total_tokens": 6238,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4921
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 545
+ },
+ "latency_s": 57.44,
+ "recorded_at": "2026-10-22T01:56:09+00:00"
+}

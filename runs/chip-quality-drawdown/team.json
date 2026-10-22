@@ -1,0 +1,1317 @@
+{
+ "roster_version": "99a83eb2c9df",
+ "investors": [
+  {
+   "id": "deep_value",
+   "name": "Deep value",
+   "kind": "llm"
+  },
+  {
+   "id": "quality_compounder",
+   "name": "Quality compounder",
+   "kind": "llm"
+  },
+  {
+   "id": "growth_at_reasonable_price",
+   "name": "Growth at a reasonable price",
+   "kind": "llm"
+  },
+  {
+   "id": "trend_follower",
+   "name": "Trend follower",
+   "kind": "llm"
+  },
+  {
+   "id": "contrarian_rebound",
+   "name": "Contrarian (oversold rebounds)",
+   "kind": "llm"
+  },
+  {
+   "id": "forensic_skeptic",
+   "name": "Forensic skeptic (short bias)",
+   "kind": "llm"
+  },
+  {
+   "id": "squeeze_hunter",
+   "name": "Short-squeeze hunter",
+   "kind": "llm"
+  },
+  {
+   "id": "small_cap_specialist",
+   "name": "Small-cap specialist",
+   "kind": "llm"
+  },
+  {
+   "id": "rule_momentum",
+   "name": "Momentum rule (code)",
+   "kind": "code"
+  },
+  {
+   "id": "rule_value",
+   "name": "Value rule (code)",
+   "kind": "code"
+  },
+  {
+   "id": "rule_quality",
+   "name": "Quality rule (code)",
+   "kind": "code"
+  },
+  {
+   "id": "rule_reversal",
+   "name": "Reversal rule (code)",
+   "kind": "code"
+  }
+ ],
+ "weights": {
+  "deep_value": 1.0,
+  "quality_compounder": 1.0,
+  "growth_at_reasonable_price": 1.0,
+  "trend_follower": 1.0,
+  "contrarian_rebound": 1.0,
+  "forensic_skeptic": 1.0,
+  "squeeze_hunter": 1.0,
+  "small_cap_specialist": 1.0,
+  "rule_momentum": 0.814,
+  "rule_value": 1.673,
+  "rule_quality": 0.25,
+  "rule_reversal": 0.25
+ },
+ "weights_source": "scorecard of 2026-10-22T00:29:09+00:00",
+ "votes": [
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "CTVA",
+   "conviction": 0.8,
+   "reasons": [
+    {
+     "field": "fcf_yield",
+     "value": "+6.9%",
+     "point": "fcf_yield of +6.9% is positive and offers a reasonable margin of safety."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "0.48",
+     "point": "ev_to_sales of 0.48 is very cheap on enterprise value."
+    },
+    {
+     "field": "net_debt",
+     "value": "$-683M",
+     "point": "net_debt of $-683M indicates net cash, so the balance sheet can survive a bad year."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "TTD",
+   "conviction": 1.0,
+   "reasons": [
+    {
+     "field": "fcf_yield",
+     "value": "+14.9%",
+     "point": "fcf_yield of +14.9% is very high, giving a large margin of safety."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "1.44",
+     "point": "ev_to_sales of 1.44 is low enough to be cheap on enterprise value."
+    },
+    {
+     "field": "net_debt",
+     "value": "$-1.5B",
+     "point": "net_debt of $-1.5B indicates a strong net cash balance sheet that can survive a bad year."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "LQDA",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "ev_to_sales",
+     "value": "4.98",
+     "point": "ev_to_sales of 4.98 is a high multiple, which my style distrusts, so this is not cheap on enterprise value."
+    },
+    {
+     "field": "fcf_yield",
+     "value": "+6.0%",
+     "point": "fcf_yield of +6.0% is only moderate and does not provide enough margin of safety to offset the high multiple."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "Z",
+   "conviction": -0.5,
+   "reasons": [
+    {
+     "field": "fcf_yield",
+     "value": "+3.9%",
+     "point": "fcf_yield of +3.9% is low, offering little margin of safety."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "2.59",
+     "point": "ev_to_sales of 2.59 is a high multiple, not cheap on enterprise value."
+    },
+    {
+     "field": "net_debt",
+     "value": "$637M",
+     "point": "net_debt of $637M is positive debt, weakening the balance sheet's ability to survive a bad year."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "CSGP",
+   "conviction": -0.5,
+   "reasons": [
+    {
+     "field": "fcf_yield",
+     "value": "+2.3%",
+     "point": "fcf_yield of +2.3% is very low, so free cash flow yield provides little margin of safety."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "3.32",
+     "point": "ev_to_sales of 3.32 is a high multiple, which my style distrusts."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+7.9%",
+     "point": "fcf_margin of +7.9% is low, suggesting weak conversion of profit to cash."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "CTVA",
+   "conviction": -0.3,
+   "reasons": [
+    {
+     "field": "fcf_margin",
+     "value": "+3.5%",
+     "point": "Free cash flow margin of +3.5% is too low, showing the business converts little revenue into cash, a core requirement for my style."
+    },
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+3.7%",
+     "point": "Revenue growth of +3.7% is modest and lacks the steady durable expansion I seek."
+    },
+    {
+     "field": "net_debt",
+     "value": "$-683M",
+     "point": "Net debt of $-683M is net cash, but it does not offset the weak cash conversion and low growth."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "TTD",
+   "conviction": 0.7,
+   "reasons": [
+    {
+     "field": "gross_margin",
+     "value": "+76.9%",
+     "point": "Gross margin of +76.9% is high, indicating durable pricing power and a high-quality business."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+28.9%",
+     "point": "Free cash flow margin of +28.9% demonstrates strong conversion of revenue into cash."
+    },
+    {
+     "field": "net_debt",
+     "value": "$-1.5B",
+     "point": "Net debt of $-1.5B shows net cash, so the company carries little debt and has financial strength."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "LQDA",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "Z",
+   "conviction": -0.4,
+   "reasons": [
+    {
+     "field": "operating_margin",
+     "value": "+0.4%",
+     "point": "Operating margin of +0.4% is very low, indicating fragile profitability that does not meet my high-margin standard."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+9.2%",
+     "point": "Free cash flow margin of +9.2% is modest, showing weak conversion of revenue into cash."
+    },
+    {
+     "field": "net_debt",
+     "value": "$637M",
+     "point": "Net debt of $637M means the company carries debt, conflicting with my preference for little debt."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "CSGP",
+   "conviction": -0.2,
+   "reasons": [
+    {
+     "field": "operating_margin",
+     "value": "+2.2%",
+     "point": "Operating margin of +2.2% is low, suggesting the business lacks the durable high margin I require."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+7.9%",
+     "point": "Free cash flow margin of +7.9% is modest, indicating weak conversion of revenue into cash."
+    },
+    {
+     "field": "net_debt",
+     "value": "$-267M",
+     "point": "Net debt of $-267M is net cash, but it does not compensate for the low operating and free cash flow margins."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "CTVA",
+   "conviction": -0.3,
+   "reasons": [
+    {
+     "field": "revenue_growth_q_yoy",
+     "value": "-1.2%",
+     "point": "Quarterly revenue contracted by -1.2%, so growth is not real."
+    },
+    {
+     "field": "revenue_growth_accel",
+     "value": "-12.2%",
+     "point": "Growth decelerated sharply by -12.2%."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "0.48",
+     "point": "EV/S of 0.48 is low, preventing a strong sell signal but not fixing the growth deterioration."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "TTD",
+   "conviction": -0.1,
+   "reasons": [
+    {
+     "field": "revenue_growth_q_yoy",
+     "value": "+3.0%",
+     "point": "Quarterly revenue growth of only +3.0% is weak and slowing."
+    },
+    {
+     "field": "revenue_growth_accel",
+     "value": "-8.8%",
+     "point": "Growth decelerated by -8.8%, so it is not accelerating."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "1.44",
+     "point": "EV/S of 1.44 is not rich, so the deceleration does not trigger a sell."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "LQDA",
+   "conviction": -0.8,
+   "reasons": [
+    {
+     "field": "revenue_growth_accel",
+     "value": "-2315.8%",
+     "point": "Growth decelerated by -2315.8%, an extreme collapse in acceleration."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "4.98",
+     "point": "EV/S of 4.98 is rich and prices in perfection, so the deceleration is a sell signal."
+    },
+    {
+     "field": "mom_6m",
+     "value": "-30.5%",
+     "point": "Momentum of -30.5% confirms the stock is repricing downward."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "Z",
+   "conviction": 0.5,
+   "reasons": [
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+17.7%",
+     "point": "Revenue growth of +17.7% is real and solid."
+    },
+    {
+     "field": "revenue_growth_accel",
+     "value": "-0.5%",
+     "point": "Acceleration is only -0.5%, so growth is essentially stable rather than decelerating."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "2.59",
+     "point": "EV/S of 2.59 is reasonable and does not price in perfection."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "CSGP",
+   "conviction": 0.2,
+   "reasons": [
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+22.0%",
+     "point": "Revenue growth of +22.0% is strong and real."
+    },
+    {
+     "field": "revenue_growth_accel",
+     "value": "-4.1%",
+     "point": "Growth decelerated by only -4.1%, which is mildly negative but not a collapse."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "3.32",
+     "point": "EV/S of 3.32 is elevated but does not clearly price in perfection given +22.0% growth."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "CTVA",
+   "conviction": -1.0,
+   "reasons": [
+    {
+     "field": "pct_vs_sma200",
+     "value": "-82.1%",
+     "point": "Price is -82.1% versus its 200-day average, signaling a broken long-term trend and a short or avoid stance."
+    },
+    {
+     "field": "mom_6m",
+     "value": "-83.5%",
+     "point": "Six-month momentum is -83.5%, confirming a severe downtrend instead of an established uptrend."
+    },
+    {
+     "field": "rs_6m_vs_spy",
+     "value": "-97.9%",
+     "point": "Relative strength versus SPY is -97.9%, so it is massively underperforming the market and not a buy."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "TTD",
+   "conviction": -1.0,
+   "reasons": [
+    {
+     "field": "pct_vs_sma200",
+     "value": "-44.2%",
+     "point": "Price is -44.2% versus its 200-day average, so it is below the long-term average and fits a short or avoid stance."
+    },
+    {
+     "field": "mom_12m",
+     "value": "-76.9%",
+     "point": "Twelve-month momentum is -76.9%, confirming a long downtrend rather than an established uptrend."
+    },
+    {
+     "field": "rs_6m_vs_spy",
+     "value": "-54.5%",
+     "point": "Relative strength versus SPY is -54.5%, showing severe underperformance and no buying trigger."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "LQDA",
+   "conviction": -0.7,
+   "reasons": [
+    {
+     "field": "pct_vs_sma50",
+     "value": "-58.3%",
+     "point": "Price is -58.3% versus its 50-day average, so it is far below the short-term trend and an avoid or short candidate."
+    },
+    {
+     "field": "rs_6m_vs_spy",
+     "value": "-44.9%",
+     "point": "Relative strength versus SPY is -44.9%, showing it is underperforming the market and not a buy."
+    },
+    {
+     "field": "mom_3m",
+     "value": "-64.0%",
+     "point": "Three-month momentum is -64.0%, confirming a sharp recent decline instead of an established uptrend."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "Z",
+   "conviction": -0.9,
+   "reasons": [
+    {
+     "field": "pct_vs_sma50",
+     "value": "-10.2%",
+     "point": "Price is -10.2% versus its 50-day average, so it is below the short-term average and not in an uptrend."
+    },
+    {
+     "field": "pct_vs_sma200",
+     "value": "-30.4%",
+     "point": "Price is -30.4% versus its 200-day average, so it is below the long-term average and an avoid or short."
+    },
+    {
+     "field": "mom_12m",
+     "value": "-59.9%",
+     "point": "Twelve-month momentum is -59.9%, confirming a sustained downtrend."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "CSGP",
+   "conviction": -0.5,
+   "reasons": [
+    {
+     "field": "pct_vs_sma50",
+     "value": "-1.3%",
+     "point": "Price is -1.3% versus its 50-day average, so it is still below the short-term average despite a small recent bounce."
+    },
+    {
+     "field": "pct_vs_sma200",
+     "value": "-24.2%",
+     "point": "Price is -24.2% versus its 200-day average, so it is below the long-term average and an avoid."
+    },
+    {
+     "field": "rs_6m_vs_spy",
+     "value": "-34.5%",
+     "point": "Relative strength versus SPY is -34.5%, showing underperformance and no established uptrend."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "CTVA",
+   "conviction": 1.0,
+   "reasons": [
+    {
+     "field": "rsi14",
+     "value": "9.32",
+     "point": "RSI14 of 9.32 is deeply oversold, signaling panic selling."
+    },
+    {
+     "field": "volume_ratio_50d",
+     "value": "2.68",
+     "point": "Volume ratio of 2.68 confirms heavy volume on the decline."
+    },
+    {
+     "field": "fcf_ttm",
+     "value": "$629M",
+     "point": "FCF TTM of $629M shows the business still makes cash despite drawdown of -84.8%."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "TTD",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "LQDA",
+   "conviction": 0.8,
+   "reasons": [
+    {
+     "field": "rsi14",
+     "value": "22.74",
+     "point": "RSI14 of 22.74 is deeply oversold, signaling panic selling."
+    },
+    {
+     "field": "volume_ratio_50d",
+     "value": "1.97",
+     "point": "Volume ratio of 1.97 confirms heavy volume on the decline."
+    },
+    {
+     "field": "fcf_ttm",
+     "value": "$151M",
+     "point": "FCF TTM of $151M shows the business still makes cash despite drawdown of -69.2%."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "Z",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "CSGP",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "CTVA",
+   "conviction": 0.2,
+   "reasons": [
+    {
+     "field": "net_debt",
+     "value": "$-683M",
+     "point": "Net debt is negative, indicating a net cash position, which reduces leverage risk."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "0.48",
+     "point": "EV/Sales of 0.48 is a low valuation, suggesting limited downside from rich pricing."
+    },
+    {
+     "field": "short_pct_shares_out",
+     "value": "+3.1%",
+     "point": "Short interest of +3.1% is low, so the crowd is not already short in this name."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "TTD",
+   "conviction": -0.2,
+   "reasons": [
+    {
+     "field": "short_pct_shares_out",
+     "value": "+18.9%",
+     "point": "Short interest of +18.9% is high, indicating a crowd already short, which is a risk factor in my style."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "LQDA",
+   "conviction": -0.4,
+   "reasons": [
+    {
+     "field": "ev_to_sales",
+     "value": "4.98",
+     "point": "EV/Sales of 4.98 is a rich valuation that leaves little room for error."
+    },
+    {
+     "field": "short_pct_shares_out",
+     "value": "+13.8%",
+     "point": "Short interest of +13.8% is high, showing a crowd already short."
+    },
+    {
+     "field": "days_to_cover",
+     "value": "11.4d",
+     "point": "Days to cover of 11.4d is very high, increasing the risk of a crowded short trade."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "Z",
+   "conviction": -0.4,
+   "reasons": [
+    {
+     "field": "net_margin",
+     "value": "+2.0%",
+     "point": "Net margin of +2.0% is very thin, leaving little profitability buffer."
+    },
+    {
+     "field": "net_debt",
+     "value": "$637M",
+     "point": "Positive net debt of $637M indicates leverage, which increases financial risk."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "2.59",
+     "point": "EV/Sales of 2.59 is a rich valuation for a company with such thin margins."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "CSGP",
+   "conviction": -0.2,
+   "reasons": [
+    {
+     "field": "net_margin",
+     "value": "+2.1%",
+     "point": "Net margin of +2.1% is very thin, indicating weak profitability."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "3.32",
+     "point": "EV/Sales of 3.32 is a rich valuation that raises downside risk."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "CTVA",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "mom_1m",
+     "value": "-83.8%",
+     "point": "Negative momentum of -83.8% means the price is falling sharply, not turning up through its averages."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "TTD",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "mom_1m",
+     "value": "-11.1%",
+     "point": "Negative momentum of -11.1% means the price is falling, not turning up."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "LQDA",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "mom_1m",
+     "value": "-59.5%",
+     "point": "Negative momentum of -59.5% means the price is falling sharply, not turning up."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "Z",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "mom_1m",
+     "value": "-9.2%",
+     "point": "Negative momentum of -9.2% means the price is falling, not turning up."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "CSGP",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "pct_vs_sma50",
+     "value": "-1.3%",
+     "point": "Price is below the 50-day average by -1.3%, so it has not turned up through its average."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "CTVA",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+3.7%",
+     "point": "Revenue growth of +3.7% is too low for the growth style."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+3.5%",
+     "point": "Free cash flow margin of +3.5% indicates weak self-funding."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "TTD",
+   "conviction": 0.7,
+   "reasons": [
+    {
+     "field": "fcf_margin",
+     "value": "+28.9%",
+     "point": "Free cash flow margin of +28.9% indicates strong self-funding."
+    },
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+11.6%",
+     "point": "Revenue growth of +11.6% shows the company is still growing."
+    },
+    {
+     "field": "drawdown_52w",
+     "value": "-77.2%",
+     "point": "A drawdown of -77.2% from the 52-week high means the market has marked the stock down sharply."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "LQDA",
+   "conviction": 0.8,
+   "reasons": [
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+2233.6%",
+     "point": "Revenue growth of +2233.6% is exceptionally high, fitting the growth style."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+33.4%",
+     "point": "Free cash flow margin of +33.4% shows the company can self-fund."
+    },
+    {
+     "field": "drawdown_52w",
+     "value": "-69.2%",
+     "point": "A drawdown of -69.2% from the 52-week high means the market has marked the stock down."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "Z",
+   "conviction": 0.5,
+   "reasons": [
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+17.7%",
+     "point": "Revenue growth of +17.7% is solid for a smaller company."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+9.2%",
+     "point": "Free cash flow margin of +9.2% indicates the company is self-funding."
+    },
+    {
+     "field": "drawdown_52w",
+     "value": "-62.6%",
+     "point": "A drawdown of -62.6% from the 52-week high shows the market has marked it down."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "CSGP",
+   "conviction": 0.4,
+   "reasons": [
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+22.0%",
+     "point": "Revenue growth of +22.0% is strong."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+7.9%",
+     "point": "Free cash flow margin of +7.9% indicates self-funding."
+    },
+    {
+     "field": "drawdown_52w",
+     "value": "-62.3%",
+     "point": "A drawdown of -62.3% from the 52-week high means the market has marked it down."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "CTVA",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "TTD",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "LQDA",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "Z",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "CSGP",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "CTVA",
+   "conviction": 0.667,
+   "reasons": [
+    {
+     "field": "net_income_ttm",
+     "value": "$1.0B",
+     "point": "passes the rule: net_income_ttm > 0"
+    },
+    {
+     "field": "fcf_yield",
+     "value": "+6.9%",
+     "point": "passes the rule: fcf_yield > +5.0%"
+    }
+   ],
+   "status": "voted: rank 361 of 542 under the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "TTD",
+   "conviction": 0.931,
+   "reasons": [
+    {
+     "field": "net_income_ttm",
+     "value": "$407M",
+     "point": "passes the rule: net_income_ttm > 0"
+    },
+    {
+     "field": "fcf_yield",
+     "value": "+14.9%",
+     "point": "passes the rule: fcf_yield > +5.0%"
+    }
+   ],
+   "status": "voted: rank 76 of 542 under the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "LQDA",
+   "conviction": 0.596,
+   "reasons": [
+    {
+     "field": "net_income_ttm",
+     "value": "$139M",
+     "point": "passes the rule: net_income_ttm > 0"
+    },
+    {
+     "field": "fcf_yield",
+     "value": "+6.0%",
+     "point": "passes the rule: fcf_yield > +5.0%"
+    }
+   ],
+   "status": "voted: rank 438 of 542 under the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "Z",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "CSGP",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "CTVA",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "TTD",
+   "conviction": 0.66,
+   "reasons": [
+    {
+     "field": "operating_margin",
+     "value": "+19.6%",
+     "point": "passes the rule: operating_margin > +15.0%"
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+28.9%",
+     "point": "passes the rule: fcf_margin > +10.0%"
+    }
+   ],
+   "status": "voted: rank 247 of 363 under the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "LQDA",
+   "conviction": 0.91,
+   "reasons": [
+    {
+     "field": "operating_margin",
+     "value": "+37.4%",
+     "point": "passes the rule: operating_margin > +15.0%"
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+33.4%",
+     "point": "passes the rule: fcf_margin > +10.0%"
+    }
+   ],
+   "status": "voted: rank 66 of 363 under the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "Z",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "CSGP",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "CTVA",
+   "conviction": 1.0,
+   "reasons": [
+    {
+     "field": "rsi14",
+     "value": "9.32",
+     "point": "passes the rule: rsi14 < 35"
+    },
+    {
+     "field": "fcf_ttm",
+     "value": "$629M",
+     "point": "passes the rule: fcf_ttm > 0"
+    }
+   ],
+   "status": "voted: rank 1 of 127 under the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "TTD",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "LQDA",
+   "conviction": 0.976,
+   "reasons": [
+    {
+     "field": "rsi14",
+     "value": "22.74",
+     "point": "passes the rule: rsi14 < 35"
+    },
+    {
+     "field": "fcf_ttm",
+     "value": "$151M",
+     "point": "passes the rule: fcf_ttm > 0"
+    }
+   ],
+   "status": "voted: rank 7 of 127 under the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "Z",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "CSGP",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  }
+ ],
+ "tally": [
+  {
+   "symbol": "TTD",
+   "verdict": "split",
+   "weighted_conviction": 0.356,
+   "mean_conviction": 0.336,
+   "for": 5,
+   "against": 3,
+   "abstain": 4,
+   "independent_voices": 8,
+   "split": true
+  },
+  {
+   "symbol": "CTVA",
+   "verdict": "split",
+   "weighted_conviction": 0.223,
+   "mean_conviction": 0.258,
+   "for": 5,
+   "against": 3,
+   "abstain": 4,
+   "independent_voices": 8,
+   "split": true
+  },
+  {
+   "symbol": "LQDA",
+   "verdict": "split",
+   "weighted_conviction": 0.163,
+   "mean_conviction": 0.273,
+   "for": 5,
+   "against": 3,
+   "abstain": 4,
+   "independent_voices": 8,
+   "split": true
+  },
+  {
+   "symbol": "CSGP",
+   "verdict": "split",
+   "weighted_conviction": -0.133,
+   "mean_conviction": -0.133,
+   "for": 2,
+   "against": 4,
+   "abstain": 6,
+   "independent_voices": 6,
+   "split": true
+  },
+  {
+   "symbol": "Z",
+   "verdict": "split",
+   "weighted_conviction": -0.2,
+   "mean_conviction": -0.2,
+   "for": 2,
+   "against": 4,
+   "abstain": 6,
+   "independent_voices": 6,
+   "split": true
+  }
+ ]
+}

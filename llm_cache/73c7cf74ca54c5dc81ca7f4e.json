@@ -1,0 +1,37 @@
+{
+ "hash": "73c7cf74ca54c5dc81ca7f4e",
+ "tag": "vote trend_follower",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou follow price. You buy names in established uptrends that are beating the market and you avoid or short names below their long-term averages. Fundamentals do not interest you; the tape does.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"DECK\", \"name\": \"DECKERS OUTDOOR CORP\", \"data\": {\"mom_3m\": \"-22.1%\", \"mom_6m\": \"-24.8%\", \"mom_12m\": \"-15.7%\", \"pct_vs_sma50\": \"-4.3%\", \"pct_vs_sma200\": \"-18.2%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-39.2%\"}}, {\"symbol\": \"HSY\", \"name\": \"HERSHEY CO\", \"data\": {\"mom_3m\": \"-5.7%\", \"mom_6m\": \"-21.7%\", \"mom_12m\": \"-13.9%\", \"pct_vs_sma50\": \"-6.8%\", \"pct_vs_sma200\": \"-13.6%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-36.1%\"}}, {\"symbol\": \"WING\", \"name\": \"Wingstop Inc.\", \"data\": {\"mom_3m\": \"-22.5%\", \"mom_6m\": \"-33.5%\", \"mom_12m\": \"-51.2%\", \"pct_vs_sma50\": \"+5.7%\", \"pct_vs_sma200\": \"-31.5%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-47.9%\"}}, {\"symbol\": \"COCO\", \"name\": \"Vita Coco Company, Inc.\", \"data\": {\"mom_3m\": \"-21.6%\", \"mom_6m\": \"+14.6%\", \"mom_12m\": \"+30.9%\", \"pct_vs_sma50\": \"-6.1%\", \"pct_vs_sma200\": \"-8.8%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"+0.2%\"}}, {\"symbol\": \"CELH\", \"name\": \"Celsius Holdings, Inc.\", \"data\": {\"mom_3m\": \"-10.5%\", \"mom_6m\": \"-24.7%\", \"mom_12m\": \"-55.1%\", \"pct_vs_sma50\": \"-6.4%\", \"pct_vs_sma200\": \"-24.2%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-39.1%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"DECK\",\n      \"conviction\": -1,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-18.2%\",\n          \"point\": \"Price is -18.2% below the long-term average, so the long-term trend is down and I avoid or short.\"\n        },\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"no\",\n          \"point\": \"The shorter-term average is below the longer-term average, confirming a downtrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-39.2%\",\n          \"point\": \"The relative strength reading of -39.2% shows severe weakness versus the market.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"HSY\",\n      \"conviction\": -1,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-13.6%\",\n          \"point\": \"Price is -13.6% below the long-term average, so the long-term trend is down and I avoid or short.\"\n        },\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"no\",\n          \"point\": \"The shorter-term average is below the longer-term average, confirming a downtrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-36.1%\",\n          \"point\": \"The relative strength reading of -36.1% shows severe underperformance versus the market.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"WING\",\n      \"conviction\": -1,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-31.5%\",\n          \"point\": \"Price is -31.5% below the long-term average, so the long-term trend is clearly down and I avoid or short.\"\n        },\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"no\",\n          \"point\": \"The shorter-term average is below the longer-term average, confirming a downtrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-47.9%\",\n          \"point\": \"The relative strength reading of -47.9% shows severe underperformance versus the market.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"COCO\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-8.8%\",\n          \"point\": \"Price is -8.8% below the long-term average, so it is not in an established uptrend.\"\n        },\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"no\",\n          \"point\": \"The shorter-term average is below the longer-term average, so the trend is not bullish.\"\n        },\n        {\n          \"field\": \"mom_6m\",\n          \"value\": \"+14.6%\",\n          \"point\": \"The six-month momentum of +14.6% conflicts with the current position below long-term averages, so I abstain.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CELH\",\n      \"conviction\": -1,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-24.2%\",\n          \"point\": \"Price is -24.2% below the long-term average, so the long-term trend is down and I avoid or short.\"\n        },\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"no\",\n          \"point\": \"The shorter-term average is below the longer-term average, confirming a downtrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-39.1%\",\n          \"point\": \"The relative strength reading of -39.1% shows severe underperformance versus the market.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 988,
+  "completion_tokens": 5377,
+  "total_tokens": 6365,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4450
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 604
+ },
+ "latency_s": 49.97,
+ "recorded_at": "2026-10-22T01:56:01+00:00"
+}

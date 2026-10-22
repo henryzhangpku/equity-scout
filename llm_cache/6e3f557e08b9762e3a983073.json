@@ -1,0 +1,37 @@
+{
+ "hash": "6e3f557e08b9762e3a983073",
+ "tag": "vote squeeze_hunter",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou look for crowded shorts that are starting to go wrong for the shorts: high short interest, many days to cover, rising volume and price turning up through its averages.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"WOLF\", \"name\": \"WOLFSPEED, INC.\", \"data\": {\"short_pct_shares_out\": \"+49.3%\", \"days_to_cover\": \"10.2d\", \"volume_ratio_50d\": \"6.34\", \"mom_1m\": \"+13.7%\", \"pct_vs_sma50\": \"+11.2%\"}}, {\"symbol\": \"KSS\", \"name\": \"KOHLS Corp\", \"data\": {\"short_pct_shares_out\": \"+29.4%\", \"days_to_cover\": \"8.6d\", \"volume_ratio_50d\": \"1.22\", \"mom_1m\": \"+14.8%\", \"pct_vs_sma50\": \"+9.7%\"}}, {\"symbol\": \"CBRL\", \"name\": \"CRACKER BARREL OLD COUNTRY STORE, INC\", \"data\": {\"short_pct_shares_out\": \"+25.4%\", \"days_to_cover\": \"6.8d\", \"volume_ratio_50d\": \"1.05\", \"mom_1m\": \"+8.2%\", \"pct_vs_sma50\": \"+2.6%\"}}, {\"symbol\": \"MNRO\", \"name\": \"MONRO, INC.\", \"data\": {\"short_pct_shares_out\": \"+25.0%\", \"days_to_cover\": \"10.0d\", \"volume_ratio_50d\": \"0.74\", \"mom_1m\": \"+9.6%\", \"pct_vs_sma50\": \"+8.0%\"}}, {\"symbol\": \"SWKS\", \"name\": \"SKYWORKS SOLUTIONS, INC.\", \"data\": {\"short_pct_shares_out\": \"+21.7%\", \"days_to_cover\": \"4.2d\", \"volume_ratio_50d\": \"1.02\", \"mom_1m\": \"+5.5%\", \"pct_vs_sma50\": \"+6.4%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"WOLF\",\n      \"conviction\": 1.0,\n      \"reasons\": [\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+49.3%\",\n          \"point\": \"Short interest of +49.3% is extremely high, showing a crowded short that could fuel a sharp rally if sentiment shifts.\"\n        },\n        {\n          \"field\": \"days_to_cover\",\n          \"value\": \"10.2d\",\n          \"point\": \"Days to cover of 10.2d means short sellers would need many days to buy back shares, increasing squeeze potential.\"\n        },\n        {\n          \"field\": \"volume_ratio_50d\",\n          \"value\": \"6.34\",\n          \"point\": \"Volume ratio of 6.34 shows trading volume is surging well above its average, confirming strong buying interest.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"KSS\",\n      \"conviction\": 0.8,\n      \"reasons\": [\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+29.4%\",\n          \"point\": \"Short interest of +29.4% indicates a heavily shorted stock vulnerable to a short squeeze.\"\n        },\n        {\n          \"field\": \"days_to_cover\",\n          \"value\": \"8.6d\",\n          \"point\": \"Days to cover of 8.6d shows shorts would need many days of average volume to exit, adding pressure.\"\n        },\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"+9.7%\",\n          \"point\": \"Price trading +9.7% above its moving average shows it has turned up through a key average.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CBRL\",\n      \"conviction\": 0.3,\n      \"reasons\": [\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+25.4%\",\n          \"point\": \"Short interest of +25.4% is high, indicating a crowded short position.\"\n        },\n        {\n          \"field\": \"days_to_cover\",\n          \"value\": \"6.8d\",\n          \"point\": \"Days to cover of 6.8d shows shorts would need several days to cover, which could support a squeeze.\"\n        },\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"+2.6%\",\n          \"point\": \"Price at +2.6% above its moving average is only modestly positive but still above the average, consistent with a potential turn.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"MNRO\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"SWKS\",\n      \"conviction\": 0,\n      \"reasons\": []\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 847,
+  "completion_tokens": 10253,
+  "total_tokens": 11100,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 9618
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 463
+ },
+ "latency_s": 110.77,
+ "recorded_at": "2026-10-22T01:58:29+00:00"
+}

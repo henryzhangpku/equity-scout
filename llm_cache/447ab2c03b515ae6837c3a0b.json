@@ -1,0 +1,37 @@
+{
+ "hash": "447ab2c03b515ae6837c3a0b",
+ "tag": "vote quality_compounder",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou own businesses with durable high margins that convert revenue into cash, grow steadily and carry little debt, and you hold them for years. You will pay a fair price for quality but avoid fragile, low-margin or heavily indebted businesses.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"BMNR\", \"name\": \"BITMINE IMMERSION TECHNOLOGIES, INC.\", \"data\": {\"market_cap\": \"$14.5B\", \"gross_margin\": \"+84.4%\", \"operating_margin\": \"-14505.1%\", \"fcf_margin\": \"-481.4%\", \"revenue_growth_yoy\": \"+1022.3%\", \"net_debt\": \"$-340M\", \"pct_vs_sma200\": \"+11.4%\"}}, {\"symbol\": \"VAL\", \"name\": \"Valaris Ltd\", \"data\": {\"market_cap\": \"$5.8B\", \"gross_margin\": \"-7413.6%\", \"operating_margin\": \"+1126.2%\", \"fcf_margin\": \"-112.6%\", \"revenue_growth_yoy\": \"+548.5%\", \"net_debt\": \"$326M\", \"pct_vs_sma200\": \"+1.3%\"}}, {\"symbol\": \"IBRX\", \"name\": \"ImmunityBio, Inc.\", \"data\": {\"market_cap\": \"$10.5B\", \"gross_margin\": \"+99.3%\", \"operating_margin\": \"-151.9%\", \"fcf_margin\": \"-173.8%\", \"revenue_growth_yoy\": \"+192.9%\", \"net_debt\": \"$-357M\", \"pct_vs_sma200\": \"+34.6%\"}}, {\"symbol\": \"MU\", \"name\": \"MICRON TECHNOLOGY INC\", \"data\": {\"market_cap\": \"$1,169.9B\", \"gross_margin\": \"+72.6%\", \"operating_margin\": \"+65.6%\", \"fcf_margin\": \"+29.0%\", \"revenue_growth_yoy\": \"+167.0%\", \"net_debt\": \"$-20.5B\", \"pct_vs_sma200\": \"+48.4%\"}}, {\"symbol\": \"TARS\", \"name\": \"Tarsus Pharmaceuticals, Inc.\", \"data\": {\"market_cap\": \"$3.2B\", \"gross_margin\": \"n/a\", \"operating_margin\": \"-8.0%\", \"fcf_margin\": \"+9.2%\", \"revenue_growth_yoy\": \"+105.2%\", \"net_debt\": \"$-377M\", \"pct_vs_sma200\": \"+5.5%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"BMNR\",\n      \"conviction\": -1.0,\n      \"reasons\": [\n        {\n          \"field\": \"gross_margin\",\n          \"value\": \"+84.4%\",\n          \"point\": \"Gross margin of +84.4% is high, but it does not offset the deeply negative operating and free cash flow margins.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"-14505.1%\",\n          \"point\": \"Operating margin of -14505.1% means the business loses money on operations, so it is not converting revenue into profit.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"-481.4%\",\n          \"point\": \"Free cash flow margin of -481.4% indicates the business is burning cash rather than generating durable cash.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"VAL\",\n      \"conviction\": -1.0,\n      \"reasons\": [\n        {\n          \"field\": \"gross_margin\",\n          \"value\": \"-7413.6%\",\n          \"point\": \"Gross margin of -7413.6% means direct costs far exceed revenue, indicating a fragile core business.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"-112.6%\",\n          \"point\": \"Free cash flow margin of -112.6% shows cash outflow exceeds revenue, so it fails to convert revenue into cash.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$326M\",\n          \"point\": \"Net debt of $326M adds leverage, which I avoid in my style.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"IBRX\",\n      \"conviction\": -0.8,\n      \"reasons\": [\n        {\n          \"field\": \"gross_margin\",\n          \"value\": \"+99.3%\",\n          \"point\": \"Gross margin of +99.3% is high, but it does not offset the negative operating and free cash flow margins.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"-151.9%\",\n          \"point\": \"Operating margin of -151.9% means the company spends more on operating costs than it earns, so it is not durably profitable.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"-173.8%\",\n          \"point\": \"Free cash flow margin of -173.8% indicates heavy cash burn and no conversion of revenue to cash.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"MU\",\n      \"conviction\": 1.0,\n      \"reasons\": [\n        {\n          \"field\": \"gross_margin\",\n          \"value\": \"+72.6%\",\n          \"point\": \"Gross margin of +72.6% is high, indicating durable pricing power and strong unit economics.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"+65.6%\",\n          \"point\": \"Operating margin of +65.6% shows the business converts revenue into operating profit at a high rate.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+29.0%\",\n          \"point\": \"Free cash flow margin of +29.0% demonstrates strong cash generation, and net debt of $-20.5B means the company has net cash, not debt.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TARS\",\n      \"conviction\": 0.0,\n      \"reasons\": [\n        {\n          \"field\": \"gross_margin\",\n          \"value\": \"n/a\",\n          \"point\": \"Gross margin is n/a, so I cannot assess the durable high margin I require.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"-8.0%\",\n          \"point\": \"Operating margin of -8.0% is negative, so the business is not currently showing high profitability.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 953,
+  "completion_tokens": 6775,
+  "total_tokens": 7728,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5889
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 569
+ },
+ "latency_s": 67.45,
+ "recorded_at": "2026-10-22T01:57:55+00:00"
+}

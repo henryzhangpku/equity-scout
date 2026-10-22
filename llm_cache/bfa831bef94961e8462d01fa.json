@@ -1,0 +1,37 @@
+{
+ "hash": "bfa831bef94961e8462d01fa",
+ "tag": "vote squeeze_hunter",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou look for crowded shorts that are starting to go wrong for the shorts: high short interest, many days to cover, rising volume and price turning up through its averages.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"CTVA\", \"name\": \"Corteva, Inc.\", \"data\": {\"short_pct_shares_out\": \"+3.1%\", \"days_to_cover\": \"4.1d\", \"volume_ratio_50d\": \"2.68\", \"mom_1m\": \"-83.8%\", \"pct_vs_sma50\": \"-81.1%\"}}, {\"symbol\": \"TTD\", \"name\": \"Trade Desk, Inc.\", \"data\": {\"short_pct_shares_out\": \"+18.9%\", \"days_to_cover\": \"4.8d\", \"volume_ratio_50d\": \"0.60\", \"mom_1m\": \"-11.1%\", \"pct_vs_sma50\": \"-12.0%\"}}, {\"symbol\": \"LQDA\", \"name\": \"Liquidia Corp\", \"data\": {\"short_pct_shares_out\": \"+13.8%\", \"days_to_cover\": \"11.4d\", \"volume_ratio_50d\": \"1.97\", \"mom_1m\": \"-59.5%\", \"pct_vs_sma50\": \"-58.3%\"}}, {\"symbol\": \"Z\", \"name\": \"ZILLOW GROUP, INC.\", \"data\": {\"short_pct_shares_out\": \"+5.5%\", \"days_to_cover\": \"4.0d\", \"volume_ratio_50d\": \"2.35\", \"mom_1m\": \"-9.2%\", \"pct_vs_sma50\": \"-10.2%\"}}, {\"symbol\": \"CSGP\", \"name\": \"COSTAR GROUP, INC.\", \"data\": {\"short_pct_shares_out\": \"+3.7%\", \"days_to_cover\": \"2.7d\", \"volume_ratio_50d\": \"1.41\", \"mom_1m\": \"+0.8%\", \"pct_vs_sma50\": \"-1.3%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"CTVA\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"mom_1m\",\n          \"value\": \"-83.8%\",\n          \"point\": \"Negative momentum of -83.8% means the price is falling sharply, not turning up through its averages.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TTD\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"mom_1m\",\n          \"value\": \"-11.1%\",\n          \"point\": \"Negative momentum of -11.1% means the price is falling, not turning up.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"LQDA\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"mom_1m\",\n          \"value\": \"-59.5%\",\n          \"point\": \"Negative momentum of -59.5% means the price is falling sharply, not turning up.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"Z\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"mom_1m\",\n          \"value\": \"-9.2%\",\n          \"point\": \"Negative momentum of -9.2% means the price is falling, not turning up.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CSGP\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"-1.3%\",\n          \"point\": \"Price is below the 50-day average by -1.3%, so it has not turned up through its average.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 834,
+  "completion_tokens": 3410,
+  "total_tokens": 4244,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3011
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 450
+ },
+ "latency_s": 38.72,
+ "recorded_at": "2026-10-22T01:55:50+00:00"
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "a72961de58e3426113feb22c",
+ "tag": "vote squeeze_hunter",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou look for crowded shorts that are starting to go wrong for the shorts: high short interest, many days to cover, rising volume and price turning up through its averages.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"OPFI\", \"name\": \"OppFi Inc.\", \"data\": {\"short_pct_shares_out\": \"+5.2%\", \"days_to_cover\": \"3.8d\", \"volume_ratio_50d\": \"0.85\", \"mom_1m\": \"-19.1%\", \"pct_vs_sma50\": \"-16.1%\"}}, {\"symbol\": \"COLL\", \"name\": \"COLLEGIUM PHARMACEUTICAL, INC\", \"data\": {\"short_pct_shares_out\": \"+17.4%\", \"days_to_cover\": \"6.0d\", \"volume_ratio_50d\": \"0.62\", \"mom_1m\": \"-5.4%\", \"pct_vs_sma50\": \"-13.8%\"}}, {\"symbol\": \"YELP\", \"name\": \"YELP INC\", \"data\": {\"short_pct_shares_out\": \"+19.1%\", \"days_to_cover\": \"8.1d\", \"volume_ratio_50d\": \"1.58\", \"mom_1m\": \"-5.4%\", \"pct_vs_sma50\": \"-11.3%\"}}, {\"symbol\": \"TDOC\", \"name\": \"Teladoc Health, Inc.\", \"data\": {\"short_pct_shares_out\": \"+15.2%\", \"days_to_cover\": \"8.5d\", \"volume_ratio_50d\": \"1.07\", \"mom_1m\": \"-9.2%\", \"pct_vs_sma50\": \"-12.5%\"}}, {\"symbol\": \"CRMD\", \"name\": \"CorMedix Inc.\", \"data\": {\"short_pct_shares_out\": \"+20.8%\", \"days_to_cover\": \"18.5d\", \"volume_ratio_50d\": \"0.92\", \"mom_1m\": \"-10.0%\", \"pct_vs_sma50\": \"-6.6%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"OPFI\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"-16.1%\",\n          \"point\": \"Price is below its average, so it has not turned up through the average.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"COLL\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"-13.8%\",\n          \"point\": \"Price is below its average, so it has not turned up through the average.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"YELP\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"-11.3%\",\n          \"point\": \"Price is below its average, so it has not turned up through the average.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TDOC\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"-12.5%\",\n          \"point\": \"Price is below its average, so it has not turned up through the average.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CRMD\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"-6.6%\",\n          \"point\": \"Price is below its average, so it has not turned up through the average.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 838,
+  "completion_tokens": 4506,
+  "total_tokens": 5344,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4115
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 454
+ },
+ "latency_s": 50.02,
+ "recorded_at": "2026-10-22T01:56:41+00:00"
+}

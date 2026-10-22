@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
-<link rel="stylesheet" href="style.css?v=20261015">
+<link rel="stylesheet" href="style.css?v=20261021b">
 <script src="theme.js?v=20261013"></script>
 </head>
 <body>
@@ -24,6 +24,7 @@
     <a class="brand" href="#top"><img src="favicon.svg" alt="" width="28" height="28"><span>Equity Scout</span></a>
     <div class="navlinks">
       <a href="#try">Try it</a>
+      <a class="opt" href="#brief">Morning brief</a>
       <a class="opt" href="#runs">Recorded runs</a>
       <a class="opt" href="#loop">Learning loop</a>
       <a class="opt" href="#architecture">How it works</a>
@@ -37,7 +38,8 @@
   <span class="eyebrow">US equities &middot; free point-in-time data &middot; every claim cited</span>
   <h1>Turn an investment idea into a ranked list, with the evidence.</h1>
   <p class="lede">Say what you are looking for in plain English. Code screens about 3,800 US companies, ranks what
-    survives, and explains each top name using only quotes it has verified in the company&rsquo;s own filings.</p>
+    survives and backtests the idea; a team of independent investors votes on the names; and each top name is explained
+    using only quotes verified in the company&rsquo;s own filings.</p>
   <div class="btnrow">
     <a class="btn grad" href="#try">Try it</a>
     <a class="btn" href="https://github.com/henryzhangpku/equity-scout" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> See the code</a>
@@ -64,6 +66,14 @@
       </details>
     </div>
     <div id="t-out"></div>
+  </section>
+
+  <section class="block" id="brief">
+    <h2>The investor team&rsquo;s morning brief</h2>
+    <p class="section-intro">Twelve independent investors (eight model investors with different styles and data, four fixed rules)
+      each propose one idea. Code screens it on the whole universe and backtests it with costs; only ideas with an edge reach the
+      brief, and the team then votes on their names. Every rejected idea is listed with its reason.</p>
+    <div id="brief-body"></div>
   </section>
 
   <section class="block" id="runs">
@@ -108,6 +118,11 @@
       <li><strong>Screen.</strong> Code applies each condition in order and records how many names enter, pass,
         fail and lack data. Gaps stay gaps.</li>
       <li><strong>Rank.</strong> A weighted mean of percentile ranks, ties broken by market cap then ticker.</li>
+      <li><strong>Backtest, always.</strong> Every screen is replayed on monthly point-in-time history since 2023 with
+        costs, against SPY and the equal-weight universe, and must pass fixed gates. No button: it runs on its own.</li>
+      <li><strong>The team votes.</strong> Twelve investors, each shown only its own fields, vote separately from -1 to +1.
+        Every reason must repeat a value it was shown; code deletes the rest. Votes are weighted by each investor&rsquo;s
+        record, and investors whose votes always move together count as one voice.</li>
       <li><strong>Explain.</strong> For the top names the model gets the computed numbers, the filing text and recent
         news headlines and summaries; each claim must quote one of them. Code keeps a claim only if the quote is found verbatim and every number in
         the claim is in the quote; with fewer than two surviving claims the verdict is <em>not enough evidence</em>.</li>
@@ -123,13 +138,15 @@
 
 <script src="config.js?v=20261013"></script>
 <script src="data/runs.js?v=20261009b"></script>
+<script src="data/team.js?v=20261021"></script>
 <script src="data/loop.js?v=20261013"></script>
 <script src="data/mtf.js?v=20261013"></script>
-<script src="ui.js?v=20261021"></script>
+<script src="ui.js?v=20261021c"></script>
 <script src="scout-core.js?v=20261013"></script>
-<script src="app.js?v=20261021"></script>
+<script src="app.js?v=20261021b"></script>
 <script src="loopview.js?v=20261013"></script>
-<script src="try.js?v=20261021"></script>
-<script src="askbar.js?v=20261015b"></script>
+<script src="try.js?v=20261021b"></script>
+<script src="briefview.js?v=20261021b"></script>
+<script src="askbar.js?v=20261021"></script>
 </body>
 </html>

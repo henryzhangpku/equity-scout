@@ -1,0 +1,37 @@
+{
+ "hash": "114fb088b1d5a9e03dd781cc",
+ "tag": "vote growth_at_reasonable_price",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou want revenue growth that is real and ideally accelerating, at a valuation that does not already price in perfection. Decelerating growth at a rich multiple is your sell signal.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"OPFI\", \"name\": \"OppFi Inc.\", \"data\": {\"revenue_growth_yoy\": \"+0.2%\", \"revenue_growth_q_yoy\": \"-14.0%\", \"revenue_growth_accel\": \"-10.2%\", \"ev_to_sales\": \"1.09\", \"operating_margin\": \"+38.3%\", \"mom_6m\": \"-25.4%\"}}, {\"symbol\": \"COLL\", \"name\": \"COLLEGIUM PHARMACEUTICAL, INC\", \"data\": {\"revenue_growth_yoy\": \"+14.3%\", \"revenue_growth_q_yoy\": \"+6.3%\", \"revenue_growth_accel\": \"-2.5%\", \"ev_to_sales\": \"0.74\", \"operating_margin\": \"+19.5%\", \"mom_6m\": \"-37.3%\"}}, {\"symbol\": \"YELP\", \"name\": \"YELP INC\", \"data\": {\"revenue_growth_yoy\": \"+1.5%\", \"revenue_growth_q_yoy\": \"+1.4%\", \"revenue_growth_accel\": \"+0.6%\", \"ev_to_sales\": \"0.66\", \"operating_margin\": \"+11.7%\", \"mom_6m\": \"-24.2%\"}}, {\"symbol\": \"TDOC\", \"name\": \"Teladoc Health, Inc.\", \"data\": {\"revenue_growth_yoy\": \"-2.1%\", \"revenue_growth_q_yoy\": \"-4.0%\", \"revenue_growth_accel\": \"-1.5%\", \"ev_to_sales\": \"0.11\", \"operating_margin\": \"-7.5%\", \"mom_6m\": \"+5.5%\"}}, {\"symbol\": \"CRMD\", \"name\": \"CorMedix Inc.\", \"data\": {\"revenue_growth_yoy\": \"+280.5%\", \"revenue_growth_q_yoy\": \"+156.5%\", \"revenue_growth_accel\": \"-69.5%\", \"ev_to_sales\": \"0.68\", \"operating_margin\": \"+47.0%\", \"mom_6m\": \"-0.5%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"OPFI\",\n      \"conviction\": -0.8,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+0.2%\",\n          \"point\": \"Revenue growth of +0.2% is nearly flat and not strong enough to be considered real growth in my style.\"\n        },\n        {\n          \"field\": \"revenue_growth_q_yoy\",\n          \"value\": \"-14.0%\",\n          \"point\": \"The latest quarterly revenue growth of -14.0% shows contraction, which is a clear negative signal.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-10.2%\",\n          \"point\": \"Growth acceleration of -10.2% combined with ev_to_sales of 1.09 shows decelerating growth at a multiple that is not cheap, triggering my sell signal.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"COLL\",\n      \"conviction\": 0.6,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+14.3%\",\n          \"point\": \"Revenue growth of +14.3% is real and solidly positive, fitting my growth requirement.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"0.74\",\n          \"point\": \"An ev_to_sales of 0.74 is low and does not price in perfection.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"+19.5%\",\n          \"point\": \"An operating margin of +19.5% shows the growth is supported by profitability.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"YELP\",\n      \"conviction\": 0.3,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+1.5%\",\n          \"point\": \"Revenue growth of +1.5% is positive but modest, giving limited conviction.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"+0.6%\",\n          \"point\": \"Growth acceleration of +0.6% is slightly positive, which is directionally what I want.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"0.66\",\n          \"point\": \"An ev_to_sales of 0.66 is cheap and does not price in perfection.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TDOC\",\n      \"conviction\": -0.6,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"-2.1%\",\n          \"point\": \"Revenue growth of -2.1% is negative, meaning there is no real growth to own.\"\n        },\n        {\n          \"field\": \"revenue_growth_q_yoy\",\n          \"value\": \"-4.0%\",\n          \"point\": \"Quarterly revenue growth of -4.0% shows the business is shrinking further.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-1.5%\",\n          \"point\": \"Growth acceleration of -1.5% is negative, confirming deceleration even though ev_to_sales of 0.11 is low, and my style requires growth.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CRMD\",\n      \"conviction\": 0.7,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+280.5%\",\n          \"point\": \"Revenue growth of +280.5% is exceptionally strong and real, which is exactly the kind of growth I want.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"0.68\",\n          \"point\": \"An ev_to_sales of 0.68 is low, so the market is not pricing in perfection despite the high growth.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"+47.0%\",\n          \"point\": \"An operating margin of +47.0% indicates the growth is highly profitable.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 899,
+  "completion_tokens": 4338,
+  "total_tokens": 5237,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3392
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 515
+ },
+ "latency_s": 43.89,
+ "recorded_at": "2026-10-22T01:56:35+00:00"
+}

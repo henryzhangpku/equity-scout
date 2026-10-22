@@ -1,0 +1,37 @@
+{
+ "hash": "4ae555068ec53de7f0f70b50",
+ "tag": "vote trend_follower",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou follow price. You buy names in established uptrends that are beating the market and you avoid or short names below their long-term averages. Fundamentals do not interest you; the tape does.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"OPFI\", \"name\": \"OppFi Inc.\", \"data\": {\"mom_3m\": \"-35.5%\", \"mom_6m\": \"-25.4%\", \"mom_12m\": \"-39.9%\", \"pct_vs_sma50\": \"-16.1%\", \"pct_vs_sma200\": \"-29.3%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-39.8%\"}}, {\"symbol\": \"COLL\", \"name\": \"COLLEGIUM PHARMACEUTICAL, INC\", \"data\": {\"mom_3m\": \"-37.2%\", \"mom_6m\": \"-37.3%\", \"mom_12m\": \"-33.8%\", \"pct_vs_sma50\": \"-13.8%\", \"pct_vs_sma200\": \"-37.2%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-51.7%\"}}, {\"symbol\": \"YELP\", \"name\": \"YELP INC\", \"data\": {\"mom_3m\": \"-25.0%\", \"mom_6m\": \"-24.2%\", \"mom_12m\": \"-37.8%\", \"pct_vs_sma50\": \"-11.3%\", \"pct_vs_sma200\": \"-21.2%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-38.7%\"}}, {\"symbol\": \"TDOC\", \"name\": \"Teladoc Health, Inc.\", \"data\": {\"mom_3m\": \"-40.3%\", \"mom_6m\": \"+5.5%\", \"mom_12m\": \"-33.8%\", \"pct_vs_sma50\": \"-12.5%\", \"pct_vs_sma200\": \"-15.2%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-8.9%\"}}, {\"symbol\": \"CRMD\", \"name\": \"CorMedix Inc.\", \"data\": {\"mom_3m\": \"-12.9%\", \"mom_6m\": \"-0.5%\", \"mom_12m\": \"-34.0%\", \"pct_vs_sma50\": \"-6.6%\", \"pct_vs_sma200\": \"-7.5%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-14.9%\"}}]}"
+  }
+ ],
+ "response": "{\"votes\": [{\"symbol\": \"OPFI\", \"conviction\": -1, \"reasons\": [{\"field\": \"pct_vs_sma200\", \"value\": \"-29.3%\", \"point\": \"Price is -29.3% below its long-term average, so the trend is down and I avoid or short.\"}, {\"field\": \"sma50_above_sma200\", \"value\": \"no\", \"point\": \"Short-term average is below long-term average, confirming a downtrend.\"}, {\"field\": \"rs_6m_vs_spy\", \"value\": \"-39.8%\", \"point\": \"The stock is underperforming SPY by -39.8%, so it is not beating the market.\"}]}, {\"symbol\": \"COLL\", \"conviction\": -1, \"reasons\": [{\"field\": \"pct_vs_sma200\", \"value\": \"-37.2%\", \"point\": \"Price is -37.2% below its long-term average, so the trend is down and I avoid or short.\"}, {\"field\": \"sma50_above_sma200\", \"value\": \"no\", \"point\": \"Short-term average is below long-term average, confirming a downtrend.\"}, {\"field\": \"rs_6m_vs_spy\", \"value\": \"-51.7%\", \"point\": \"The stock is underperforming SPY by -51.7%, so it is not beating the market.\"}]}, {\"symbol\": \"YELP\", \"conviction\": -1, \"reasons\": [{\"field\": \"pct_vs_sma200\", \"value\": \"-21.2%\", \"point\": \"Price is -21.2% below its long-term average, so the trend is down and I avoid or short.\"}, {\"field\": \"sma50_above_sma200\", \"value\": \"no\", \"point\": \"Short-term average is below long-term average, confirming a downtrend.\"}, {\"field\": \"rs_6m_vs_spy\", \"value\": \"-38.7%\", \"point\": \"The stock is underperforming SPY by -38.7%, so it is not beating the market.\"}]}, {\"symbol\": \"TDOC\", \"conviction\": -0.8, \"reasons\": [{\"field\": \"pct_vs_sma200\", \"value\": \"-15.2%\", \"point\": \"Price is -15.2% below its long-term average, so the long-term trend is down.\"}, {\"field\": \"sma50_above_sma200\", \"value\": \"no\", \"point\": \"Short-term average is below long-term average, confirming a downtrend.\"}, {\"field\": \"rs_6m_vs_spy\", \"value\": \"-8.9%\", \"point\": \"The stock is underperforming SPY by -8.9%, so it is not beating the market.\"}]}, {\"symbol\": \"CRMD\", \"conviction\": -0.7, \"reasons\": [{\"field\": \"pct_vs_sma200\", \"value\": \"-7.5%\", \"point\": \"Price is -7.5% below its long-term average, so the long-term trend is down.\"}, {\"field\": \"sma50_above_sma200\", \"value\": \"no\", \"point\": \"Short-term average is below long-term average, confirming a downtrend.\"}, {\"field\": \"rs_6m_vs_spy\", \"value\": \"-14.9%\", \"point\": \"The stock is underperforming SPY by -14.9%, so it is not beating the market.\"}]}]}",
+ "usage": {
+  "prompt_tokens": 988,
+  "completion_tokens": 6295,
+  "total_tokens": 7283,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5505
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 604
+ },
+ "latency_s": 63.25,
+ "recorded_at": "2026-10-22T01:56:55+00:00"
+}

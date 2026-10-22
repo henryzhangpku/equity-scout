@@ -295,17 +295,67 @@ td.held { white-space: normal; min-width: 220px; color: var(--muted); }
 @media (max-width: 420px) { .facts { grid-template-columns: 1fr; } }
 
 /* Floating ask bar (askbar.js) */
-body.has-askbar { padding-bottom: 84px; }
-#askbar { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 50;
-  width: min(720px, calc(100% - 32px)); display: flex; gap: 8px; align-items: center;
-  padding: 8px; background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--r);
-  box-shadow: var(--shadow); }
-#askbar input { flex: 1; min-width: 0; font: inherit; color: var(--ink); background: var(--bg-soft);
-  border: 1px solid var(--line); border-radius: var(--r-sm); padding: 10px 12px; }
-#askbar input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-#askbar .primary { margin: 0; white-space: nowrap; }
-.askbar-x { background: none; border: 0; color: var(--muted); font-size: 22px; line-height: 1; padding: 4px 8px; cursor: pointer; }
-#askbar-tab { position: fixed; right: 16px; bottom: 16px; z-index: 50; padding: 10px 16px; border-radius: 999px;
-  border: 1px solid var(--line-strong); background: var(--panel); color: var(--accent); font: inherit; font-weight: 600;
-  box-shadow: var(--shadow); cursor: pointer; }
-#askbar.off, #askbar-tab.off { display: none; }
+body.has-askbar { padding-bottom: 104px; }
+#askbar-wrap { position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%);
+  z-index: 50; width: min(760px, calc(100% - 32px)); }
+#askbar { display: flex; gap: 8px; align-items: center; padding: 7px 7px 7px 16px; border-radius: 28px;
+  background: var(--panel); border: 1px solid var(--line-strong);
+  box-shadow: 0 18px 40px -18px rgba(15, 18, 64, .35), 0 2px 8px rgba(15, 18, 64, .06);
+  transition: box-shadow .2s ease, border-color .2s ease, transform .2s ease; }
+@supports (backdrop-filter: blur(8px)) {
+  #askbar, .askpop { background: color-mix(in srgb, var(--panel) 95%, transparent); backdrop-filter: saturate(1.5) blur(18px); }
+}
+#askbar-wrap.focus #askbar { border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft), 0 18px 40px -18px rgba(15, 18, 64, .35); }
+#askbar-wrap.multi #askbar { align-items: flex-end; border-radius: 20px; }
+.askbar-ico { color: var(--accent); display: inline-flex; flex: none; }
+#askbar-text { flex: 1; min-width: 0; resize: none; border: 0; outline: none; background: transparent; color: var(--ink);
+  font: inherit; font-size: 15.5px; line-height: 1.45; padding: 9px 2px; max-height: 132px; overflow-y: auto; }
+#askbar-text::placeholder { color: var(--muted); opacity: .85; }
+.askbar-status { display: inline-flex; align-items: center; gap: 6px; flex: none; font-size: 12px; font-weight: 600;
+  color: var(--muted); padding: 5px 9px; border-radius: 999px; background: var(--bg-soft); }
+.askbar-status .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+.askbar-status.live { color: #1d7a4a; }
+.askbar-status.live .dot { background: #22a35a; box-shadow: 0 0 0 3px rgba(34, 163, 90, .18); }
+.askbar-count { font-size: 12px; color: var(--muted); flex: none; }
+.askbar-kbd, .askpop kbd { font: 600 11px var(--font-mono, ui-monospace, monospace); color: var(--muted); padding: 2px 6px;
+  border: 1px solid var(--line-strong); border-bottom-width: 2px; border-radius: 6px; background: var(--bg-soft); flex: none; }
+#askbar-wrap.focus .askbar-kbd { display: none; }
+.askbar-go { display: inline-flex; align-items: center; gap: 6px; flex: none; border: 0; cursor: pointer; font: inherit;
+  font-weight: 600; color: var(--accent-ink); background: var(--grad); padding: 10px 16px; border-radius: 999px;
+  transition: opacity .15s ease, transform .15s ease; }
+.askbar-go:hover:not(:disabled) { transform: translateY(-1px); }
+.askbar-go:disabled { opacity: .45; cursor: default; }
+.askbar-go.busy svg { animation: spin .8s linear infinite; }
+.askbar-x { background: none; border: 0; color: var(--muted); font-size: 22px; line-height: 1; padding: 4px 8px; cursor: pointer; flex: none; border-radius: 999px; }
+.askbar-x:hover { color: var(--ink); background: var(--bg-soft); }
+.askpop { margin-bottom: 10px; padding: 12px; border-radius: 20px; background: var(--panel); border: 1px solid var(--line-strong);
+  box-shadow: 0 18px 40px -18px rgba(15, 18, 64, .35); animation: askpop-in .14s ease-out; }
+@keyframes askpop-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.askpop-hd { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 12px; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase; color: var(--muted); padding: 2px 6px 8px; }
+.askpop-keys { text-transform: none; letter-spacing: 0; font-weight: 500; }
+.askpop-list { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.askpop-item { display: flex; align-items: center; gap: 8px; text-align: left; font: inherit; font-size: 14px; color: var(--ink);
+  background: var(--bg-soft); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; cursor: pointer; }
+.askpop-item:hover, .askpop-item:focus-visible { border-color: var(--accent); color: var(--head); background: var(--accent-soft); }
+.askpop-ico { color: var(--accent); display: inline-flex; flex: none; }
+.askpop-foot { margin: 10px 6px 2px; font-size: 13px; color: var(--muted); }
+#askbar-tab { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 50;
+  display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 0;
+  background: var(--grad); color: var(--accent-ink); font: inherit; font-weight: 600; box-shadow: var(--shadow); cursor: pointer; }
+#askbar-wrap.off, #askbar-tab.off { display: none; }
+@media (max-width: 600px) {
+  .askbar-kbd, .askpop-keys { display: none; }
+  .askbar-go span, .askbar-status { display: none; }
+  .askbar-go { padding: 10px 12px; }
+  .askpop-list { grid-template-columns: 1fr; }
+}
+
+/* The investor team and the brief: left-aligned text columns that wrap */
+table.wrapt td, table.wrapt th { white-space: normal; text-align: left; vertical-align: top; }
+table.wrapt td.num, table.wrapt th.num { text-align: right; white-space: nowrap; }
+table.wrapt td:first-child { font-weight: 600; color: var(--head); white-space: nowrap; }
+details.teamvotes ul { margin: 8px 0 4px; padding-left: 20px; line-height: 1.55; }
+details.teamvotes li { margin-bottom: 6px; }
+#brief details.panel > summary h3 { margin: 0; font-size: 17px; line-height: 1.4; }
+.askbar-status.live { color: #22a35a; }

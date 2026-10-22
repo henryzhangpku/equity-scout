@@ -1,0 +1,37 @@
+{
+ "hash": "c4eaee68e0cf90e36a3884b7",
+ "tag": "vote small_cap_specialist",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou fish where large funds cannot: smaller, less liquid companies that are growing and self-funding, after the market has marked them down. You avoid names too illiquid to exit.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"OPFI\", \"name\": \"OppFi Inc.\", \"data\": {\"market_cap\": \"$411M\", \"avg_dollar_volume_50d\": \"$7M\", \"revenue_growth_yoy\": \"+0.2%\", \"fcf_margin\": \"+105.9%\", \"drawdown_52w\": \"-46.5%\", \"mom_3m\": \"-35.5%\"}}, {\"symbol\": \"COLL\", \"name\": \"COLLEGIUM PHARMACEUTICAL, INC\", \"data\": {\"market_cap\": \"$720M\", \"avg_dollar_volume_50d\": \"$22M\", \"revenue_growth_yoy\": \"+14.3%\", \"fcf_margin\": \"+40.6%\", \"drawdown_52w\": \"-55.6%\", \"mom_3m\": \"-37.2%\"}}, {\"symbol\": \"YELP\", \"name\": \"YELP INC\", \"data\": {\"market_cap\": \"$1.1B\", \"avg_dollar_volume_50d\": \"$27M\", \"revenue_growth_yoy\": \"+1.5%\", \"fcf_margin\": \"+20.2%\", \"drawdown_52w\": \"-42.7%\", \"mom_3m\": \"-25.0%\"}}, {\"symbol\": \"TDOC\", \"name\": \"Teladoc Health, Inc.\", \"data\": {\"market_cap\": \"$1.0B\", \"avg_dollar_volume_50d\": \"$27M\", \"revenue_growth_yoy\": \"-2.1%\", \"fcf_margin\": \"+10.2%\", \"drawdown_52w\": \"-43.0%\", \"mom_3m\": \"-40.3%\"}}, {\"symbol\": \"CRMD\", \"name\": \"CorMedix Inc.\", \"data\": {\"market_cap\": \"$571M\", \"avg_dollar_volume_50d\": \"$9M\", \"revenue_growth_yoy\": \"+280.5%\", \"fcf_margin\": \"+54.2%\", \"drawdown_52w\": \"-42.5%\", \"mom_3m\": \"-12.9%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"OPFI\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+0.2%\",\n          \"point\": \"Revenue growth of +0.2% is negligible and does not meet the growth criterion.\"\n        },\n        {\n          \"field\": \"avg_dollar_volume_50d\",\n          \"value\": \"$7M\",\n          \"point\": \"Average dollar volume of $7M may be too illiquid for easy exit.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"COLL\",\n      \"conviction\": 0.7,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+14.3%\",\n          \"point\": \"Revenue growth of +14.3% indicates solid growth.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+40.6%\",\n          \"point\": \"Free cash flow margin of +40.6% shows strong self-funding ability.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-55.6%\",\n          \"point\": \"A 52-week drawdown of -55.6% means the market has heavily marked it down.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"YELP\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+1.5%\",\n          \"point\": \"Revenue growth of +1.5% is too weak to meet the growth criterion.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TDOC\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"-2.1%\",\n          \"point\": \"Revenue growth of -2.1% is negative and fails the growth criterion.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CRMD\",\n      \"conviction\": 0.8,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+280.5%\",\n          \"point\": \"Revenue growth of +280.5% is exceptionally strong.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+54.2%\",\n          \"point\": \"Free cash flow margin of +54.2% indicates strong self-funding.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-42.5%\",\n          \"point\": \"A 52-week drawdown of -42.5% shows the market has marked it down.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 885,
+  "completion_tokens": 3547,
+  "total_tokens": 4432,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2923
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 501
+ },
+ "latency_s": 39.29,
+ "recorded_at": "2026-10-22T01:56:31+00:00"
+}

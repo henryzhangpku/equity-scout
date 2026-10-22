@@ -1,0 +1,37 @@
+{
+ "hash": "2a3542c41f64547253bd2353",
+ "tag": "vote contrarian_rebound",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy fear in businesses that still make cash: deeply oversold, far below recent highs, on heavy volume. You stay away when the business itself is broken.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"AVGO\", \"name\": \"Broadcom Inc.\", \"data\": {\"rsi14\": \"49.44\", \"drawdown_52w\": \"-25.0%\", \"volume_ratio_50d\": \"1.16\", \"pct_vs_sma20\": \"+1.4%\", \"mom_1m\": \"-1.0%\", \"fcf_ttm\": \"$39.4B\"}}, {\"symbol\": \"AAOI\", \"name\": \"APPLIED OPTOELECTRONICS, INC.\", \"data\": {\"rsi14\": \"47.47\", \"drawdown_52w\": \"-52.5%\", \"volume_ratio_50d\": \"1.97\", \"pct_vs_sma20\": \"+0.1%\", \"mom_1m\": \"-1.9%\", \"fcf_ttm\": \"n/a\"}}, {\"symbol\": \"AMAT\", \"name\": \"APPLIED MATERIALS INC /DE\", \"data\": {\"rsi14\": \"55.56\", \"drawdown_52w\": \"-29.4%\", \"volume_ratio_50d\": \"0.99\", \"pct_vs_sma20\": \"+5.8%\", \"mom_1m\": \"+8.7%\", \"fcf_ttm\": \"$5.6B\"}}, {\"symbol\": \"COHR\", \"name\": \"COHERENT CORP.\", \"data\": {\"rsi14\": \"48.72\", \"drawdown_52w\": \"-29.2%\", \"volume_ratio_50d\": \"1.34\", \"pct_vs_sma20\": \"-0.8%\", \"mom_1m\": \"-0.4%\", \"fcf_ttm\": \"$-1.0B\"}}, {\"symbol\": \"AMKR\", \"name\": \"AMKOR TECHNOLOGY, INC.\", \"data\": {\"rsi14\": \"46.74\", \"drawdown_52w\": \"-45.4%\", \"volume_ratio_50d\": \"0.81\", \"pct_vs_sma20\": \"-1.6%\", \"mom_1m\": \"-0.7%\", \"fcf_ttm\": \"$167M\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"AVGO\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"AAOI\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"AMAT\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"COHR\",\n      \"conviction\": -1,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_ttm\",\n          \"value\": \"-$1.0B\",\n          \"point\": \"Negative free cash flow of -$1.0B means the business is not making cash, so my style stays away from broken businesses.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"AMKR\",\n      \"conviction\": 0,\n      \"reasons\": []\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 890,
+  "completion_tokens": 2122,
+  "total_tokens": 3012,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1921
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 506
+ },
+ "latency_s": 23.96,
+ "recorded_at": "2026-10-22T01:53:44+00:00"
+}

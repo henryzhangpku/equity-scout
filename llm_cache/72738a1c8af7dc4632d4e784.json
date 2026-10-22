@@ -1,0 +1,37 @@
+{
+ "hash": "72738a1c8af7dc4632d4e784",
+ "tag": "vote trend_follower",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou follow price. You buy names in established uptrends that are beating the market and you avoid or short names below their long-term averages. Fundamentals do not interest you; the tape does.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"VICR\", \"name\": \"VICOR CORP\", \"data\": {\"mom_3m\": \"-3.6%\", \"mom_6m\": \"+41.9%\", \"mom_12m\": \"+439.4%\", \"pct_vs_sma50\": \"+15.7%\", \"pct_vs_sma200\": \"+19.1%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"+27.5%\"}}, {\"symbol\": \"SITM\", \"name\": \"SITIME Corp\", \"data\": {\"mom_3m\": \"+2.6%\", \"mom_6m\": \"+58.6%\", \"mom_12m\": \"+113.6%\", \"pct_vs_sma50\": \"+3.3%\", \"pct_vs_sma200\": \"+20.5%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"+44.2%\"}}, {\"symbol\": \"STRL\", \"name\": \"STERLING INFRASTRUCTURE, INC.\", \"data\": {\"mom_3m\": \"-24.0%\", \"mom_6m\": \"+19.0%\", \"mom_12m\": \"+48.7%\", \"pct_vs_sma50\": \"+0.2%\", \"pct_vs_sma200\": \"-4.7%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"+4.6%\"}}, {\"symbol\": \"SANM\", \"name\": \"SANMINA CORP\", \"data\": {\"mom_3m\": \"+0.8%\", \"mom_6m\": \"+48.4%\", \"mom_12m\": \"+67.6%\", \"pct_vs_sma50\": \"+2.9%\", \"pct_vs_sma200\": \"+10.8%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"+34.0%\"}}, {\"symbol\": \"KLIC\", \"name\": \"KULICKE & SOFFA INDUSTRIES INC\", \"data\": {\"mom_3m\": \"-19.6%\", \"mom_6m\": \"+18.9%\", \"mom_12m\": \"+129.8%\", \"pct_vs_sma50\": \"+3.2%\", \"pct_vs_sma200\": \"+8.6%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"+4.5%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"VICR\",\n      \"conviction\": 0.7,\n      \"reasons\": [\n        {\n          \"field\": \"mom_12m\",\n          \"value\": \"+439.4%\",\n          \"point\": \"The 12-month momentum of +439.4% shows an extremely powerful uptrend, which my style follows.\"\n        },\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"+19.1%\",\n          \"point\": \"Price is +19.1% above the 200-day moving average, confirming the stock is well above its long-term average.\"\n        },\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"yes\",\n          \"point\": \"The 50-day moving average is above the 200-day moving average, indicating a healthy long-term uptrend.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"SITM\",\n      \"conviction\": 1.0,\n      \"reasons\": [\n        {\n          \"field\": \"mom_6m\",\n          \"value\": \"+58.6%\",\n          \"point\": \"The strong six-month gain of +58.6% shows a powerful uptrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"+44.2%\",\n          \"point\": \"Relative strength versus SPY of +44.2% shows the stock is beating the market significantly.\"\n        },\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"+20.5%\",\n          \"point\": \"Trading +20.5% above the 200-day moving average confirms the long-term trend is up.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"STRL\",\n      \"conviction\": -0.8,\n      \"reasons\": [\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"no\",\n          \"point\": \"The 50-day moving average is below the 200-day moving average, a bearish long-term signal.\"\n        },\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-4.7%\",\n          \"point\": \"Price is -4.7% below the 200-day moving average, showing it is below its long-term average and in a downtrend.\"\n        },\n        {\n          \"field\": \"mom_3m\",\n          \"value\": \"-24.0%\",\n          \"point\": \"A three-month drop of -24.0% indicates strong selling pressure and a broken trend.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"SANM\",\n      \"conviction\": 0.9,\n      \"reasons\": [\n        {\n          \"field\": \"mom_6m\",\n          \"value\": \"+48.4%\",\n          \"point\": \"Six-month momentum of +48.4% indicates a strong uptrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"+34.0%\",\n          \"point\": \"Beating the market by +34.0% over six months shows strong relative strength.\"\n        },\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"yes\",\n          \"point\": \"50-day moving average above 200-day confirms a bullish trend.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"KLIC\",\n      \"conviction\": 0.2,\n      \"reasons\": [\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"yes\",\n          \"point\": \"50-day average is above 200-day average, keeping the long-term uptrend intact.\"\n        },\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"+8.6%\",\n          \"point\": \"Price is +8.6% above the 200-day average, so it remains above the long-term trend.\"\n        },\n        {\n          \"field\": \"mom_3m\",\n          \"value\": \"-19.6%\",\n          \"point\": \"The -19.6% three-month drop is a sharp pullback that reduces conviction.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 997,
+  "completion_tokens": 4291,
+  "total_tokens": 5288,
+  "prompt_tokens_details": {
+   "cached_tokens": 896
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3364
+  },
+  "prompt_cache_hit_tokens": 896,
+  "prompt_cache_miss_tokens": 101
+ },
+ "latency_s": 36.86,
+ "recorded_at": "2026-10-22T01:52:38+00:00"
+}

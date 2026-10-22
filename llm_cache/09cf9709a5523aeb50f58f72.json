@@ -1,0 +1,37 @@
+{
+ "hash": "09cf9709a5523aeb50f58f72",
+ "tag": "vote deep_value",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy a margin of safety: cheap on free cash flow and enterprise value, a balance sheet that can survive a bad year, and a price that has already been punished. You distrust stories, high multiples and companies that do not turn profit into cash.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"WOLF\", \"name\": \"WOLFSPEED, INC.\", \"data\": {\"market_cap\": \"$1.6B\", \"fcf_yield\": \"-23.1%\", \"ev_to_sales\": \"3.37\", \"net_debt\": \"$599M\", \"net_income_ttm\": \"$4M\", \"fcf_margin\": \"-57.1%\", \"drawdown_52w\": \"-57.8%\"}}, {\"symbol\": \"KSS\", \"name\": \"KOHLS Corp\", \"data\": {\"market_cap\": \"$2.3B\", \"fcf_yield\": \"+45.4%\", \"ev_to_sales\": \"0.22\", \"net_debt\": \"$1.2B\", \"net_income_ttm\": \"$270M\", \"fcf_margin\": \"+6.7%\", \"drawdown_52w\": \"-16.1%\"}}, {\"symbol\": \"CBRL\", \"name\": \"CRACKER BARREL OLD COUNTRY STORE, INC\", \"data\": {\"market_cap\": \"$1.2B\", \"fcf_yield\": \"+7.1%\", \"ev_to_sales\": \"0.51\", \"net_debt\": \"$451M\", \"net_income_ttm\": \"$32M\", \"fcf_margin\": \"+2.7%\", \"drawdown_52w\": \"-6.3%\"}}, {\"symbol\": \"MNRO\", \"name\": \"MONRO, INC.\", \"data\": {\"market_cap\": \"$413M\", \"fcf_yield\": \"+9.4%\", \"ev_to_sales\": \"0.40\", \"net_debt\": \"$45M\", \"net_income_ttm\": \"$2M\", \"fcf_margin\": \"+3.4%\", \"drawdown_52w\": \"-39.2%\"}}, {\"symbol\": \"SWKS\", \"name\": \"SKYWORKS SOLUTIONS, INC.\", \"data\": {\"market_cap\": \"$12.2B\", \"fcf_yield\": \"+3.6%\", \"ev_to_sales\": \"2.95\", \"net_debt\": \"$-302M\", \"net_income_ttm\": \"$290M\", \"fcf_margin\": \"+10.8%\", \"drawdown_52w\": \"-11.7%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"WOLF\",\n      \"conviction\": -0.9,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_yield\",\n          \"value\": \"-23.1%\",\n          \"point\": \"Negative free cash flow yield of -23.1% means the company is burning cash and offers no margin of safety.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"-57.1%\",\n          \"point\": \"Free cash flow margin of -57.1% shows profit is not turning into cash.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$599M\",\n          \"point\": \"Net debt of $599M against a market cap of $1.6B leaves little balance sheet cushion for a bad year.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"KSS\",\n      \"conviction\": 0.7,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_yield\",\n          \"value\": \"+45.4%\",\n          \"point\": \"Free cash flow yield of +45.4% is exceptionally high, suggesting a large margin of safety.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"0.22\",\n          \"point\": \"EV to sales of 0.22 is very cheap.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+6.7%\",\n          \"point\": \"Free cash flow margin of +6.7% confirms the company turns profit into cash.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CBRL\",\n      \"conviction\": 0.3,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_yield\",\n          \"value\": \"+7.1%\",\n          \"point\": \"Free cash flow yield of +7.1% is positive and provides some margin of safety.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"0.51\",\n          \"point\": \"EV to sales of 0.51 is cheap.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$451M\",\n          \"point\": \"Net debt of $451M against market cap of $1.2B is manageable but not negligible.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"MNRO\",\n      \"conviction\": 0.8,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_yield\",\n          \"value\": \"+9.4%\",\n          \"point\": \"Free cash flow yield of +9.4% is attractive.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"0.40\",\n          \"point\": \"EV to sales of 0.40 is cheap.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-39.2%\",\n          \"point\": \"A 52-week drawdown of -39.2% shows the price has already been punished.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"SWKS\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"2.95\",\n          \"point\": \"EV to sales of 2.95 is not cheap enough for my margin of safety.\"\n        },\n        {\n          \"field\": \"fcf_yield\",\n          \"value\": \"+3.6%\",\n          \"point\": \"Free cash flow yield of +3.6% is too low to provide a sufficient margin of safety.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 935,
+  "completion_tokens": 5559,
+  "total_tokens": 6494,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4750
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 551
+ },
+ "latency_s": 56.18,
+ "recorded_at": "2026-10-22T01:57:35+00:00"
+}

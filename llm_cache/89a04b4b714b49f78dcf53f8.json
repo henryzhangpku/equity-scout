@@ -1,0 +1,37 @@
+{
+ "hash": "89a04b4b714b49f78dcf53f8",
+ "tag": "vote quality_compounder",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou own businesses with durable high margins that convert revenue into cash, grow steadily and carry little debt, and you hold them for years. You will pay a fair price for quality but avoid fragile, low-margin or heavily indebted businesses.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"EMA\", \"name\": \"EMERA INC\", \"data\": {\"market_cap\": \"$13.7B\", \"gross_margin\": \"n/a\", \"operating_margin\": \"n/a\", \"fcf_margin\": \"n/a\", \"revenue_growth_yoy\": \"n/a\", \"net_debt\": \"n/a\", \"pct_vs_sma200\": \"-9.6%\"}}, {\"symbol\": \"ARGX\", \"name\": \"ARGENX SE\", \"data\": {\"market_cap\": \"$50.7B\", \"gross_margin\": \"n/a\", \"operating_margin\": \"n/a\", \"fcf_margin\": \"n/a\", \"revenue_growth_yoy\": \"n/a\", \"net_debt\": \"n/a\", \"pct_vs_sma200\": \"-3.9%\"}}, {\"symbol\": \"NLY\", \"name\": \"ANNALY CAPITAL MANAGEMENT INC\", \"data\": {\"market_cap\": \"$13.8B\", \"gross_margin\": \"n/a\", \"operating_margin\": \"n/a\", \"fcf_margin\": \"n/a\", \"revenue_growth_yoy\": \"n/a\", \"net_debt\": \"n/a\", \"pct_vs_sma200\": \"-12.3%\"}}, {\"symbol\": \"DOC\", \"name\": \"HEALTHPEAK PROPERTIES, INC.\", \"data\": {\"market_cap\": \"$12.8B\", \"gross_margin\": \"n/a\", \"operating_margin\": \"n/a\", \"fcf_margin\": \"n/a\", \"revenue_growth_yoy\": \"+23.3%\", \"net_debt\": \"$8.4B\", \"pct_vs_sma200\": \"-0.1%\"}}, {\"symbol\": \"HRL\", \"name\": \"HORMEL FOODS CORP /DE/\", \"data\": {\"market_cap\": \"$10.7B\", \"gross_margin\": \"+15.7%\", \"operating_margin\": \"+4.7%\", \"fcf_margin\": \"+6.4%\", \"revenue_growth_yoy\": \"+0.7%\", \"net_debt\": \"$2.1B\", \"pct_vs_sma200\": \"-14.6%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"EMA\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"ARGX\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"NLY\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"DOC\",\n      \"conviction\": -0.4,\n      \"reasons\": [\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$8.4B\",\n          \"point\": \"Net debt of $8.4B is large relative to market cap $12.8B, indicating heavy indebtedness that my style avoids.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"HRL\",\n      \"conviction\": -0.6,\n      \"reasons\": [\n        {\n          \"field\": \"gross_margin\",\n          \"value\": \"+15.7%\",\n          \"point\": \"Gross margin of +15.7% is low and does not provide a durable high-margin cushion.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"+4.7%\",\n          \"point\": \"Operating margin of +4.7% is low, showing weak conversion of revenue into operating profit.\"\n        },\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+0.7%\",\n          \"point\": \"Revenue growth of +0.7% is barely positive, not the steady growth I require for a long-term holding.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 922,
+  "completion_tokens": 2523,
+  "total_tokens": 3445,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2166
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 538
+ },
+ "latency_s": 28.14,
+ "recorded_at": "2026-10-22T01:55:40+00:00"
+}

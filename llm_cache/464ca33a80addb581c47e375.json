@@ -1,0 +1,37 @@
+{
+ "hash": "464ca33a80addb581c47e375",
+ "tag": "vote small_cap_specialist",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou fish where large funds cannot: smaller, less liquid companies that are growing and self-funding, after the market has marked them down. You avoid names too illiquid to exit.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"DECK\", \"name\": \"DECKERS OUTDOOR CORP\", \"data\": {\"market_cap\": \"$11.3B\", \"avg_dollar_volume_50d\": \"$247M\", \"revenue_growth_yoy\": \"+7.9%\", \"fcf_margin\": \"+20.2%\", \"drawdown_52w\": \"-31.7%\", \"mom_3m\": \"-22.1%\"}}, {\"symbol\": \"HSY\", \"name\": \"HERSHEY CO\", \"data\": {\"market_cap\": \"$33.0B\", \"avg_dollar_volume_50d\": \"$238M\", \"revenue_growth_yoy\": \"+7.7%\", \"fcf_margin\": \"+18.3%\", \"drawdown_52w\": \"-30.1%\", \"mom_3m\": \"-5.7%\"}}, {\"symbol\": \"WING\", \"name\": \"Wingstop Inc.\", \"data\": {\"market_cap\": \"$3.2B\", \"avg_dollar_volume_50d\": \"$143M\", \"revenue_growth_yoy\": \"+7.6%\", \"fcf_margin\": \"+17.8%\", \"drawdown_52w\": \"-58.1%\", \"mom_3m\": \"-22.5%\"}}, {\"symbol\": \"COCO\", \"name\": \"Vita Coco Company, Inc.\", \"data\": {\"market_cap\": \"$3.2B\", \"avg_dollar_volume_50d\": \"$68M\", \"revenue_growth_yoy\": \"+26.1%\", \"fcf_margin\": \"+17.6%\", \"drawdown_52w\": \"-33.4%\", \"mom_3m\": \"-21.6%\"}}, {\"symbol\": \"CELH\", \"name\": \"Celsius Holdings, Inc.\", \"data\": {\"market_cap\": \"$6.9B\", \"avg_dollar_volume_50d\": \"$273M\", \"revenue_growth_yoy\": \"+82.9%\", \"fcf_margin\": \"+15.2%\", \"drawdown_52w\": \"-57.8%\", \"mom_3m\": \"-10.5%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"DECK\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"HSY\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"WING\",\n      \"conviction\": 0.7,\n      \"reasons\": [\n        {\n          \"field\": \"market_cap\",\n          \"value\": \"$3.2B\",\n          \"point\": \"Small market cap of $3.2B fits fishing where large funds cannot.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+17.8%\",\n          \"point\": \"FCF margin of +17.8% and revenue growth of +7.6% show a growing, self-funding business.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-58.1%\",\n          \"point\": \"Drawdown of -58.1% indicates the market has marked it down.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"COCO\",\n      \"conviction\": 0.8,\n      \"reasons\": [\n        {\n          \"field\": \"market_cap\",\n          \"value\": \"$3.2B\",\n          \"point\": \"Small market cap of $3.2B fits fishing where large funds cannot.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+17.6%\",\n          \"point\": \"FCF margin of +17.6% and revenue growth of +26.1% show a growing, self-funding business.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-33.4%\",\n          \"point\": \"Drawdown of -33.4% indicates the market has marked it down.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CELH\",\n      \"conviction\": 0.6,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+82.9%\",\n          \"point\": \"Revenue growth of +82.9% shows a strongly growing company.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+15.2%\",\n          \"point\": \"FCF margin of +15.2% shows self-funding.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-57.8%\",\n          \"point\": \"Drawdown of -57.8% indicates the market has marked it down.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 891,
+  "completion_tokens": 12150,
+  "total_tokens": 13041,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 11572
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 507
+ },
+ "latency_s": 133.25,
+ "recorded_at": "2026-10-22T01:57:24+00:00"
+}

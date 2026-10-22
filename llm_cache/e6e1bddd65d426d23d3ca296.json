@@ -1,0 +1,37 @@
+{
+ "hash": "e6e1bddd65d426d23d3ca296",
+ "tag": "vote contrarian_rebound",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy fear in businesses that still make cash: deeply oversold, far below recent highs, on heavy volume. You stay away when the business itself is broken.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"BMNR\", \"name\": \"BITMINE IMMERSION TECHNOLOGIES, INC.\", \"data\": {\"rsi14\": \"44.53\", \"drawdown_52w\": \"-59.9%\", \"volume_ratio_50d\": \"0.88\", \"pct_vs_sma20\": \"-7.9%\", \"mom_1m\": \"-0.7%\", \"fcf_ttm\": \"$-295M\"}}, {\"symbol\": \"VAL\", \"name\": \"Valaris Ltd\", \"data\": {\"rsi14\": \"53.48\", \"drawdown_52w\": \"-26.0%\", \"volume_ratio_50d\": \"0.63\", \"pct_vs_sma20\": \"+2.4%\", \"mom_1m\": \"-1.2%\", \"fcf_ttm\": \"$-24M\"}}, {\"symbol\": \"IBRX\", \"name\": \"ImmunityBio, Inc.\", \"data\": {\"rsi14\": \"62.53\", \"drawdown_52w\": \"-14.2%\", \"volume_ratio_50d\": \"0.99\", \"pct_vs_sma20\": \"+10.8%\", \"mom_1m\": \"+23.0%\", \"fcf_ttm\": \"$-288M\"}}, {\"symbol\": \"MU\", \"name\": \"MICRON TECHNOLOGY INC\", \"data\": {\"rsi14\": \"51.21\", \"drawdown_52w\": \"-14.6%\", \"volume_ratio_50d\": \"1.00\", \"pct_vs_sma20\": \"+0.0%\", \"mom_1m\": \"+0.8%\", \"fcf_ttm\": \"$26.2B\"}}, {\"symbol\": \"TARS\", \"name\": \"Tarsus Pharmaceuticals, Inc.\", \"data\": {\"rsi14\": \"42.08\", \"drawdown_52w\": \"-20.4%\", \"volume_ratio_50d\": \"0.83\", \"pct_vs_sma20\": \"-5.5%\", \"mom_1m\": \"-12.7%\", \"fcf_ttm\": \"$56M\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"BMNR\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"rsi14\",\n          \"value\": \"44.53\",\n          \"point\": \"RSI 44.53 is not deeply oversold, so the fear condition is weak.\"\n        },\n        {\n          \"field\": \"volume_ratio_50d\",\n          \"value\": \"0.88\",\n          \"point\": \"Volume ratio 0.88 is not heavy, so no capitulation on high volume.\"\n        },\n        {\n          \"field\": \"fcf_ttm\",\n          \"value\": \"$-295M\",\n          \"point\": \"Free cash flow of $-295M shows the business is not making cash, so this style stays away.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"VAL\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"rsi14\",\n          \"value\": \"53.48\",\n          \"point\": \"RSI 53.48 is neutral, not deeply oversold.\"\n        },\n        {\n          \"field\": \"volume_ratio_50d\",\n          \"value\": \"0.63\",\n          \"point\": \"Volume ratio 0.63 is low, not heavy volume.\"\n        },\n        {\n          \"field\": \"fcf_ttm\",\n          \"value\": \"$-24M\",\n          \"point\": \"Free cash flow of $-24M is negative, so the business is not making cash.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"IBRX\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"rsi14\",\n          \"value\": \"62.53\",\n          \"point\": \"RSI 62.53 is high, not fear.\"\n        },\n        {\n          \"field\": \"mom_1m\",\n          \"value\": \"+23.0%\",\n          \"point\": \"One-month momentum of +23.0% shows strength, not fear.\"\n        },\n        {\n          \"field\": \"fcf_ttm\",\n          \"value\": \"$-288M\",\n          \"point\": \"Free cash flow of $-288M is negative, so business is not making cash.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"MU\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"rsi14\",\n          \"value\": \"51.21\",\n          \"point\": \"RSI 51.21 is neutral, not oversold.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-14.6%\",\n          \"point\": \"Drawdown of -14.6% is not far below recent highs.\"\n        },\n        {\n          \"field\": \"volume_ratio_50d\",\n          \"value\": \"1.00\",\n          \"point\": \"Volume ratio 1.00 shows only average volume, not heavy fear volume.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TARS\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"rsi14\",\n          \"value\": \"42.08\",\n          \"point\": \"RSI 42.08 is not deeply oversold.\"\n        },\n        {\n          \"field\": \"volume_ratio_50d\",\n          \"value\": \"0.83\",\n          \"point\": \"Volume ratio 0.83 is below heavy volume.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-20.4%\",\n          \"point\": \"Drawdown of -20.4% is not far enough below recent highs for this style.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 884,
+  "completion_tokens": 3879,
+  "total_tokens": 4763,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3067
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 500
+ },
+ "latency_s": 38.24,
+ "recorded_at": "2026-10-22T01:57:25+00:00"
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "b63abfaad55bbd0278c68c23",
+ "tag": "vote squeeze_hunter",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou look for crowded shorts that are starting to go wrong for the shorts: high short interest, many days to cover, rising volume and price turning up through its averages.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"BMNR\", \"name\": \"BITMINE IMMERSION TECHNOLOGIES, INC.\", \"data\": {\"short_pct_shares_out\": \"+6.7%\", \"days_to_cover\": \"1.0d\", \"volume_ratio_50d\": \"0.88\", \"mom_1m\": \"-0.7%\", \"pct_vs_sma50\": \"+3.6%\"}}, {\"symbol\": \"VAL\", \"name\": \"Valaris Ltd\", \"data\": {\"short_pct_shares_out\": \"+8.6%\", \"days_to_cover\": \"4.1d\", \"volume_ratio_50d\": \"0.63\", \"mom_1m\": \"-1.2%\", \"pct_vs_sma50\": \"+0.6%\"}}, {\"symbol\": \"IBRX\", \"name\": \"ImmunityBio, Inc.\", \"data\": {\"short_pct_shares_out\": \"+11.8%\", \"days_to_cover\": \"15.9d\", \"volume_ratio_50d\": \"0.99\", \"mom_1m\": \"+23.0%\", \"pct_vs_sma50\": \"+20.3%\"}}, {\"symbol\": \"MU\", \"name\": \"MICRON TECHNOLOGY INC\", \"data\": {\"short_pct_shares_out\": \"+2.4%\", \"days_to_cover\": \"1.1d\", \"volume_ratio_50d\": \"1.00\", \"mom_1m\": \"+0.8%\", \"pct_vs_sma50\": \"+6.4%\"}}, {\"symbol\": \"TARS\", \"name\": \"Tarsus Pharmaceuticals, Inc.\", \"data\": {\"short_pct_shares_out\": \"+14.0%\", \"days_to_cover\": \"6.6d\", \"volume_ratio_50d\": \"0.83\", \"mom_1m\": \"-12.7%\", \"pct_vs_sma50\": \"-1.9%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"BMNR\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"VAL\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"IBRX\",\n      \"conviction\": 0.6,\n      \"reasons\": [\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+11.8%\",\n          \"point\": \"Short interest is +11.8%, indicating a crowded short that could fuel a squeeze.\"\n        },\n        {\n          \"field\": \"days_to_cover\",\n          \"value\": \"15.9d\",\n          \"point\": \"Days to cover of 15.9d means short covering could take many days, adding upward pressure.\"\n        },\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"+20.3%\",\n          \"point\": \"Price is +20.3% above the 50-day average, showing it has turned up through that average.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"MU\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"TARS\",\n      \"conviction\": 0,\n      \"reasons\": []\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 835,
+  "completion_tokens": 4110,
+  "total_tokens": 4945,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3814
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 451
+ },
+ "latency_s": 47.81,
+ "recorded_at": "2026-10-22T01:57:35+00:00"
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "027944286420d1725910119c",
+ "tag": "vote deep_value",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy a margin of safety: cheap on free cash flow and enterprise value, a balance sheet that can survive a bad year, and a price that has already been punished. You distrust stories, high multiples and companies that do not turn profit into cash.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"BX\", \"name\": \"Blackstone Inc.\", \"data\": {\"market_cap\": \"$84.6B\", \"fcf_yield\": \"+6.5%\", \"ev_to_sales\": \"5.92\", \"net_debt\": \"$10.8B\", \"net_income_ttm\": \"$3.5B\", \"fcf_margin\": \"+34.1%\", \"drawdown_52w\": \"-28.9%\"}}, {\"symbol\": \"SBUX\", \"name\": \"STARBUCKS CORP\", \"data\": {\"market_cap\": \"$106.3B\", \"fcf_yield\": \"+3.4%\", \"ev_to_sales\": \"3.02\", \"net_debt\": \"$9.7B\", \"net_income_ttm\": \"$2.0B\", \"fcf_margin\": \"+9.5%\", \"drawdown_52w\": \"-14.1%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"BX\",\n      \"conviction\": 0.3,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_yield\",\n          \"value\": \"+6.5%\",\n          \"point\": \"A free cash flow yield of +6.5% provides a solid margin of safety on cash generation.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+34.1%\",\n          \"point\": \"A free cash flow margin of +34.1% shows the business turns profit into cash, which fits my style.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"5.92\",\n          \"point\": \"An enterprise value to sales of 5.92 is a high multiple that limits the margin of safety.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"SBUX\",\n      \"conviction\": 0.1,\n      \"reasons\": [\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"3.02\",\n          \"point\": \"An enterprise value to sales of 3.02 is a lower multiple, offering some valuation support.\"\n        },\n        {\n          \"field\": \"fcf_yield\",\n          \"value\": \"+3.4%\",\n          \"point\": \"A free cash flow yield of +3.4% is only modest and does not provide a large margin of safety.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+9.5%\",\n          \"point\": \"A free cash flow margin of +9.5% shows the company turns some profit into cash but less convincingly.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 628,
+  "completion_tokens": 3159,
+  "total_tokens": 3787,
+  "prompt_tokens_details": {
+   "cached_tokens": 512
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2784
+  },
+  "prompt_cache_hit_tokens": 512,
+  "prompt_cache_miss_tokens": 116
+ },
+ "latency_s": 35.05,
+ "recorded_at": "2026-10-22T01:55:46+00:00"
+}

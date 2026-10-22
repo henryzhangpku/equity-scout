@@ -147,6 +147,9 @@
     // The backtest comes straight after the screen, before any explanation, and runs on its own.
     if (o.btNote) h.push('<div class="panel"><div class="step">Backtest</div><p class="meta" style="margin:0">' + o.btNote + "</p></div>");
     else h.push('<div class="panel" id="bt-panel"></div>');
+    // The investor team's recorded vote on this example's top names (examples only; live runs show it in the local app).
+    var team = o.btKey && window.SCOUT_TEAM && window.SCOUT_TEAM[o.btKey];
+    if (team) h.push('<div class="panel">' + U.teamHtml(team, "The investor team's vote (recorded on the example's top names)") + "</div>");
     var top = o.noCards ? [] : o.rows.slice(0, o.topN);
     if (top.length) {
       h.push('<div class="panel"><div class="step">Why the price and the business may disagree — top ' + top.length + "</div>");

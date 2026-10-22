@@ -1,0 +1,37 @@
+{
+ "hash": "62500b0e7f7792e194519aa4",
+ "tag": "vote squeeze_hunter",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou look for crowded shorts that are starting to go wrong for the shorts: high short interest, many days to cover, rising volume and price turning up through its averages.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"DECK\", \"name\": \"DECKERS OUTDOOR CORP\", \"data\": {\"short_pct_shares_out\": \"+6.9%\", \"days_to_cover\": \"3.0d\", \"volume_ratio_50d\": \"1.04\", \"mom_1m\": \"+2.9%\", \"pct_vs_sma50\": \"-4.3%\"}}, {\"symbol\": \"HSY\", \"name\": \"HERSHEY CO\", \"data\": {\"short_pct_shares_out\": \"+4.5%\", \"days_to_cover\": \"6.8d\", \"volume_ratio_50d\": \"1.13\", \"mom_1m\": \"-5.6%\", \"pct_vs_sma50\": \"-6.8%\"}}, {\"symbol\": \"WING\", \"name\": \"Wingstop Inc.\", \"data\": {\"short_pct_shares_out\": \"+18.2%\", \"days_to_cover\": \"3.7d\", \"volume_ratio_50d\": \"0.93\", \"mom_1m\": \"+7.2%\", \"pct_vs_sma50\": \"+5.7%\"}}, {\"symbol\": \"COCO\", \"name\": \"Vita Coco Company, Inc.\", \"data\": {\"short_pct_shares_out\": \"+10.2%\", \"days_to_cover\": \"3.6d\", \"volume_ratio_50d\": \"1.94\", \"mom_1m\": \"+8.7%\", \"pct_vs_sma50\": \"-6.1%\"}}, {\"symbol\": \"CELH\", \"name\": \"Celsius Holdings, Inc.\", \"data\": {\"short_pct_shares_out\": \"+12.1%\", \"days_to_cover\": \"4.1d\", \"volume_ratio_50d\": \"0.58\", \"mom_1m\": \"-0.9%\", \"pct_vs_sma50\": \"-6.4%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"DECK\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"days_to_cover\",\n          \"value\": \"3.0d\",\n          \"point\": \"Days to cover of 3.0d is not many, so the short is not crowded enough for my style.\"\n        },\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"-4.3%\",\n          \"point\": \"Price at -4.3% vs the 50-day average is below the average, so it has not turned up through it.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"HSY\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+4.5%\",\n          \"point\": \"Short interest of +4.5% is not high enough to signal a crowded short.\"\n        },\n        {\n          \"field\": \"mom_1m\",\n          \"value\": \"-5.6%\",\n          \"point\": \"One-month momentum of -5.6% shows price is falling, not turning up.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"WING\",\n      \"conviction\": 0.5,\n      \"reasons\": [\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+18.2%\",\n          \"point\": \"Short interest of +18.2% signals a crowded short that could fuel a rally if covering begins.\"\n        },\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"+5.7%\",\n          \"point\": \"Price at +5.7% vs the 50-day average shows it has turned up through its average.\"\n        },\n        {\n          \"field\": \"mom_1m\",\n          \"value\": \"+7.2%\",\n          \"point\": \"One-month momentum of +7.2% confirms the upward move.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"COCO\",\n      \"conviction\": 0.3,\n      \"reasons\": [\n        {\n          \"field\": \"volume_ratio_50d\",\n          \"value\": \"1.94\",\n          \"point\": \"Volume ratio of 1.94 shows unusually strong rising volume, often a sign of accumulation against shorts.\"\n        },\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+10.2%\",\n          \"point\": \"Short interest of +10.2% is elevated enough to create squeeze potential.\"\n        },\n        {\n          \"field\": \"mom_1m\",\n          \"value\": \"+8.7%\",\n          \"point\": \"One-month momentum of +8.7% suggests the stock is starting to move against short sellers.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CELH\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"volume_ratio_50d\",\n          \"value\": \"0.58\",\n          \"point\": \"Volume ratio of 0.58 is below average, so volume is not rising.\"\n        },\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"-6.4%\",\n          \"point\": \"Price at -6.4% vs the 50-day average is below the average, not turning up through it.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 838,
+  "completion_tokens": 6691,
+  "total_tokens": 7529,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5930
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 454
+ },
+ "latency_s": 70.81,
+ "recorded_at": "2026-10-22T01:56:22+00:00"
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "bed8825d0f24b2e6f710c763",
+ "tag": "vote trend_follower",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou follow price. You buy names in established uptrends that are beating the market and you avoid or short names below their long-term averages. Fundamentals do not interest you; the tape does.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"AVGO\", \"name\": \"Broadcom Inc.\", \"data\": {\"mom_3m\": \"-9.8%\", \"mom_6m\": \"+1.8%\", \"mom_12m\": \"+7.8%\", \"pct_vs_sma50\": \"-3.2%\", \"pct_vs_sma200\": \"-1.9%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"-12.6%\"}}, {\"symbol\": \"AAOI\", \"name\": \"APPLIED OPTOELECTRONICS, INC.\", \"data\": {\"mom_3m\": \"-11.7%\", \"mom_6m\": \"-20.6%\", \"mom_12m\": \"+238.0%\", \"pct_vs_sma50\": \"-6.7%\", \"pct_vs_sma200\": \"-4.3%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"-35.0%\"}}, {\"symbol\": \"AMAT\", \"name\": \"APPLIED MATERIALS INC /DE\", \"data\": {\"mom_3m\": \"-15.3%\", \"mom_6m\": \"+28.4%\", \"mom_12m\": \"+142.2%\", \"pct_vs_sma50\": \"+4.1%\", \"pct_vs_sma200\": \"+17.8%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"+14.0%\"}}, {\"symbol\": \"COHR\", \"name\": \"COHERENT CORP.\", \"data\": {\"mom_3m\": \"-6.8%\", \"mom_6m\": \"+6.4%\", \"mom_12m\": \"+166.2%\", \"pct_vs_sma50\": \"-0.2%\", \"pct_vs_sma200\": \"+3.5%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"-8.0%\"}}, {\"symbol\": \"AMKR\", \"name\": \"AMKOR TECHNOLOGY, INC.\", \"data\": {\"mom_3m\": \"-27.5%\", \"mom_6m\": \"-7.2%\", \"mom_12m\": \"+72.6%\", \"pct_vs_sma50\": \"-1.2%\", \"pct_vs_sma200\": \"-11.1%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-21.6%\"}}]}"
+  }
+ ],
+ "response": "{\"votes\": [{\"symbol\": \"AVGO\", \"conviction\": -0.6, \"reasons\": [{\"field\": \"pct_vs_sma200\", \"value\": \"-1.9%\", \"point\": \"Price is -1.9% below the 200-day average, signaling it is below long-term averages and a short or avoid in my style.\"}, {\"field\": \"rs_6m_vs_spy\", \"value\": \"-12.6%\", \"point\": \"Relative strength of -12.6% versus SPY over 6 months shows the stock is underperforming the market.\"}, {\"field\": \"mom_3m\", \"value\": \"-9.8%\", \"point\": \"3-month momentum of -9.8% shows downward price action, reinforcing a bearish view.\"}]}, {\"symbol\": \"AAOI\", \"conviction\": -0.7, \"reasons\": [{\"field\": \"pct_vs_sma200\", \"value\": \"-4.3%\", \"point\": \"Price is -4.3% below the 200-day average, indicating it is below long-term averages and in a short-avoid zone.\"}, {\"field\": \"rs_6m_vs_spy\", \"value\": \"-35.0%\", \"point\": \"Relative strength of -35.0% versus SPY shows severe underperformance.\"}, {\"field\": \"mom_6m\", \"value\": \"-20.6%\", \"point\": \"6-month momentum of -20.6% confirms a downtrend in the medium term.\"}]}, {\"symbol\": \"AMAT\", \"conviction\": 0.4, \"reasons\": [{\"field\": \"pct_vs_sma200\", \"value\": \"+17.8%\", \"point\": \"Price is +17.8% above the 200-day average, indicating a strong established uptrend.\"}, {\"field\": \"rs_6m_vs_spy\", \"value\": \"+14.0%\", \"point\": \"Relative strength of +14.0% versus SPY shows it is beating the market.\"}, {\"field\": \"mom_6m\", \"value\": \"+28.4%\", \"point\": \"6-month momentum of +28.4% confirms positive price trend.\"}]}, {\"symbol\": \"COHR\", \"conviction\": 0.0, \"reasons\": []}, {\"symbol\": \"AMKR\", \"conviction\": -0.8, \"reasons\": [{\"field\": \"pct_vs_sma200\", \"value\": \"-11.1%\", \"point\": \"Price is -11.1% below the 200-day average, well below long-term averages, so I would short or avoid.\"}, {\"field\": \"sma50_above_sma200\", \"value\": \"no\", \"point\": \"The 50-day average is below the 200-day average, confirming a long-term downtrend.\"}, {\"field\": \"rs_6m_vs_spy\", \"value\": \"-21.6%\", \"point\": \"Relative strength of -21.6% versus SPY shows severe underperformance.\"}]}]}",
+ "usage": {
+  "prompt_tokens": 989,
+  "completion_tokens": 4372,
+  "total_tokens": 5361,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3697
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 605
+ },
+ "latency_s": 41.41,
+ "recorded_at": "2026-10-22T01:54:01+00:00"
+}

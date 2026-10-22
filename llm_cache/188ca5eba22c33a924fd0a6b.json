@@ -1,0 +1,37 @@
+{
+ "hash": "188ca5eba22c33a924fd0a6b",
+ "tag": "vote deep_value",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy a margin of safety: cheap on free cash flow and enterprise value, a balance sheet that can survive a bad year, and a price that has already been punished. You distrust stories, high multiples and companies that do not turn profit into cash.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"EMA\", \"name\": \"EMERA INC\", \"data\": {\"market_cap\": \"$13.7B\", \"fcf_yield\": \"n/a\", \"ev_to_sales\": \"n/a\", \"net_debt\": \"n/a\", \"net_income_ttm\": \"n/a\", \"fcf_margin\": \"n/a\", \"drawdown_52w\": \"-16.1%\"}}, {\"symbol\": \"ARGX\", \"name\": \"ARGENX SE\", \"data\": {\"market_cap\": \"$50.7B\", \"fcf_yield\": \"n/a\", \"ev_to_sales\": \"n/a\", \"net_debt\": \"n/a\", \"net_income_ttm\": \"n/a\", \"fcf_margin\": \"n/a\", \"drawdown_52w\": \"-22.7%\"}}, {\"symbol\": \"NLY\", \"name\": \"ANNALY CAPITAL MANAGEMENT INC\", \"data\": {\"market_cap\": \"$13.8B\", \"fcf_yield\": \"n/a\", \"ev_to_sales\": \"n/a\", \"net_debt\": \"n/a\", \"net_income_ttm\": \"n/a\", \"fcf_margin\": \"n/a\", \"drawdown_52w\": \"-20.1%\"}}, {\"symbol\": \"DOC\", \"name\": \"HEALTHPEAK PROPERTIES, INC.\", \"data\": {\"market_cap\": \"$12.8B\", \"fcf_yield\": \"n/a\", \"ev_to_sales\": \"29.29\", \"net_debt\": \"$8.4B\", \"net_income_ttm\": \"$243M\", \"fcf_margin\": \"n/a\", \"drawdown_52w\": \"-18.0%\"}}, {\"symbol\": \"HRL\", \"name\": \"HORMEL FOODS CORP /DE/\", \"data\": {\"market_cap\": \"$10.7B\", \"fcf_yield\": \"+7.3%\", \"ev_to_sales\": \"1.05\", \"net_debt\": \"$2.1B\", \"net_income_ttm\": \"$343M\", \"fcf_margin\": \"+6.4%\", \"drawdown_52w\": \"-25.9%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"EMA\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"ARGX\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"NLY\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"DOC\",\n      \"conviction\": -0.5,\n      \"reasons\": [\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"29.29\",\n          \"point\": \"EV/Sales of 29.29 means paying 29.29 times sales, which is not a margin of safety.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$8.4B\",\n          \"point\": \"Net debt of $8.4B is a heavy burden that may not survive a bad year.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"HRL\",\n      \"conviction\": 0.8,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_yield\",\n          \"value\": \"+7.3%\",\n          \"point\": \"FCF yield of +7.3% indicates the stock is cheap on free cash flow.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"1.05\",\n          \"point\": \"EV/Sales of 1.05 is a low multiple, providing margin of safety.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-25.9%\",\n          \"point\": \"Drawdown of -25.9% shows the price has already been punished.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 912,
+  "completion_tokens": 2958,
+  "total_tokens": 3870,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2571
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 528
+ },
+ "latency_s": 30.27,
+ "recorded_at": "2026-10-22T01:55:42+00:00"
+}

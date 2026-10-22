@@ -1,0 +1,37 @@
+{
+ "hash": "6c7c1a3616276e80a1b7358c",
+ "tag": "vote contrarian_rebound",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy fear in businesses that still make cash: deeply oversold, far below recent highs, on heavy volume. You stay away when the business itself is broken.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"BX\", \"name\": \"Blackstone Inc.\", \"data\": {\"rsi14\": \"31.26\", \"drawdown_52w\": \"-28.9%\", \"volume_ratio_50d\": \"1.53\", \"pct_vs_sma20\": \"-5.2%\", \"mom_1m\": \"-12.7%\", \"fcf_ttm\": \"$5.5B\"}}, {\"symbol\": \"SBUX\", \"name\": \"STARBUCKS CORP\", \"data\": {\"rsi14\": \"34.44\", \"drawdown_52w\": \"-14.1%\", \"volume_ratio_50d\": \"4.24\", \"pct_vs_sma20\": \"-2.3%\", \"mom_1m\": \"-6.8%\", \"fcf_ttm\": \"$3.6B\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"BX\",\n      \"conviction\": 0.6,\n      \"reasons\": [\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-28.9%\",\n          \"point\": \"The stock is down -28.9% from its 52-week high, which matches deep fear and a far-below-recent-highs setup.\"\n        },\n        {\n          \"field\": \"rsi14\",\n          \"value\": \"31.26\",\n          \"point\": \"RSI14 of 31.26 is near oversold, showing intense selling pressure.\"\n        },\n        {\n          \"field\": \"fcf_ttm\",\n          \"value\": \"$5.5B\",\n          \"point\": \"Free cash flow of $5.5B shows the business still generates cash, so it is not broken.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"SBUX\",\n      \"conviction\": 0.0,\n      \"reasons\": [\n        {\n          \"field\": \"rsi14\",\n          \"value\": \"34.44\",\n          \"point\": \"RSI14 of 34.44 is not deeply oversold, so the deep fear condition is not met.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-14.1%\",\n          \"point\": \"Drawdown of -14.1% is not far below recent highs by my style.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 596,
+  "completion_tokens": 3211,
+  "total_tokens": 3807,
+  "prompt_tokens_details": {
+   "cached_tokens": 512
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2886
+  },
+  "prompt_cache_hit_tokens": 512,
+  "prompt_cache_miss_tokens": 84
+ },
+ "latency_s": 37.52,
+ "recorded_at": "2026-10-22T01:55:48+00:00"
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "5daca6845ad0aad9e38a37f1",
+ "tag": "vote growth_at_reasonable_price",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou want revenue growth that is real and ideally accelerating, at a valuation that does not already price in perfection. Decelerating growth at a rich multiple is your sell signal.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"VICR\", \"name\": \"VICOR CORP\", \"data\": {\"revenue_growth_yoy\": \"+96.1%\", \"revenue_growth_q_yoy\": \"+20.2%\", \"revenue_growth_accel\": \"+8.7%\", \"ev_to_sales\": \"15.92\", \"operating_margin\": \"+13.7%\", \"mom_6m\": \"+41.9%\"}}, {\"symbol\": \"SITM\", \"name\": \"SITIME Corp\", \"data\": {\"revenue_growth_yoy\": \"+83.0%\", \"revenue_growth_q_yoy\": \"+126.5%\", \"revenue_growth_accel\": \"+38.2%\", \"ev_to_sales\": \"37.50\", \"operating_margin\": \"-3.9%\", \"mom_6m\": \"+58.6%\"}}, {\"symbol\": \"STRL\", \"name\": \"STERLING INFRASTRUCTURE, INC.\", \"data\": {\"revenue_growth_yoy\": \"+60.8%\", \"revenue_growth_q_yoy\": \"+90.1%\", \"revenue_growth_accel\": \"-1.5%\", \"ev_to_sales\": \"4.56\", \"operating_margin\": \"+17.5%\", \"mom_6m\": \"+19.0%\"}}, {\"symbol\": \"SANM\", \"name\": \"SANMINA CORP\", \"data\": {\"revenue_growth_yoy\": \"+58.6%\", \"revenue_growth_q_yoy\": \"+69.7%\", \"revenue_growth_accel\": \"-32.6%\", \"ev_to_sales\": \"0.91\", \"operating_margin\": \"+4.2%\", \"mom_6m\": \"+48.4%\"}}, {\"symbol\": \"KLIC\", \"name\": \"KULICKE & SOFFA INDUSTRIES INC\", \"data\": {\"revenue_growth_yoy\": \"+44.4%\", \"revenue_growth_q_yoy\": \"+122.6%\", \"revenue_growth_accel\": \"+72.8%\", \"ev_to_sales\": \"4.58\", \"operating_margin\": \"+13.2%\", \"mom_6m\": \"+18.9%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"VICR\",\n      \"conviction\": 0.3,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"+8.7%\",\n          \"point\": \"Revenue growth acceleration of +8.7% fits my preference for accelerating growth.\"\n        },\n        {\n          \"field\": \"revenue_growth_q_yoy\",\n          \"value\": \"+20.2%\",\n          \"point\": \"Quarterly year-over-year revenue growth of +20.2% shows real expansion.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"15.92\",\n          \"point\": \"EV/sales of 15.92 is rich and likely prices in a lot, limiting my conviction.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"SITM\",\n      \"conviction\": -0.3,\n      \"reasons\": [\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"37.50\",\n          \"point\": \"EV/sales of 37.50 prices in perfection, which conflicts with my valuation discipline.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"-3.9%\",\n          \"point\": \"Operating margin of -3.9% means growth is not yet profitable, reducing attractiveness.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"+38.2%\",\n          \"point\": \"Although revenue growth acceleration of +38.2% is strong, the valuation and lack of profitability dominate my view.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"STRL\",\n      \"conviction\": 0.6,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_q_yoy\",\n          \"value\": \"+90.1%\",\n          \"point\": \"Quarterly year-over-year revenue growth of +90.1% is very strong.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"4.56\",\n          \"point\": \"EV/sales of 4.56 is reasonable and does not already price in perfection.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"+17.5%\",\n          \"point\": \"Operating margin of +17.5% indicates profitable growth.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"SANM\",\n      \"conviction\": 0.2,\n      \"reasons\": [\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"0.91\",\n          \"point\": \"EV/sales of 0.91 is very cheap, so the decelerating growth is not at a rich multiple.\"\n        },\n        {\n          \"field\": \"revenue_growth_q_yoy\",\n          \"value\": \"+69.7%\",\n          \"point\": \"Quarterly year-over-year revenue growth of +69.7% remains strong.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-32.6%\",\n          \"point\": \"Growth deceleration of -32.6% reduces my conviction because I prefer accelerating revenue.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"KLIC\",\n      \"conviction\": 0.8,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"+72.8%\",\n          \"point\": \"Revenue growth acceleration of +72.8% is exactly the accelerating growth I seek.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"4.58\",\n          \"point\": \"EV/sales of 4.58 is reasonable and not perfection-priced.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"+13.2%\",\n          \"point\": \"Operating margin of +13.2% shows the growth is profitable.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 908,
+  "completion_tokens": 6574,
+  "total_tokens": 7482,
+  "prompt_tokens_details": {
+   "cached_tokens": 896
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5698
+  },
+  "prompt_cache_hit_tokens": 896,
+  "prompt_cache_miss_tokens": 12
+ },
+ "latency_s": 66.78,
+ "recorded_at": "2026-10-22T01:53:08+00:00"
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "6f54a5eaf1a64fe350f9d895",
+ "tag": "vote contrarian_rebound",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy fear in businesses that still make cash: deeply oversold, far below recent highs, on heavy volume. You stay away when the business itself is broken.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"OPFI\", \"name\": \"OppFi Inc.\", \"data\": {\"rsi14\": \"34.37\", \"drawdown_52w\": \"-46.5%\", \"volume_ratio_50d\": \"0.85\", \"pct_vs_sma20\": \"-6.1%\", \"mom_1m\": \"-19.1%\", \"fcf_ttm\": \"$385M\"}}, {\"symbol\": \"COLL\", \"name\": \"COLLEGIUM PHARMACEUTICAL, INC\", \"data\": {\"rsi14\": \"34.01\", \"drawdown_52w\": \"-55.6%\", \"volume_ratio_50d\": \"0.62\", \"pct_vs_sma20\": \"-1.0%\", \"mom_1m\": \"-5.4%\", \"fcf_ttm\": \"$328M\"}}, {\"symbol\": \"YELP\", \"name\": \"YELP INC\", \"data\": {\"rsi14\": \"46.85\", \"drawdown_52w\": \"-42.7%\", \"volume_ratio_50d\": \"1.58\", \"pct_vs_sma20\": \"+1.3%\", \"mom_1m\": \"-5.4%\", \"fcf_ttm\": \"$297M\"}}, {\"symbol\": \"TDOC\", \"name\": \"Teladoc Health, Inc.\", \"data\": {\"rsi14\": \"33.75\", \"drawdown_52w\": \"-43.0%\", \"volume_ratio_50d\": \"1.07\", \"pct_vs_sma20\": \"-8.1%\", \"mom_1m\": \"-9.2%\", \"fcf_ttm\": \"$254M\"}}, {\"symbol\": \"CRMD\", \"name\": \"CorMedix Inc.\", \"data\": {\"rsi14\": \"36.68\", \"drawdown_52w\": \"-42.5%\", \"volume_ratio_50d\": \"0.92\", \"pct_vs_sma20\": \"-4.3%\", \"mom_1m\": \"-10.0%\", \"fcf_ttm\": \"$250M\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\"symbol\": \"OPFI\", \"conviction\": 0, \"reasons\": []},\n    {\"symbol\": \"COLL\", \"conviction\": 0, \"reasons\": []},\n    {\"symbol\": \"YELP\", \"conviction\": 0, \"reasons\": []},\n    {\n      \"symbol\": \"TDOC\",\n      \"conviction\": 0.5,\n      \"reasons\": [\n        {\"field\": \"rsi14\", \"value\": \"33.75\", \"point\": \"RSI of 33.75 is near the oversold level and signals fear in the stock.\"},\n        {\"field\": \"volume_ratio_50d\", \"value\": \"1.07\", \"point\": \"Volume ratio of 1.07 shows above-average trading volume, confirming the selloff is on heavy volume.\"},\n        {\"field\": \"fcf_ttm\", \"value\": \"$254M\", \"point\": \"Free cash flow of $254M shows the business still generates cash and is not broken.\"}\n      ]\n    },\n    {\"symbol\": \"CRMD\", \"conviction\": 0, \"reasons\": []}\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 882,
+  "completion_tokens": 4858,
+  "total_tokens": 5740,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4603
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 498
+ },
+ "latency_s": 53.76,
+ "recorded_at": "2026-10-22T01:56:45+00:00"
+}

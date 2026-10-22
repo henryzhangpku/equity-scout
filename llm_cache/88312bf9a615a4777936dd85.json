@@ -1,0 +1,37 @@
+{
+ "hash": "88312bf9a615a4777936dd85",
+ "tag": "vote forensic_skeptic",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou hunt for what can go wrong: profits that do not show up as cash, thin margins, leverage, rich valuations, and a crowd already short. You are comfortable saying a name should be sold or shorted, and you need evidence before you are bullish.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"VICR\", \"name\": \"VICOR CORP\", \"data\": {\"net_income_ttm\": \"$137M\", \"fcf_ttm\": \"$87M\", \"net_margin\": \"+18.9%\", \"net_debt\": \"$-404M\", \"ev_to_sales\": \"15.92\", \"short_pct_shares_out\": \"+4.5%\", \"days_to_cover\": \"3.2d\"}}, {\"symbol\": \"SITM\", \"name\": \"SITIME Corp\", \"data\": {\"net_income_ttm\": \"$14M\", \"fcf_ttm\": \"$84M\", \"net_margin\": \"+3.0%\", \"net_debt\": \"$-1.9B\", \"ev_to_sales\": \"37.50\", \"short_pct_shares_out\": \"+4.0%\", \"days_to_cover\": \"3.1d\"}}, {\"symbol\": \"STRL\", \"name\": \"STERLING INFRASTRUCTURE, INC.\", \"data\": {\"net_income_ttm\": \"$431M\", \"fcf_ttm\": \"$482M\", \"net_margin\": \"+12.5%\", \"net_debt\": \"$-181M\", \"ev_to_sales\": \"4.56\", \"short_pct_shares_out\": \"+3.9%\", \"days_to_cover\": \"2.2d\"}}, {\"symbol\": \"SANM\", \"name\": \"SANMINA CORP\", \"data\": {\"net_income_ttm\": \"$308M\", \"fcf_ttm\": \"$594M\", \"net_margin\": \"+2.4%\", \"net_debt\": \"$389M\", \"ev_to_sales\": \"0.91\", \"short_pct_shares_out\": \"+3.4%\", \"days_to_cover\": \"3.7d\"}}, {\"symbol\": \"KLIC\", \"name\": \"KULICKE & SOFFA INDUSTRIES INC\", \"data\": {\"net_income_ttm\": \"$116M\", \"fcf_ttm\": \"$41M\", \"net_margin\": \"+12.2%\", \"net_debt\": \"$-407M\", \"ev_to_sales\": \"4.58\", \"short_pct_shares_out\": \"+4.3%\", \"days_to_cover\": \"4.0d\"}}]}"
+  }
+ ],
+ "response": "{\"votes\": [{\"symbol\": \"VICR\", \"conviction\": -0.4, \"reasons\": [{\"field\": \"ev_to_sales\", \"value\": \"15.92\", \"point\": \"EV/sales of 15.92 is a rich valuation that leaves little room for error.\"}, {\"field\": \"fcf_ttm\", \"value\": \"$87M\", \"point\": \"Free cash flow of $87M is below net income of $137M, showing profits are not fully converting to cash.\"}]}, {\"symbol\": \"SITM\", \"conviction\": -0.5, \"reasons\": [{\"field\": \"ev_to_sales\", \"value\": \"37.50\", \"point\": \"EV/sales of 37.50 is extremely rich, implying high growth expectations that could disappoint.\"}, {\"field\": \"net_margin\", \"value\": \"+3.0%\", \"point\": \"Net margin of +3.0% is thin, leaving little buffer for cost or pricing pressure.\"}, {\"field\": \"short_pct_shares_out\", \"value\": \"+4.0%\", \"point\": \"Short interest of +4.0% indicates a crowd already short, confirming bearish sentiment.\"}]}, {\"symbol\": \"STRL\", \"conviction\": 0.7, \"reasons\": [{\"field\": \"fcf_ttm\", \"value\": \"$482M\", \"point\": \"Free cash flow of $482M exceeds net income of $431M, showing profits are backed by cash.\"}, {\"field\": \"net_debt\", \"value\": \"$-181M\", \"point\": \"Net debt of $-181M reflects net cash, reducing balance-sheet risk.\"}, {\"field\": \"ev_to_sales\", \"value\": \"4.56\", \"point\": \"EV/sales of 4.56 is not demanding, providing upside if fundamentals hold.\"}]}, {\"symbol\": \"SANM\", \"conviction\": -0.3, \"reasons\": [{\"field\": \"net_margin\", \"value\": \"+2.4%\", \"point\": \"Net margin of +2.4% is very thin, creating vulnerability to any operational hiccup.\"}, {\"field\": \"net_debt\", \"value\": \"$389M\", \"point\": \"Net debt of $389M indicates leverage, which amplifies downside risk.\"}]}, {\"symbol\": \"KLIC\", \"conviction\": -0.4, \"reasons\": [{\"field\": \"fcf_ttm\", \"value\": \"$41M\", \"point\": \"Free cash flow of $41M is far below net income of $116M, indicating weak cash conversion.\"}, {\"field\": \"short_pct_shares_out\", \"value\": \"+4.3%\", \"point\": \"Short interest of +4.3% shows a crowd already short, aligning with a cautious stance.\"}, {\"field\": \"days_to_cover\", \"value\": \"4.0d\", \"point\": \"Days to cover of 4.0d suggests a moderately crowded short trade.\"}]}]}",
+ "usage": {
+  "prompt_tokens": 947,
+  "completion_tokens": 5120,
+  "total_tokens": 6067,
+  "prompt_tokens_details": {
+   "cached_tokens": 896
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4460
+  },
+  "prompt_cache_hit_tokens": 896,
+  "prompt_cache_miss_tokens": 51
+ },
+ "latency_s": 52.77,
+ "recorded_at": "2026-10-22T01:52:54+00:00"
+}

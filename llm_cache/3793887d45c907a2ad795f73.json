@@ -1,0 +1,37 @@
+{
+ "hash": "3793887d45c907a2ad795f73",
+ "tag": "vote growth_at_reasonable_price",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou want revenue growth that is real and ideally accelerating, at a valuation that does not already price in perfection. Decelerating growth at a rich multiple is your sell signal.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"DECK\", \"name\": \"DECKERS OUTDOOR CORP\", \"data\": {\"revenue_growth_yoy\": \"+7.9%\", \"revenue_growth_q_yoy\": \"+5.7%\", \"revenue_growth_accel\": \"-3.8%\", \"ev_to_sales\": \"1.74\", \"operating_margin\": \"+22.7%\", \"mom_6m\": \"-24.8%\"}}, {\"symbol\": \"HSY\", \"name\": \"HERSHEY CO\", \"data\": {\"revenue_growth_yoy\": \"+7.7%\", \"revenue_growth_q_yoy\": \"+6.6%\", \"revenue_growth_accel\": \"-4.0%\", \"ev_to_sales\": \"3.11\", \"operating_margin\": \"+17.8%\", \"mom_6m\": \"-21.7%\"}}, {\"symbol\": \"WING\", \"name\": \"Wingstop Inc.\", \"data\": {\"revenue_growth_yoy\": \"+7.6%\", \"revenue_growth_q_yoy\": \"+6.4%\", \"revenue_growth_accel\": \"-0.9%\", \"ev_to_sales\": \"5.98\", \"operating_margin\": \"+27.9%\", \"mom_6m\": \"-33.5%\"}}, {\"symbol\": \"COCO\", \"name\": \"Vita Coco Company, Inc.\", \"data\": {\"revenue_growth_yoy\": \"+26.1%\", \"revenue_growth_q_yoy\": \"+28.1%\", \"revenue_growth_accel\": \"-9.2%\", \"ev_to_sales\": \"4.16\", \"operating_margin\": \"+19.1%\", \"mom_6m\": \"+14.6%\"}}, {\"symbol\": \"CELH\", \"name\": \"Celsius Holdings, Inc.\", \"data\": {\"revenue_growth_yoy\": \"+82.9%\", \"revenue_growth_q_yoy\": \"+10.6%\", \"revenue_growth_accel\": \"-127.0%\", \"ev_to_sales\": \"2.29\", \"operating_margin\": \"+5.3%\", \"mom_6m\": \"-24.7%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"DECK\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_accel\", \"value\": \"-3.8%\", \"point\": \"Growth is decelerating at -3.8%, so it does not meet my acceleration threshold.\"},\n        {\"field\": \"ev_to_sales\", \"value\": \"1.74\", \"point\": \"The multiple is only 1.74, so the deceleration is not paired with a rich multiple and I abstain.\"}\n      ]\n    },\n    {\n      \"symbol\": \"HSY\",\n      \"conviction\": -0.5,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_accel\", \"value\": \"-4.0%\", \"point\": \"Revenue growth is decelerating at -4.0%, which is a negative signal in my style.\"},\n        {\"field\": \"ev_to_sales\", \"value\": \"3.11\", \"point\": \"EV/sales of 3.11 on decelerating growth looks like a rich multiple to me.\"},\n        {\"field\": \"mom_6m\", \"value\": \"-21.7%\", \"point\": \"The stock has fallen -21.7% over six months, confirming weak momentum.\"}\n      ]\n    },\n    {\n      \"symbol\": \"WING\",\n      \"conviction\": -1,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_accel\", \"value\": \"-0.9%\", \"point\": \"Growth is decelerating at -0.9%, which is a warning sign for my style.\"},\n        {\"field\": \"ev_to_sales\", \"value\": \"5.98\", \"point\": \"EV/sales of 5.98 is a rich multiple that already prices in perfection.\"},\n        {\"field\": \"revenue_growth_yoy\", \"value\": \"+7.6%\", \"point\": \"Revenue growth of +7.6% is too low to justify that multiple.\"}\n      ]\n    },\n    {\n      \"symbol\": \"COCO\",\n      \"conviction\": 0.3,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_q_yoy\", \"value\": \"+28.1%\", \"point\": \"Quarterly revenue growth of +28.1% is strong and real.\"},\n        {\"field\": \"revenue_growth_accel\", \"value\": \"-9.2%\", \"point\": \"Growth is decelerating at -9.2%, so I cannot get fully bullish.\"},\n        {\"field\": \"ev_to_sales\", \"value\": \"4.16\", \"point\": \"EV/sales of 4.16 is not a rich multiple for this growth level.\"}\n      ]\n    },\n    {\n      \"symbol\": \"CELH\",\n      \"conviction\": -0.6,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_q_yoy\", \"value\": \"+10.6%\", \"point\": \"Quarterly revenue growth of +10.6% is far below the annual +82.9%.\"},\n        {\"field\": \"revenue_growth_accel\", \"value\": \"-127.0%\", \"point\": \"Revenue growth acceleration is -127.0%, an extreme deceleration that is a sell signal.\"},\n        {\"field\": \"ev_to_sales\", \"value\": \"2.29\", \"point\": \"Even with EV/sales of 2.29, the collapsing growth makes the stock unattractive.\"}\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 899,
+  "completion_tokens": 9593,
+  "total_tokens": 10492,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8819
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 515
+ },
+ "latency_s": 100.38,
+ "recorded_at": "2026-10-22T01:56:51+00:00"
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "fda6e4bfd3361bf268cfe432",
+ "tag": "vote small_cap_specialist",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou fish where large funds cannot: smaller, less liquid companies that are growing and self-funding, after the market has marked them down. You avoid names too illiquid to exit.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"VICR\", \"name\": \"VICOR CORP\", \"data\": {\"market_cap\": \"$11.9B\", \"avg_dollar_volume_50d\": \"$197M\", \"revenue_growth_yoy\": \"+96.1%\", \"fcf_margin\": \"+12.1%\", \"drawdown_52w\": \"-30.9%\", \"mom_3m\": \"-3.6%\"}}, {\"symbol\": \"SITM\", \"name\": \"SITIME Corp\", \"data\": {\"market_cap\": \"$19.4B\", \"avg_dollar_volume_50d\": \"$280M\", \"revenue_growth_yoy\": \"+83.0%\", \"fcf_margin\": \"+18.1%\", \"drawdown_52w\": \"-28.4%\", \"mom_3m\": \"+2.6%\"}}, {\"symbol\": \"STRL\", \"name\": \"STERLING INFRASTRUCTURE, INC.\", \"data\": {\"market_cap\": \"$15.9B\", \"avg_dollar_volume_50d\": \"$323M\", \"revenue_growth_yoy\": \"+60.8%\", \"fcf_margin\": \"+14.0%\", \"drawdown_52w\": \"-47.8%\", \"mom_3m\": \"-24.0%\"}}, {\"symbol\": \"SANM\", \"name\": \"SANMINA CORP\", \"data\": {\"market_cap\": \"$11.3B\", \"avg_dollar_volume_50d\": \"$129M\", \"revenue_growth_yoy\": \"+58.6%\", \"fcf_margin\": \"+4.7%\", \"drawdown_52w\": \"-25.6%\", \"mom_3m\": \"+0.8%\"}}, {\"symbol\": \"KLIC\", \"name\": \"KULICKE & SOFFA INDUSTRIES INC\", \"data\": {\"market_cap\": \"$4.8B\", \"avg_dollar_volume_50d\": \"$71M\", \"revenue_growth_yoy\": \"+44.4%\", \"fcf_margin\": \"+4.3%\", \"drawdown_52w\": \"-31.9%\", \"mom_3m\": \"-19.6%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"VICR\",\n      \"conviction\": 0.8,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_yoy\", \"value\": \"+96.1%\", \"point\": \"This high revenue growth shows rapid expansion, fitting the style of growing companies.\"},\n        {\"field\": \"fcf_margin\", \"value\": \"+12.1%\", \"point\": \"Positive free cash flow margin indicates the company is self-funding.\"},\n        {\"field\": \"drawdown_52w\", \"value\": \"-30.9%\", \"point\": \"The stock is down significantly from its 52-week high, suggesting the market has marked it down.\"}\n      ]\n    },\n    {\n      \"symbol\": \"SITM\",\n      \"conviction\": 0.7,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_yoy\", \"value\": \"+83.0%\", \"point\": \"This strong revenue growth fits the style of seeking growing companies.\"},\n        {\"field\": \"fcf_margin\", \"value\": \"+18.1%\", \"point\": \"A high positive free cash flow margin shows the company is self-funding.\"},\n        {\"field\": \"drawdown_52w\", \"value\": \"-28.4%\", \"point\": \"The stock is down from its 52-week high, indicating a markdown by the market.\"}\n      ]\n    },\n    {\n      \"symbol\": \"STRL\",\n      \"conviction\": 0.9,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_yoy\", \"value\": \"+60.8%\", \"point\": \"Strong revenue growth indicates the company is expanding.\"},\n        {\"field\": \"fcf_margin\", \"value\": \"+14.0%\", \"point\": \"Positive free cash flow margin shows self-funding.\"},\n        {\"field\": \"drawdown_52w\", \"value\": \"-47.8%\", \"point\": \"This deep drawdown from the 52-week high represents a significant market markdown, creating opportunity.\"}\n      ]\n    },\n    {\n      \"symbol\": \"SANM\",\n      \"conviction\": 0.3,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_yoy\", \"value\": \"+58.6%\", \"point\": \"Revenue growth is strong, fitting the growth requirement.\"},\n        {\"field\": \"fcf_margin\", \"value\": \"+4.7%\", \"point\": \"Positive free cash flow margin is present but thin, indicating limited self-funding capacity.\"},\n        {\"field\": \"drawdown_52w\", \"value\": \"-25.6%\", \"point\": \"The stock is down from its 52-week high, suggesting some markdown.\"}\n      ]\n    },\n    {\n      \"symbol\": \"KLIC\",\n      \"conviction\": 0.4,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_yoy\", \"value\": \"+44.4%\", \"point\": \"Decent revenue growth fits the growth aspect of the style.\"},\n        {\"field\": \"fcf_margin\", \"value\": \"+4.3%\", \"point\": \"Positive free cash flow margin indicates self-funding, though the margin is low.\"},\n        {\"field\": \"drawdown_52w\", \"value\": \"-31.9%\", \"point\": \"The stock is down from its 52-week high, indicating a markdown.\"}\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 900,
+  "completion_tokens": 4366,
+  "total_tokens": 5266,
+  "prompt_tokens_details": {
+   "cached_tokens": 896
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3609
+  },
+  "prompt_cache_hit_tokens": 896,
+  "prompt_cache_miss_tokens": 4
+ },
+ "latency_s": 43.98,
+ "recorded_at": "2026-10-22T01:52:45+00:00"
+}

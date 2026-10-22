@@ -1,0 +1,37 @@
+{
+ "hash": "91879c3a300ec6a1306dc21d",
+ "tag": "vote growth_at_reasonable_price",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou want revenue growth that is real and ideally accelerating, at a valuation that does not already price in perfection. Decelerating growth at a rich multiple is your sell signal.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"EMA\", \"name\": \"EMERA INC\", \"data\": {\"revenue_growth_yoy\": \"n/a\", \"revenue_growth_q_yoy\": \"n/a\", \"revenue_growth_accel\": \"n/a\", \"ev_to_sales\": \"n/a\", \"operating_margin\": \"n/a\", \"mom_6m\": \"-12.3%\"}}, {\"symbol\": \"ARGX\", \"name\": \"ARGENX SE\", \"data\": {\"revenue_growth_yoy\": \"n/a\", \"revenue_growth_q_yoy\": \"n/a\", \"revenue_growth_accel\": \"n/a\", \"ev_to_sales\": \"n/a\", \"operating_margin\": \"n/a\", \"mom_6m\": \"+2.3%\"}}, {\"symbol\": \"NLY\", \"name\": \"ANNALY CAPITAL MANAGEMENT INC\", \"data\": {\"revenue_growth_yoy\": \"n/a\", \"revenue_growth_q_yoy\": \"n/a\", \"revenue_growth_accel\": \"n/a\", \"ev_to_sales\": \"n/a\", \"operating_margin\": \"n/a\", \"mom_6m\": \"-11.3%\"}}, {\"symbol\": \"DOC\", \"name\": \"HEALTHPEAK PROPERTIES, INC.\", \"data\": {\"revenue_growth_yoy\": \"+23.3%\", \"revenue_growth_q_yoy\": \"+45.4%\", \"revenue_growth_accel\": \"+10.9%\", \"ev_to_sales\": \"29.29\", \"operating_margin\": \"n/a\", \"mom_6m\": \"+14.4%\"}}, {\"symbol\": \"HRL\", \"name\": \"HORMEL FOODS CORP /DE/\", \"data\": {\"revenue_growth_yoy\": \"+0.7%\", \"revenue_growth_q_yoy\": \"-2.4%\", \"revenue_growth_accel\": \"-4.9%\", \"ev_to_sales\": \"1.05\", \"operating_margin\": \"+4.7%\", \"mom_6m\": \"-5.7%\"}}]}"
+  }
+ ],
+ "response": "{\"votes\": [{\"symbol\": \"EMA\", \"conviction\": 0, \"reasons\": [{\"field\": \"revenue_growth_yoy\", \"value\": \"n/a\", \"point\": \"Revenue growth data is missing, so I cannot judge if growth is real or accelerating.\"}]}, {\"symbol\": \"ARGX\", \"conviction\": 0, \"reasons\": [{\"field\": \"revenue_growth_yoy\", \"value\": \"n/a\", \"point\": \"Revenue growth data is missing, so I cannot judge if growth is real or accelerating.\"}]}, {\"symbol\": \"NLY\", \"conviction\": 0, \"reasons\": [{\"field\": \"revenue_growth_yoy\", \"value\": \"n/a\", \"point\": \"Revenue growth data is missing, so I cannot judge if growth is real or accelerating.\"}]}, {\"symbol\": \"DOC\", \"conviction\": 0, \"reasons\": [{\"field\": \"revenue_growth_accel\", \"value\": \"+10.9%\", \"point\": \"The +10.9% acceleration means growth is accelerating, so the decelerating-growth sell signal is not triggered.\"}, {\"field\": \"ev_to_sales\", \"value\": \"29.29\", \"point\": \"EV/Sales of 29.29 appears to price in perfection, so the valuation requirement for buying is not met.\"}]}, {\"symbol\": \"HRL\", \"conviction\": 0, \"reasons\": [{\"field\": \"revenue_growth_q_yoy\", \"value\": \"-2.4%\", \"point\": \"The -2.4% quarterly revenue growth shows recent revenue decline, so growth is not real.\"}, {\"field\": \"revenue_growth_accel\", \"value\": \"-4.9%\", \"point\": \"The -4.9% acceleration value indicates growth is decelerating, which is negative for my style.\"}, {\"field\": \"ev_to_sales\", \"value\": \"1.05\", \"point\": \"EV/Sales of 1.05 is not a rich multiple, so the decelerating growth alone does not trigger my sell signal.\"}]}]}",
+ "usage": {
+  "prompt_tokens": 872,
+  "completion_tokens": 7441,
+  "total_tokens": 8313,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6979
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 488
+ },
+ "latency_s": 85.28,
+ "recorded_at": "2026-10-22T01:56:37+00:00"
+}

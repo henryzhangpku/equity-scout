@@ -1,0 +1,37 @@
+{
+ "hash": "462b8e2d5b157ac54936e0f7",
+ "tag": "vote growth_at_reasonable_price",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou want revenue growth that is real and ideally accelerating, at a valuation that does not already price in perfection. Decelerating growth at a rich multiple is your sell signal.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"WOLF\", \"name\": \"WOLFSPEED, INC.\", \"data\": {\"revenue_growth_yoy\": \"-12.2%\", \"revenue_growth_q_yoy\": \"-24.1%\", \"revenue_growth_accel\": \"-5.1%\", \"ev_to_sales\": \"3.37\", \"operating_margin\": \"-82.6%\", \"mom_6m\": \"+27.0%\"}}, {\"symbol\": \"KSS\", \"name\": \"KOHLS Corp\", \"data\": {\"revenue_growth_yoy\": \"-2.9%\", \"revenue_growth_q_yoy\": \"-0.9%\", \"revenue_growth_accel\": \"+1.2%\", \"ev_to_sales\": \"0.22\", \"operating_margin\": \"+3.8%\", \"mom_6m\": \"+49.0%\"}}, {\"symbol\": \"CBRL\", \"name\": \"CRACKER BARREL OLD COUNTRY STORE, INC\", \"data\": {\"revenue_growth_yoy\": \"-4.7%\", \"revenue_growth_q_yoy\": \"-2.2%\", \"revenue_growth_accel\": \"+0.7%\", \"ev_to_sales\": \"0.51\", \"operating_margin\": \"-0.4%\", \"mom_6m\": \"+88.6%\"}}, {\"symbol\": \"MNRO\", \"name\": \"MONRO, INC.\", \"data\": {\"revenue_growth_yoy\": \"-3.2%\", \"revenue_growth_q_yoy\": \"-7.2%\", \"revenue_growth_accel\": \"-3.1%\", \"ev_to_sales\": \"0.40\", \"operating_margin\": \"+1.7%\", \"mom_6m\": \"-14.3%\"}}, {\"symbol\": \"SWKS\", \"name\": \"SKYWORKS SOLUTIONS, INC.\", \"data\": {\"revenue_growth_yoy\": \"+0.1%\", \"revenue_growth_q_yoy\": \"-3.1%\", \"revenue_growth_accel\": \"-2.1%\", \"ev_to_sales\": \"2.95\", \"operating_margin\": \"+7.6%\", \"mom_6m\": \"+44.0%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"WOLF\",\n      \"conviction\": -0.8,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_q_yoy\",\n          \"value\": \"-24.1%\",\n          \"point\": \"Quarterly revenue growth is -24.1%, showing the business is shrinking.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-5.1%\",\n          \"point\": \"Revenue growth acceleration is -5.1%, so growth is decelerating rather than improving.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"3.37\",\n          \"point\": \"EV/sales of 3.37 is a rich multiple for a company with negative revenue growth and operating margin of -82.6%.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"KSS\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"CBRL\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"MNRO\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"SWKS\",\n      \"conviction\": -0.6,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_q_yoy\",\n          \"value\": \"-3.1%\",\n          \"point\": \"Quarterly revenue growth is -3.1%, so recent revenue is shrinking.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-2.1%\",\n          \"point\": \"Revenue growth acceleration is -2.1%, indicating deceleration.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"2.95\",\n          \"point\": \"EV/sales of 2.95 is a rich multiple for a company with negative quarterly revenue growth.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 908,
+  "completion_tokens": 3433,
+  "total_tokens": 4341,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2988
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 524
+ },
+ "latency_s": 37.23,
+ "recorded_at": "2026-10-22T01:57:16+00:00"
+}

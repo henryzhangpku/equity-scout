@@ -111,6 +111,35 @@ def export() -> None:
     export_loop()
     export_mtf()
     export_backtests()
+    export_team()
+
+
+def export_team() -> None:
+    """The investor team's recorded votes (runs/<run>/team.json) and the latest morning brief, for the site."""
+    def slim_team(t: dict) -> dict:
+        return {"weights_source": t["weights_source"], "investors": t["investors"], "tally": t["tally"],
+                "votes": [{k: v[k] for k in ("investor", "symbol", "conviction", "reasons")}
+                          for v in t["votes"] if v["conviction"] and v["reasons"]]}
+
+    votes = {}
+    for name in SITE_RUNS + [c for c, _ in SITE_CHIPS]:
+        p = RUNS / name / "team.json"
+        if p.exists():
+            votes[name] = slim_team(json.loads(p.read_text(encoding="utf-8")))
+    briefs = sorted(RUNS.glob("brief-*/brief.json"))
+    brief = None
+    if briefs:
+        b = json.loads(briefs[-1].read_text(encoding="utf-8"))
+        brief = {"as_of": b["as_of"], "n_tested": b["n_tested"], "n_accepted": b["n_accepted"], "ideas": [
+            {"investor_name": i["investor_name"], "kind": i["kind"], "status": i["status"], "reason": i.get("reason", ""),
+             "observation": (i.get("spec") or {}).get("observation", ""), "n_ranked": i.get("n_ranked"),
+             "backtest": i.get("backtest"), "team": slim_team(i["team"]) if i.get("team") else None}
+            for i in b["ideas"]]}
+    dst = ROOT / "docs" / "data" / "team.js"
+    dst.write_text("window.SCOUT_TEAM = " + json.dumps(votes, separators=(",", ":"), ensure_ascii=False, allow_nan=False)
+                   + ";\nwindow.SCOUT_BRIEF = " + json.dumps(brief, separators=(",", ":"), ensure_ascii=False, allow_nan=False)
+                   + ";\n", encoding="utf-8", newline="\n")
+    print(f"  team votes for {len(votes)} runs; brief {brief['as_of'] if brief else 'none'}")
 
 
 def export_backtests() -> None:

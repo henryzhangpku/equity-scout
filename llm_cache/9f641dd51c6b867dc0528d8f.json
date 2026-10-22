@@ -1,0 +1,37 @@
+{
+ "hash": "9f641dd51c6b867dc0528d8f",
+ "tag": "vote growth_at_reasonable_price",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou want revenue growth that is real and ideally accelerating, at a valuation that does not already price in perfection. Decelerating growth at a rich multiple is your sell signal.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"BMNR\", \"name\": \"BITMINE IMMERSION TECHNOLOGIES, INC.\", \"data\": {\"revenue_growth_yoy\": \"+1022.3%\", \"revenue_growth_q_yoy\": \"+2167.8%\", \"revenue_growth_accel\": \"+1540.0%\", \"ev_to_sales\": \"231.42\", \"operating_margin\": \"-14505.1%\", \"mom_6m\": \"+14.0%\"}}, {\"symbol\": \"VAL\", \"name\": \"Valaris Ltd\", \"data\": {\"revenue_growth_yoy\": \"+548.5%\", \"revenue_growth_q_yoy\": \"+342.9%\", \"revenue_growth_accel\": \"-1432.1%\", \"ev_to_sales\": \"287.67\", \"operating_margin\": \"+1126.2%\", \"mom_6m\": \"-14.4%\"}}, {\"symbol\": \"IBRX\", \"name\": \"ImmunityBio, Inc.\", \"data\": {\"revenue_growth_yoy\": \"+192.9%\", \"revenue_growth_q_yoy\": \"+93.9%\", \"revenue_growth_accel\": \"-73.7%\", \"ev_to_sales\": \"61.19\", \"operating_margin\": \"-151.9%\", \"mom_6m\": \"+32.5%\"}}, {\"symbol\": \"MU\", \"name\": \"MICRON TECHNOLOGY INC\", \"data\": {\"revenue_growth_yoy\": \"+167.0%\", \"revenue_growth_q_yoy\": \"+345.7%\", \"revenue_growth_accel\": \"+149.4%\", \"ev_to_sales\": \"12.73\", \"operating_margin\": \"+65.6%\", \"mom_6m\": \"+145.8%\"}}, {\"symbol\": \"TARS\", \"name\": \"Tarsus Pharmaceuticals, Inc.\", \"data\": {\"revenue_growth_yoy\": \"+105.2%\", \"revenue_growth_q_yoy\": \"+69.4%\", \"revenue_growth_accel\": \"-37.5%\", \"ev_to_sales\": \"4.61\", \"operating_margin\": \"-8.0%\", \"mom_6m\": \"-0.3%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"BMNR\",\n      \"conviction\": -0.3,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"+1540.0%\",\n          \"point\": \"Revenue growth is accelerating, which fits my preference for accelerating growth.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"231.42\",\n          \"point\": \"An EV/sales of 231.42 prices in extreme perfection, making the valuation too rich for my style.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"-14505.1%\",\n          \"point\": \"Operating margin of -14505.1% shows the growth is not yet backed by profitability.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"VAL\",\n      \"conviction\": -1.0,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-1432.1%\",\n          \"point\": \"Growth is decelerating sharply, which is a warning sign in my style.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"287.67\",\n          \"point\": \"An EV/sales of 287.67 is an extremely rich multiple, so this is a decelerating growth at a rich multiple sell signal.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"IBRX\",\n      \"conviction\": -0.6,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-73.7%\",\n          \"point\": \"Growth is decelerating, which weakens the investment case.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"61.19\",\n          \"point\": \"EV/sales of 61.19 is a rich multiple that prices in a lot of optimism.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"-151.9%\",\n          \"point\": \"Operating margin of -151.9% indicates the growth is not yet profitable.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"MU\",\n      \"conviction\": 0.8,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"+149.4%\",\n          \"point\": \"Revenue growth is accelerating, which is exactly what I look for.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"12.73\",\n          \"point\": \"EV/sales of 12.73 is not extreme enough to price in perfection.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"+65.6%\",\n          \"point\": \"Operating margin of +65.6% shows the growth is backed by profitability.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TARS\",\n      \"conviction\": 0.4,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+105.2%\",\n          \"point\": \"Revenue growth of +105.2% is still strong, even if not accelerating.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"4.61\",\n          \"point\": \"EV/sales of 4.61 is low, so the valuation does not price in perfection.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-37.5%\",\n          \"point\": \"Growth deceleration of -37.5% is not accompanied by a rich multiple, so it is not a sell signal.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 902,
+  "completion_tokens": 5203,
+  "total_tokens": 6105,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4371
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 518
+ },
+ "latency_s": 52.93,
+ "recorded_at": "2026-10-22T01:57:40+00:00"
+}

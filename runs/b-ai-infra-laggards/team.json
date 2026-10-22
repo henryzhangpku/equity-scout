@@ -1,0 +1,1210 @@
+{
+ "roster_version": "99a83eb2c9df",
+ "investors": [
+  {
+   "id": "deep_value",
+   "name": "Deep value",
+   "kind": "llm"
+  },
+  {
+   "id": "quality_compounder",
+   "name": "Quality compounder",
+   "kind": "llm"
+  },
+  {
+   "id": "growth_at_reasonable_price",
+   "name": "Growth at a reasonable price",
+   "kind": "llm"
+  },
+  {
+   "id": "trend_follower",
+   "name": "Trend follower",
+   "kind": "llm"
+  },
+  {
+   "id": "contrarian_rebound",
+   "name": "Contrarian (oversold rebounds)",
+   "kind": "llm"
+  },
+  {
+   "id": "forensic_skeptic",
+   "name": "Forensic skeptic (short bias)",
+   "kind": "llm"
+  },
+  {
+   "id": "squeeze_hunter",
+   "name": "Short-squeeze hunter",
+   "kind": "llm"
+  },
+  {
+   "id": "small_cap_specialist",
+   "name": "Small-cap specialist",
+   "kind": "llm"
+  },
+  {
+   "id": "rule_momentum",
+   "name": "Momentum rule (code)",
+   "kind": "code"
+  },
+  {
+   "id": "rule_value",
+   "name": "Value rule (code)",
+   "kind": "code"
+  },
+  {
+   "id": "rule_quality",
+   "name": "Quality rule (code)",
+   "kind": "code"
+  },
+  {
+   "id": "rule_reversal",
+   "name": "Reversal rule (code)",
+   "kind": "code"
+  }
+ ],
+ "weights": {
+  "deep_value": 1.0,
+  "quality_compounder": 1.0,
+  "growth_at_reasonable_price": 1.0,
+  "trend_follower": 1.0,
+  "contrarian_rebound": 1.0,
+  "forensic_skeptic": 1.0,
+  "squeeze_hunter": 1.0,
+  "small_cap_specialist": 1.0,
+  "rule_momentum": 0.814,
+  "rule_value": 1.673,
+  "rule_quality": 0.25,
+  "rule_reversal": 0.25
+ },
+ "weights_source": "scorecard of 2026-10-22T00:29:09+00:00",
+ "votes": [
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AVGO",
+   "conviction": -0.5,
+   "reasons": [
+    {
+     "field": "ev_to_sales",
+     "value": "19.70",
+     "point": "An EV/sales of 19.70 is a high multiple that I distrust and offers little margin of safety."
+    },
+    {
+     "field": "net_debt",
+     "value": "$35.9B",
+     "point": "Net debt of $35.9B is a large absolute amount, making the balance sheet less likely to survive a bad year comfortably."
+    },
+    {
+     "field": "fcf_yield",
+     "value": "+2.3%",
+     "point": "A free cash flow yield of +2.3% is not cheap enough to compensate for the high valuation and debt."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AAOI",
+   "conviction": -1.0,
+   "reasons": [
+    {
+     "field": "net_income_ttm",
+     "value": "$-57M",
+     "point": "Net income of $-57M shows the company is losing money, which fails my requirement of turning profit into cash."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "14.28",
+     "point": "An EV/sales multiple of 14.28 is too high for a money-losing business and offers no margin of safety."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "n/a",
+     "point": "Free cash flow margin of n/a indicates that free cash flow is not available, which fails my cash conversion test."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AMAT",
+   "conviction": -0.3,
+   "reasons": [
+    {
+     "field": "ev_to_sales",
+     "value": "13.07",
+     "point": "An EV/sales of 13.07 is a high multiple that does not meet my cheap-on-enterprise-value criterion."
+    },
+    {
+     "field": "fcf_yield",
+     "value": "+1.4%",
+     "point": "A free cash flow yield of +1.4% is too low to provide a margin of safety."
+    },
+    {
+     "field": "net_debt",
+     "value": "$-1.5B",
+     "point": "Net debt of $-1.5B is a positive net cash position, but it is not enough to overcome the expensive valuation."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "COHR",
+   "conviction": -0.6,
+   "reasons": [
+    {
+     "field": "fcf_yield",
+     "value": "-1.7%",
+     "point": "A free cash flow yield of -1.7% means the company is not generating positive free cash flow relative to its price."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "-14.4%",
+     "point": "A free cash flow margin of -14.4% shows that even with net income, the business is not turning profit into cash."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "8.49",
+     "point": "An EV/sales of 8.49 is not cheap enough to offset the negative cash flow."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AMKR",
+   "conviction": 0.7,
+   "reasons": [
+    {
+     "field": "ev_to_sales",
+     "value": "1.72",
+     "point": "An EV/sales of 1.72 is cheap and provides a margin of safety on enterprise value."
+    },
+    {
+     "field": "net_debt",
+     "value": "$-468M",
+     "point": "Net debt of $-468M means net cash, so the balance sheet can survive a bad year."
+    },
+    {
+     "field": "drawdown_52w",
+     "value": "-45.4%",
+     "point": "A 52-week drawdown of -45.4% shows the price has already been punished, fitting my entry style."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "AVGO",
+   "conviction": 0.5,
+   "reasons": [
+    {
+     "field": "gross_margin",
+     "value": "+68.8%",
+     "point": "A gross margin of +68.8% indicates durable pricing power and high unit economics, which fits my preference for high-margin businesses."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+44.2%",
+     "point": "A free cash flow margin of +44.2% shows the company converts revenue into cash at a high rate, a key quality I require."
+    },
+    {
+     "field": "net_debt",
+     "value": "$35.9B",
+     "point": "Net debt of $35.9B is substantial and tempers my conviction because I prefer little debt."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "AAOI",
+   "conviction": -0.4,
+   "reasons": [
+    {
+     "field": "gross_margin",
+     "value": "+28.9%",
+     "point": "A gross margin of +28.9% is too low to qualify as a durable high-margin business in my style."
+    },
+    {
+     "field": "operating_margin",
+     "value": "-11.3%",
+     "point": "An operating margin of -11.3% means the business is not profitable at the operating level, which fails my requirement for durable high margins."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "n/a",
+     "point": "Free cash flow margin is n/a, so I cannot confirm the business converts revenue into cash."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "AMAT",
+   "conviction": 0.7,
+   "reasons": [
+    {
+     "field": "gross_margin",
+     "value": "+49.4%",
+     "point": "A gross margin of +49.4% indicates a high-margin business with durable pricing power."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+18.2%",
+     "point": "A free cash flow margin of +18.2% confirms the company converts a healthy portion of revenue into cash."
+    },
+    {
+     "field": "net_debt",
+     "value": "$-1.5B",
+     "point": "Net debt of $-1.5B reflects a net cash position, aligning with my preference for little debt."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "COHR",
+   "conviction": -0.4,
+   "reasons": [
+    {
+     "field": "fcf_margin",
+     "value": "-14.4%",
+     "point": "A free cash flow margin of -14.4% shows the business is burning cash rather than converting revenue into cash, which disqualifies it in my style."
+    },
+    {
+     "field": "operating_margin",
+     "value": "n/a",
+     "point": "Operating margin is n/a so the core profitability is unclear, adding to my concern."
+    },
+    {
+     "field": "gross_margin",
+     "value": "+37.5%",
+     "point": "Gross margin of +37.5% is only moderate, not the durable high margin I require."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "AMKR",
+   "conviction": -0.5,
+   "reasons": [
+    {
+     "field": "gross_margin",
+     "value": "+14.4%",
+     "point": "A gross margin of +14.4% is low and suggests a commodity-like business with little pricing power."
+    },
+    {
+     "field": "operating_margin",
+     "value": "+7.6%",
+     "point": "An operating margin of +7.6% is thin and fragile, which does not fit my high-margin style."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+2.4%",
+     "point": "A free cash flow margin of +2.4% indicates weak cash conversion, far below the durable cash generation I seek."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AVGO",
+   "conviction": 0.3,
+   "reasons": [
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+48.7%",
+     "point": "Annual revenue growth of +48.7% is strong and supports a buy."
+    },
+    {
+     "field": "revenue_growth_accel",
+     "value": "+37.6%",
+     "point": "Growth acceleration of +37.6% shows the growth is not decelerating, which fits my style."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "19.70",
+     "point": "EV/sales of 19.70 is rich and may already price in perfection, so I keep conviction limited."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AAOI",
+   "conviction": -0.3,
+   "reasons": [
+    {
+     "field": "operating_margin",
+     "value": "-11.3%",
+     "point": "Negative operating margin of -11.3% means the revenue growth is not yet profitable, making the growth less attractive."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "14.28",
+     "point": "EV/sales of 14.28 is high for a company with negative operating margin, pricing in too much."
+    },
+    {
+     "field": "mom_6m",
+     "value": "-20.6%",
+     "point": "Six-month momentum of -20.6% confirms downward repricing, which adds to my sell bias."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AMAT",
+   "conviction": 0.3,
+   "reasons": [
+    {
+     "field": "revenue_growth_accel",
+     "value": "+13.4%",
+     "point": "Revenue growth is accelerating by +13.4%, which is a positive signal in my style."
+    },
+    {
+     "field": "operating_margin",
+     "value": "+29.6%",
+     "point": "Operating margin of +29.6% shows the growth is profitable and high quality."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "13.07",
+     "point": "EV/sales of 13.07 is not cheap, so I keep conviction moderate."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "COHR",
+   "conviction": 0.7,
+   "reasons": [
+    {
+     "field": "revenue_growth_q_yoy",
+     "value": "+33.7%",
+     "point": "Quarterly revenue growth of +33.7% is strong and indicates real expansion."
+    },
+    {
+     "field": "revenue_growth_accel",
+     "value": "+13.2%",
+     "point": "Growth is accelerating by +13.2%, which is a key buy trigger for me."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "8.49",
+     "point": "EV/sales of 8.49 is reasonable and does not appear to price in perfection."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AMKR",
+   "conviction": 0.6,
+   "reasons": [
+    {
+     "field": "ev_to_sales",
+     "value": "1.72",
+     "point": "EV/sales of 1.72 is very low, providing a margin of safety for an accelerating grower."
+    },
+    {
+     "field": "revenue_growth_accel",
+     "value": "+11.6%",
+     "point": "Revenue growth is accelerating by +11.6%, which is my core buy signal."
+    },
+    {
+     "field": "revenue_growth_q_yoy",
+     "value": "+27.5%",
+     "point": "Quarterly revenue growth of +27.5% supports the acceleration story."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "AVGO",
+   "conviction": -0.6,
+   "reasons": [
+    {
+     "field": "pct_vs_sma200",
+     "value": "-1.9%",
+     "point": "Price is -1.9% below the 200-day average, signaling it is below long-term averages and a short or avoid in my style."
+    },
+    {
+     "field": "rs_6m_vs_spy",
+     "value": "-12.6%",
+     "point": "Relative strength of -12.6% versus SPY over 6 months shows the stock is underperforming the market."
+    },
+    {
+     "field": "mom_3m",
+     "value": "-9.8%",
+     "point": "3-month momentum of -9.8% shows downward price action, reinforcing a bearish view."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "AAOI",
+   "conviction": -0.7,
+   "reasons": [
+    {
+     "field": "pct_vs_sma200",
+     "value": "-4.3%",
+     "point": "Price is -4.3% below the 200-day average, indicating it is below long-term averages and in a short-avoid zone."
+    },
+    {
+     "field": "rs_6m_vs_spy",
+     "value": "-35.0%",
+     "point": "Relative strength of -35.0% versus SPY shows severe underperformance."
+    },
+    {
+     "field": "mom_6m",
+     "value": "-20.6%",
+     "point": "6-month momentum of -20.6% confirms a downtrend in the medium term."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "AMAT",
+   "conviction": 0.4,
+   "reasons": [
+    {
+     "field": "pct_vs_sma200",
+     "value": "+17.8%",
+     "point": "Price is +17.8% above the 200-day average, indicating a strong established uptrend."
+    },
+    {
+     "field": "rs_6m_vs_spy",
+     "value": "+14.0%",
+     "point": "Relative strength of +14.0% versus SPY shows it is beating the market."
+    },
+    {
+     "field": "mom_6m",
+     "value": "+28.4%",
+     "point": "6-month momentum of +28.4% confirms positive price trend."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "COHR",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "AMKR",
+   "conviction": -0.8,
+   "reasons": [
+    {
+     "field": "pct_vs_sma200",
+     "value": "-11.1%",
+     "point": "Price is -11.1% below the 200-day average, well below long-term averages, so I would short or avoid."
+    },
+    {
+     "field": "sma50_above_sma200",
+     "value": "no",
+     "point": "The 50-day average is below the 200-day average, confirming a long-term downtrend."
+    },
+    {
+     "field": "rs_6m_vs_spy",
+     "value": "-21.6%",
+     "point": "Relative strength of -21.6% versus SPY shows severe underperformance."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "AVGO",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "AAOI",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "AMAT",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "COHR",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [
+    {
+     "reason": {
+      "field": "fcf_ttm",
+      "value": "-$1.0B",
+      "point": "Negative free cash flow of -$1.0B means the business is not making cash, so my style stays away from broken businesses."
+     },
+     "why": "value '-$1.0B' does not match the computed '$-1.0B'"
+    }
+   ],
+   "status": "abstain: no reason passed the check"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "AMKR",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AVGO",
+   "conviction": -0.5,
+   "reasons": [
+    {
+     "field": "net_debt",
+     "value": "$35.9B",
+     "point": "Net debt of $35.9B is high leverage, increasing financial risk."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "19.70",
+     "point": "EV/sales of 19.70 is a rich valuation, leaving little margin for error."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AAOI",
+   "conviction": -1.0,
+   "reasons": [
+    {
+     "field": "net_income_ttm",
+     "value": "$-57M",
+     "point": "Net income of $-57M shows the company is losing money."
+    },
+    {
+     "field": "net_margin",
+     "value": "-9.6%",
+     "point": "Net margin of -9.6% is deeply negative, indicating an unprofitable business."
+    },
+    {
+     "field": "short_pct_shares_out",
+     "value": "+14.6%",
+     "point": "Short interest of +14.6% shows a crowd already short, consistent with bearish sentiment."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AMAT",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "COHR",
+   "conviction": -0.7,
+   "reasons": [
+    {
+     "field": "fcf_ttm",
+     "value": "$-1.0B",
+     "point": "Free cash flow of $-1.0B is negative despite positive net income, so profits are not showing up as cash."
+    },
+    {
+     "field": "net_debt",
+     "value": "$1.2B",
+     "point": "Net debt of $1.2B is leverage that adds risk."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AMKR",
+   "conviction": -0.3,
+   "reasons": [
+    {
+     "field": "fcf_ttm",
+     "value": "$167M",
+     "point": "Free cash flow of $167M is much lower than net income of $436M, indicating weak cash conversion."
+    },
+    {
+     "field": "net_margin",
+     "value": "+6.2%",
+     "point": "Net margin of +6.2% is thin, leaving little room for error."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "AVGO",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "AAOI",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "AMAT",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "COHR",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "AMKR",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AVGO",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "market_cap",
+     "value": "$1,719.2B",
+     "point": "The market cap of $1,719.2B is far too large for my smaller-company niche."
+    },
+    {
+     "field": "avg_dollar_volume_50d",
+     "value": "$8.6B",
+     "point": "Average dollar volume of $8.6B is extremely liquid, not the less liquid name I target."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AAOI",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "fcf_margin",
+     "value": "n/a",
+     "point": "Free cash flow margin is n/a, so I cannot confirm the company is self-funding, which my style requires."
+    },
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+61.8%",
+     "point": "Revenue growth of +61.8% is strong, but without a positive free cash flow margin I cannot verify self-funding and therefore abstain."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AMAT",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "market_cap",
+     "value": "$404.4B",
+     "point": "The market cap of $404.4B is far too large for my smaller-company niche."
+    },
+    {
+     "field": "avg_dollar_volume_50d",
+     "value": "$3.3B",
+     "point": "Average dollar volume of $3.3B is very liquid, not the less liquid name I target."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "COHR",
+   "conviction": -0.5,
+   "reasons": [
+    {
+     "field": "fcf_margin",
+     "value": "-14.4%",
+     "point": "Negative free cash flow margin of -14.4% shows the company is not self-funding, which violates my style's core requirement."
+    },
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+22.5%",
+     "point": "Revenue growth of +22.5% is positive but cannot overcome the negative free cash flow margin for my self-funding criterion."
+    },
+    {
+     "field": "drawdown_52w",
+     "value": "-29.2%",
+     "point": "The drawdown of -29.2% suggests a marked-down price, but with negative free cash flow this is a value trap rather than an opportunity."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "AMKR",
+   "conviction": 0.7,
+   "reasons": [
+    {
+     "field": "market_cap",
+     "value": "$12.6B",
+     "point": "Market cap of $12.6B is small enough that large funds may overlook it, fitting my niche."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+2.4%",
+     "point": "Free cash flow margin of +2.4% is positive, showing the company is self-funding."
+    },
+    {
+     "field": "drawdown_52w",
+     "value": "-45.4%",
+     "point": "The 52-week drawdown of -45.4% shows the market has marked it down sharply, creating a potential opportunity."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AVGO",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AAOI",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AMAT",
+   "conviction": 0.955,
+   "reasons": [
+    {
+     "field": "mom_12m",
+     "value": "+142.2%",
+     "point": "passes the rule: mom_12m > +0.0%"
+    },
+    {
+     "field": "pct_vs_sma200",
+     "value": "+17.8%",
+     "point": "passes the rule: pct_vs_sma200 > +0.0%"
+    }
+   ],
+   "status": "voted: rank 86 of 941 under the rule"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "COHR",
+   "conviction": 0.966,
+   "reasons": [
+    {
+     "field": "mom_12m",
+     "value": "+166.2%",
+     "point": "passes the rule: mom_12m > +0.0%"
+    },
+    {
+     "field": "pct_vs_sma200",
+     "value": "+3.5%",
+     "point": "passes the rule: pct_vs_sma200 > +0.0%"
+    }
+   ],
+   "status": "voted: rank 65 of 941 under the rule"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AMKR",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AVGO",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AAOI",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AMAT",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "COHR",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AMKR",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AVGO",
+   "conviction": 0.96,
+   "reasons": [
+    {
+     "field": "operating_margin",
+     "value": "+48.0%",
+     "point": "passes the rule: operating_margin > +15.0%"
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+44.2%",
+     "point": "passes the rule: fcf_margin > +10.0%"
+    }
+   ],
+   "status": "voted: rank 30 of 363 under the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AAOI",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AMAT",
+   "conviction": 0.848,
+   "reasons": [
+    {
+     "field": "operating_margin",
+     "value": "+29.6%",
+     "point": "passes the rule: operating_margin > +15.0%"
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+18.2%",
+     "point": "passes the rule: fcf_margin > +10.0%"
+    }
+   ],
+   "status": "voted: rank 111 of 363 under the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "COHR",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AMKR",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AVGO",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AAOI",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AMAT",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "COHR",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "AMKR",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  }
+ ],
+ "tally": [
+  {
+   "symbol": "AMAT",
+   "verdict": "team for",
+   "weighted_conviction": 0.413,
+   "mean_conviction": 0.484,
+   "for": 5,
+   "against": 1,
+   "abstain": 6,
+   "independent_voices": 6,
+   "split": false
+  },
+  {
+   "symbol": "AMKR",
+   "verdict": "split",
+   "weighted_conviction": 0.067,
+   "mean_conviction": 0.067,
+   "for": 3,
+   "against": 3,
+   "abstain": 6,
+   "independent_voices": 6,
+   "split": true
+  },
+  {
+   "symbol": "AVGO",
+   "verdict": "split",
+   "weighted_conviction": -0.107,
+   "mean_conviction": 0.027,
+   "for": 3,
+   "against": 3,
+   "abstain": 6,
+   "independent_voices": 6,
+   "split": true
+  },
+  {
+   "symbol": "COHR",
+   "verdict": "split",
+   "weighted_conviction": -0.123,
+   "mean_conviction": -0.089,
+   "for": 2,
+   "against": 4,
+   "abstain": 6,
+   "independent_voices": 6,
+   "split": true
+  },
+  {
+   "symbol": "AAOI",
+   "verdict": "team against",
+   "weighted_conviction": -0.68,
+   "mean_conviction": -0.68,
+   "for": 0,
+   "against": 5,
+   "abstain": 7,
+   "independent_voices": 5,
+   "split": false
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "63fb0e1757d4a6dcb46307ae",
+ "tag": "vote small_cap_specialist",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou fish where large funds cannot: smaller, less liquid companies that are growing and self-funding, after the market has marked them down. You avoid names too illiquid to exit.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"WOLF\", \"name\": \"WOLFSPEED, INC.\", \"data\": {\"market_cap\": \"$1.6B\", \"avg_dollar_volume_50d\": \"$113M\", \"revenue_growth_yoy\": \"-12.2%\", \"fcf_margin\": \"-57.1%\", \"drawdown_52w\": \"-57.8%\", \"mom_3m\": \"-12.1%\"}}, {\"symbol\": \"KSS\", \"name\": \"KOHLS Corp\", \"data\": {\"market_cap\": \"$2.3B\", \"avg_dollar_volume_50d\": \"$77M\", \"revenue_growth_yoy\": \"-2.9%\", \"fcf_margin\": \"+6.7%\", \"drawdown_52w\": \"-16.1%\", \"mom_3m\": \"+20.5%\"}}, {\"symbol\": \"CBRL\", \"name\": \"CRACKER BARREL OLD COUNTRY STORE, INC\", \"data\": {\"market_cap\": \"$1.2B\", \"avg_dollar_volume_50d\": \"$48M\", \"revenue_growth_yoy\": \"-4.7%\", \"fcf_margin\": \"+2.7%\", \"drawdown_52w\": \"-6.3%\", \"mom_3m\": \"+10.3%\"}}, {\"symbol\": \"MNRO\", \"name\": \"MONRO, INC.\", \"data\": {\"market_cap\": \"$413M\", \"avg_dollar_volume_50d\": \"$13M\", \"revenue_growth_yoy\": \"-3.2%\", \"fcf_margin\": \"+3.4%\", \"drawdown_52w\": \"-39.2%\", \"mom_3m\": \"-16.4%\"}}, {\"symbol\": \"SWKS\", \"name\": \"SKYWORKS SOLUTIONS, INC.\", \"data\": {\"market_cap\": \"$12.2B\", \"avg_dollar_volume_50d\": \"$546M\", \"revenue_growth_yoy\": \"+0.1%\", \"fcf_margin\": \"+10.8%\", \"drawdown_52w\": \"-11.7%\", \"mom_3m\": \"+33.7%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"WOLF\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_yoy\", \"value\": \"-12.2%\", \"point\": \"Revenue is shrinking, so it does not meet my growth criterion.\"},\n        {\"field\": \"fcf_margin\", \"value\": \"-57.1%\", \"point\": \"Free cash flow margin is negative, so it is not self-funding.\"}\n      ]\n    },\n    {\n      \"symbol\": \"KSS\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_yoy\", \"value\": \"-2.9%\", \"point\": \"Revenue is declining, so it does not meet my growth criterion.\"}\n      ]\n    },\n    {\n      \"symbol\": \"CBRL\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_yoy\", \"value\": \"-4.7%\", \"point\": \"Revenue is declining, so it does not meet my growth criterion.\"}\n      ]\n    },\n    {\n      \"symbol\": \"MNRO\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\"field\": \"revenue_growth_yoy\", \"value\": \"-3.2%\", \"point\": \"Revenue is declining, so it does not meet my growth criterion.\"},\n        {\"field\": \"avg_dollar_volume_50d\", \"value\": \"$13M\", \"point\": \"Average dollar volume of $13M is too low for a reliable exit.\"}\n      ]\n    },\n    {\n      \"symbol\": \"SWKS\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\"field\": \"market_cap\", \"value\": \"$12.2B\", \"point\": \"Market cap of $12.2B is too large for my smaller-company focus.\"}\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 898,
+  "completion_tokens": 4590,
+  "total_tokens": 5488,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4162
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 514
+ },
+ "latency_s": 51.18,
+ "recorded_at": "2026-10-22T01:57:30+00:00"
+}

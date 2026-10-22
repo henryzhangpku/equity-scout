@@ -1,0 +1,37 @@
+{
+ "hash": "9f0c9cd658703e9918868f5c",
+ "tag": "vote growth_at_reasonable_price",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou want revenue growth that is real and ideally accelerating, at a valuation that does not already price in perfection. Decelerating growth at a rich multiple is your sell signal.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"CTVA\", \"name\": \"Corteva, Inc.\", \"data\": {\"revenue_growth_yoy\": \"+3.7%\", \"revenue_growth_q_yoy\": \"-1.2%\", \"revenue_growth_accel\": \"-12.2%\", \"ev_to_sales\": \"0.48\", \"operating_margin\": \"n/a\", \"mom_6m\": \"-83.5%\"}}, {\"symbol\": \"TTD\", \"name\": \"Trade Desk, Inc.\", \"data\": {\"revenue_growth_yoy\": \"+11.6%\", \"revenue_growth_q_yoy\": \"+3.0%\", \"revenue_growth_accel\": \"-8.8%\", \"ev_to_sales\": \"1.44\", \"operating_margin\": \"+19.6%\", \"mom_6m\": \"-40.1%\"}}, {\"symbol\": \"LQDA\", \"name\": \"Liquidia Corp\", \"data\": {\"revenue_growth_yoy\": \"+2233.6%\", \"revenue_growth_q_yoy\": \"+1842.7%\", \"revenue_growth_accel\": \"-2315.8%\", \"ev_to_sales\": \"4.98\", \"operating_margin\": \"+37.4%\", \"mom_6m\": \"-30.5%\"}}, {\"symbol\": \"Z\", \"name\": \"ZILLOW GROUP, INC.\", \"data\": {\"revenue_growth_yoy\": \"+17.7%\", \"revenue_growth_q_yoy\": \"+17.9%\", \"revenue_growth_accel\": \"-0.5%\", \"ev_to_sales\": \"2.59\", \"operating_margin\": \"+0.4%\", \"mom_6m\": \"-28.2%\"}}, {\"symbol\": \"CSGP\", \"name\": \"COSTAR GROUP, INC.\", \"data\": {\"revenue_growth_yoy\": \"+22.0%\", \"revenue_growth_q_yoy\": \"+18.4%\", \"revenue_growth_accel\": \"-4.1%\", \"ev_to_sales\": \"3.32\", \"operating_margin\": \"+2.2%\", \"mom_6m\": \"-20.1%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"CTVA\",\n      \"conviction\": -0.3,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_q_yoy\",\n          \"value\": \"-1.2%\",\n          \"point\": \"Quarterly revenue contracted by -1.2%, so growth is not real.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-12.2%\",\n          \"point\": \"Growth decelerated sharply by -12.2%.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"0.48\",\n          \"point\": \"EV/S of 0.48 is low, preventing a strong sell signal but not fixing the growth deterioration.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TTD\",\n      \"conviction\": -0.1,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_q_yoy\",\n          \"value\": \"+3.0%\",\n          \"point\": \"Quarterly revenue growth of only +3.0% is weak and slowing.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-8.8%\",\n          \"point\": \"Growth decelerated by -8.8%, so it is not accelerating.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"1.44\",\n          \"point\": \"EV/S of 1.44 is not rich, so the deceleration does not trigger a sell.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"LQDA\",\n      \"conviction\": -0.8,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-2315.8%\",\n          \"point\": \"Growth decelerated by -2315.8%, an extreme collapse in acceleration.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"4.98\",\n          \"point\": \"EV/S of 4.98 is rich and prices in perfection, so the deceleration is a sell signal.\"\n        },\n        {\n          \"field\": \"mom_6m\",\n          \"value\": \"-30.5%\",\n          \"point\": \"Momentum of -30.5% confirms the stock is repricing downward.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"Z\",\n      \"conviction\": 0.5,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+17.7%\",\n          \"point\": \"Revenue growth of +17.7% is real and solid.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-0.5%\",\n          \"point\": \"Acceleration is only -0.5%, so growth is essentially stable rather than decelerating.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"2.59\",\n          \"point\": \"EV/S of 2.59 is reasonable and does not price in perfection.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CSGP\",\n      \"conviction\": 0.2,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+22.0%\",\n          \"point\": \"Revenue growth of +22.0% is strong and real.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"-4.1%\",\n          \"point\": \"Growth decelerated by only -4.1%, which is mildly negative but not a collapse.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"3.32\",\n          \"point\": \"EV/S of 3.32 is elevated but does not clearly price in perfection given +22.0% growth.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 896,
+  "completion_tokens": 8847,
+  "total_tokens": 9743,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 7970
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 512
+ },
+ "latency_s": 95.25,
+ "recorded_at": "2026-10-22T01:56:46+00:00"
+}

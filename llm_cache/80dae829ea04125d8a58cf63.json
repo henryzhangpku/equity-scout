@@ -1,0 +1,37 @@
+{
+ "hash": "80dae829ea04125d8a58cf63",
+ "tag": "vote squeeze_hunter",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou look for crowded shorts that are starting to go wrong for the shorts: high short interest, many days to cover, rising volume and price turning up through its averages.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"VICR\", \"name\": \"VICOR CORP\", \"data\": {\"short_pct_shares_out\": \"+4.5%\", \"days_to_cover\": \"3.2d\", \"volume_ratio_50d\": \"1.36\", \"mom_1m\": \"+42.7%\", \"pct_vs_sma50\": \"+15.7%\"}}, {\"symbol\": \"SITM\", \"name\": \"SITIME Corp\", \"data\": {\"short_pct_shares_out\": \"+4.0%\", \"days_to_cover\": \"3.1d\", \"volume_ratio_50d\": \"0.81\", \"mom_1m\": \"+9.4%\", \"pct_vs_sma50\": \"+3.3%\"}}, {\"symbol\": \"STRL\", \"name\": \"STERLING INFRASTRUCTURE, INC.\", \"data\": {\"short_pct_shares_out\": \"+3.9%\", \"days_to_cover\": \"2.2d\", \"volume_ratio_50d\": \"1.00\", \"mom_1m\": \"+4.7%\", \"pct_vs_sma50\": \"+0.2%\"}}, {\"symbol\": \"SANM\", \"name\": \"SANMINA CORP\", \"data\": {\"short_pct_shares_out\": \"+3.4%\", \"days_to_cover\": \"3.7d\", \"volume_ratio_50d\": \"0.70\", \"mom_1m\": \"+2.1%\", \"pct_vs_sma50\": \"+2.9%\"}}, {\"symbol\": \"KLIC\", \"name\": \"KULICKE & SOFFA INDUSTRIES INC\", \"data\": {\"short_pct_shares_out\": \"+4.3%\", \"days_to_cover\": \"4.0d\", \"volume_ratio_50d\": \"0.74\", \"mom_1m\": \"+8.8%\", \"pct_vs_sma50\": \"+3.2%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"VICR\",\n      \"conviction\": 0.8,\n      \"reasons\": [\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+4.5%\",\n          \"point\": \"A +4.5% short interest is high enough to create a crowded short base that may be forced to cover as price rises.\"\n        },\n        {\n          \"field\": \"volume_ratio_50d\",\n          \"value\": \"1.36\",\n          \"point\": \"Volume at 1.36 times the 50-day average confirms rising volume entering the stock.\"\n        },\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"+15.7%\",\n          \"point\": \"Trading +15.7% above its 50-day SMA shows price has turned up strongly through its average.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"SITM\",\n      \"conviction\": 0.0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"STRL\",\n      \"conviction\": 0.0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"SANM\",\n      \"conviction\": 0.0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"KLIC\",\n      \"conviction\": 0.0,\n      \"reasons\": []\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 847,
+  "completion_tokens": 4771,
+  "total_tokens": 5618,
+  "prompt_tokens_details": {
+   "cached_tokens": 768
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4455
+  },
+  "prompt_cache_hit_tokens": 768,
+  "prompt_cache_miss_tokens": 79
+ },
+ "latency_s": 51.23,
+ "recorded_at": "2026-10-22T01:52:52+00:00"
+}

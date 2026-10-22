@@ -1,0 +1,37 @@
+{
+ "hash": "012c3d9276092c2ddb30cae3",
+ "tag": "vote growth_at_reasonable_price",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou want revenue growth that is real and ideally accelerating, at a valuation that does not already price in perfection. Decelerating growth at a rich multiple is your sell signal.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"AVGO\", \"name\": \"Broadcom Inc.\", \"data\": {\"revenue_growth_yoy\": \"+48.7%\", \"revenue_growth_q_yoy\": \"+85.5%\", \"revenue_growth_accel\": \"+37.6%\", \"ev_to_sales\": \"19.70\", \"operating_margin\": \"+48.0%\", \"mom_6m\": \"+1.8%\"}}, {\"symbol\": \"AAOI\", \"name\": \"APPLIED OPTOELECTRONICS, INC.\", \"data\": {\"revenue_growth_yoy\": \"+61.8%\", \"revenue_growth_q_yoy\": \"+86.4%\", \"revenue_growth_accel\": \"+35.1%\", \"ev_to_sales\": \"14.28\", \"operating_margin\": \"-11.3%\", \"mom_6m\": \"-20.6%\"}}, {\"symbol\": \"AMAT\", \"name\": \"APPLIED MATERIALS INC /DE\", \"data\": {\"revenue_growth_yoy\": \"+7.8%\", \"revenue_growth_q_yoy\": \"+24.8%\", \"revenue_growth_accel\": \"+13.4%\", \"ev_to_sales\": \"13.07\", \"operating_margin\": \"+29.6%\", \"mom_6m\": \"+28.4%\"}}, {\"symbol\": \"COHR\", \"name\": \"COHERENT CORP.\", \"data\": {\"revenue_growth_yoy\": \"+22.5%\", \"revenue_growth_q_yoy\": \"+33.7%\", \"revenue_growth_accel\": \"+13.2%\", \"ev_to_sales\": \"8.49\", \"operating_margin\": \"n/a\", \"mom_6m\": \"+6.4%\"}}, {\"symbol\": \"AMKR\", \"name\": \"AMKOR TECHNOLOGY, INC.\", \"data\": {\"revenue_growth_yoy\": \"+12.7%\", \"revenue_growth_q_yoy\": \"+27.5%\", \"revenue_growth_accel\": \"+11.6%\", \"ev_to_sales\": \"1.72\", \"operating_margin\": \"+7.6%\", \"mom_6m\": \"-7.2%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"AVGO\",\n      \"conviction\": 0.3,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+48.7%\",\n          \"point\": \"Annual revenue growth of +48.7% is strong and supports a buy.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"+37.6%\",\n          \"point\": \"Growth acceleration of +37.6% shows the growth is not decelerating, which fits my style.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"19.70\",\n          \"point\": \"EV/sales of 19.70 is rich and may already price in perfection, so I keep conviction limited.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"AAOI\",\n      \"conviction\": -0.3,\n      \"reasons\": [\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"-11.3%\",\n          \"point\": \"Negative operating margin of -11.3% means the revenue growth is not yet profitable, making the growth less attractive.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"14.28\",\n          \"point\": \"EV/sales of 14.28 is high for a company with negative operating margin, pricing in too much.\"\n        },\n        {\n          \"field\": \"mom_6m\",\n          \"value\": \"-20.6%\",\n          \"point\": \"Six-month momentum of -20.6% confirms downward repricing, which adds to my sell bias.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"AMAT\",\n      \"conviction\": 0.3,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"+13.4%\",\n          \"point\": \"Revenue growth is accelerating by +13.4%, which is a positive signal in my style.\"\n        },\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"+29.6%\",\n          \"point\": \"Operating margin of +29.6% shows the growth is profitable and high quality.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"13.07\",\n          \"point\": \"EV/sales of 13.07 is not cheap, so I keep conviction moderate.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"COHR\",\n      \"conviction\": 0.7,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_q_yoy\",\n          \"value\": \"+33.7%\",\n          \"point\": \"Quarterly revenue growth of +33.7% is strong and indicates real expansion.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"+13.2%\",\n          \"point\": \"Growth is accelerating by +13.2%, which is a key buy trigger for me.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"8.49\",\n          \"point\": \"EV/sales of 8.49 is reasonable and does not appear to price in perfection.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"AMKR\",\n      \"conviction\": 0.6,\n      \"reasons\": [\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"1.72\",\n          \"point\": \"EV/sales of 1.72 is very low, providing a margin of safety for an accelerating grower.\"\n        },\n        {\n          \"field\": \"revenue_growth_accel\",\n          \"value\": \"+11.6%\",\n          \"point\": \"Revenue growth is accelerating by +11.6%, which is my core buy signal.\"\n        },\n        {\n          \"field\": \"revenue_growth_q_yoy\",\n          \"value\": \"+27.5%\",\n          \"point\": \"Quarterly revenue growth of +27.5% supports the acceleration story.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 898,
+  "completion_tokens": 6046,
+  "total_tokens": 6944,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5148
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 514
+ },
+ "latency_s": 58.28,
+ "recorded_at": "2026-10-22T01:54:18+00:00"
+}

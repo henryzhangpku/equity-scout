@@ -1,0 +1,37 @@
+{
+ "hash": "8e1cc12858b98507f6730e85",
+ "tag": "vote contrarian_rebound",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy fear in businesses that still make cash: deeply oversold, far below recent highs, on heavy volume. You stay away when the business itself is broken.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"VICR\", \"name\": \"VICOR CORP\", \"data\": {\"rsi14\": \"52.34\", \"drawdown_52w\": \"-30.9%\", \"volume_ratio_50d\": \"1.36\", \"pct_vs_sma20\": \"+1.8%\", \"mom_1m\": \"+42.7%\", \"fcf_ttm\": \"$87M\"}}, {\"symbol\": \"SITM\", \"name\": \"SITIME Corp\", \"data\": {\"rsi14\": \"50.56\", \"drawdown_52w\": \"-28.4%\", \"volume_ratio_50d\": \"0.81\", \"pct_vs_sma20\": \"+1.0%\", \"mom_1m\": \"+9.4%\", \"fcf_ttm\": \"$84M\"}}, {\"symbol\": \"STRL\", \"name\": \"STERLING INFRASTRUCTURE, INC.\", \"data\": {\"rsi14\": \"50.30\", \"drawdown_52w\": \"-47.8%\", \"volume_ratio_50d\": \"1.00\", \"pct_vs_sma20\": \"+1.7%\", \"mom_1m\": \"+4.7%\", \"fcf_ttm\": \"$482M\"}}, {\"symbol\": \"SANM\", \"name\": \"SANMINA CORP\", \"data\": {\"rsi14\": \"48.28\", \"drawdown_52w\": \"-25.6%\", \"volume_ratio_50d\": \"0.70\", \"pct_vs_sma20\": \"-1.7%\", \"mom_1m\": \"+2.1%\", \"fcf_ttm\": \"$594M\"}}, {\"symbol\": \"KLIC\", \"name\": \"KULICKE & SOFFA INDUSTRIES INC\", \"data\": {\"rsi14\": \"50.39\", \"drawdown_52w\": \"-31.9%\", \"volume_ratio_50d\": \"0.74\", \"pct_vs_sma20\": \"+1.5%\", \"mom_1m\": \"+8.8%\", \"fcf_ttm\": \"$41M\"}}]}"
+  }
+ ],
+ "response": "{\"votes\":[{\"symbol\":\"VICR\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"SITM\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"STRL\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"SANM\",\"conviction\":0,\"reasons\":[]},{\"symbol\":\"KLIC\",\"conviction\":0,\"reasons\":[]}]}",
+ "usage": {
+  "prompt_tokens": 891,
+  "completion_tokens": 2500,
+  "total_tokens": 3391,
+  "prompt_tokens_details": {
+   "cached_tokens": 768
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2417
+  },
+  "prompt_cache_hit_tokens": 768,
+  "prompt_cache_miss_tokens": 123
+ },
+ "latency_s": 28.13,
+ "recorded_at": "2026-10-22T01:52:29+00:00"
+}

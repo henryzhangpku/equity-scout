@@ -1,0 +1,37 @@
+{
+ "hash": "b8ee738685182e8ee1a72378",
+ "tag": "vote small_cap_specialist",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou fish where large funds cannot: smaller, less liquid companies that are growing and self-funding, after the market has marked them down. You avoid names too illiquid to exit.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"CTVA\", \"name\": \"Corteva, Inc.\", \"data\": {\"market_cap\": \"$9.2B\", \"avg_dollar_volume_50d\": \"$472M\", \"revenue_growth_yoy\": \"+3.7%\", \"fcf_margin\": \"+3.5%\", \"drawdown_52w\": \"-84.8%\", \"mom_3m\": \"-83.9%\"}}, {\"symbol\": \"TTD\", \"name\": \"Trade Desk, Inc.\", \"data\": {\"market_cap\": \"$5.8B\", \"avg_dollar_volume_50d\": \"$372M\", \"revenue_growth_yoy\": \"+11.6%\", \"fcf_margin\": \"+28.9%\", \"drawdown_52w\": \"-77.2%\", \"mom_3m\": \"-36.8%\"}}, {\"symbol\": \"LQDA\", \"name\": \"Liquidia Corp\", \"data\": {\"market_cap\": \"$2.5B\", \"avg_dollar_volume_50d\": \"$131M\", \"revenue_growth_yoy\": \"+2233.6%\", \"fcf_margin\": \"+33.4%\", \"drawdown_52w\": \"-69.2%\", \"mom_3m\": \"-64.0%\"}}, {\"symbol\": \"Z\", \"name\": \"ZILLOW GROUP, INC.\", \"data\": {\"market_cap\": \"$6.6B\", \"avg_dollar_volume_50d\": \"$128M\", \"revenue_growth_yoy\": \"+17.7%\", \"fcf_margin\": \"+9.2%\", \"drawdown_52w\": \"-62.6%\", \"mom_3m\": \"-9.4%\"}}, {\"symbol\": \"CSGP\", \"name\": \"COSTAR GROUP, INC.\", \"data\": {\"market_cap\": \"$12.1B\", \"avg_dollar_volume_50d\": \"$199M\", \"revenue_growth_yoy\": \"+22.0%\", \"fcf_margin\": \"+7.9%\", \"drawdown_52w\": \"-62.3%\", \"mom_3m\": \"+5.0%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"CTVA\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+3.7%\",\n          \"point\": \"Revenue growth of +3.7% is too low for the growth style.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+3.5%\",\n          \"point\": \"Free cash flow margin of +3.5% indicates weak self-funding.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TTD\",\n      \"conviction\": 0.7,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+28.9%\",\n          \"point\": \"Free cash flow margin of +28.9% indicates strong self-funding.\"\n        },\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+11.6%\",\n          \"point\": \"Revenue growth of +11.6% shows the company is still growing.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-77.2%\",\n          \"point\": \"A drawdown of -77.2% from the 52-week high means the market has marked the stock down sharply.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"LQDA\",\n      \"conviction\": 0.8,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+2233.6%\",\n          \"point\": \"Revenue growth of +2233.6% is exceptionally high, fitting the growth style.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+33.4%\",\n          \"point\": \"Free cash flow margin of +33.4% shows the company can self-fund.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-69.2%\",\n          \"point\": \"A drawdown of -69.2% from the 52-week high means the market has marked the stock down.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"Z\",\n      \"conviction\": 0.5,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+17.7%\",\n          \"point\": \"Revenue growth of +17.7% is solid for a smaller company.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+9.2%\",\n          \"point\": \"Free cash flow margin of +9.2% indicates the company is self-funding.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-62.6%\",\n          \"point\": \"A drawdown of -62.6% from the 52-week high shows the market has marked it down.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CSGP\",\n      \"conviction\": 0.4,\n      \"reasons\": [\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+22.0%\",\n          \"point\": \"Revenue growth of +22.0% is strong.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+7.9%\",\n          \"point\": \"Free cash flow margin of +7.9% indicates self-funding.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-62.3%\",\n          \"point\": \"A drawdown of -62.3% from the 52-week high means the market has marked it down.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 888,
+  "completion_tokens": 6113,
+  "total_tokens": 7001,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5282
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 504
+ },
+ "latency_s": 60.95,
+ "recorded_at": "2026-10-22T01:56:12+00:00"
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "9bd26d72e84cd617df85f738",
+ "tag": "vote deep_value",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy a margin of safety: cheap on free cash flow and enterprise value, a balance sheet that can survive a bad year, and a price that has already been punished. You distrust stories, high multiples and companies that do not turn profit into cash.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"AVGO\", \"name\": \"Broadcom Inc.\", \"data\": {\"market_cap\": \"$1,719.2B\", \"fcf_yield\": \"+2.3%\", \"ev_to_sales\": \"19.70\", \"net_debt\": \"$35.9B\", \"net_income_ttm\": \"n/a\", \"fcf_margin\": \"+44.2%\", \"drawdown_52w\": \"-25.0%\"}}, {\"symbol\": \"AAOI\", \"name\": \"APPLIED OPTOELECTRONICS, INC.\", \"data\": {\"market_cap\": \"$9.0B\", \"fcf_yield\": \"n/a\", \"ev_to_sales\": \"14.28\", \"net_debt\": \"$-447M\", \"net_income_ttm\": \"$-57M\", \"fcf_margin\": \"n/a\", \"drawdown_52w\": \"-52.5%\"}}, {\"symbol\": \"AMAT\", \"name\": \"APPLIED MATERIALS INC /DE\", \"data\": {\"market_cap\": \"$404.4B\", \"fcf_yield\": \"+1.4%\", \"ev_to_sales\": \"13.07\", \"net_debt\": \"$-1.5B\", \"net_income_ttm\": \"$9.3B\", \"fcf_margin\": \"+18.2%\", \"drawdown_52w\": \"-29.4%\"}}, {\"symbol\": \"COHR\", \"name\": \"COHERENT CORP.\", \"data\": {\"market_cap\": \"$59.2B\", \"fcf_yield\": \"-1.7%\", \"ev_to_sales\": \"8.49\", \"net_debt\": \"$1.2B\", \"net_income_ttm\": \"$805M\", \"fcf_margin\": \"-14.4%\", \"drawdown_52w\": \"-29.2%\"}}, {\"symbol\": \"AMKR\", \"name\": \"AMKOR TECHNOLOGY, INC.\", \"data\": {\"market_cap\": \"$12.6B\", \"fcf_yield\": \"+1.3%\", \"ev_to_sales\": \"1.72\", \"net_debt\": \"$-468M\", \"net_income_ttm\": \"$436M\", \"fcf_margin\": \"+2.4%\", \"drawdown_52w\": \"-45.4%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"AVGO\",\n      \"conviction\": -0.5,\n      \"reasons\": [\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"19.70\",\n          \"point\": \"An EV/sales of 19.70 is a high multiple that I distrust and offers little margin of safety.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$35.9B\",\n          \"point\": \"Net debt of $35.9B is a large absolute amount, making the balance sheet less likely to survive a bad year comfortably.\"\n        },\n        {\n          \"field\": \"fcf_yield\",\n          \"value\": \"+2.3%\",\n          \"point\": \"A free cash flow yield of +2.3% is not cheap enough to compensate for the high valuation and debt.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"AAOI\",\n      \"conviction\": -1,\n      \"reasons\": [\n        {\n          \"field\": \"net_income_ttm\",\n          \"value\": \"$-57M\",\n          \"point\": \"Net income of $-57M shows the company is losing money, which fails my requirement of turning profit into cash.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"14.28\",\n          \"point\": \"An EV/sales multiple of 14.28 is too high for a money-losing business and offers no margin of safety.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"n/a\",\n          \"point\": \"Free cash flow margin of n/a indicates that free cash flow is not available, which fails my cash conversion test.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"AMAT\",\n      \"conviction\": -0.3,\n      \"reasons\": [\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"13.07\",\n          \"point\": \"An EV/sales of 13.07 is a high multiple that does not meet my cheap-on-enterprise-value criterion.\"\n        },\n        {\n          \"field\": \"fcf_yield\",\n          \"value\": \"+1.4%\",\n          \"point\": \"A free cash flow yield of +1.4% is too low to provide a margin of safety.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$-1.5B\",\n          \"point\": \"Net debt of $-1.5B is a positive net cash position, but it is not enough to overcome the expensive valuation.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"COHR\",\n      \"conviction\": -0.6,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_yield\",\n          \"value\": \"-1.7%\",\n          \"point\": \"A free cash flow yield of -1.7% means the company is not generating positive free cash flow relative to its price.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"-14.4%\",\n          \"point\": \"A free cash flow margin of -14.4% shows that even with net income, the business is not turning profit into cash.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"8.49\",\n          \"point\": \"An EV/sales of 8.49 is not cheap enough to offset the negative cash flow.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"AMKR\",\n      \"conviction\": 0.7,\n      \"reasons\": [\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"1.72\",\n          \"point\": \"An EV/sales of 1.72 is cheap and provides a margin of safety on enterprise value.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$-468M\",\n          \"point\": \"Net debt of $-468M means net cash, so the balance sheet can survive a bad year.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-45.4%\",\n          \"point\": \"A 52-week drawdown of -45.4% shows the price has already been punished, fitting my entry style.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 936,
+  "completion_tokens": 5374,
+  "total_tokens": 6310,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4431
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 552
+ },
+ "latency_s": 51.01,
+ "recorded_at": "2026-10-22T01:54:11+00:00"
+}

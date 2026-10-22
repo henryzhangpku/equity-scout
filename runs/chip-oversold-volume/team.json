@@ -1,0 +1,978 @@
+{
+ "roster_version": "99a83eb2c9df",
+ "investors": [
+  {
+   "id": "deep_value",
+   "name": "Deep value",
+   "kind": "llm"
+  },
+  {
+   "id": "quality_compounder",
+   "name": "Quality compounder",
+   "kind": "llm"
+  },
+  {
+   "id": "growth_at_reasonable_price",
+   "name": "Growth at a reasonable price",
+   "kind": "llm"
+  },
+  {
+   "id": "trend_follower",
+   "name": "Trend follower",
+   "kind": "llm"
+  },
+  {
+   "id": "contrarian_rebound",
+   "name": "Contrarian (oversold rebounds)",
+   "kind": "llm"
+  },
+  {
+   "id": "forensic_skeptic",
+   "name": "Forensic skeptic (short bias)",
+   "kind": "llm"
+  },
+  {
+   "id": "squeeze_hunter",
+   "name": "Short-squeeze hunter",
+   "kind": "llm"
+  },
+  {
+   "id": "small_cap_specialist",
+   "name": "Small-cap specialist",
+   "kind": "llm"
+  },
+  {
+   "id": "rule_momentum",
+   "name": "Momentum rule (code)",
+   "kind": "code"
+  },
+  {
+   "id": "rule_value",
+   "name": "Value rule (code)",
+   "kind": "code"
+  },
+  {
+   "id": "rule_quality",
+   "name": "Quality rule (code)",
+   "kind": "code"
+  },
+  {
+   "id": "rule_reversal",
+   "name": "Reversal rule (code)",
+   "kind": "code"
+  }
+ ],
+ "weights": {
+  "deep_value": 1.0,
+  "quality_compounder": 1.0,
+  "growth_at_reasonable_price": 1.0,
+  "trend_follower": 1.0,
+  "contrarian_rebound": 1.0,
+  "forensic_skeptic": 1.0,
+  "squeeze_hunter": 1.0,
+  "small_cap_specialist": 1.0,
+  "rule_momentum": 0.814,
+  "rule_value": 1.673,
+  "rule_quality": 0.25,
+  "rule_reversal": 0.25
+ },
+ "weights_source": "scorecard of 2026-10-22T00:29:09+00:00",
+ "votes": [
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "EMA",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "ARGX",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "NLY",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "DOC",
+   "conviction": -0.5,
+   "reasons": [
+    {
+     "field": "ev_to_sales",
+     "value": "29.29",
+     "point": "EV/Sales of 29.29 means paying 29.29 times sales, which is not a margin of safety."
+    },
+    {
+     "field": "net_debt",
+     "value": "$8.4B",
+     "point": "Net debt of $8.4B is a heavy burden that may not survive a bad year."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "deep_value",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "HRL",
+   "conviction": 0.8,
+   "reasons": [
+    {
+     "field": "fcf_yield",
+     "value": "+7.3%",
+     "point": "FCF yield of +7.3% indicates the stock is cheap on free cash flow."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "1.05",
+     "point": "EV/Sales of 1.05 is a low multiple, providing margin of safety."
+    },
+    {
+     "field": "drawdown_52w",
+     "value": "-25.9%",
+     "point": "Drawdown of -25.9% shows the price has already been punished."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "EMA",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "ARGX",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "NLY",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "DOC",
+   "conviction": -0.4,
+   "reasons": [
+    {
+     "field": "net_debt",
+     "value": "$8.4B",
+     "point": "Net debt of $8.4B is large relative to market cap $12.8B, indicating heavy indebtedness that my style avoids."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "quality_compounder",
+   "kind": "llm",
+   "horizon_days": 252,
+   "symbol": "HRL",
+   "conviction": -0.6,
+   "reasons": [
+    {
+     "field": "gross_margin",
+     "value": "+15.7%",
+     "point": "Gross margin of +15.7% is low and does not provide a durable high-margin cushion."
+    },
+    {
+     "field": "operating_margin",
+     "value": "+4.7%",
+     "point": "Operating margin of +4.7% is low, showing weak conversion of revenue into operating profit."
+    },
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+0.7%",
+     "point": "Revenue growth of +0.7% is barely positive, not the steady growth I require for a long-term holding."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "EMA",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "revenue_growth_yoy",
+     "value": "n/a",
+     "point": "Revenue growth data is missing, so I cannot judge if growth is real or accelerating."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "ARGX",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "revenue_growth_yoy",
+     "value": "n/a",
+     "point": "Revenue growth data is missing, so I cannot judge if growth is real or accelerating."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "NLY",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "revenue_growth_yoy",
+     "value": "n/a",
+     "point": "Revenue growth data is missing, so I cannot judge if growth is real or accelerating."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "DOC",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "revenue_growth_accel",
+     "value": "+10.9%",
+     "point": "The +10.9% acceleration means growth is accelerating, so the decelerating-growth sell signal is not triggered."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "29.29",
+     "point": "EV/Sales of 29.29 appears to price in perfection, so the valuation requirement for buying is not met."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "growth_at_reasonable_price",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "HRL",
+   "conviction": 0.0,
+   "reasons": [
+    {
+     "field": "revenue_growth_q_yoy",
+     "value": "-2.4%",
+     "point": "The -2.4% quarterly revenue growth shows recent revenue decline, so growth is not real."
+    },
+    {
+     "field": "revenue_growth_accel",
+     "value": "-4.9%",
+     "point": "The -4.9% acceleration value indicates growth is decelerating, which is negative for my style."
+    },
+    {
+     "field": "ev_to_sales",
+     "value": "1.05",
+     "point": "EV/Sales of 1.05 is not a rich multiple, so the decelerating growth alone does not trigger my sell signal."
+    }
+   ],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "EMA",
+   "conviction": -1.0,
+   "reasons": [
+    {
+     "field": "pct_vs_sma200",
+     "value": "-9.6%",
+     "point": "pct_vs_sma200 is -9.6%, so price is below its 200-day average and should be avoided or shorted."
+    },
+    {
+     "field": "sma50_above_sma200",
+     "value": "no",
+     "point": "sma50_above_sma200 is no, confirming a downtrend."
+    },
+    {
+     "field": "rs_6m_vs_spy",
+     "value": "-26.8%",
+     "point": "rs_6m_vs_spy is -26.8%, underperforming the market badly."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "ARGX",
+   "conviction": -0.5,
+   "reasons": [
+    {
+     "field": "pct_vs_sma50",
+     "value": "-14.5%",
+     "point": "pct_vs_sma50 is -14.5%, showing short-term weakness below the 50-day average."
+    },
+    {
+     "field": "pct_vs_sma200",
+     "value": "-3.9%",
+     "point": "pct_vs_sma200 is -3.9%, so price is below the long-term average."
+    },
+    {
+     "field": "rs_6m_vs_spy",
+     "value": "-12.1%",
+     "point": "rs_6m_vs_spy is -12.1%, underperforming the market."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "NLY",
+   "conviction": -1.0,
+   "reasons": [
+    {
+     "field": "pct_vs_sma200",
+     "value": "-12.3%",
+     "point": "pct_vs_sma200 is -12.3%, so price is substantially below its 200-day average."
+    },
+    {
+     "field": "rs_6m_vs_spy",
+     "value": "-25.7%",
+     "point": "rs_6m_vs_spy is -25.7%, underperforming the market dramatically."
+    },
+    {
+     "field": "mom_3m",
+     "value": "-17.0%",
+     "point": "mom_3m is -17.0%, showing strong negative short-term momentum."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "DOC",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "trend_follower",
+   "kind": "llm",
+   "horizon_days": 63,
+   "symbol": "HRL",
+   "conviction": -1.0,
+   "reasons": [
+    {
+     "field": "pct_vs_sma200",
+     "value": "-14.6%",
+     "point": "pct_vs_sma200 is -14.6%, so price is far below its 200-day average."
+    },
+    {
+     "field": "sma50_above_sma200",
+     "value": "no",
+     "point": "sma50_above_sma200 is no, confirming a downtrend."
+    },
+    {
+     "field": "rs_6m_vs_spy",
+     "value": "-20.1%",
+     "point": "rs_6m_vs_spy is -20.1%, underperforming the market."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "EMA",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "ARGX",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "NLY",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "DOC",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "contrarian_rebound",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "HRL",
+   "conviction": 0.8,
+   "reasons": [
+    {
+     "field": "rsi14",
+     "value": "27.07",
+     "point": "RSI of 27.07 is deeply oversold, which matches buying fear."
+    },
+    {
+     "field": "drawdown_52w",
+     "value": "-25.9%",
+     "point": "The drawdown of -25.9% shows the stock is far below its 52-week high."
+    },
+    {
+     "field": "fcf_ttm",
+     "value": "$781M",
+     "point": "Free cash flow of $781M shows the business still makes cash, satisfying my cash-generation requirement."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "EMA",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "ARGX",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "NLY",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "DOC",
+   "conviction": -0.6,
+   "reasons": [
+    {
+     "field": "ev_to_sales",
+     "value": "29.29",
+     "point": "Enterprise value of 29.29 times sales is a rich valuation that leaves little room for error."
+    },
+    {
+     "field": "net_debt",
+     "value": "$8.4B",
+     "point": "Net debt of $8.4B is substantial and increases financial risk."
+    },
+    {
+     "field": "net_income_ttm",
+     "value": "$243M",
+     "point": "Net income of $243M is positive but free cash flow is n/a, so profits may not show up as cash."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "forensic_skeptic",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "HRL",
+   "conviction": -0.2,
+   "reasons": [
+    {
+     "field": "net_margin",
+     "value": "+2.8%",
+     "point": "Net margin of +2.8% is thin, leaving little buffer against cost increases or price competition."
+    },
+    {
+     "field": "net_debt",
+     "value": "$2.1B",
+     "point": "Net debt of $2.1B adds financial risk and could pressure cash flows if earnings weaken."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "EMA",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "ARGX",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "NLY",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "DOC",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "squeeze_hunter",
+   "kind": "llm",
+   "horizon_days": 21,
+   "symbol": "HRL",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "EMA",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "ARGX",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "NLY",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "DOC",
+   "conviction": 0.0,
+   "reasons": [],
+   "stripped": [],
+   "status": "abstain"
+  },
+  {
+   "investor": "small_cap_specialist",
+   "kind": "llm",
+   "horizon_days": 126,
+   "symbol": "HRL",
+   "conviction": 0.3,
+   "reasons": [
+    {
+     "field": "revenue_growth_yoy",
+     "value": "+0.7%",
+     "point": "Revenue growth of +0.7% is positive but modest, indicating limited growth."
+    },
+    {
+     "field": "fcf_margin",
+     "value": "+6.4%",
+     "point": "FCF margin of +6.4% shows the company is self-funding."
+    },
+    {
+     "field": "drawdown_52w",
+     "value": "-25.9%",
+     "point": "The 52-week drawdown of -25.9% suggests the market has marked the stock down."
+    }
+   ],
+   "stripped": [],
+   "status": "voted"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "EMA",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "ARGX",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "NLY",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "DOC",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_momentum",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "HRL",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "EMA",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "ARGX",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "NLY",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "DOC",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_value",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "HRL",
+   "conviction": 0.704,
+   "reasons": [
+    {
+     "field": "net_income_ttm",
+     "value": "$343M",
+     "point": "passes the rule: net_income_ttm > 0"
+    },
+    {
+     "field": "fcf_yield",
+     "value": "+7.3%",
+     "point": "passes the rule: fcf_yield > +5.0%"
+    }
+   ],
+   "status": "voted: rank 321 of 542 under the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "EMA",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "ARGX",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "NLY",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "DOC",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_quality",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "HRL",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "EMA",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "ARGX",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "NLY",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "DOC",
+   "conviction": 0.0,
+   "reasons": [],
+   "status": "abstain: outside the rule"
+  },
+  {
+   "investor": "rule_reversal",
+   "kind": "code",
+   "horizon_days": 21,
+   "stripped": [],
+   "symbol": "HRL",
+   "conviction": 0.929,
+   "reasons": [
+    {
+     "field": "rsi14",
+     "value": "27.07",
+     "point": "passes the rule: rsi14 < 35"
+    },
+    {
+     "field": "fcf_ttm",
+     "value": "$781M",
+     "point": "passes the rule: fcf_ttm > 0"
+    }
+   ],
+   "status": "voted: rank 19 of 127 under the rule"
+  }
+ ],
+ "tally": [
+  {
+   "symbol": "HRL",
+   "verdict": "split",
+   "weighted_conviction": 0.191,
+   "mean_conviction": 0.217,
+   "for": 5,
+   "against": 3,
+   "abstain": 4,
+   "independent_voices": 8,
+   "split": true
+  },
+  {
+   "symbol": "ARGX",
+   "verdict": "one voice only",
+   "weighted_conviction": -0.5,
+   "mean_conviction": -0.5,
+   "for": 0,
+   "against": 1,
+   "abstain": 11,
+   "independent_voices": 1,
+   "split": false
+  },
+  {
+   "symbol": "DOC",
+   "verdict": "team against",
+   "weighted_conviction": -0.5,
+   "mean_conviction": -0.5,
+   "for": 0,
+   "against": 3,
+   "abstain": 9,
+   "independent_voices": 3,
+   "split": false
+  },
+  {
+   "symbol": "EMA",
+   "verdict": "one voice only",
+   "weighted_conviction": -1.0,
+   "mean_conviction": -1.0,
+   "for": 0,
+   "against": 1,
+   "abstain": 11,
+   "independent_voices": 1,
+   "split": false
+  },
+  {
+   "symbol": "NLY",
+   "verdict": "one voice only",
+   "weighted_conviction": -1.0,
+   "mean_conviction": -1.0,
+   "for": 0,
+   "against": 1,
+   "abstain": 11,
+   "independent_voices": 1,
+   "split": false
+  }
+ ]
+}

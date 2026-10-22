@@ -14,7 +14,9 @@
     h.push('<div class="panel">' + U.tableHtml(r.columns, r.ranked, r.top_n, r.n_ranked, "4 · Ranked results") + "</div>");
     if (r.sector_breakdown && r.sector_breakdown.length) h.push('<div class="panel">' + U.sectorHtml(r.sector_breakdown, "Survivors by sector (all " + r.n_ranked + ")") + "</div>");
     h.push('<div class="panel" id="bt-run"></div>');
-    h.push('<div class="panel"><div class="step">6 · Why the price and the business may disagree — top ' + r.explanations.length +
+    var team = window.SCOUT_TEAM && window.SCOUT_TEAM[r.id];
+    if (team) h.push('<div class="panel">' + U.teamHtml(team, "6 · The investor team's vote (each investor separately, reasons checked by code)") + "</div>");
+    h.push('<div class="panel"><div class="step">' + (team ? "7" : "6") + ' · Why the price and the business may disagree — top ' + r.explanations.length +
       '</div><p class="muted" style="margin-top:0">Each quote was checked by code to appear verbatim in its linked source; claims that failed were removed and are listed under each card. No earnings-call transcripts were used (licensed content).</p><div class="cards">');
     r.explanations.forEach(function (ex) { h.push(U.cardHtml(ex)); });
     h.push("</div></div>");

@@ -1,0 +1,37 @@
+{
+ "hash": "fe52bc2b4edd8f2c644406ab",
+ "tag": "vote contrarian_rebound",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy fear in businesses that still make cash: deeply oversold, far below recent highs, on heavy volume. You stay away when the business itself is broken.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"DECK\", \"name\": \"DECKERS OUTDOOR CORP\", \"data\": {\"rsi14\": \"52.22\", \"drawdown_52w\": \"-31.7%\", \"volume_ratio_50d\": \"1.04\", \"pct_vs_sma20\": \"+3.9%\", \"mom_1m\": \"+2.9%\", \"fcf_ttm\": \"$1.1B\"}}, {\"symbol\": \"HSY\", \"name\": \"HERSHEY CO\", \"data\": {\"rsi14\": \"38.39\", \"drawdown_52w\": \"-30.1%\", \"volume_ratio_50d\": \"1.13\", \"pct_vs_sma20\": \"-1.8%\", \"mom_1m\": \"-5.6%\", \"fcf_ttm\": \"$2.2B\"}}, {\"symbol\": \"WING\", \"name\": \"Wingstop Inc.\", \"data\": {\"rsi14\": \"61.24\", \"drawdown_52w\": \"-58.1%\", \"volume_ratio_50d\": \"0.93\", \"pct_vs_sma20\": \"+11.4%\", \"mom_1m\": \"+7.2%\", \"fcf_ttm\": \"$128M\"}}, {\"symbol\": \"COCO\", \"name\": \"Vita Coco Company, Inc.\", \"data\": {\"rsi14\": \"47.25\", \"drawdown_52w\": \"-33.4%\", \"volume_ratio_50d\": \"1.94\", \"pct_vs_sma20\": \"-0.5%\", \"mom_1m\": \"+8.7%\", \"fcf_ttm\": \"$124M\"}}, {\"symbol\": \"CELH\", \"name\": \"Celsius Holdings, Inc.\", \"data\": {\"rsi14\": \"43.80\", \"drawdown_52w\": \"-57.8%\", \"volume_ratio_50d\": \"0.58\", \"pct_vs_sma20\": \"-1.7%\", \"mom_1m\": \"-0.9%\", \"fcf_ttm\": \"$463M\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"DECK\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\"field\": \"rsi14\", \"value\": \"52.22\", \"point\": \"RSI 52.22 is not deeply oversold, so this is not the fear I buy.\"},\n        {\"field\": \"volume_ratio_50d\", \"value\": \"1.04\", \"point\": \"Volume ratio 1.04 is not heavy, so the setup lacks the volume signal.\"},\n        {\"field\": \"pct_vs_sma20\", \"value\": \"+3.9%\", \"point\": \"Price is +3.9% above the 20-day average, showing no fear or oversold condition.\"}\n      ]\n    },\n    {\n      \"symbol\": \"HSY\",\n      \"conviction\": 0.4,\n      \"reasons\": [\n        {\"field\": \"drawdown_52w\", \"value\": \"-30.1%\", \"point\": \"A drawdown of -30.1% puts the stock far below recent highs, showing fear.\"},\n        {\"field\": \"volume_ratio_50d\", \"value\": \"1.13\", \"point\": \"Volume ratio 1.13 is above average, indicating some heavy trading.\"},\n        {\"field\": \"fcf_ttm\", \"value\": \"$2.2B\", \"point\": \"Free cash flow of $2.2B shows the business still makes cash.\"}\n      ]\n    },\n    {\n      \"symbol\": \"WING\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\"field\": \"rsi14\", \"value\": \"61.24\", \"point\": \"RSI 61.24 shows the stock is not oversold; it is overbought, not fear.\"},\n        {\"field\": \"volume_ratio_50d\", \"value\": \"0.93\", \"point\": \"Volume ratio 0.93 is below average, not heavy, so the setup is not my style.\"},\n        {\"field\": \"pct_vs_sma20\", \"value\": \"+11.4%\", \"point\": \"Price is +11.4% above the 20-day average, indicating strength rather than fear.\"}\n      ]\n    },\n    {\n      \"symbol\": \"COCO\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\"field\": \"rsi14\", \"value\": \"47.25\", \"point\": \"RSI 47.25 is neutral, not deeply oversold, so no fear to buy.\"},\n        {\"field\": \"mom_1m\", \"value\": \"+8.7%\", \"point\": \"Momentum of +8.7% shows the stock has already bounced, reducing the fear I look for.\"},\n        {\"field\": \"volume_ratio_50d\", \"value\": \"1.94\", \"point\": \"Volume ratio 1.94 is heavy, but without an oversold RSI the setup is outside my style.\"}\n      ]\n    },\n    {\n      \"symbol\": \"CELH\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\"field\": \"volume_ratio_50d\", \"value\": \"0.58\", \"point\": \"Volume ratio 0.58 is below average, not heavy, so the fear setup is incomplete.\"},\n        {\"field\": \"rsi14\", \"value\": \"43.80\", \"point\": \"RSI 43.80 is not deeply oversold, so the stock is not in the fear zone I buy.\"},\n        {\"field\": \"fcf_ttm\", \"value\": \"$463M\", \"point\": \"Free cash flow of $463M is positive, but without heavy volume and deep oversold the setup is not strong enough.\"}\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 886,
+  "completion_tokens": 6203,
+  "total_tokens": 7089,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5376
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 502
+ },
+ "latency_s": 67.08,
+ "recorded_at": "2026-10-22T01:56:18+00:00"
+}

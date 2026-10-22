@@ -1,0 +1,37 @@
+{
+ "hash": "9026d39e8e7248dabca81272",
+ "tag": "vote quality_compounder",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou own businesses with durable high margins that convert revenue into cash, grow steadily and carry little debt, and you hold them for years. You will pay a fair price for quality but avoid fragile, low-margin or heavily indebted businesses.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"DECK\", \"name\": \"DECKERS OUTDOOR CORP\", \"data\": {\"market_cap\": \"$11.3B\", \"gross_margin\": \"+57.8%\", \"operating_margin\": \"+22.7%\", \"fcf_margin\": \"+20.2%\", \"revenue_growth_yoy\": \"+7.9%\", \"net_debt\": \"$-1.6B\", \"pct_vs_sma200\": \"-18.2%\"}}, {\"symbol\": \"HSY\", \"name\": \"HERSHEY CO\", \"data\": {\"market_cap\": \"$33.0B\", \"gross_margin\": \"+38.4%\", \"operating_margin\": \"+17.8%\", \"fcf_margin\": \"+18.3%\", \"revenue_growth_yoy\": \"+7.7%\", \"net_debt\": \"$4.8B\", \"pct_vs_sma200\": \"-13.6%\"}}, {\"symbol\": \"WING\", \"name\": \"Wingstop Inc.\", \"data\": {\"market_cap\": \"$3.2B\", \"gross_margin\": \"n/a\", \"operating_margin\": \"+27.9%\", \"fcf_margin\": \"+17.8%\", \"revenue_growth_yoy\": \"+7.6%\", \"net_debt\": \"$1.1B\", \"pct_vs_sma200\": \"-31.5%\"}}, {\"symbol\": \"COCO\", \"name\": \"Vita Coco Company, Inc.\", \"data\": {\"market_cap\": \"$3.2B\", \"gross_margin\": \"+41.1%\", \"operating_margin\": \"+19.1%\", \"fcf_margin\": \"+17.6%\", \"revenue_growth_yoy\": \"+26.1%\", \"net_debt\": \"$-279M\", \"pct_vs_sma200\": \"-8.8%\"}}, {\"symbol\": \"CELH\", \"name\": \"Celsius Holdings, Inc.\", \"data\": {\"market_cap\": \"$6.9B\", \"gross_margin\": \"+48.8%\", \"operating_margin\": \"+5.3%\", \"fcf_margin\": \"+15.2%\", \"revenue_growth_yoy\": \"+82.9%\", \"net_debt\": \"$44M\", \"pct_vs_sma200\": \"-24.2%\"}}]}"
+  }
+ ],
+ "response": "{\"votes\": [{\"symbol\": \"DECK\", \"conviction\": 0.8, \"reasons\": [{\"field\": \"gross_margin\", \"value\": \"+57.8%\", \"point\": \"A gross margin of 57.8% indicates durable pricing power and high unit profitability, which fits my style.\"}, {\"field\": \"fcf_margin\", \"value\": \"+20.2%\", \"point\": \"A free-cash-flow margin of 20.2% shows the business converts revenue into cash at a high rate.\"}, {\"field\": \"net_debt\", \"value\": \"$-1.6B\", \"point\": \"Net debt of $-1.6B means the company has more cash than debt, carrying no debt burden.\"}]}, {\"symbol\": \"HSY\", \"conviction\": 0.3, \"reasons\": [{\"field\": \"gross_margin\", \"value\": \"+38.4%\", \"point\": \"A gross margin of 38.4% is acceptable but below my preferred durable-high-margin threshold.\"}, {\"field\": \"fcf_margin\", \"value\": \"+18.3%\", \"point\": \"A free-cash-flow margin of 18.3% indicates solid cash conversion from revenue.\"}, {\"field\": \"net_debt\", \"value\": \"$4.8B\", \"point\": \"Net debt of $4.8B versus $33.0B market cap is a moderate debt load, not heavy enough to avoid but not my preferred little-debt profile.\"}]}, {\"symbol\": \"WING\", \"conviction\": 0.2, \"reasons\": [{\"field\": \"operating_margin\", \"value\": \"+27.9%\", \"point\": \"An operating margin of 27.9% shows strong operating profitability.\"}, {\"field\": \"fcf_margin\", \"value\": \"+17.8%\", \"point\": \"A free-cash-flow margin of 17.8% indicates healthy cash conversion.\"}, {\"field\": \"net_debt\", \"value\": \"$1.1B\", \"point\": \"Net debt of $1.1B relative to $3.2B market cap is a meaningful debt load, limiting my low-debt style conviction.\"}]}, {\"symbol\": \"COCO\", \"conviction\": 0.7, \"reasons\": [{\"field\": \"revenue_growth_yoy\", \"value\": \"+26.1%\", \"point\": \"Revenue growth of 26.1% is robust and suggests expanding demand, which I like when paired with cash generation.\"}, {\"field\": \"gross_margin\", \"value\": \"+41.1%\", \"point\": \"A gross margin of 41.1% shows good profitability at the product level.\"}, {\"field\": \"net_debt\", \"value\": \"$-279M\", \"point\": \"Net debt of $-279M means net cash, so the company carries no debt burden.\"}]}, {\"symbol\": \"CELH\", \"conviction\": 0.0, \"reasons\": [{\"field\": \"operating_margin\", \"value\": \"+5.3%\", \"point\": \"An operating margin of 5.3% is too low for my durable-high-margin style.\"}, {\"field\": \"revenue_growth_yoy\", \"value\": \"+82.9%\", \"point\": \"Revenue growth of 82.9% is not the steady growth I seek and may not be durable.\"}]}]}",
+ "usage": {
+  "prompt_tokens": 952,
+  "completion_tokens": 6753,
+  "total_tokens": 7705,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6008
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 568
+ },
+ "latency_s": 70.74,
+ "recorded_at": "2026-10-22T01:56:22+00:00"
+}

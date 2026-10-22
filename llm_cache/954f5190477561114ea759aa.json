@@ -1,0 +1,37 @@
+{
+ "hash": "954f5190477561114ea759aa",
+ "tag": "vote quality_compounder",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou own businesses with durable high margins that convert revenue into cash, grow steadily and carry little debt, and you hold them for years. You will pay a fair price for quality but avoid fragile, low-margin or heavily indebted businesses.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"CTVA\", \"name\": \"Corteva, Inc.\", \"data\": {\"market_cap\": \"$9.2B\", \"gross_margin\": \"+49.5%\", \"operating_margin\": \"n/a\", \"fcf_margin\": \"+3.5%\", \"revenue_growth_yoy\": \"+3.7%\", \"net_debt\": \"$-683M\", \"pct_vs_sma200\": \"-82.1%\"}}, {\"symbol\": \"TTD\", \"name\": \"Trade Desk, Inc.\", \"data\": {\"market_cap\": \"$5.8B\", \"gross_margin\": \"+76.9%\", \"operating_margin\": \"+19.6%\", \"fcf_margin\": \"+28.9%\", \"revenue_growth_yoy\": \"+11.6%\", \"net_debt\": \"$-1.5B\", \"pct_vs_sma200\": \"-44.2%\"}}, {\"symbol\": \"LQDA\", \"name\": \"Liquidia Corp\", \"data\": {\"market_cap\": \"$2.5B\", \"gross_margin\": \"n/a\", \"operating_margin\": \"+37.4%\", \"fcf_margin\": \"+33.4%\", \"revenue_growth_yoy\": \"+2233.6%\", \"net_debt\": \"$-264M\", \"pct_vs_sma200\": \"-48.2%\"}}, {\"symbol\": \"Z\", \"name\": \"ZILLOW GROUP, INC.\", \"data\": {\"market_cap\": \"$6.6B\", \"gross_margin\": \"+72.9%\", \"operating_margin\": \"+0.4%\", \"fcf_margin\": \"+9.2%\", \"revenue_growth_yoy\": \"+17.7%\", \"net_debt\": \"$637M\", \"pct_vs_sma200\": \"-30.4%\"}}, {\"symbol\": \"CSGP\", \"name\": \"COSTAR GROUP, INC.\", \"data\": {\"market_cap\": \"$12.1B\", \"gross_margin\": \"+78.7%\", \"operating_margin\": \"+2.2%\", \"fcf_margin\": \"+7.9%\", \"revenue_growth_yoy\": \"+22.0%\", \"net_debt\": \"$-267M\", \"pct_vs_sma200\": \"-24.2%\"}}]}"
+  }
+ ],
+ "response": "{\"votes\": [{\"symbol\": \"CTVA\", \"conviction\": -0.3, \"reasons\": [{\"field\": \"fcf_margin\", \"value\": \"+3.5%\", \"point\": \"Free cash flow margin of +3.5% is too low, showing the business converts little revenue into cash, a core requirement for my style.\"}, {\"field\": \"revenue_growth_yoy\", \"value\": \"+3.7%\", \"point\": \"Revenue growth of +3.7% is modest and lacks the steady durable expansion I seek.\"}, {\"field\": \"net_debt\", \"value\": \"$-683M\", \"point\": \"Net debt of $-683M is net cash, but it does not offset the weak cash conversion and low growth.\"}]}, {\"symbol\": \"TTD\", \"conviction\": 0.7, \"reasons\": [{\"field\": \"gross_margin\", \"value\": \"+76.9%\", \"point\": \"Gross margin of +76.9% is high, indicating durable pricing power and a high-quality business.\"}, {\"field\": \"fcf_margin\", \"value\": \"+28.9%\", \"point\": \"Free cash flow margin of +28.9% demonstrates strong conversion of revenue into cash.\"}, {\"field\": \"net_debt\", \"value\": \"$-1.5B\", \"point\": \"Net debt of $-1.5B shows net cash, so the company carries little debt and has financial strength.\"}]}, {\"symbol\": \"LQDA\", \"conviction\": 0, \"reasons\": []}, {\"symbol\": \"Z\", \"conviction\": -0.4, \"reasons\": [{\"field\": \"operating_margin\", \"value\": \"+0.4%\", \"point\": \"Operating margin of +0.4% is very low, indicating fragile profitability that does not meet my high-margin standard.\"}, {\"field\": \"fcf_margin\", \"value\": \"+9.2%\", \"point\": \"Free cash flow margin of +9.2% is modest, showing weak conversion of revenue into cash.\"}, {\"field\": \"net_debt\", \"value\": \"$637M\", \"point\": \"Net debt of $637M means the company carries debt, conflicting with my preference for little debt.\"}]}, {\"symbol\": \"CSGP\", \"conviction\": -0.2, \"reasons\": [{\"field\": \"operating_margin\", \"value\": \"+2.2%\", \"point\": \"Operating margin of +2.2% is low, suggesting the business lacks the durable high margin I require.\"}, {\"field\": \"fcf_margin\", \"value\": \"+7.9%\", \"point\": \"Free cash flow margin of +7.9% is modest, indicating weak conversion of revenue into cash.\"}, {\"field\": \"net_debt\", \"value\": \"$-267M\", \"point\": \"Net debt of $-267M is net cash, but it does not compensate for the low operating and free cash flow margins.\"}]}]}",
+ "usage": {
+  "prompt_tokens": 945,
+  "completion_tokens": 4842,
+  "total_tokens": 5787,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4189
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 561
+ },
+ "latency_s": 50.72,
+ "recorded_at": "2026-10-22T01:56:02+00:00"
+}

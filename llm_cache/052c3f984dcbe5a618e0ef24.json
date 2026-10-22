@@ -1,0 +1,37 @@
+{
+ "hash": "052c3f984dcbe5a618e0ef24",
+ "tag": "vote forensic_skeptic",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou hunt for what can go wrong: profits that do not show up as cash, thin margins, leverage, rich valuations, and a crowd already short. You are comfortable saying a name should be sold or shorted, and you need evidence before you are bullish.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"OPFI\", \"name\": \"OppFi Inc.\", \"data\": {\"net_income_ttm\": \"$102M\", \"fcf_ttm\": \"$385M\", \"net_margin\": \"+28.0%\", \"net_debt\": \"$-14M\", \"ev_to_sales\": \"1.09\", \"short_pct_shares_out\": \"+5.2%\", \"days_to_cover\": \"3.8d\"}}, {\"symbol\": \"COLL\", \"name\": \"COLLEGIUM PHARMACEUTICAL, INC\", \"data\": {\"net_income_ttm\": \"$48M\", \"fcf_ttm\": \"$328M\", \"net_margin\": \"+5.9%\", \"net_debt\": \"$-118M\", \"ev_to_sales\": \"0.74\", \"short_pct_shares_out\": \"+17.4%\", \"days_to_cover\": \"6.0d\"}}, {\"symbol\": \"YELP\", \"name\": \"YELP INC\", \"data\": {\"net_income_ttm\": \"$127M\", \"fcf_ttm\": \"$297M\", \"net_margin\": \"+8.6%\", \"net_debt\": \"$-77M\", \"ev_to_sales\": \"0.66\", \"short_pct_shares_out\": \"+19.1%\", \"days_to_cover\": \"8.1d\"}}, {\"symbol\": \"TDOC\", \"name\": \"Teladoc Health, Inc.\", \"data\": {\"net_income_ttm\": \"$-177M\", \"fcf_ttm\": \"$254M\", \"net_margin\": \"-7.1%\", \"net_debt\": \"$-732M\", \"ev_to_sales\": \"0.11\", \"short_pct_shares_out\": \"+15.2%\", \"days_to_cover\": \"8.5d\"}}, {\"symbol\": \"CRMD\", \"name\": \"CorMedix Inc.\", \"data\": {\"net_income_ttm\": \"$187M\", \"fcf_ttm\": \"$250M\", \"net_margin\": \"+40.5%\", \"net_debt\": \"$-257M\", \"ev_to_sales\": \"0.68\", \"short_pct_shares_out\": \"+20.8%\", \"days_to_cover\": \"18.5d\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"OPFI\",\n      \"conviction\": 0.7,\n      \"reasons\": [\n        {\n          \"field\": \"net_margin\",\n          \"value\": \"+28.0%\",\n          \"point\": \"Net margin of +28.0% is high, not thin, supporting profitability.\"\n        },\n        {\n          \"field\": \"fcf_ttm\",\n          \"value\": \"$385M\",\n          \"point\": \"Free cash flow of $385M exceeds net income of $102M, so profits show up as cash.\"\n        },\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+5.2%\",\n          \"point\": \"Short interest of +5.2% is low, so the crowd is not already short.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"COLL\",\n      \"conviction\": -0.3,\n      \"reasons\": [\n        {\n          \"field\": \"net_margin\",\n          \"value\": \"+5.9%\",\n          \"point\": \"Net margin of +5.9% is thin, leaving little room for error.\"\n        },\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+17.4%\",\n          \"point\": \"Short interest of +17.4% indicates a crowd already short.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"YELP\",\n      \"conviction\": -0.2,\n      \"reasons\": [\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+19.1%\",\n          \"point\": \"Short interest of +19.1% indicates a crowd already short.\"\n        },\n        {\n          \"field\": \"net_margin\",\n          \"value\": \"+8.6%\",\n          \"point\": \"Net margin of +8.6% is moderate and could be pressured.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TDOC\",\n      \"conviction\": -0.4,\n      \"reasons\": [\n        {\n          \"field\": \"net_margin\",\n          \"value\": \"-7.1%\",\n          \"point\": \"Net margin of -7.1% is negative, showing losses.\"\n        },\n        {\n          \"field\": \"net_income_ttm\",\n          \"value\": \"$-177M\",\n          \"point\": \"Net income of $-177M indicates the company is losing money.\"\n        },\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+15.2%\",\n          \"point\": \"Short interest of +15.2% indicates a crowd already short.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CRMD\",\n      \"conviction\": -0.2,\n      \"reasons\": [\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+20.8%\",\n          \"point\": \"Short interest of +20.8% is very high, indicating a crowd already short.\"\n        },\n        {\n          \"field\": \"days_to_cover\",\n          \"value\": \"18.5d\",\n          \"point\": \"Days to cover of 18.5d is extremely high, showing heavy short positioning.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 938,
+  "completion_tokens": 9252,
+  "total_tokens": 10190,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8542
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 554
+ },
+ "latency_s": 102.26,
+ "recorded_at": "2026-10-22T01:57:34+00:00"
+}

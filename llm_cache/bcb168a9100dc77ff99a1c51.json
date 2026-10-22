@@ -1,0 +1,37 @@
+{
+ "hash": "bcb168a9100dc77ff99a1c51",
+ "tag": "vote quality_compounder",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou own businesses with durable high margins that convert revenue into cash, grow steadily and carry little debt, and you hold them for years. You will pay a fair price for quality but avoid fragile, low-margin or heavily indebted businesses.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"VICR\", \"name\": \"VICOR CORP\", \"data\": {\"market_cap\": \"$11.9B\", \"gross_margin\": \"+38.3%\", \"operating_margin\": \"+13.7%\", \"fcf_margin\": \"+12.1%\", \"revenue_growth_yoy\": \"+96.1%\", \"net_debt\": \"$-404M\", \"pct_vs_sma200\": \"+19.1%\"}}, {\"symbol\": \"SITM\", \"name\": \"SITIME Corp\", \"data\": {\"market_cap\": \"$19.4B\", \"gross_margin\": \"+58.7%\", \"operating_margin\": \"-3.9%\", \"fcf_margin\": \"+18.1%\", \"revenue_growth_yoy\": \"+83.0%\", \"net_debt\": \"$-1.9B\", \"pct_vs_sma200\": \"+20.5%\"}}, {\"symbol\": \"STRL\", \"name\": \"STERLING INFRASTRUCTURE, INC.\", \"data\": {\"market_cap\": \"$15.9B\", \"gross_margin\": \"+23.8%\", \"operating_margin\": \"+17.5%\", \"fcf_margin\": \"+14.0%\", \"revenue_growth_yoy\": \"+60.8%\", \"net_debt\": \"$-181M\", \"pct_vs_sma200\": \"-4.7%\"}}, {\"symbol\": \"SANM\", \"name\": \"SANMINA CORP\", \"data\": {\"market_cap\": \"$11.3B\", \"gross_margin\": \"+9.0%\", \"operating_margin\": \"+4.2%\", \"fcf_margin\": \"+4.7%\", \"revenue_growth_yoy\": \"+58.6%\", \"net_debt\": \"$389M\", \"pct_vs_sma200\": \"+10.8%\"}}, {\"symbol\": \"KLIC\", \"name\": \"KULICKE & SOFFA INDUSTRIES INC\", \"data\": {\"market_cap\": \"$4.8B\", \"gross_margin\": \"+48.2%\", \"operating_margin\": \"+13.2%\", \"fcf_margin\": \"+4.3%\", \"revenue_growth_yoy\": \"+44.4%\", \"net_debt\": \"$-407M\", \"pct_vs_sma200\": \"+8.6%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"VICR\",\n      \"conviction\": 0.4,\n      \"reasons\": [\n        {\n          \"field\": \"gross_margin\",\n          \"value\": \"+38.3%\",\n          \"point\": \"Gross margin of +38.3% is decent but not a high enough margin on its own to command a full conviction buy.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+12.1%\",\n          \"point\": \"FCF margin of +12.1% shows the business converts revenue into free cash flow, which I like.\"\n        },\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+96.1%\",\n          \"point\": \"Revenue growth of +96.1% is very high and likely not steady, so I temper my conviction.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"SITM\",\n      \"conviction\": -0.3,\n      \"reasons\": [\n        {\n          \"field\": \"operating_margin\",\n          \"value\": \"-3.9%\",\n          \"point\": \"Operating margin of -3.9% shows the core business is not profitable, which fails my requirement for durable high margins.\"\n        },\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+83.0%\",\n          \"point\": \"Revenue growth of +83.0% is very high and unlikely to be steady enough for my long-term style.\"\n        },\n        {\n          \"field\": \"gross_margin\",\n          \"value\": \"+58.7%\",\n          \"point\": \"Gross margin of +58.7% is excellent, but it does not offset the negative operating margin.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"STRL\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"gross_margin\",\n          \"value\": \"+23.8%\",\n          \"point\": \"Gross margin of +23.8% is too low for my style, so I abstain rather than guess.\"\n        },\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+60.8%\",\n          \"point\": \"Revenue growth of +60.8% is strong but not clearly steady, adding to my reluctance.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"SANM\",\n      \"conviction\": -0.7,\n      \"reasons\": [\n        {\n          \"field\": \"gross_margin\",\n          \"value\": \"+9.0%\",\n          \"point\": \"Gross margin of +9.0% indicates a very low-margin business, which I avoid.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+4.7%\",\n          \"point\": \"FCF margin of +4.7% shows weak cash conversion from revenue.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$389M\",\n          \"point\": \"Net debt of $389M adds balance-sheet risk that I do not want.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"KLIC\",\n      \"conviction\": 0.3,\n      \"reasons\": [\n        {\n          \"field\": \"gross_margin\",\n          \"value\": \"+48.2%\",\n          \"point\": \"Gross margin of +48.2% is high and suggests durable pricing power.\"\n        },\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+4.3%\",\n          \"point\": \"FCF margin of +4.3% is low, so cash conversion is not as strong as I prefer.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$-407M\",\n          \"point\": \"Net debt of $-407M means a net cash balance sheet, which lowers financial risk.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 961,
+  "completion_tokens": 7394,
+  "total_tokens": 8355,
+  "prompt_tokens_details": {
+   "cached_tokens": 896
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6534
+  },
+  "prompt_cache_hit_tokens": 896,
+  "prompt_cache_miss_tokens": 65
+ },
+ "latency_s": 77.82,
+ "recorded_at": "2026-10-22T01:53:19+00:00"
+}

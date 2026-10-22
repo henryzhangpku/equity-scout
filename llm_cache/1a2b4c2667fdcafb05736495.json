@@ -1,0 +1,37 @@
+{
+ "hash": "1a2b4c2667fdcafb05736495",
+ "tag": "vote forensic_skeptic",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou hunt for what can go wrong: profits that do not show up as cash, thin margins, leverage, rich valuations, and a crowd already short. You are comfortable saying a name should be sold or shorted, and you need evidence before you are bullish.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"CTVA\", \"name\": \"Corteva, Inc.\", \"data\": {\"net_income_ttm\": \"$1.0B\", \"fcf_ttm\": \"$629M\", \"net_margin\": \"+5.7%\", \"net_debt\": \"$-683M\", \"ev_to_sales\": \"0.48\", \"short_pct_shares_out\": \"+3.1%\", \"days_to_cover\": \"4.1d\"}}, {\"symbol\": \"TTD\", \"name\": \"Trade Desk, Inc.\", \"data\": {\"net_income_ttm\": \"$407M\", \"fcf_ttm\": \"$863M\", \"net_margin\": \"+13.6%\", \"net_debt\": \"$-1.5B\", \"ev_to_sales\": \"1.44\", \"short_pct_shares_out\": \"+18.9%\", \"days_to_cover\": \"4.8d\"}}, {\"symbol\": \"LQDA\", \"name\": \"Liquidia Corp\", \"data\": {\"net_income_ttm\": \"$139M\", \"fcf_ttm\": \"$151M\", \"net_margin\": \"+30.7%\", \"net_debt\": \"$-264M\", \"ev_to_sales\": \"4.98\", \"short_pct_shares_out\": \"+13.8%\", \"days_to_cover\": \"11.4d\"}}, {\"symbol\": \"Z\", \"name\": \"ZILLOW GROUP, INC.\", \"data\": {\"net_income_ttm\": \"$55M\", \"fcf_ttm\": \"$258M\", \"net_margin\": \"+2.0%\", \"net_debt\": \"$637M\", \"ev_to_sales\": \"2.59\", \"short_pct_shares_out\": \"+5.5%\", \"days_to_cover\": \"4.0d\"}}, {\"symbol\": \"CSGP\", \"name\": \"COSTAR GROUP, INC.\", \"data\": {\"net_income_ttm\": \"$73M\", \"fcf_ttm\": \"$280M\", \"net_margin\": \"+2.1%\", \"net_debt\": \"$-267M\", \"ev_to_sales\": \"3.32\", \"short_pct_shares_out\": \"+3.7%\", \"days_to_cover\": \"2.7d\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"CTVA\",\n      \"conviction\": 0.2,\n      \"reasons\": [\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$-683M\",\n          \"point\": \"Net debt is negative, indicating a net cash position, which reduces leverage risk.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"0.48\",\n          \"point\": \"EV/Sales of 0.48 is a low valuation, suggesting limited downside from rich pricing.\"\n        },\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+3.1%\",\n          \"point\": \"Short interest of +3.1% is low, so the crowd is not already short in this name.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TTD\",\n      \"conviction\": -0.2,\n      \"reasons\": [\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+18.9%\",\n          \"point\": \"Short interest of +18.9% is high, indicating a crowd already short, which is a risk factor in my style.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"LQDA\",\n      \"conviction\": -0.4,\n      \"reasons\": [\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"4.98\",\n          \"point\": \"EV/Sales of 4.98 is a rich valuation that leaves little room for error.\"\n        },\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+13.8%\",\n          \"point\": \"Short interest of +13.8% is high, showing a crowd already short.\"\n        },\n        {\n          \"field\": \"days_to_cover\",\n          \"value\": \"11.4d\",\n          \"point\": \"Days to cover of 11.4d is very high, increasing the risk of a crowded short trade.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"Z\",\n      \"conviction\": -0.4,\n      \"reasons\": [\n        {\n          \"field\": \"net_margin\",\n          \"value\": \"+2.0%\",\n          \"point\": \"Net margin of +2.0% is very thin, leaving little profitability buffer.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$637M\",\n          \"point\": \"Positive net debt of $637M indicates leverage, which increases financial risk.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"2.59\",\n          \"point\": \"EV/Sales of 2.59 is a rich valuation for a company with such thin margins.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CSGP\",\n      \"conviction\": -0.2,\n      \"reasons\": [\n        {\n          \"field\": \"net_margin\",\n          \"value\": \"+2.1%\",\n          \"point\": \"Net margin of +2.1% is very thin, indicating weak profitability.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"3.32\",\n          \"point\": \"EV/Sales of 3.32 is a rich valuation that raises downside risk.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 936,
+  "completion_tokens": 5886,
+  "total_tokens": 6822,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 5156
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 552
+ },
+ "latency_s": 61.95,
+ "recorded_at": "2026-10-22T01:56:13+00:00"
+}

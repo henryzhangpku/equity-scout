@@ -1,0 +1,37 @@
+{
+ "hash": "6d1142eb0f7bfe056a069e9d",
+ "tag": "vote small_cap_specialist",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou fish where large funds cannot: smaller, less liquid companies that are growing and self-funding, after the market has marked them down. You avoid names too illiquid to exit.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"BMNR\", \"name\": \"BITMINE IMMERSION TECHNOLOGIES, INC.\", \"data\": {\"market_cap\": \"$14.5B\", \"avg_dollar_volume_50d\": \"$917M\", \"revenue_growth_yoy\": \"+1022.3%\", \"fcf_margin\": \"-481.4%\", \"drawdown_52w\": \"-59.9%\", \"mom_3m\": \"+60.5%\"}}, {\"symbol\": \"VAL\", \"name\": \"Valaris Ltd\", \"data\": {\"market_cap\": \"$5.8B\", \"avg_dollar_volume_50d\": \"$97M\", \"revenue_growth_yoy\": \"+548.5%\", \"fcf_margin\": \"-112.6%\", \"drawdown_52w\": \"-26.0%\", \"mom_3m\": \"+8.2%\"}}, {\"symbol\": \"IBRX\", \"name\": \"ImmunityBio, Inc.\", \"data\": {\"market_cap\": \"$10.5B\", \"avg_dollar_volume_50d\": \"$90M\", \"revenue_growth_yoy\": \"+192.9%\", \"fcf_margin\": \"-173.8%\", \"drawdown_52w\": \"-14.2%\", \"mom_3m\": \"+20.6%\"}}, {\"symbol\": \"MU\", \"name\": \"MICRON TECHNOLOGY INC\", \"data\": {\"market_cap\": \"$1,169.9B\", \"avg_dollar_volume_50d\": \"$28.0B\", \"revenue_growth_yoy\": \"+167.0%\", \"fcf_margin\": \"+29.0%\", \"drawdown_52w\": \"-14.6%\", \"mom_3m\": \"+5.8%\"}}, {\"symbol\": \"TARS\", \"name\": \"Tarsus Pharmaceuticals, Inc.\", \"data\": {\"market_cap\": \"$3.2B\", \"avg_dollar_volume_50d\": \"$58M\", \"revenue_growth_yoy\": \"+105.2%\", \"fcf_margin\": \"+9.2%\", \"drawdown_52w\": \"-20.4%\", \"mom_3m\": \"+24.2%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"BMNR\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"-481.4%\",\n          \"point\": \"Negative fcf_margin of -481.4% means the company is not self-funding, so it is outside my style.\"\n        },\n        {\n          \"field\": \"avg_dollar_volume_50d\",\n          \"value\": \"$917M\",\n          \"point\": \"Average dollar volume of $917M shows extreme liquidity, so large funds are not excluded, which does not fit my smaller, less liquid niche.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"VAL\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"-112.6%\",\n          \"point\": \"Negative fcf_margin of -112.6% means the company is not self-funding, so it is outside my style.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"IBRX\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"-173.8%\",\n          \"point\": \"Negative fcf_margin of -173.8% means the company is not self-funding, so it is outside my style.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"MU\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"market_cap\",\n          \"value\": \"$1,169.9B\",\n          \"point\": \"Market cap of $1,169.9B is far too large for the smaller, less liquid niche where large funds cannot operate.\"\n        },\n        {\n          \"field\": \"avg_dollar_volume_50d\",\n          \"value\": \"$28.0B\",\n          \"point\": \"Average dollar volume of $28.0B shows extreme liquidity, so large funds can easily enter, which is outside my style.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TARS\",\n      \"conviction\": 0.7,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_margin\",\n          \"value\": \"+9.2%\",\n          \"point\": \"Positive fcf_margin of +9.2% shows the company is self-funding, which my style requires.\"\n        },\n        {\n          \"field\": \"revenue_growth_yoy\",\n          \"value\": \"+105.2%\",\n          \"point\": \"Revenue growth of +105.2% confirms the company is growing.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-20.4%\",\n          \"point\": \"Drawdown of -20.4% shows the market has marked it down, creating the entry I look for.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 893,
+  "completion_tokens": 6690,
+  "total_tokens": 7583,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6045
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 509
+ },
+ "latency_s": 68.59,
+ "recorded_at": "2026-10-22T01:57:56+00:00"
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "e646e8ad3d5053ff1542adec",
+ "tag": "vote contrarian_rebound",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy fear in businesses that still make cash: deeply oversold, far below recent highs, on heavy volume. You stay away when the business itself is broken.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"WOLF\", \"name\": \"WOLFSPEED, INC.\", \"data\": {\"rsi14\": \"56.09\", \"drawdown_52w\": \"-57.8%\", \"volume_ratio_50d\": \"6.34\", \"pct_vs_sma20\": \"+10.5%\", \"mom_1m\": \"+13.7%\", \"fcf_ttm\": \"$-380M\"}}, {\"symbol\": \"KSS\", \"name\": \"KOHLS Corp\", \"data\": {\"rsi14\": \"65.79\", \"drawdown_52w\": \"-16.1%\", \"volume_ratio_50d\": \"1.22\", \"pct_vs_sma20\": \"+11.6%\", \"mom_1m\": \"+14.8%\", \"fcf_ttm\": \"$1.0B\"}}, {\"symbol\": \"CBRL\", \"name\": \"CRACKER BARREL OLD COUNTRY STORE, INC\", \"data\": {\"rsi14\": \"58.49\", \"drawdown_52w\": \"-6.3%\", \"volume_ratio_50d\": \"1.05\", \"pct_vs_sma20\": \"+9.6%\", \"mom_1m\": \"+8.2%\", \"fcf_ttm\": \"$88M\"}}, {\"symbol\": \"MNRO\", \"name\": \"MONRO, INC.\", \"data\": {\"rsi14\": \"54.48\", \"drawdown_52w\": \"-39.2%\", \"volume_ratio_50d\": \"0.74\", \"pct_vs_sma20\": \"+2.7%\", \"mom_1m\": \"+9.6%\", \"fcf_ttm\": \"$39M\"}}, {\"symbol\": \"SWKS\", \"name\": \"SKYWORKS SOLUTIONS, INC.\", \"data\": {\"rsi14\": \"47.56\", \"drawdown_52w\": \"-11.7%\", \"volume_ratio_50d\": \"1.02\", \"pct_vs_sma20\": \"-6.7%\", \"mom_1m\": \"+5.5%\", \"fcf_ttm\": \"$434M\"}}]}"
+  }
+ ],
+ "response": "{\"votes\": [{\"symbol\": \"WOLF\", \"conviction\": -0.8, \"reasons\": [{\"field\": \"fcf_ttm\", \"value\": \"$-380M\", \"point\": \"Free cash flow is $-380M, so this business is not making cash and is broken.\"}, {\"field\": \"rsi14\", \"value\": \"56.09\", \"point\": \"RSI14 at 56.09 is not deeply oversold, so this is not a fear entry.\"}, {\"field\": \"volume_ratio_50d\", \"value\": \"6.34\", \"point\": \"Volume ratio 6.34 is heavy, but price is up +10.5% versus the 20-day SMA, not deeply oversold.\"}]}, {\"symbol\": \"KSS\", \"conviction\": 0, \"reasons\": [{\"field\": \"rsi14\", \"value\": \"65.79\", \"point\": \"RSI14 at 65.79 is overbought, not deeply oversold, so no fear buy.\"}, {\"field\": \"volume_ratio_50d\", \"value\": \"1.22\", \"point\": \"Volume ratio 1.22 is not heavy enough for a fear selloff.\"}, {\"field\": \"drawdown_52w\", \"value\": \"-16.1%\", \"point\": \"Drawdown from the 52-week high is only -16.1%, not far below recent highs.\"}]}, {\"symbol\": \"CBRL\", \"conviction\": 0, \"reasons\": [{\"field\": \"rsi14\", \"value\": \"58.49\", \"point\": \"RSI14 at 58.49 is not deeply oversold, so no fear buy.\"}, {\"field\": \"volume_ratio_50d\", \"value\": \"1.05\", \"point\": \"Volume ratio 1.05 is average, not heavy volume.\"}, {\"field\": \"drawdown_52w\", \"value\": \"-6.3%\", \"point\": \"Drawdown from the 52-week high is only -6.3%, not far below recent highs.\"}]}, {\"symbol\": \"MNRO\", \"conviction\": 0, \"reasons\": [{\"field\": \"rsi14\", \"value\": \"54.48\", \"point\": \"RSI14 at 54.48 is not deeply oversold, so no fear buy.\"}, {\"field\": \"volume_ratio_50d\", \"value\": \"0.74\", \"point\": \"Volume ratio 0.74 is below average, not heavy volume.\"}, {\"field\": \"drawdown_52w\", \"value\": \"-39.2%\", \"point\": \"Drawdown from the 52-week high is -39.2%, but without heavy volume or deeply oversold RSI the setup is incomplete.\"}]}, {\"symbol\": \"SWKS\", \"conviction\": 0, \"reasons\": [{\"field\": \"rsi14\", \"value\": \"47.56\", \"point\": \"RSI14 at 47.56 is not deeply oversold, so no fear buy.\"}, {\"field\": \"volume_ratio_50d\", \"value\": \"1.02\", \"point\": \"Volume ratio 1.02 is average, not heavy volume.\"}, {\"field\": \"drawdown_52w\", \"value\": \"-11.7%\", \"point\": \"Drawdown from the 52-week high is only -11.7%, not far below recent highs.\"}]}]}",
+ "usage": {
+  "prompt_tokens": 894,
+  "completion_tokens": 2562,
+  "total_tokens": 3456,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1810
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 510
+ },
+ "latency_s": 26.55,
+ "recorded_at": "2026-10-22T01:57:05+00:00"
+}

@@ -1,0 +1,37 @@
+{
+ "hash": "49cb2c006c3fb7b66997f792",
+ "tag": "vote trend_follower",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou follow price. You buy names in established uptrends that are beating the market and you avoid or short names below their long-term averages. Fundamentals do not interest you; the tape does.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"BX\", \"name\": \"Blackstone Inc.\", \"data\": {\"mom_3m\": \"-7.5%\", \"mom_6m\": \"-1.7%\", \"mom_12m\": \"-28.9%\", \"pct_vs_sma50\": \"-13.9%\", \"pct_vs_sma200\": \"-10.4%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"-16.1%\"}}, {\"symbol\": \"SBUX\", \"name\": \"STARBUCKS CORP\", \"data\": {\"mom_3m\": \"-11.6%\", \"mom_6m\": \"-2.7%\", \"mom_12m\": \"+17.6%\", \"pct_vs_sma50\": \"-8.1%\", \"pct_vs_sma200\": \"-5.0%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"-17.1%\"}}]}"
+  }
+ ],
+ "response": "",
+ "usage": {
+  "prompt_tokens": 638,
+  "completion_tokens": 2388,
+  "total_tokens": 3026,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2388
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 254
+ },
+ "latency_s": 25.13,
+ "recorded_at": "2026-10-22T01:54:58+00:00"
+}

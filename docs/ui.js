@@ -326,7 +326,7 @@
     var h = ['<div class="step">' + esc(title || "The investor team's vote") + "</div>",
       '<p class="meta" style="margin-top:0">Each investor votes separately on only its own data. Every reason must repeat a value it was shown; code deletes any that do not. ' +
       "Weights: " + esc(t.weights_source) + ". Investors whose past votes move together count as one voice.</p>",
-      '<div class="tablewrap"><table><thead><tr><th>Name</th><th>Team</th><th class="num">Weighted conviction</th><th class="num">For</th><th class="num">Against</th><th class="num">Abstain</th><th class="num">Independent voices</th></tr></thead><tbody>'];
+      '<div class="tablewrap"><table class="wrapt"><thead><tr><th>Name</th><th>Team</th><th class="num">Weighted conviction</th><th class="num">For</th><th class="num">Against</th><th class="num">Abstain</th><th class="num">Independent voices</th></tr></thead><tbody>'];
     t.tally.forEach(function (r) {
       h.push("<tr><td><strong>" + esc(r.symbol) + "</strong></td><td>" + esc(r.verdict) + '</td><td class="num">' + (r.weighted_conviction >= 0 ? "+" : "") +
         r.weighted_conviction.toFixed(2) + '</td><td class="num">' + r["for"] + '</td><td class="num">' + r.against + '</td><td class="num">' + r.abstain +

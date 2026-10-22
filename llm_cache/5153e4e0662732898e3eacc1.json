@@ -1,0 +1,37 @@
+{
+ "hash": "5153e4e0662732898e3eacc1",
+ "tag": "vote trend_follower",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou follow price. You buy names in established uptrends that are beating the market and you avoid or short names below their long-term averages. Fundamentals do not interest you; the tape does.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"WOLF\", \"name\": \"WOLFSPEED, INC.\", \"data\": {\"mom_3m\": \"-12.1%\", \"mom_6m\": \"+27.0%\", \"mom_12m\": \"+16.2%\", \"pct_vs_sma50\": \"+11.2%\", \"pct_vs_sma200\": \"+4.1%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"+12.6%\"}}, {\"symbol\": \"KSS\", \"name\": \"KOHLS Corp\", \"data\": {\"mom_3m\": \"+20.5%\", \"mom_6m\": \"+49.0%\", \"mom_12m\": \"+30.7%\", \"pct_vs_sma50\": \"+9.7%\", \"pct_vs_sma200\": \"+21.0%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"+34.6%\"}}, {\"symbol\": \"CBRL\", \"name\": \"CRACKER BARREL OLD COUNTRY STORE, INC\", \"data\": {\"mom_3m\": \"+10.3%\", \"mom_6m\": \"+88.6%\", \"mom_12m\": \"+33.4%\", \"pct_vs_sma50\": \"+2.6%\", \"pct_vs_sma200\": \"+40.4%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"+74.1%\"}}, {\"symbol\": \"MNRO\", \"name\": \"MONRO, INC.\", \"data\": {\"mom_3m\": \"-16.4%\", \"mom_6m\": \"-14.3%\", \"mom_12m\": \"-17.0%\", \"pct_vs_sma50\": \"+8.0%\", \"pct_vs_sma200\": \"-14.4%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-28.7%\"}}, {\"symbol\": \"SWKS\", \"name\": \"SKYWORKS SOLUTIONS, INC.\", \"data\": {\"mom_3m\": \"+33.7%\", \"mom_6m\": \"+44.0%\", \"mom_12m\": \"+12.1%\", \"pct_vs_sma50\": \"+6.4%\", \"pct_vs_sma200\": \"+22.9%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"+29.6%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"WOLF\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"KSS\",\n      \"conviction\": 1,\n      \"reasons\": [\n        {\n          \"field\": \"mom_6m\",\n          \"value\": \"+49.0%\",\n          \"point\": \"Six-month momentum of +49.0% shows a strong established uptrend.\"\n        },\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"yes\",\n          \"point\": \"The 50-day moving average is above the 200-day moving average, confirming an uptrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"+34.6%\",\n          \"point\": \"The stock is beating the market with relative strength of +34.6% over six months.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CBRL\",\n      \"conviction\": 1,\n      \"reasons\": [\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"+74.1%\",\n          \"point\": \"Relative strength of +74.1% versus SPY shows strong market outperformance.\"\n        },\n        {\n          \"field\": \"mom_6m\",\n          \"value\": \"+88.6%\",\n          \"point\": \"Six-month momentum of +88.6% is a powerful uptrend signal.\"\n        },\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"+40.4%\",\n          \"point\": \"Price is +40.4% above the 200-day moving average, a strong long-term uptrend.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"MNRO\",\n      \"conviction\": -1,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-14.4%\",\n          \"point\": \"Price is -14.4% below the 200-day moving average, so it is below its long-term average.\"\n        },\n        {\n          \"field\": \"mom_6m\",\n          \"value\": \"-14.3%\",\n          \"point\": \"Six-month momentum of -14.3% shows a downtrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-28.7%\",\n          \"point\": \"The stock is underperforming the market with relative strength of -28.7% over six months.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"SWKS\",\n      \"conviction\": 1,\n      \"reasons\": [\n        {\n          \"field\": \"mom_3m\",\n          \"value\": \"+33.7%\",\n          \"point\": \"Three-month momentum of +33.7% shows strong upward price movement.\"\n        },\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"yes\",\n          \"point\": \"The 50-day moving average is above the 200-day moving average, confirming an uptrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"+29.6%\",\n          \"point\": \"The stock is beating the market with relative strength of +29.6% over six months.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 997,
+  "completion_tokens": 3234,
+  "total_tokens": 4231,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2490
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 613
+ },
+ "latency_s": 30.36,
+ "recorded_at": "2026-10-22T01:57:09+00:00"
+}

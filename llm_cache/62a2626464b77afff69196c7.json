@@ -1,0 +1,37 @@
+{
+ "hash": "62a2626464b77afff69196c7",
+ "tag": "vote small_cap_specialist",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou fish where large funds cannot: smaller, less liquid companies that are growing and self-funding, after the market has marked them down. You avoid names too illiquid to exit.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"BX\", \"name\": \"Blackstone Inc.\", \"data\": {\"market_cap\": \"$84.6B\", \"avg_dollar_volume_50d\": \"$546M\", \"revenue_growth_yoy\": \"+17.2%\", \"fcf_margin\": \"+34.1%\", \"drawdown_52w\": \"-28.9%\", \"mom_3m\": \"-7.5%\"}}, {\"symbol\": \"SBUX\", \"name\": \"STARBUCKS CORP\", \"data\": {\"market_cap\": \"$106.3B\", \"avg_dollar_volume_50d\": \"$754M\", \"revenue_growth_yoy\": \"+4.5%\", \"fcf_margin\": \"+9.5%\", \"drawdown_52w\": \"-14.1%\", \"mom_3m\": \"-11.6%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"BX\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"market_cap\",\n          \"value\": \"$84.6B\",\n          \"point\": \"My style focuses on smaller companies, and $84.6B is a large-cap size that large funds can easily own.\"\n        },\n        {\n          \"field\": \"avg_dollar_volume_50d\",\n          \"value\": \"$546M\",\n          \"point\": \"$546M average dollar volume means this stock is too liquid for the under-the-radar names I target.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"SBUX\",\n      \"conviction\": 0,\n      \"reasons\": [\n        {\n          \"field\": \"market_cap\",\n          \"value\": \"$106.3B\",\n          \"point\": \"$106.3B market cap is far above the small-cap range my style requires.\"\n        },\n        {\n          \"field\": \"avg_dollar_volume_50d\",\n          \"value\": \"$754M\",\n          \"point\": \"$754M average dollar volume indicates ample liquidity, so this is not a less-liquid opportunity I fish for.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 598,
+  "completion_tokens": 1307,
+  "total_tokens": 1905,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1040
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 214
+ },
+ "latency_s": 14.06,
+ "recorded_at": "2026-10-22T01:54:47+00:00"
+}

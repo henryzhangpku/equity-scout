@@ -1,0 +1,37 @@
+{
+ "hash": "6b44fd3c943887cbf4fb8579",
+ "tag": "vote trend_follower",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou follow price. You buy names in established uptrends that are beating the market and you avoid or short names below their long-term averages. Fundamentals do not interest you; the tape does.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"EMA\", \"name\": \"EMERA INC\", \"data\": {\"mom_3m\": \"-13.3%\", \"mom_6m\": \"-12.3%\", \"mom_12m\": \"-1.3%\", \"pct_vs_sma50\": \"-8.0%\", \"pct_vs_sma200\": \"-9.6%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-26.8%\"}}, {\"symbol\": \"ARGX\", \"name\": \"ARGENX SE\", \"data\": {\"mom_3m\": \"-6.7%\", \"mom_6m\": \"+2.3%\", \"mom_12m\": \"+2.7%\", \"pct_vs_sma50\": \"-14.5%\", \"pct_vs_sma200\": \"-3.9%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"-12.1%\"}}, {\"symbol\": \"NLY\", \"name\": \"ANNALY CAPITAL MANAGEMENT INC\", \"data\": {\"mom_3m\": \"-17.0%\", \"mom_6m\": \"-11.3%\", \"mom_12m\": \"+1.5%\", \"pct_vs_sma50\": \"-13.6%\", \"pct_vs_sma200\": \"-12.3%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"-25.7%\"}}, {\"symbol\": \"DOC\", \"name\": \"HEALTHPEAK PROPERTIES, INC.\", \"data\": {\"mom_3m\": \"-13.2%\", \"mom_6m\": \"+14.4%\", \"mom_12m\": \"+3.3%\", \"pct_vs_sma50\": \"-9.8%\", \"pct_vs_sma200\": \"-0.1%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"-0.0%\"}}, {\"symbol\": \"HRL\", \"name\": \"HORMEL FOODS CORP /DE/\", \"data\": {\"mom_3m\": \"-20.5%\", \"mom_6m\": \"-5.7%\", \"mom_12m\": \"-14.8%\", \"pct_vs_sma50\": \"-12.5%\", \"pct_vs_sma200\": \"-14.6%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-20.1%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"EMA\",\n      \"conviction\": -1.0,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-9.6%\",\n          \"point\": \"pct_vs_sma200 is -9.6%, so price is below its 200-day average and should be avoided or shorted.\"\n        },\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"no\",\n          \"point\": \"sma50_above_sma200 is no, confirming a downtrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-26.8%\",\n          \"point\": \"rs_6m_vs_spy is -26.8%, underperforming the market badly.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"ARGX\",\n      \"conviction\": -0.5,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"-14.5%\",\n          \"point\": \"pct_vs_sma50 is -14.5%, showing short-term weakness below the 50-day average.\"\n        },\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-3.9%\",\n          \"point\": \"pct_vs_sma200 is -3.9%, so price is below the long-term average.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-12.1%\",\n          \"point\": \"rs_6m_vs_spy is -12.1%, underperforming the market.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"NLY\",\n      \"conviction\": -1.0,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-12.3%\",\n          \"point\": \"pct_vs_sma200 is -12.3%, so price is substantially below its 200-day average.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-25.7%\",\n          \"point\": \"rs_6m_vs_spy is -25.7%, underperforming the market dramatically.\"\n        },\n        {\n          \"field\": \"mom_3m\",\n          \"value\": \"-17.0%\",\n          \"point\": \"mom_3m is -17.0%, showing strong negative short-term momentum.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"DOC\",\n      \"conviction\": 0.0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"HRL\",\n      \"conviction\": -1.0,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-14.6%\",\n          \"point\": \"pct_vs_sma200 is -14.6%, so price is far below its 200-day average.\"\n        },\n        {\n          \"field\": \"sma50_above_sma200\",\n          \"value\": \"no\",\n          \"point\": \"sma50_above_sma200 is no, confirming a downtrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-20.1%\",\n          \"point\": \"rs_6m_vs_spy is -20.1%, underperforming the market.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 990,
+  "completion_tokens": 7258,
+  "total_tokens": 8248,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6466
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 606
+ },
+ "latency_s": 69.56,
+ "recorded_at": "2026-10-22T01:56:22+00:00"
+}

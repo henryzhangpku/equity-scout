@@ -1,0 +1,37 @@
+{
+ "hash": "0f39349c3726dd2e2c441a1d",
+ "tag": "vote contrarian_rebound",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou buy fear in businesses that still make cash: deeply oversold, far below recent highs, on heavy volume. You stay away when the business itself is broken.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"EMA\", \"name\": \"EMERA INC\", \"data\": {\"rsi14\": \"22.80\", \"drawdown_52w\": \"-16.1%\", \"volume_ratio_50d\": \"4.42\", \"pct_vs_sma20\": \"-4.6%\", \"mom_1m\": \"-9.0%\", \"fcf_ttm\": \"n/a\"}}, {\"symbol\": \"ARGX\", \"name\": \"ARGENX SE\", \"data\": {\"rsi14\": \"24.05\", \"drawdown_52w\": \"-22.7%\", \"volume_ratio_50d\": \"8.86\", \"pct_vs_sma20\": \"-14.2%\", \"mom_1m\": \"-18.3%\", \"fcf_ttm\": \"n/a\"}}, {\"symbol\": \"NLY\", \"name\": \"ANNALY CAPITAL MANAGEMENT INC\", \"data\": {\"rsi14\": \"24.46\", \"drawdown_52w\": \"-20.1%\", \"volume_ratio_50d\": \"2.25\", \"pct_vs_sma20\": \"-7.1%\", \"mom_1m\": \"-16.1%\", \"fcf_ttm\": \"n/a\"}}, {\"symbol\": \"DOC\", \"name\": \"HEALTHPEAK PROPERTIES, INC.\", \"data\": {\"rsi14\": \"24.46\", \"drawdown_52w\": \"-18.0%\", \"volume_ratio_50d\": \"2.11\", \"pct_vs_sma20\": \"-7.0%\", \"mom_1m\": \"-8.7%\", \"fcf_ttm\": \"n/a\"}}, {\"symbol\": \"HRL\", \"name\": \"HORMEL FOODS CORP /DE/\", \"data\": {\"rsi14\": \"27.07\", \"drawdown_52w\": \"-25.9%\", \"volume_ratio_50d\": \"2.04\", \"pct_vs_sma20\": \"-3.8%\", \"mom_1m\": \"-7.4%\", \"fcf_ttm\": \"$781M\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"EMA\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"ARGX\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"NLY\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"DOC\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"HRL\",\n      \"conviction\": 0.8,\n      \"reasons\": [\n        {\n          \"field\": \"rsi14\",\n          \"value\": \"27.07\",\n          \"point\": \"RSI of 27.07 is deeply oversold, which matches buying fear.\"\n        },\n        {\n          \"field\": \"drawdown_52w\",\n          \"value\": \"-25.9%\",\n          \"point\": \"The drawdown of -25.9% shows the stock is far below its 52-week high.\"\n        },\n        {\n          \"field\": \"fcf_ttm\",\n          \"value\": \"$781M\",\n          \"point\": \"Free cash flow of $781M shows the business still makes cash, satisfying my cash-generation requirement.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 884,
+  "completion_tokens": 3416,
+  "total_tokens": 4300,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3131
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 500
+ },
+ "latency_s": 35.99,
+ "recorded_at": "2026-10-22T01:55:48+00:00"
+}

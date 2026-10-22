@@ -1,0 +1,37 @@
+{
+ "hash": "76eda7844ce4ace23b09f4d9",
+ "tag": "vote forensic_skeptic",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou hunt for what can go wrong: profits that do not show up as cash, thin margins, leverage, rich valuations, and a crowd already short. You are comfortable saying a name should be sold or shorted, and you need evidence before you are bullish.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"AVGO\", \"name\": \"Broadcom Inc.\", \"data\": {\"net_income_ttm\": \"n/a\", \"fcf_ttm\": \"$39.4B\", \"net_margin\": \"n/a\", \"net_debt\": \"$35.9B\", \"ev_to_sales\": \"19.70\", \"short_pct_shares_out\": \"+1.1%\", \"days_to_cover\": \"1.7d\"}}, {\"symbol\": \"AAOI\", \"name\": \"APPLIED OPTOELECTRONICS, INC.\", \"data\": {\"net_income_ttm\": \"$-57M\", \"fcf_ttm\": \"n/a\", \"net_margin\": \"-9.6%\", \"net_debt\": \"$-447M\", \"ev_to_sales\": \"14.28\", \"short_pct_shares_out\": \"+14.6%\", \"days_to_cover\": \"2.0d\"}}, {\"symbol\": \"AMAT\", \"name\": \"APPLIED MATERIALS INC /DE\", \"data\": {\"net_income_ttm\": \"$9.3B\", \"fcf_ttm\": \"$5.6B\", \"net_margin\": \"+30.1%\", \"net_debt\": \"$-1.5B\", \"ev_to_sales\": \"13.07\", \"short_pct_shares_out\": \"+1.8%\", \"days_to_cover\": \"2.4d\"}}, {\"symbol\": \"COHR\", \"name\": \"COHERENT CORP.\", \"data\": {\"net_income_ttm\": \"$805M\", \"fcf_ttm\": \"$-1.0B\", \"net_margin\": \"+11.3%\", \"net_debt\": \"$1.2B\", \"ev_to_sales\": \"8.49\", \"short_pct_shares_out\": \"+5.2%\", \"days_to_cover\": \"1.7d\"}}, {\"symbol\": \"AMKR\", \"name\": \"AMKOR TECHNOLOGY, INC.\", \"data\": {\"net_income_ttm\": \"$436M\", \"fcf_ttm\": \"$167M\", \"net_margin\": \"+6.2%\", \"net_debt\": \"$-468M\", \"ev_to_sales\": \"1.72\", \"short_pct_shares_out\": \"+4.0%\", \"days_to_cover\": \"2.4d\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"AVGO\",\n      \"conviction\": -0.5,\n      \"reasons\": [\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$35.9B\",\n          \"point\": \"Net debt of $35.9B is high leverage, increasing financial risk.\"\n        },\n        {\n          \"field\": \"ev_to_sales\",\n          \"value\": \"19.70\",\n          \"point\": \"EV/sales of 19.70 is a rich valuation, leaving little margin for error.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"AAOI\",\n      \"conviction\": -1.0,\n      \"reasons\": [\n        {\n          \"field\": \"net_income_ttm\",\n          \"value\": \"$-57M\",\n          \"point\": \"Net income of $-57M shows the company is losing money.\"\n        },\n        {\n          \"field\": \"net_margin\",\n          \"value\": \"-9.6%\",\n          \"point\": \"Net margin of -9.6% is deeply negative, indicating an unprofitable business.\"\n        },\n        {\n          \"field\": \"short_pct_shares_out\",\n          \"value\": \"+14.6%\",\n          \"point\": \"Short interest of +14.6% shows a crowd already short, consistent with bearish sentiment.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"AMAT\",\n      \"conviction\": 0,\n      \"reasons\": []\n    },\n    {\n      \"symbol\": \"COHR\",\n      \"conviction\": -0.7,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_ttm\",\n          \"value\": \"$-1.0B\",\n          \"point\": \"Free cash flow of $-1.0B is negative despite positive net income, so profits are not showing up as cash.\"\n        },\n        {\n          \"field\": \"net_debt\",\n          \"value\": \"$1.2B\",\n          \"point\": \"Net debt of $1.2B is leverage that adds risk.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"AMKR\",\n      \"conviction\": -0.3,\n      \"reasons\": [\n        {\n          \"field\": \"fcf_ttm\",\n          \"value\": \"$167M\",\n          \"point\": \"Free cash flow of $167M is much lower than net income of $436M, indicating weak cash conversion.\"\n        },\n        {\n          \"field\": \"net_margin\",\n          \"value\": \"+6.2%\",\n          \"point\": \"Net margin of +6.2% is thin, leaving little room for error.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 950,
+  "completion_tokens": 6631,
+  "total_tokens": 7581,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 6049
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 566
+ },
+ "latency_s": 72.23,
+ "recorded_at": "2026-10-22T01:54:32+00:00"
+}

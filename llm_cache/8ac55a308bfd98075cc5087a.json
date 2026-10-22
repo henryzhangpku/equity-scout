@@ -1,0 +1,37 @@
+{
+ "hash": "8ac55a308bfd98075cc5087a",
+ "tag": "vote trend_follower",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou follow price. You buy names in established uptrends that are beating the market and you avoid or short names below their long-term averages. Fundamentals do not interest you; the tape does.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"CTVA\", \"name\": \"Corteva, Inc.\", \"data\": {\"mom_3m\": \"-83.9%\", \"mom_6m\": \"-83.5%\", \"mom_12m\": \"-78.8%\", \"pct_vs_sma50\": \"-81.1%\", \"pct_vs_sma200\": \"-82.1%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-97.9%\"}}, {\"symbol\": \"TTD\", \"name\": \"Trade Desk, Inc.\", \"data\": {\"mom_3m\": \"-36.8%\", \"mom_6m\": \"-40.1%\", \"mom_12m\": \"-76.9%\", \"pct_vs_sma50\": \"-12.0%\", \"pct_vs_sma200\": \"-44.2%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-54.5%\"}}, {\"symbol\": \"LQDA\", \"name\": \"Liquidia Corp\", \"data\": {\"mom_3m\": \"-64.0%\", \"mom_6m\": \"-30.5%\", \"mom_12m\": \"+16.6%\", \"pct_vs_sma50\": \"-58.3%\", \"pct_vs_sma200\": \"-48.2%\", \"sma50_above_sma200\": \"yes\", \"rs_6m_vs_spy\": \"-44.9%\"}}, {\"symbol\": \"Z\", \"name\": \"ZILLOW GROUP, INC.\", \"data\": {\"mom_3m\": \"-9.4%\", \"mom_6m\": \"-28.2%\", \"mom_12m\": \"-59.9%\", \"pct_vs_sma50\": \"-10.2%\", \"pct_vs_sma200\": \"-30.4%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-42.6%\"}}, {\"symbol\": \"CSGP\", \"name\": \"COSTAR GROUP, INC.\", \"data\": {\"mom_3m\": \"+5.0%\", \"mom_6m\": \"-20.1%\", \"mom_12m\": \"-63.0%\", \"pct_vs_sma50\": \"-1.3%\", \"pct_vs_sma200\": \"-24.2%\", \"sma50_above_sma200\": \"no\", \"rs_6m_vs_spy\": \"-34.5%\"}}]}"
+  }
+ ],
+ "response": "{\n  \"votes\": [\n    {\n      \"symbol\": \"CTVA\",\n      \"conviction\": -1,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-82.1%\",\n          \"point\": \"Price is -82.1% versus its 200-day average, signaling a broken long-term trend and a short or avoid stance.\"\n        },\n        {\n          \"field\": \"mom_6m\",\n          \"value\": \"-83.5%\",\n          \"point\": \"Six-month momentum is -83.5%, confirming a severe downtrend instead of an established uptrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-97.9%\",\n          \"point\": \"Relative strength versus SPY is -97.9%, so it is massively underperforming the market and not a buy.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"TTD\",\n      \"conviction\": -1,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-44.2%\",\n          \"point\": \"Price is -44.2% versus its 200-day average, so it is below the long-term average and fits a short or avoid stance.\"\n        },\n        {\n          \"field\": \"mom_12m\",\n          \"value\": \"-76.9%\",\n          \"point\": \"Twelve-month momentum is -76.9%, confirming a long downtrend rather than an established uptrend.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-54.5%\",\n          \"point\": \"Relative strength versus SPY is -54.5%, showing severe underperformance and no buying trigger.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"LQDA\",\n      \"conviction\": -0.7,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"-58.3%\",\n          \"point\": \"Price is -58.3% versus its 50-day average, so it is far below the short-term trend and an avoid or short candidate.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-44.9%\",\n          \"point\": \"Relative strength versus SPY is -44.9%, showing it is underperforming the market and not a buy.\"\n        },\n        {\n          \"field\": \"mom_3m\",\n          \"value\": \"-64.0%\",\n          \"point\": \"Three-month momentum is -64.0%, confirming a sharp recent decline instead of an established uptrend.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"Z\",\n      \"conviction\": -0.9,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"-10.2%\",\n          \"point\": \"Price is -10.2% versus its 50-day average, so it is below the short-term average and not in an uptrend.\"\n        },\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-30.4%\",\n          \"point\": \"Price is -30.4% versus its 200-day average, so it is below the long-term average and an avoid or short.\"\n        },\n        {\n          \"field\": \"mom_12m\",\n          \"value\": \"-59.9%\",\n          \"point\": \"Twelve-month momentum is -59.9%, confirming a sustained downtrend.\"\n        }\n      ]\n    },\n    {\n      \"symbol\": \"CSGP\",\n      \"conviction\": -0.5,\n      \"reasons\": [\n        {\n          \"field\": \"pct_vs_sma50\",\n          \"value\": \"-1.3%\",\n          \"point\": \"Price is -1.3% versus its 50-day average, so it is still below the short-term average despite a small recent bounce.\"\n        },\n        {\n          \"field\": \"pct_vs_sma200\",\n          \"value\": \"-24.2%\",\n          \"point\": \"Price is -24.2% versus its 200-day average, so it is below the long-term average and an avoid.\"\n        },\n        {\n          \"field\": \"rs_6m_vs_spy\",\n          \"value\": \"-34.5%\",\n          \"point\": \"Relative strength versus SPY is -34.5%, showing underperformance and no established uptrend.\"\n        }\n      ]\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 984,
+  "completion_tokens": 3843,
+  "total_tokens": 4827,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2847
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 600
+ },
+ "latency_s": 37.97,
+ "recorded_at": "2026-10-22T01:55:49+00:00"
+}

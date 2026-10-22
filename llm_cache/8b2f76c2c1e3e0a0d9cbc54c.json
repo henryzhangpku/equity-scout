@@ -1,0 +1,37 @@
+{
+ "hash": "8b2f76c2c1e3e0a0d9cbc54c",
+ "tag": "vote forensic_skeptic",
+ "provider": "deepseek",
+ "model": "deepseek-v4-pro",
+ "params": {
+  "temperature": 0.0,
+  "max_tokens": 16000,
+  "json_mode": true
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are one investor on a team. Other investors with other styles and other data vote\nseparately; you do not see them. Your style:\n\nYou hunt for what can go wrong: profits that do not show up as cash, thin margins, leverage, rich valuations, and a crowd already short. You are comfortable saying a name should be sold or shorted, and you need evidence before you are bullish.\n\nYou are shown a few stocks and, for each, ONLY the data your style uses (exact values computed by code).\nFor each stock give your conviction from -1 (strong sell or short) to +1 (strong buy); 0 means you abstain\n(outside your style, or the data does not tell you enough). Abstaining is better than guessing.\n\nEvery reason must be anchored in the data you were shown:\n- \"field\" is one of the field names shown for that stock, \"value\" repeats its value EXACTLY as shown;\n- \"point\" is one sentence on why that value matters in your style; any number in it must be one of the\n  values shown for that stock. Code deletes any reason that breaks these rules, and a non-zero vote with\n  no surviving reason counts as an abstention.\n- At most 3 reasons per stock. Use no outside knowledge about the companies.\n\nReturn JSON: {\"votes\": [{\"symbol\": str, \"conviction\": number, \"reasons\": [{\"field\": str, \"value\": str, \"point\": str}]}]}"
+  },
+  {
+   "role": "user",
+   "content": "{\"stocks\": [{\"symbol\": \"BMNR\", \"name\": \"BITMINE IMMERSION TECHNOLOGIES, INC.\", \"data\": {\"net_income_ttm\": \"n/a\", \"fcf_ttm\": \"$-295M\", \"net_margin\": \"n/a\", \"net_debt\": \"$-340M\", \"ev_to_sales\": \"231.42\", \"short_pct_shares_out\": \"+6.7%\", \"days_to_cover\": \"1.0d\"}}, {\"symbol\": \"VAL\", \"name\": \"Valaris Ltd\", \"data\": {\"net_income_ttm\": \"$936M\", \"fcf_ttm\": \"$-24M\", \"net_margin\": \"+4373.4%\", \"net_debt\": \"$326M\", \"ev_to_sales\": \"287.67\", \"short_pct_shares_out\": \"+8.6%\", \"days_to_cover\": \"4.1d\"}}, {\"symbol\": \"IBRX\", \"name\": \"ImmunityBio, Inc.\", \"data\": {\"net_income_ttm\": \"$-992M\", \"fcf_ttm\": \"$-288M\", \"net_margin\": \"-598.6%\", \"net_debt\": \"$-357M\", \"ev_to_sales\": \"61.19\", \"short_pct_shares_out\": \"+11.8%\", \"days_to_cover\": \"15.9d\"}}, {\"symbol\": \"MU\", \"name\": \"MICRON TECHNOLOGY INC\", \"data\": {\"net_income_ttm\": \"$50.5B\", \"fcf_ttm\": \"$26.2B\", \"net_margin\": \"+55.9%\", \"net_debt\": \"$-20.5B\", \"ev_to_sales\": \"12.73\", \"short_pct_shares_out\": \"+2.4%\", \"days_to_cover\": \"1.1d\"}}, {\"symbol\": \"TARS\", \"name\": \"Tarsus Pharmaceuticals, Inc.\", \"data\": {\"net_income_ttm\": \"$-46M\", \"fcf_ttm\": \"$56M\", \"net_margin\": \"-7.6%\", \"net_debt\": \"$-377M\", \"ev_to_sales\": \"4.61\", \"short_pct_shares_out\": \"+14.0%\", \"days_to_cover\": \"6.6d\"}}]}"
+  }
+ ],
+ "response": "{\"votes\": [{\"symbol\": \"BMNR\", \"conviction\": -1, \"reasons\": [{\"field\": \"fcf_ttm\", \"value\": \"$-295M\", \"point\": \"Free cash flow of $-295M shows the company is burning cash rather than generating profits.\"}, {\"field\": \"ev_to_sales\", \"value\": \"231.42\", \"point\": \"Valuation at 231.42 times sales is extremely rich and leaves no margin of safety.\"}, {\"field\": \"net_debt\", \"value\": \"$-340M\", \"point\": \"Net cash of $-340M is positive but does not offset the deep negative free cash flow.\"}]}, {\"symbol\": \"VAL\", \"conviction\": -1, \"reasons\": [{\"field\": \"fcf_ttm\", \"value\": \"$-24M\", \"point\": \"Free cash flow of $-24M is nearly zero despite net income of $936M, meaning profits are not showing up as cash.\"}, {\"field\": \"ev_to_sales\", \"value\": \"287.67\", \"point\": \"Valuation at 287.67 times sales is extremely rich.\"}, {\"field\": \"net_debt\", \"value\": \"$326M\", \"point\": \"Net debt of $326M adds leverage risk on top of weak cash conversion.\"}]}, {\"symbol\": \"IBRX\", \"conviction\": -1, \"reasons\": [{\"field\": \"net_margin\", \"value\": \"-598.6%\", \"point\": \"Net margin of -598.6% shows the company is deeply unprofitable.\"}, {\"field\": \"fcf_ttm\", \"value\": \"$-288M\", \"point\": \"Free cash flow of $-288M shows ongoing cash burn.\"}, {\"field\": \"short_pct_shares_out\", \"value\": \"+11.8%\", \"point\": \"Short interest of +11.8% shows a crowd is already betting against the stock.\"}]}, {\"symbol\": \"MU\", \"conviction\": 0.6, \"reasons\": [{\"field\": \"fcf_ttm\", \"value\": \"$26.2B\", \"point\": \"Free cash flow of $26.2B supports the reported net income.\"}, {\"field\": \"net_margin\", \"value\": \"+55.9%\", \"point\": \"Net margin of +55.9% is strong and shows profitability.\"}, {\"field\": \"net_debt\", \"value\": \"$-20.5B\", \"point\": \"Net cash of $-20.5B provides a cushion against downside.\"}]}, {\"symbol\": \"TARS\", \"conviction\": -0.3, \"reasons\": [{\"field\": \"net_margin\", \"value\": \"-7.6%\", \"point\": \"Negative net margin of -7.6% shows the company is not profitable.\"}, {\"field\": \"short_pct_shares_out\", \"value\": \"+14.0%\", \"point\": \"Short interest of +14.0% shows a crowd is already positioned against the stock.\"}, {\"field\": \"fcf_ttm\", \"value\": \"$56M\", \"point\": \"Positive free cash flow of $56M is a mitigating factor but cannot overcome negative net margin of -7.6%.\"}]}]}",
+ "usage": {
+  "prompt_tokens": 943,
+  "completion_tokens": 5577,
+  "total_tokens": 6520,
+  "prompt_tokens_details": {
+   "cached_tokens": 384
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4867
+  },
+  "prompt_cache_hit_tokens": 384,
+  "prompt_cache_miss_tokens": 559
+ },
+ "latency_s": 62.4,
+ "recorded_at": "2026-10-22T01:57:50+00:00"
+}
