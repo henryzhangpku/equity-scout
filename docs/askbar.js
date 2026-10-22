@@ -64,12 +64,12 @@
   // auto-grow up to 5 lines; the counter appears near the limit; Analyze is enabled only with text
   function sync() {
     text.style.height = "auto";
-    text.style.height = Math.min(text.scrollHeight, 132) + "px";
+    if (text.value) text.style.height = Math.min(text.scrollHeight, 132) + "px";  // empty: one line, placeholder clipped
     var n = text.value.length;
     count.hidden = n < MAX - 100;
     count.textContent = (MAX - n) + " left";
     go.disabled = !text.value.trim();
-    wrap.classList.toggle("multi", text.scrollHeight > 48);
+    wrap.classList.toggle("multi", !!text.value && text.scrollHeight > 48);
   }
 
   // rotate the placeholder through example ideas while the bar is empty and not focused
@@ -143,9 +143,16 @@
     text.focus();
   });
 
-  var ask = document.getElementById("ask");
-  if (ask && "IntersectionObserver" in window) {
-    new IntersectionObserver(function (es) { inTry = es[0].isIntersecting; render(); }).observe(ask);
+  // Out of the way while the Try box or the hero's idea cards and examples are on screen (they are the same entry points).
+  var watched = ["ask", "ideas", "chips"].map(function (id) { return document.getElementById(id); }).filter(Boolean);
+  if (watched.length && "IntersectionObserver" in window) {
+    var seen = {};
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { seen[e.target.id] = e.isIntersecting; });
+      inTry = Object.keys(seen).some(function (k) { return seen[k]; });
+      render();
+    });
+    watched.forEach(function (el) { io.observe(el); });
   }
   sync();
   render();

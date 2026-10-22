@@ -149,7 +149,7 @@
     else h.push('<div class="panel" id="bt-panel"></div>');
     // The investor team's recorded vote on this example's top names (examples only; live runs show it in the local app).
     var team = o.btKey && window.SCOUT_TEAM && window.SCOUT_TEAM[o.btKey];
-    if (team) h.push('<div class="panel">' + U.teamHtml(team, "The investor team's vote (recorded on the example's top names)") + "</div>");
+    if (team) h.push('<div class="panel">' + U.teamHtml(team, o.teamTitle || "The investor team's vote (recorded on the example's top names)") + "</div>");
     var top = o.noCards ? [] : o.rows.slice(0, o.topN);
     if (top.length) {
       h.push('<div class="panel"><div class="step">Why the price and the business may disagree — top ' + top.length + "</div>");
@@ -168,7 +168,7 @@
     showOut(h.join(""));
     if (o.btNote) return;
     U.mountBacktest(byId("bt-panel"), { key: o.btKey || null, spec: o.spec, api: API || null,
-      live: function () { return apiLive; }, precomputedSrc: "data/backtests.js?v=20261009b" });
+      live: function () { return apiLive; }, precomputedSrc: "data/backtests.js?v=20261021" });
   }
 
   // ---------- examples ----------
@@ -186,6 +186,57 @@
     byId("chip-note").innerHTML = "Each example was translated by the model once, checked by code, and its top names explained from live SEC filings and news on " +
       esc(CHIPS[0].generated) + " (UTC). The screen itself re-runs here, in your browser.";
   }
+  // ---------- ideas the investor team brought (the latest recorded brief) ----------
+  var BRIEF = window.SCOUT_BRIEF;
+  function ideaPct(v) { return v === null || v === undefined ? "n/a" : (v >= 0 ? "+" : "") + Math.round(v * 100) + "%"; }
+  function renderIdeas() {
+    var box = byId("ideas");
+    if (!box) return;
+    var acc = BRIEF ? BRIEF.ideas.filter(function (i) { return i.status === "accepted"; }) : [];
+    if (!acc.length) { box.parentNode.hidden = true; return; }
+    byId("ideas-date").textContent = BRIEF.as_of;
+    byId("ideas-count").textContent = BRIEF.n_tested + " tested, " + BRIEF.n_accepted + " passed";
+    box.innerHTML = acc.map(function (i) {
+      var bt = i.backtest || {}, t = (window.SCOUT_TEAM || {})[i.id];
+      var backed = t ? t.tally.filter(function (r) { return r.verdict === "team for"; }).slice(0, 3).map(function (r) { return r.symbol; }) : [];
+      var obs = i.observation.length > 150 ? i.observation.slice(0, 147).replace(/\s+\S*$/, "") + "\u2026" : i.observation;
+      return '<button type="button" class="ideacard" data-idea="' + esc(i.id) + '">' +
+        '<span class="ideacard-who">' + esc(i.investor_name) + "</span>" +
+        '<span class="ideacard-obs">' + esc(obs) + "</span>" +
+        '<span class="ideacard-stats"><strong>' + ideaPct(bt.total) + '</strong><span>backtest ' + esc((bt.first || "").slice(0, 4)) + "\u2013" +
+        esc((bt.last || "").slice(0, 4)) + " &middot; SPY " + ideaPct(bt.spy_total) + "</span></span>" +
+        (backed.length ? '<span class="ideacard-names">Team backs ' + backed.map(function (x) { return "<b>" + esc(x) + "</b>"; }).join(", ") + "</span>" :
+          '<span class="ideacard-names">' + i.n_ranked + " names pass today</span>") +
+        "</button>";
+    }).join("");
+    box.querySelectorAll("[data-idea]").forEach(function (b) {
+      b.onclick = function () {
+        box.querySelectorAll(".ideacard").forEach(function (x) { x.classList.remove("on"); });
+        b.classList.add("on");
+        runIdea(b.getAttribute("data-idea"));
+      };
+    });
+  }
+  function runIdea(id) {
+    var i = BRIEF.ideas.filter(function (x) { return x.id === id; })[0];
+    if (!i) return;
+    ensureLoaded().then(function () {
+      setSpec(JSON.parse(JSON.stringify(i.spec)));
+      var v = ScoutCore.validate(i.spec, S.short_interest_available);
+      if (!v.ok) { showOut('<div class="panel refusal">' + esc(v.problems.join("; ")) + "</div>"); return; }
+      var res = screen(v.spec);
+      renderResults({ spec: v.spec, funnel: res.funnel, rows: res.rows, nRanked: res.n, topN: v.spec.top_n, cols: res.cols,
+        breakdown: res.breakdown, btKey: i.id, noCards: true, teamTitle: "The investor team's vote on this idea's names (recorded with the brief)",
+        lead: '<div class="step">An idea from the investor team</div><blockquote class="obs">' + esc(i.observation) + "</blockquote>" +
+          '<p class="meta">Proposed by <strong>' + esc(i.investor_name) + "</strong> on the " + esc(BRIEF.as_of) +
+          " brief, without anyone asking. Code validated it, screened every company and backtested it; it passed every gate. " +
+          "The team then voted on its names (below the backtest).</p>",
+        note: "<strong>The investor team's idea</strong>, re-screened here in your browser on the snapshot as of " + esc(S.data.last_price_date) + " close." });
+      byId("t-out").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+  window.ScoutTry = { runIdea: runIdea };
+
   function runChip(id) {
     var c = CHIPS.filter(function (x) { return x.id === id; })[0];
     ensureLoaded().then(function () {
@@ -471,6 +522,7 @@
   // ---------- boot ----------
   renderAsk();
   renderChips();
+  renderIdeas();
   renderMtfChip();
   checkApi();
   if (adv) adv.addEventListener("toggle", function () { if (adv.open) ensureLoaded(); });

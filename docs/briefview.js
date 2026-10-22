@@ -14,7 +14,7 @@
     h.push('<p class="meta">Proposed by <strong>' + esc(i.investor_name) + "</strong>. " + i.n_ranked + " names pass today. Backtest " + esc(bt.first) +
       " to " + esc(bt.last) + ": screen <strong>" + pct(bt.total) + "</strong>, SPY " + pct(bt.spy_total) + ", equal-weight universe " + pct(bt.universe_total) +
       "; verdict <strong>" + esc(bt.verdict) + "</strong>.</p>");
-    if (i.team) h.push(U.teamHtml(i.team, "The team's vote on its names"));
+    h.push('<div class="row"><button type="button" class="primary" data-open-idea="' + esc(i.id) + '">Open this idea: screen, backtest and the team&rsquo;s vote</button></div>');
     h.push("</details>");
   });
   var rej = B.ideas.filter(function (i) { return i.status !== "accepted"; });
@@ -26,4 +26,7 @@
     h.push("</tbody></table></div></div>");
   }
   el.innerHTML = h.join("");
+  el.querySelectorAll("[data-open-idea]").forEach(function (b) {
+    b.onclick = function () { if (window.ScoutTry) window.ScoutTry.runIdea(b.getAttribute("data-open-idea")); };
+  });
 })();

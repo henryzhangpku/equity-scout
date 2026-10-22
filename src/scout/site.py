@@ -131,10 +131,15 @@ def export_team() -> None:
     if briefs:
         b = json.loads(briefs[-1].read_text(encoding="utf-8"))
         brief = {"as_of": b["as_of"], "n_tested": b["n_tested"], "n_accepted": b["n_accepted"], "ideas": [
-            {"investor_name": i["investor_name"], "kind": i["kind"], "status": i["status"], "reason": i.get("reason", ""),
+            {"id": "idea-" + i["investor"], "investor": i["investor"], "investor_name": i["investor_name"], "kind": i["kind"],
+             "status": i["status"], "reason": i.get("reason", ""), "spec": i.get("spec"),
              "observation": (i.get("spec") or {}).get("observation", ""), "n_ranked": i.get("n_ranked"),
-             "backtest": i.get("backtest"), "team": slim_team(i["team"]) if i.get("team") else None}
+             "backtest": i.get("backtest"),
+             "top": [{"symbol": r["symbol"], "name": r.get("name")} for r in (i.get("top") or [])]}
             for i in b["ideas"]]}
+        for i in b["ideas"]:
+            if i.get("team"):
+                votes["idea-" + i["investor"]] = slim_team(i["team"])
     dst = ROOT / "docs" / "data" / "team.js"
     dst.write_text("window.SCOUT_TEAM = " + json.dumps(votes, separators=(",", ":"), ensure_ascii=False, allow_nan=False)
                    + ";\nwindow.SCOUT_BRIEF = " + json.dumps(brief, separators=(",", ":"), ensure_ascii=False, allow_nan=False)
@@ -156,6 +161,11 @@ def export_backtests() -> None:
         p = RUNS / name / "run.json"
         if p.exists():
             out[name] = run(validate(json.loads(p.read_text(encoding="utf-8"))["spec"]), P)
+    briefs = sorted(RUNS.glob("brief-*/brief.json"))
+    if briefs:  # the investor team's accepted ideas, so the site opens each one with its full backtest
+        for i in json.loads(briefs[-1].read_text(encoding="utf-8"))["ideas"]:
+            if i["status"] == "accepted":
+                out["idea-" + i["investor"]] = run(validate(i["spec"]), P)
     dst = ROOT / "docs" / "data" / "backtests.js"
     dst.write_text("window.SCOUT_BACKTESTS = " + json.dumps(out, separators=(",", ":"), allow_nan=False) + ";\n",
                    encoding="utf-8", newline="\n")

@@ -27,8 +27,10 @@ might disagree. Code deletes any claim whose quote does not appear verbatim in i
   exchange-traded note that slips into the universe.
 * **Every result shows its backtest and the team's vote:** under the ranked names, the backtest runs on its own,
   then the investor team's recorded vote (12 investors, each with its own data; every reason checked by code).
-* **Morning brief:** the team's own ideas from the recorded brief (`runs/brief-2026-10-08`): the ideas that passed
-  every backtest gate with the team's vote on their names, and every rejected idea with the reason.
+* **The team's own ideas come first, no typing needed:** the top of the page shows the ideas the investor team
+  brought itself in the latest brief (`runs/brief-2026-10-08`), each with its backtest and the names the team backs.
+  One click opens the idea: the screen re-runs in the browser, then its full backtest and the team's vote. The
+  *Morning brief* section lists the same ideas and every rejected one with the reason.
 * **Floating ask bar:** available anywhere on the page. Enter asks, Shift+Enter adds a line, `/` or Ctrl/Cmd+K
   focuses it; on focus it offers the one-click examples, which answer instantly even when live analysis is offline,
   and it shows whether live analysis is up.

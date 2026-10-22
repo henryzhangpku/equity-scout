@@ -21,7 +21,7 @@
     r.explanations.forEach(function (ex) { h.push(U.cardHtml(ex)); });
     h.push("</div></div>");
     document.getElementById("run").innerHTML = h.join("");
-    U.mountBacktest(document.getElementById("bt-run"), { key: r.id, spec: r.spec, api: null, precomputedSrc: "data/backtests.js?v=20261009b",
+    U.mountBacktest(document.getElementById("bt-run"), { key: r.id, spec: r.spec, api: null, precomputedSrc: "data/backtests.js?v=20261021",
       title: "5 · Backtest: did this screen work historically? (computed by code)" });
   }
 
